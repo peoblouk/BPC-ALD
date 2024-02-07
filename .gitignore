@@ -1,5 +1,9 @@
 # ignore ALL .log files
 *.log
 .vs
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj
+*.sln
 # ignore ALL files in ANY directory named temp
 temp/
