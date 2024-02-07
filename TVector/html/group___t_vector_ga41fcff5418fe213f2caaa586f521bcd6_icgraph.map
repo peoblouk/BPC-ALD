@@ -1,0 +1,8 @@
+<map id="vector_destroy" name="vector_destroy">
+<area shape="rect" id="Node000001" title="Dealokace vektoru." alt="" coords="255,5,361,31"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,21,56,21,56,15,241,15"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga389209d8bde0a8922177efb8ed7a22a6" title="Testování funkce vector_resize()" alt="" coords="104,31,207,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,32,208,37,207,32,241,26"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="90,33,56,26,57,20,91,28"/>
+</map>

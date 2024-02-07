@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34525.116
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TVector", "TVector\TVector.vcxproj", "{FF7BDB22-D066-4801-A234-6E99EDE67840}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TVector", "TVector\TVector.vcxproj", "{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{BB047FB8-3B4A-4474-AAA2-402385DD4427}"
+	ProjectSection(SolutionItems) = preProject
+		doc\cv01_zadani_TVector.md = doc\cv01_zadani_TVector.md
+		Doxyfile = Doxyfile
+		doc\extra_stylesheet.css = doc\extra_stylesheet.css
+		doc\project_logo.png = doc\project_logo.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +21,19 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Debug|x64.ActiveCfg = Debug|x64
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Debug|x64.Build.0 = Debug|x64
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Debug|x86.ActiveCfg = Debug|Win32
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Debug|x86.Build.0 = Debug|Win32
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Release|x64.ActiveCfg = Release|x64
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Release|x64.Build.0 = Release|x64
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Release|x86.ActiveCfg = Release|Win32
-		{FF7BDB22-D066-4801-A234-6E99EDE67840}.Release|x86.Build.0 = Release|Win32
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Debug|x64.ActiveCfg = Debug|x64
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Debug|x64.Build.0 = Debug|x64
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Debug|x86.Build.0 = Debug|Win32
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Release|x64.ActiveCfg = Release|x64
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Release|x64.Build.0 = Release|x64
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Release|x86.ActiveCfg = Release|Win32
+		{DEC16A97-6064-4C7F-8E1C-32E0D235B60E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {76F65BC1-3C7E-47C7-8783-68CE9FFC7952}
+		SolutionGuid = {BA58E7EF-9274-4C70-AFBC-476CBAC9051C}
 	EndGlobalSection
 EndGlobal

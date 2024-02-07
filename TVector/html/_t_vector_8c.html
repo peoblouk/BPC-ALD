@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TVector: Dokumentace souboru TVector.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TVector<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_db044e6be8132b15df93310cef4e98ac.html">TVector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru TVector.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace Basic Vector API.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_t_vector_8h_source.html">TVector.h</a>&quot;</code><br />
+<code>#include &quot;check.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro TVector.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c__incl.svg" width="520" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga1eb7199db0e7fd0d114fbf2903f05ca5" id="r_ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga1eb7199db0e7fd0d114fbf2903f05ca5">vector_init</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aSize)</td></tr>
+<tr class="memdesc:ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů na hodnotu 0.  <br /></td></tr>
+<tr class="separator:ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga088d8ae405d0c100abe583c583d27ed3" id="r_ga088d8ae405d0c100abe583c583d27ed3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga088d8ae405d0c100abe583c583d27ed3">vector_init_random</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aSize)</td></tr>
+<tr class="memdesc:ga088d8ae405d0c100abe583c583d27ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů na náhodné hodnoty.  <br /></td></tr>
+<tr class="separator:ga088d8ae405d0c100abe583c583d27ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0009a6c19dd42237bbb6af9897f2e44" id="r_gac0009a6c19dd42237bbb6af9897f2e44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44">vector_init_file</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, FILE *aInputFile)</td></tr>
+<tr class="memdesc:gac0009a6c19dd42237bbb6af9897f2e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů ze souboru.  <br /></td></tr>
+<tr class="separator:gac0009a6c19dd42237bbb6af9897f2e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b0b8780d60dad02b8569be119769548" id="r_ga6b0b8780d60dad02b8569be119769548"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga6b0b8780d60dad02b8569be119769548">vector_clone</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVectorClone)</td></tr>
+<tr class="memdesc:ga6b0b8780d60dad02b8569be119769548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření úplné kopie vektoru.  <br /></td></tr>
+<tr class="separator:ga6b0b8780d60dad02b8569be119769548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc5c4a8f6f5f38932380f5e475ce862f" id="r_gabc5c4a8f6f5f38932380f5e475ce862f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gabc5c4a8f6f5f38932380f5e475ce862f">vector_store_file</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:gabc5c4a8f6f5f38932380f5e475ce862f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uložení vektoru a jeho elementů do souboru.  <br /></td></tr>
+<tr class="separator:gabc5c4a8f6f5f38932380f5e475ce862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b08236d9825632cd96bcc89faed929c" id="r_ga2b08236d9825632cd96bcc89faed929c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos)</td></tr>
+<tr class="memdesc:ga2b08236d9825632cd96bcc89faed929c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z vektoru na požadované pozici.  <br /></td></tr>
+<tr class="separator:ga2b08236d9825632cd96bcc89faed929c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd5ba54950295545d27b1286234ead39" id="r_gabd5ba54950295545d27b1286234ead39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:gabd5ba54950295545d27b1286234ead39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty elementu do vektoru na požadovanou pozici.  <br /></td></tr>
+<tr class="separator:gabd5ba54950295545d27b1286234ead39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2502e6ec116dbac5e49f5b62b07dc898" id="r_ga2502e6ec116dbac5e49f5b62b07dc898"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga2502e6ec116dbac5e49f5b62b07dc898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení počtu elementů vektoru.  <br /></td></tr>
+<tr class="separator:ga2502e6ec116dbac5e49f5b62b07dc898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf502ae8257c371ab9c7fb95a242ccb2" id="r_gabf502ae8257c371ab9c7fb95a242ccb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aNewSize)</td></tr>
+<tr class="memdesc:gabf502ae8257c371ab9c7fb95a242ccb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Změna velikosti existujícího vektoru.  <br /></td></tr>
+<tr class="separator:gabf502ae8257c371ab9c7fb95a242ccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41fcff5418fe213f2caaa586f521bcd6" id="r_ga41fcff5418fe213f2caaa586f521bcd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6">vector_destroy</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga41fcff5418fe213f2caaa586f521bcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dealokace vektoru.  <br /></td></tr>
+<tr class="separator:ga41fcff5418fe213f2caaa586f521bcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40d7eff2ece0eb356d27cdcdef255560" id="r_ga40d7eff2ece0eb356d27cdcdef255560"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga40d7eff2ece0eb356d27cdcdef255560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na počáteční element.  <br /></td></tr>
+<tr class="separator:ga40d7eff2ece0eb356d27cdcdef255560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga133f7ac7efd8456d0964bf8fcd2995e6" id="r_ga133f7ac7efd8456d0964bf8fcd2995e6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga133f7ac7efd8456d0964bf8fcd2995e6">vector_iterator_pos</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos)</td></tr>
+<tr class="memdesc:ga133f7ac7efd8456d0964bf8fcd2995e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na zadanou pozici.  <br /></td></tr>
+<tr class="separator:ga133f7ac7efd8456d0964bf8fcd2995e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c42552246c50cfa270c3eb0f58c239a" id="r_ga6c42552246c50cfa270c3eb0f58c239a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga6c42552246c50cfa270c3eb0f58c239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na poslední element.  <br /></td></tr>
+<tr class="separator:ga6c42552246c50cfa270c3eb0f58c239a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f8a97a63f887539e270f6845bf22b9a" id="r_ga3f8a97a63f887539e270f6845bf22b9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga3f8a97a63f887539e270f6845bf22b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:ga3f8a97a63f887539e270f6845bf22b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ce07cda016d67e3ca891125613ece56" id="r_ga7ce07cda016d67e3ca891125613ece56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a> (struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga7ce07cda016d67e3ca891125613ece56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:ga7ce07cda016d67e3ca891125613ece56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e1e1cc570f8a1c2bf1fb73c0d3c8826" id="r_ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a> (struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vzad.  <br /></td></tr>
+<tr class="separator:ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d8032eb9dbbdccf794611f2b0c9821c" id="r_ga4d8032eb9dbbdccf794611f2b0c9821c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga4d8032eb9dbbdccf794611f2b0c9821c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z vektoru pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga4d8032eb9dbbdccf794611f2b0c9821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66f6b96e416a7e593b1cf703f58be7ca" id="r_ga66f6b96e416a7e593b1cf703f58be7ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:ga66f6b96e416a7e593b1cf703f58be7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty elementu do vektoru pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga66f6b96e416a7e593b1cf703f58be7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace Basic Vector API. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="_t_vector_8c.html" title="Implementace Basic Vector API.">TVector.c</a> 2581 2024-02-05 14:24:55Z petyovsky </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 5. úno 2024 15.36:06, pro projekt: BPC-ALD: ADT TVector, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

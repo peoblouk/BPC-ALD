@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TVector: Zadání cvičení 1</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TVector<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 1 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv01__zadani___t_vector"></a> Dokončete implementaci níže uvedených funkcí a ověřte časovou i paměťovou složitost funkce <code><a class="el" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2" title="Změna velikosti existujícího vektoru.">vector_resize()</a></code>. Tato funkce má za úkol změnit velikost vektoru. Funkce alokuje novou oblast paměti o velikosti danou počtem prvků a vloží do ní hodnoty z původního vektoru. Původní oblast paměti následně dealokuje.</p>
+<p>Pro řešení jsou připraveny zdrojové texty, z nichž některé je nutné doplnit o chybějící kód (viz soubor <code><a class="el" href="_t_vector_8c.html" title="Implementace Basic Vector API.">TVector.c</a></code>). Pro vlastní testování je v souboru <code><a class="el" href="main_8c.html" title="Hlavní program testující Basic Vector API.">main.c</a></code> připravena funkce <code><a class="el" href="group___main_program.html#ga389209d8bde0a8922177efb8ed7a22a6" title="Testování funkce vector_resize()">resize_testing()</a></code>, která zavolá testovanou funkci <code><a class="el" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2" title="Změna velikosti existujícího vektoru.">vector_resize()</a></code>, změří dobu jejího trvání a její paměťové nároky. Doba trvání se měří pomocí času získaného funkcí <a href="https://en.cppreference.com/w/c/chrono/timespec_get"><code>timespec_get()</code></a>, která vrací hodnotu typu struktura <code>timespec</code> (knihovna <a href="https://en.cppreference.com/w/c/chrono"><code>time.h</code></a>). V této struktuře jsou dva časové údaje, jeden udává celé sekundy a druhý nanosekundy (od určitého okamžiku v minulosti). Výpočet doby trvání (desetinné číslo v sekundách) se provádí ve funkci <code><a class="el" href="main__support_8h.html#aa291195ad453d2b1e29004cc2e043c01" title="Výpočet doby trvání časového intervalu.">difftimespec()</a></code> na základě dvou časových okamžiků. Testovací funkce se volá z <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> opakovaně s různými požadavky na množství alokované paměti. Parametrem funkce je počet elementů / prvků vektoru. Promyslete si, jaký je vztah mezi množstvím alokované paměti a počtem požadovaných elementů / prvků vektoru.</p>
+<p>Důvod existence souboru <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code> a v něm definovaném typu <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code> je v oddělení definice typu element vektoru od realizace <a href="https://cs.wikipedia.org/wiki/Abstraktn%C3%AD_datov%C3%BD_typ">ADT</a> <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> (soubory <code><a class="el" href="_t_vector_8c.html" title="Implementace Basic Vector API.">TVector.c</a></code> a <code><a class="el" href="_t_vector_8h.html" title="Definice typu Basic Vector.">TVector.h</a></code>). Pokud v budoucnu změníme datový typ elementu, bude nutno upravit pouze soubor <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>. Ostatní zdrojové soubory s definicí vektoru, již zůstanou beze změny. Změna datového typu element představuje pro základní datové typy pouze triviální úpravu alias definice typu <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code> (viz klíčové slovo <code>typedef</code>) a úpravu hodnoty makra <code>TVECTOR_ELEMENT_FRMSTR</code>. Pokud ovšem bude novým typem složený datový typ (např. komplexní číslo, zlomek, jméno a příjmení), bude třeba modifikovat i těla ostatních funkcí v tomto hlavičkovém souboru. Tyto funkce představují tzv. <a href="https://cs.wikipedia.org/wiki/API">API</a> pro <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code>, tedy zajišťují: načtení / uložení hodnot elementu do souboru, způsob jejich porovnávání, a vygenerování náhodné hodnoty elementu. Z toho také plyne, že nadřazený ADT <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> bude pro libovolnou realizaci typu <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code> vždy schopen všechny své elementy: načíst / uložit do souboru, a také seřadit dle velikosti (viz pozdější cvičení).</p>
+<p>Ujasněte si rozdíl mezi knihovními funkcemi <a href="https://en.cppreference.com/w/c/memory/malloc"><code>malloc()</code></a> a <a href="https://en.cppreference.com/w/c/memory/calloc"><code>calloc()</code></a>. Obě funkce dynamicky alokují paměť o velikosti bajtů. Funkce <code>calloc(počet, velikost)</code> si oba parametry (počet a velikost typu) vynásobí sama. <a href="http://locklessinc.com/articles/calloc/">Některé implementace</a> navíc kontrolují, z bezpečnostních důvodů, případné přetečení výsledku operace násobení. Od normy jazyka <a href="https://en.wikipedia.org/wiki/C23_(C_standard_revision)">C23</a> je tato kontrola již povinně naimplementována v těle funkce <code>calloc()</code>. Tato funkce následně po alokaci (na rozdíl od funkce <code>malloc()</code>) zajistí efektivní nulování přidělené paměti s pomocí mechanismu jádra operačního systému. Z toho plyne, že <code>malloc()</code> použijeme tam, kde paměť (ihned) plníme svými daty. Funkci <code>calloc()</code> použijeme v okamžiku, kdy nemáme data k přiřazení do prvků pole, nebo chceme využít automatickou inicializaci prvků na nuly.</p>
+<ol type="1">
+<li>Prostudujte dodaný projekt a v něm dodané zdrojové kódy.<ul>
+<li>Projekt si překopírujte do své pracovní složky a otevřete ve VS pomocí souboru <code>TVector.sln</code>.</li>
+<li>Doporučujeme si upravit nastavení formátování zdrojového kódu označované v literatuře jako <a href="https://en.wikipedia.org/wiki/Indentation_style#Whitesmiths_style">Whitesmiths</a> (<code>Tools</code> &gt; <code>Options</code> &gt; <code>TextEditor</code> &gt; <code>C &amp; C++</code> &gt; <code>Formating</code> &gt; <code>Indentation</code> a zde zaškrtněte první položku <code>Indent braces</code>).</li>
+<li>Nastavení prostředí VS si uložte pro rychlejší načtení v dalších cvičeních (<code>Tools</code> &gt; <code>Import and Export Settings</code> &gt; <code>Export selected environment settings</code> &gt; <code>Next</code> &gt; <code>Next</code> &gt; uložit soubor na plochu a zvolit <code>Finish</code>).</li>
+<li>Prostudujte si funkce v souboru <code><a class="el" href="main_8c.html" title="Hlavní program testující Basic Vector API.">main.c</a></code>.</li>
+<li>Nastudujte si, jak pracuje tzv. <a href="https://cs.wikipedia.org/wiki/Aserce">aserce</a>. Jedná se o funkci <code>assert()</code>, která je definována ve standardním souboru <a href="https://en.wikipedia.org/wiki/Assert.h"><code>assert.h</code></a>.</li>
+<li>Prostudujte si soubor <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>, který obsahuje základní definice dat a pomocných funkcí (snažte se je ve svém kódu použít). Popište a zdůvodněte význam typu <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code> a makra <code>TVECTOR_ELEMENT_FRMSTR</code> (v případě nutnosti se inspirujte ve funkcích v <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>).</li>
+<li>Prostudujte si soubor <code><a class="el" href="_t_vector_8h.html" title="Definice typu Basic Vector.">TVector.h</a></code> (mimo sekci s iterátory) a ujasněte si jeho význam v projektu.</li>
+<li>Prostudujte soubor <code><a class="el" href="_t_vector_8c.html" title="Implementace Basic Vector API.">TVector.c</a></code>.</li>
+</ul>
+</li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#ga1eb7199db0e7fd0d114fbf2903f05ca5" title="Alokace vektoru a inicializace jeho elementů na hodnotu 0.">vector_init()</a></code> alokuje pole o dané délce s nulovými elementy a inicializuje složky struktury <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>, jejíž adresa je předána jako parametr. Předpokládáme, že tato funkce zajišťuje prvotní inicializaci proměnné vektor. <pre class="fragment"> // test vstupních parametrů - má-li parametr typu ukazatel hodnotu NULL, ukončíme funkci
+ // alokujeme pole dané délky a jeho počáteční adresu uložíme do dočasné proměnné
+ // pokud došlo při alokaci k chybě, funkci ukončíme
+ // k alokaci využijeme funkci calloc, pole tedy již bude naplněno nulami
+ // ve struktuře nastavíme složky reprezentující počet prvků pole (iSize) a počáteční adresu pole (iValues)
+ // při úspěchu funkce vrátíme hodnotu true, jinak false
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#ga088d8ae405d0c100abe583c583d27ed3" title="Alokace vektoru a inicializace jeho elementů na náhodné hodnoty.">vector_init_random()</a></code> vytvoří vektor o dané délce s náhodnými hodnotami - do proměnné, která je předána jako parametr. Od funkce <code><a class="el" href="group___t_vector.html#ga1eb7199db0e7fd0d114fbf2903f05ca5" title="Alokace vektoru a inicializace jeho elementů na hodnotu 0.">vector_init()</a></code> se liší vložením náhodných hodnot do elementů vektoru (použijte připravenou funkci <code><a class="el" href="group___t_vector_element.html#gac2485005f9b85ee450e159a793583c9b" title="Vrací nový element s náhodnou hodnotou.">vector_element_random_value()</a></code> z <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>). <pre class="fragment"> // test vstupních parametrů - má-li parametr typu ukazatel hodnotu NULL, ukončíme funkci
+ // alokujeme pole dané délky a jeho počáteční adresu uložíme do dočasné proměnné
+ // pokud došlo při alokaci k chybě, funkci ukončíme
+ // pole naplníme hodnotami z funkce: vector_element_random_value()
+ // ve struktuře nastavíme složky reprezentující počet prvků pole (iSize) a počáteční adresu pole (iValues)
+ // při úspěchu funkce vrátíme hodnotu true, jinak false
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44" title="Alokace vektoru a inicializace jeho elementů ze souboru.">vector_init_file()</a></code> vytvoří vektor o dané délce s danými hodnotami - do proměnné, která je předána jako parametr. Druhým parametrem je proměnná typu <code>FILE*</code> představující otevřený textový soubor obsahující informaci o počtu elementů vektoru a následným výčtem jednotlivých hodnot vektoru. (K načtení hodnoty elementu použijte připravenou funkci <code><a class="el" href="group___t_vector_element.html#gaf9a34133c2292f807fe184c72fd3f8d8" title="Načtení elementu ze souboru.">vector_element_load_file()</a></code> ze zdrojového souboru <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>). <pre class="fragment"> // test vstupních parametrů - má-li některý z parametrů typu ukazatel hodnotu NULL, ukončíme funkci
+ // načteme počet elementů vektoru ze souboru (s kontrolou úspěšnosti načtení)
+ // alokujeme pole dané délky a jeho počáteční adresu uložíme do dočasné proměnné
+ // pokud došlo při alokaci k chybě, funkci ukončíme
+ // postupně načteme hodnoty elementů vektoru ze souboru do paměti (s kontrolou úspěšnosti načtení)
+ // ve struktuře nastavíme složky reprezentující počet prvků pole (iSize) a počáteční adresu pole (iValues)
+ // při úspěchu funkce vrátíme hodnotu true, jinak false
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6" title="Dealokace vektoru.">vector_destroy()</a></code> uvolní získané zdroje (alokovanou paměť) a nastaví vnitřní složky proměnné <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> pro budoucí další použití. <pre class="fragment"> // test vstupních parametrů - má-li parametr typu ukazatel hodnotu NULL, ukončíme funkci
+ // uvolnění paměti
+ // vynulujeme složky struktury TVector
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici.">vector_value()</a></code> vrátí hodnotu elementu na dané pozici vektoru. <pre class="fragment"> // pomocí aserce ověřte validitu vstupních parametrů a otestujte, zda je požadovaná pozice (index) elementu uvnitř alokovaného pole
+ // vrátíme hodnotu elementu
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898" title="Přečtení počtu elementů vektoru.">vector_size()</a></code> vrátí počet elementů vektoru. <pre class="fragment"> // zkontrolujeme validitu vstupních parametrů a existenci naalokované paměti pro pole
+ // vrátíme počet elementů vektoru nebo hodnotu 0 v případě chyby
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2" title="Změna velikosti existujícího vektoru.">vector_resize()</a></code> změní počet prvků alokovaného pole na novou velikost a uchová hodnoty platných elementů. Předpokládá se, že vektor předaný jako parametr již byl korektně inicializován a může také obsahovat platná data, které musí být případně odalokovány, pokud nebudou využity. <pre class="fragment"> // test vstupního parametru - má-li parametr typu ukazatel hodnotu NULL, ukončíme funkci
+ // pokud je počet prvků původního vektoru shodný s nově požadovaným počtem (aNewSize), ukončíme funkci s hodnotou true
+ // pokud je nově požadovaný počet prvků vektoru nulový, odalokujeme paměť pole, vynulujeme jednotlivé složky a ukončím funkci s hodnotou true
+ // alokujeme paměť pro pole vektoru o novém počtu prvků (malloc/calloc) a jeho počáteční adresu uložíme do dočasné proměnné
+ // pokud došlo při alokaci k chybě, funkci ukončíme
+ // postupně zkopírujeme hodnoty prvků z původního pole do nového pole 
+ // zvolte správný počet kopírovaných prvků, pokud kopírujete do menšího i pokud kopírujete do většího, zbývající hodnoty pole vynulujte
+ // dealokujeme paměť původního pole
+ // ve struktuře nastavíme složky reprezentující nový počet prvků pole a počáteční adresu nového pole
+ // při úspěchu funkce vrátíme hodnotu true, jinak false
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#ga6b0b8780d60dad02b8569be119769548" title="Vytvoření úplné kopie vektoru.">vector_clone()</a></code> vytvoří kopii elementů <code>aVector</code> (zdroj) do proměnné <code>aVectorClone</code>. Předpokládáme, že proměnná <code>aVectorClone</code> může již obsahovat platná data, které musí být případně odalokovány, pokud nebudou využity. <pre class="fragment"> // test vstupních parametrů - má-li některý z parametrů typu ukazatel hodnotu NULL, ukončíme funkci
+ // kontrola, zda originál a kopie jsou dvě různé proměnné typu TVector - pokud jsou stejné, funkci ukončíme
+ // pokud není originál alokován - odalokujte i paměť kopie, vynulujte její složky a funkci ukončete
+ // alokujeme pole dané délky (pro kopii) a jeho počáteční adresu uložíme do dočasné proměnné
+ // pokud došlo při alokaci k chybě, funkci ukončíme
+ // překopírujeme hodnoty elementů do nově alokovaného pole
+ // pokud kopie obsahovala dříve alokovanou paměť, tuto paměť dealokujeme
+ // do složek výstupní proměnné aVectorClone zapíšeme hodnoty reprezentující počet prvků nového pole (iSize) a počáteční adresu nového pole (iValues)
+ // při úspěchu funkce vrátíme hodnotu true, jinak false
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#gabc5c4a8f6f5f38932380f5e475ce862f" title="Uložení vektoru a jeho elementů do souboru.">vector_store_file()</a></code> představuje opak k načítání vektoru ze souboru. Data uloží ve stejném formátu, aby bylo možné jejich opětovně načtení pomocí funkce <code><a class="el" href="group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44" title="Alokace vektoru a inicializace jeho elementů ze souboru.">vector_init_file()</a></code>. (K uložení hodnoty elementu do souboru použijte připravenou funkci <code><a class="el" href="group___t_vector_element.html#gaaae5b52d7f1d155134792f040f00a385" title="Uložení elementu do souboru.">vector_element_store_file()</a></code> ze zdrojového souboru <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>). <pre class="fragment">// test vstupních parametrů - má-li některý z parametrů typu ukazatel hodnotu NULL, ukončíme funkci
+// do souboru uložíme počet elementů vektoru (s kontrolou úspěšnosti zápisu)
+// do souboru postupně uložíme hodnoty všech elementů vektoru (s kontrolou úspěšnosti zápisu)
+// při úspěchu funkce vrátíme hodnotu true, jinak false
+</pre></li>
+<li>Funkce <code><a class="el" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici.">vector_set_value()</a></code> má za úkol zapsat zadanou hodnotu na danou pozici v poli a provést kontroly platnosti takového operace. <pre class="fragment">// pomocí aserce ověřte validitu vstupních parametrů a otestujte, zda je požadovaná pozice (index) elementu uvnitř alokovaného pole
+// zapíšeme hodnotu na danou pozici v poli
+</pre></li>
+</ol>
+<hr  />
+<p> <code>$Id: <a class="el" href="cv01__zadani___t_vector_8md.html">cv01_zadani_TVector.md</a> 2580 2024-02-05 14:23:12Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 5. úno 2024 15.36:06, pro projekt: BPC-ALD: ADT TVector, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

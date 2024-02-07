@@ -1,0 +1,22 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,204,56,229"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#ga389209d8bde0a8922177efb8ed7a22a6" title="Testování funkce vector_resize()" alt="" coords="104,103,207,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,202,102,145,119,133,122,138,106,149,46,206"/>
+<area shape="rect" id="Node000005" href="$group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6" title="Dealokace vektoru." alt="" coords="283,153,389,179"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="55,204,103,189,189,174,268,167,269,172,190,179,105,194,57,209"/>
+<area shape="rect" id="Node000007" href="$group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44" title="Alokace vektoru a inicializace jeho elementů ze souboru." alt="" coords="104,204,207,229"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="56,214,90,214,90,219,56,219"/>
+<area shape="rect" id="Node000009" href="$group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898" title="Přečtení počtu elementů vektoru." alt="" coords="112,253,199,279"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="57,224,111,246,109,251,55,229"/>
+<area shape="rect" id="Node000010" href="$group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici." alt="" coords="109,303,201,328"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="44,228,70,258,106,289,112,294,109,298,102,293,67,262,40,231"/>
+<area shape="rect" id="Node000003" href="$main__support_8h.html#aa291195ad453d2b1e29004cc2e043c01" title="Výpočet doby trvání časového intervalu." alt="" coords="291,5,381,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,100,206,70,253,40,276,30,278,35,256,44,209,74,173,104"/>
+<area shape="rect" id="Node000004" href="$group___t_vector.html#ga6b0b8780d60dad02b8569be119769548" title="Vytvoření úplné kopie vektoru." alt="" coords="289,55,383,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="203,100,274,81,276,86,205,105"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,126,277,147,276,152,201,131"/>
+<area shape="rect" id="Node000006" href="$group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2" title="Změna velikosti existujícího vektoru." alt="" coords="287,104,385,129"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="207,113,272,114,272,119,207,118"/>
+<area shape="rect" id="Node000008" href="$group___t_vector_element.html#gaf9a34133c2292f807fe184c72fd3f8d8" title="Načtení elementu ze souboru." alt="" coords="255,204,417,229"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="207,214,241,214,241,219,207,219"/>
+</map>

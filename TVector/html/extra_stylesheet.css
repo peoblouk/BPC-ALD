@@ -1,0 +1,21 @@
+/* The extra CSS for doxygen 1.10.0 */
+/* Changed properties: background color and alpha, padding and font-size of blocks: code, tt, kbd and samp */
+/* $Id: extra_stylesheet.css 2579 2024-02-05 12:01:37Z petyovsky $ */
+html
+{
+  /* markdown code background colors and alpha */
+  --md-code-background-color: rgba(232, 232, 232, 0.5);
+}
+
+html.dark-mode
+{
+  /* markdown code background colors and alpha */
+  --md-code-background-color: rgba(72, 72, 72, 0.5);
+}
+
+tt, code, kbd, samp
+{
+  background-color: var(--md-code-background-color);
+  padding: .0em .3em;
+  font-size: 88%;
+}

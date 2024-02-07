@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TVector: Zdrojový soubor TVector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TVector<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_db044e6be8132b15df93310cef4e98ac.html">TVector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TVector.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_vector_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TVECTOR_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TVECTOR_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_t_vector_element_8h.html">TVectorElement.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;check.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___t_vector.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">   27</a></span>        <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a>;                </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">   28</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;                                   </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        };</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector.html#ga1eb7199db0e7fd0d114fbf2903f05ca5">vector_init</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aSize);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector.html#ga088d8ae405d0c100abe583c583d27ed3">vector_init_random</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aSize);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44">vector_init_file</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, FILE *aInputFile);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector.html#ga6b0b8780d60dad02b8569be119769548">vector_clone</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVectorClone);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector.html#gabc5c4a8f6f5f38932380f5e475ce862f">vector_store_file</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, FILE *aOutputFile);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_function" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aPos);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aNewSize);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6">vector_destroy</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector);</div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="};">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="group___t_vector_iterator.html">  119</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">  121</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *<a class="code hl_variable" href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">iVector</a>;        </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="group___t_vector_iterator.html#a653670a6d238caa045872f0682ec52b3">  122</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_vector_iterator.html#a653670a6d238caa045872f0682ec52b3">iPos</a>;                            </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        };</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> <a class="code hl_function" href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a>(const struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> <a class="code hl_function" href="group___t_vector_iterator.html#ga133f7ac7efd8456d0964bf8fcd2995e6">vector_iterator_pos</a>(const struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aPos);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> <a class="code hl_function" href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a>(const struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_function" href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="group___iterator_algorithms.html#gad9872ced82843c0e0864a8e2547ca579">  195</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___iterator_algorithms.html#gad9872ced82843c0e0864a8e2547ca579">vector_for_each</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> aIter, <span class="keywordtype">void</span>(*aOperation)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter))</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">for</span>(<span class="keywordtype">bool</span> valid = <a class="code hl_function" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a>(&amp;aIter); valid; valid = <a class="code hl_function" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a>(&amp;aIter))</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                aOperation(&amp;aIter);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        }</div>
+</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="group___iterator_algorithms.html#gac5ae89ba507530f7c51c45447efbe4ac">  208</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> <a class="code hl_function" href="group___iterator_algorithms.html#gac5ae89ba507530f7c51c45447efbe4ac">vector_for_n</a>(struct <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> aIter, size_t aN, void(*aOperation)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter))</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">for</span>(<span class="keywordtype">bool</span> valid = <a class="code hl_function" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a>(&amp;aIter); aN &amp;&amp; valid; --aN, valid = <a class="code hl_function" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a>(&amp;aIter))</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                aOperation(&amp;aIter);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">return</span> aIter;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
+</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">#endif </span><span class="comment">/* TVECTOR_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_t_vector_element_8h_html"><div class="ttname"><a href="_t_vector_element_8h.html">TVectorElement.h</a></div><div class="ttdoc">Definice typu Basic VectorElement a implementace API.</div></div>
+<div class="ttc" id="agroup___iterator_algorithms_html_gac5ae89ba507530f7c51c45447efbe4ac"><div class="ttname"><a href="group___iterator_algorithms.html#gac5ae89ba507530f7c51c45447efbe4ac">vector_for_n</a></div><div class="ttdeci">static struct TVectorIterator vector_for_n(struct TVectorIterator aIter, size_t aN, void(*aOperation)(const struct TVectorIterator *aIter))</div><div class="ttdoc">Zavolání zvolené funkce na prvních N elementů vektoru od pozice určené iterátorem.</div><div class="ttdef"><b>Definition</b> TVector.h:208</div></div>
+<div class="ttc" id="agroup___iterator_algorithms_html_gad9872ced82843c0e0864a8e2547ca579"><div class="ttname"><a href="group___iterator_algorithms.html#gad9872ced82843c0e0864a8e2547ca579">vector_for_each</a></div><div class="ttdeci">static void vector_for_each(struct TVectorIterator aIter, void(*aOperation)(const struct TVectorIterator *aIter))</div><div class="ttdoc">Zavolání zvolené funkce na každý element vektoru od pozice určené iterátorem až do konce vektoru.</div><div class="ttdef"><b>Definition</b> TVector.h:195</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_ga3c679c2b2440555118a3d54c6149994e"><div class="ttname"><a href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></div><div class="ttdeci">int TVectorElement</div><div class="ttdoc">Definice typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:20</div></div>
+<div class="ttc" id="agroup___t_vector_html_a27ffb91c868c8e4ecd0f87d21dada53f"><div class="ttname"><a href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">TVector::iSize</a></div><div class="ttdeci">size_t iSize</div><div class="ttdoc">Počet elementů vektoru.</div><div class="ttdef"><b>Definition</b> TVector.h:28</div></div>
+<div class="ttc" id="agroup___t_vector_html_ab60b567f8c925c613e57f82cc8613169"><div class="ttname"><a href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">TVector::iValues</a></div><div class="ttdeci">TVectorElement * iValues</div><div class="ttdoc">Ukazatel na počáteční prvek pole hodnot typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.h:27</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga088d8ae405d0c100abe583c583d27ed3"><div class="ttname"><a href="group___t_vector.html#ga088d8ae405d0c100abe583c583d27ed3">vector_init_random</a></div><div class="ttdeci">bool vector_init_random(struct TVector *aVector, size_t aSize)</div><div class="ttdoc">Alokace vektoru a inicializace jeho elementů na náhodné hodnoty.</div><div class="ttdef"><b>Definition</b> TVector.c:30</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga1eb7199db0e7fd0d114fbf2903f05ca5"><div class="ttname"><a href="group___t_vector.html#ga1eb7199db0e7fd0d114fbf2903f05ca5">vector_init</a></div><div class="ttdeci">bool vector_init(struct TVector *aVector, size_t aSize)</div><div class="ttdoc">Alokace vektoru a inicializace jeho elementů na hodnotu 0.</div><div class="ttdef"><b>Definition</b> TVector.c:13</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga2502e6ec116dbac5e49f5b62b07dc898"><div class="ttname"><a href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a></div><div class="ttdeci">size_t vector_size(const struct TVector *aVector)</div><div class="ttdoc">Přečtení počtu elementů vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:140</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga2b08236d9825632cd96bcc89faed929c"><div class="ttname"><a href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a></div><div class="ttdeci">TVectorElement vector_value(const struct TVector *aVector, size_t aPos)</div><div class="ttdoc">Přečtení hodnoty elementu z vektoru na požadované pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:122</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga41fcff5418fe213f2caaa586f521bcd6"><div class="ttname"><a href="group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6">vector_destroy</a></div><div class="ttdeci">void vector_destroy(struct TVector *aVector)</div><div class="ttdoc">Dealokace vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:177</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga6b0b8780d60dad02b8569be119769548"><div class="ttname"><a href="group___t_vector.html#ga6b0b8780d60dad02b8569be119769548">vector_clone</a></div><div class="ttdeci">bool vector_clone(const struct TVector *aVector, struct TVector *aVectorClone)</div><div class="ttdoc">Vytvoření úplné kopie vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:78</div></div>
+<div class="ttc" id="agroup___t_vector_html_gabc5c4a8f6f5f38932380f5e475ce862f"><div class="ttname"><a href="group___t_vector.html#gabc5c4a8f6f5f38932380f5e475ce862f">vector_store_file</a></div><div class="ttdeci">bool vector_store_file(const struct TVector *aVector, FILE *aOutputFile)</div><div class="ttdoc">Uložení vektoru a jeho elementů do souboru.</div><div class="ttdef"><b>Definition</b> TVector.c:104</div></div>
+<div class="ttc" id="agroup___t_vector_html_gabd5ba54950295545d27b1286234ead39"><div class="ttname"><a href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a></div><div class="ttdeci">void vector_set_value(struct TVector *aVector, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do vektoru na požadovanou pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:131</div></div>
+<div class="ttc" id="agroup___t_vector_html_gabf502ae8257c371ab9c7fb95a242ccb2"><div class="ttname"><a href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a></div><div class="ttdeci">bool vector_resize(struct TVector *aVector, size_t aNewSize)</div><div class="ttdoc">Změna velikosti existujícího vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:148</div></div>
+<div class="ttc" id="agroup___t_vector_html_gac0009a6c19dd42237bbb6af9897f2e44"><div class="ttname"><a href="group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44">vector_init_file</a></div><div class="ttdeci">bool vector_init_file(struct TVector *aVector, FILE *aInputFile)</div><div class="ttdoc">Alokace vektoru a inicializace jeho elementů ze souboru.</div><div class="ttdef"><b>Definition</b> TVector.c:50</div></div>
+<div class="ttc" id="agroup___t_vector_html_struct_t_vector"><div class="ttname"><a href="group___t_vector.html#struct_t_vector">TVector</a></div><div class="ttdoc">Definice typu Vector.</div><div class="ttdef"><b>Definition</b> TVector.h:26</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_a653670a6d238caa045872f0682ec52b3"><div class="ttname"><a href="group___t_vector_iterator.html#a653670a6d238caa045872f0682ec52b3">TVectorIterator::iPos</a></div><div class="ttdeci">size_t iPos</div><div class="ttdoc">Aktuální pozice pro indexaci elementu v navázaném vektoru.</div><div class="ttdef"><b>Definition</b> TVector.h:122</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_a94eb00bd36f00991011b2269f0d71a9f"><div class="ttname"><a href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">TVectorIterator::iVector</a></div><div class="ttdeci">struct TVector * iVector</div><div class="ttdoc">Ukazatel na navázaný vektor (mutable iterátor - umožňuje měnit elementy VectorElement)</div><div class="ttdef"><b>Definition</b> TVector.h:121</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga133f7ac7efd8456d0964bf8fcd2995e6"><div class="ttname"><a href="group___t_vector_iterator.html#ga133f7ac7efd8456d0964bf8fcd2995e6">vector_iterator_pos</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_pos(const struct TVector *aVector, size_t aPos)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na zadanou pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:194</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga3f8a97a63f887539e270f6845bf22b9a"><div class="ttname"><a href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a></div><div class="ttdeci">bool vector_iterator_is_valid(const struct TVectorIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:210</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga40d7eff2ece0eb356d27cdcdef255560"><div class="ttname"><a href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_begin(const struct TVector *aVector)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na počáteční element.</div><div class="ttdef"><b>Definition</b> TVector.c:186</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga4d8032eb9dbbdccf794611f2b0c9821c"><div class="ttname"><a href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a></div><div class="ttdeci">TVectorElement vector_iterator_value(const struct TVectorIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty elementu z vektoru pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:249</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga66f6b96e416a7e593b1cf703f58be7ca"><div class="ttname"><a href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a></div><div class="ttdeci">bool vector_iterator_set_value(const struct TVectorIterator *aIter, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do vektoru pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:257</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga6c42552246c50cfa270c3eb0f58c239a"><div class="ttname"><a href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_last(const struct TVector *aVector)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na poslední element.</div><div class="ttdef"><b>Definition</b> TVector.c:202</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga7ce07cda016d67e3ca891125613ece56"><div class="ttname"><a href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a></div><div class="ttdeci">bool vector_iterator_to_next(struct TVectorIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TVector.c:219</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><div class="ttname"><a href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a></div><div class="ttdeci">bool vector_iterator_to_prev(struct TVectorIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vzad.</div><div class="ttdef"><b>Definition</b> TVector.c:234</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_struct_t_vector_iterator"><div class="ttname"><a href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a></div><div class="ttdoc">Definice typu VectorIterator.</div><div class="ttdef"><b>Definition</b> TVector.h:120</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 5. úno 2024 15.36:06, pro projekt: BPC-ALD: ADT TVector, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

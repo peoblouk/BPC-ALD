@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TVector: 2. Vector</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TVector<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2. Vector</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu Vector a jeho funkcí  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_vector" id="r_struct_t_vector"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_vector">TVector</a></td></tr>
+<tr class="memdesc:struct_t_vector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Vector.  <a href="#struct_t_vector">...</a><br /></td></tr>
+<tr class="separator:struct_t_vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga1eb7199db0e7fd0d114fbf2903f05ca5" id="r_ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1eb7199db0e7fd0d114fbf2903f05ca5">vector_init</a> (struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, size_t aSize)</td></tr>
+<tr class="memdesc:ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů na hodnotu 0.  <br /></td></tr>
+<tr class="separator:ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga088d8ae405d0c100abe583c583d27ed3" id="r_ga088d8ae405d0c100abe583c583d27ed3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga088d8ae405d0c100abe583c583d27ed3">vector_init_random</a> (struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, size_t aSize)</td></tr>
+<tr class="memdesc:ga088d8ae405d0c100abe583c583d27ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů na náhodné hodnoty.  <br /></td></tr>
+<tr class="separator:ga088d8ae405d0c100abe583c583d27ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0009a6c19dd42237bbb6af9897f2e44" id="r_gac0009a6c19dd42237bbb6af9897f2e44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac0009a6c19dd42237bbb6af9897f2e44">vector_init_file</a> (struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, FILE *aInputFile)</td></tr>
+<tr class="memdesc:gac0009a6c19dd42237bbb6af9897f2e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů ze souboru.  <br /></td></tr>
+<tr class="separator:gac0009a6c19dd42237bbb6af9897f2e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b0b8780d60dad02b8569be119769548" id="r_ga6b0b8780d60dad02b8569be119769548"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6b0b8780d60dad02b8569be119769548">vector_clone</a> (const struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, struct <a class="el" href="#struct_t_vector">TVector</a> *aVectorClone)</td></tr>
+<tr class="memdesc:ga6b0b8780d60dad02b8569be119769548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření úplné kopie vektoru.  <br /></td></tr>
+<tr class="separator:ga6b0b8780d60dad02b8569be119769548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc5c4a8f6f5f38932380f5e475ce862f" id="r_gabc5c4a8f6f5f38932380f5e475ce862f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabc5c4a8f6f5f38932380f5e475ce862f">vector_store_file</a> (const struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:gabc5c4a8f6f5f38932380f5e475ce862f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uložení vektoru a jeho elementů do souboru.  <br /></td></tr>
+<tr class="separator:gabc5c4a8f6f5f38932380f5e475ce862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b08236d9825632cd96bcc89faed929c" id="r_ga2b08236d9825632cd96bcc89faed929c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2b08236d9825632cd96bcc89faed929c">vector_value</a> (const struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, size_t aPos)</td></tr>
+<tr class="memdesc:ga2b08236d9825632cd96bcc89faed929c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z vektoru na požadované pozici.  <br /></td></tr>
+<tr class="separator:ga2b08236d9825632cd96bcc89faed929c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd5ba54950295545d27b1286234ead39" id="r_gabd5ba54950295545d27b1286234ead39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabd5ba54950295545d27b1286234ead39">vector_set_value</a> (struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:gabd5ba54950295545d27b1286234ead39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty elementu do vektoru na požadovanou pozici.  <br /></td></tr>
+<tr class="separator:gabd5ba54950295545d27b1286234ead39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2502e6ec116dbac5e49f5b62b07dc898" id="r_ga2502e6ec116dbac5e49f5b62b07dc898"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a> (const struct <a class="el" href="#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga2502e6ec116dbac5e49f5b62b07dc898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení počtu elementů vektoru.  <br /></td></tr>
+<tr class="separator:ga2502e6ec116dbac5e49f5b62b07dc898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf502ae8257c371ab9c7fb95a242ccb2" id="r_gabf502ae8257c371ab9c7fb95a242ccb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a> (struct <a class="el" href="#struct_t_vector">TVector</a> *aVector, size_t aNewSize)</td></tr>
+<tr class="memdesc:gabf502ae8257c371ab9c7fb95a242ccb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Změna velikosti existujícího vektoru.  <br /></td></tr>
+<tr class="separator:gabf502ae8257c371ab9c7fb95a242ccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41fcff5418fe213f2caaa586f521bcd6" id="r_ga41fcff5418fe213f2caaa586f521bcd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga41fcff5418fe213f2caaa586f521bcd6">vector_destroy</a> (struct <a class="el" href="#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga41fcff5418fe213f2caaa586f521bcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dealokace vektoru.  <br /></td></tr>
+<tr class="separator:ga41fcff5418fe213f2caaa586f521bcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu Vector a jeho funkcí </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_vector" id="struct_t_vector"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_vector">&#9670;&#160;</a></span>TVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TVector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu Vector. </p>
+<p>Typ Vector spravuje dynamicky alokované pole prvků typu VectorElement a umožňuje s nimi pracovat pomocí definovaného API. </p><dl class="section invariant"><dt>Invariant</dt><dd>Obecně platný a testovatelný předpoklad: <code>(iValues == NULL &amp;&amp; iSize == 0)</code> nebo <code>(iValues != NULL &amp;&amp; iSize != 0)</code>. </dd></dl>
+</div><div class="dynheader">
+Diagram pro TVector:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_vector__coll__graph.svg" width="207" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:ab60b567f8c925c613e57f82cc8613169" id="r_ab60b567f8c925c613e57f82cc8613169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab60b567f8c925c613e57f82cc8613169">iValues</a></td></tr>
+<tr class="memdesc:ab60b567f8c925c613e57f82cc8613169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ukazatel na počáteční prvek pole hodnot typu VectorElement.  <br /></td></tr>
+<tr class="separator:ab60b567f8c925c613e57f82cc8613169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ffb91c868c8e4ecd0f87d21dada53f" id="r_a27ffb91c868c8e4ecd0f87d21dada53f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a></td></tr>
+<tr class="memdesc:a27ffb91c868c8e4ecd0f87d21dada53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Počet elementů vektoru.  <br /></td></tr>
+<tr class="separator:a27ffb91c868c8e4ecd0f87d21dada53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="ab60b567f8c925c613e57f82cc8613169" name="ab60b567f8c925c613e57f82cc8613169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60b567f8c925c613e57f82cc8613169">&#9670;&#160;</a></span>iValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>* iValues</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ukazatel na počáteční prvek pole hodnot typu VectorElement. </p>
+
+</div>
+</div>
+<a id="a27ffb91c868c8e4ecd0f87d21dada53f" name="a27ffb91c868c8e4ecd0f87d21dada53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ffb91c868c8e4ecd0f87d21dada53f">&#9670;&#160;</a></span>iSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Počet elementů vektoru. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga1eb7199db0e7fd0d114fbf2903f05ca5" name="ga1eb7199db0e7fd0d114fbf2903f05ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1eb7199db0e7fd0d114fbf2903f05ca5">&#9670;&#160;</a></span>vector_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alokace vektoru a inicializace jeho elementů na hodnotu 0. </p>
+<p>Dynamicky alokuje paměť pro pole o zadaném počtu elementů, inicializuje elementy na hodnotu 0. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na místo v paměti určené pro inicializaci vektoru </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSize</td><td>Požadovaný počet elementů vektoru </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl vektor úspěšně alokován a inicializován </dd></dl>
+
+</div>
+</div>
+<a id="ga088d8ae405d0c100abe583c583d27ed3" name="ga088d8ae405d0c100abe583c583d27ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga088d8ae405d0c100abe583c583d27ed3">&#9670;&#160;</a></span>vector_init_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_init_random </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alokace vektoru a inicializace jeho elementů na náhodné hodnoty. </p>
+<p>Dynamicky alokuje paměť pro pole o zadaném počtu elementů, inicializuje elementy na náhodné hodnoty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na místo v paměti určené pro inicializaci vektoru </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSize</td><td>Požadovaný počet elementů vektoru </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl vektor úspěšně alokován a inicializován </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_ga088d8ae405d0c100abe583c583d27ed3_cgraph.svg" width="348" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac0009a6c19dd42237bbb6af9897f2e44" name="gac0009a6c19dd42237bbb6af9897f2e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0009a6c19dd42237bbb6af9897f2e44">&#9670;&#160;</a></span>vector_init_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_init_file </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>aInputFile</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alokace vektoru a inicializace jeho elementů ze souboru. </p>
+<p>Načte ze souboru počet elementů vektoru, dynamicky alokuje paměť pro vektor o načteném počtu elementů, načte ze souboru hodnoty jednotlivých elementů. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na místo v paměti určené pro inicializaci vektoru </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aInputFile</td><td>Ukazatel na soubor otevřený v módu pro čtení </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl vektor z dat v souboru úspěšně alokován a inicializován </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_gac0009a6c19dd42237bbb6af9897f2e44_cgraph.svg" width="324" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_gac0009a6c19dd42237bbb6af9897f2e44_icgraph.svg" width="212" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga6b0b8780d60dad02b8569be119769548" name="ga6b0b8780d60dad02b8569be119769548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b0b8780d60dad02b8569be119769548">&#9670;&#160;</a></span>vector_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_clone </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVectorClone</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vytvoření úplné kopie vektoru. </p>
+<p>Dynamicky alokuje paměť pro nové pole o shodném počtu elementů, nakopíruje hodnoty všech elementů ze starého do nového vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Ukazatel na místo v paměti obsahující zdrojový vektor </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVectorClone</td><td>Ukazatel na místo v paměti určené pro vytvořenou kopii </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl nový vektor úspěšně alokován a inicializován </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_ga6b0b8780d60dad02b8569be119769548_icgraph.svg" width="355" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gabc5c4a8f6f5f38932380f5e475ce862f" name="gabc5c4a8f6f5f38932380f5e475ce862f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc5c4a8f6f5f38932380f5e475ce862f">&#9670;&#160;</a></span>vector_store_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_store_file </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>aOutputFile</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uložení vektoru a jeho elementů do souboru. </p>
+<p>Uloží do souboru počet elementů vektoru a hodnoty jednotlivých elementů. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Ukazatel na existující vektor </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aOutputFile</td><td>Ukazatel na soubor otevřený v módu pro zápis </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl vektor a jeho elementy úspěšně uloženy do souboru </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_gabc5c4a8f6f5f38932380f5e475ce862f_cgraph.svg" width="342" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga2b08236d9825632cd96bcc89faed929c" name="ga2b08236d9825632cd96bcc89faed929c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b08236d9825632cd96bcc89faed929c">&#9670;&#160;</a></span>vector_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> vector_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přečtení hodnoty elementu z vektoru na požadované pozici. </p>
+<p>Vrací hodnotu elementu z požadované pozice (indexu) vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Ukazatel na existující vektor určený pro přečtení hodnoty elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Požadovaná pozice (index) elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Hodnota elementu uložená ve vektoru <code>aVector</code> na pozici <code>aPos</code> </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a rozsah parametru <code>aPos</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_ga2b08236d9825632cd96bcc89faed929c_icgraph.svg" width="202" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gabd5ba54950295545d27b1286234ead39" name="gabd5ba54950295545d27b1286234ead39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd5ba54950295545d27b1286234ead39">&#9670;&#160;</a></span>vector_set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_set_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapsání hodnoty elementu do vektoru na požadovanou pozici. </p>
+<p>Zápis nové hodnoty elementu do vektoru na požadovanou pozici (index). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na existující vektor určený pro zapsání hodnoty elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Požadovaná pozice (index) elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Nová hodnota elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a rozsah parametru <code>aPos</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+
+</div>
+</div>
+<a id="ga2502e6ec116dbac5e49f5b62b07dc898" name="ga2502e6ec116dbac5e49f5b62b07dc898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2502e6ec116dbac5e49f5b62b07dc898">&#9670;&#160;</a></span>vector_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t vector_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přečtení počtu elementů vektoru. </p>
+<p>Vrací velikost (počet elementů) vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Ukazatel na existující vektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Počet elementů vektoru nebo hodnota 0 v případě chyby </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_ga2502e6ec116dbac5e49f5b62b07dc898_icgraph.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gabf502ae8257c371ab9c7fb95a242ccb2" name="gabf502ae8257c371ab9c7fb95a242ccb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf502ae8257c371ab9c7fb95a242ccb2">&#9670;&#160;</a></span>vector_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_resize </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aNewSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Změna velikosti existujícího vektoru. </p>
+<p>Změna počtu elementů vektoru, alokace nové dynamické paměti pro pole o novém počtu prvků, kopie prvků z původního pole, inicializace doplněných prvků na hodnoty 0, dealokace dynamické paměti původního pole. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na existující vektor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aNewSize</td><td>Nový počet elementů vektoru </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl vektor úspěšně přealokován a všechny elementy nového vektoru byly úspěšně inicializovány </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_gabf502ae8257c371ab9c7fb95a242ccb2_icgraph.svg" width="359" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga41fcff5418fe213f2caaa586f521bcd6" name="ga41fcff5418fe213f2caaa586f521bcd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41fcff5418fe213f2caaa586f521bcd6">&#9670;&#160;</a></span>vector_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dealokace vektoru. </p>
+<p>Dealokace dynamicky alokovaného pole, nastavení počtu elementů i ukazatele na hodnotu 0 (NULL). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na existující vektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_ga41fcff5418fe213f2caaa586f521bcd6_icgraph.svg" width="367" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 5. úno 2024 15.36:06, pro projekt: BPC-ALD: ADT TVector, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
