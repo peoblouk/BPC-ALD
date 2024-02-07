@@ -4,6 +4,6 @@
 *.vcxproj.user
 *.vcxproj.filters
 *.vcxproj
-*.sln
+# *.sln
 # ignore ALL files in ANY directory named temp
 temp/
