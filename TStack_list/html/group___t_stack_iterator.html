@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TStack_list: 3. Iterátor zásobníku</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TStack_list<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">3. Iterátor zásobníku</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu StackIterator a jeho funkcí  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_stack_iterator" id="r_struct_t_stack_iterator"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_stack_iterator">TStackIterator</a></td></tr>
+<tr class="memdesc:struct_t_stack_iterator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu StackIterator.  <a href="#struct_t_stack_iterator">...</a><br /></td></tr>
+<tr class="separator:struct_t_stack_iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gaa3bbe9fce0de463850601e23ebc552ff" id="r_gaa3bbe9fce0de463850601e23ebc552ff"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa3bbe9fce0de463850601e23ebc552ff">stack_iterator_begin</a> (const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:gaa3bbe9fce0de463850601e23ebc552ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na vrchol zásobníku.  <br /></td></tr>
+<tr class="separator:gaa3bbe9fce0de463850601e23ebc552ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5a597d5a1e8f27eaac18d9a030997e3" id="r_gad5a597d5a1e8f27eaac18d9a030997e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad5a597d5a1e8f27eaac18d9a030997e3">stack_iterator_is_valid</a> (const struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gad5a597d5a1e8f27eaac18d9a030997e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:gad5a597d5a1e8f27eaac18d9a030997e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa94902ad8202ccc9fdfe08aa660e3903" id="r_gaa94902ad8202ccc9fdfe08aa660e3903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa94902ad8202ccc9fdfe08aa660e3903">stack_iterator_to_next</a> (struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gaa94902ad8202ccc9fdfe08aa660e3903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:gaa94902ad8202ccc9fdfe08aa660e3903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e006b0649df0fac42315afb488f283e" id="r_ga1e006b0649df0fac42315afb488f283e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1e006b0649df0fac42315afb488f283e">stack_iterator_value</a> (const struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga1e006b0649df0fac42315afb488f283e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu ze zásobníku pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga1e006b0649df0fac42315afb488f283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu StackIterator a jeho funkcí </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_stack_iterator" id="struct_t_stack_iterator"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_stack_iterator">&#9670;&#160;</a></span>TStackIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TStackIterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu StackIterator. </p>
+<p>StackIterator se při vzniku naváže na zvolený zásobník a následně umožňuje přistupovat k jednotlivým elementům pomocí definovaného API. </p>
+</div><div class="dynheader">
+Diagram pro TStackIterator:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_stack_iterator__coll__graph.svg" width="254" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:a686714c6e5ceea46d9b066ce8b2ac3d5" id="r_a686714c6e5ceea46d9b066ce8b2ac3d5"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a686714c6e5ceea46d9b066ce8b2ac3d5">iStack</a></td></tr>
+<tr class="memdesc:a686714c6e5ceea46d9b066ce8b2ac3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ukazatel na navázaný zásobník (immutable iterátor - neumožňuje měnit elementy StackElement)  <br /></td></tr>
+<tr class="separator:a686714c6e5ceea46d9b066ce8b2ac3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac16e3bb5d95d598cc4b32e574f7756d" id="r_aac16e3bb5d95d598cc4b32e574f7756d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_t_stack_node.html">TStackNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac16e3bb5d95d598cc4b32e574f7756d">iActual</a></td></tr>
+<tr class="memdesc:aac16e3bb5d95d598cc4b32e574f7756d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ukazatel na aktuální uzel v lineárním jednosměrně vázaného seznamu asociovaného zásobníku.  <br /></td></tr>
+<tr class="separator:aac16e3bb5d95d598cc4b32e574f7756d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="a686714c6e5ceea46d9b066ce8b2ac3d5" name="a686714c6e5ceea46d9b066ce8b2ac3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686714c6e5ceea46d9b066ce8b2ac3d5">&#9670;&#160;</a></span>iStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a>* iStack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ukazatel na navázaný zásobník (immutable iterátor - neumožňuje měnit elementy StackElement) </p>
+
+</div>
+</div>
+<a id="aac16e3bb5d95d598cc4b32e574f7756d" name="aac16e3bb5d95d598cc4b32e574f7756d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac16e3bb5d95d598cc4b32e574f7756d">&#9670;&#160;</a></span>iActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_t_stack_node.html">TStackNode</a>* iActual</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ukazatel na aktuální uzel v lineárním jednosměrně vázaného seznamu asociovaného zásobníku. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="gaa3bbe9fce0de463850601e23ebc552ff" name="gaa3bbe9fce0de463850601e23ebc552ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3bbe9fce0de463850601e23ebc552ff">&#9670;&#160;</a></span>stack_iterator_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> stack_iterator_begin </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vytvoření nového iterátoru ukazujícího na vrchol zásobníku. </p>
+<p>Vytvoří a vrací nový iterátor, který je navázán (asociován) na zadaný zásobník a ukazuje na element na jeho vrcholu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aStack</td><td>Ukazatel na existující zásobník </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Nový iterátor asociovaný se zásobníkem <code>aStack</code> ukazující na element na jeho vrcholu </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_iterator_gaa3bbe9fce0de463850601e23ebc552ff_icgraph.svg" width="248" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gad5a597d5a1e8f27eaac18d9a030997e3" name="gad5a597d5a1e8f27eaac18d9a030997e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5a597d5a1e8f27eaac18d9a030997e3">&#9670;&#160;</a></span>stack_iterator_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stack_iterator_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zjištění platnosti iterátoru. </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu definující platnost iterátoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje na platné místo v asociovaném zásobníku </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_iterator_gad5a597d5a1e8f27eaac18d9a030997e3_icgraph.svg" width="459" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa94902ad8202ccc9fdfe08aa660e3903" name="gaa94902ad8202ccc9fdfe08aa660e3903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa94902ad8202ccc9fdfe08aa660e3903">&#9670;&#160;</a></span>stack_iterator_to_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stack_iterator_to_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru vpřed. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, zajistí jeho posun vpřed (tj. na následující element v asociovaném zásobníku). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociovaném zásobníku </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_iterator_gaa94902ad8202ccc9fdfe08aa660e3903_cgraph.svg" width="360" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_iterator_gaa94902ad8202ccc9fdfe08aa660e3903_icgraph.svg" width="260" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga1e006b0649df0fac42315afb488f283e" name="ga1e006b0649df0fac42315afb488f283e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e006b0649df0fac42315afb488f283e">&#9670;&#160;</a></span>stack_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> stack_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_stack_iterator">TStackIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přečtení hodnoty elementu ze zásobníku pomocí iterátoru. </p>
+<p>Přečte hodnotu elementu zásobníku z pozice určené iterátorem. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Hodnota elementu zásobníku z pozice, na kterou ukazuje iterátor <code>aIter</code>, nebo nulový element (pokud je iterátor neplatný). </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_iterator_ga1e006b0649df0fac42315afb488f283e_cgraph.svg" width="347" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_iterator_ga1e006b0649df0fac42315afb488f283e_icgraph.svg" width="247" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 9. úno 2024 18.47:58, pro projekt: BPC-ALD: ADT TStack_list, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

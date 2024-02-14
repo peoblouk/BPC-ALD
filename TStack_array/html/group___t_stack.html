@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TStack_array: 1. Stack</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TStack_array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#define-members">Definice maker</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">1. Stack</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu Stack a jeho funkcí (realizace zásobníku pomocí pole)  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_stack" id="r_struct_t_stack"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_stack">TStack</a></td></tr>
+<tr class="memdesc:struct_t_stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Stack.  <a href="#struct_t_stack">...</a><br /></td></tr>
+<tr class="separator:struct_t_stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definice maker</h2></td></tr>
+<tr class="memitem:ga89c83fa2e929f394b32c0c3da491b8c4" id="r_ga89c83fa2e929f394b32c0c3da491b8c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga89c83fa2e929f394b32c0c3da491b8c4">STACK_MAXCOUNT</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memdesc:ga89c83fa2e929f394b32c0c3da491b8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximální počet elementů zásobníku.  <br /></td></tr>
+<tr class="separator:ga89c83fa2e929f394b32c0c3da491b8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:gaf59d58ca03bd73614a63d21f615fa52c" id="r_gaf59d58ca03bd73614a63d21f615fa52c"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a></td></tr>
+<tr class="memdesc:gaf59d58ca03bd73614a63d21f615fa52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu StackElement (datový typ elementů zásobníku)  <br /></td></tr>
+<tr class="separator:gaf59d58ca03bd73614a63d21f615fa52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga22a9f4ad0c450cdbbfb7546493b1f781" id="r_ga22a9f4ad0c450cdbbfb7546493b1f781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga22a9f4ad0c450cdbbfb7546493b1f781">stack_init</a> (struct <a class="el" href="#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:ga22a9f4ad0c450cdbbfb7546493b1f781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializace prázdného zásobníku.  <br /></td></tr>
+<tr class="separator:ga22a9f4ad0c450cdbbfb7546493b1f781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2a53c66f9bb439a8749c97f9c9d9f2d" id="r_gab2a53c66f9bb439a8749c97f9c9d9f2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab2a53c66f9bb439a8749c97f9c9d9f2d">stack_is_empty</a> (const struct <a class="el" href="#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:gab2a53c66f9bb439a8749c97f9c9d9f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění, zda je zásobník prázdný  <br /></td></tr>
+<tr class="separator:gab2a53c66f9bb439a8749c97f9c9d9f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac84fd2f3c38113a7d9d4cf5123b581f3" id="r_gac84fd2f3c38113a7d9d4cf5123b581f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac84fd2f3c38113a7d9d4cf5123b581f3">stack_top</a> (const struct <a class="el" href="#struct_t_stack">TStack</a> *aStack, <a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> *aValue)</td></tr>
+<tr class="memdesc:gac84fd2f3c38113a7d9d4cf5123b581f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Získání hodnoty elementu na vrcholu zásobníku.  <br /></td></tr>
+<tr class="separator:gac84fd2f3c38113a7d9d4cf5123b581f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee1e96ca9c6c84eb97fea0a3506938c" id="r_ga8ee1e96ca9c6c84eb97fea0a3506938c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8ee1e96ca9c6c84eb97fea0a3506938c">stack_push</a> (struct <a class="el" href="#struct_t_stack">TStack</a> *aStack, <a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> aValue)</td></tr>
+<tr class="memdesc:ga8ee1e96ca9c6c84eb97fea0a3506938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vložení elementu na vrchol zásobníku.  <br /></td></tr>
+<tr class="separator:ga8ee1e96ca9c6c84eb97fea0a3506938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga480af197cbd84970291358c870ec9b90" id="r_ga480af197cbd84970291358c870ec9b90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga480af197cbd84970291358c870ec9b90">stack_pop</a> (struct <a class="el" href="#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:ga480af197cbd84970291358c870ec9b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odstranění elementu na vrcholu zásobníku.  <br /></td></tr>
+<tr class="separator:ga480af197cbd84970291358c870ec9b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga543615a4df26ed863b9e92228b69d04a" id="r_ga543615a4df26ed863b9e92228b69d04a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga543615a4df26ed863b9e92228b69d04a">stack_destroy</a> (struct <a class="el" href="#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:ga543615a4df26ed863b9e92228b69d04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace zásobníku.  <br /></td></tr>
+<tr class="separator:ga543615a4df26ed863b9e92228b69d04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu Stack a jeho funkcí (realizace zásobníku pomocí pole) </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_stack" id="struct_t_stack"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_stack">&#9670;&#160;</a></span>TStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TStack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu Stack. </p>
+<p>Typ Stack obsahuje pole prvků typu StackElement a umožňuje s nimi pracovat pomocí definovaného API. </p><dl class="section invariant"><dt>Invariant</dt><dd>Obecně platný a testovatelný předpoklad: <code>(iCount &lt; STACK_MAXCOUNT)</code>. </dd></dl>
+</div><div class="dynheader">
+Diagram pro TStack:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_stack__coll__graph.svg" width="195" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:a39274062ec27b82e304940d371743bbf" id="r_a39274062ec27b82e304940d371743bbf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39274062ec27b82e304940d371743bbf">iCount</a></td></tr>
+<tr class="memdesc:a39274062ec27b82e304940d371743bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuální počet elementů zásobníku.  <br /></td></tr>
+<tr class="separator:a39274062ec27b82e304940d371743bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3a61ca0c0b34e398c5edec0101d91e" id="r_a2e3a61ca0c0b34e398c5edec0101d91e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e3a61ca0c0b34e398c5edec0101d91e">iValues</a> [<a class="el" href="#ga89c83fa2e929f394b32c0c3da491b8c4">STACK_MAXCOUNT</a>]</td></tr>
+<tr class="memdesc:a2e3a61ca0c0b34e398c5edec0101d91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole hodnot typu StackElement.  <br /></td></tr>
+<tr class="separator:a2e3a61ca0c0b34e398c5edec0101d91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="a39274062ec27b82e304940d371743bbf" name="a39274062ec27b82e304940d371743bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39274062ec27b82e304940d371743bbf">&#9670;&#160;</a></span>iCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktuální počet elementů zásobníku. </p>
+
+</div>
+</div>
+<a id="a2e3a61ca0c0b34e398c5edec0101d91e" name="a2e3a61ca0c0b34e398c5edec0101d91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3a61ca0c0b34e398c5edec0101d91e">&#9670;&#160;</a></span>iValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> iValues[<a class="el" href="#ga89c83fa2e929f394b32c0c3da491b8c4">STACK_MAXCOUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pole hodnot typu StackElement. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic maker</h2>
+<a id="ga89c83fa2e929f394b32c0c3da491b8c4" name="ga89c83fa2e929f394b32c0c3da491b8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89c83fa2e929f394b32c0c3da491b8c4">&#9670;&#160;</a></span>STACK_MAXCOUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STACK_MAXCOUNT&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximální počet elementů zásobníku. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic typů</h2>
+<a id="gaf59d58ca03bd73614a63d21f615fa52c" name="gaf59d58ca03bd73614a63d21f615fa52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf59d58ca03bd73614a63d21f615fa52c">&#9670;&#160;</a></span>TStackElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice typu StackElement (datový typ elementů zásobníku) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga22a9f4ad0c450cdbbfb7546493b1f781" name="ga22a9f4ad0c450cdbbfb7546493b1f781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22a9f4ad0c450cdbbfb7546493b1f781">&#9670;&#160;</a></span>stack_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stack_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializace prázdného zásobníku. </p>
+<p>Inicializuje složky struktury tak, aby byl výsledkem prázdný zásobník. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aStack</td><td>Ukazatel na místo v paměti určené pro inicializaci zásobníku </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_ga22a9f4ad0c450cdbbfb7546493b1f781_icgraph.svg" width="576" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gab2a53c66f9bb439a8749c97f9c9d9f2d" name="gab2a53c66f9bb439a8749c97f9c9d9f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2a53c66f9bb439a8749c97f9c9d9f2d">&#9670;&#160;</a></span>stack_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stack_is_empty </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zjištění, zda je zásobník prázdný </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu reprezentující test, zda je zásobník prázdný. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aStack</td><td>Ukazatel na existující zásobník </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je zásobník prázdný </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_gab2a53c66f9bb439a8749c97f9c9d9f2d_icgraph.svg" width="591" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac84fd2f3c38113a7d9d4cf5123b581f3" name="gac84fd2f3c38113a7d9d4cf5123b581f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac84fd2f3c38113a7d9d4cf5123b581f3">&#9670;&#160;</a></span>stack_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stack_top </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Získání hodnoty elementu na vrcholu zásobníku. </p>
+<p>Přečte hodnotu elementu na vrcholu zásobníku. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aStack</td><td>Ukazatel na existující zásobník </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aValue</td><td>Ukazatel na místo v paměti určené pro načtení hodnoty elementu z vrcholu zásobníku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota elementu z vrcholu zásobníku úspěšně načtena </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_gac84fd2f3c38113a7d9d4cf5123b581f3_cgraph.svg" width="252" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_gac84fd2f3c38113a7d9d4cf5123b581f3_icgraph.svg" width="424" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga8ee1e96ca9c6c84eb97fea0a3506938c" name="ga8ee1e96ca9c6c84eb97fea0a3506938c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ee1e96ca9c6c84eb97fea0a3506938c">&#9670;&#160;</a></span>stack_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stack_push </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vložení elementu na vrchol zásobníku. </p>
+<p>Vkládá hodnotu elementu na vrchol zásobníku. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aStack</td><td>Ukazatel na existující zásobník určený pro vložení elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu vkládaná do zásobníku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota do zásobníku úspěšně vložena </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_ga8ee1e96ca9c6c84eb97fea0a3506938c_icgraph.svg" width="435" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga480af197cbd84970291358c870ec9b90" name="ga480af197cbd84970291358c870ec9b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga480af197cbd84970291358c870ec9b90">&#9670;&#160;</a></span>stack_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stack_pop </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odstranění elementu na vrcholu zásobníku. </p>
+<p>Odstraní hodnotu elementu na vrcholu zásobníku. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aStack</td><td>Ukazatel na existující zásobník určený pro odstranění elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota ze zásobníku úspěšně odstraněna </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_ga480af197cbd84970291358c870ec9b90_cgraph.svg" width="256" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_ga480af197cbd84970291358c870ec9b90_icgraph.svg" width="428" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga543615a4df26ed863b9e92228b69d04a" name="ga543615a4df26ed863b9e92228b69d04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga543615a4df26ed863b9e92228b69d04a">&#9670;&#160;</a></span>stack_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stack_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_stack">TStack</a> *</td>          <td class="paramname"><span class="paramname"><em>aStack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinicializace zásobníku. </p>
+<p>Deinicializuje zásobník, nastaví počet elementů zásobníku na hodnotu 0. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aStack</td><td>Ukazatel na existující zásobník </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_ga543615a4df26ed863b9e92228b69d04a_cgraph.svg" width="242" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_stack_ga543615a4df26ed863b9e92228b69d04a_icgraph.svg" width="450" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 9. úno 2024 18.47:37, pro projekt: BPC-ALD: ADT TStack_array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<map id="stack_iterator_is_valid" name="stack_iterator_is_valid">
+<area shape="rect" id="Node000001" title="Zjištění platnosti iterátoru." alt="" coords="303,25,453,51"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,25,56,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,25,254,15,179,9,105,15,57,30,55,25,103,10,179,3,255,10,314,20"/>
+<area shape="rect" id="Node000003" href="$group___t_stack_iterator.html#gaa94902ad8202ccc9fdfe08aa660e3903" title="Posunutí iterátoru vpřed." alt="" coords="104,25,255,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,41,255,41,255,35,289,35"/>
+<area shape="rect" id="Node000004" href="$group___t_stack_iterator.html#ga1e006b0649df0fac42315afb488f283e" title="Přečtení hodnoty elementu ze zásobníku pomocí iterátoru." alt="" coords="111,75,248,100"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="314,57,232,77,231,72,312,51"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="90,41,56,41,56,35,90,35"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="127,73,55,49,57,44,128,68"/>
+</map>

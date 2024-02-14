@@ -1,0 +1,11 @@
+<map id="TStack.c" name="TStack.c">
+<area shape="rect" id="Node000001" title="Implementace API pro typ zásobník (realizace pomocí lineárního jednosměrně vázaného seznamu)" alt="" coords="99,5,173,31"/>
+<area shape="rect" id="Node000002" href="$_t_stack_8h.html" title="Definice typu zásobník (realizace pomocí lineárního jednosměrně vázaného seznamu)" alt="" coords="99,79,173,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,31,139,65,133,65,133,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,106,70,146,67,141,119,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,152,168,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="139,104,139,138,133,138,133,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="193,152,261,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="152,102,203,141,199,145,149,106"/>
+</map>

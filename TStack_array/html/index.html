@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TStack_array: Zadání cvičení 2</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TStack_array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 2 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv02__zadani___t_stack"></a> Dokončete implementaci níže uvedených funkcí realizujících operace pro ADT Zásobník. Na dodaném příkladu si také vyzkoušejte přístup k elementům datových struktury zásobník pomocí <a href="https://en.wikipedia.org/wiki/Iterator_pattern" title="Návrhový vzor iterátor představuje jednoduchý abstraktní datový typ, jehož účelem je obecná reprezentace pozice v kontejneru. Umožňuje zobecnit algoritmus procházení všemi elementy kontejneru tak, aby nebyl závislý na konkrétní implementaci kontejneru.">iterátoru</a> a společného rozhraní. Realizujte zásobník ve dvou variantách:</p><ol type="1">
+<li>pomocí pole (projekt <code>TStack_array</code>),</li>
+<li>pomocí <a href="https://cs.wikipedia.org/wiki/Line%C3%A1rn%C3%AD_seznam">lineárního jednosměrně vázaného seznamu</a> (projekt <code>TStack_list</code>).</li>
+</ol>
+<p>Pro obě varianty napište (stejně pojmenované) funkce rozhraní a iterátory tak, aby bylo možné obě varianty řešení (bez dalších úprav) použít v dodané vzorové funkci <code><a class="el" href="group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main()</a></code>, kde je zásobník využíván v úloze tisku znaků v opačném pořadí, než byly načteny.</p>
+<p>Pokuste se odpovědět si na tyto otázky:</p><ul>
+<li>Co je to zásobník?</li>
+<li>Jaké má zásobník vlastnosti?</li>
+<li>Co je to rozhraní?</li>
+<li>Jaké jsou základní funkce pro práci se zásobníkem?</li>
+<li>Proč je zásobník vhodný pro realizaci úlohy tisku načtených znaků pozpátku?</li>
+<li>Jak funguje zásobník realizovaný pomocí pole?</li>
+<li>Jak funguje zásobník realizovaný pomocí lineárního jednosměrně vázaného seznamu?</li>
+<li>Co je to lineární vázaný seznam a jaké varianty takovýchto seznamů existují?</li>
+<li>Co je to iterátor?</li>
+<li>Proč iterátory používáme?</li>
+<li>Jaká je výhoda iterátorů a jejich jednotného rozhraní?</li>
+<li>Pro realizaci zásobníku pomocí pole/seznamu bude výhodnější nový element přidávat vždy na začátek/konec a odebírat ze začátku/konce?</li>
+</ul>
+<p>Pro řešení jsou připraveny zdrojové texty, z nichž soubor <code><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí pole)">TStack.c</a></code> je nutné doplnit o kód těl funkcí. Pro vlastní testování je připravena funkce <code><a class="el" href="group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main()</a></code>, která je stejná v obou variantách realizace. Tato funkce provede inicializaci (a na konci "úklid") proměnné reprezentující zásobník. Z důvodu testování jednotlivých funkcí provede uložení a výběr elementů ze zásobníku i jejich tisk využitím iterátoru. Následně zavolá funkci pro tisk řetězce pozpátku <code><a class="el" href="group___main_program.html#ga367aadf6f2e33e86efe4a50daff32e81" title="Testování API Stack.">demo_tiskni_slova_pozpatku()</a></code>.</p>
+<p>Funkce <code><a class="el" href="group___main_program.html#ga367aadf6f2e33e86efe4a50daff32e81" title="Testování API Stack.">demo_tiskni_slova_pozpatku()</a></code> načte z konzoly znaky, které ukládá po slovech do zásobníku. Slovo obsahuje pouze písmena a číslice. Po ukončení slova, následně znaky ze zásobníku vybírá, ruší a tiskne.</p>
+<h1>1. Realizace zásobníku pomocí pole <code>TStack_array</code></h1>
+<p>V souboru <code><a class="el" href="_t_stack_8h.html" title="Definice typu zásobník (realizace pomocí pole)">TStack.h</a></code> je definováno rozhraní pro použití ADT Zásobník. Dále je zde definován datový typ, jehož hodnoty bude možné do zásobníku ukládat a to pomocí klíčového slova <code>typedef</code>. Název typu <code><a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c" title="Definice typu StackElement (datový typ elementů zásobníku)">TStackElement</a></code> je nutné používat všude tam, kde se pracuje s typem element zásobníku. Struktura <code><a class="el" href="group___t_stack.html#struct_t_stack" title="Definice typu Stack.">TStack</a></code>, reprezentující vlastní zásobník obsahuje složky: <code>iValues</code> - "nedynamické" pole o pevné velikosti definované pomocí <code>STACK_MAXCOUNT</code> a <code>iCount</code> - počet elementů uložených v zásobníku. V souboru <code><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí pole)">TStack.c</a></code> dokončete implementaci jednotlivých funkcí, které reprezentují operace ADT Zásobník.</p>
+<p>Popis funkcí, které je nutné realizovat v projektu <code>TStack_array</code>: </p><pre class="fragment">void stack_init(struct TStack *aStack);
+    // Prvotní nastavení vnitřních proměnných zásobníku.
+    // Pokud parametr aStack není NULL,
+    // nastav počet elementů v zásobníku na nulu.
+
+bool stack_is_empty(const struct TStack *aStack);
+    // Test, zda je zásobník prázdný (tj. neobsahuje žádné elementy).
+    // Pokud parametr aStack není NULL a pokud zásobník obsahuje alespoň jeden element, vrať false,
+    // jinak vrať true.
+
+bool /* TStackIterator */ stack_top(const struct TStack *aStack, TStackElement *aValue);
+    // Do paměti na kterou ukazuje parametr aValue, ulož (hodnotovou) kopii elementu z vrcholu zásobníku.
+    // Pokud parametr aStack není NULL, zásobník není prázdný a parametr aValue typu ukazatel není NULL,
+    // zkopíruj hodnotu elementu z vrcholu zásobníku do paměti, na kterou ukazuje parametr aValue, a vrať true,
+    // jinak vrať false.
+
+bool stack_push(struct TStack *aStack, TStackElement aValue);
+    // Vložení hodnoty do zásobníku na další volnou pozici.
+    // Pokud parametr aStack není NULL a pokud zásobník není plný,
+    // umísti hodnotu elementu aValue na vrchol zásobníku,
+    // inkrementuj počet elementů v zásobníku a vrať true,
+    // jinak vrať false.
+
+bool stack_pop(struct TStack *aStack);
+    // Odstraní element na vrcholu zásobníku (bez vracení jeho hodnoty).
+    // Pokud parametr aStack není NULL a zásobník není prázdný,
+    // zruš hodnotu na vrcholu zásobníku (tj. dekrementuj počet elementů zásobníku o jeden) a vrať true,
+    // jinak vrať false.
+
+void stack_destroy(struct TStack *aStack);
+    // Zrušení obsahu zásobníku.
+    // Jelikož tato varianta zásobníku nevyužívá dynamickou alokaci,
+    // stačí ke zrušení zásobníku pouze nastavení počtu vložených elementů na nulu (tj. lze zde využít volání funkce stack_init).
+</pre><p> Struktura <code><a class="el" href="group___t_stack_iterator.html#struct_t_stack_iterator" title="Definice typu StackIterator.">TStackIterator</a></code> obsahuje ukazatel <code>iStack</code> odkazující na zásobník, se kterým byl iterátor při svém vzniku propojen (asociován) a také pozici elementu <code>iPos</code> na který iterátor aktuálně odkazuje. Iterátor prochází elementy od vrcholu zásobníku k jeho dnu, bez možnosti jejich odstranění - pouze vrací jejich hodnoty. <br  />
+ Otázkou návrhu, je nutnost si stanovit, jaké by mělo být chování iterátoru v případě, že byl do zásobníku v mezičase přidán nebo ze zásobníku odebrán element (nejlépe je skutečnost patrná v případě smazání elementu, na který právě iterátor "ukazuje"). <br  />
+ <b>V našem případě předpokládáme, že pokud uživatel změní zásobník, přestane využívat stávající iterátory, které s ním byly asociovány. A vytvoří si případně iterátory zcela nové.</b></p>
+<p>API pro práci s iterátory: </p><pre class="fragment">struct TStackIterator stack_iterator_begin(const struct TStack *aStack);
+    // Slouží pro inicializaci a asociaci/propojení iterátoru se zásobníkem a nastavení na pozici prvního elementu v zásobníku.
+    // Pokud předaný zásobník existuje (tj. aStack není NULL) a zásobník není prázdný,
+    // ulož do iterátoru adresu asociovaného zásobníku.
+    // Dále nastav v iterátoru složku iPos na počátek zásobníku
+    // (počátkem zásobníku je element, který se bude první vybírat, tedy jeho vrchol),
+    // vrať hodnotu vytvořeného iterátoru.
+    // Jinak vrať iterátor s vynulovanými vnitřními složkami.
+
+bool stack_iterator_is_valid(const struct TStackIterator *aIter);
+    // Zjistí, zda iterátor odkazuje na platná data zásobníku.
+    // Pokud parametr aIter není NULL a
+    // pokud je iterátor asociován s platným zásobníkem a
+    // pokud iterátor odkazuje do oblasti platných dat zásobníku, vrať true,
+    // jinak vrať false.
+
+bool stack_iterator_to_next(struct TStackIterator *aIter);
+    // Posun na další element v zásobníku.
+    // Pokud již další element v zásobníku neexistuje a iterátor ukazuje mimo zásobník,
+    // funkce vrací false, jinak vrací true.
+    // Pokud je ukazatel aIter platný a iterátor je asociován s platným zásobníkem, pokračuj, jinak vrať false.
+    // Pokud iterátor neukazuje složkou iPos na element umístěný na dně zásobníku a také
+    // odkazovaná pozice není mimo rozsah daný počtem elementů zásobníku, 
+    // posuň iterátor na další pozici v zásobníku a vrať true.
+    // Jinak nastav iterátor jako nevalidní (zrušte propojení iterátoru s asociovaným zásobníkem) a vrať false.
+
+TStackElement stack_iterator_value(const struct TStackIterator *aIter);
+    // Vrátí kopii hodnoty elementu zásobníku, na který iterátor aktuálně odkazuje.
+    // Pokud je iterátor validní, vrať hodnotu elementu, na který iterátor aktuálně odkazuje,
+    // jinak vrať nulový element.
+</pre> <h1>2. Realizace zásobníku pomocí lineárního jednosměrně vázaného seznamu <code>TStack_list</code></h1>
+<p>Oproti realizaci zásobníku pomocí pole, se implementace pomocí lineárního jednosměrně vázaného seznamu (dále jen seznamu) liší pouze vnitřní realizací dat (ve struktuře <code><a class="el" href="group___t_stack.html#struct_t_stack" title="Definice typu Stack.">TStack</a></code>) a vnitřní implementací funkcí ve zdrojovém souboru <code><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí pole)">TStack.c</a></code>. Popis kódu funkcí je podobný - pouze je přizpůsoben realizaci pomocí seznamu. Rozhraní všech funkcí zůstane stejné. Soubor <code><a class="el" href="_t_stack_8h.html" title="Definice typu zásobník (realizace pomocí pole)">TStack.h</a></code> opět udává rozhraní ADT Zásobník a soubor <code><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí pole)">TStack.c</a></code> obsahuje implementaci jednotlivých operací.</p>
+<p>Datový typ, jehož hodnoty bude možné do zásobníku ukládat, je opětovně definován pomocí klíčového slova <code>typedef</code>. Název typu <code><a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c" title="Definice typu StackElement (datový typ elementů zásobníku)">TStackElement</a></code> je nutné používat všude tam, kde se pracuje s typem element zásobníku. Struktura <code><a class="el" href="group___t_stack.html#struct_t_stack" title="Definice typu Stack.">TStack</a></code>, určená pro vlastní zásobník obsahuje tentokrát pouze odkaz na první uzel seznamu.</p>
+<p>Uzel seznamu je struktura <code>TStackNode</code>, která obsahuje data: <code>iValue</code> a ukazatel na další uzel seznamu: <code>iNext</code>. Poslední uzel seznamu má ukazatel <code>iNext</code> nastaven na hodnotu <code>NULL</code>. Pro ADT zásobník s implementací pomocí lineárního jednosměrně vázaného seznamu je z důvodů časové složitosti výhodná strategie přidávání (i odebírání) elementu ze začátku seznamu.</p>
+<p>Všimněte si, že definice typu <code>TStackNode</code> není <b>záměrně</b> uvedena v souboru <code><a class="el" href="_t_stack_8h.html" title="Definice typu zásobník (realizace pomocí pole)">TStack.h</a></code>, ale je zapsána až v souboru <code><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí pole)">TStack.c</a></code>. Přístup ke složkám struktury <code>TStackNode</code> je tak omezen pouze na funkce uvedené v souboru <code><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí pole)">TStack.c</a></code>. Tato skutečnost nám umožňuje skrýt vnitřní implementaci vázaného seznamu před ostatními zdrojovými texty programu a zabránit tak náhodné nebo i úmyslné modifikaci těchto složek. V definici struktury <code><a class="el" href="group___t_stack.html#struct_t_stack" title="Definice typu Stack.">TStack</a></code> v souboru <code><a class="el" href="_t_stack_8h.html" title="Definice typu zásobník (realizace pomocí pole)">TStack.h</a></code> je potom pro složku <code>iTop</code> uveden neúplně definovaný (tzv. neprůhledný / <em>opaque</em>) ukazatel na typ <code>TStackNode</code>, tento programátorský <a href="https://en.wikipedia.org/wiki/Programming_idiom">idiom</a> se nazývá <em>Pointer to IMPLementation - <a href="https://en.wikipedia.org/wiki/Opaque_pointer" title="Tato technika je popsána v knize Návrhové vzory jako vzor Bridge. Neprůhledné ukazatele jsou způsobem, jak skrýt implementační detaily rozhraní před klienty, kteří využívají jeho funkce. To je výhodné i pro programátora, protože lze vytvořit jednoduché veřejné rozhraní a většinu implementačních detailů skrýt v jiném zdrojovém souboru.">PIMPL</a></em> a budeme ho využívat právě k rozdělení na:</p><ul>
+<li><b>vnější / veřejné</b> - obecně dostupné rozhraní (<em>public interface</em>),</li>
+<li><b>vnitřní / soukromé</b> - rozhraní nedostupné z ostatních zdrojových souborů (<em>private interface</em>).</li>
+</ul>
+<p>Popis funkcí, které je nutné realizovat v projektu <code>TStack_list</code>: </p><pre class="fragment">void stack_init(struct TStack *aStack);
+    // Prvotní nastavení vnitřních proměnných zásobníku.
+    // Pokud parametr aStack není NULL,
+    // nastav vnitřní složku iTop odkazující na vrcholový uzel seznamu na hodnotu NULL.
+
+bool stack_is_empty(const struct TStack *aStack);
+    // Test, zda je zásobník prázdný (tj. neobsahuje žádné elementy).
+    // Pokud parametr aStack není NULL a pokud má vnitřní složka iTop odkazující na
+    // vrcholový uzel hodnotu různou od NULL (tj. zásobník není prázdný) vrať false,
+    // jinak vrať true.
+
+bool /* TStackIterator */ stack_top(const struct TStack *aStack, TStackElement *aValue);
+    // Do paměti na kterou ukazuje parametr aValue, ulož (hodnotovou) kopii elementu z vrcholu zásobníku.
+    // Pokud parametr aStack není NULL, zásobník není prázdný a parametr aValue typu ukazatel není NULL,
+    // zkopíruj hodnotu elementu z vrcholu zásobníku do paměti, na kterou ukazuje parametr aValue, a vrať true,
+    // jinak vrať false.
+
+bool stack_push(struct TStack *aStack, TStackElement aValue);
+    // Vložení hodnoty do zásobníku na další volnou pozici.
+    // Pokud parametr aStack není NULL,
+    // vytvoř nový uzel a zapiš do něj předanou hodnotu elementu aValue,
+    // umísti nový uzel na vrchol zásobníku (tj. do nově vytvořeného uzlu zapiš odkaz na počáteční uzel seznamu a
+    // v zásobníku do odkazu na počáteční uzel iTop vlož adresu nově vytvořeného uzlu).
+    // Pokud operace skončila úspěšně, vrať true,
+    // jinak vrať false.
+
+bool stack_pop(struct TStack *aStack);
+    // Odstraní element na vrcholu zásobníku (bez vracení jeho hodnoty).
+    // Pokud parametr aStack je roven NULL a nebo je zásobník prázdný, vrať false.
+    // Jinak zruš uzel na vrcholu zásobníku (tj. nejprve si zapamatuj odkaz na počáteční uzel seznamu,
+    // ve složce zásobníku iTop změň odkaz z počátečního uzlu až na druhý uzel; dealokuj první uzel pomocí
+    // zapamatovaného odkazu), vrať true.
+
+void stack_destroy(struct TStack *aStack);
+    // Zrušení obsahu zásobníku. Odstraní (dealokuje) všechny uzly, které zásobník obsahuje.
+    // Pokud parametr aStack není NULL,
+    // nastav a zapamatuj si odkaz na aktuální uzel (tj. počáteční uzel seznamu),
+    // nastav odkaz na první uzel zásobníku iTop na NULL.
+    // Pro všechny uzly seznamu, opakuj:
+    // - zapamatuj si odkaz na rušený uzel,
+    // - nastav aktuální uzel na následující uzel,
+    // - dealokuj rušený uzel pomocí zapamatovaného odkazu.
+</pre><p> Struktura <code><a class="el" href="group___t_stack_iterator.html#struct_t_stack_iterator" title="Definice typu StackIterator.">TStackIterator</a></code> obsahuje ukazatel odkazující na zásobník <code>iStack</code>, se kterým byl iterátor při svém vzniku asociován a pozici <code>iActual</code> (ukazatel na aktuální uzel). Iterátor prochází uzly od vrcholu zásobníku k jeho dnu, bez možnosti jejich odstranění - pouze vrací jejich hodnoty. Procházíme tedy od prvního k poslednímu uzlu seznamu. V průběhu využívání iterátorů opět předpokládáme neměnnost odkazovaného zásobníku.</p>
+<p>API pro práci s iterátory: </p><pre class="fragment">struct TStackIterator stack_iterator_begin(const struct TStack *aStack);
+    // Slouží pro inicializaci a asociaci/propojení iterátoru se zásobníkem a nastavení na pozici prvního elementu v zásobníku.
+    // Pokud předaný zásobník existuje (tj. aStack není NULL) a zásobník není prázdný,
+    // ulož do iterátoru adresu asociovaného zásobníku.
+    // Dále nastav iterátor na počátek zásobníku
+    // (počátkem zásobníku je element, který se bude první odebírat, tedy jeho vrchol),
+    // vrať hodnotu vytvořeného iterátoru.
+    // Jinak vrať iterátor s vynulovanými vnitřními složkami.
+
+bool stack_iterator_is_valid(const struct TStackIterator *aIter);
+    // Zjistí, zda iterátor odkazuje na platná data zásobníku.
+    // Pokud parametr aIter není NULL a
+    // pokud je iterátor asociován s platným zásobníkem (tj. má platnou adresu iStack) a
+    // pokud v zásobníku jsou platná data (tj. v odkazu zásobníku je platný ukazatel iTop) a
+    // pokud obsahuje iterátor platný ukazatel na aktuální uzel iActual (tj. není NULL), vrať true,
+    // jinak vrať false.
+
+bool stack_iterator_to_next(struct TStackIterator *aIter);
+    // Posun na další element v zásobníku.
+    // Pokud již další element v zásobníku neexistuje (tj. byl již vyčten
+    // poslední element zásobníku a iterátor ukazuje mimo zásobník), funkce vrací false, jinak vrací true.
+    // Pokud je ukazatel aIter platný a iterátor je asociován s platným zásobníkem, pokračuj, jinak vrať false.
+    // Pokud je iterátor validní (tj. ukazuje na platný uzel seznamu),
+    // posuň iterátor na další uzel seznamu,
+    // pokud nyní iterátor neodkazuje na uzel s adresou NULL, vrať true, jinak vrať false.
+
+TStackElement stack_iterator_value(const struct TStackIterator *aIter);
+    // Vrátí kopii hodnoty elementu zásobníku, na který iterátor aktuálně odkazuje.
+    // Pokud je iterátor validní, vrať hodnotu elementu, na který iterátor aktuálně odkazuje,
+    // jinak vrať nulový element.
+</pre> <hr  />
+<p> <code>$Id: <a class="el" href="cv02__zadani___t_stack_8md.html">cv02_zadani_TStack.md</a> 2588 2024-02-09 17:29:02Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 9. úno 2024 18.47:37, pro projekt: BPC-ALD: ADT TStack_array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

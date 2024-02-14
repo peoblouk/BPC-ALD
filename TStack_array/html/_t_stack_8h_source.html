@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TStack_array: Zdrojový soubor TStack.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TStack_array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_1d111a036dc26417a26af0fafe10f727.html">TStack_array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TStack.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_stack_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TSTACK_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TSTACK_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">   18</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a>;                                      </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group___t_stack.html#ga89c83fa2e929f394b32c0c3da491b8c4">   20</a></span><span class="preprocessor">#define STACK_MAXCOUNT 1024                                     </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___t_stack.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___t_stack.html#a39274062ec27b82e304940d371743bbf">   28</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_stack.html#a39274062ec27b82e304940d371743bbf">iCount</a>;                                                  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group___t_stack.html#a2e3a61ca0c0b34e398c5edec0101d91e">   29</a></span>        <a class="code hl_typedef" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> <a class="code hl_variable" href="group___t_stack.html#a2e3a61ca0c0b34e398c5edec0101d91e">iValues</a>[<a class="code hl_define" href="group___t_stack.html#ga89c83fa2e929f394b32c0c3da491b8c4">STACK_MAXCOUNT</a>];  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        };</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_stack.html#ga22a9f4ad0c450cdbbfb7546493b1f781">stack_init</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_stack.html#gab2a53c66f9bb439a8749c97f9c9d9f2d">stack_is_empty</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">bool</span> <span class="comment">/* TStackIterator */</span> <a class="code hl_function" href="group___t_stack.html#gac84fd2f3c38113a7d9d4cf5123b581f3">stack_top</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack, <a class="code hl_typedef" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> *aValue);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_stack.html#ga8ee1e96ca9c6c84eb97fea0a3506938c">stack_push</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack, <a class="code hl_typedef" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> aValue);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_stack.html#ga480af197cbd84970291358c870ec9b90">stack_pop</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_stack.html#ga543615a4df26ed863b9e92228b69d04a">stack_destroy</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack);</div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="group___t_stack_iterator.html">   83</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="group___t_stack_iterator.html#a686714c6e5ceea46d9b066ce8b2ac3d5">   85</a></span>        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *<a class="code hl_variable" href="group___t_stack_iterator.html#a686714c6e5ceea46d9b066ce8b2ac3d5">iStack</a>;    </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="group___t_stack_iterator.html#a653670a6d238caa045872f0682ec52b3">   86</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_stack_iterator.html#a653670a6d238caa045872f0682ec52b3">iPos</a>;                                    </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        };</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> <a class="code hl_function" href="group___t_stack_iterator.html#gaa3bbe9fce0de463850601e23ebc552ff">stack_iterator_begin</a>(const struct <a class="code hl_struct" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_stack_iterator.html#gad5a597d5a1e8f27eaac18d9a030997e3">stack_iterator_is_valid</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> *aIter);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_stack_iterator.html#gaa94902ad8202ccc9fdfe08aa660e3903">stack_iterator_to_next</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> *aIter);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><a class="code hl_typedef" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> <a class="code hl_function" href="group___t_stack_iterator.html#ga1e006b0649df0fac42315afb488f283e">stack_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> *aIter);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#endif </span><span class="comment">/* TSTACK_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup___t_stack_html_a2e3a61ca0c0b34e398c5edec0101d91e"><div class="ttname"><a href="group___t_stack.html#a2e3a61ca0c0b34e398c5edec0101d91e">TStack::iValues</a></div><div class="ttdeci">TStackElement iValues[STACK_MAXCOUNT]</div><div class="ttdoc">Pole hodnot typu StackElement.</div><div class="ttdef"><b>Definition</b> TStack.h:29</div></div>
+<div class="ttc" id="agroup___t_stack_html_a39274062ec27b82e304940d371743bbf"><div class="ttname"><a href="group___t_stack.html#a39274062ec27b82e304940d371743bbf">TStack::iCount</a></div><div class="ttdeci">size_t iCount</div><div class="ttdoc">Aktuální počet elementů zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.h:28</div></div>
+<div class="ttc" id="agroup___t_stack_html_ga22a9f4ad0c450cdbbfb7546493b1f781"><div class="ttname"><a href="group___t_stack.html#ga22a9f4ad0c450cdbbfb7546493b1f781">stack_init</a></div><div class="ttdeci">void stack_init(struct TStack *aStack)</div><div class="ttdoc">Inicializace prázdného zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.c:10</div></div>
+<div class="ttc" id="agroup___t_stack_html_ga480af197cbd84970291358c870ec9b90"><div class="ttname"><a href="group___t_stack.html#ga480af197cbd84970291358c870ec9b90">stack_pop</a></div><div class="ttdeci">bool stack_pop(struct TStack *aStack)</div><div class="ttdoc">Odstranění elementu na vrcholu zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.c:43</div></div>
+<div class="ttc" id="agroup___t_stack_html_ga543615a4df26ed863b9e92228b69d04a"><div class="ttname"><a href="group___t_stack.html#ga543615a4df26ed863b9e92228b69d04a">stack_destroy</a></div><div class="ttdeci">void stack_destroy(struct TStack *aStack)</div><div class="ttdoc">Deinicializace zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.c:52</div></div>
+<div class="ttc" id="agroup___t_stack_html_ga89c83fa2e929f394b32c0c3da491b8c4"><div class="ttname"><a href="group___t_stack.html#ga89c83fa2e929f394b32c0c3da491b8c4">STACK_MAXCOUNT</a></div><div class="ttdeci">#define STACK_MAXCOUNT</div><div class="ttdoc">Maximální počet elementů zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.h:20</div></div>
+<div class="ttc" id="agroup___t_stack_html_ga8ee1e96ca9c6c84eb97fea0a3506938c"><div class="ttname"><a href="group___t_stack.html#ga8ee1e96ca9c6c84eb97fea0a3506938c">stack_push</a></div><div class="ttdeci">bool stack_push(struct TStack *aStack, TStackElement aValue)</div><div class="ttdoc">Vložení elementu na vrchol zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.c:32</div></div>
+<div class="ttc" id="agroup___t_stack_html_gab2a53c66f9bb439a8749c97f9c9d9f2d"><div class="ttname"><a href="group___t_stack.html#gab2a53c66f9bb439a8749c97f9c9d9f2d">stack_is_empty</a></div><div class="ttdeci">bool stack_is_empty(const struct TStack *aStack)</div><div class="ttdoc">Zjištění, zda je zásobník prázdný</div><div class="ttdef"><b>Definition</b> TStack.c:16</div></div>
+<div class="ttc" id="agroup___t_stack_html_gac84fd2f3c38113a7d9d4cf5123b581f3"><div class="ttname"><a href="group___t_stack.html#gac84fd2f3c38113a7d9d4cf5123b581f3">stack_top</a></div><div class="ttdeci">bool stack_top(const struct TStack *aStack, TStackElement *aValue)</div><div class="ttdoc">Získání hodnoty elementu na vrcholu zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.c:23</div></div>
+<div class="ttc" id="agroup___t_stack_html_gaf59d58ca03bd73614a63d21f615fa52c"><div class="ttname"><a href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a></div><div class="ttdeci">int TStackElement</div><div class="ttdoc">Definice typu StackElement (datový typ elementů zásobníku)</div><div class="ttdef"><b>Definition</b> TStack.h:18</div></div>
+<div class="ttc" id="agroup___t_stack_html_struct_t_stack"><div class="ttname"><a href="group___t_stack.html#struct_t_stack">TStack</a></div><div class="ttdoc">Definice typu Stack.</div><div class="ttdef"><b>Definition</b> TStack.h:27</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_a653670a6d238caa045872f0682ec52b3"><div class="ttname"><a href="group___t_stack_iterator.html#a653670a6d238caa045872f0682ec52b3">TStackIterator::iPos</a></div><div class="ttdeci">size_t iPos</div><div class="ttdoc">Aktuální pozice pro indexaci elementu v navázaném zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.h:86</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_a686714c6e5ceea46d9b066ce8b2ac3d5"><div class="ttname"><a href="group___t_stack_iterator.html#a686714c6e5ceea46d9b066ce8b2ac3d5">TStackIterator::iStack</a></div><div class="ttdeci">const struct TStack * iStack</div><div class="ttdoc">Ukazatel na navázaný zásobník (immutable iterátor - neumožňuje měnit elementy StackElement)</div><div class="ttdef"><b>Definition</b> TStack.h:85</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_ga1e006b0649df0fac42315afb488f283e"><div class="ttname"><a href="group___t_stack_iterator.html#ga1e006b0649df0fac42315afb488f283e">stack_iterator_value</a></div><div class="ttdeci">TStackElement stack_iterator_value(const struct TStackIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty elementu ze zásobníku pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TStack.c:89</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_gaa3bbe9fce0de463850601e23ebc552ff"><div class="ttname"><a href="group___t_stack_iterator.html#gaa3bbe9fce0de463850601e23ebc552ff">stack_iterator_begin</a></div><div class="ttdeci">struct TStackIterator stack_iterator_begin(const struct TStack *aStack)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na vrchol zásobníku.</div><div class="ttdef"><b>Definition</b> TStack.c:57</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_gaa94902ad8202ccc9fdfe08aa660e3903"><div class="ttname"><a href="group___t_stack_iterator.html#gaa94902ad8202ccc9fdfe08aa660e3903">stack_iterator_to_next</a></div><div class="ttdeci">bool stack_iterator_to_next(struct TStackIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TStack.c:74</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_gad5a597d5a1e8f27eaac18d9a030997e3"><div class="ttname"><a href="group___t_stack_iterator.html#gad5a597d5a1e8f27eaac18d9a030997e3">stack_iterator_is_valid</a></div><div class="ttdeci">bool stack_iterator_is_valid(const struct TStackIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> TStack.c:65</div></div>
+<div class="ttc" id="agroup___t_stack_iterator_html_struct_t_stack_iterator"><div class="ttname"><a href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a></div><div class="ttdoc">Definice typu StackIterator.</div><div class="ttdef"><b>Definition</b> TStack.h:84</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 9. úno 2024 18.47:37, pro projekt: BPC-ALD: ADT TStack_array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

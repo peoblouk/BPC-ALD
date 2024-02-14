@@ -1,0 +1,12 @@
+<map id="stack_init" name="stack_init">
+<area shape="rect" id="Node000001" title="Inicializace prázdného zásobníku." alt="" coords="492,31,571,56"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#ga367aadf6f2e33e86efe4a50daff32e81" title="Testování API Stack." alt="" coords="104,31,292,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,46,292,46,292,41,477,41"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="478,34,444,28,348,16,274,9,199,10,105,22,57,36,55,31,103,17,199,5,274,4,349,10,444,22,479,28"/>
+<area shape="rect" id="Node000004" href="$group___t_stack.html#ga543615a4df26ed863b9e92228b69d04a" title="Deinicializace zásobníku." alt="" coords="340,82,444,107"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="484,64,429,84,427,79,482,59"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,46,56,46,56,41,90,41"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="329,81,247,59,248,54,330,76"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="326,96,221,89,103,72,55,57,57,51,105,67,222,84,327,91"/>
+</map>

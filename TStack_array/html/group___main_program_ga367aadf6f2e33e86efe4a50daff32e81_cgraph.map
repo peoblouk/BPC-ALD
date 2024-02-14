@@ -1,0 +1,18 @@
+<map id="demo_tiskni_slova_pozpatku" name="demo_tiskni_slova_pozpatku">
+<area shape="rect" id="Node000001" title="Testování API Stack." alt="" coords="5,132,193,157"/>
+<area shape="rect" id="Node000002" href="$group___t_stack.html#ga543615a4df26ed863b9e92228b69d04a" title="Deinicializace zásobníku." alt="" coords="241,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,130,240,48,258,36,261,40,243,52,121,134"/>
+<area shape="rect" id="Node000003" href="$group___t_stack.html#ga22a9f4ad0c450cdbbfb7546493b1f781" title="Inicializace prázdného zásobníku." alt="" coords="411,31,490,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="144,129,398,56,399,61,145,134"/>
+<area shape="rect" id="Node000004" href="$group___t_stack.html#gab2a53c66f9bb439a8749c97f9c9d9f2d" title="Zjištění, zda je zásobník prázdný" alt="" coords="393,157,508,183"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="193,137,268,137,346,142,394,151,393,157,345,147,268,142,193,142"/>
+<area shape="rect" id="Node000005" href="$group___t_stack.html#ga480af197cbd84970291358c870ec9b90" title="Odstranění elementu na vrcholu zásobníku." alt="" coords="252,157,335,183"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="194,154,239,160,238,166,193,160"/>
+<area shape="rect" id="Node000006" href="$group___t_stack.html#ga8ee1e96ca9c6c84eb97fea0a3506938c" title="Vložení elementu na vrchol zásobníku." alt="" coords="249,207,338,232"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="135,155,248,199,246,204,133,160"/>
+<area shape="rect" id="Node000007" href="$group___t_stack.html#gac84fd2f3c38113a7d9d4cf5123b581f3" title="Získání hodnoty elementu na vrcholu zásobníku." alt="" coords="254,256,333,281"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="119,156,173,196,243,242,252,247,249,252,240,247,169,200,115,160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,24,398,32,397,37,345,29"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="335,167,379,167,379,173,335,173"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="323,253,344,242,421,189,424,194,347,247,325,258"/>
+</map>

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TStack_list: Dokumentace souboru TStack.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TStack_list<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b69bb377c6bd5387eb29fd551cc73d3a.html">TStack_list</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru TStack.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace API pro typ zásobník (realizace pomocí lineárního jednosměrně vázaného seznamu)  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_t_stack_8h_source.html">TStack.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro TStack.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_stack_8c__incl.svg" width="267" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_stack_node.html">TStackNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Úplná definice privátního typu StackNode.  <a href="struct_t_stack_node.html#details">...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga22a9f4ad0c450cdbbfb7546493b1f781" id="r_ga22a9f4ad0c450cdbbfb7546493b1f781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack.html#ga22a9f4ad0c450cdbbfb7546493b1f781">stack_init</a> (struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:ga22a9f4ad0c450cdbbfb7546493b1f781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializace prázdného zásobníku.  <br /></td></tr>
+<tr class="separator:ga22a9f4ad0c450cdbbfb7546493b1f781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2a53c66f9bb439a8749c97f9c9d9f2d" id="r_gab2a53c66f9bb439a8749c97f9c9d9f2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack.html#gab2a53c66f9bb439a8749c97f9c9d9f2d">stack_is_empty</a> (const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:gab2a53c66f9bb439a8749c97f9c9d9f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění, zda je zásobník prázdný  <br /></td></tr>
+<tr class="separator:gab2a53c66f9bb439a8749c97f9c9d9f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac84fd2f3c38113a7d9d4cf5123b581f3" id="r_gac84fd2f3c38113a7d9d4cf5123b581f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack.html#gac84fd2f3c38113a7d9d4cf5123b581f3">stack_top</a> (const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack, <a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> *aValue)</td></tr>
+<tr class="memdesc:gac84fd2f3c38113a7d9d4cf5123b581f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Získání hodnoty elementu na vrcholu zásobníku.  <br /></td></tr>
+<tr class="separator:gac84fd2f3c38113a7d9d4cf5123b581f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee1e96ca9c6c84eb97fea0a3506938c" id="r_ga8ee1e96ca9c6c84eb97fea0a3506938c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack.html#ga8ee1e96ca9c6c84eb97fea0a3506938c">stack_push</a> (struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack, <a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a> aValue)</td></tr>
+<tr class="memdesc:ga8ee1e96ca9c6c84eb97fea0a3506938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vložení elementu na vrchol zásobníku.  <br /></td></tr>
+<tr class="separator:ga8ee1e96ca9c6c84eb97fea0a3506938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga480af197cbd84970291358c870ec9b90" id="r_ga480af197cbd84970291358c870ec9b90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack.html#ga480af197cbd84970291358c870ec9b90">stack_pop</a> (struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:ga480af197cbd84970291358c870ec9b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odstranění elementu na vrcholu zásobníku.  <br /></td></tr>
+<tr class="separator:ga480af197cbd84970291358c870ec9b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga543615a4df26ed863b9e92228b69d04a" id="r_ga543615a4df26ed863b9e92228b69d04a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack.html#ga543615a4df26ed863b9e92228b69d04a">stack_destroy</a> (struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:ga543615a4df26ed863b9e92228b69d04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace zásobníku.  <br /></td></tr>
+<tr class="separator:ga543615a4df26ed863b9e92228b69d04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3bbe9fce0de463850601e23ebc552ff" id="r_gaa3bbe9fce0de463850601e23ebc552ff"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack_iterator.html#gaa3bbe9fce0de463850601e23ebc552ff">stack_iterator_begin</a> (const struct <a class="el" href="group___t_stack.html#struct_t_stack">TStack</a> *aStack)</td></tr>
+<tr class="memdesc:gaa3bbe9fce0de463850601e23ebc552ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na vrchol zásobníku.  <br /></td></tr>
+<tr class="separator:gaa3bbe9fce0de463850601e23ebc552ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5a597d5a1e8f27eaac18d9a030997e3" id="r_gad5a597d5a1e8f27eaac18d9a030997e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack_iterator.html#gad5a597d5a1e8f27eaac18d9a030997e3">stack_iterator_is_valid</a> (const struct <a class="el" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gad5a597d5a1e8f27eaac18d9a030997e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:gad5a597d5a1e8f27eaac18d9a030997e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa94902ad8202ccc9fdfe08aa660e3903" id="r_gaa94902ad8202ccc9fdfe08aa660e3903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack_iterator.html#gaa94902ad8202ccc9fdfe08aa660e3903">stack_iterator_to_next</a> (struct <a class="el" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gaa94902ad8202ccc9fdfe08aa660e3903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:gaa94902ad8202ccc9fdfe08aa660e3903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e006b0649df0fac42315afb488f283e" id="r_ga1e006b0649df0fac42315afb488f283e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_stack.html#gaf59d58ca03bd73614a63d21f615fa52c">TStackElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_stack_iterator.html#ga1e006b0649df0fac42315afb488f283e">stack_iterator_value</a> (const struct <a class="el" href="group___t_stack_iterator.html#struct_t_stack_iterator">TStackIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga1e006b0649df0fac42315afb488f283e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu ze zásobníku pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga1e006b0649df0fac42315afb488f283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace API pro typ zásobník (realizace pomocí lineárního jednosměrně vázaného seznamu) </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="_t_stack_8c.html" title="Implementace API pro typ zásobník (realizace pomocí lineárního jednosměrně vázaného seznamu)">TStack.c</a> 2591 2024-02-09 17:32:57Z petyovsky </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 9. úno 2024 18.47:58, pro projekt: BPC-ALD: ADT TStack_list, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

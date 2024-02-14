@@ -1,0 +1,9 @@
+<map id="TStackIterator" name="TStackIterator">
+<area shape="rect" id="Node000001" title="Definice typu StackIterator." alt="" coords="35,283,151,359"/>
+<area shape="rect" id="Node000002" href="$group___t_stack.html#struct_t_stack" title="Definice typu Stack." alt="" coords="131,144,207,220"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,221,124,270,120,267,146,219"/>
+<area shape="rect" id="Node000003" href="$struct_t_stack_node.html" title="Úplná definice privátního typu StackNode." alt="" coords="5,5,181,81"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="84,82,69,144,66,182,69,220,79,266,74,268,64,220,61,182,64,144,78,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,80,143,128,138,131,112,83"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="182,29,200,33,208,43,199,53,196,50,203,43,197,38,181,34"/>
+</map>

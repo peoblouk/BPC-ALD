@@ -1,0 +1,8 @@
+<map id="stack_iterator_is_valid" name="stack_iterator_is_valid">
+<area shape="rect" id="Node000001" title="Zjištění platnosti iterátoru." alt="" coords="289,5,440,31"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,21,56,21,56,15,276,15"/>
+<area shape="rect" id="Node000003" href="$group___t_stack_iterator.html#ga1e006b0649df0fac42315afb488f283e" title="Přečtení hodnoty elementu ze zásobníku pomocí iterátoru." alt="" coords="104,31,241,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,32,242,37,242,32,275,27"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="90,31,56,25,57,20,91,26"/>
+</map>
