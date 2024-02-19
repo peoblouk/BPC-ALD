@@ -1,0 +1,6 @@
+<map id="TQueue" name="TQueue">
+<area shape="rect" id="Node000001" title="Definice typu Queue." alt="" coords="55,159,135,235"/>
+<area shape="rect" id="Node000002" href="$struct_t_queue_node.html" title="Úplná definice privátního typu QueueNode." alt="" coords="5,5,185,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,82,98,142,93,142,93,82"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="186,28,204,33,212,43,204,54,200,50,207,43,201,37,185,33"/>
+</map>

@@ -58,7 +58,6 @@ bool stack_push(struct TStack *aStack, TStackElement aValue)
 
 
 	return true;
-
 	}
 
 bool stack_pop(struct TStack *aStack)
