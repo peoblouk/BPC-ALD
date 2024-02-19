@@ -1,8 +1,9 @@
 <!-- @format -->
 
 <h1 align="center">
+<b>BPC-ALD</b>
 <img alt="periferie" src="img/logo.png" align = "left">
-BPC-ALD
+
 </h1>
 
 # Obsah
