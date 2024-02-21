@@ -36,16 +36,16 @@ int main()
 	{
 	struct TQueue queue1 = { 0 };
 	queue_init(&queue1);
-	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false");
+	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false"); // Prázdná fronta?
 	queue_push(&queue1, 0);
 	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false");
 
-	queue_push(&queue1, 222);
-	for(struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it))
+	queue_push(&queue1, 222); // Do fronty vrazím čísla
+	for(struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it)) // Inicializuji iterator, testuji podmínku jako ukončení cyklu, (toto je něco jako "for i in queen") 
 		printf("%d ", queue_iterator_value(&it));
 	putchar('\n');
 
-	queue_push(&queue1, 42);
+	queue_push(&queue1, 42); // Do fronty vrazím čísla
 	queue_push(&queue1, 43);
 	queue_push(&queue1, 40);
 

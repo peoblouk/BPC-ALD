@@ -16,7 +16,7 @@
  *  \{
  */
 
-typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty)
+typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty) // Mohu změnit aby elementy byli například typu float
 
 /** \brief Definice typu Queue
  *  \details Typ Queue obsahuje ukazatele na dynamicky alokované proměnné typu QueueNode, které představují uzly s hodnotami elementů uspořádanými do lineárního jednosměrně vázaného seznamu. Fronta umožňuje pracovat se svými elementy pomocí definovaného API.
