@@ -201,40 +201,79 @@ void vector_destroy(struct TVector* aVector)
 	}
 struct TVectorIterator vector_iterator_begin(const struct TVector *aVector)
 	{
-	return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
+	if (aVector == NULL)
+		return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
+
+	return (struct TVectorIterator) { .iVector = aVector->iValues, .iPos = 0 };
 	}
 
 struct TVectorIterator vector_iterator_pos(const struct TVector *aVector, size_t aPos)
 	{
-	return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
+	if (aVector == NULL)
+		return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
+
+	return (struct TVectorIterator) { .iVector = aVector->iValues, .iPos = aPos };
 	}
 
 struct TVectorIterator vector_iterator_last(const struct TVector *aVector)
 	{
-	return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
+	if (aVector == NULL)
+		return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
+
+	return (struct TVectorIterator) { .iVector = aVector->iValues[aVector->iSize-1], .iPos = aVector->iSize - 1};
 	}
 
 bool vector_iterator_is_valid(const struct TVectorIterator *aIter)
 	{
+	if (aIter != NULL)
+		if (aIter->iVector != NULL)
+			if (aIter->iVector->iSize < aIter->iPos)
+				return true;
 	return false;
 	}
 
 bool vector_iterator_to_next(struct TVectorIterator *aIter)
 	{
-	return false;
+	if (aIter == NULL)
+		return false;
+	
+	if (aIter->iPos < aIter->iVector->iSize) // Nepřesáhla velikost ?
+		{
+		aIter->iPos += 1;
+		return true;
+		}
 	}
 
 bool vector_iterator_to_prev(struct TVectorIterator *aIter)
 	{
-	return false;
+	if (aIter == NULL)
+		return false;
+
+	if (aIter->iPos > aIter->iVector->iSize) // Normální posun zpět
+		{
+		aIter->iPos -= 1;
+		return true;
+		}
+	else if(aIter->iPos < 0) // Přetečení tak se vratím na konec seznamu
+		{
+		aIter->iPos = aIter->iVector->iSize;
+		return true;
+		}
 	}
 
 TVectorElement vector_iterator_value(const struct TVectorIterator *aIter)
 	{
-	return (TVectorElement) { 0 };
+	if (aIter == NULL)
+		return (TVectorElement) { 0 };
+
+	return (TVectorElement) { aIter->iVector->iValues[aIter->iPos] };
 	}
 
 bool vector_iterator_set_value(const struct TVectorIterator *aIter, TVectorElement aValue)
 	{
-	return false;
+	if (aIter == NULL)
+		return false;
+	
+	aIter->iVector->iValues[aIter->iPos] = aValue;
+	return true;
 	}
