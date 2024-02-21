@@ -1,34 +1,19 @@
 <!-- @format -->
-
 <h1 align="center">
-
-<img alt="periferie" src="img/logo.png" align = "center">
-BPC-ALD
+  <img alt="logo" src="img/logo.png" > BPC-ALD 
 </h1>
 
-- [1.CV] (#1.CV)
-- [2.CV] (#2.CV)
-- [3.CV] (#3.CV)
-- [4.CV] (#4.CV)
-- [5.CV] (#5.CV)
-- [6.CV] (#6.CV)
-- [7.CV] (#7.CV)
-- [8.CV] (#8.CV)
-- [9.CV] (#9.CV)
-- [10.CV] (#10.CV)
-- [11.CV] (#11.CV)
-- [12.CV] (#12.CV)
-
-# 1.CV (TVector)
+## 1.CV (TVector)
 
 -
 
-# 2.CV
+## 2.CV (TStack_array, TStack_list)
 
-- TArray
 - umět vysvětlit práci funkci pop, push, top
 
-# 3. CV (TQueue_list)
+## 3. CV (TQueue_list)
 
 -
--
+
+## Visual Studio settings
+ - <img alt="vscode settings" src="img/vs2017_setup_new.png" align = "center">
