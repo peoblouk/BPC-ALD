@@ -10,10 +10,11 @@
 ## 2.CV (TStack_array, TStack_list)
 
 - umět vysvětlit práci funkci pop, push, top
+- Prázdný projekt - ()
 
 ## 3. CV (TQueue_list)
 
--
+- Prázdný projekt - ()
 
 ## Visual Studio settings
  - <img alt="vscode settings" src="img/vs2017_setup_new.png" align = "center">
