@@ -1,0 +1,9 @@
+<map id="is_element_with_value_43" name="is_element_with_value_43">
+<area shape="rect" id="Node000001" title="Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43." alt="" coords="5,5,177,31"/>
+<area shape="rect" id="Node000002" href="$group___t_queue_iterator.html#ga30db60bf663f58b83b1181d5406ec879" title="Přečtení hodnoty elementu z fronty pomocí iterátoru." alt="" coords="225,5,365,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,15,212,15,212,21,177,21"/>
+<area shape="rect" id="Node000003" href="$group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593" title="Zjištění platnosti iterátoru." alt="" coords="413,5,567,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,15,400,15,400,21,365,21"/>
+<area shape="rect" id="Node000004" href="$group___t_queue.html#gaa9812b8f3c1b0707450f91283f97384c" title="Zjištění, zda je fronta prázdná" alt="" coords="615,5,732,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,15,601,15,601,21,567,21"/>
+</map>

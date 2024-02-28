@@ -1,0 +1,9 @@
+<map id="TQueueIterator" name="TQueueIterator">
+<area shape="rect" id="Node000001" title="Definice typu QueueIterator." alt="" coords="35,297,155,373"/>
+<area shape="rect" id="Node000002" href="$group___t_queue.html#struct_t_queue" title="Definice typu Queue." alt="" coords="133,159,213,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,236,127,284,122,282,149,233"/>
+<area shape="rect" id="Node000003" href="$struct_t_queue_node.html" title="Úplná definice privátního typu QueueNode." alt="" coords="5,5,185,81"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="86,82,70,159,67,197,70,234,80,281,75,282,65,235,61,197,65,158,81,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,80,149,143,144,145,112,83"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="186,28,204,33,212,43,204,54,200,50,207,43,201,37,185,33"/>
+</map>
