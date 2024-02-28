@@ -32,7 +32,8 @@ void print_element(const struct TVectorIterator *aIter)
  *  \param[in] aOrigVector Ukazatel na vstupní vektor
  *  \param[in] aNewSize Nově požadovaná velikost vektoru
  */
-void resize_testing(const struct TVector *aOrigVector, size_t aNewSize)
+void resize_testing(
+	const struct TVector *aOrigVector, size_t aNewSize)
 	{
 	struct TVector vector = { 0 };
 	vector_clone(aOrigVector, &vector);

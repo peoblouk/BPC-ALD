@@ -275,7 +275,7 @@ bool vector_iterator_set_value(const struct TVectorIterator *aIter, TVectorEleme
 	if (vector_iterator_is_valid(aIter) == false)
 		return false;
 	
-	((struct TVector*)aIter->iVector)->iValues[aIter->iPos] = aValue;
-	// aIter->iVector->iValues[aIter->iPos] = aValue; // Nelze napsat jelikož je to const struct
+	// ((struct TVector*)aIter->iVector)->iValues[aIter->iPos] = aValue;
+	aIter->iVector->iValues[aIter->iPos] = aValue; 
 	return true;
 	}
