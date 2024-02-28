@@ -37,13 +37,13 @@ void resize_testing(const struct TVector *aOrigVector, size_t aNewSize)
 	struct TVector vector = { 0 };
 	vector_clone(aOrigVector, &vector);
 	
-	//for(size_t i = 0; i < vector_size(&vector); ++i)
-	//	printf(TVECTOR_ELEMENT_FRMSTR " ", vector_value(&vector, i));
-	//putchar('\n');
+	for(size_t i = 0; i < vector_size(&vector); ++i)
+		printf(TVECTOR_ELEMENT_FRMSTR " ", vector_value(&vector, i));
+	putchar('\n');
 
 	printf("\n------ Resize to %zu ------\n", aNewSize);
-	//vector_for_each(vector_iterator_begin(&vector), print_element);
-	//putchar('\n');
+	vector_for_each(vector_iterator_begin(&vector), print_element);
+	putchar('\n');
 
 	struct timespec start_timespec = { 0, }, end_timespec = { 0, };
 	if(!timespec_get(&start_timespec, TIME_UTC))
@@ -53,8 +53,8 @@ void resize_testing(const struct TVector *aOrigVector, size_t aNewSize)
 	if(!timespec_get(&end_timespec, TIME_UTC))
 		printf("Error on end timespec_get\n");
 
-	//vector_for_n(vector_iterator_begin(&vector), 20, print_element);
-	//putchar('\n');
+	vector_for_n(vector_iterator_begin(&vector), 20, print_element);
+	putchar('\n');
 
 	printf("\nResizing time: %lf seconds.\n", difftimespec(end_timespec, start_timespec));
 	printf("Allocation size max peak: %zu.\n", get_alloc_max_peak_size());
@@ -92,21 +92,21 @@ int main(int argc, char *argv[])
 	#endif /* NDEBUG */
 	putchar('\n');
 
-	//vector_for_each(vector_iterator_begin(&vector1), print_element);
-	//putchar('\n');
+	vector_for_each(vector_iterator_begin(&vector1), print_element);
+	putchar('\n');
 
 	resize_testing(&vector1, 5);
 
-	//vector_for_each(vector_iterator_begin(&vector1), print_element);
-	//putchar('\n');
+	vector_for_each(vector_iterator_begin(&vector1), print_element);
+	putchar('\n');
 
 	resize_testing(&vector1, 1000000);		// 4Mb
 	resize_testing(&vector1, 10000000);		// 40Mb
 	resize_testing(&vector1, 100000000);	// 400Mb
 	resize_testing(&vector1, 1000000000);	// 4000Mb
 
-	//vector_for_n(vector_iterator_begin(&vector1), 20, print_element);
-	//putchar('\n');
+	vector_for_n(vector_iterator_begin(&vector1), 20, print_element);
+	putchar('\n');
 
 	vector_destroy(&vector1);
 	return 0;

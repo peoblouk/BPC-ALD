@@ -201,69 +201,70 @@ void vector_destroy(struct TVector* aVector)
 	}
 struct TVectorIterator vector_iterator_begin(const struct TVector *aVector)
 	{
-	if (aVector == NULL)
+	if (aVector == NULL || aVector->iSize == 0)
 		return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
 
-	return (struct TVectorIterator) { .iVector = aVector->iValues, .iPos = 0 };
+	return (struct TVectorIterator) { .iVector = (struct TVector*) aVector, .iPos = 0 };
 	}
 
 struct TVectorIterator vector_iterator_pos(const struct TVector *aVector, size_t aPos)
 	{
-	if (aVector == NULL)
+	if (aVector == NULL || aPos >= aVector->iSize)
 		return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
 
-	return (struct TVectorIterator) { .iVector = aVector->iValues, .iPos = aPos };
+	return (struct TVectorIterator) { .iVector = (struct TVector*) aVector, .iPos = aPos };
 	}
 
 struct TVectorIterator vector_iterator_last(const struct TVector *aVector)
 	{
-	if (aVector == NULL)
+	if (aVector == NULL || aVector->iSize == 0)
 		return (struct TVectorIterator) { .iVector = NULL, .iPos = 0 };
 
-	return (struct TVectorIterator) { .iVector = aVector->iValues[aVector->iSize-1], .iPos = aVector->iSize - 1};
+	return (struct TVectorIterator) { .iVector = (struct TVector*) aVector, .iPos = aVector->iSize - 1};
 	}
 
 bool vector_iterator_is_valid(const struct TVectorIterator *aIter)
 	{
 	if (aIter != NULL)
 		if (aIter->iVector != NULL)
-			if (aIter->iVector->iSize < aIter->iPos)
+			if ((aIter->iVector->iSize - 1) < aIter->iPos) // Ukazuje mimo
 				return true;
 	return false;
 	}
 
 bool vector_iterator_to_next(struct TVectorIterator *aIter)
 	{
-	if (aIter == NULL)
+	if (vector_iterator_is_valid(aIter) == false)
 		return false;
 	
-	if (aIter->iPos < aIter->iVector->iSize) // Nepřesáhla velikost ?
+	++aIter->iPos;
+	if (aIter->iPos >= aIter->iVector->iSize) // Nepřesáhla velikost ?
 		{
-		aIter->iPos += 1;
-		return true;
+		*aIter = (struct TVectorIterator){ .iVector = NULL, .iPos = 0 };
+		return false;
 		}
+	
+	return true;
 	}
 
 bool vector_iterator_to_prev(struct TVectorIterator *aIter)
 	{
-	if (aIter == NULL)
+	if (vector_iterator_is_valid(aIter) == false)
 		return false;
 
-	if (aIter->iPos > aIter->iVector->iSize) // Normální posun zpět
+	if (aIter->iPos <= 0) // Jsme na nultém prvku tudiž nemůžu posunout dolů
 		{
-		aIter->iPos -= 1;
-		return true;
+		*aIter = (struct TVectorIterator){ .iVector = NULL, .iPos = 0 };
+		return false;
 		}
-	else if(aIter->iPos < 0) // Přetečení tak se vratím na konec seznamu
-		{
-		aIter->iPos = aIter->iVector->iSize;
-		return true;
-		}
+
+	--aIter->iPos;
+	return true;
 	}
 
 TVectorElement vector_iterator_value(const struct TVectorIterator *aIter)
 	{
-	if (aIter == NULL)
+	if (vector_iterator_is_valid(aIter) == false)
 		return (TVectorElement) { 0 };
 
 	return (TVectorElement) { aIter->iVector->iValues[aIter->iPos] };
@@ -271,9 +272,10 @@ TVectorElement vector_iterator_value(const struct TVectorIterator *aIter)
 
 bool vector_iterator_set_value(const struct TVectorIterator *aIter, TVectorElement aValue)
 	{
-	if (aIter == NULL)
+	if (vector_iterator_is_valid(aIter) == false)
 		return false;
 	
-	aIter->iVector->iValues[aIter->iPos] = aValue;
+	((struct TVector*)aIter->iVector)->iValues[aIter->iPos] = aValue;
+	// aIter->iVector->iValues[aIter->iPos] = aValue; // Nelze napsat jelikož je to const struct
 	return true;
 	}
