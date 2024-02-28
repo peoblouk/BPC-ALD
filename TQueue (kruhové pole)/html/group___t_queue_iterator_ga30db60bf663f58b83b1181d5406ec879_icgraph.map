@@ -1,0 +1,11 @@
+<map id="queue_iterator_value" name="queue_iterator_value">
+<area shape="rect" id="Node000001" title="Přečtení hodnoty elementu z fronty pomocí iterátoru." alt="" coords="324,56,464,81"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff" title="Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43." alt="" coords="104,5,276,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,55,241,33,242,28,330,50"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,81"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="311,71,56,71,56,66,311,66"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga46eef449f9e5694614f26704628baf7d" title="Vytisknutí elementu fronty pomocí iterátoru." alt="" coords="140,107,240,132"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="329,87,241,110,239,104,328,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,37,57,63,56,58,135,32"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="135,105,56,79,57,74,137,100"/>
+</map>

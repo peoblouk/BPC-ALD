@@ -1,0 +1,11 @@
+<map id="TQueue.c" name="TQueue.c">
+<area shape="rect" id="Node000001" title="Implementace API pro typ fronta (realizace pomocí kruhového pole)" alt="" coords="50,5,129,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,75,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,33,58,69,54,66,79,29"/>
+<area shape="rect" id="Node000003" href="$_t_queue_8h.html" title="Definice typu fronta (realizace pomocí kruhového pole)" alt="" coords="99,79,178,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,29,125,66,121,69,95,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="53,152,128,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,106,108,142,104,139,129,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="153,152,221,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="149,103,174,139,169,142,144,106"/>
+</map>

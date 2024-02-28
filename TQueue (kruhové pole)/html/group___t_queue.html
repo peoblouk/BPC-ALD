@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TQueue_array: 1. Fronta</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TQueue_array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#define-members">Definice maker</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">1. Fronta</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu Queue a jeho funkcí (realizace fronty pomocí kruhového pole)  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_queue" id="r_struct_t_queue"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_queue">TQueue</a></td></tr>
+<tr class="memdesc:struct_t_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Queue.  <a href="#struct_t_queue">...</a><br /></td></tr>
+<tr class="separator:struct_t_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definice maker</h2></td></tr>
+<tr class="memitem:ga8989ec80d29fd8419b8d3ca782577882" id="r_ga8989ec80d29fd8419b8d3ca782577882"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8989ec80d29fd8419b8d3ca782577882">QUEUE_MAXCOUNT</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memdesc:ga8989ec80d29fd8419b8d3ca782577882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximální počet elementů fronty.  <br /></td></tr>
+<tr class="separator:ga8989ec80d29fd8419b8d3ca782577882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:ga20e79d9fc1c3dd446e7b879b50fa2de4" id="r_ga20e79d9fc1c3dd446e7b879b50fa2de4"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a></td></tr>
+<tr class="memdesc:ga20e79d9fc1c3dd446e7b879b50fa2de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu QueueElement (datový typ elementů fronty)  <br /></td></tr>
+<tr class="separator:ga20e79d9fc1c3dd446e7b879b50fa2de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gaed24a08c3da331c9d4651464901f9acc" id="r_gaed24a08c3da331c9d4651464901f9acc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaed24a08c3da331c9d4651464901f9acc">queue_init</a> (struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue)</td></tr>
+<tr class="memdesc:gaed24a08c3da331c9d4651464901f9acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializace prázdné fronty.  <br /></td></tr>
+<tr class="separator:gaed24a08c3da331c9d4651464901f9acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9812b8f3c1b0707450f91283f97384c" id="r_gaa9812b8f3c1b0707450f91283f97384c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa9812b8f3c1b0707450f91283f97384c">queue_is_empty</a> (const struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue)</td></tr>
+<tr class="memdesc:gaa9812b8f3c1b0707450f91283f97384c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění, zda je fronta prázdná  <br /></td></tr>
+<tr class="separator:gaa9812b8f3c1b0707450f91283f97384c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7ec766208c056364fba19f6d6b5d3f" id="r_gadf7ec766208c056364fba19f6d6b5d3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadf7ec766208c056364fba19f6d6b5d3f">queue_front</a> (const struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue, <a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> *aValue)</td></tr>
+<tr class="memdesc:gadf7ec766208c056364fba19f6d6b5d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Získání hodnoty elementu z čela fronty.  <br /></td></tr>
+<tr class="separator:gadf7ec766208c056364fba19f6d6b5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdf5c3e56234ff344f49c206632f7fbb" id="r_gabdf5c3e56234ff344f49c206632f7fbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabdf5c3e56234ff344f49c206632f7fbb">queue_back</a> (const struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue, <a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> *aValue)</td></tr>
+<tr class="memdesc:gabdf5c3e56234ff344f49c206632f7fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Získání hodnoty elementu z konce fronty.  <br /></td></tr>
+<tr class="separator:gabdf5c3e56234ff344f49c206632f7fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5ceca2541159a4e940cb4b80bba411b" id="r_gab5ceca2541159a4e940cb4b80bba411b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab5ceca2541159a4e940cb4b80bba411b">queue_push</a> (struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue, <a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> aValue)</td></tr>
+<tr class="memdesc:gab5ceca2541159a4e940cb4b80bba411b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vložení elementu na konec fronty.  <br /></td></tr>
+<tr class="separator:gab5ceca2541159a4e940cb4b80bba411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga100499d1e5ff881cd97b03484f6e744b" id="r_ga100499d1e5ff881cd97b03484f6e744b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga100499d1e5ff881cd97b03484f6e744b">queue_pop</a> (struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue)</td></tr>
+<tr class="memdesc:ga100499d1e5ff881cd97b03484f6e744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odstranění elementu z čela fronty.  <br /></td></tr>
+<tr class="separator:ga100499d1e5ff881cd97b03484f6e744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85b3f0ae9d6f44ca6c102df1e0619dc9" id="r_ga85b3f0ae9d6f44ca6c102df1e0619dc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga85b3f0ae9d6f44ca6c102df1e0619dc9">queue_destroy</a> (struct <a class="el" href="#struct_t_queue">TQueue</a> *aQueue)</td></tr>
+<tr class="memdesc:ga85b3f0ae9d6f44ca6c102df1e0619dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace fronty.  <br /></td></tr>
+<tr class="separator:ga85b3f0ae9d6f44ca6c102df1e0619dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu Queue a jeho funkcí (realizace fronty pomocí kruhového pole) </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_queue" id="struct_t_queue"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_queue">&#9670;&#160;</a></span>TQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu Queue. </p>
+<p>Typ Queue obsahuje pole prvků typu QueueElement a umožňuje s nimi pracovat pomocí definovaného API. </p><dl class="section invariant"><dt>Invariant</dt><dd>Obecně platný a testovatelný předpoklad: <code>(iFrontPos &lt; QUEUE_MAXCOUNT &amp;&amp; iBackPos &lt; QUEUE_MAXCOUNT)</code>. </dd></dl>
+</div><div class="dynheader">
+Diagram pro TQueue:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_queue__coll__graph.svg" width="199" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:af9c6f2cfab8b2e5efbc60172fe7a116b" id="r_af9c6f2cfab8b2e5efbc60172fe7a116b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9c6f2cfab8b2e5efbc60172fe7a116b">iFrontPos</a></td></tr>
+<tr class="memdesc:af9c6f2cfab8b2e5efbc60172fe7a116b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuální index prvku pole určeného pro odstranění elementu z čela fronty.  <br /></td></tr>
+<tr class="separator:af9c6f2cfab8b2e5efbc60172fe7a116b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7537d64752fb47fa39da03d58c2d54c5" id="r_a7537d64752fb47fa39da03d58c2d54c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7537d64752fb47fa39da03d58c2d54c5">iBackPos</a></td></tr>
+<tr class="memdesc:a7537d64752fb47fa39da03d58c2d54c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuální index prvku pole určeného pro vložení elementu na konec fronty.  <br /></td></tr>
+<tr class="separator:a7537d64752fb47fa39da03d58c2d54c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d86f77b7bfd512c58190d01ee93cf8e" id="r_a0d86f77b7bfd512c58190d01ee93cf8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d86f77b7bfd512c58190d01ee93cf8e">iValues</a> [<a class="el" href="#ga8989ec80d29fd8419b8d3ca782577882">QUEUE_MAXCOUNT</a>]</td></tr>
+<tr class="memdesc:a0d86f77b7bfd512c58190d01ee93cf8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole hodnot typu QueueElement.  <br /></td></tr>
+<tr class="separator:a0d86f77b7bfd512c58190d01ee93cf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="af9c6f2cfab8b2e5efbc60172fe7a116b" name="af9c6f2cfab8b2e5efbc60172fe7a116b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c6f2cfab8b2e5efbc60172fe7a116b">&#9670;&#160;</a></span>iFrontPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iFrontPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktuální index prvku pole určeného pro odstranění elementu z čela fronty. </p>
+
+</div>
+</div>
+<a id="a7537d64752fb47fa39da03d58c2d54c5" name="a7537d64752fb47fa39da03d58c2d54c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7537d64752fb47fa39da03d58c2d54c5">&#9670;&#160;</a></span>iBackPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iBackPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktuální index prvku pole určeného pro vložení elementu na konec fronty. </p>
+
+</div>
+</div>
+<a id="a0d86f77b7bfd512c58190d01ee93cf8e" name="a0d86f77b7bfd512c58190d01ee93cf8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d86f77b7bfd512c58190d01ee93cf8e">&#9670;&#160;</a></span>iValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> iValues[<a class="el" href="#ga8989ec80d29fd8419b8d3ca782577882">QUEUE_MAXCOUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pole hodnot typu QueueElement. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic maker</h2>
+<a id="ga8989ec80d29fd8419b8d3ca782577882" name="ga8989ec80d29fd8419b8d3ca782577882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8989ec80d29fd8419b8d3ca782577882">&#9670;&#160;</a></span>QUEUE_MAXCOUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_MAXCOUNT&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximální počet elementů fronty. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic typů</h2>
+<a id="ga20e79d9fc1c3dd446e7b879b50fa2de4" name="ga20e79d9fc1c3dd446e7b879b50fa2de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">&#9670;&#160;</a></span>TQueueElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice typu QueueElement (datový typ elementů fronty) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="gaed24a08c3da331c9d4651464901f9acc" name="gaed24a08c3da331c9d4651464901f9acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed24a08c3da331c9d4651464901f9acc">&#9670;&#160;</a></span>queue_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queue_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializace prázdné fronty. </p>
+<p>Inicializuje složky struktury tak, aby byla výsledkem prázdná fronta. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aQueue</td><td>Ukazatel na místo v paměti určené pro inicializaci fronty </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gaed24a08c3da331c9d4651464901f9acc_icgraph.svg" width="346" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa9812b8f3c1b0707450f91283f97384c" name="gaa9812b8f3c1b0707450f91283f97384c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9812b8f3c1b0707450f91283f97384c">&#9670;&#160;</a></span>queue_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_is_empty </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zjištění, zda je fronta prázdná </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu reprezentující test, zda je fronta prázdná. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je fronta prázdná </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje konzistenci obou indexů do pole fronty a pomocí <code>assert</code> hlásí (při překladu v režimu <code>Debug</code>) případnou běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gaa9812b8f3c1b0707450f91283f97384c_icgraph.svg" width="836" height="670"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gadf7ec766208c056364fba19f6d6b5d3f" name="gadf7ec766208c056364fba19f6d6b5d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf7ec766208c056364fba19f6d6b5d3f">&#9670;&#160;</a></span>queue_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_front </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Získání hodnoty elementu z čela fronty. </p>
+<p>Přečte hodnotu elementu z čela fronty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aValue</td><td>Ukazatel na místo v paměti určené pro načtení hodnoty elementu z čela fronty </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota elementu z čela fronty úspěšně načtena </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gadf7ec766208c056364fba19f6d6b5d3f_cgraph.svg" width="266" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gadf7ec766208c056364fba19f6d6b5d3f_icgraph.svg" width="199" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gabdf5c3e56234ff344f49c206632f7fbb" name="gabdf5c3e56234ff344f49c206632f7fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdf5c3e56234ff344f49c206632f7fbb">&#9670;&#160;</a></span>queue_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_back </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Získání hodnoty elementu z konce fronty. </p>
+<p>Přečte hodnotu elementu z konce fronty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aValue</td><td>Ukazatel na místo v paměti určené pro načtení hodnoty elementu z konce fronty </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota elementu z konce fronty úspěšně načtena </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gabdf5c3e56234ff344f49c206632f7fbb_cgraph.svg" width="268" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gabdf5c3e56234ff344f49c206632f7fbb_icgraph.svg" width="202" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gab5ceca2541159a4e940cb4b80bba411b" name="gab5ceca2541159a4e940cb4b80bba411b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5ceca2541159a4e940cb4b80bba411b">&#9670;&#160;</a></span>queue_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_push </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vložení elementu na konec fronty. </p>
+<p>Vkládá hodnotu elementu na konec fronty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu určenou pro vložení elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu vkládaná do fronty </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota do fronty úspěšně vložena </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_gab5ceca2541159a4e940cb4b80bba411b_icgraph.svg" width="202" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga100499d1e5ff881cd97b03484f6e744b" name="ga100499d1e5ff881cd97b03484f6e744b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga100499d1e5ff881cd97b03484f6e744b">&#9670;&#160;</a></span>queue_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_pop </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odstranění elementu z čela fronty. </p>
+<p>Odstraní hodnotu elementu z čela fronty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu určenou pro odstranění elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota z fronty úspěšně odstraněna </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_ga100499d1e5ff881cd97b03484f6e744b_cgraph.svg" width="262" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_ga100499d1e5ff881cd97b03484f6e744b_icgraph.svg" width="195" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga85b3f0ae9d6f44ca6c102df1e0619dc9" name="ga85b3f0ae9d6f44ca6c102df1e0619dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85b3f0ae9d6f44ca6c102df1e0619dc9">&#9670;&#160;</a></span>queue_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queue_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinicializace fronty. </p>
+<p>Deinicializuje frontu, nastaví počet elementů fronty na hodnotu 0. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_ga85b3f0ae9d6f44ca6c102df1e0619dc9_cgraph.svg" width="247" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_ga85b3f0ae9d6f44ca6c102df1e0619dc9_icgraph.svg" width="216" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 23. úno 2024 14.01:46, pro projekt: BPC-ALD: ADT TQueue_array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

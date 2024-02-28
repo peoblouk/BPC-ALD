@@ -130,10 +130,10 @@ bool queue_clone(const struct TQueue* aSourceQueue, struct TQueue* aCloneQueue)
 	 if (queue_iterator_is_valid(&clone_iterator) == false) // Chyba k vytvoření nedošlo
 		 return false;
 
-	 while (clone_iterator.iActual->iNext == NULL)
-		 {
-		 queue_push(&cloned_queue, clone_iterator.iActual->iValue);
-		 }
+	while (clone_iterator.iActual->iNext == NULL)
+		{
+		queue_push(&cloned_queue, clone_iterator.iActual->iValue);
+		}
 
 	return true;
 	}

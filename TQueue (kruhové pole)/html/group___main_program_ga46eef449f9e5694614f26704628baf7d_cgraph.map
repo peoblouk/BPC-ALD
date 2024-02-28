@@ -1,0 +1,9 @@
+<map id="print_element" name="print_element">
+<area shape="rect" id="Node000001" title="Vytisknutí elementu fronty pomocí iterátoru." alt="" coords="5,5,105,31"/>
+<area shape="rect" id="Node000002" href="$group___t_queue_iterator.html#ga30db60bf663f58b83b1181d5406ec879" title="Přečtení hodnoty elementu z fronty pomocí iterátoru." alt="" coords="153,5,293,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,15,139,15,139,21,105,21"/>
+<area shape="rect" id="Node000003" href="$group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593" title="Zjištění platnosti iterátoru." alt="" coords="341,5,495,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,15,328,15,328,21,293,21"/>
+<area shape="rect" id="Node000004" href="$group___t_queue.html#gaa9812b8f3c1b0707450f91283f97384c" title="Zjištění, zda je fronta prázdná" alt="" coords="543,5,660,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,15,529,15,529,21,495,21"/>
+</map>
