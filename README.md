@@ -16,5 +16,10 @@
 
 - Prázdný projekt - ()
 
+## 4. CV (TQueue) kruhové pole
+
+- Prázdný projekt - ()
+- promměnná iBackPos ukazuje na první volné místo v kruhu !
+
 ## Visual Studio settings
  - <img alt="vscode settings" src="img/vs2017_setup_new.png" align = "center">
