@@ -1,91 +1,41 @@
-/** \file main.c
- *  \brief Hlavní program pro testování ADT TQueue
- *  \author Petyovský
- *  \version 2024
- *  $Id: main.c 2616 2024-02-16 15:36:28Z petyovsky $
- */
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "TQueue.h"
 
-/** \defgroup MainProgram 3. Hlavní program
- *  \brief Definice funkcí hlavního programu
- *  \{
- */
+void print_element(const struct TQueueIterator* aIter)
 
-/** \brief Vytisknutí elementu fronty pomocí iterátoru
- *  \details Tisk hodnoty elementu fronty, na který ukazuje předaný iterátor.
- *  \param[in] aIter Ukazatel na existující iterátor
- */
-void print_element(const struct TQueueIterator *aIter)
 	{
 	printf("<%d> ", queue_iterator_value(aIter));
 	}
 
-/** \brief Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43
- *  \details Příklad predikátové funkce. Porovnání hodnoty elementu fronty, na který ukazuje předaný iterátor s hodnotou 43.
- *  \param[in] aIter Ukazatel na existující iterátor
- *  \return \c true pokud je hodnota elementu fronty na který ukazuje iterátor rovna hodnotě 43
- */
-bool is_element_with_value_43(const struct TQueueIterator *aIter)
-	{
-	return queue_iterator_value(aIter) == 43;
-	}
-
-int main()
+int main(void)
 	{
 	struct TQueue queue1 = { 0 };
 	queue_init(&queue1);
-	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false"); // Prázdná fronta?
-	queue_push(&queue1, 0);
-	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false");
+	
+	while (true) // Načítání hodnot
+	{
+		TQueueElement value;
+		if (scanf("%d", &value) != 1)
+			return 1;
 
-	queue_push(&queue1, 222); // Do fronty vrazím čísla
-	for(struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it)) // Inicializuji iterator, testuji podmínku jako ukončení cyklu, (toto je něco jako "for i in queen") 
-		printf("%d ", queue_iterator_value(&it));
-	putchar('\n');
+		if (value < 0) // Hodnota je záporná
+			break;
 
-	queue_push(&queue1, 42); // Do fronty vrazím čísla
-	queue_push(&queue1, 43);
-	queue_push(&queue1, 40);
-
-	for(struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it))
-		print_element(&it);
-	putchar('\n');
-
-	queue_for_each(queue_iterator_begin(&queue1), print_element);
-	putchar('\n');
-
-	struct TQueueIterator it = queue_find_if(queue_iterator_begin(&queue1), is_element_with_value_43);
-	queue_iterator_set_value(&it, 128);
-	putchar('\t');
-	queue_for_each(it, print_element);
-	putchar('\n');
-
-	it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43);
-	queue_iterator_set_value(&it, 64);
-	putchar('\t');
-	queue_for_each(it, print_element);
-	putchar('\n');
-
-	queue_for_each(queue_iterator_begin(&queue1), print_element);
-	putchar('\n');
-
-	TQueueElement val = 0;
-	if(queue_front(&queue1, &val))
-		printf("queue1 front: %d\n", val);
-	if(queue_back(&queue1, &val))
-		printf("queue1 back: %d\n", val);
-
-	while(!queue_is_empty(&queue1))
-		queue_pop(&queue1);
-
-	queue_push(&queue1, 99);
-	queue_for_each(queue_iterator_begin(&queue1), print_element);
-	putchar('\n');
-
-	queue_destroy(&queue1);
-	return 0;
+		if (queue_push(&queue1, value) == false)
+			return 1;
 	}
 
-/** \} MainProgram */
+	printf("queue1: ");
+	struct TQueueIterator Iterator = queue_iterator_begin(&queue1); // Iterátor na tisk
+	if (queue_iterator_is_valid(&Iterator) == false)
+		return 1;
+
+	queue_iterator_to_next(&Iterator);
+
+	struct TQueue queue2 = { 0 };
+
+
+
+	return 1;
+	}

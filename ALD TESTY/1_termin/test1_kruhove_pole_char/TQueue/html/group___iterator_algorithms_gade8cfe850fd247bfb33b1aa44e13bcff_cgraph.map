@@ -1,0 +1,9 @@
+<map id="queue_for_each" name="queue_for_each">
+<area shape="rect" id="Node000001" title="Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty." alt="" coords="5,31,119,56"/>
+<area shape="rect" id="Node000002" href="$group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593" title="Zjištění platnosti iterátoru." alt="" coords="167,5,321,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,33,153,28,154,33,119,38"/>
+<area shape="rect" id="Node000004" href="$group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07" title="Posunutí iterátoru vpřed." alt="" coords="167,55,321,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="119,48,153,53,153,58,119,53"/>
+<area shape="rect" id="Node000003" href="$group___t_queue.html#gaa9812b8f3c1b0707450f91283f97384c" title="Zjištění, zda je fronta prázdná" alt="" coords="369,5,487,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="321,15,356,15,356,21,321,21"/>
+</map>

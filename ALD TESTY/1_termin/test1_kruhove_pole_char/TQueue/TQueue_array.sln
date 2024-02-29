@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TQueue_array", "TQueue_array\TQueue_array.vcxproj", "{A87B3965-3BF9-4C7A-B732-67711173A75C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{829B4DD6-7389-425F-9810-2A1771860DBF}"
+	ProjectSection(SolutionItems) = preProject
+		doc\cv04_zadani_TQueue_array.md = doc\cv04_zadani_TQueue_array.md
+		Doxyfile = Doxyfile
+		doc\extra_stylesheet.css = doc\extra_stylesheet.css
+		doc\project_logo.png = doc\project_logo.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Debug|x64.ActiveCfg = Debug|x64
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Debug|x64.Build.0 = Debug|x64
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Debug|x86.ActiveCfg = Debug|Win32
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Debug|x86.Build.0 = Debug|Win32
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Release|x64.ActiveCfg = Release|x64
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Release|x64.Build.0 = Release|x64
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Release|x86.ActiveCfg = Release|Win32
+		{A87B3965-3BF9-4C7A-B732-67711173A75C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EFD50B0-6684-46B0-AC6C-07685D18E7A7}
+	EndGlobalSection
+EndGlobal

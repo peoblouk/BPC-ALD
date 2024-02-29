@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TQueue_array: 2. Iterátor fronty</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TQueue_array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2. Iterátor fronty</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu QueueIterator a jeho funkcí  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_queue_iterator" id="r_struct_t_queue_iterator"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_queue_iterator">TQueueIterator</a></td></tr>
+<tr class="memdesc:struct_t_queue_iterator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu QueueIterator.  <a href="#struct_t_queue_iterator">...</a><br /></td></tr>
+<tr class="separator:struct_t_queue_iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gad0164ae101775a2ee1387b0a514d1f45" id="r_gad0164ae101775a2ee1387b0a514d1f45"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a> (const struct <a class="el" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue)</td></tr>
+<tr class="memdesc:gad0164ae101775a2ee1387b0a514d1f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na čelo fronty.  <br /></td></tr>
+<tr class="separator:gad0164ae101775a2ee1387b0a514d1f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6cbf7aa3d466d2bf585fe988b8bc9593" id="r_ga6cbf7aa3d466d2bf585fe988b8bc9593"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6cbf7aa3d466d2bf585fe988b8bc9593">queue_iterator_is_valid</a> (const struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga6cbf7aa3d466d2bf585fe988b8bc9593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:ga6cbf7aa3d466d2bf585fe988b8bc9593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7e6145571ff51446a96862cda3d6e07" id="r_gae7e6145571ff51446a96862cda3d6e07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a> (struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gae7e6145571ff51446a96862cda3d6e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:gae7e6145571ff51446a96862cda3d6e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30db60bf663f58b83b1181d5406ec879" id="r_ga30db60bf663f58b83b1181d5406ec879"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga30db60bf663f58b83b1181d5406ec879">queue_iterator_value</a> (const struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga30db60bf663f58b83b1181d5406ec879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z fronty pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga30db60bf663f58b83b1181d5406ec879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43c723f0d3c461ff6b340e3a22885c94" id="r_ga43c723f0d3c461ff6b340e3a22885c94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga43c723f0d3c461ff6b340e3a22885c94">queue_iterator_set_value</a> (const struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *aIter, <a class="el" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> aValue)</td></tr>
+<tr class="memdesc:ga43c723f0d3c461ff6b340e3a22885c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty elementu do fronty pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga43c723f0d3c461ff6b340e3a22885c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu QueueIterator a jeho funkcí </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_queue_iterator" id="struct_t_queue_iterator"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_queue_iterator">&#9670;&#160;</a></span>TQueueIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TQueueIterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu QueueIterator. </p>
+<p>QueueIterator se při vzniku naváže na zvolenou frontu a následně umožňuje přistupovat k jednotlivým elementům pomocí definovaného API. </p>
+</div><div class="dynheader">
+Diagram pro TQueueIterator:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_queue_iterator__coll__graph.svg" width="199" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:ac0855a31476ca5890f3a0fc53e733050" id="r_ac0855a31476ca5890f3a0fc53e733050"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="group___t_queue.html#struct_t_queue">TQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0855a31476ca5890f3a0fc53e733050">iQueue</a></td></tr>
+<tr class="memdesc:ac0855a31476ca5890f3a0fc53e733050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ukazatel na navázanou frontu (mutable iterátor - umožňuje měnit elementy QueueElement)  <br /></td></tr>
+<tr class="separator:ac0855a31476ca5890f3a0fc53e733050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653670a6d238caa045872f0682ec52b3" id="r_a653670a6d238caa045872f0682ec52b3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a653670a6d238caa045872f0682ec52b3">iPos</a></td></tr>
+<tr class="memdesc:a653670a6d238caa045872f0682ec52b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuální pozice pro indexaci elementu v navázané frontě  <br /></td></tr>
+<tr class="separator:a653670a6d238caa045872f0682ec52b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="ac0855a31476ca5890f3a0fc53e733050" name="ac0855a31476ca5890f3a0fc53e733050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0855a31476ca5890f3a0fc53e733050">&#9670;&#160;</a></span>iQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="group___t_queue.html#struct_t_queue">TQueue</a>* iQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ukazatel na navázanou frontu (mutable iterátor - umožňuje měnit elementy QueueElement) </p>
+
+</div>
+</div>
+<a id="a653670a6d238caa045872f0682ec52b3" name="a653670a6d238caa045872f0682ec52b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653670a6d238caa045872f0682ec52b3">&#9670;&#160;</a></span>iPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktuální pozice pro indexaci elementu v navázané frontě </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="gad0164ae101775a2ee1387b0a514d1f45" name="gad0164ae101775a2ee1387b0a514d1f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0164ae101775a2ee1387b0a514d1f45">&#9670;&#160;</a></span>queue_iterator_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> queue_iterator_begin </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_queue.html#struct_t_queue">TQueue</a> *</td>          <td class="paramname"><span class="paramname"><em>aQueue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vytvoření nového iterátoru ukazujícího na čelo fronty. </p>
+<p>Vytvoří a vrací nový iterátor, který je navázán (asociován) na zadanou frontu a ukazuje na element na jejím čele. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aQueue</td><td>Ukazatel na existující frontu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Nový iterátor asociovaný s frontou <code>aQueue</code> ukazující na element na jejím čele </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_gad0164ae101775a2ee1387b0a514d1f45_cgraph.svg" width="319" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_gad0164ae101775a2ee1387b0a514d1f45_icgraph.svg" width="252" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga6cbf7aa3d466d2bf585fe988b8bc9593" name="ga6cbf7aa3d466d2bf585fe988b8bc9593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6cbf7aa3d466d2bf585fe988b8bc9593">&#9670;&#160;</a></span>queue_iterator_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_iterator_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zjištění platnosti iterátoru. </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu definující platnost iterátoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje na platné místo v asociované frontě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_ga6cbf7aa3d466d2bf585fe988b8bc9593_cgraph.svg" width="330" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_ga6cbf7aa3d466d2bf585fe988b8bc9593_icgraph.svg" width="671" height="386"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gae7e6145571ff51446a96862cda3d6e07" name="gae7e6145571ff51446a96862cda3d6e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7e6145571ff51446a96862cda3d6e07">&#9670;&#160;</a></span>queue_iterator_to_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_iterator_to_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru vpřed. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, zajistí jeho posun vpřed (tj. na následující element v asociované frontě). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociované frontě </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_gae7e6145571ff51446a96862cda3d6e07_icgraph.svg" width="435" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga30db60bf663f58b83b1181d5406ec879" name="ga30db60bf663f58b83b1181d5406ec879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30db60bf663f58b83b1181d5406ec879">&#9670;&#160;</a></span>queue_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> queue_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přečtení hodnoty elementu z fronty pomocí iterátoru. </p>
+<p>Přečte hodnotu elementu fronty z pozice určené iterátorem. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Hodnota elementu fronty z pozice, na kterou ukazuje iterátor <code>aIter</code>, nebo nulový element (pokud je iterátor neplatný). </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_ga30db60bf663f58b83b1181d5406ec879_cgraph.svg" width="518" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_ga30db60bf663f58b83b1181d5406ec879_icgraph.svg" width="470" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga43c723f0d3c461ff6b340e3a22885c94" name="ga43c723f0d3c461ff6b340e3a22885c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43c723f0d3c461ff6b340e3a22885c94">&#9670;&#160;</a></span>queue_iterator_set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queue_iterator_set_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_queue_iterator">TQueueIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapsání hodnoty elementu do fronty pomocí iterátoru. </p>
+<p>Zapíše hodnotu elementu do fronty na pozice určenou iterátorem. Původní hodnota elementu fronty je přepsána novou hodnotou <code>aValue</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu zapisovaná do fronty na pozici určenou iterátorem </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor <code>aIter</code> platný a hodnota <code>aValue</code> byla do fronty úspěšně zapsána </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_ga43c723f0d3c461ff6b340e3a22885c94_cgraph.svg" width="507" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_queue_iterator_ga43c723f0d3c461ff6b340e3a22885c94_icgraph.svg" width="239" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 23. úno 2024 14.01:46, pro projekt: BPC-ALD: ADT TQueue_array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

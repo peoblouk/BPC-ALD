@@ -124,15 +124,21 @@ bool queue_clone(const struct TQueue* aSourceQueue, struct TQueue* aCloneQueue)
 	if (aSourceQueue == aCloneQueue) // Obě jsou stejné
 		return true;
 
-	 struct TQueue *cloned_queue = NULL;
+	 struct TQueueNode *CurrentSourceNode = aSourceQueue->iFront;
+	 struct TQueueNode *CurrentCloneNode = 1; // Musí zde zvolit
 
-	 struct TQueueIterator clone_iterator = queue_iterator_begin(&aSourceQueue); // vytvoření pomocného iterátoru
-	 if (queue_iterator_is_valid(&clone_iterator) == false) // Chyba k vytvoření nedošlo
-		 return false;
-
-	while (clone_iterator.iActual->iNext == NULL)
+	while (CurrentSourceNode != NULL)
 		{
-		queue_push(&cloned_queue, clone_iterator.iActual->iValue);
+		CurrentCloneNode = malloc(sizeof(struct TQueueNode)); // Alokace nové paměti pro uložení
+		if (CurrentCloneNode == NULL) // Kontrola po alokaci
+			return false;
+
+		CurrentCloneNode->iValue = CurrentSourceNode->iValue;
+		CurrentCloneNode = CurrentSourceNode->iNext;
+
+
+		CurrentCloneNode->iNext = NULL; // 
+		aCloneQueue->iBack = CurrentCloneNode;
 		}
 
 	return true;

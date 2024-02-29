@@ -1,0 +1,8 @@
+<map id="queue_init" name="queue_init">
+<area shape="rect" id="Node000001" title="Inicializace prázdné fronty." alt="" coords="259,5,340,31"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,21,56,21,56,15,245,15"/>
+<area shape="rect" id="Node000003" href="$group___t_queue.html#ga85b3f0ae9d6f44ca6c102df1e0619dc9" title="Deinicializace fronty." alt="" coords="104,31,211,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,30,211,36,210,31,245,25"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="90,33,56,26,57,20,91,27"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="queue_find_if_not" name="queue_find_if_not">
+<area shape="rect" id="Node000001" title="Vyhledání prvního elementu fronty nesplňujícího zadaný predikát." alt="" coords="5,31,128,56"/>
+<area shape="rect" id="Node000002" href="$group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593" title="Zjištění platnosti iterátoru." alt="" coords="177,5,330,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,32,162,28,163,33,129,38"/>
+<area shape="rect" id="Node000004" href="$group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07" title="Posunutí iterátoru vpřed." alt="" coords="176,55,331,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,49,162,53,162,58,128,54"/>
+<area shape="rect" id="Node000003" href="$group___t_queue.html#gaa9812b8f3c1b0707450f91283f97384c" title="Zjištění, zda je fronta prázdná" alt="" coords="379,5,496,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,15,365,15,365,21,331,21"/>
+</map>

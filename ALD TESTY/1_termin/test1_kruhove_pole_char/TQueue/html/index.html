@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TQueue_array: Zadání cvičení 4</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TQueue_array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 4 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv04__zadani___t_queue__array"></a> Dokončete implementaci níže uvedených funkcí realizujících operace pro ADT fronta (Queue). V dodaném příkladu také implementujte operace pro mutable iterátor ADT fronta a následně při jeho použití ověřte správnou funkci tohoto rozhraní. Frontu realizujte pomocí <a href="https://en.wikipedia.org/wiki/Circular_buffer" title="Kruhové pole je jeden ze způsobů, jakým bývá datová struktura fronta v praxi často implementována. Její podstatou je zacyklené pole, ve kterém po posledním prvku znovu následuje první, takže pohyb v poli může být nekonečný. Po zápisu na poslední prvek se zapisuje znovu do prvního – za předpokladu, že z prvního už byl mezitím obsah odebrán. Ke správě cyklického pole slouží dva ukazatele – jeden na pozici, kam se má zapisovat nový prvek, druhý na pozici, ze které se má číst nejstarší vložený prvek. Pokud ukazují na stejnou pozici, je fronta prázdná, pokud by se takového stavu mělo dosáhnout změnou ukazatele zapisování, pak naopak dochází k tomu, že do plné fronty se už další prvek nevejde.">kruhového pole</a>.</p>
+<p>Pokuste se odpovědět si na tyto otázky:</p><ul>
+<li>Co je ADT Queue/fronta?</li>
+<li>Jak tento abstraktní datový typ funguje?</li>
+<li>Pro jaký typ úloh je ADT fronta vhodný?</li>
+<li>Jak by se realizovala fronta pomocí kruhového pole?</li>
+<li>Jaký bude postup operací pro vložení i výběr elementu a také postup výpočtu jejich indexů pomocí operací <a href="https://cs.wikipedia.org/wiki/Modul%C3%A1rn%C3%AD_aritmetika">modulární aritmetiky</a>?</li>
+</ul>
+<p>Pro řešení jsou připraveny zdrojové texty v souborech. Soubor <code><a class="el" href="main_8c.html" title="Hlavní program pro testování ADT TQueue.">main.c</a></code> obsahuje volání jednotlivých funkcí tak, jak byly používány v předchozích projektech. Funkce <code><a class="el" href="group___main_program.html#ga46eef449f9e5694614f26704628baf7d" title="Vytisknutí elementu fronty pomocí iterátoru.">print_element()</a></code> vytiskne hodnotu aktuálního elementu, na který ukazuje iterátor předaný jako parametr.</p>
+<p>Funkce <code><a class="el" href="group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff" title="Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43.">is_element_with_value_43()</a></code> je definice predikátu (funkce vracející <code>bool</code>, která je volaná na místě výrazu v podmínce) používaného v programu. Tento predikát testuje, zda hodnota v elementu na který odkazuje iterátor, je rovna číslu 43. Povšimněte si jeho použití - do dalších funkcí se předává pouze název tohoto predikátu (název funkce je totiž jejím vstupním bodem - adresou, na kterou se předá řízení při provádění jejího těla).</p>
+<p>V souboru <code><a class="el" href="_t_queue_8h.html" title="Definice typu fronta (realizace pomocí kruhového pole)">TQueue.h</a></code> jsou dále definice struktur a deklarace funkcí. Elementy fronty jsou opět definovány jako zobecněný typ <code><a class="el" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4" title="Definice typu QueueElement (datový typ elementů fronty)">TQueueElement</a></code>. Délku použitého kruhového pole lze nastavit pomocí definice <code>QUEUE_MAXCOUNT</code>. Vlastní fronta je reprezentována složkami ve struktuře <code><a class="el" href="group___t_queue.html#struct_t_queue" title="Definice typu Queue.">TQueue</a></code>, která obsahuje pole prvků <code>iValues</code> a dva indexy (tj. pozice v poli). Index <code>iBackPos</code> odkazuje na místo určené pro budoucí vložení nového elementu fronty. Index <code>iFrontPos</code> určuje místo pro budoucí odebrání platného elementu z fronty. Pokud mají oba indexy stejnou hodnotu, je fronta prázdná.</p>
+<p>Při práci s indexy je nutné ošetřit "kruhovost" pole - tj. využívat pro výpočet hodnot indexů operátor <code>%</code> pro zbytek po dělení nebo normalizovat indexy tak, aby ukazovaly vždy do pole (po dosažení konce pole je opět nastavit na jeho začátek).</p>
+<p>Opět si všimněte, že většina souborů v projektu je stejná jako při realizaci pomocí lineárního seznamu. Jediné co se liší, je obsah struktury <code><a class="el" href="group___t_queue.html#struct_t_queue" title="Definice typu Queue.">TQueue</a></code> a implementace funkcí, které musí respektovat změnu obsahu této struktury. Použití (názvy funkcí, jejich parametry i volání) zůstává stejné, což odpovídá definici pro abstraktní datový typ.</p>
+<p><em>Poznámka: <br  />
+ Operátor <code>%</code> představující operaci zbytek po dělení <a href="https://en.cppreference.com/w/c/language/operator_arithmetic#Remainder">je definován</a> tak, že je možné ho využívat i pro <a href="https://cs.wikipedia.org/wiki/Zbytek_po_d%C4%9Blen%C3%AD">záporné hodnoty operandů</a> a dle definice v některých z těchto případů vrací jako výsledek zápornou hodnotu. Proto při implementaci fronty budeme, pro operaci zbytek po dělení, důsledně používat pro oba operandy pouze kladné hodnoty.</em></p>
+<h1>Funkce pro implementaci <code>TQueue_array</code> a popis jejich činnosti:</h1>
+<p>V následující kapitole je popsána stručně činnost. </p><pre class="fragment">    void queue_init(struct TQueue *aQueue);
+            // Prvotní nastavení vnitřních proměnných fronty.
+            // Pokud parametr aQueue není NULL,
+            // vynuluj indexy do pole pro čelo (iFrontPos) i konec (iBackPos) fronty.
+
+    bool queue_is_empty(const struct TQueue *aQueue);
+            // Test, zda je fronta prázdná - (tj. fronta neobsahuje žádné elementy).
+            // Pokud parametr aQueue není NULL, 
+            // assercí otestuj konzistenci indexů na počátek a konec fronty (oba indexy musí být menší než QUEUE_MAXCOUNT),
+            // odkazují-li indexy do pole pro čelo i konec fronty na různé elementy, vrať false,
+            // jinak vrať true.
+
+    bool /* TQueueIterator */ queue_front(const struct TQueue *aQueue, TQueueElement *aValue);
+            // Do paměti na kterou ukazuje parametr aValue, ulož (hodnotovou) kopii elementu z čela fronty.
+            // Pokud parametr aQueue není NULL, fronta není prázdná a parametr aValue není NULL,
+            // zkopíruj hodnotu elementu z čela fronty do paměti, na kterou ukazuje parametr aValue, a vrať true,
+            // jinak vrať false.
+
+    bool /* TQueueIterator */ queue_back(const struct TQueue *aQueue, TQueueElement *aValue);
+            // Do paměti na kterou ukazuje parametr aValue, ulož (hodnotovou) kopii elementu z konce fronty.
+            // Pokud parametr aQueue není NULL, fronta není prázdná a parametr aValue není NULL,
+            // zkopíruj hodnotu elementu z konce fronty do paměti, na kterou ukazuje parametr aValue, a vrať true,
+            // jinak vrať false.
+            // Využijte iBackPos, který již ovšem ukazuje na pozici pro uložení dalšího (budoucího) elementu.
+            // Výpočet indexu elementu na konci fronty musí řešit "kruhovost" pole.
+
+    bool queue_push(struct TQueue *aQueue, TQueueElement aValue);
+            // Vkládá element na konec fronty (dle indexu iBackPos).
+            // Pokud parametr aQueue není NULL,
+            // vypočti nový index pro příští uložení (iBackPos; použít modulo),
+            // pokud je nový index pro uložení příštího elementu roven indexu elementu na čele fronty (iFrontPos),
+            // vrať false.
+            // Jinak na pozici (iBackPos) ulož vkládaný element aValue,
+            // zapiš nový index pro uložení příštího elementu do iBackPos a vrať true.
+
+    bool queue_pop(struct TQueue *aQueue);
+            // Odebere element z čela fronty (dle indexu iFrontPos).
+            // Pokud parametr aQueue není NULL a fronta není prázdná,
+            // posuň čelo fronty na další element (iFrontPos; použít modulo), vrať true,
+            // jinak vrať false.
+
+    void queue_destroy(struct TQueue *aQueue);
+            // Zrušení obsahu fronty.
+            // Pokud parametr aQueue není NULL,
+            // nastav čelo a konec fronty na pozici 0. 
+            // Je možné použít funkci queue_init (zdůvodněte si).
+</pre> <h1>API pro práci s iterátory:</h1>
+<p>Struktura pro iterátor <code><a class="el" href="group___t_queue_iterator.html#struct_t_queue_iterator" title="Definice typu QueueIterator.">TQueueIterator</a></code> obsahuje ukazatel na asociovanou frontu a aktuální pozici v této frontě. Koncept správného používání iterátoru musí opět zajistit programátor, který iterátor využívá, viz předchozí cvičení (tj. iterátor garantuje svoji správnou funkci pouze dokud, se nezmění počet elementů v asociované frontě). V hlavičkovém souboru jsou i funkce rozšiřující možnosti iterátoru - jejich činnost je popsána na konci tohoto textu. </p><pre class="fragment">    struct TQueueIterator queue_iterator_begin(const struct TQueue *aQueue);
+            // Inicializace a asociace/propojení iterátoru s frontou - zapíše odkaz na frontu a nastaví pozici v iterátoru na počátek fronty.
+            // Pokud předaná fronta existuje (tj. aQueue není NULL) a není prázdná, zapiš do složky iterátoru iQueue adresu asociované fronty,
+            // nastav iterátor na element na čele fronty (na čele je element, který se bude první odebírat),
+            // vrať hodnotu vytvořeného iterátoru.
+            // Jinak vrať iterátor s vynulovanými vnitřními složkami.
+
+    bool queue_iterator_is_valid(const struct TQueueIterator *aIter);
+            // Zjistí, zda iterátor odkazuje na platný element asociované fronty (tj. element má platnou pozici).
+            // Pokud parametr aIter není NULL a
+            // pokud je iterátor asociován s platnou frontou (tj. má platnou adresu TQueue),
+            // tato fronta není prázdná, pokračuj.
+            // Vrať true, pokud je aktuální odkaz iterátoru platný (odkazuje do platných pozic mezi počátek a konec),
+            // jinak vrať false.
+
+    bool queue_iterator_to_next(struct TQueueIterator *aIter);
+            // Přesune odkaz v iterátoru z aktuálního elementu na následující element fronty.
+            // Pokud je iterátor platný, pokračuj, jinak zruš propojení iterátoru s frontou a vrať false.
+            // Posuň aktuální odkaz na další element.
+            // Vrať true, když nově odkazovaný element existuje (odkazuje do platných pozic mezi počátek a konec; operace modulo),
+            // jinak zruš propojení iterátoru s frontou a vrať false.
+
+    TQueueElement queue_iterator_value(const struct TQueueIterator *aIter);
+            // Vrátí hodnotu elementu, na kterou odkazuje iterátor.
+            // Pokud je iterátor validní, vrať hodnotu aktuálního elementu,
+            // jinak vrať nulový element.
+
+    bool queue_iterator_set_value(const struct TQueueIterator *aIter, TQueueElement aValue);
+            // Nastaví element, na který odkazuje iterátor, na novou hodnotu.
+            // Pokud je iterátor validní,
+            // zapiš do aktuálního elementu hodnotu předanou pomocí druhého parametru a vrať true,
+            // jinak vrať false.
+</pre> <h1>Univerzální funkce pro práci s iterátory - cykly/algoritmy:</h1>
+<p>Funkce <code><a class="el" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff" title="Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty.">queue_for_each()</a></code> s prototypem: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> aIter, <span class="keywordtype">void</span>(*aOperation)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter))</div>
+<div class="ttc" id="agroup___iterator_algorithms_html_gade8cfe850fd247bfb33b1aa44e13bcff"><div class="ttname"><a href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a></div><div class="ttdeci">static void queue_for_each(struct TQueueIterator aIter, void(*aOperation)(const struct TQueueIterator *aIter))</div><div class="ttdoc">Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty.</div><div class="ttdef"><b>Definition</b> TQueue.h:146</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_struct_t_queue_iterator"><div class="ttname"><a href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a></div><div class="ttdoc">Definice typu QueueIterator.</div><div class="ttdef"><b>Definition</b> TQueue.h:94</div></div>
+</div><!-- fragment --><p> Prvním parametrem funkce je iterátor <code>aIter</code>, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou operaci. <br  />
+ Druhým parametrem funkce je ukazatel <code>aOperation</code> definující funkci (např. <code><a class="el" href="group___main_program.html#ga46eef449f9e5694614f26704628baf7d" title="Vytisknutí elementu fronty pomocí iterátoru.">print_element()</a></code>), jenž je volána na každý z elementů fronty, od elementu na který směřuje iterátor <code>aIter</code>, až po konec fronty. <br  />
+ Funkce pomocí předaného iterátoru <code>aIter</code> prochází elementy fronty a pro každý aktuální element zavolá funkci <code>aOperation</code>. Funkce tedy umožňuje <b>provést</b> se všemi elementy fronty <b>stejnou operaci</b>, kterou definuje parametr <code>aOperation</code>. <br  />
+ Tato univerzální funkce je využitelná např. pro tisk všech elementů fronty. <br  />
+</p>
+<p>Funkce <code><a class="el" href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925" title="Vyhledání prvního elementu fronty splňujícího zadaný predikát.">queue_find_if()</a></code> s prototypem: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> <a class="code hl_function" href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925">queue_find_if</a>(struct <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> aIter, bool(*aPredicate)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter))</div>
+<div class="ttc" id="agroup___iterator_algorithms_html_gadccc11c611587469295868641ce95925"><div class="ttname"><a href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925">queue_find_if</a></div><div class="ttdeci">static struct TQueueIterator queue_find_if(struct TQueueIterator aIter, bool(*aPredicate)(const struct TQueueIterator *aIter))</div><div class="ttdoc">Vyhledání prvního elementu fronty splňujícího zadaný predikát.</div><div class="ttdef"><b>Definition</b> TQueue.h:158</div></div>
+</div><!-- fragment --><p> Prvním parametrem funkce je iterátor <code>aIter</code>, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou podmínku. <br  />
+ Druhým parametrem funkce je ukazatel <code>aPredicate</code> určující predikátovou funkci (např. <code><a class="el" href="group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff" title="Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43.">is_element_with_value_43()</a></code>), která je použita jako podmínka pro ukončení cyklu po nalezení elementu, který tuto podmínku splňuje. <br  />
+ Funkce pomocí předaného iterátoru <code>aIter</code> postupně prochází elementy fronty a pro každý element zavolá funkci, na kterou směřuje ukazatel <code>aPredicate</code>. Pokud <code>aPredicate</code> vrátí <code>true</code> (aktuální element splňuje podmínky definované v těle predikátu), cyklus se ukončí a vrátí se iterátor ukazující na aktuální element <b>splňující</b> podmínku definovanou predikátovou funkcí <code>aPredicate</code>. <br  />
+ Pokud při procházení elementů fronty pomocí iterátoru <code>aIter</code> nevrátí predikát <code>aPredicate</code> hodnotu <code>true</code> pro žádný z elementů, je návratovou hodnotou funkce neplatný iterátor.</p>
+<p>Funkce <code><a class="el" href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b" title="Vyhledání prvního elementu fronty nesplňujícího zadaný predikát.">queue_find_if_not()</a></code> s prototypem: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> <a class="code hl_function" href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b">queue_find_if_not</a>(struct <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> aIter, bool(*aPredicate)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter))</div>
+<div class="ttc" id="agroup___iterator_algorithms_html_ga299db40016266a1a943c32a3a528ea9b"><div class="ttname"><a href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b">queue_find_if_not</a></div><div class="ttdeci">static struct TQueueIterator queue_find_if_not(struct TQueueIterator aIter, bool(*aPredicate)(const struct TQueueIterator *aIter))</div><div class="ttdoc">Vyhledání prvního elementu fronty nesplňujícího zadaný predikát.</div><div class="ttdef"><b>Definition</b> TQueue.h:172</div></div>
+</div><!-- fragment --><p> Prvním parametrem funkce je iterátor <code>aIter</code>, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou podmínku. <br  />
+ Druhým parametrem funkce je ukazatel <code>aPredicate</code> na predikátovou funkci (např. <code><a class="el" href="group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff" title="Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43.">is_element_with_value_43()</a></code>), která je použita jako negativní podmínka pro ukončení cyklu. <br  />
+ Funkce pomocí předaného iterátoru <code>aIter</code> postupně prochází elementy fronty a pro každý element zavolá funkci, na kterou směřuje ukazatel <code>aPredicate</code>. Pokud <code>aPredicate</code> vrátí <code>false</code> (aktuální element nesplňuje podmínky definované v těle predikátu), cyklus se ukončí a vrátí se iterátor ukazující na aktuální element <b>nesplňující</b> podmínku definovanou predikátovou funkcí <code>aPredicate</code>. <br  />
+ Pokud při procházení elementů fronty pomocí iterátoru <code>aIter</code> nevrátí predikát <code>aPredicate</code> hodnotu <code>false</code> pro žádný z elementů, je návratovou hodnotou funkce neplatný iterátor.</p>
+<p>Demonstrativní příklad použití těchto funkcí:</p>
+<div class="fragment"><div class="line"><span class="comment">// Precondition: queue1: {41 42 43 43 44 45}</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Tisk všech elementů fronty</span></div>
+<div class="line">        <a class="code hl_function" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a>(<a class="code hl_function" href="group___t_queue_iterator.html#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a>(&amp;queue1), <a class="code hl_function" href="group___main_program.html#ga46eef449f9e5694614f26704628baf7d">print_element</a>);</div>
+<div class="line">        putchar(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Nalezení prvního elementu s hodnotou 43 od počátku až do konce fronty</span></div>
+<div class="line">        <span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> it = <a class="code hl_function" href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925">queue_find_if</a>(<a class="code hl_function" href="group___t_queue_iterator.html#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a>(&amp;queue1), <a class="code hl_function" href="group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff">is_element_with_value_43</a>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Přepsání hodnoty nalezeného elementu na hodnotu 128, pokud byl nalezen a posun na další element fronty</span></div>
+<div class="line">        <a class="code hl_function" href="group___t_queue_iterator.html#ga43c723f0d3c461ff6b340e3a22885c94">queue_iterator_set_value</a>(&amp;it, 128);</div>
+<div class="line">        <a class="code hl_function" href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a>(&amp;it);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Tisk všech zbývajících elementů fronty</span></div>
+<div class="line">        <a class="code hl_function" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a>(it, <a class="code hl_function" href="group___main_program.html#ga46eef449f9e5694614f26704628baf7d">print_element</a>);</div>
+<div class="line">        putchar(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Nalezení prvního elementu s jinou hodnotou než 43 za pozicí elementu s novou hodnotou 128 až do konce fronty</span></div>
+<div class="line">        it = <a class="code hl_function" href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b">queue_find_if_not</a>(it, <a class="code hl_function" href="group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff">is_element_with_value_43</a>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Přepsání hodnoty nalezeného elementu na hodnotu 64, pokud byl nalezen</span></div>
+<div class="line">        <a class="code hl_function" href="group___t_queue_iterator.html#ga43c723f0d3c461ff6b340e3a22885c94">queue_iterator_set_value</a>(&amp;it, 64);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Opětovný tisk všech elementů fronty</span></div>
+<div class="line">        <a class="code hl_function" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a>(<a class="code hl_function" href="group___t_queue_iterator.html#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a>(&amp;queue1), <a class="code hl_function" href="group___main_program.html#ga46eef449f9e5694614f26704628baf7d">print_element</a>);</div>
+<div class="line">        putchar(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Postcondition: queue1: {41 42 128 43 64 45}</span></div>
+<div class="ttc" id="agroup___main_program_html_ga46eef449f9e5694614f26704628baf7d"><div class="ttname"><a href="group___main_program.html#ga46eef449f9e5694614f26704628baf7d">print_element</a></div><div class="ttdeci">void print_element(const struct TQueueIterator *aIter)</div><div class="ttdoc">Vytisknutí elementu fronty pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> main.c:20</div></div>
+<div class="ttc" id="agroup___main_program_html_ga5ec1bf27394ea27ffb0109783ddf69ff"><div class="ttname"><a href="group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff">is_element_with_value_43</a></div><div class="ttdeci">bool is_element_with_value_43(const struct TQueueIterator *aIter)</div><div class="ttdoc">Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43.</div><div class="ttdef"><b>Definition</b> main.c:30</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_ga43c723f0d3c461ff6b340e3a22885c94"><div class="ttname"><a href="group___t_queue_iterator.html#ga43c723f0d3c461ff6b340e3a22885c94">queue_iterator_set_value</a></div><div class="ttdeci">bool queue_iterator_set_value(const struct TQueueIterator *aIter, TQueueElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do fronty pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TQueue.c:117</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_gad0164ae101775a2ee1387b0a514d1f45"><div class="ttname"><a href="group___t_queue_iterator.html#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a></div><div class="ttdeci">struct TQueueIterator queue_iterator_begin(const struct TQueue *aQueue)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na čelo fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:76</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_gae7e6145571ff51446a96862cda3d6e07"><div class="ttname"><a href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a></div><div class="ttdeci">bool queue_iterator_to_next(struct TQueueIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TQueue.c:93</div></div>
+</div><!-- fragment --><p>Další příklady použití těchto funkcí naleznete v souboru <code><a class="el" href="main_8c.html" title="Hlavní program pro testování ADT TQueue.">main.c</a></code>.</p>
+<hr  />
+<p> <code>$Id: <a class="el" href="cv04__zadani___t_queue__array_8md.html">cv04_zadani_TQueue_array.md</a> 2617 2024-02-21 13:53:31Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 23. úno 2024 14.01:46, pro projekt: BPC-ALD: ADT TQueue_array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<map id="queue_iterator_to_next" name="queue_iterator_to_next">
+<area shape="rect" id="Node000001" title="Posunutí iterátoru vpřed." alt="" coords="275,54,429,79"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,54,56,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,50,272,32,226,18,165,8,138,10,105,18,72,35,47,56,43,51,69,31,103,13,137,5,165,3,227,13,274,27,316,45"/>
+<area shape="rect" id="Node000003" href="$group___iterator_algorithms.html#gadccc11c611587469295868641ce95925" title="Vyhledání prvního elementu fronty splňujícího zadaný predikát." alt="" coords="117,28,214,54"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,57,214,50,215,45,261,51"/>
+<area shape="rect" id="Node000004" href="$group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b" title="Vyhledání prvního elementu fronty nesplňujícího zadaný predikát." alt="" coords="104,78,227,103"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="261,81,227,85,227,80,260,76"/>
+<area shape="rect" id="Node000005" href="$group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff" title="Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty." alt="" coords="109,127,222,152"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="307,87,200,129,198,124,305,82"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="104,55,57,64,56,59,103,50"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="90,80,56,73,57,68,91,74"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="117,124,103,117,48,82,51,77,105,112,119,119"/>
+</map>
