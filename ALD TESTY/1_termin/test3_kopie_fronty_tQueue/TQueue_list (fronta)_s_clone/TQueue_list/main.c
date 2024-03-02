@@ -2,18 +2,14 @@
 #include <stdio.h>
 #include "TQueue.h"
 
-void print_element(const struct TQueueIterator* aIter)
-
-	{
-	printf("<%d> ", queue_iterator_value(aIter));
-	}
+static void print_element(const struct TQueueIterator* aIter); // Tisk hodnot iterátoru
 
 int main(void)
 	{
 	struct TQueue queue1 = { 0 };
 	queue_init(&queue1);
 	
-	while (true) // Načítání hodnot
+	while (true) // Načítání hodnot z konzole
 	{
 		TQueueElement value;
 		if (scanf("%d", &value) != 1)
@@ -30,12 +26,17 @@ int main(void)
 	struct TQueueIterator Iterator = queue_iterator_begin(&queue1); // Iterátor na tisk
 	if (queue_iterator_is_valid(&Iterator) == false)
 		return 1;
-
-	queue_iterator_to_next(&Iterator);
-
+	
+	queue_for_each(Iterator, print_element); // TIsk
+	
 	struct TQueue queue2 = { 0 };
-
+	queue_init(&queue2); // Proměnná pro clonování
 
 
 	return 1;
+	}
+
+static void print_element(const struct TQueueIterator* aIter) // Tisk elementů po 
+	{
+	printf("<%d> ", queue_iterator_value(aIter));
 	}

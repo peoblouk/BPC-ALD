@@ -16,7 +16,6 @@
  */
 
 typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty)
-
 #define QUEUE_MAXCOUNT 1024					///< Maximální počet elementů fronty
 
 /** \brief Definice typu Queue
