@@ -52,14 +52,28 @@ int main()
 
 	if (num < 0) // Rotace do leva
 		{
-		
+			for(size_t i = 0; i < abs(num); i++)
+			{
+		TQueueElement current;
+		queue_front(&queue1, &current);
+		queue_pop_back(&queue1);
+		queue_push_front(&queue1, &current);
+		}
+		// tisk
+	struct TQueueIterator iterator2 = queue_iterator_begin(&queue1);
+	if (queue_iterator_is_valid(&iterator1) == false)
+		return 1;
+		queue_for_each(iterator2, print_element);
 		}
 	else // Rotace do prava
 		{
-		for (size_t i = 0; i > num; i--)
+		for(size_t i = 0; i < abs(num); i++)
 			{
-
-			}
+			TQueueElement current;
+			queue_back(&queue1, &current);
+			queue_pop(&queue1);
+			queue_push(&queue1, &current);
+		}
 		}
 
 
