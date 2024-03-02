@@ -105,12 +105,17 @@ struct TQueueIterator
 ```
 
 
-## Užitečné funkce, které stojí za využití
-- print_element (tisk elementů pomocí iterátoru, dá se využít všude)
-```
+## Příklady užitečných funkcí, které stojí za využití s iterátory:
+<b>Tisk elementů pomocí iterátoru, dá se využít všude </b>
+- print_element
 
-```
+<b>Funkce projede pomocí iterátoru všechny elementy a vytiskne je </b>
+- př: queue_for_each(queue_iterator_begin(&queue1), print_element); 
 
+<b>Vyhledá první element fronty splňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
+- př: struct TQueueIterator it = queue_find_if(queue_iterator_begin(&queue1), is_element_with_value_43);
 
+<b>Vyhledá první element fronty nesplňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
+- př: struct TQueueIterator it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43);
 ## Visual Studio settings
  - <img alt="vscode settings" src="img/vs2017_setup_new.png" align = "center">
