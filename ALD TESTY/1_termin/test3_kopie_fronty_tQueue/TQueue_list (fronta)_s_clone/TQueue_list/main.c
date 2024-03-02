@@ -27,13 +27,15 @@ int main(void)
 	if (queue_iterator_is_valid(&Iterator) == false)
 		return 1;
 	
-	queue_for_each(Iterator, print_element); // TIsk
+	queue_for_each(Iterator, print_element); // Tisk jednotlivých proměnných
 	
 	struct TQueue queue2 = { 0 };
 	queue_init(&queue2); // Proměnná pro clonování
+	queue_for_each( (struct TQueueIterator) queue_iterator_begin(&queue2) , print_element); // Tisk jednotlivých proměnných
 
 
-	return 1;
+
+	return 0;
 	}
 
 static void print_element(const struct TQueueIterator* aIter) // Tisk elementů po 
