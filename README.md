@@ -50,8 +50,6 @@ struct TStackIterator
 	size_t iPos;					///< Aktuální pozice pro indexaci elementu v navázaném zásobníku
 	};
 ```
-<img alt="TStack_funkce" src="img/tstack_funkce.png" >
-
 ----------------------------------------------
 TStack_list (LIFO realizováno seznamu)
 ```
@@ -66,13 +64,14 @@ struct TStackNode
 	TStackElement iValue;					///< Element zásobníku uložený v uzlu lineárního jednosměrně vázaného seznamu
 	};
 ```
+<img alt="TStack_funkce" src="img/tstack_funkce.png" >
 
 ----------------------------------------------
 ## 3. CV (TQueue_list)
 
 - Prázdný projekt - ()
 - Typ Queue obsahuje ukazatele na dynamicky alokované proměnné typu QueueNode, které představují uzly s hodnotami elementů uspořádanými do lineárního jednosměrně vázaného seznamu
-<img width="400" height="350" src="img/tstack.gif" alt="tstack_gif" />
+<img alt="TQueue_funkce" src="img/tqueue.gif" >
 ```
 typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty) // Mohu změnit aby elementy byli například typu float
 struct TQueue
@@ -81,13 +80,14 @@ struct TQueue
 	struct TQueueNode *iBack;				///< PIMPL ukazatel na poslední uzel lineárního jednosměrně vázaného seznamu realizujícího frontu
 	};
 ```
-<img alt="TQueue_funkce" src="img/tqueue.gif" >
 
 ----------------------------------------------
 ## 4. CV (TQueue) pomocí kruhového pole
 
 - Prázdný projekt - ()
 - promměnná iBackPos ukazuje na první volné místo v kruhu !
+<img width="400" height="350" alt="TQueue_circled_funkce" src="img/tqueue_circle.gif" >
+
 ```
 typedef int TQueueElement;						///< Definice typu QueueElement (datový typ elementů fronty)
 #define QUEUE_MAXCOUNT 1024						///< Maximální počet elementů fronty
@@ -103,6 +103,7 @@ struct TQueueIterator
 	size_t iPos;							///< Aktuální pozice pro indexaci elementu v navázané frontě
 	};
 ```
+
 
 ## Užitečné funkce, které stojí za využití
 - print_element (tisk elementů pomocí iterátoru, dá se využít všude)
