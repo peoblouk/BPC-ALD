@@ -3,10 +3,11 @@
   <img alt="logo" src="img/logo.png" > BPC-ALD 
 </h1>
 
-Iterátor slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu)
+Iterátor - slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu
+ADT - alternativní datový typ
 
 ----------------------------------------------
-## 1.CV (ADT TVector)
+## TVector
 
 - Typ Vector spravuje dynamicky alokované pole prvků typu VectorElement a umožňuje s nimi pracovat pomocí definovaného API
   
@@ -27,14 +28,13 @@ struct TVectorIterator
 <img alt="TVector_funkce" src="img/tvector_funkce.png" >
 
 ----------------------------------------------
-## 2.CV (TStack_array, TStack_list)
+## TStack_array a TStack_list (LIFO - zásobník)
 
 - umět vysvětlit práci funkci pop, push, top
-- Prázdný projekt - (https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/peoblouk/BPC-ALD/commit/2948d699a6ae5ffcbd3cdcafe8ac390ec5248fb2)
 
 <img width="400" height="350" src="img/tstack.gif" alt="tstack_gif" />
 
-TStack_array (LIFO realizováno pomocí pole)
+<b>TStack_array (LIFO realizováno pomocí pole) </b>
 ```
 typedef int TStackElement;					///< Definice typu StackElement (datový typ elementů zásobníku
 #define STACK_MAXCOUNT 1024					///< Maximální počet elementů zásobníku
@@ -51,7 +51,8 @@ struct TStackIterator
 	};
 ```
 ----------------------------------------------
-TStack_list (LIFO realizováno seznamu)
+
+<b>TStack_list (LIFO realizováno seznamu)</b>
 ```
 typedef int TStackElement;					///< Definice typu StackElement (datový typ elementů zásobníku)
 struct TStack
@@ -67,11 +68,10 @@ struct TStackNode
 <img alt="TStack_funkce" src="img/tstack_funkce.png" >
 
 ----------------------------------------------
-## 3. CV (TQueue_list)
-
-- Prázdný projekt - ()
+## TQueue_list (FIFO - fronta)
 - Typ Queue obsahuje ukazatele na dynamicky alokované proměnné typu QueueNode, které představují uzly s hodnotami elementů uspořádanými do lineárního jednosměrně vázaného seznamu
 <img alt="TQueue_funkce" src="img/tqueue.gif" >
+
 ```
 typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty) // Mohu změnit aby elementy byli například typu float
 struct TQueue
@@ -82,9 +82,8 @@ struct TQueue
 ```
 
 ----------------------------------------------
-## 4. CV (TQueue) pomocí kruhového pole
+## TQueue_circle (FIFO - fronta)
 
-- Prázdný projekt - ()
 - promměnná iBackPos ukazuje na první volné místo v kruhu !
 <img width="400" height="350" alt="TQueue_circled_funkce" src="img/tqueue_circle.gif" >
 
@@ -103,14 +102,17 @@ struct TQueueIterator
 	size_t iPos;							///< Aktuální pozice pro indexaci elementu v navázané frontě
 	};
 ```
+<img alt="TStack_funkce" src="img/tqueue_cicled_funkce.png" >
 
+## Příklady užitečných funkcí, které stojí za využití s iterátory:
+<b>Tisk elementů pomocí iterátoru, dá se využít všude </b>
+- <b>print_element </b>
 
-## Užitečné funkce, které stojí za využití
-- print_element (tisk elementů pomocí iterátoru, dá se využít všude)
-```
+<b>Funkce projede pomocí iterátoru všechny elementy a vytiskne je </b>
+- <b>př: queue_for_each(queue_iterator_begin(&queue1), print_element); <b> 
 
-```
+<b>Vyhledá první element fronty splňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
+- <b>př: struct TQueueIterator it = queue_find_if(queue_iterator_begin(&queue1), is_element_with_value_43); </b>
 
-
-## Visual Studio settings
- - <img alt="vscode settings" src="img/vs2017_setup_new.png" align = "center">
+<b>Vyhledá první element fronty nesplňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
+- <b>př: struct TQueueIterator it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43); </b>
