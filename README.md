@@ -3,10 +3,11 @@
   <img alt="logo" src="img/logo.png" > BPC-ALD 
 </h1>
 
-Iterátor slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu)
+Iterátor - slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu
+ADT - alternativní datový typ
 
 ----------------------------------------------
-## 1.CV (ADT TVector)
+## TVector
 
 - Typ Vector spravuje dynamicky alokované pole prvků typu VectorElement a umožňuje s nimi pracovat pomocí definovaného API
   
@@ -27,14 +28,14 @@ struct TVectorIterator
 <img alt="TVector_funkce" src="img/tvector_funkce.png" >
 
 ----------------------------------------------
-## 2.CV (TStack_array, TStack_list)
+## TStack_array a TStack_list (LIFO - zásobník)
 
 - umět vysvětlit práci funkci pop, push, top
 - Prázdný projekt - (https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/peoblouk/BPC-ALD/commit/2948d699a6ae5ffcbd3cdcafe8ac390ec5248fb2)
 
 <img width="400" height="350" src="img/tstack.gif" alt="tstack_gif" />
 
-TStack_array (LIFO realizováno pomocí pole)
+<b>TStack_array (LIFO realizováno pomocí pole) </b>
 ```
 typedef int TStackElement;					///< Definice typu StackElement (datový typ elementů zásobníku
 #define STACK_MAXCOUNT 1024					///< Maximální počet elementů zásobníku
@@ -51,7 +52,8 @@ struct TStackIterator
 	};
 ```
 ----------------------------------------------
-TStack_list (LIFO realizováno seznamu)
+
+<b>TStack_list (LIFO realizováno seznamu)</b>
 ```
 typedef int TStackElement;					///< Definice typu StackElement (datový typ elementů zásobníku)
 struct TStack
@@ -67,8 +69,7 @@ struct TStackNode
 <img alt="TStack_funkce" src="img/tstack_funkce.png" >
 
 ----------------------------------------------
-## 3. CV (TQueue_list)
-
+## TQueue_list (FIFO - fronta)
 - Prázdný projekt - ()
 - Typ Queue obsahuje ukazatele na dynamicky alokované proměnné typu QueueNode, které představují uzly s hodnotami elementů uspořádanými do lineárního jednosměrně vázaného seznamu
 <img alt="TQueue_funkce" src="img/tqueue.gif" >
@@ -82,7 +83,7 @@ struct TQueue
 ```
 
 ----------------------------------------------
-## 4. CV (TQueue) pomocí kruhového pole
+## TQueue_circle (FIFO - fronta)
 
 - Prázdný projekt - ()
 - promměnná iBackPos ukazuje na první volné místo v kruhu !
