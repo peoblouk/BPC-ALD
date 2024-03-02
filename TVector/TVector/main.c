@@ -72,8 +72,8 @@ int main(int argc, char *argv[])
 	if(!fsrc)
 		return 1;
 
-	//bool initialized = vector_init_random(&vector1, 50000);
-	bool initialized = vector_init_file(&vector1, fsrc);
+	bool initialized = vector_init_random(&vector1, 50000);
+	//bool initialized = vector_init_file(&vector1, fsrc);
 
 	fclose(fsrc);
 	if(!initialized)
