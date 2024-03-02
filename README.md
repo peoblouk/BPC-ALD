@@ -5,9 +5,9 @@
 
 Iterátor slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu)
 
+----------------------------------------------
 ## 1.CV (ADT TVector)
 
-- Prázdný projekt - (https://github.com/peoblouk/BPC-ALD/archive/139065b91894c760631c64bd2558fc8627cf8a95.zip)
 - Typ Vector spravuje dynamicky alokované pole prvků typu VectorElement a umožňuje s nimi pracovat pomocí definovaného API
   
 - <b>POZOR !!! Pokud jsem změnil typ TVectorElement z int na char musím najít makro #define TVECTOR_ELEMENT_FRMSTR   "%d" </b>
@@ -26,13 +26,13 @@ struct TVectorIterator
 ```
 <img alt="TVector_funkce" src="img/tvector_funkce.png" >
 
-
+----------------------------------------------
 ## 2.CV (TStack_array, TStack_list)
 
 - umět vysvětlit práci funkci pop, push, top
 - Prázdný projekt - (https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/peoblouk/BPC-ALD/commit/2948d699a6ae5ffcbd3cdcafe8ac390ec5248fb2)
 
-![TStack gif](img/tstack.gif)
+<img width="400" height="350" src="img/tstack.gif" alt="tstack_gif" />
 
 TStack_array (LIFO realizováno pomocí pole)
 ```
@@ -52,7 +52,7 @@ struct TStackIterator
 ```
 <img alt="TStack_funkce" src="img/tstack_funkce.png" >
 
-
+----------------------------------------------
 TStack_list (LIFO realizováno seznamu)
 ```
 typedef int TStackElement;					///< Definice typu StackElement (datový typ elementů zásobníku)
@@ -67,11 +67,12 @@ struct TStackNode
 	};
 ```
 
-
+----------------------------------------------
 ## 3. CV (TQueue_list)
 
 - Prázdný projekt - ()
 - Typ Queue obsahuje ukazatele na dynamicky alokované proměnné typu QueueNode, které představují uzly s hodnotami elementů uspořádanými do lineárního jednosměrně vázaného seznamu
+<img width="400" height="350" src="img/tstack.gif" alt="tstack_gif" />
 ```
 typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty) // Mohu změnit aby elementy byli například typu float
 struct TQueue
@@ -80,9 +81,9 @@ struct TQueue
 	struct TQueueNode *iBack;				///< PIMPL ukazatel na poslední uzel lineárního jednosměrně vázaného seznamu realizujícího frontu
 	};
 ```
-<img alt="TQueue_funkce" src="img/tqueue_funkce.png" >
+<img alt="TQueue_funkce" src="img/tqueue.gif" >
 
-
+----------------------------------------------
 ## 4. CV (TQueue) pomocí kruhového pole
 
 - Prázdný projekt - ()
