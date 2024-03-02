@@ -79,7 +79,19 @@ struct TQueue
 - Prázdný projekt - ()
 - promměnná iBackPos ukazuje na první volné místo v kruhu !
 ```
-
+typedef int TQueueElement;						///< Definice typu QueueElement (datový typ elementů fronty)
+#define QUEUE_MAXCOUNT 1024						///< Maximální počet elementů fronty
+struct TQueue
+	{
+	size_t iFrontPos;						///< Aktuální index prvku pole určeného pro odstranění elementu z čela fronty
+	size_t iBackPos;						///< Aktuální index prvku pole určeného pro vložení elementu na konec fronty
+	TQueueElement iValues[QUEUE_MAXCOUNT];				///< Pole hodnot typu QueueElement
+	};
+struct TQueueIterator
+	{
+	const struct TQueue *iQueue;					///< Ukazatel na navázanou frontu (mutable iterátor - umožňuje měnit elementy QueueElement)
+	size_t iPos;							///< Aktuální pozice pro indexaci elementu v navázané frontě
+	};
 ```
 
 ## Visual Studio settings
