@@ -31,7 +31,6 @@ struct TVectorIterator
 ## TStack_array a TStack_list (LIFO - zásobník)
 
 - umět vysvětlit práci funkci pop, push, top
-- Prázdný projekt - (https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/peoblouk/BPC-ALD/commit/2948d699a6ae5ffcbd3cdcafe8ac390ec5248fb2)
 
 <img width="400" height="350" src="img/tstack.gif" alt="tstack_gif" />
 
@@ -70,9 +69,9 @@ struct TStackNode
 
 ----------------------------------------------
 ## TQueue_list (FIFO - fronta)
-- Prázdný projekt - ()
 - Typ Queue obsahuje ukazatele na dynamicky alokované proměnné typu QueueNode, které představují uzly s hodnotami elementů uspořádanými do lineárního jednosměrně vázaného seznamu
 <img alt="TQueue_funkce" src="img/tqueue.gif" >
+
 ```
 typedef int TQueueElement;					///< Definice typu QueueElement (datový typ elementů fronty) // Mohu změnit aby elementy byli například typu float
 struct TQueue
@@ -85,7 +84,6 @@ struct TQueue
 ----------------------------------------------
 ## TQueue_circle (FIFO - fronta)
 
-- Prázdný projekt - ()
 - promměnná iBackPos ukazuje na první volné místo v kruhu !
 <img width="400" height="350" alt="TQueue_circled_funkce" src="img/tqueue_circle.gif" >
 
@@ -104,19 +102,17 @@ struct TQueueIterator
 	size_t iPos;							///< Aktuální pozice pro indexaci elementu v navázané frontě
 	};
 ```
-
+<img alt="TStack_funkce" src="img/tqueue_cicled_funkce.png" >
 
 ## Příklady užitečných funkcí, které stojí za využití s iterátory:
 <b>Tisk elementů pomocí iterátoru, dá se využít všude </b>
-- print_element
+- <b>print_element </b>
 
 <b>Funkce projede pomocí iterátoru všechny elementy a vytiskne je </b>
-- př: queue_for_each(queue_iterator_begin(&queue1), print_element); 
+- <b>př: queue_for_each(queue_iterator_begin(&queue1), print_element); <b> 
 
 <b>Vyhledá první element fronty splňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
-- př: struct TQueueIterator it = queue_find_if(queue_iterator_begin(&queue1), is_element_with_value_43);
+- <b>př: struct TQueueIterator it = queue_find_if(queue_iterator_begin(&queue1), is_element_with_value_43); </b>
 
 <b>Vyhledá první element fronty nesplňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
-- př: struct TQueueIterator it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43);
-## Visual Studio settings
- - <img alt="vscode settings" src="img/vs2017_setup_new.png" align = "center">
+- <b>př: struct TQueueIterator it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43); </b>
