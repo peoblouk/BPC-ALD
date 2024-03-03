@@ -116,3 +116,53 @@ struct TQueueIterator
 
 <b>Vyhledá první element fronty nesplňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
 - <b>př: struct TQueueIterator it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43); </b>
+
+<b>Oboustranná fronta </b>
+- Pokud chci oboustrannou frontu musím realizovat další dvě operace, mám tak:
+	- push (na konec fronty) , pop (vyhodit ze začátku fronty), pop_back (vyhodit z konce fronty), push_front (přidat na začátek fronty)
+  
+```
+bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue) // Vložení prvku na začátek
+	{
+	if (aQueue == NULL)
+		return false;
+	if (queue_is_empty(aQueue) == false)
+		return false;
+
+	if (--aQueue->iFrontPos < 0) // Index je záporný v C nelze
+		{
+		aQueue->iFrontPos = QUEUE_MAXCOUNT + aQueue->iFrontPos; // 1024 + (-1)
+		}
+	else // Index
+		aQueue->iFrontPos = --aQueue->iFrontPos;
+
+	aQueue->iValues[aQueue->iFrontPos] = aValue;
+
+	return true;
+	}
+```
+
+```
+bool queue_pop_back(struct TQueue* aQueue) // Odebrání prvku z konce
+	{
+	if (aQueue == NULL)
+		return false;
+	if (queue_is_empty(aQueue) == false)
+		return false;
+
+	if (aQueue->iBackPos == 0) // Pokud se dostanu na konec seznamu
+		{
+		if (aQueue->iFrontPos == QUEUE_MAXCOUNT - 1) // Ověřuji zda není pole plné
+			return false;
+		return aQueue->iBackPos = QUEUE_MAXCOUNT - 1;
+		}
+
+	if (aQueue->iBackPos == aQueue->iFrontPos) // Pole je plné nebo prázdné
+		return false;
+	
+	aQueue->iBackPos -= 1;
+	return true;
+	}
+```
+
+
