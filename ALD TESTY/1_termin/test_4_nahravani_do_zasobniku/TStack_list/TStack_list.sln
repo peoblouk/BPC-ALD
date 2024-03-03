@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TStack_list", "TStack_list\TStack_list.vcxproj", "{537B5339-65EC-4894-96B5-7F76BE8239E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{781AB03E-2432-42E1-B115-E92BB6389EDE}"
+	ProjectSection(SolutionItems) = preProject
+		doc\cv02_zadani_TStack.md = doc\cv02_zadani_TStack.md
+		Doxyfile = Doxyfile
+		doc\extra_stylesheet.css = doc\extra_stylesheet.css
+		doc\project_logo.png = doc\project_logo.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Debug|x64.ActiveCfg = Debug|x64
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Debug|x64.Build.0 = Debug|x64
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Debug|x86.ActiveCfg = Debug|Win32
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Debug|x86.Build.0 = Debug|Win32
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Release|x64.ActiveCfg = Release|x64
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Release|x64.Build.0 = Release|x64
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Release|x86.ActiveCfg = Release|Win32
+		{537B5339-65EC-4894-96B5-7F76BE8239E8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42112EAE-A93E-4B91-B8A0-7B5C56A3DACA}
+	EndGlobalSection
+EndGlobal
