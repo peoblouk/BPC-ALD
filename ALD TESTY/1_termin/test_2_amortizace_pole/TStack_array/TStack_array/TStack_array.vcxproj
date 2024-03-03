@@ -143,10 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="check.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="TStack.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="check.h" />
     <ClInclude Include="TStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

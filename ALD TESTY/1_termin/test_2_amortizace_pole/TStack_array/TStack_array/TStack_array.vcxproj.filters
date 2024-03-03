@@ -21,9 +21,15 @@
     <ClCompile Include="TStack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="check.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="check.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

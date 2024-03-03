@@ -55,7 +55,7 @@ int main()
 
 	stack_push(&stack1, 222);
 	for(struct TStackIterator it = stack_iterator_begin(&stack1); stack_iterator_is_valid(&it); stack_iterator_to_next(&it))
-		printf("%d ", stack_iterator_value(&it));
+		printf("<%d> ", stack_iterator_value(&it));
 	putchar('\n');
 
 	stack_push(&stack1, 42);

@@ -9,6 +9,7 @@
 
 #include <stdbool.h>
 #include <stddef.h>
+#include "check.h"
 
 /** \defgroup TStack 1. Stack
  *  \brief Definice datového typu Stack a jeho funkcí (realizace zásobníku pomocí pole)
@@ -17,7 +18,7 @@
 
 typedef int TStackElement;					///< Definice typu StackElement (datový typ elementů zásobníku)
 
-#define STACK_MAXCOUNT 1024					///< Maximální počet elementů zásobníku
+// #define STACK_MAXCOUNT 1024					///< Maximální počet elementů zásobníku
 
 /** \brief Definice typu Stack
  *  \details Typ Stack obsahuje pole prvků typu StackElement a umožňuje s nimi pracovat pomocí definovaného API.
@@ -26,7 +27,8 @@ typedef int TStackElement;					///< Definice typu StackElement (datový typ elem
 struct TStack
 	{
 	size_t iCount;							///< Aktuální počet elementů zásobníku
-	TStackElement iValues[STACK_MAXCOUNT];	///< Pole hodnot typu StackElement
+	size_t iCapacity;						///< Celkový počet prvků
+	TStackElement *iValues;	///< Pole hodnot typu StackElement
 	};
 
 /** \brief Inicializace prázdného zásobníku

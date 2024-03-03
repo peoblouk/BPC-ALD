@@ -7,57 +7,120 @@
 
 #include "TStack.h"
 
-void stack_init(struct TStack *aStack)
+void stack_init(struct TStack* aStack)
 	{
 	if (aStack) // if(aStack != NULL) // Pokud je místo alokované, tak nastavím iCount na 0, tím inicializuji
+		{
 		aStack->iCount = 0;
-
+		aStack->iValues = NULL;
+		aStack->iCapacity = 0;
+		}
 	}
 
-bool stack_is_empty(const struct TStack *aStack)
+bool stack_is_empty(const struct TStack* aStack)
 	{
 	if (aStack == NULL)
 		return true;
-	
+
 	return aStack->iCount == 0; // vrátí true nebo false
 	}
 
-bool /* TStackIterator */ stack_top(const struct TStack *aStack, TStackElement *aValue)
+bool /* TStackIterator */ stack_top(const struct TStack* aStack, TStackElement* aValue)
 	{
 	if (stack_is_empty(aStack))
 		return false;
 	if (aValue == NULL) // pokud nová hodnota bude nula tak nemám co zapsat
 		return false;
-	
+
 	*aValue = aStack->iValues[aStack->iCount - 1]; // vloží hodnotu z aValue
-	
 	return true;
 	}
 
-bool stack_push(struct TStack *aStack, TStackElement aValue)
+bool stack_push(struct TStack* aStack, TStackElement aValue)
 	{
-	if(!aStack)
-		return false;
-	
-	if (aStack->iCount >= STACK_MAXCOUNT) // Kontrola abychom nepřekročili velikost pole
+	if (aStack == NULL) // Kontrola vstupních 
 		return false;
 
-	aStack->iValues[aStack->iCount++] = aValue; // Přidání hodnoty
+	if (aStack->iCapacity == 0) // Není žádná kapacita v poli
+		{
+		aStack->iValues = (TStackElement*)malloc(sizeof(TStackElement)); // Pokusím se alokovat
+		if (aStack->iValues == NULL) // Chyba nedošlo k alokaci
+			{
+			printf("\nNepodaradilo alokovat\n");
+			return false;
+			}
+		aStack->iCapacity += 1;
+		aStack->iValues[aStack->iCount] = aValue;
+		++aStack->iCount;
+		return true;
+		}
 
+	if (aStack->iCount < aStack->iCapacity) // Není třeba alokovat dostatek místa
+		{
+		aStack->iValues[aStack->iCount] = aValue;
+		++aStack->iCount;
+		return true;
+		}
 
+	if (aStack->iCount >= aStack->iCapacity) // Capacita je stejně velká jako iSize je třeba naalokovat 2* víc místa (amortizace)
+		{
+		printf("\nRealokace!\n");
+		TStackElement* new_values = (TStackElement*)calloc(2 * aStack->iCapacity, sizeof(TStackElement));
+		if (new_values == NULL) // Chyba po alokaci
+			{
+			printf("\nNepodaradilo alokovat\n");
+			return false;
+			}
+
+		for (size_t i = 0; i < (aStack->iCount - 1); ++i)
+			new_values[i] = aStack->iValues[i];			
+		
+		free(aStack->iValues);
+		aStack->iValues = new_values; // Předám nové hodnoty
+
+		aStack->iCount++;
+		aStack->iValues[aStack->iCount] = aValue; // Přidání hodnoty
+		aStack->iCapacity *= 2; // Dvakrat zvětšená kapacita
+		return true;
+		}
+	return false;
 	}
+
 
 bool stack_pop(struct TStack *aStack)
 	{
 	if (stack_is_empty(aStack))
 		return false;
-	--aStack->iCount;
+
+	if (--aStack->iCount == 0) // Po odebrání nebude zásobník obsahovat nic, tak proč držet alokované pole
+		{
+		stack_destroy(aStack);
+		return true;
+		}
+
+	if (aStack->iCount > aStack->iCapacity / 4) // Obsahuje > 75% prvků (aStack->iCapacity / 4) = 25 %
+		return true;
+
+	else {
+		TStackElement* new_values = (TStackElement*)calloc(aStack->iCapacity / 2, sizeof(TStackElement));
+		if (new_values == NULL) // Chyba realokace
+			return false;
+	
+		aStack->iCapacity /= 2; // Zmenši kapacitu na polovinu
+		for (size_t i = 0; i < aStack->iCount; i++)
+			new_values[i] = aStack->iValues[i];
+		
+		free(aStack->iValues);
+		aStack->iValues = new_values;
+		aStack->iCapacity /= 2;
+		}
 
 	return true;
 	}
 
 void stack_destroy(struct TStack *aStack)
 	{
+	free(aStack->iValues);
 	stack_init(aStack);
 	}
 
