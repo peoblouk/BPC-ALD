@@ -76,9 +76,9 @@ bool stack_push(struct TStack* aStack, TStackElement aValue)
 			new_values[i] = aStack->iValues[i];			
 		
 		free(aStack->iValues);
-		aStack->iValues = new_values; // Předám nové hodnoty
+		aStack->iValues = new_values; // Předám nové hodnoty adresy, které byli alokovány
 
-		aStack->iValues[aStack->iCount] = aValue; // Přidání hodnoty
+		aStack->iValues[aStack->iCount] = aValue; // Přidám hodnoty na adresy pole
 		aStack->iCount++;
 		aStack->iCapacity *= 2; // Dvakrat zvětšená kapacita
 		return true;
