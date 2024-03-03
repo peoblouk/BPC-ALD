@@ -114,6 +114,40 @@ bool stack_iterator_to_next(struct TStackIterator *aIter);
  */
 TStackElement stack_iterator_value(const struct TStackIterator *aIter);
 
+static inline void stack_for_each(struct TStackIterator aIter, void(*aOperation)(const struct TStackIterator* aIter))
+	{
+	for (bool valid = stack_iterator_is_valid(&aIter); valid; valid = stack_iterator_to_next(&aIter))
+		aOperation(&aIter);
+	}
+
+/** \brief Vyhledání prvního elementu fronty splňujícího zadaný predikát
+ *  \details Vyhledá první element fronty splňující zadaný predikát \p aPredicate. Vyhledávání probíhá od elementu určeného iterátorem \p aIter, až do konce fronty.
+ *  \param[in] aIter Ukazatel na existující iterátor, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou operaci
+ *  \param[in] aPredicate Ukazatel na predikátovou funkci (funkci vracející \c bool a mající jeden parametr typu ukazatel na iterátor)
+ *  \return Hodnota iterátoru ukazujícího na první nalezený element fronty splňující zadaný predikát \p aPredicate, nebo neplatný iterátor, pokud nebyl nalezen žádný vhodný element.
+ */
+static inline struct TStackIterator stack_find_if(struct TStackIterator aIter, bool(*aPredicate)(const struct TStackIterator* aIter))
+	{
+	for (bool valid = stack_iterator_is_valid(&aIter); valid; valid = stack_iterator_to_next(&aIter))
+		if (aPredicate(&aIter))
+			return aIter;
+	return aIter;
+	}
+
+/** \brief Vyhledání prvního elementu fronty nesplňujícího zadaný predikát
+ *  \details Vyhledá první element fronty nesplňující zadaný predikát \p aPredicate. Vyhledávání probíhá od elementu určeného iterátorem \p aIter, až do konce fronty.
+ *  \param[in] aIter Ukazatel na existující iterátor, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou operaci
+ *  \param[in] aPredicate Ukazatel na predikátovou funkci (funkci vracející \c bool a mající jeden parametr typu ukazatel na iterátor)
+ *  \return Hodnota iterátoru ukazujícího na první nalezený element fronty nesplňující zadaný predikát \p aPredicate, nebo neplatný iterátor, pokud nebyl nalezen žádný vhodný element.
+ */
+static inline struct TStackIterator stack_find_if_not(struct TStackIterator aIter, bool(*aPredicate)(const struct TStackIterator* aIter))
+	{
+	for (bool valid = stack_iterator_is_valid(&aIter); valid; valid = stack_iterator_to_next(&aIter))
+		if (!aPredicate(&aIter))
+			return aIter;
+	return aIter;
+	}
+
 /** \} TStackIterator */
 
 #endif /* TSTACK_H */

@@ -7,6 +7,7 @@
  *  $Id: TStack.h 2592 2024-02-09 17:45:42Z petyovsky $
  */
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdbool.h>
 #include <stdlib.h>
 #include "check.h"
@@ -113,6 +114,47 @@ bool stack_iterator_to_next(struct TStackIterator *aIter);
  *  \return Hodnota elementu zásobníku z pozice, na kterou ukazuje iterátor \p aIter, nebo nulový element (pokud je iterátor neplatný).
  */
 TStackElement stack_iterator_value(const struct TStackIterator *aIter);
+
+
+/** \brief Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty.
+ *  \details Zavolá zadanou funkci \p aOperation na každý element fronty v rozsahu od pozice určené iterátorem až do konce fronty.
+ *  \param[in] aIter Ukazatel na existující iterátor, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou operaci
+ *  \param[in] aOperation Ukazatel na funkci vracející \c void a mající jeden parametr typu ukazatel na iterátor
+ */
+static inline void stack_for_each(struct TStackIterator aIter, void(*aOperation)(const struct TStackIterator* aIter))
+	{
+	for (bool valid = stack_iterator_is_valid(&aIter); valid; valid = stack_iterator_to_next(&aIter))
+		aOperation(&aIter);
+	}
+
+/** \brief Vyhledání prvního elementu fronty splňujícího zadaný predikát
+ *  \details Vyhledá první element fronty splňující zadaný predikát \p aPredicate. Vyhledávání probíhá od elementu určeného iterátorem \p aIter, až do konce fronty.
+ *  \param[in] aIter Ukazatel na existující iterátor, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou operaci
+ *  \param[in] aPredicate Ukazatel na predikátovou funkci (funkci vracející \c bool a mající jeden parametr typu ukazatel na iterátor)
+ *  \return Hodnota iterátoru ukazujícího na první nalezený element fronty splňující zadaný predikát \p aPredicate, nebo neplatný iterátor, pokud nebyl nalezen žádný vhodný element.
+ */
+static inline struct TStackIterator stack_find_if(struct TStackIterator aIter, bool(*aPredicate)(const struct TStackIterator* aIter))
+	{
+	for (bool valid = stack_iterator_is_valid(&aIter); valid; valid = stack_iterator_to_next(&aIter))
+		if (aPredicate(&aIter))
+			return aIter;
+	return aIter;
+	}
+
+/** \brief Vyhledání prvního elementu fronty nesplňujícího zadaný predikát
+ *  \details Vyhledá první element fronty nesplňující zadaný predikát \p aPredicate. Vyhledávání probíhá od elementu určeného iterátorem \p aIter, až do konce fronty.
+ *  \param[in] aIter Ukazatel na existující iterátor, jenž je předem asociovaný se zvolenou frontou a který tak definuje počáteční element pro zvolenou operaci
+ *  \param[in] aPredicate Ukazatel na predikátovou funkci (funkci vracející \c bool a mající jeden parametr typu ukazatel na iterátor)
+ *  \return Hodnota iterátoru ukazujícího na první nalezený element fronty nesplňující zadaný predikát \p aPredicate, nebo neplatný iterátor, pokud nebyl nalezen žádný vhodný element.
+ */
+static inline struct TStackIterator stack_find_if_not(struct TStackIterator aIter, bool(*aPredicate)(const struct TStackIterator* aIter))
+	{
+	for (bool valid = stack_iterator_is_valid(&aIter); valid; valid = stack_iterator_to_next(&aIter))
+		if (!aPredicate(&aIter))
+			return aIter;
+	return aIter;
+	}
+
 
 /** \} TStackIterator */
 

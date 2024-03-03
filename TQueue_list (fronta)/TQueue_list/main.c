@@ -18,9 +18,9 @@
  *  \param[in] aIter Ukazatel na existující iterátor
  */
 void print_element(const struct TQueueIterator *aIter)
-	{
+{
 	printf("<%d> ", queue_iterator_value(aIter));
-	}
+}
 
 /** \brief Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43
  *  \details Příklad predikátové funkce. Porovnání hodnoty elementu fronty, na který ukazuje předaný iterátor s hodnotou 43.
@@ -28,20 +28,20 @@ void print_element(const struct TQueueIterator *aIter)
  *  \return \c true pokud je hodnota elementu fronty na který ukazuje iterátor rovna hodnotě 43
  */
 bool is_element_with_value_43(const struct TQueueIterator *aIter)
-	{
+{
 	return queue_iterator_value(aIter) == 43;
-	}
+}
 
 int main()
-	{
-	struct TQueue queue1 = { 0 };
+{
+	struct TQueue queue1 = {0};
 	queue_init(&queue1);
 	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false"); // Prázdná fronta?
 	queue_push(&queue1, 0);
 	printf("queue1 is empty: %s\n", queue_is_empty(&queue1) ? "true" : "false");
 
-	queue_push(&queue1, 222); // Do fronty vrazím čísla
-	for(struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it)) // Inicializuji iterator, testuji podmínku jako ukončení cyklu, (toto je něco jako "for i in queen") 
+	queue_push(&queue1, 222);																								  // Do fronty vrazím čísla
+	for (struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it)) // Inicializuji iterator, testuji podmínku jako ukončení cyklu, (toto je něco jako "for i in queen")
 		printf("%d ", queue_iterator_value(&it));
 	putchar('\n');
 
@@ -49,7 +49,7 @@ int main()
 	queue_push(&queue1, 43);
 	queue_push(&queue1, 40);
 
-	for(struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it))
+	for (struct TQueueIterator it = queue_iterator_begin(&queue1); queue_iterator_is_valid(&it); queue_iterator_to_next(&it))
 		print_element(&it);
 	putchar('\n');
 
@@ -72,12 +72,12 @@ int main()
 	putchar('\n');
 
 	TQueueElement val = 0;
-	if(queue_front(&queue1, &val))
+	if (queue_front(&queue1, &val))
 		printf("queue1 front: %d\n", val);
-	if(queue_back(&queue1, &val))
+	if (queue_back(&queue1, &val))
 		printf("queue1 back: %d\n", val);
 
-	while(!queue_is_empty(&queue1))
+	while (!queue_is_empty(&queue1))
 		queue_pop(&queue1);
 
 	queue_push(&queue1, 99);
@@ -86,6 +86,6 @@ int main()
 
 	queue_destroy(&queue1);
 	return 0;
-	}
+}
 
 /** \} MainProgram */

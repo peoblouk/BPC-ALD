@@ -65,7 +65,8 @@ bool stack_push(struct TStack* aStack, TStackElement aValue)
 	if (aStack->iCount >= aStack->iCapacity) // Capacita je stejně velká jako iSize je třeba naalokovat 2* víc místa (amortizace)
 		{
 		printf("\nRealokace!\n");
-		TStackElement* new_values = (TStackElement*)calloc(2 * aStack->iCapacity, sizeof(TStackElement));
+		TStackElement* new_values = (TStackElement*)calloc(2 * aStack->iCapacity, sizeof(TStackElement)); // využít realloc 
+		// realloc(new_values, sizeof(TStackElement));
 		if (new_values == NULL) // Chyba po alokaci
 			{
 			printf("\nNepodaradilo alokovat\n");
