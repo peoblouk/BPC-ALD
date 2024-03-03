@@ -105,7 +105,7 @@ struct TQueueIterator
 ```
 <img alt="TStack_funkce" src="img/tqueue_cicled_funkce.png" >
 
-## Příklady užitečných funkcí, které stojí za využití s iterátory:
+## Příklady užitečných funkcí, které stojí za využití:
 <b>Tisk elementů pomocí iterátoru, dá se využít všude </b>
 - <b>print_element </b>
 
@@ -118,6 +118,10 @@ struct TQueueIterator
 <b>Vyhledá první element fronty nesplňující zadaný predikát aPredicate. Vyhledávání probíhá od elementu určeného iterátorem aIter, až do konce fronty. </b>
 - <b>př: struct TQueueIterator it = queue_find_if_not(queue_iterator_begin(&queue1), is_element_with_value_43); </b>
 
+<b> Přetypování </b>
+ Zajišťuje, že i když calloc standardně vrací ukazatel na void, tedy void*, tento výsledek bude interpretován jako ukazatel na TStackElement, což je pravděpodobně datový typ, který má být použit ve vašem zásobníku. Tento "typecast" je užitečný, protože vám umožňuje přiřadit výsledek přímo do proměnné očekávaného typu, aniž byste museli použít explicitní přetypování.
+ 
+ - (TStackElement*)
 <b>Oboustranná fronta </b>
 - Pokud chci oboustrannou frontu musím realizovat další dvě operace, mám tak:
 	- push (na konec fronty) , pop (vyhodit ze začátku fronty), pop_back (vyhodit z konce fronty), push_front (přidat na začátek fronty)
