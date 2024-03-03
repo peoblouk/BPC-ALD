@@ -78,8 +78,8 @@ bool stack_push(struct TStack* aStack, TStackElement aValue)
 		free(aStack->iValues);
 		aStack->iValues = new_values; // Předám nové hodnoty
 
-		aStack->iCount++;
 		aStack->iValues[aStack->iCount] = aValue; // Přidání hodnoty
+		aStack->iCount++;
 		aStack->iCapacity *= 2; // Dvakrat zvětšená kapacita
 		return true;
 		}
