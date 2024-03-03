@@ -3,9 +3,10 @@
   <img alt="logo" src="img/logo.png" > BPC-ALD 
 </h1>
 
-Iterátor - slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu
-ADT - alternativní datový typ
-
+<b>Slovník</b>
+- Iterátor - slouží obečně pro iterování v nějakém souboru dat (neboli procházení třeba jednotlivých složkách seznamu
+- ADT - alternativní datový typ
+- časová Amortizace - znamená, že když dojde k naplnění například pole, tak se dopředu naalokuje 2x více paměti, naopak při odstraňování když klesne na 75% kapacity, tak se pole uvolní
 ----------------------------------------------
 ## TVector
 
