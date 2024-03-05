@@ -1,0 +1,44 @@
+<map id="queue_is_empty" name="queue_is_empty">
+<area shape="rect" id="Node000001" title="Zjištění, zda je fronta prázdná" alt="" coords="728,142,845,167"/>
+<area shape="rect" id="Node000002" href="$group___main_program.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,343,56,368"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="752,137,718,120,679,105,513,50,441,28,374,13,309,9,276,12,244,19,211,31,177,47,142,69,106,96,92,114,80,141,59,214,44,289,36,343,31,343,39,288,54,212,75,139,88,111,102,92,139,65,174,43,209,26,242,14,275,7,308,4,375,7,443,22,515,45,681,100,720,115,754,132"/>
+<area shape="rect" id="Node000003" href="$group___t_queue.html#gabdf5c3e56234ff344f49c206632f7fbb" title="Získání hodnoty elementu z konce fronty." alt="" coords="355,91,447,116"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="725,141,680,132,554,116,447,108,448,103,554,111,680,126,726,136"/>
+<area shape="rect" id="Node000004" href="$group___t_queue.html#gadf7ec766208c056364fba19f6d6b5d3f" title="Získání hodnoty elementu z čela fronty." alt="" coords="559,142,648,167"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="714,157,648,157,648,152,714,152"/>
+<area shape="rect" id="Node000005" href="$group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593" title="Zjištění platnosti iterátoru." alt="" coords="527,319,680,344"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="765,178,620,320,616,317,761,175"/>
+<area shape="rect" id="Node000014" href="$group___t_queue.html#ga100499d1e5ff881cd97b03484f6e744b" title="Odstranění elementu z čela fronty." alt="" coords="561,519,646,544"/>
+<area shape="poly" id="edge27_Node000001_Node000014" title=" " alt="" coords="776,181,613,520,608,518,771,179"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="342,96,287,91,224,93,161,107,132,120,106,138,84,160,67,186,55,215,46,245,37,302,34,343,29,342,31,301,41,244,50,213,63,184,80,157,102,134,130,116,159,102,223,88,287,86,342,90"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="545,153,437,147,307,147,244,150,186,157,139,168,105,183,87,200,72,219,51,265,40,309,36,343,30,342,35,308,46,263,68,217,83,196,103,179,137,163,186,152,243,145,307,142,437,142,545,147"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="594,358,578,394,553,437,520,480,480,517,429,545,384,556,276,564,226,573,185,583,166,585,146,583,125,576,102,563,80,543,63,518,50,491,41,462,32,408,29,369,35,369,37,408,46,461,55,489,68,516,84,539,106,559,127,572,147,578,166,580,184,578,225,568,276,558,383,551,427,540,477,512,517,477,549,434,573,392,590,356"/>
+<area shape="rect" id="Node000006" href="$group___iterator_algorithms.html#gadccc11c611587469295868641ce95925" title="Vyhledání prvního elementu fronty splňujícího zadaný predikát." alt="" coords="141,343,239,368"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="513,340,239,356,239,350,512,334"/>
+<area shape="rect" id="Node000007" href="$group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b" title="Vyhledání prvního elementu fronty nesplňujícího zadaný predikát." alt="" coords="129,192,251,218"/>
+<area shape="poly" id="edge10_Node000005_Node000007" title=" " alt="" coords="580,311,536,270,508,250,478,234,420,216,359,207,302,203,252,203,251,198,302,198,360,201,421,211,480,229,511,245,539,266,584,307"/>
+<area shape="rect" id="Node000008" href="$group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff" title="Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty." alt="" coords="133,294,247,319"/>
+<area shape="poly" id="edge12_Node000005_Node000008" title=" " alt="" coords="512,329,247,312,247,307,513,323"/>
+<area shape="rect" id="Node000009" href="$group___t_queue_iterator.html#ga43c723f0d3c461ff6b340e3a22885c94" title="Zapsání hodnoty elementu do fronty pomocí iterátoru." alt="" coords="337,394,466,434"/>
+<area shape="poly" id="edge14_Node000005_Node000009" title=" " alt="" coords="560,352,452,397,450,392,558,347"/>
+<area shape="rect" id="Node000010" href="$group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07" title="Posunutí iterátoru vpřed." alt="" coords="324,243,479,268"/>
+<area shape="poly" id="edge16_Node000005_Node000010" title=" " alt="" coords="555,317,435,271,437,266,557,312"/>
+<area shape="rect" id="Node000011" href="$group___t_queue_iterator.html#ga30db60bf663f58b83b1181d5406ec879" title="Přečtení hodnoty elementu z fronty pomocí iterátoru." alt="" coords="331,476,471,502"/>
+<area shape="poly" id="edge21_Node000005_Node000011" title=" " alt="" coords="582,356,537,401,480,449,430,479,428,474,477,444,534,397,579,353"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="128,358,56,358,56,353,128,353"/>
+<area shape="poly" id="edge11_Node000007_Node000002" title=" " alt="" coords="128,225,106,239,82,264,63,293,39,344,34,342,58,291,78,261,102,235,125,221"/>
+<area shape="poly" id="edge13_Node000008_Node000002" title=" " alt="" coords="133,326,105,334,57,350,56,345,103,329,131,321"/>
+<area shape="poly" id="edge15_Node000009_Node000002" title=" " alt="" coords="323,413,218,403,103,384,55,368,57,363,105,378,219,398,323,408"/>
+<area shape="poly" id="edge17_Node000010_Node000002" title=" " alt="" coords="310,251,262,251,209,256,156,266,105,285,85,297,68,313,42,344,38,341,64,309,82,293,103,280,154,261,208,251,261,246,310,245"/>
+<area shape="poly" id="edge18_Node000010_Node000006" title=" " alt="" coords="373,278,329,307,277,334,240,347,238,342,275,329,326,302,370,274"/>
+<area shape="poly" id="edge19_Node000010_Node000007" title=" " alt="" coords="334,242,243,220,244,215,335,237"/>
+<area shape="poly" id="edge20_Node000010_Node000008" title=" " alt="" coords="335,274,244,296,243,291,334,269"/>
+<area shape="poly" id="edge24_Node000011_Node000002" title=" " alt="" coords="367,510,312,534,244,554,207,559,171,558,135,550,103,534,83,517,67,496,45,449,34,403,30,369,35,368,40,402,51,447,72,493,87,513,105,529,137,545,171,552,207,553,243,549,311,529,365,505"/>
+<area shape="rect" id="Node000012" href="$group___main_program.html#ga5ec1bf27394ea27ffb0109783ddf69ff" title="Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43." alt="" coords="104,444,276,470"/>
+<area shape="poly" id="edge22_Node000011_Node000012" title=" " alt="" coords="317,479,274,472,274,467,318,474"/>
+<area shape="rect" id="Node000013" href="$group___main_program.html#ga46eef449f9e5694614f26704628baf7d" title="Vytisknutí elementu fronty pomocí iterátoru." alt="" coords="140,494,240,519"/>
+<area shape="poly" id="edge25_Node000011_Node000013" title=" " alt="" coords="318,498,241,505,240,500,317,493"/>
+<area shape="poly" id="edge23_Node000012_Node000002" title=" " alt="" coords="131,442,103,427,67,399,41,370,44,367,71,395,105,423,133,437"/>
+<area shape="poly" id="edge26_Node000013_Node000002" title=" " alt="" coords="126,497,102,484,76,457,56,425,33,370,38,368,61,422,80,454,106,480,128,493"/>
+<area shape="poly" id="edge28_Node000014_Node000002" title=" " alt="" coords="567,553,478,592,420,612,356,628,290,637,224,635,160,621,131,607,102,590,78,566,60,538,46,507,37,474,29,413,29,369,34,369,35,412,43,473,51,505,64,535,82,563,106,586,133,603,162,616,224,630,290,631,355,623,418,607,476,587,565,548"/>
+</map>

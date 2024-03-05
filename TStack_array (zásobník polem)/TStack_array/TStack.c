@@ -11,7 +11,6 @@ void stack_init(struct TStack *aStack)
 	{
 	if (aStack) // if(aStack != NULL) // Pokud je místo alokované, tak nastavím iCount na 0, tím inicializuji
 		aStack->iCount = 0;
-
 	}
 
 bool stack_is_empty(const struct TStack *aStack)
@@ -43,8 +42,6 @@ bool stack_push(struct TStack *aStack, TStackElement aValue)
 		return false;
 
 	aStack->iValues[aStack->iCount++] = aValue; // Přidání hodnoty
-
-
 	}
 
 bool stack_pop(struct TStack *aStack)

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT TQueue_list: Zdrojový soubor TQueue.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT TQueue_list<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8c33765003a68b8ff2caed1596e12620.html">TQueue_list</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TQueue.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_queue_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TQUEUE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TQUEUE_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;check.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">   19</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a>;                                      </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___t_queue.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group___t_queue.html#a42f3372a345e9dcd77299cb854b71d00">   27</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_queue_node.html">TQueueNode</a> *<a class="code hl_variable" href="group___t_queue.html#a42f3372a345e9dcd77299cb854b71d00">iFront</a>;                              </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___t_queue.html#a304895634a159d921404a30aa04c2142">   28</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_queue_node.html">TQueueNode</a> *<a class="code hl_variable" href="group___t_queue.html#a304895634a159d921404a30aa04c2142">iBack</a>;                               </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        };</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_queue.html#gaed24a08c3da331c9d4651464901f9acc">queue_init</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_queue.html#gaa9812b8f3c1b0707450f91283f97384c">queue_is_empty</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">bool</span> <span class="comment">/* TQueueIterator */</span> <a class="code hl_function" href="group___t_queue.html#gadf7ec766208c056364fba19f6d6b5d3f">queue_front</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue, <a class="code hl_typedef" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> *aValue);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">bool</span> <span class="comment">/* TQueueIterator */</span> <a class="code hl_function" href="group___t_queue.html#gabdf5c3e56234ff344f49c206632f7fbb">queue_back</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue, <a class="code hl_typedef" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> *aValue);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_queue.html#gab5ceca2541159a4e940cb4b80bba411b">queue_push</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue, <a class="code hl_typedef" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> aValue);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_queue.html#ga100499d1e5ff881cd97b03484f6e744b">queue_pop</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_queue.html#ga85b3f0ae9d6f44ca6c102df1e0619dc9">queue_destroy</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue);</div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="};">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="group___t_queue_iterator.html">   91</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="group___t_queue_iterator.html#ac0855a31476ca5890f3a0fc53e733050">   93</a></span>        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *<a class="code hl_variable" href="group___t_queue_iterator.html#ac0855a31476ca5890f3a0fc53e733050">iQueue</a>;    </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="group___t_queue_iterator.html#aae07a7f1c49fe9152071fe2c5ae54289">   94</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_queue_node.html">TQueueNode</a> *<a class="code hl_variable" href="group___t_queue_iterator.html#aae07a7f1c49fe9152071fe2c5ae54289">iActual</a>;             </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        };</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> <a class="code hl_function" href="group___t_queue_iterator.html#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a>(const struct <a class="code hl_struct" href="group___t_queue.html#struct_t_queue">TQueue</a> *aQueue);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593">queue_iterator_is_valid</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><a class="code hl_typedef" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> <a class="code hl_function" href="group___t_queue_iterator.html#ga30db60bf663f58b83b1181d5406ec879">queue_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_queue_iterator.html#ga43c723f0d3c461ff6b340e3a22885c94">queue_iterator_set_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter, <a class="code hl_typedef" href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a> aValue);</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">  144</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> aIter, <span class="keywordtype">void</span>(*aOperation)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter))</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">for</span>(<span class="keywordtype">bool</span> valid = <a class="code hl_function" href="group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593">queue_iterator_is_valid</a>(&amp;aIter); valid; valid = <a class="code hl_function" href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a>(&amp;aIter))</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                aOperation(&amp;aIter);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925">  156</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> <a class="code hl_function" href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925">queue_find_if</a>(struct <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> aIter, bool(*aPredicate)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter))</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">for</span>(<span class="keywordtype">bool</span> valid = <a class="code hl_function" href="group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593">queue_iterator_is_valid</a>(&amp;aIter); valid; valid = <a class="code hl_function" href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a>(&amp;aIter))</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">if</span>(aPredicate(&amp;aIter))</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                        <span class="keywordflow">return</span> aIter;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> aIter;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b">  170</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> <a class="code hl_function" href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b">queue_find_if_not</a>(struct <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> aIter, bool(*aPredicate)(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a> *aIter))</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">for</span>(<span class="keywordtype">bool</span> valid = <a class="code hl_function" href="group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593">queue_iterator_is_valid</a>(&amp;aIter); valid; valid = <a class="code hl_function" href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a>(&amp;aIter))</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">if</span>(!aPredicate(&amp;aIter))</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                        <span class="keywordflow">return</span> aIter;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">return</span> aIter;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        }</div>
+</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#endif </span><span class="comment">/* TQUEUE_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup___iterator_algorithms_html_ga299db40016266a1a943c32a3a528ea9b"><div class="ttname"><a href="group___iterator_algorithms.html#ga299db40016266a1a943c32a3a528ea9b">queue_find_if_not</a></div><div class="ttdeci">static struct TQueueIterator queue_find_if_not(struct TQueueIterator aIter, bool(*aPredicate)(const struct TQueueIterator *aIter))</div><div class="ttdoc">Vyhledání prvního elementu fronty nesplňujícího zadaný predikát.</div><div class="ttdef"><b>Definition</b> TQueue.h:170</div></div>
+<div class="ttc" id="agroup___iterator_algorithms_html_gadccc11c611587469295868641ce95925"><div class="ttname"><a href="group___iterator_algorithms.html#gadccc11c611587469295868641ce95925">queue_find_if</a></div><div class="ttdeci">static struct TQueueIterator queue_find_if(struct TQueueIterator aIter, bool(*aPredicate)(const struct TQueueIterator *aIter))</div><div class="ttdoc">Vyhledání prvního elementu fronty splňujícího zadaný predikát.</div><div class="ttdef"><b>Definition</b> TQueue.h:156</div></div>
+<div class="ttc" id="agroup___iterator_algorithms_html_gade8cfe850fd247bfb33b1aa44e13bcff"><div class="ttname"><a href="group___iterator_algorithms.html#gade8cfe850fd247bfb33b1aa44e13bcff">queue_for_each</a></div><div class="ttdeci">static void queue_for_each(struct TQueueIterator aIter, void(*aOperation)(const struct TQueueIterator *aIter))</div><div class="ttdoc">Zavolání zvolené funkce na každý element fronty od pozice určené iterátorem až do konce fronty.</div><div class="ttdef"><b>Definition</b> TQueue.h:144</div></div>
+<div class="ttc" id="agroup___t_queue_html_a304895634a159d921404a30aa04c2142"><div class="ttname"><a href="group___t_queue.html#a304895634a159d921404a30aa04c2142">TQueue::iBack</a></div><div class="ttdeci">struct TQueueNode * iBack</div><div class="ttdoc">PIMPL ukazatel na poslední uzel lineárního jednosměrně vázaného seznamu realizujícího frontu.</div><div class="ttdef"><b>Definition</b> TQueue.h:28</div></div>
+<div class="ttc" id="agroup___t_queue_html_a42f3372a345e9dcd77299cb854b71d00"><div class="ttname"><a href="group___t_queue.html#a42f3372a345e9dcd77299cb854b71d00">TQueue::iFront</a></div><div class="ttdeci">struct TQueueNode * iFront</div><div class="ttdoc">PIMPL ukazatel na první uzel lineárního jednosměrně vázaného seznamu realizujícího frontu.</div><div class="ttdef"><b>Definition</b> TQueue.h:27</div></div>
+<div class="ttc" id="agroup___t_queue_html_ga100499d1e5ff881cd97b03484f6e744b"><div class="ttname"><a href="group___t_queue.html#ga100499d1e5ff881cd97b03484f6e744b">queue_pop</a></div><div class="ttdeci">bool queue_pop(struct TQueue *aQueue)</div><div class="ttdoc">Odstranění elementu z čela fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:74</div></div>
+<div class="ttc" id="agroup___t_queue_html_ga20e79d9fc1c3dd446e7b879b50fa2de4"><div class="ttname"><a href="group___t_queue.html#ga20e79d9fc1c3dd446e7b879b50fa2de4">TQueueElement</a></div><div class="ttdeci">int TQueueElement</div><div class="ttdoc">Definice typu QueueElement (datový typ elementů fronty)</div><div class="ttdef"><b>Definition</b> TQueue.h:19</div></div>
+<div class="ttc" id="agroup___t_queue_html_ga85b3f0ae9d6f44ca6c102df1e0619dc9"><div class="ttname"><a href="group___t_queue.html#ga85b3f0ae9d6f44ca6c102df1e0619dc9">queue_destroy</a></div><div class="ttdeci">void queue_destroy(struct TQueue *aQueue)</div><div class="ttdoc">Deinicializace fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:88</div></div>
+<div class="ttc" id="agroup___t_queue_html_gaa9812b8f3c1b0707450f91283f97384c"><div class="ttname"><a href="group___t_queue.html#gaa9812b8f3c1b0707450f91283f97384c">queue_is_empty</a></div><div class="ttdeci">bool queue_is_empty(const struct TQueue *aQueue)</div><div class="ttdoc">Zjištění, zda je fronta prázdná</div><div class="ttdef"><b>Definition</b> TQueue.c:26</div></div>
+<div class="ttc" id="agroup___t_queue_html_gab5ceca2541159a4e940cb4b80bba411b"><div class="ttname"><a href="group___t_queue.html#gab5ceca2541159a4e940cb4b80bba411b">queue_push</a></div><div class="ttdeci">bool queue_push(struct TQueue *aQueue, TQueueElement aValue)</div><div class="ttdoc">Vložení elementu na konec fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:55</div></div>
+<div class="ttc" id="agroup___t_queue_html_gabdf5c3e56234ff344f49c206632f7fbb"><div class="ttname"><a href="group___t_queue.html#gabdf5c3e56234ff344f49c206632f7fbb">queue_back</a></div><div class="ttdeci">bool queue_back(const struct TQueue *aQueue, TQueueElement *aValue)</div><div class="ttdoc">Získání hodnoty elementu z konce fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:46</div></div>
+<div class="ttc" id="agroup___t_queue_html_gadf7ec766208c056364fba19f6d6b5d3f"><div class="ttname"><a href="group___t_queue.html#gadf7ec766208c056364fba19f6d6b5d3f">queue_front</a></div><div class="ttdeci">bool queue_front(const struct TQueue *aQueue, TQueueElement *aValue)</div><div class="ttdoc">Získání hodnoty elementu z čela fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:37</div></div>
+<div class="ttc" id="agroup___t_queue_html_gaed24a08c3da331c9d4651464901f9acc"><div class="ttname"><a href="group___t_queue.html#gaed24a08c3da331c9d4651464901f9acc">queue_init</a></div><div class="ttdeci">void queue_init(struct TQueue *aQueue)</div><div class="ttdoc">Inicializace prázdné fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:20</div></div>
+<div class="ttc" id="agroup___t_queue_html_struct_t_queue"><div class="ttname"><a href="group___t_queue.html#struct_t_queue">TQueue</a></div><div class="ttdoc">Definice typu Queue.</div><div class="ttdef"><b>Definition</b> TQueue.h:26</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_aae07a7f1c49fe9152071fe2c5ae54289"><div class="ttname"><a href="group___t_queue_iterator.html#aae07a7f1c49fe9152071fe2c5ae54289">TQueueIterator::iActual</a></div><div class="ttdeci">struct TQueueNode * iActual</div><div class="ttdoc">Ukazatel na aktuální uzel v lineárním jednosměrně vázaného seznamu asociované fronty.</div><div class="ttdef"><b>Definition</b> TQueue.h:94</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_ac0855a31476ca5890f3a0fc53e733050"><div class="ttname"><a href="group___t_queue_iterator.html#ac0855a31476ca5890f3a0fc53e733050">TQueueIterator::iQueue</a></div><div class="ttdeci">const struct TQueue * iQueue</div><div class="ttdoc">Ukazatel na navázanou frontu (mutable iterátor - umožňuje měnit elementy QueueElement)</div><div class="ttdef"><b>Definition</b> TQueue.h:93</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_ga30db60bf663f58b83b1181d5406ec879"><div class="ttname"><a href="group___t_queue_iterator.html#ga30db60bf663f58b83b1181d5406ec879">queue_iterator_value</a></div><div class="ttdeci">TQueueElement queue_iterator_value(const struct TQueueIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty elementu z fronty pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TQueue.c:131</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_ga43c723f0d3c461ff6b340e3a22885c94"><div class="ttname"><a href="group___t_queue_iterator.html#ga43c723f0d3c461ff6b340e3a22885c94">queue_iterator_set_value</a></div><div class="ttdeci">bool queue_iterator_set_value(const struct TQueueIterator *aIter, TQueueElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do fronty pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TQueue.c:139</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_ga6cbf7aa3d466d2bf585fe988b8bc9593"><div class="ttname"><a href="group___t_queue_iterator.html#ga6cbf7aa3d466d2bf585fe988b8bc9593">queue_iterator_is_valid</a></div><div class="ttdeci">bool queue_iterator_is_valid(const struct TQueueIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> TQueue.c:111</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_gad0164ae101775a2ee1387b0a514d1f45"><div class="ttname"><a href="group___t_queue_iterator.html#gad0164ae101775a2ee1387b0a514d1f45">queue_iterator_begin</a></div><div class="ttdeci">struct TQueueIterator queue_iterator_begin(const struct TQueue *aQueue)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na čelo fronty.</div><div class="ttdef"><b>Definition</b> TQueue.c:103</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_gae7e6145571ff51446a96862cda3d6e07"><div class="ttname"><a href="group___t_queue_iterator.html#gae7e6145571ff51446a96862cda3d6e07">queue_iterator_to_next</a></div><div class="ttdeci">bool queue_iterator_to_next(struct TQueueIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TQueue.c:120</div></div>
+<div class="ttc" id="agroup___t_queue_iterator_html_struct_t_queue_iterator"><div class="ttname"><a href="group___t_queue_iterator.html#struct_t_queue_iterator">TQueueIterator</a></div><div class="ttdoc">Definice typu QueueIterator.</div><div class="ttdef"><b>Definition</b> TQueue.h:92</div></div>
+<div class="ttc" id="astruct_t_queue_node_html"><div class="ttname"><a href="struct_t_queue_node.html">TQueueNode</a></div><div class="ttdoc">Úplná definice privátního typu QueueNode.</div><div class="ttdef"><b>Definition</b> TQueue.c:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 16. úno 2024 16.42:32, pro projekt: BPC-ALD: ADT TQueue_list, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
