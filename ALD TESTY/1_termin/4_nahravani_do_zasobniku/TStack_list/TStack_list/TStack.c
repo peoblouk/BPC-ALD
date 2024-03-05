@@ -97,11 +97,9 @@ bool stack_init_file(struct TSTack* aStack, FILE* InputFile)
 
 	size_t pocet = 0;
 	if (fscanf(InputFile, "%zu", &pocet) != 1) // Čtení počtu hodnot
-		{
-		fclose(InputFile);
 		return false;
-		}
-	printf("\npocet: %d\n", pocet);
+
+	// printf("\npocet: %d\n", pocet);
 
 	for (size_t i = 0; i < pocet; i++)
 		{
@@ -109,7 +107,7 @@ bool stack_init_file(struct TSTack* aStack, FILE* InputFile)
 
 		if (fscanf(InputFile, "%d", &hodnota) != 1) // Čtení prvků
 			return false;
-		printf("%d", hodnota);
+		// printf("%d", hodnota);
 
 		if (stack_push(aStack, hodnota) == false)
 			return false;

@@ -138,7 +138,7 @@ bool queue_clone(const struct TQueue* aSourceQueue, struct TQueue* aCloneQueue)
 		if (CurrentCloneNode == NULL) // Kontrola po alokaci
 			return false;
 
-		if (kontrola == false) // Došel jsem nakonec?
+		if (kontrola) // Došel jsem nakonec?
 			{
 			aCloneQueue = CurrentCloneNode; 
 			kontrola = false;
