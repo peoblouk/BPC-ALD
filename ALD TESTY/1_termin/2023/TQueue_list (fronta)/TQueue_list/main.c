@@ -19,7 +19,7 @@
  */
 void print_element(const struct TQueueIterator *aIter)
 {
-	printf("<%d> ", queue_iterator_value(aIter));
+	printf("<%c> ", queue_iterator_value(aIter));
 }
 
 /** \brief Porovnání hodnoty elementu fronty pomocí iterátoru s hodnotou 43
@@ -45,6 +45,9 @@ int main()
 		if (queue_push(&queue1, read) == false)
 			return 1;
 		}
+
+	queue_for_each(queue_iterator_begin(&queue1), print_element);
+
 	return 0;
 }
 
