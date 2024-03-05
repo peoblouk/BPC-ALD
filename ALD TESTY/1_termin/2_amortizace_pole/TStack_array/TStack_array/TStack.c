@@ -64,8 +64,7 @@ bool stack_push(struct TStack* aStack, TStackElement aValue)
 
 	if (aStack->iCount >= aStack->iCapacity) // Capacita je stejně velká jako iSize je třeba naalokovat 2* víc místa (amortizace)
 		{
-		printf("\nRealokace!\n");
-		TStackElement* new_values = (TStackElement*)calloc(2 * aStack->iCapacity, sizeof(TStackElement)); // využít realloc 
+		TStackElement* new_values = (TStackElement*) calloc(2 * aStack->iCapacity, sizeof(TStackElement)); // využít realloc 
 		// realloc(new_values, sizeof(TStackElement));
 		if (new_values == NULL) // Chyba po alokaci
 			{
@@ -77,8 +76,9 @@ bool stack_push(struct TStack* aStack, TStackElement aValue)
 			new_values[i] = aStack->iValues[i];			
 		
 		free(aStack->iValues);
-		aStack->iValues = new_values; // Předám nové hodnoty adresy, které byli alokovány
 
+		printf("\nRealokace!\n");
+		aStack->iValues = new_values; // Předám nové hodnoty adresy, které byli alokovány
 		aStack->iValues[aStack->iCount] = aValue; // Přidám hodnoty na adresy pole
 		aStack->iCount++;
 		aStack->iCapacity *= 2; // Dvakrat zvětšená kapacita
@@ -99,14 +99,19 @@ bool stack_pop(struct TStack *aStack)
 		return true;
 		}
 
+	aStack->iCount -= 1; // Odeberu jeden prvek
 	if (aStack->iCount > aStack->iCapacity / 4) // Obsahuje > 75% prvků (aStack->iCapacity / 4) = 25 %
 		return true;
 
-	else {
+	else // Pop 
+		{
 		TStackElement* new_values = (TStackElement*)calloc(aStack->iCapacity / 2, sizeof(TStackElement));
 		if (new_values == NULL) // Chyba realokace
+			{
+			stack_destroy(aStack);
 			return false;
-	
+			}
+
 		aStack->iCapacity /= 2; // Zmenši kapacitu na polovinu
 		for (size_t i = 0; i < aStack->iCount; i++)
 			new_values[i] = aStack->iValues[i];
