@@ -118,7 +118,7 @@ void queue_destroy(struct TQueue *aQueue)
 
 bool queue_clone(const struct TQueue* aSourceQueue, struct TQueue* aCloneQueue)
 {
-	if (aSourceQueue == NULL && aCloneQueue == NULL) // Ověření zda vstupní parametry nejsou NULL
+	if (aSourceQueue == NULL || aCloneQueue == NULL) // Ověření zda vstupní parametry nejsou NULL
 		return false;
 
 	if (queue_is_empty(aSourceQueue) == true)

@@ -93,17 +93,24 @@ bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue) // Vložení 
 	{
 	if (aQueue == NULL)
 		return false;
-	if (queue_is_empty(aQueue) == false)
-		return false;
 
-	if (--aQueue->iFrontPos < 0) // Index je záporný v C nelze
+	if (aQueue->iFrontPos == 0) 
 		{
-		aQueue->iFrontPos = QUEUE_MAXCOUNT + aQueue->iFrontPos; // 1024 + (-1)
+			if (QUEUE_MAXCOUNT - 1 == aQueue->iBackPos) // To znamená, že jsem došel na prvek 1024-1 je to iBackPos? Pokud ano mám plné pole
+				return false;
+		aQueue->iValues[QUEUE_MAXCOUNT - 1] = aValue;
+		aQueue->iFrontPos = QUEUE_MAXCOUNT - 1;
+		return true;
 		}
-	else // Index
-		aQueue->iFrontPos = --aQueue->iFrontPos;
 
-	aQueue->iValues[aQueue->iFrontPos] = aValue;
+	if (aQueue->iFrontPos - 1 == aQueue->iBackPos)  // V poli už není místo (začátek se posunul na jinačí index a není v 0.
+		{
+		return false;
+		}
+	else {
+		aQueue->iFrontPos = aQueue->iFrontPos - 1;
+		aQueue->iValues[aQueue->iFrontPos] = aValue;
+		}
 
 	return true;
 	}
@@ -111,21 +118,23 @@ bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue) // Vložení 
 bool queue_pop_back(struct TQueue* aQueue) // Odebrání prvku z konce
 	{
 	if (aQueue == NULL)
-		return false;
-	if (queue_is_empty(aQueue) == false)
-		return false;
-
-	if (aQueue->iBackPos == 0) // Pokud se dostanu na konec seznamu
 		{
-		if (aQueue->iFrontPos == QUEUE_MAXCOUNT - 1) // Ověřuji zda není pole plné
-			return false;
-		return aQueue->iBackPos = QUEUE_MAXCOUNT - 1;
+		return false;
 		}
 
-	if (aQueue->iBackPos == aQueue->iFrontPos) // Pole je plné nebo prázdné
+	if (aQueue->iBackPos == 0) // Je pole prázdné?
+		{
+		if (aQueue->iFrontPos == QUEUE_MAXCOUNT - 1) // Když je ukazatel na začátek
+			return false;
+		aQueue->iBackPos = QUEUE_MAXCOUNT - 1;
+		return true;
+		}
+
+	if (aQueue->iFrontPos == aQueue->iBackPos - 1) // Pole je prázdné
 		return false;
-	
-	aQueue->iBackPos -= 1;
+	else
+		aQueue->iBackPos -= 1;
+
 	return true;
 	}
 

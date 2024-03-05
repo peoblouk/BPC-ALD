@@ -10,25 +10,23 @@ int main(void)
 	queue_init(&queue1);
 	// printf("Zadej cisla:\n");
 
-	while (true) // Načítání hodnot z konzole
-	{
-		TQueueElement value;
-		if (scanf("%d", &value) != 1)
-			queue_destroy(&queue1);
-			return 1;
+	TQueueElement value;
 
-		if (value < 0) // Hodnota je záporná
-			break;
-
-		if (queue_push(&queue1, value) == false)
+	while ((value = getchar()) != '\n') 
+		{
+		
+		if (queue_push(&queue1 , value) == false)
+			{
 			queue_destroy(&queue1);
-			return 1;
-	}
+			return 2;
+			}
+		}
+
 
 	printf("queue1: ");
 	struct TQueueIterator Iterator = queue_iterator_begin(&queue1); // Iterátor pro tisk
 	if (queue_iterator_is_valid(&Iterator) == false)
-		return 1;
+		return 3;
 	queue_for_each(Iterator, print_element); // Tisk jednotlivých proměnných
 	putchar('\n');
 
@@ -36,7 +34,7 @@ int main(void)
 	queue_init(&queue2); // Proměnná pro clonování
 	
 	if (queue_clone(&queue1, &queue2) == false)
-		return 2;
+		return 4;
 	
 	printf("queue2: ");
 	queue_for_each(queue_iterator_begin(&queue2), print_element); // Iterátor pro tisk
