@@ -170,4 +170,22 @@ bool queue_pop_back(struct TQueue* aQueue) // Odebrání prvku z konce
 	}
 ```
 
+```
+bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue)
+	{
+	if (aQueue == NULL)
+		return false;
+
+	struct TQueueNode* new_node = malloc(sizeof(struct TQueueNode));
+	if (new_node == NULL) // Ověření alokace
+		return false;
+
+	new_node->iValue = aValue; // Předání hodnoty nového prvku
+	new_node->iNext = aQueue->iFront; 
+	aQueue->iFront = new_node;
+
+	return true;
+	}
+```
+
 
