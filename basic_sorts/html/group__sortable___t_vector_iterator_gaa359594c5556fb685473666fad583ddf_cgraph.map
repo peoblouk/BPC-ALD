@@ -1,0 +1,9 @@
+<map id="vector_compare_with_iterator_value" name="vector_compare_with_iterator_value">
+<area shape="rect" id="Node000001" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="5,37,148,77"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="196,5,361,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,43,182,38,183,43,149,49"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="219,69,339,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,66,205,75,205,80,148,71"/>
+<area shape="rect" id="Node000003" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="409,13,591,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,23,396,23,396,28,361,28"/>
+</map>

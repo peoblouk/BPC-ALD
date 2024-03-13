@@ -1,0 +1,13 @@
+<map id="insert_sort" name="insert_sort">
+<area shape="rect" id="Node000001" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="5,95,88,121"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="136,5,301,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,93,135,55,149,48,152,53,137,60,69,98"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru." alt="" coords="143,70,295,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="88,99,129,93,130,98,89,105"/>
+<area shape="rect" id="Node000005" href="$group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici." alt="" coords="160,119,277,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="89,111,146,119,146,125,88,116"/>
+<area shape="rect" id="Node000006" href="$group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici." alt="" coords="173,169,265,194"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="70,118,137,154,160,162,158,167,135,158,68,123"/>
+<area shape="rect" id="Node000003" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="349,13,531,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,23,336,23,336,28,301,28"/>
+</map>

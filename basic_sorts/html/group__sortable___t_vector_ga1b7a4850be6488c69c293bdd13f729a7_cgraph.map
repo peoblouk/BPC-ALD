@@ -1,0 +1,9 @@
+<map id="vector_is_ascendantly_sorted" name="vector_is_ascendantly_sorted">
+<area shape="rect" id="Node000001" title="Ověření korektního setřídění vektoru." alt="" coords="5,47,156,87"/>
+<area shape="rect" id="Node000002" href="$group___t_vector.html#ga6b0b8780d60dad02b8569be119769548" title="Vytvoření úplné kopie vektoru." alt="" coords="247,5,342,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,47,233,29,234,34,157,53"/>
+<area shape="rect" id="Node000003" href="$group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6" title="Dealokace vektoru." alt="" coords="241,55,348,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,65,227,65,227,70,157,70"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="204,104,385,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,82,226,98,225,103,156,87"/>
+</map>

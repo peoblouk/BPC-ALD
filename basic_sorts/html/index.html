@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Basic Sorts: Zadání cvičení 6</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Basic Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 6 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv06__zadani__basic__sorts"></a>Rozšiřte implementaci vektoru (s dynamickým polem) o algoritmy přímého třídění (basic_sorts). Zhodnoťte časovou složitost jednotlivých metod přímého třídění. Časovou složitost každého z algoritmů třídění vyhodnoťte pomocí určení počtu elementárních operací. Použijte dodaný projekt a dopište kód do prázdných těl připravených funkcí.</p>
+<h1>Soubory projektu</h1>
+<p><code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code> obsahuje definici základního datového typu (důsledně používejte typ <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code> všude, kde se pracuje s datovým typem, který představuje elementy <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>). Dále jsou zde podpůrné funkce pro tento datový typ (porovnání hodnot dvou elementů, načtení i uložení hodnoty elementu do souboru, vytvoření elementu s náhodnou hodnotou).</p>
+<p>Zdrojový soubor <code><a class="el" href="_t_vector_8h.html" title="Definice typu Sortable Vector.">TVector.h</a></code> obsahuje struktury definující ADT Vektor a jeho iterátor. ADT Vektor byl pro účely třídění doplněn o další funkce. Struktura vektoru je rozšířena o složku <a class="el" href="group___t_vector.html#a6fd78d8f1debe62f284bf8d8bdd5f45e">iStats</a> obsahující statistiky počtu provedených operací s danou proměnnou. V této statistice je evidován (přičtením jedničky k počítadlu dané operace) celkový počet provedených operací s každým elementem vektoru. Dále jsou v hlavičkovém souboru prototypy nových funkcí pro manipulaci s vektorem a také pro práci s iterátorem vektoru.</p>
+<p>Soubor <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code> je určen k vlastní implementaci třídicích metod - obsahuje připravené funkce s prázdnými těly pro doplnění kódu třídicích metod. Příslušný soubor <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code> obsahuje připravené deklarace těchto funkcí.</p>
+<p>Pro kontrolu správné manipulace s pamětí jsou v projektu soubory: <code>check.h</code> a <code>check.c</code>.</p>
+<p>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program testující API přímých metod třídění">main.c</a></code> obsahuje funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>, která načte data z textového souboru a spustí funkci <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code>. Tato funkce zavolá vlastní třídění. Přitom zjistí a následně vytiskne dobu trvání třídění a statistiku obsahující počty elementárních operací třídicí metody.</p>
+<h1>Úkoly</h1>
+<ol type="1">
+<li>Seznamte s rozšířením struktury <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> pro účely implementace třídicích metod. Prostudujte si zdrojové soubory: <code><a class="el" href="_t_vector_8h.html" title="Definice typu Sortable Vector.">TVector.h</a></code>, <code><a class="el" href="_t_vector_8c.html" title="Implementace Sortable Vector API.">TVector.c</a></code> a <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>. Zjistěte rozdíly oproti předchozím cvičením a prostudujte implementaci, činnost a význam nového kódu. Počet jakých elementárních operací (v rámci statistik) struktura eviduje a proč?</li>
+<li>Prostudujte si činnost funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>.</li>
+<li>Prostudujte si připravená data testovacích souborů ve složce projektu: <code>Resource Files</code>.</li>
+<li>Postupně naprogramujte jednotlivé třídicí metody a sledujte jejich výstupy zobrazované funkcí <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> resp. <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code>. Zamyslete se u každé z implementovaných metod nad očekávaným výsledky počtu provedených operací a také nad výsledky měření doby běhu algoritmu.<ul>
+<li><code><a class="el" href="group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)">insert_sort()</a></code> - třídění přímým vkládáním,</li>
+<li><code><a class="el" href="group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)">select_sort()</a></code> - třídění přímým výběrem,</li>
+<li><code><a class="el" href="group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)">bubble_sort()</a></code> - třídění přímou výměnou,</li>
+<li><code><a class="el" href="group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz...">bubble_sort_optimized()</a></code> - modifikace třídění přímou výměnou - optimalizace s pomocným příznakem ukončení třídění.</li>
+</ul>
+</li>
+<li>Pro každou z třídicích metod porovnejte, s hodnotami z tabulek uvedených dále, počty provedených elementárních operací. Ověřte, zda odpovídají teorii prezentované v přednáškách.</li>
+<li>Na následujícím cvičení budeme implementovat dalším třídicí metody. Opět se zamyslete u každé z implementovaných metod nad očekávanými výsledky ohledně počtu provedených operací a měření doby běhu algoritmu.<ul>
+<li><code><a class="el" href="group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)">bubble_sort_optimized2()</a></code> - modifikace třídění přímou výměnou - optimalizace s určením indexu poslední výměny,</li>
+<li><code><a class="el" href="group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)">shaker_sort()</a></code> - modifikace třídění přímou výměnou - koktejlové třídění,</li>
+<li>třídění s rozšířením <code><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e" title="Definice typu VectorElement.">TVectorElement</a></code> o strukturované elementy a pojem <a href="https://cs.wikipedia.org/wiki/Stabiln%C3%AD_%C5%99azen%C3%AD">stabilita</a> třídicí metody.</li>
+</ul>
+</li>
+</ol>
+<h1>Rozbor jednotlivých úkolů</h1>
+<ol type="1">
+<li><p class="startli">Rozbor struktury statistiky provedených operací:</p><ul>
+<li>Proč je statistika provedených operací důležitá pro srovnání algoritmů.</li>
+<li>Proč jsou evidovány u třídicích algoritmů pouze počty operací: porovnání (<em>compare</em>), výměny (<em>swap</em>), přesunu (<em>move</em>)? Bude to pro ověření míry časové složitosti jednotlivých algoritmů postačovat?</li>
+<li>Projděte si jejich použití v API <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> - které funkce je využívají?</li>
+</ul>
+<p class="startli">Chybějící API (pro třídicí metody nepodstatné): </p><div class="fragment"><div class="line"><a class="code hl_function" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a>()</div>
+<div class="line">    <span class="comment">// není implementováno</span></div>
+<div class="ttc" id="agroup___t_vector_html_gabf502ae8257c371ab9c7fb95a242ccb2"><div class="ttname"><a href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a></div><div class="ttdeci">bool vector_resize(struct TVector *aVector, size_t aNewSize)</div><div class="ttdoc">Změna velikosti existujícího vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:150</div></div>
+</div><!-- fragment --><p class="startli">Nové API: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aToVector, <span class="keywordtype">size_t</span> aToPos, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aFromVector, <span class="keywordtype">size_t</span> aFromPos);</div>
+<div class="line">    <span class="comment">// zkopíruje hodnotu elementu z pozice v jednom vektoru na pozici druhého vektoru</span></div>
+<div class="line">    <span class="comment">// Pozor ověřte si, co se stane, použijeme-li pro zdrojový a cílový vektor stejnou proměnnou?</span></div>
+<div class="line">    <span class="comment">// !!! Tuto otázku si položte i u dalších funkcí majících dva parametry stejného typu (tj. předané odkazem) !!!</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, <span class="keywordtype">size_t</span> aLeftPos, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, <span class="keywordtype">size_t</span> aRightPos);</div>
+<div class="line">    <span class="comment">// porovná hodnoty na dvou pozicích dvou vektorů</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue);</div>
+<div class="line">    <span class="comment">// porovná hodnotu na dané pozici s předanou hodnotou</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, <span class="keywordtype">size_t</span> aLeftPos, <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, <span class="keywordtype">size_t</span> aRightPos);</div>
+<div class="line">    <span class="comment">// vymění mezi sebou dvě hodnoty ve dvou vektorech na daných pozicích</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue);</div>
+<div class="line">    <span class="comment">// vymění hodnotu na dané pozici s předanou hodnotou (odkazem)</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code hl_function" href="group__sortable___t_vector.html#ga1b7a4850be6488c69c293bdd13f729a7">vector_is_ascendantly_sorted</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aUnsortedVector, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aSortedVector);</div>
+<div class="line">    <span class="comment">// zjistí, zda druhý předaný parametr odpovídá správně setříděnému prvnímu parametru</span></div>
+<div class="line">    <span class="comment">// tj. první parametr obsahuje originální nesetříděná data, druhý parametr stejná data setříděná</span></div>
+<div class="line">    <span class="comment">// prostudujte si způsob jakým je proveden test správnosti setřídění</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code hl_function" href="group__sortable___t_vector.html#gac0806530378fe49a3d61622ca8b9957e">vector_print_sortstats</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector);</div>
+<div class="line">    <span class="comment">// tisk statistik</span></div>
+<div class="ttc" id="agroup___t_vector_element_html_ga3c679c2b2440555118a3d54c6149994e"><div class="ttname"><a href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></div><div class="ttdeci">int TVectorElement</div><div class="ttdoc">Definice typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:20</div></div>
+<div class="ttc" id="agroup___t_vector_html_struct_t_vector"><div class="ttname"><a href="group___t_vector.html#struct_t_vector">TVector</a></div><div class="ttdoc">Definice typu Vector.</div><div class="ttdef"><b>Definition</b> TVector.h:45</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga09e150aa4cdd8faabf43474ab1dbe454"><div class="ttname"><a href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a></div><div class="ttdeci">int vector_compare_position_value(const struct TVector *aVector, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:183</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga16623c06371077674f5d4d31e38e42a4"><div class="ttname"><a href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a></div><div class="ttdeci">void vector_move_positions(struct TVector *aToVector, size_t aToPos, const struct TVector *aFromVector, size_t aFromPos)</div><div class="ttdoc">Přesun hodnoty elementu vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:155</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga1b7a4850be6488c69c293bdd13f729a7"><div class="ttname"><a href="group__sortable___t_vector.html#ga1b7a4850be6488c69c293bdd13f729a7">vector_is_ascendantly_sorted</a></div><div class="ttdeci">bool vector_is_ascendantly_sorted(const struct TVector *aOriginalVector, const struct TVector *aSortedVector)</div><div class="ttdoc">Ověření korektního setřídění vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:221</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gabdff161479b4c497204dc32fd2202e6f"><div class="ttname"><a href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a></div><div class="ttdeci">void vector_swap_position_value(struct TVector *aVector, size_t aPos, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:208</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gac0806530378fe49a3d61622ca8b9957e"><div class="ttname"><a href="group__sortable___t_vector.html#gac0806530378fe49a3d61622ca8b9957e">vector_print_sortstats</a></div><div class="ttdeci">bool vector_print_sortstats(const struct TVector *aVector)</div><div class="ttdoc">Zobrazení hodnoty statistik počtu operací s elementy vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:259</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gac1982d8a0e5f66f933dc6a0413f2d23e"><div class="ttname"><a href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a></div><div class="ttdeci">void vector_swap_positions(struct TVector *aLeftVector, size_t aLeftPos, struct TVector *aRightVector, size_t aRightPos)</div><div class="ttdoc">Výměna hodnot elementů vektorů</div><div class="ttdef"><b>Definition</b> TVector.c:192</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gaedaf9c79afa345e5e71e5c66ab25fa26"><div class="ttname"><a href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a></div><div class="ttdeci">int vector_compare_positions(const struct TVector *aLeftVector, size_t aLeftPos, const struct TVector *aRightVector, size_t aRightPos)</div><div class="ttdoc">Porovnání hodnot elementů vektorů</div><div class="ttdef"><b>Definition</b> TVector.c:169</div></div>
+</div><!-- fragment --><p class="startli">Další nové API pro operace s iterátory (prozatím nepotřebné): </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aToIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aFromIter);</div>
+<div class="line">    <span class="comment">// jako move pro vektory, ale pomocí iterátorů</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter);</div>
+<div class="line">    <span class="comment">// jako compare pro vektory ale pomocí iterátorů</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue);</div>
+<div class="line">    <span class="comment">// jako compare pro vektor ale pomocí iterátoru</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter);</div>
+<div class="line">    <span class="comment">// jako swap pro vektory ale pomocí iterátorů</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue);</div>
+<div class="line">    <span class="comment">// jako swap pro vektor ale pomocí iterátoru</span></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_struct_t_vector_iterator"><div class="ttname"><a href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a></div><div class="ttdoc">Definice typu VectorIterator.</div><div class="ttdef"><b>Definition</b> TVector.h:215</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_ga015969daf209d461aaf0ba4391df4b5b"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a></div><div class="ttdeci">void vector_swap_with_iterator_value(const struct TVectorIterator *aIter, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:388</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gaa359594c5556fb685473666fad583ddf"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a></div><div class="ttdeci">int vector_compare_with_iterator_value(const struct TVectorIterator *aIter, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:375</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gaa3e549d3e67e2168311acc8f4a494cc5"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a></div><div class="ttdeci">void vector_move_with_iterators(const struct TVectorIterator *aToIter, const struct TVectorIterator *aFromIter)</div><div class="ttdoc">Přesun hodnoty elementu vektoru určené dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:361</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gac16589d02c81c789a7fa6cd323a49013"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a></div><div class="ttdeci">void vector_swap_with_iterators(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Výměna hodnot elementů vektorů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:381</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gadd8aded92ce2c6402742a57316412d39"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a></div><div class="ttdeci">int vector_compare_with_iterators(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Porovnání hodnot elementů vektorů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:368</div></div>
+</div><!-- fragment --></li>
+<li>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program testující API přímých metod třídění">main.c</a></code> obsahuje dvě funkce zajišťující automatické testování třídicích metod. Prostudujte si jejich obsah. Funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> také obsahuje prozatím zakomentované části, promyslete si kdy a k čemu je budeme potřebovat.</li>
+<li><p class="startli">Pro testování jsou připraveny soubory s daty (najdete je v projektové složce: <code>Resource files</code>). V rámci rozboru hledejte odpovědi na otázky:</p><ul>
+<li>Proč je potřeba pro testování několik souborů?</li>
+<li>Proč je nutné otestovat metody i na částečně setříděných datech, případně na "opačně" setříděných datech?</li>
+</ul>
+<p class="startli">Funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> otevře soubor s daty a načte ho do vektoru. Postupně načtěte a vyzkoušejte všechny připravené datové soubory a srovnejte výsledky jednotlivých třídění pro tento typ dat.</p>
+<p class="startli">Funkce <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code> - vytvoří si kopii dat, aby bylo možné originální vektor použít i pro další volání. Opět si všimněte způsobu předání testované třídicí funkce. Jako parametr funkce <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code> je odkaz na volanou testovanou funkci. To umožní napsat kód někdy označovaný jako tzv. <a href="https://en.wikipedia.org/wiki/Test_bench">testbench</a> (příprava dat, tisk výsledků, uvolnění paměti atd.) pouze jednou a přitom zajistit jeho univerzální použití. Testbench funkci <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code> lze postupně použít pro různé třídící funkce (volá se ta funkce, jejíž adresa je předána jako parametr). Ve funkci je zkontrolováno, zda jsou data správně setříděna a jsou vytištěny statistiky, včetně času potřebného ke třídění.</p>
+</li>
+<li>viz přednášky. Funkce, které by se vám mohly hodit při implementaci třídicích algoritmů:<ul>
+<li><b>InsertSort</b> - <code><a class="el" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici.">vector_value()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.">vector_compare_position_value()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru.">vector_move_positions()</a></code>, <code><a class="el" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici.">vector_set_value()</a></code>.</li>
+<li><b>SelectSort</b> - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+<li><b>BubbleSort</b> (včetně optimalizované verze) - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+</ul>
+</li>
+<li><p class="startli">Výsledné počty operací: <em>compare</em>, <em>swap</em>, <em>move</em>, <em>get</em>, <em>set</em> musí odpovídat hodnotám uvedeným v tabulkách pro jednotlivé soubory dat. <br  />
+ <b>Pokud počty operací ve vaší implementaci neodpovídají, není vaše implementace korektní a je nutné ji opravit.</b></p>
+<p class="startli"><code><a class="el" href="reversed__data_8txt.html">reversed_data.txt</a></code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code><a class="el" href="select__sort__data_8txt.html">select_sort_data.txt</a></code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">29   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">39    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">25   </td><td class="markdownTableBodyNone">25    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">25   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code><a class="el" href="bubble__sort__optimized__data_8txt.html">bubble_sort_optimized_data.txt</a></code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">21   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">24    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">13    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code><a class="el" href="shaker__sort__data_8txt.html">shaker_sort_data.txt</a></code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">24   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">17    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code><a class="el" href="sorted__data_8txt.html">sorted_data.txt</a></code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">9    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+</li>
+</ol>
+<hr  />
+<p> <code>$Id: <a class="el" href="cv06__zadani__basic__sorts_8md.html">cv06_zadani_basic_sorts.md</a> 2625 2024-03-08 16:06:15Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 8. bře 2024 17.53:50, pro projekt: BPC-ALD: ALG Basic Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

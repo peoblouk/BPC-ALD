@@ -1,0 +1,9 @@
+<map id="vector_compare_position_value" name="vector_compare_position_value">
+<area shape="rect" id="Node000001" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="295,27,460,67"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="134,5,217,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,36,217,27,217,21,282,31"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="104,55,247,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="281,63,247,68,247,63,281,58"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,21,56,21,56,15,120,15"/>
+</map>
