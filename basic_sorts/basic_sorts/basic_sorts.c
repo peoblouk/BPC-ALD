@@ -25,9 +25,9 @@ void insert_sort(struct TVector *aVector) // složitost je n2
 		vector_for_each(vector_iterator_begin(aVector), print_element);
 		putchar('\n');
 
-		TVectorElement tmp = vector_value(aVector, i);
+		TVectorElement tmp = vector_value(aVector, i); // vyberu hodnotu a porovnávám jí v nesetrizene oblasti
 		size_t j = i;
-		for (; j > 0; --j)
+		for (; j > 0; --j) // Projedu nesetřízenou oblastí <- |
 			{
 			if (vector_compare_position_value(aVector, j - 1, tmp) <= 0)
 				break;
