@@ -188,4 +188,9 @@ bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue)
 	}
 ```
 
+# Algoritmy
+
+Důležité pojmy:
+datově citlivý a necitlivý algoritmus?
+stabilní a nestabilní třídění? ( nepomůžeš zde nic jiného než ShakerSort, prohození směru)
 
