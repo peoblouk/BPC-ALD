@@ -1,0 +1,27 @@
+<map id="TVector.c" name="TVector.c">
+<area shape="rect" id="Node000001" title="Implementace Sortable Vector API." alt="" coords="169,5,247,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,225,69,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,33,57,216,53,212,197,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,225,163,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,32,139,213,134,211,201,30"/>
+<area shape="rect" id="Node000004" href="$_t_vector_8h.html" title="Definice typu Sortable Vector." alt="" coords="305,79,383,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,28,311,70,309,75,229,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="462,225,530,251"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="248,17,320,25,408,45,454,62,496,85,534,114,565,151,570,170,562,189,548,206,530,220,526,216,544,202,558,186,565,170,560,153,530,118,493,89,451,67,407,50,319,30,247,23"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="187,225,248,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="305,102,258,120,237,134,220,153,214,167,211,182,213,212,208,212,206,182,209,165,215,151,233,130,256,115,304,97"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="363,225,437,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="351,103,370,151,394,212,389,213,366,153,346,105"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="483,152,551,177"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="373,102,477,144,475,149,371,106"/>
+<area shape="rect" id="Node000008" href="$_t_vector_element_8h.html" title="Definice strukturovaného typu VectorElement a implementace API." alt="" coords="230,152,357,177"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="338,106,312,142,307,139,333,103"/>
+<area shape="poly" id="edge14_Node000004_Node000010" title=" " alt="" coords="358,103,476,214,472,218,355,106"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="253,180,84,227,82,222,251,175"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="268,180,169,222,166,217,266,175"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="283,179,242,218,238,214,279,175"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="312,175,373,215,370,220,309,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="273,225,338,251"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="298,177,304,211,298,212,293,178"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="327,175,451,218,450,223,325,180"/>
+</map>

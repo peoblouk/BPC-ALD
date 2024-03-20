@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Basic Sorts (structured element): 1. VectorElement (strukturovaný)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Basic Sorts (structured element)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#define-members">Definice maker</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#enum-members">Výčty</a> &#124;
+<a href="#func-members">Funkce</a> &#124;
+<a href="#var-members">Proměnné</a>  </div>
+  <div class="headertitle"><div class="title">1. VectorElement (strukturovaný)</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice strukturovaného datového typu VectorElement a jeho funkcí  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_student" id="r_struct_t_student"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_student">TStudent</a></td></tr>
+<tr class="memdesc:struct_t_student"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a>.  <a href="#struct_t_student">...</a><br /></td></tr>
+<tr class="separator:struct_t_student"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definice maker</h2></td></tr>
+<tr class="memitem:ga2d8bb6ee4bbdcd31a86aac2a1ae602d2" id="r_ga2d8bb6ee4bbdcd31a86aac2a1ae602d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2d8bb6ee4bbdcd31a86aac2a1ae602d2">TVECTOR_ELEMENT_PRT_FRMSTR_FIRST_NAME</a>&#160;&#160;&#160;&quot;%s&quot;</td></tr>
+<tr class="memdesc:ga2d8bb6ee4bbdcd31a86aac2a1ae602d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro tisk položky: <a class="el" href="#ad92b577327b71ccf74bc5ffe4866974b">Jméno studenta</a>.  <br /></td></tr>
+<tr class="separator:ga2d8bb6ee4bbdcd31a86aac2a1ae602d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa02ea8e0dbe79d4fedce2f23eeb2417b" id="r_gaa02ea8e0dbe79d4fedce2f23eeb2417b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa02ea8e0dbe79d4fedce2f23eeb2417b">TVECTOR_ELEMENT_SCN_FRMSTR_FIRST_NAME</a>&#160;&#160;&#160;&quot;%20s&quot;</td></tr>
+<tr class="memdesc:gaa02ea8e0dbe79d4fedce2f23eeb2417b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro načtení položky: <a class="el" href="#ad92b577327b71ccf74bc5ffe4866974b">Jméno studenta</a>.  <br /></td></tr>
+<tr class="separator:gaa02ea8e0dbe79d4fedce2f23eeb2417b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84255e0bce402ccebac26e2797026c11" id="r_ga84255e0bce402ccebac26e2797026c11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga84255e0bce402ccebac26e2797026c11">TVECTOR_ELEMENT_PRT_FRMSTR_LAST_NAME</a>&#160;&#160;&#160;&quot;%s&quot;</td></tr>
+<tr class="memdesc:ga84255e0bce402ccebac26e2797026c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro tisk položky: <a class="el" href="#ac0b76a9c12f03a3be7ba54c9a637950f">Příjmení studenta</a>.  <br /></td></tr>
+<tr class="separator:ga84255e0bce402ccebac26e2797026c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8c7fdda1b3ede5d53d21b004ba54f45" id="r_gab8c7fdda1b3ede5d53d21b004ba54f45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab8c7fdda1b3ede5d53d21b004ba54f45">TVECTOR_ELEMENT_SCN_FRMSTR_LAST_NAME</a>&#160;&#160;&#160;&quot;%30s&quot;</td></tr>
+<tr class="memdesc:gab8c7fdda1b3ede5d53d21b004ba54f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro načtení položky: <a class="el" href="#ac0b76a9c12f03a3be7ba54c9a637950f">Příjmení studenta</a>.  <br /></td></tr>
+<tr class="separator:gab8c7fdda1b3ede5d53d21b004ba54f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga283f9ec5891671a30ba494caad92be65" id="r_ga283f9ec5891671a30ba494caad92be65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga283f9ec5891671a30ba494caad92be65">TVECTOR_ELEMENT_FRMSTR_ID</a>&#160;&#160;&#160;&quot;%zu&quot;</td></tr>
+<tr class="memdesc:ga283f9ec5891671a30ba494caad92be65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro tisk i načtení položky: <a class="el" href="#adfaea340defe938f0ecfaa6c314e00e4">ID studenta</a>.  <br /></td></tr>
+<tr class="separator:ga283f9ec5891671a30ba494caad92be65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ea120d57e0ab2c9bd7be7e7565995c9" id="r_ga9ea120d57e0ab2c9bd7be7e7565995c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9ea120d57e0ab2c9bd7be7e7565995c9">TVECTOR_ELEMENT_FRMSTR_POINTS</a>&#160;&#160;&#160;&quot;%hu&quot;</td></tr>
+<tr class="memdesc:ga9ea120d57e0ab2c9bd7be7e7565995c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro tisk i načtení položky: <a class="el" href="#a870788764b35234aba0b7e967ac9a583">Bodové hodnocení studenta</a>.  <br /></td></tr>
+<tr class="separator:ga9ea120d57e0ab2c9bd7be7e7565995c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:gaba64adf83c3e2becd5e14de6340c7a73" id="r_gaba64adf83c3e2becd5e14de6340c7a73"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="#struct_t_student">TStudent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a></td></tr>
+<tr class="memdesc:gaba64adf83c3e2becd5e14de6340c7a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu VectorElement (alias na typ struct <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a>)  <br /></td></tr>
+<tr class="separator:gaba64adf83c3e2becd5e14de6340c7a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Výčty</h2></td></tr>
+<tr class="memitem:ga6d351626937cffa6f83480269e5aeafa" id="r_ga6d351626937cffa6f83480269e5aeafa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a> { <a class="el" href="#gga6d351626937cffa6f83480269e5aeafaab9fac830969adf5c4b5c0f371404e6ed">EByFirstName</a>
+, <a class="el" href="#gga6d351626937cffa6f83480269e5aeafaa3b0f179a8221fa17d65401a088e46da1">EByLastName</a>
+, <a class="el" href="#gga6d351626937cffa6f83480269e5aeafaa0b7f28a3df87147c9ad7c3e32d249563">EById</a>
+, <a class="el" href="#gga6d351626937cffa6f83480269e5aeafaa68bbe3fec6b81949a587c171596feaec">EByPoints</a>
+ }</td></tr>
+<tr class="memdesc:ga6d351626937cffa6f83480269e5aeafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice výčtového typu TVectorElementCompareSelect.  <a href="#ga6d351626937cffa6f83480269e5aeafa">...</a><br /></td></tr>
+<tr class="separator:ga6d351626937cffa6f83480269e5aeafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga58c3bcf9f96681f3c9d6b0b36ed54da2" id="r_ga58c3bcf9f96681f3c9d6b0b36ed54da2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga58c3bcf9f96681f3c9d6b0b36ed54da2">vector_element_set_comparator</a> (enum <a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a> aCompareBy)</td></tr>
+<tr class="memdesc:ga58c3bcf9f96681f3c9d6b0b36ed54da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nastavení položky pro porovnání dvou elementů  <br /></td></tr>
+<tr class="separator:ga58c3bcf9f96681f3c9d6b0b36ed54da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82e527836fce12c93af896f65e9f701d" id="r_ga82e527836fce12c93af896f65e9f701d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga82e527836fce12c93af896f65e9f701d">vector_element_comparator</a> (const <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *aLeft, const <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *aRight)</td></tr>
+<tr class="memdesc:ga82e527836fce12c93af896f65e9f701d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání dvou elementů  <br /></td></tr>
+<tr class="separator:ga82e527836fce12c93af896f65e9f701d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9a34133c2292f807fe184c72fd3f8d8" id="r_gaf9a34133c2292f807fe184c72fd3f8d8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf9a34133c2292f807fe184c72fd3f8d8">vector_element_load_file</a> (<a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *aElement, FILE *aInputFile)</td></tr>
+<tr class="memdesc:gaf9a34133c2292f807fe184c72fd3f8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Načtení elementu ze souboru.  <br /></td></tr>
+<tr class="separator:gaf9a34133c2292f807fe184c72fd3f8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaae5b52d7f1d155134792f040f00a385" id="r_gaaae5b52d7f1d155134792f040f00a385"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaae5b52d7f1d155134792f040f00a385">vector_element_store_file</a> (<a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> aElement, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:gaaae5b52d7f1d155134792f040f00a385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uložení elementu do souboru.  <br /></td></tr>
+<tr class="separator:gaaae5b52d7f1d155134792f040f00a385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2485005f9b85ee450e159a793583c9b" id="r_gac2485005f9b85ee450e159a793583c9b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac2485005f9b85ee450e159a793583c9b">vector_element_random_value</a> (void)</td></tr>
+<tr class="memdesc:gac2485005f9b85ee450e159a793583c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vrací nový element s náhodnou hodnotou.  <br /></td></tr>
+<tr class="separator:gac2485005f9b85ee450e159a793583c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Proměnné</h2></td></tr>
+<tr class="memitem:ga3fcede90c2211791eceb56847807eed0" id="r_ga3fcede90c2211791eceb56847807eed0"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3fcede90c2211791eceb56847807eed0">compare_by</a></td></tr>
+<tr class="memdesc:ga3fcede90c2211791eceb56847807eed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deklarace globální proměnné udržující informaci o položce zvolené pro porovnání dvou elementů  <br /></td></tr>
+<tr class="separator:ga3fcede90c2211791eceb56847807eed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice strukturovaného datového typu VectorElement a jeho funkcí </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_student" id="struct_t_student"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_student">&#9670;&#160;</a></span>TStudent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TStudent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a>. </p>
+<p>Typ <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a> obsahuje informace o osobě studenta a jeho bodovém hodnocení. </p>
+</div><div class="dynheader">
+Diagram pro TStudent:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_student__coll__graph.svg" width="187" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:ad92b577327b71ccf74bc5ffe4866974b" id="r_ad92b577327b71ccf74bc5ffe4866974b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad92b577327b71ccf74bc5ffe4866974b">iFirstName</a> [20+1]</td></tr>
+<tr class="memdesc:ad92b577327b71ccf74bc5ffe4866974b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jméno studenta (20 znaků + 1 ukončovací znak '\0')  <br /></td></tr>
+<tr class="separator:ad92b577327b71ccf74bc5ffe4866974b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b76a9c12f03a3be7ba54c9a637950f" id="r_ac0b76a9c12f03a3be7ba54c9a637950f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0b76a9c12f03a3be7ba54c9a637950f">iLastName</a> [30+1]</td></tr>
+<tr class="memdesc:ac0b76a9c12f03a3be7ba54c9a637950f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Příjmení studenta (30 znaků + 1 ukončovací znak '\0')  <br /></td></tr>
+<tr class="separator:ac0b76a9c12f03a3be7ba54c9a637950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaea340defe938f0ecfaa6c314e00e4" id="r_adfaea340defe938f0ecfaa6c314e00e4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfaea340defe938f0ecfaa6c314e00e4">iId</a></td></tr>
+<tr class="memdesc:adfaea340defe938f0ecfaa6c314e00e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID studenta.  <br /></td></tr>
+<tr class="separator:adfaea340defe938f0ecfaa6c314e00e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870788764b35234aba0b7e967ac9a583" id="r_a870788764b35234aba0b7e967ac9a583"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a870788764b35234aba0b7e967ac9a583">iPoints</a></td></tr>
+<tr class="memdesc:a870788764b35234aba0b7e967ac9a583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bodové hodnocení studenta.  <br /></td></tr>
+<tr class="separator:a870788764b35234aba0b7e967ac9a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="ad92b577327b71ccf74bc5ffe4866974b" name="ad92b577327b71ccf74bc5ffe4866974b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92b577327b71ccf74bc5ffe4866974b">&#9670;&#160;</a></span>iFirstName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char iFirstName[20+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Jméno studenta (20 znaků + 1 ukončovací znak '\0') </p>
+
+</div>
+</div>
+<a id="ac0b76a9c12f03a3be7ba54c9a637950f" name="ac0b76a9c12f03a3be7ba54c9a637950f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b76a9c12f03a3be7ba54c9a637950f">&#9670;&#160;</a></span>iLastName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char iLastName[30+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Příjmení studenta (30 znaků + 1 ukončovací znak '\0') </p>
+
+</div>
+</div>
+<a id="adfaea340defe938f0ecfaa6c314e00e4" name="adfaea340defe938f0ecfaa6c314e00e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaea340defe938f0ecfaa6c314e00e4">&#9670;&#160;</a></span>iId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID studenta. </p>
+
+</div>
+</div>
+<a id="a870788764b35234aba0b7e967ac9a583" name="a870788764b35234aba0b7e967ac9a583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870788764b35234aba0b7e967ac9a583">&#9670;&#160;</a></span>iPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short iPoints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bodové hodnocení studenta. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic maker</h2>
+<a id="ga2d8bb6ee4bbdcd31a86aac2a1ae602d2" name="ga2d8bb6ee4bbdcd31a86aac2a1ae602d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d8bb6ee4bbdcd31a86aac2a1ae602d2">&#9670;&#160;</a></span>TVECTOR_ELEMENT_PRT_FRMSTR_FIRST_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TVECTOR_ELEMENT_PRT_FRMSTR_FIRST_NAME&#160;&#160;&#160;&quot;%s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice formátovacího řetězce pro tisk položky: <a class="el" href="#ad92b577327b71ccf74bc5ffe4866974b">Jméno studenta</a>. </p>
+
+</div>
+</div>
+<a id="gaa02ea8e0dbe79d4fedce2f23eeb2417b" name="gaa02ea8e0dbe79d4fedce2f23eeb2417b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa02ea8e0dbe79d4fedce2f23eeb2417b">&#9670;&#160;</a></span>TVECTOR_ELEMENT_SCN_FRMSTR_FIRST_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TVECTOR_ELEMENT_SCN_FRMSTR_FIRST_NAME&#160;&#160;&#160;&quot;%20s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice formátovacího řetězce pro načtení položky: <a class="el" href="#ad92b577327b71ccf74bc5ffe4866974b">Jméno studenta</a>. </p>
+
+</div>
+</div>
+<a id="ga84255e0bce402ccebac26e2797026c11" name="ga84255e0bce402ccebac26e2797026c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84255e0bce402ccebac26e2797026c11">&#9670;&#160;</a></span>TVECTOR_ELEMENT_PRT_FRMSTR_LAST_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TVECTOR_ELEMENT_PRT_FRMSTR_LAST_NAME&#160;&#160;&#160;&quot;%s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice formátovacího řetězce pro tisk položky: <a class="el" href="#ac0b76a9c12f03a3be7ba54c9a637950f">Příjmení studenta</a>. </p>
+
+</div>
+</div>
+<a id="gab8c7fdda1b3ede5d53d21b004ba54f45" name="gab8c7fdda1b3ede5d53d21b004ba54f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8c7fdda1b3ede5d53d21b004ba54f45">&#9670;&#160;</a></span>TVECTOR_ELEMENT_SCN_FRMSTR_LAST_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TVECTOR_ELEMENT_SCN_FRMSTR_LAST_NAME&#160;&#160;&#160;&quot;%30s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice formátovacího řetězce pro načtení položky: <a class="el" href="#ac0b76a9c12f03a3be7ba54c9a637950f">Příjmení studenta</a>. </p>
+
+</div>
+</div>
+<a id="ga283f9ec5891671a30ba494caad92be65" name="ga283f9ec5891671a30ba494caad92be65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga283f9ec5891671a30ba494caad92be65">&#9670;&#160;</a></span>TVECTOR_ELEMENT_FRMSTR_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TVECTOR_ELEMENT_FRMSTR_ID&#160;&#160;&#160;&quot;%zu&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice formátovacího řetězce pro tisk i načtení položky: <a class="el" href="#adfaea340defe938f0ecfaa6c314e00e4">ID studenta</a>. </p>
+
+</div>
+</div>
+<a id="ga9ea120d57e0ab2c9bd7be7e7565995c9" name="ga9ea120d57e0ab2c9bd7be7e7565995c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ea120d57e0ab2c9bd7be7e7565995c9">&#9670;&#160;</a></span>TVECTOR_ELEMENT_FRMSTR_POINTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TVECTOR_ELEMENT_FRMSTR_POINTS&#160;&#160;&#160;&quot;%hu&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice formátovacího řetězce pro tisk i načtení položky: <a class="el" href="#a870788764b35234aba0b7e967ac9a583">Bodové hodnocení studenta</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic typů</h2>
+<a id="gaba64adf83c3e2becd5e14de6340c7a73" name="gaba64adf83c3e2becd5e14de6340c7a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba64adf83c3e2becd5e14de6340c7a73">&#9670;&#160;</a></span>TVectorElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="#struct_t_student">TStudent</a> <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice typu VectorElement (alias na typ struct <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a>) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace výčtových typů</h2>
+<a id="ga6d351626937cffa6f83480269e5aeafa" name="ga6d351626937cffa6f83480269e5aeafa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d351626937cffa6f83480269e5aeafa">&#9670;&#160;</a></span>TVectorElementCompareSelect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice výčtového typu TVectorElementCompareSelect. </p>
+<p>Výčtový typ TVectorElementCompareSelect určuje podle které složky struktury <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a> bude prováděno porovnání. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Hodnoty výčtu</th></tr><tr><td class="fieldname"><a id="gga6d351626937cffa6f83480269e5aeafaab9fac830969adf5c4b5c0f371404e6ed" name="gga6d351626937cffa6f83480269e5aeafaab9fac830969adf5c4b5c0f371404e6ed"></a>EByFirstName&#160;</td><td class="fielddoc"><p>Porovnání dle položky: <a class="el" href="#ad92b577327b71ccf74bc5ffe4866974b">Jméno studenta</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6d351626937cffa6f83480269e5aeafaa3b0f179a8221fa17d65401a088e46da1" name="gga6d351626937cffa6f83480269e5aeafaa3b0f179a8221fa17d65401a088e46da1"></a>EByLastName&#160;</td><td class="fielddoc"><p>Porovnání dle položky: <a class="el" href="#ac0b76a9c12f03a3be7ba54c9a637950f">Příjmení studenta</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6d351626937cffa6f83480269e5aeafaa0b7f28a3df87147c9ad7c3e32d249563" name="gga6d351626937cffa6f83480269e5aeafaa0b7f28a3df87147c9ad7c3e32d249563"></a>EById&#160;</td><td class="fielddoc"><p>Porovnání dle položky: <a class="el" href="#adfaea340defe938f0ecfaa6c314e00e4">ID studenta</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6d351626937cffa6f83480269e5aeafaa68bbe3fec6b81949a587c171596feaec" name="gga6d351626937cffa6f83480269e5aeafaa68bbe3fec6b81949a587c171596feaec"></a>EByPoints&#160;</td><td class="fielddoc"><p>Porovnání dle položky: <a class="el" href="#a870788764b35234aba0b7e967ac9a583">Bodové hodnocení studenta</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga58c3bcf9f96681f3c9d6b0b36ed54da2" name="ga58c3bcf9f96681f3c9d6b0b36ed54da2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58c3bcf9f96681f3c9d6b0b36ed54da2">&#9670;&#160;</a></span>vector_element_set_comparator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vector_element_set_comparator </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a></td>          <td class="paramname"><span class="paramname"><em>aCompareBy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nastavení položky pro porovnání dvou elementů </p>
+<p>Nastaví dle zadaného parametru položku struktury, podle které budou prováděna všechna následující porovnání dvou elementů. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aCompareBy</td><td>Definuje podle které složky struktury <a class="el" href="#struct_t_student" title="Definice typu TStudent.">TStudent</a> bude prováděno porovnání (viz <a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_element_ga58c3bcf9f96681f3c9d6b0b36ed54da2_icgraph.svg" width="244" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga82e527836fce12c93af896f65e9f701d" name="ga82e527836fce12c93af896f65e9f701d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82e527836fce12c93af896f65e9f701d">&#9670;&#160;</a></span>vector_element_comparator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int vector_element_comparator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aRight</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Porovnání dvou elementů </p>
+<p>Provede trojcestné porovnání hodnot dvou elementů, předaných pomocí ukazatelů. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeft</td><td>Ukazatel na levou porovnávanou hodnotu (tzv. LHS - Left Hand Side) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRight</td><td>Ukazatel na pravou porovnávanou hodnotu (tzv. RHS - Right Hand Side) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou ukazatelů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd>
+<dd>
+Funkce hlásí běhovou chybu <code>perror</code> v případě, že byla zvolená neznámá volba položky pro porovnání! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_element_ga82e527836fce12c93af896f65e9f701d_icgraph.svg" width="718" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaf9a34133c2292f807fe184c72fd3f8d8" name="gaf9a34133c2292f807fe184c72fd3f8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9a34133c2292f807fe184c72fd3f8d8">&#9670;&#160;</a></span>vector_element_load_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool vector_element_load_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aElement</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>aInputFile</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Načtení elementu ze souboru. </p>
+<p>Načte hodnotu elementu z předem otevřeného souboru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aElement</td><td>Ukazatel na místo v paměti určené pro načtení hodnoty </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aInputFile</td><td>Ukazatel na soubor otevřený v módu pro čtení </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota elementu ze souboru úspěšně načtena </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou ukazatelů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_element_gaf9a34133c2292f807fe184c72fd3f8d8_icgraph.svg" width="423" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaaae5b52d7f1d155134792f040f00a385" name="gaaae5b52d7f1d155134792f040f00a385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaae5b52d7f1d155134792f040f00a385">&#9670;&#160;</a></span>vector_element_store_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool vector_element_store_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aElement</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>aOutputFile</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Uložení elementu do souboru. </p>
+<p>Uloží hodnotu elementu do předem otevřeného souboru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aElement</td><td>Hodnota elementu určená pro uložení do souboru </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aOutputFile</td><td>Ukazatel na soubor otevřený v módu pro zápis </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota elementu do souboru úspěšně uložena </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele <code>aOutputFile</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_element_gaaae5b52d7f1d155134792f040f00a385_icgraph.svg" width="440" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac2485005f9b85ee450e159a793583c9b" name="gac2485005f9b85ee450e159a793583c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2485005f9b85ee450e159a793583c9b">&#9670;&#160;</a></span>vector_element_random_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> vector_element_random_value </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vrací nový element s náhodnou hodnotou. </p>
+<p>Vytváří a vrací nový element inicializovaný pomocí náhodné hodnoty. </p><dl class="section return"><dt>Návratová hodnota</dt><dd>Nový element obsahující náhodné hodnoty </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_vector_element_gac2485005f9b85ee450e159a793583c9b_icgraph.svg" width="348" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace proměnných</h2>
+<a id="ga3fcede90c2211791eceb56847807eed0" name="ga3fcede90c2211791eceb56847807eed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fcede90c2211791eceb56847807eed0">&#9670;&#160;</a></span>compare_by</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga6d351626937cffa6f83480269e5aeafa">TVectorElementCompareSelect</a> compare_by</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deklarace globální proměnné udržující informaci o položce zvolené pro porovnání dvou elementů </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 18. bře 2024 13.15:33, pro projekt: BPC-ALD: ALG Basic Sorts (structured element), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

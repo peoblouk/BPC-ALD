@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Basic Sorts (structured element): 2.1. Rozšíření pro Sortable Vector</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Basic Sorts (structured element)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2.1. Rozšíření pro Sortable Vector<div class="ingroups"><a class="el" href="group___t_vector.html">2. Vector</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice typu Vector (sortable), popis jeho nově doplněných vlastností a funkcí  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 2.1. Rozšíření pro Sortable Vector:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector.svg" width="272" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_vector_sort_stats" id="r_struct_t_vector_sort_stats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_vector_sort_stats">TVectorSortStats</a></td></tr>
+<tr class="memdesc:struct_t_vector_sort_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu VectorSortStats.  <a href="#struct_t_vector_sort_stats">...</a><br /></td></tr>
+<tr class="separator:struct_t_vector_sort_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga16623c06371077674f5d4d31e38e42a4" id="r_ga16623c06371077674f5d4d31e38e42a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aToVector, size_t aToPos, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aFromVector, size_t aFromPos)</td></tr>
+<tr class="memdesc:ga16623c06371077674f5d4d31e38e42a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnoty elementu vektoru.  <br /></td></tr>
+<tr class="separator:ga16623c06371077674f5d4d31e38e42a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedaf9c79afa345e5e71e5c66ab25fa26" id="r_gaedaf9c79afa345e5e71e5c66ab25fa26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, size_t aLeftPos, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, size_t aRightPos)</td></tr>
+<tr class="memdesc:gaedaf9c79afa345e5e71e5c66ab25fa26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot elementů vektorů  <br /></td></tr>
+<tr class="separator:gaedaf9c79afa345e5e71e5c66ab25fa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09e150aa4cdd8faabf43474ab1dbe454" id="r_ga09e150aa4cdd8faabf43474ab1dbe454"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:ga09e150aa4cdd8faabf43474ab1dbe454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.  <br /></td></tr>
+<tr class="separator:ga09e150aa4cdd8faabf43474ab1dbe454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1982d8a0e5f66f933dc6a0413f2d23e" id="r_gac1982d8a0e5f66f933dc6a0413f2d23e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, size_t aLeftPos, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, size_t aRightPos)</td></tr>
+<tr class="memdesc:gac1982d8a0e5f66f933dc6a0413f2d23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna hodnot elementů vektorů  <br /></td></tr>
+<tr class="separator:gac1982d8a0e5f66f933dc6a0413f2d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdff161479b4c497204dc32fd2202e6f" id="r_gabdff161479b4c497204dc32fd2202e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *aValue)</td></tr>
+<tr class="memdesc:gabdff161479b4c497204dc32fd2202e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement.  <br /></td></tr>
+<tr class="separator:gabdff161479b4c497204dc32fd2202e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b7a4850be6488c69c293bdd13f729a7" id="r_ga1b7a4850be6488c69c293bdd13f729a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1b7a4850be6488c69c293bdd13f729a7">vector_is_ascendantly_sorted</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aUnsortedVector, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aSortedVector)</td></tr>
+<tr class="memdesc:ga1b7a4850be6488c69c293bdd13f729a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ověření korektního setřídění vektoru.  <br /></td></tr>
+<tr class="separator:ga1b7a4850be6488c69c293bdd13f729a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0806530378fe49a3d61622ca8b9957e" id="r_gac0806530378fe49a3d61622ca8b9957e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac0806530378fe49a3d61622ca8b9957e">vector_print_sortstats</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gac0806530378fe49a3d61622ca8b9957e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zobrazení hodnoty statistik počtu operací s elementy vektoru.  <br /></td></tr>
+<tr class="separator:gac0806530378fe49a3d61622ca8b9957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice typu Vector (sortable), popis jeho nově doplněných vlastností a funkcí </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_vector_sort_stats" id="struct_t_vector_sort_stats"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_vector_sort_stats">&#9670;&#160;</a></span>TVectorSortStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TVectorSortStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu VectorSortStats. </p>
+<p>Typ VectorSortStats spravuje statistiky o celkovém počtu operací: porovnání, výměn, přesunů, přečtení nebo zapsání hodnot elementů vektoru. </p>
+</div><div class="dynheader">
+Diagram pro TVectorSortStats:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_vector_sort_stats__coll__graph.svg" width="176" height="167"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:ad6ce653ecb642b856cf80de4266be31b" id="r_ad6ce653ecb642b856cf80de4266be31b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6ce653ecb642b856cf80de4266be31b">iComparisons</a></td></tr>
+<tr class="memdesc:ad6ce653ecb642b856cf80de4266be31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet operací porovnání hodnot mezi dvěma elementy vektoru.  <br /></td></tr>
+<tr class="separator:ad6ce653ecb642b856cf80de4266be31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55539c0552203fe08aae467a6c7ddf16" id="r_a55539c0552203fe08aae467a6c7ddf16"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55539c0552203fe08aae467a6c7ddf16">iSwaps</a></td></tr>
+<tr class="memdesc:a55539c0552203fe08aae467a6c7ddf16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet operací výměny hodnot mezi dvěma elementy vektoru.  <br /></td></tr>
+<tr class="separator:a55539c0552203fe08aae467a6c7ddf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65ca79fd1d44f2984b1a4ba58e00f19" id="r_ad65ca79fd1d44f2984b1a4ba58e00f19"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad65ca79fd1d44f2984b1a4ba58e00f19">iMoves</a></td></tr>
+<tr class="memdesc:ad65ca79fd1d44f2984b1a4ba58e00f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet operací přesunu hodnoty mezi dvěma elementy vektoru.  <br /></td></tr>
+<tr class="separator:ad65ca79fd1d44f2984b1a4ba58e00f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a7f3fe10816a30c88a450ed8a59825" id="r_ab3a7f3fe10816a30c88a450ed8a59825"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3a7f3fe10816a30c88a450ed8a59825">iGets</a></td></tr>
+<tr class="memdesc:ab3a7f3fe10816a30c88a450ed8a59825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet operací přečtení hodnoty z elementu vektoru.  <br /></td></tr>
+<tr class="separator:ab3a7f3fe10816a30c88a450ed8a59825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6e644510fb083b7e6f4f6a60ca8b0f" id="r_ace6e644510fb083b7e6f4f6a60ca8b0f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace6e644510fb083b7e6f4f6a60ca8b0f">iSets</a></td></tr>
+<tr class="memdesc:ace6e644510fb083b7e6f4f6a60ca8b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet operací zápisu hodnoty do elementu vektoru.  <br /></td></tr>
+<tr class="separator:ace6e644510fb083b7e6f4f6a60ca8b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="ad6ce653ecb642b856cf80de4266be31b" name="ad6ce653ecb642b856cf80de4266be31b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ce653ecb642b856cf80de4266be31b">&#9670;&#160;</a></span>iComparisons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iComparisons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet operací porovnání hodnot mezi dvěma elementy vektoru. </p>
+
+</div>
+</div>
+<a id="a55539c0552203fe08aae467a6c7ddf16" name="a55539c0552203fe08aae467a6c7ddf16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55539c0552203fe08aae467a6c7ddf16">&#9670;&#160;</a></span>iSwaps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iSwaps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet operací výměny hodnot mezi dvěma elementy vektoru. </p>
+
+</div>
+</div>
+<a id="ad65ca79fd1d44f2984b1a4ba58e00f19" name="ad65ca79fd1d44f2984b1a4ba58e00f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65ca79fd1d44f2984b1a4ba58e00f19">&#9670;&#160;</a></span>iMoves</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iMoves</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet operací přesunu hodnoty mezi dvěma elementy vektoru. </p>
+
+</div>
+</div>
+<a id="ab3a7f3fe10816a30c88a450ed8a59825" name="ab3a7f3fe10816a30c88a450ed8a59825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a7f3fe10816a30c88a450ed8a59825">&#9670;&#160;</a></span>iGets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iGets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet operací přečtení hodnoty z elementu vektoru. </p>
+
+</div>
+</div>
+<a id="ace6e644510fb083b7e6f4f6a60ca8b0f" name="ace6e644510fb083b7e6f4f6a60ca8b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6e644510fb083b7e6f4f6a60ca8b0f">&#9670;&#160;</a></span>iSets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iSets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet operací zápisu hodnoty do elementu vektoru. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga16623c06371077674f5d4d31e38e42a4" name="ga16623c06371077674f5d4d31e38e42a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16623c06371077674f5d4d31e38e42a4">&#9670;&#160;</a></span>vector_move_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_move_positions </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aToVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aToPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aFromVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aFromPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přesun hodnoty elementu vektoru. </p>
+<p>Přesun hodnoty elementu vektoru z/do libovolné pozice nebo případně i mezi různými vektory. Parametry <code>aToVector</code> a <code>aFromVector</code> mohou být stejné. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aToVector</td><td>Ukazatel na cílový vektor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aToPos</td><td>Cílová pozice (index) elementu ve vektoru <code>aToVector</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromVector</td><td>Ukazatel na zdrojový vektor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromPos</td><td>Zdrojová pozice (index) elementu ve vektoru <code>aFromVector</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatelů a rozsah indexů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_ga16623c06371077674f5d4d31e38e42a4_icgraph.svg" width="487" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaedaf9c79afa345e5e71e5c66ab25fa26" name="gaedaf9c79afa345e5e71e5c66ab25fa26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedaf9c79afa345e5e71e5c66ab25fa26">&#9670;&#160;</a></span>vector_compare_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vector_compare_positions </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aLeftPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aRightPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porovnání hodnot elementů vektorů </p>
+<p>Trojcestně porovná hodnoty elementů mezi zvolenými pozicemi nebo případně i mezi různými vektory. Parametry <code>aLeftVector</code> a <code>aRightVector</code> mohou být stejné. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftVector</td><td>Ukazatel na levý vektor při porovnání </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftPos</td><td>Pozice (index) (LHS) elementu ve vektoru <code>aLeftVector</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightVector</td><td>Ukazatel na pravý vektor při porovnání </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightPos</td><td>Pozice (index) (RHS) elementu ve vektoru <code>aRightVector</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatelů a rozsah indexů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_gaedaf9c79afa345e5e71e5c66ab25fa26_cgraph.svg" width="412" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_gaedaf9c79afa345e5e71e5c66ab25fa26_icgraph.svg" width="488" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga09e150aa4cdd8faabf43474ab1dbe454" name="ga09e150aa4cdd8faabf43474ab1dbe454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09e150aa4cdd8faabf43474ab1dbe454">&#9670;&#160;</a></span>vector_compare_position_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vector_compare_position_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement. </p>
+<p>Trojcestně porovná hodnotu elementu vektoru na zvolené pozici se zadanou hodnotou <code>aValue</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Ukazatel na vektor při porovnání </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) (LHS) elementu ve vektoru <code>aVector</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota stojící při porovnání na pravé straně (RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a rozsah indexu vektoru <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_ga09e150aa4cdd8faabf43474ab1dbe454_cgraph.svg" width="406" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_ga09e150aa4cdd8faabf43474ab1dbe454_icgraph.svg" width="466" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac1982d8a0e5f66f933dc6a0413f2d23e" name="gac1982d8a0e5f66f933dc6a0413f2d23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1982d8a0e5f66f933dc6a0413f2d23e">&#9670;&#160;</a></span>vector_swap_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_swap_positions </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aLeftPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aRightPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Výměna hodnot elementů vektorů </p>
+<p>Vzájemně zamění hodnoty elementů mezi zvolenými pozicemi nebo případně i mezi různými vektory. Parametry <code>aLeftVector</code> a <code>aRightVector</code> mohou být stejné. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aLeftVector</td><td>Ukazatel na levý vektor pro záměnu hodnoty elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftPos</td><td>Pozice (index) (LHS) elementu ve vektoru <code>aLeftVector</code> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aRightVector</td><td>Ukazatel na pravý vektor při záměně hodnoty elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightPos</td><td>Pozice (index) (RHS) elementu ve vektoru <code>aRightVector</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatelů a rozsah indexů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_gac1982d8a0e5f66f933dc6a0413f2d23e_icgraph.svg" width="487" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gabdff161479b4c497204dc32fd2202e6f" name="gabdff161479b4c497204dc32fd2202e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdff161479b4c497204dc32fd2202e6f">&#9670;&#160;</a></span>vector_swap_position_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_swap_position_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73">TVectorElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement. </p>
+<p>Vzájemně zamění hodnotu elementu vektoru na zvolené pozici se zadanou hodnotou v proměnné typu VectorElement. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na vektor pro záměnu hodnoty elementu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) elementu ve vektoru <code>aVector</code> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aValue</td><td>Ukazatel na hodnotu proměnné typu VectorElement pro záměnu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou ukazatelů a rozsah indexu vektoru <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_gabdff161479b4c497204dc32fd2202e6f_icgraph.svg" width="375" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga1b7a4850be6488c69c293bdd13f729a7" name="ga1b7a4850be6488c69c293bdd13f729a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b7a4850be6488c69c293bdd13f729a7">&#9670;&#160;</a></span>vector_is_ascendantly_sorted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_is_ascendantly_sorted </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aUnsortedVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aSortedVector</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ověření korektního setřídění vektoru. </p>
+<p>Ověřuje správnost vzestupného setřídění zadaného vektoru. Také ověřuje, zda setříděný vektor obsahuje shodné hodnoty elementů jako nesetříděný vektor. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aUnsortedVector</td><td>Ukazatel na původní (nesetříděný) vektor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSortedVector</td><td>Ukazatel na nový (setříděný) vektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud nový vektor <code>aSortedVector</code> obsahuje všechny hodnoty elementů jako původního vektor <code>aUnsortedVector</code> a tyto elementy jsou vzestupně setříděny </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_ga1b7a4850be6488c69c293bdd13f729a7_cgraph.svg" width="391" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_ga1b7a4850be6488c69c293bdd13f729a7_icgraph.svg" width="399" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac0806530378fe49a3d61622ca8b9957e" name="gac0806530378fe49a3d61622ca8b9957e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0806530378fe49a3d61622ca8b9957e">&#9670;&#160;</a></span>vector_print_sortstats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_print_sortstats </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zobrazení hodnoty statistik počtu operací s elementy vektoru. </p>
+<p>Vytiskne na konzolu (stdout) celkové počty operací provedené s elementy vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Ukazatel na vektor, jehož statistiky chceme zobrazit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl ukazatel na vektor platný a statistiky byly zobrazeny na konzolu </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_gac0806530378fe49a3d61622ca8b9957e_icgraph.svg" width="395" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 18. bře 2024 13.15:33, pro projekt: BPC-ALD: ALG Basic Sorts (structured element), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<map id="vector_compare_positions" name="vector_compare_positions">
+<area shape="rect" id="Node000001" title="Porovnání hodnot elementů vektorů" alt="" coords="311,129,483,155"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)" alt="" coords="139,5,228,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="370,122,322,83,261,44,227,31,229,26,264,40,325,78,373,118"/>
+<area shape="rect" id="Node000004" href="$group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz..." alt="" coords="107,55,259,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="350,127,262,94,227,83,229,77,264,89,352,122"/>
+<area shape="rect" id="Node000005" href="$group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)" alt="" coords="104,104,263,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="297,133,263,129,263,123,297,128"/>
+<area shape="rect" id="Node000006" href="$group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)" alt="" coords="140,153,227,179"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="297,156,227,164,226,159,297,151"/>
+<area shape="rect" id="Node000007" href="$group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)" alt="" coords="138,203,229,228"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="349,162,264,193,226,205,224,200,262,187,348,157"/>
+<area shape="rect" id="Node000008" href="$group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39" title="Porovnání hodnot elementů vektorů určených dvěma iterátory." alt="" coords="112,253,255,293"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="371,166,323,203,264,242,237,255,235,250,261,237,320,199,368,161"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,104,56,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,34,105,44,69,75,43,105,39,102,65,71,103,40,125,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="127,87,105,94,57,110,56,105,103,89,125,82"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="90,119,56,119,56,114,90,114"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="129,152,103,143,56,127,57,122,105,138,130,146"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="124,203,103,192,66,162,39,131,43,128,69,158,105,188,126,198"/>
+</map>

@@ -1,0 +1,11 @@
+10
+Tomas Jedno 1111 9
+Pepa Druhy 222 8
+Petr Treti 3 7
+Bozena Ctvrta 4 6
+Pepa Paty 5 5
+Jan Sesty 6 4
+Pepa Sedmy 7 3
+Pepa Osmy 8 2
+Milos Devaty 9 1
+Skluzan Tavic 99 0

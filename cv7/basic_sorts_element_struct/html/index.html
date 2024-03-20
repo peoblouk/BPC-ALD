@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Basic Sorts (structured element): Zadání cvičení 7</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Basic Sorts (structured element)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 7 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv07__zadani__basic__sorts__element__struct"></a> </p><h1>1. Dokončení algoritmů přímého třídění</h1>
+<p>Dokončete algoritmy přímého třídění v projektu <code>basic_sorts</code>. Zhodnoťte časovou složitost jednotlivých metod přímého třídění. Časovou složitost každého z algoritmů třídění vyhodnoťte pomocí určení počtu elementárních operací. Použijte nově dodaný projekt a dopište kód do prázdných těl připravených funkcí.</p>
+<h2>Úkoly</h2>
+<ol type="1">
+<li>Ověřte funkčnost přímých metod třídění, které jste realizovali v předchozím cvičení a přeneste jejich zdrojové texty do nového projektu pro toto cvičení. Ověřte jejich výstupy zobrazované funkcí <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> resp. <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code>. Zamyslete se u každé z implementovaných metod nad očekávaným výsledky počtu provedených operací a také nad výsledky měření doby běhu algoritmu.<ul>
+<li><code><a class="el" href="group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)">insert_sort()</a></code> - třídění přímým vkládáním,</li>
+<li><code><a class="el" href="group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)">select_sort()</a></code> - třídění přímým výběrem,</li>
+<li><code><a class="el" href="group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)">bubble_sort()</a></code> - třídění přímou výměnou,</li>
+<li><code><a class="el" href="group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz...">bubble_sort_optimized()</a></code> - modifikace třídění přímou výměnou - optimalizace s pomocným příznakem ukončení třídění.</li>
+</ul>
+</li>
+<li>Na tomto cvičení budeme implementovat další třídicí metody. Opět si ověřte u každé z implementovaných metod očekávané výsledky počtu provedených operací a výsledky měření doby běhu algoritmu.<ul>
+<li><code><a class="el" href="group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)">bubble_sort_optimized2()</a></code> - modifikace třídění přímou výměnou - optimalizace s určením indexu poslední výměny,</li>
+<li><code><a class="el" href="group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)">shaker_sort()</a></code> - modifikace třídění přímou výměnou - <a href="https://cs.wikipedia.org/wiki/Koktejlov%C3%A9_%C5%99azen%C3%AD">koktejlové třídění</a>.</li>
+</ul>
+</li>
+<li>Pro každou z třídicích metod ověřte, zda odpovídají hodnotám uvedeným v tabulkách pro jednotlivé soubory dat.</li>
+</ol>
+<h2>Rozbor jednotlivých úkolů</h2>
+<ol type="1">
+<li>Pro každou z třídicích metod porovnejte počty provedených elementárních operací. Ověřte, zda odpovídají teorii prezentované v přednáškách.</li>
+<li>Funkce, které by se vám mohly hodit při implementaci třídicích algoritmů:<ul>
+<li><b>InsertSort</b> - <code><a class="el" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici.">vector_value()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.">vector_compare_position_value()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru.">vector_move_positions()</a></code>, <code><a class="el" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici.">vector_set_value()</a></code>.</li>
+<li><b>SelectSort</b> - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+<li><b>BubbleSort</b> - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+<li><b>BubbleSort optimized</b> (s pomocným příznakem) - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+<li><b>BubbleSort optimized2</b> (s výpočtem indexu poslední změny) - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+<li><b>ShakerSort</b> - <code><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů">vector_compare_positions()</a></code>, <code><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů">vector_swap_positions()</a></code>.</li>
+</ul>
+</li>
+<li><p class="startli">Výsledné počty operací: <em>compare</em>, <em>swap</em>, <em>move</em>, <em>get</em>, <em>set</em> musí odpovídat hodnotám uvedeným v tabulkách pro jednotlivé soubory dat. <br  />
+ <b>Pokud počty operací ve vaší implementaci neodpovídají, není vaše implementace korektní a je nutné ji opravit.</b></p>
+<p class="startli"><code>reversed_data.txt</code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized   </th><th class="markdownTableHeadNone">BS optimized2   </th><th class="markdownTableHeadNone">ShakerSort    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code>select_sort_data.txt</code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized   </th><th class="markdownTableHeadNone">BS optimized2   </th><th class="markdownTableHeadNone">ShakerSort    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">29   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">39   </td><td class="markdownTableBodyNone">29   </td><td class="markdownTableBodyNone">36    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">25   </td><td class="markdownTableBodyNone">25   </td><td class="markdownTableBodyNone">25   </td><td class="markdownTableBodyNone">25    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">25   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code>bubble_sort_optimized_data.txt</code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized   </th><th class="markdownTableHeadNone">BS optimized2   </th><th class="markdownTableHeadNone">ShakerSort    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">21   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">24   </td><td class="markdownTableBodyNone">24   </td><td class="markdownTableBodyNone">22    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">13    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code>shaker_sort_data.txt</code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized   </th><th class="markdownTableHeadNone">BS optimized2   </th><th class="markdownTableHeadNone">ShakerSort    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">24   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">24    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">17    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+<p class="startli"><code>sorted_data.txt</code>: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">InsertSort   </th><th class="markdownTableHeadNone">SelectSort   </th><th class="markdownTableHeadNone">BubbleSort   </th><th class="markdownTableHeadNone">BS optimized   </th><th class="markdownTableHeadNone">BS optimized2   </th><th class="markdownTableHeadNone">ShakerSort    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Comparisons:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">45   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">9    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Swaps:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Moves:   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Value Gets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Value Sets:   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">0   </td></tr>
+</table>
+</li>
+</ol>
+<hr  />
+<h1>2. Třídění vektoru s elementy představujícími kompozitní datový typ</h1>
+<p>V novém projektu <code>basic_sorts_element_struct</code> otestujte algoritmy přímého třídění elementů typu struktura dle různých klíčů.</p>
+<p>Prostudujte zdrojové texty reprezentující strukturovaný typ <code>TVectorElement</code> a odlaďte pro něj všech 6 třídicích metod, které již máte hotové a které by měli být pro tento nový datový typ funkční bez jakékoliv změny zdrojových textů třídicích funkcí.</p>
+<h2>Soubory projektu <code>basic_sorts_element_struct</code></h2>
+<p>Většina souborů je stejná, jako v minulém příkladu. K výraznějším změnám došlo pouze v souboru <code><a class="el" href="_t_vector_element_8h.html" title="Definice strukturovaného typu VectorElement a implementace API.">TVectorElement.h</a></code> a byl přidán soubor <code><a class="el" href="_t_vector_element_8c.html" title="Definice proměnné určující položku podle které budou porovnávány dvě proměnné strukturovaného typu Ve...">TVectorElement.c</a></code>, které tvoří rozhraní pro práci se zvoleným datovým typem.</p>
+<p>Soubor <code><a class="el" href="_t_vector_element_8h.html" title="Definice strukturovaného typu VectorElement a implementace API.">TVectorElement.h</a></code> obsahuje definici základního datového typu <code><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73" title="Definice typu VectorElement (alias na typ struct TStudent)">TVectorElement</a></code>. Tento datový typ používejte všude, kde se pracuje s datovým typem, který obsahuje <code><a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>.</p>
+<p>Datový typ <code><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73" title="Definice typu VectorElement (alias na typ struct TStudent)">TVectorElement</a></code> je nyní reprezentován strukturou <code>struct <a class="el" href="group___t_vector_element.html#struct_t_student" title="Definice typu TStudent.">TStudent</a></code>, která obsahuje položky:</p>
+<ul>
+<li><code>char iFirstName[21]</code> - <a class="el" href="group___t_vector_element.html#ad92b577327b71ccf74bc5ffe4866974b">Jméno studenta</a>,</li>
+<li><code>char iLastName[31]</code> - <a class="el" href="group___t_vector_element.html#ac0b76a9c12f03a3be7ba54c9a637950f">Příjmení studenta</a>,</li>
+<li><code>size_t iId</code> - <a class="el" href="group___t_vector_element.html#adfaea340defe938f0ecfaa6c314e00e4">ID studenta</a>,</li>
+<li><code>unsigned short iPoints</code> - <a class="el" href="group___t_vector_element.html#a870788764b35234aba0b7e967ac9a583">Bodové hodnocení studenta</a>.</li>
+</ul>
+<p>Dále soubor <code><a class="el" href="_t_vector_element_8h.html" title="Definice strukturovaného typu VectorElement a implementace API.">TVectorElement.h</a></code> obsahuje podpůrné funkce pro tento složený datový typ.</p>
+<p>Oproti minulému projektu přibyl soubor <code><a class="el" href="_t_vector_element_8c.html" title="Definice proměnné určující položku podle které budou porovnávány dvě proměnné strukturovaného typu Ve...">TVectorElement.c</a></code>, který obsahuje definici proměnné výčtového typu <code><a class="el" href="group___t_vector_element.html#ga6d351626937cffa6f83480269e5aeafa" title="Definice výčtového typu TVectorElementCompareSelect.">TVectorElementCompareSelect</a></code>, která určuje klíč pro porovnání dvou elementů. Klíč pro porovnání je nastavitelný pomocí funkce: <code><a class="el" href="group___t_vector_element.html#ga58c3bcf9f96681f3c9d6b0b36ed54da2" title="Nastavení položky pro porovnání dvou elementů">vector_element_set_comparator()</a></code>, na tyto možné hodnoty:</p>
+<ul>
+<li><code>EByFirstName</code> - porovnání dle klíče: <a class="el" href="group___t_vector_element.html#gga6d351626937cffa6f83480269e5aeafaab9fac830969adf5c4b5c0f371404e6ed">Jméno studenta</a>,</li>
+<li><code>EByLastName</code> - porovnání dle klíče: <a class="el" href="group___t_vector_element.html#gga6d351626937cffa6f83480269e5aeafaa3b0f179a8221fa17d65401a088e46da1">Příjmení studenta</a>,</li>
+<li><code>EById</code> - porovnání dle klíče: <a class="el" href="group___t_vector_element.html#gga6d351626937cffa6f83480269e5aeafaa0b7f28a3df87147c9ad7c3e32d249563">ID studenta</a>,</li>
+<li><code>EByPoints</code> - porovnání dle klíče: <a class="el" href="group___t_vector_element.html#gga6d351626937cffa6f83480269e5aeafaa68bbe3fec6b81949a587c171596feaec">Bodové hodnocení studenta</a>.</li>
+</ul>
+<p><code><a class="el" href="_t_vector_8h.html" title="Definice typu Sortable Vector.">TVector.h</a></code> je shodný s předchozím cvičením a obsahuje strukturu vektoru a iterátoru. Struktura vektoru byla doplněna o strukturu statistiky udržující počet operací s danou proměnnou. V této statistice se bude evidovat (přičtení jedničky k počítadlu dané operace) každá operace s elementem vektoru. Jsou zde i další funkce pro práci s iterátorem vektoru.</p>
+<p>Soubor <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code> je určený k vlastní činnosti - jsou v něm funkce s prázdnými těly pro doplnění kódu. K němu příslušný <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code> obsahuje deklarace těchto funkcí.</p>
+<p>Pro kontrolu správné manipulace s pamětí jsou v projektu soubory <code>check.h</code> a <code>check.c</code>.</p>
+<p>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program testující API přímých metod třídění">main.c</a></code> obsahuje funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>, která načte data ze souboru a spustí funkci <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code>. Tato funkce spustí vlastní třídění. Přitom zjistí a následně vytiskne čas trvání třídění a statistiky práce s daty. Funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> je doplněna o příklad ověřující <a href="https://cs.wikipedia.org/wiki/Stabiln%C3%AD_%C5%99azen%C3%AD" title="Stabilita třídicího algoritmu je vlastnost, která zajišťuje, že třídicí algoritmus ve výstupní posloupnosti nemění pořadí položek se stejným klíčem.">stabilitu</a> výsledného třídění metodou <b>select sort</b>, při třídění podle jiných klíčů než v inicializační verzi třídění. (<em>Pozn.: Stabilita třídicího algoritmu je vlastnost, která zajišťuje, že třídicí algoritmus ve výstupní posloupnosti nemění pořadí položek se stejným klíčem.</em>)</p>
+<h2>Úkoly</h2>
+<ol type="1">
+<li>V projektu <code>basic_sorts_element_struct</code> prostudujte si činnost funkcí, jejichž volání bylo doplněno do funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>.</li>
+<li>Prostudujte si novou implementaci typu <code><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73" title="Definice typu VectorElement (alias na typ struct TStudent)">TVectorElement</a></code> definovaného v souborech <code><a class="el" href="_t_vector_element_8h.html" title="Definice strukturovaného typu VectorElement a implementace API.">TVectorElement.h</a></code> a <code><a class="el" href="_t_vector_element_8c.html" title="Definice proměnné určující položku podle které budou porovnávány dvě proměnné strukturovaného typu Ve...">TVectorElement.c</a></code>.</li>
+<li>Přesuňte do nového projektu jednotlivé třídicí metody tak, aby fungovaly se složeným datovým typem a sledujte jejich výstupy zobrazované funkcí <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> resp. <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code>.</li>
+<li>Ověřte si praktickou ukázkou, zda algoritmus <b>select sort</b> je stabilní třídicí metoda.</li>
+</ol>
+<h2>Rozbor jednotlivých úkolů</h2>
+<ol type="1">
+<li>Byla doplněna funkce <code><a class="el" href="group___t_vector_element.html#ga58c3bcf9f96681f3c9d6b0b36ed54da2" title="Nastavení položky pro porovnání dvou elementů">vector_element_set_comparator()</a></code> (v souboru <code><a class="el" href="_t_vector_element_8c.html" title="Definice proměnné určující položku podle které budou porovnávány dvě proměnné strukturovaného typu Ve...">TVectorElement.c</a></code>), která nastaví (globální) proměnnou určující, podle kterého klíče se budou ve funkci <code><a class="el" href="group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů">vector_element_comparator()</a></code> elementy porovnávat (a tedy i třídit).</li>
+<li>Rozbor funkcí v souboru <code><a class="el" href="_t_vector_element_8h.html" title="Definice strukturovaného typu VectorElement a implementace API.">TVectorElement.h</a></code>. Rozdílem oproti minulému projektu je složitější manipulace s prvkem <code><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73" title="Definice typu VectorElement (alias na typ struct TStudent)">TVectorElement</a></code>, který je nyní reprezentovaný strukturou. Je zde definován typ <code><a class="el" href="group___t_vector_element.html#ga6d351626937cffa6f83480269e5aeafa" title="Definice výčtového typu TVectorElementCompareSelect.">TVectorElementCompareSelect</a></code>, podle kterého volí funkce položku pro porovnání.</li>
+<li><p class="startli">Pro testování je připraven soubor s daty (najdete ho ve složce projektu <code>Resource files</code>).</p>
+<p class="startli">Funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> otevře soubor s daty a načte ho do vektoru. Postupně načtěte a vyzkoušejte všechny připravené datové soubory a srovnejte výsledky jednotlivých třídění pro tento typ dat.</p>
+<p class="startli">Funkce <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code> - vytvoří si kopii dat, aby bylo možné originální vektor použít i pro další volání. Opět si všimněte způsobu předání testované třídicí funkce. Jako parametr funkce <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code> je odkaz na volanou testovanou funkci. To umožní napsat kód někdy označovaný jako tzv. testbench (příprava dat, tisk výsledků, uvolnění paměti atd.) pouze jednou a přitom zajistit jeho univerzální použití. Testbench funkci <code><a class="el" href="group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody.">sort_testing()</a></code> lze postupně použít pro různé třídicí funkce (volá se ta funkce, jejíž adresa je předána jako parametr). Ve funkci je zkontrolováno, zda jsou data správně setříděna a jsou vytištěny statistiky, včetně času potřebného ke třídění.</p>
+<p class="startli">Pozn.: Pokud byly třídicí algoritmy dobře naprogramovány v minulém cvičení (tj. za pomoci funkcí pro <code><a class="el" href="group___t_vector_element.html#gaba64adf83c3e2becd5e14de6340c7a73" title="Definice typu VectorElement (alias na typ struct TStudent)">TVectorElement</a></code>), měly by třídicí algoritmy fungovat prakticky bez úprav. To znamená, že pokud budete muset něco upravit v novém projektu, měli byste se zamyslet i nad provedením stejné úpravy v minulém projektu.</p>
+</li>
+<li>Zkontrolujte si výsledný výpis vašeho programu projektu <code>basic_sorts_element_struct</code> s referenčním výpisem a případně jej upravte tak, abyste dosáhli shodného výstupu: <pre class="fragment"> ------ Insert Sort ------
+ Tomas Jedno 1111 9
+ Pepa Druhy 222 8
+ Petr Treti 3 7
+ Bozena Ctvrta 4 6
+ Pepa Paty 5 5
+ Jan Sesty 6 4
+ Pepa Sedmy 7 3
+ Pepa Osmy 8 2
+ Milos Devaty 9 1
+ Skluzan Tavic 99 0
+
+ Skluzan Tavic 99 0
+ Milos Devaty 9 1
+ Pepa Osmy 8 2
+ Pepa Sedmy 7 3
+ Jan Sesty 6 4
+ Pepa Paty 5 5
+ Bozena Ctvrta 4 6
+ Petr Treti 3 7
+ Pepa Druhy 222 8
+ Tomas Jedno 1111 9
+
+
+ Vector is sorted. OK :-)
+
+ Sorting time: 0.000000 seconds.
+
+ Comparisons: 45
+ Swaps: 0
+ Moves: 45
+ Value Gets: 9
+ Value Sets: 9
+
+ ------ Select Sort ------
+ Tomas Jedno 1111 9
+ Pepa Druhy 222 8
+ Petr Treti 3 7
+ Bozena Ctvrta 4 6
+ Pepa Paty 5 5
+ Jan Sesty 6 4
+ Pepa Sedmy 7 3
+ Pepa Osmy 8 2
+ Milos Devaty 9 1
+ Skluzan Tavic 99 0
+
+ Skluzan Tavic 99 0
+ Milos Devaty 9 1
+ Pepa Osmy 8 2
+ Pepa Sedmy 7 3
+ Jan Sesty 6 4
+ Pepa Paty 5 5
+ Bozena Ctvrta 4 6
+ Petr Treti 3 7
+ Pepa Druhy 222 8
+ Tomas Jedno 1111 9
+
+
+ Vector is sorted. OK :-)
+
+ Sorting time: 0.000000 seconds.
+
+ Comparisons: 45
+ Swaps: 9
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+ ------ Bubble Sort ------
+ Tomas Jedno 1111 9
+ Pepa Druhy 222 8
+ Petr Treti 3 7
+ Bozena Ctvrta 4 6
+ Pepa Paty 5 5
+ Jan Sesty 6 4
+ Pepa Sedmy 7 3
+ Pepa Osmy 8 2
+ Milos Devaty 9 1
+ Skluzan Tavic 99 0
+
+ Skluzan Tavic 99 0
+ Milos Devaty 9 1
+ Pepa Osmy 8 2
+ Pepa Sedmy 7 3
+ Jan Sesty 6 4
+ Pepa Paty 5 5
+ Bozena Ctvrta 4 6
+ Petr Treti 3 7
+ Pepa Druhy 222 8
+ Tomas Jedno 1111 9
+
+
+ Vector is sorted. OK :-)
+
+ Sorting time: 0.000000 seconds.
+
+ Comparisons: 45
+ Swaps: 45
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+ ------ Bubble Sort Optimized ------
+ Tomas Jedno 1111 9
+ Pepa Druhy 222 8
+ Petr Treti 3 7
+ Bozena Ctvrta 4 6
+ Pepa Paty 5 5
+ Jan Sesty 6 4
+ Pepa Sedmy 7 3
+ Pepa Osmy 8 2
+ Milos Devaty 9 1
+ Skluzan Tavic 99 0
+
+ Skluzan Tavic 99 0
+ Milos Devaty 9 1
+ Pepa Osmy 8 2
+ Pepa Sedmy 7 3
+ Jan Sesty 6 4
+ Pepa Paty 5 5
+ Bozena Ctvrta 4 6
+ Petr Treti 3 7
+ Pepa Druhy 222 8
+ Tomas Jedno 1111 9
+
+
+ Vector is sorted. OK :-)
+
+ Sorting time: 0.000000 seconds.
+
+ Comparisons: 45
+ Swaps: 45
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+ ------ Bubble Sort Optimized2 ------
+ Tomas Jedno 1111 9
+ Pepa Druhy 222 8
+ Petr Treti 3 7
+ Bozena Ctvrta 4 6
+ Pepa Paty 5 5
+ Jan Sesty 6 4
+ Pepa Sedmy 7 3
+ Pepa Osmy 8 2
+ Milos Devaty 9 1
+ Skluzan Tavic 99 0
+
+ Skluzan Tavic 99 0
+ Milos Devaty 9 1
+ Pepa Osmy 8 2
+ Pepa Sedmy 7 3
+ Jan Sesty 6 4
+ Pepa Paty 5 5
+ Bozena Ctvrta 4 6
+ Petr Treti 3 7
+ Pepa Druhy 222 8
+ Tomas Jedno 1111 9
+
+
+ Vector is sorted. OK :-)
+
+ Sorting time: 0.000000 seconds.
+
+ Comparisons: 45
+ Swaps: 45
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+ ------ Shaker Sort ------
+ Tomas Jedno 1111 9
+ Pepa Druhy 222 8
+ Petr Treti 3 7
+ Bozena Ctvrta 4 6
+ Pepa Paty 5 5
+ Jan Sesty 6 4
+ Pepa Sedmy 7 3
+ Pepa Osmy 8 2
+ Milos Devaty 9 1
+ Skluzan Tavic 99 0
+
+ Skluzan Tavic 99 0
+ Milos Devaty 9 1
+ Pepa Osmy 8 2
+ Pepa Sedmy 7 3
+ Jan Sesty 6 4
+ Pepa Paty 5 5
+ Bozena Ctvrta 4 6
+ Petr Treti 3 7
+ Pepa Druhy 222 8
+ Tomas Jedno 1111 9
+
+
+ Vector is sorted. OK :-)
+
+ Sorting time: 0.000000 seconds.
+
+ Comparisons: 45
+ Swaps: 45
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+ ------ Test stability vicenasobneho trideni s metodou select_sort:
+ Bozena Ctvrta 4 6
+ Jan Sesty 6 4
+ Milos Devaty 9 1
+ Pepa Druhy 222 8
+ Pepa Osmy 8 2
+ Pepa Paty 5 5
+ Pepa Sedmy 7 3
+ Petr Treti 3 7
+ Skluzan Tavic 99 0
+ Tomas Jedno 1111 9
+</pre></li>
+</ol>
+<hr  />
+<p> <code>$Id: <a class="el" href="cv07__zadani__basic__sorts__element__struct_8md.html">cv07_zadani_basic_sorts_element_struct.md</a> 2635 2024-03-11 15:12:27Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: po 18. bře 2024 13.15:33, pro projekt: BPC-ALD: ALG Basic Sorts (structured element), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

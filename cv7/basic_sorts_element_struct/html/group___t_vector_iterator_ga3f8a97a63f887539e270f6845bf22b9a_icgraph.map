@@ -1,0 +1,32 @@
+<map id="vector_iterator_is_valid" name="vector_iterator_is_valid">
+<area shape="rect" id="Node000001" title="Zjištění platnosti iterátoru." alt="" coords="489,292,609,332"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="281,5,424,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,279,529,230,510,172,481,111,462,84,440,59,423,47,426,43,443,55,466,81,485,109,515,170,534,229,545,278"/>
+<area shape="rect" id="Node000003" href="$group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39" title="Porovnání hodnot elementů vektorů určených dvěma iterátory." alt="" coords="281,69,424,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="535,280,521,243,500,201,473,160,440,123,422,112,425,107,443,119,477,156,505,199,526,241,540,278"/>
+<area shape="rect" id="Node000004" href="$group___iterator_algorithms.html#gad9872ced82843c0e0864a8e2547ca579" title="Zavolání zvolené funkce na každý element vektoru od pozice určené iterátorem až do konce vektoru." alt="" coords="104,218,216,243"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="520,283,485,251,463,236,440,225,382,211,321,208,263,213,214,221,213,215,263,207,321,203,382,206,442,220,466,231,488,246,524,279"/>
+<area shape="rect" id="Node000005" href="$group___iterator_algorithms.html#gac5ae89ba507530f7c51c45447efbe4ac" title="Zavolání zvolené funkce na prvních N elementů vektoru od pozice určené iterátorem." alt="" coords="115,299,205,325"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="518,343,484,368,442,388,393,401,353,406,312,401,263,388,236,376,210,359,172,327,176,323,213,355,238,371,265,383,313,396,353,400,392,396,440,383,481,364,515,339"/>
+<area shape="rect" id="Node000007" href="$group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca" title="Zapsání hodnoty elementu do vektoru pomocí iterátoru." alt="" coords="289,235,417,275"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="475,293,416,276,418,271,477,288"/>
+<area shape="rect" id="Node000008" href="$group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56" title="Posunutí iterátoru vpřed." alt="" coords="276,299,429,325"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="476,315,429,315,429,309,476,309"/>
+<area shape="rect" id="Node000009" href="$group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826" title="Posunutí iterátoru vzad." alt="" coords="277,349,428,374"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="477,333,405,351,403,346,476,328"/>
+<area shape="rect" id="Node000010" href="$group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c" title="Přečtení hodnoty elementu z vektoru pomocí iterátoru." alt="" coords="283,134,422,159"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="528,282,491,230,467,204,440,181,402,162,404,157,443,176,470,200,495,227,532,279"/>
+<area shape="rect" id="Node000012" href="$group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5" title="Přesun hodnoty elementu vektoru určené dvěma iterátory." alt="" coords="264,450,441,475"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="529,345,492,390,443,433,403,452,401,447,440,428,488,386,525,342"/>
+<area shape="rect" id="Node000013" href="$group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b" title="Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement." alt="" coords="267,500,438,540"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="538,346,502,417,475,455,443,489,422,502,420,498,440,485,471,452,498,414,533,344"/>
+<area shape="rect" id="Node000014" href="$group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013" title="Výměna hodnot elementů vektorů určených dvěma iterátory." alt="" coords="264,565,441,590"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="545,346,534,393,514,449,485,505,465,531,443,554,422,567,420,562,440,550,461,528,480,502,509,446,528,391,540,345"/>
+<area shape="rect" id="Node000006" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,226,56,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="124,295,53,254,56,249,126,290"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="286,298,263,289,218,267,180,246,183,241,220,263,265,284,288,293"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="262,315,206,315,206,309,262,309"/>
+<area shape="rect" id="Node000011" href="$group___basic_sorts.html#ga25c7ac8991c266d71b75cf20c14b67cf" title="Vytisknutí elementu vektoru pomocí iterátoru." alt="" coords="110,151,210,177"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="270,157,211,162,210,157,269,151"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="126,186,55,228,52,224,123,182"/>
+</map>
