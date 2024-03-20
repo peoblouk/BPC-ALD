@@ -194,8 +194,14 @@ Důležité pojmy:
 - datově citlivý a necitlivý algoritmus?
 - stabilní a nestabilní třídění? ( nepomůžeš zde nic jiného než ShakerSort, prohození směru)
 - vnitřní a vnější metody třídění? (vnitřní - využívají operační paměť, vnějši ) 
+## Datově citlivý algoritmus
+- závisí na tom jak jsou data zpřeházená
+- dle předpokladu lze využít nějaký optimalizovaný algoritmus třízení
+- pokud jsou data moc zpřeházená tak nepomůže ani lepší algoritmus
 
 ## Stabilnost algoritmů
+- projeví se až při dalším třízením
+  
 - select sort (nestabilní)
 - insert sort (stabilní)
 - bubble sort (stabilní)
@@ -203,3 +209,6 @@ Důležité pojmy:
 - bubble sort optimized 2 (stabilní)
 - shaker sort (stabilní)
 
+## Vnitřní a vnější třídění
+- vnitřní - vystačí si s pamětí procesoru
+- vnější - nevystačí si s pamětí procesoru, musí se část vložit do paměti
