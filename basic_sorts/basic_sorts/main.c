@@ -60,28 +60,28 @@ int main(int argc, char *argv[])
 	srand((unsigned int)time(NULL));
 
 	struct TVector vector_orig = { 0 };
-	FILE *fsrc = fopen("reversed_data.txt", "r");
+	// FILE *fsrc = fopen("reversed_data.txt", "r");
 	// FILE *fsrc = fopen("select_sort_data.txt", "r");
 	// FILE *fsrc = fopen("bubble_sort_optimized_data.txt", "r");
-	// FILE *fsrc = fopen("shaker_sort_data.txt", "r");
+	FILE *fsrc = fopen("shaker_sort_data.txt", "r");
 	// FILE *fsrc = fopen("sorted_data.txt", "r");
 
 	if(!fsrc)
 		return 1;
 
-	//bool initialized = vector_init_random(&vector_orig, 50000);
+	// bool initialized = vector_init_random(&vector_orig, 50000);
 	bool initialized = vector_init_file(&vector_orig, fsrc);
 
 	fclose(fsrc);
 	if(!initialized)
 		return 2;
 
-	// sort_testing("Insert Sort", insert_sort, &vector_orig);
-	// sort_testing("Select Sort", select_sort, &vector_orig);
+	sort_testing("Insert Sort", insert_sort, &vector_orig);
+	sort_testing("Select Sort", select_sort, &vector_orig);
 	sort_testing("Bubble Sort", bubble_sort, &vector_orig);
 	sort_testing("Bubble Sort Optimized", bubble_sort_optimized, &vector_orig);
-	// sort_testing("Bubble Sort Optimized2", bubble_sort_optimized2, &vector_orig);
-	// sort_testing("Shaker Sort", shaker_sort, &vector_orig);
+	sort_testing("Bubble Sort Optimized2", bubble_sort_optimized2, &vector_orig);
+	sort_testing("Shaker Sort", shaker_sort, &vector_orig);
 
 	vector_destroy(&vector_orig);
 	return 0;
