@@ -76,21 +76,23 @@ int main(int argc, char *argv[])
 	if(!initialized)
 		return 2;
 
-	sort_testing("Insert Sort", insert_sort, &vector_orig);
-	sort_testing("Select Sort", select_sort, &vector_orig);
-	sort_testing("Bubble Sort", bubble_sort, &vector_orig);
-	sort_testing("Bubble Sort Optimized", bubble_sort_optimized, &vector_orig);
-	sort_testing("Bubble Sort Optimized2", bubble_sort_optimized2, &vector_orig);
-	sort_testing("Shaker Sort", shaker_sort, &vector_orig);
+	// sort_testing("Insert Sort", insert_sort, &vector_orig);
+	// sort_testing("Select Sort", select_sort, &vector_orig);
+	// sort_testing("Bubble Sort", bubble_sort, &vector_orig);
+	// sort_testing("Bubble Sort Optimized", bubble_sort_optimized, &vector_orig);
+	// sort_testing("Bubble Sort Optimized2", bubble_sort_optimized2, &vector_orig);
+	// sort_testing("Shaker Sort", shaker_sort, &vector_orig);
 
 	puts("\n------ Test stability vicenasobneho trideni s metodou select_sort:");
 	vector_element_set_comparator(EByLastName);
 	/// \bug Zvolte vhodnout třídicí metodu, která splňuje podmínku stability. (\fileinfo{filename}:\lineinfo)
 	select_sort(&vector_orig);
+	vector_for_n(vector_iterator_begin(&vector_orig), 20, print_element);
+	putchar('\n');
 
 	vector_element_set_comparator(EByFirstName);
 	/// \bug Zvolte správné pořadí stabilních a nestabilních metod třídění dle jednotlivých klíčů. (\fileinfo{filename}:\lineinfo)
-	select_sort(&vector_orig);
+	shaker_sort(&vector_orig);
 
 	//vector_for_each(vector_iterator_begin(&vector_orig), print_element);
 	vector_for_n(vector_iterator_begin(&vector_orig), 20, print_element);
