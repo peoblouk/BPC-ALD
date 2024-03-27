@@ -1,0 +1,9 @@
+<map id="wildcard_match.h" name="wildcard_match.h">
+<area shape="rect" id="Node000001" title="Deklarace funkce wildcard_match() realizující test na shodu řetězců z nichž jeden obsahuje žolíkové z..." alt="" coords="91,5,213,31"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title="Hlavní program (testbench) pro manuální testování spravnosti implementace funkce wildcard_match." alt="" coords="5,79,67,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,40,56,81,54,76,120,35"/>
+<area shape="rect" id="Node000003" href="$wildcard__match_8c.html" title="Definice funkce wildcard_match() realizující test na shodu řetězců z nichž jeden obsahuje žolíkové zn..." alt="" coords="91,79,213,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,44,155,79,149,79,149,44"/>
+<area shape="rect" id="Node000004" href="$wildcard__match__ut_8cpp.html" title="Definice metod pro automatizované testování správnosti implementace funkce wildcard_match() v prostře..." alt="" coords="237,79,392,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,34,289,76,287,81,190,39"/>
+</map>

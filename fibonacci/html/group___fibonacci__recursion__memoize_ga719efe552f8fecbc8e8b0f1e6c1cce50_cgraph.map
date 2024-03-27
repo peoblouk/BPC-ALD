@@ -1,0 +1,5 @@
+<map id="fibonacci3" name="fibonacci3">
+<area shape="rect" id="Node000001" title="Implementace výpočtu Fibonacciho čísla pomocí stromové rekurze s využitím memoizace." alt="" coords="5,5,85,31"/>
+<area shape="rect" id="Node000002" href="$group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632" title="Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr." alt="" coords="133,5,241,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,15,119,15,119,21,85,21"/>
+</map>

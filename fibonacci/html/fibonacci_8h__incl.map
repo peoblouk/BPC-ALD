@@ -1,0 +1,13 @@
+<map id="fibonacci.h" name="fibonacci.h">
+<area shape="rect" id="Node000001" title="Deklarace různých variant implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="127,5,211,31"/>
+<area shape="rect" id="Node000002" href="$memoizer_8h.html" title="Definice typu reprezentující memoizační funktor." alt="" coords="124,79,215,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,172,65,167,65,167,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,67,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,106,71,148,69,143,147,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="91,152,155,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="164,106,140,142,136,139,159,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="179,152,253,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="179,103,203,139,199,142,175,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,152,347,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="193,102,278,143,275,148,191,106"/>
+</map>

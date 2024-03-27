@@ -1,0 +1,6 @@
+<map id="fibonacci4" name="fibonacci4">
+<area shape="rect" id="Node000001" title="Implementace výpočtu Fibonacciho čísla pomocí koncové rekurze." alt="" coords="5,29,85,55"/>
+<area shape="rect" id="Node000002" href="$fibonacci_8c.html#af2184aa6e303b330889d2f15fd124348" title="Vnitřní a lokální funkce realizující koncovou rekurzi." alt="" coords="133,29,259,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,39,119,39,119,45,86,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="171,31,165,21,168,11,179,5,196,3,217,6,226,15,222,19,214,11,196,8,181,10,172,15,171,20,175,28"/>
+</map>

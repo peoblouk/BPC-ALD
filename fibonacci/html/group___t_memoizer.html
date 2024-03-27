@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Recursions (Fibonacci): 3. Memoizer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Recursions (Fibonacci)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Topics</a> &#124;
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">3. Memoizer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu <a class="el" href="#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a> a jeho funkcí  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 3. Memoizer:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_memoizer.svg" width="319" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Topics</h2></td></tr>
+<tr class="memitem:group___t_memoized_func" id="r_group___t_memoized_func"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoized_func.html">3.1 Memoizovaná funkce</a></td></tr>
+<tr class="memdesc:group___t_memoized_func"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice datových typů definujících memoizovanou funkcí <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_memoizer_item" id="r_struct_t_memoizer_item"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_memoizer_item">TMemoizerItem</a></td></tr>
+<tr class="memdesc:struct_t_memoizer_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu <a class="el" href="#struct_t_memoizer_item" title="Definice typu TMemoizerItem.">TMemoizerItem</a>.  <a href="#struct_t_memoizer_item">...</a><br /></td></tr>
+<tr class="separator:struct_t_memoizer_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_t_memoizer_stats" id="r_struct_t_memoizer_stats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_memoizer_stats">TMemoizerStats</a></td></tr>
+<tr class="memdesc:struct_t_memoizer_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu MemoizerStats.  <a href="#struct_t_memoizer_stats">...</a><br /></td></tr>
+<tr class="separator:struct_t_memoizer_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_t_memoizer" id="r_struct_t_memoizer"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_memoizer">TMemoizer</a></td></tr>
+<tr class="memdesc:struct_t_memoizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu <a class="el" href="#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a>.  <a href="#struct_t_memoizer">...</a><br /></td></tr>
+<tr class="separator:struct_t_memoizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga7fd4a076d3b98ab7b0f67fcdb797b67c" id="r_ga7fd4a076d3b98ab7b0f67fcdb797b67c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7fd4a076d3b98ab7b0f67fcdb797b67c">memoizer_init</a> (struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *aM, size_t aCapacity, <a class="el" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a> *aMemoizedFunc)</td></tr>
+<tr class="memdesc:ga7fd4a076d3b98ab7b0f67fcdb797b67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializace memoizeru, asociace s memoizovanou funkcí, alokace vnitřního pole pro pár hodnot vstup a výstup memoizované funkce.  <br /></td></tr>
+<tr class="separator:ga7fd4a076d3b98ab7b0f67fcdb797b67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cdbc39bcc445c7d6d8c6afd9376a632" id="r_ga3cdbc39bcc445c7d6d8c6afd9376a632"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3cdbc39bcc445c7d6d8c6afd9376a632">memoizer_eval</a> (struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *aM, <a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a> aInput)</td></tr>
+<tr class="memdesc:ga3cdbc39bcc445c7d6d8c6afd9376a632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr.  <br /></td></tr>
+<tr class="separator:ga3cdbc39bcc445c7d6d8c6afd9376a632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bbdcccd8a7105b3113829fd80f2cada" id="r_ga0bbdcccd8a7105b3113829fd80f2cada"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0bbdcccd8a7105b3113829fd80f2cada">memoizer_print_stats</a> (const struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *aM, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:ga0bbdcccd8a7105b3113829fd80f2cada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zobrazení hodnoty statistik počtu volání memoizeru.  <br /></td></tr>
+<tr class="separator:ga0bbdcccd8a7105b3113829fd80f2cada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3b680c64e6cdba34bd7bfab1bd68d66" id="r_gac3b680c64e6cdba34bd7bfab1bd68d66"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac3b680c64e6cdba34bd7bfab1bd68d66">memoizer_clear</a> (struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *aM)</td></tr>
+<tr class="memdesc:gac3b680c64e6cdba34bd7bfab1bd68d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smazání archivovaných hodnot v memoizeru, vynulování statistik o počty volání memoizeru.  <br /></td></tr>
+<tr class="separator:gac3b680c64e6cdba34bd7bfab1bd68d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae130deba979f5244c43be229606bf163" id="r_gae130deba979f5244c43be229606bf163"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae130deba979f5244c43be229606bf163">memoizer_destroy</a> (struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *aM)</td></tr>
+<tr class="memdesc:gae130deba979f5244c43be229606bf163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace memoizeru.  <br /></td></tr>
+<tr class="separator:gae130deba979f5244c43be229606bf163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu <a class="el" href="#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a> a jeho funkcí </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_memoizer_item" id="struct_t_memoizer_item"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_memoizer_item">&#9670;&#160;</a></span>TMemoizerItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TMemoizerItem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu <a class="el" href="#struct_t_memoizer_item" title="Definice typu TMemoizerItem.">TMemoizerItem</a>. </p>
+<p>Typ MemoizerItem představuje archivovaný pár hodnot: vstup a výstup (návratová hodnota) memoizované funkce </p>
+</div><div class="dynheader">
+Diagram pro TMemoizerItem:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_memoizer_item__coll__graph.svg" width="194" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:a8cf8b4b29d4621f8b3d3830c9ce56e17" id="r_a8cf8b4b29d4621f8b3d3830c9ce56e17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cf8b4b29d4621f8b3d3830c9ce56e17">iInput</a></td></tr>
+<tr class="memdesc:a8cf8b4b29d4621f8b3d3830c9ce56e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memoizovaná hodnota vstupního argumentu funkce (vstupní hodnota)  <br /></td></tr>
+<tr class="separator:a8cf8b4b29d4621f8b3d3830c9ce56e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8347ff27dfc07d967eef5266686cb18d" id="r_a8347ff27dfc07d967eef5266686cb18d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8347ff27dfc07d967eef5266686cb18d">iOutput</a></td></tr>
+<tr class="memdesc:a8347ff27dfc07d967eef5266686cb18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memoizovaná návratová hodnota funkce (pro danou vstupní hodnotu)  <br /></td></tr>
+<tr class="separator:a8347ff27dfc07d967eef5266686cb18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="a8cf8b4b29d4621f8b3d3830c9ce56e17" name="a8cf8b4b29d4621f8b3d3830c9ce56e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf8b4b29d4621f8b3d3830c9ce56e17">&#9670;&#160;</a></span>iInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a> iInput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memoizovaná hodnota vstupního argumentu funkce (vstupní hodnota) </p>
+
+</div>
+</div>
+<a id="a8347ff27dfc07d967eef5266686cb18d" name="a8347ff27dfc07d967eef5266686cb18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8347ff27dfc07d967eef5266686cb18d">&#9670;&#160;</a></span>iOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> iOutput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memoizovaná návratová hodnota funkce (pro danou vstupní hodnotu) </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<a name="struct_t_memoizer_stats" id="struct_t_memoizer_stats"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_memoizer_stats">&#9670;&#160;</a></span>TMemoizerStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TMemoizerStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu MemoizerStats. </p>
+<p>Typ MemoizerStats spravuje statistiky o celkovém počtu použití memoizeru, počtu nalezení dříve spočtené hodnoty funkce a počtu nutných volání asociované funkce. </p>
+</div><div class="dynheader">
+Diagram pro TMemoizerStats:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_memoizer_stats__coll__graph.svg" width="182" height="107"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:ab9ddadd49c2d4617d29ba237df7097dd" id="r_ab9ddadd49c2d4617d29ba237df7097dd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9ddadd49c2d4617d29ba237df7097dd">iMemoizations</a></td></tr>
+<tr class="memdesc:ab9ddadd49c2d4617d29ba237df7097dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet úspěšných nálezů dříve spočtené hodnoty funkce pro zadaný parametr, (Memoizer Hit)  <br /></td></tr>
+<tr class="separator:ab9ddadd49c2d4617d29ba237df7097dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3758d641db6b6adec41e98f268cfca1d" id="r_a3758d641db6b6adec41e98f268cfca1d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3758d641db6b6adec41e98f268cfca1d">iCalculations</a></td></tr>
+<tr class="memdesc:a3758d641db6b6adec41e98f268cfca1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet neúspěšných nálezů dříve spočtené hodnoty funkce, které vedou k novému volání funkce, (Memoizer Miss)  <br /></td></tr>
+<tr class="separator:a3758d641db6b6adec41e98f268cfca1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="ab9ddadd49c2d4617d29ba237df7097dd" name="ab9ddadd49c2d4617d29ba237df7097dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ddadd49c2d4617d29ba237df7097dd">&#9670;&#160;</a></span>iMemoizations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iMemoizations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet úspěšných nálezů dříve spočtené hodnoty funkce pro zadaný parametr, (Memoizer Hit) </p>
+
+</div>
+</div>
+<a id="a3758d641db6b6adec41e98f268cfca1d" name="a3758d641db6b6adec41e98f268cfca1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3758d641db6b6adec41e98f268cfca1d">&#9670;&#160;</a></span>iCalculations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iCalculations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet neúspěšných nálezů dříve spočtené hodnoty funkce, které vedou k novému volání funkce, (Memoizer Miss) </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<a name="struct_t_memoizer" id="struct_t_memoizer"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_memoizer">&#9670;&#160;</a></span>TMemoizer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TMemoizer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu <a class="el" href="#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a>. </p>
+<p>Typ Memoizer spravuje dynamicky alokované pole prvků typu MemoizerItem a umožňuje s nimi pracovat pomocí definovaného API. </p>
+</div><div class="dynheader">
+Diagram pro TMemoizer:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_memoizer__coll__graph.svg" width="390" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:a0073a4b8ee18a325922e65f0489d937c" id="r_a0073a4b8ee18a325922e65f0489d937c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0073a4b8ee18a325922e65f0489d937c">iMemoizedFunc</a></td></tr>
+<tr class="memdesc:a0073a4b8ee18a325922e65f0489d937c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ukazatel na asociovanou funkci vracející typ <code>TMemoizedFuncOutput</code> a mající jeden parametr typu <code>TMemoizedFuncInput</code>.  <br /></td></tr>
+<tr class="separator:a0073a4b8ee18a325922e65f0489d937c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052ad16ff773540b3565171e4f102ff3" id="r_a052ad16ff773540b3565171e4f102ff3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="#struct_t_memoizer_item">TMemoizerItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a052ad16ff773540b3565171e4f102ff3">iArchive</a></td></tr>
+<tr class="memdesc:a052ad16ff773540b3565171e4f102ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ukazatel na počáteční prvek pole (archiv) hodnot typu MemoizerItem (tj. pár: vstup a výstup funkce)  <br /></td></tr>
+<tr class="separator:a052ad16ff773540b3565171e4f102ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6572bbed817855a11d0fd18272706cdf" id="r_a6572bbed817855a11d0fd18272706cdf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6572bbed817855a11d0fd18272706cdf">iCapacity</a></td></tr>
+<tr class="memdesc:a6572bbed817855a11d0fd18272706cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Celkový počet alokovaných prvků v poli (archivu) hodnot typu MemoizerItem.  <br /></td></tr>
+<tr class="separator:a6572bbed817855a11d0fd18272706cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653670a6d238caa045872f0682ec52b3" id="r_a653670a6d238caa045872f0682ec52b3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a653670a6d238caa045872f0682ec52b3">iPos</a></td></tr>
+<tr class="memdesc:a653670a6d238caa045872f0682ec52b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuální index prvku v poli (archivu) hodnot typu MemoizerItem určeného pro vložení nově zapamatovaného páru.  <br /></td></tr>
+<tr class="separator:a653670a6d238caa045872f0682ec52b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ffb91c868c8e4ecd0f87d21dada53f" id="r_a27ffb91c868c8e4ecd0f87d21dada53f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a></td></tr>
+<tr class="memdesc:a27ffb91c868c8e4ecd0f87d21dada53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktuálně archivovaný počet prvků v poli (archivu) hodnot typu MemoizerItem.  <br /></td></tr>
+<tr class="separator:a27ffb91c868c8e4ecd0f87d21dada53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43397a809378d641b4e4c04fe1b6291e" id="r_a43397a809378d641b4e4c04fe1b6291e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="#struct_t_memoizer_stats">TMemoizerStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43397a809378d641b4e4c04fe1b6291e">iStats</a></td></tr>
+<tr class="memdesc:a43397a809378d641b4e4c04fe1b6291e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistika počtu volání memoizeru.  <br /></td></tr>
+<tr class="separator:a43397a809378d641b4e4c04fe1b6291e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af869627c3c2f24bfaf2f1c9e87fa78d9" id="r_af869627c3c2f24bfaf2f1c9e87fa78d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af869627c3c2f24bfaf2f1c9e87fa78d9">iTmpOutput</a></td></tr>
+<tr class="memdesc:af869627c3c2f24bfaf2f1c9e87fa78d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimalizace pro úsporu 1 proměnné na zásobníku pro každou úroveň rekurze.  <br /></td></tr>
+<tr class="separator:af869627c3c2f24bfaf2f1c9e87fa78d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="a0073a4b8ee18a325922e65f0489d937c" name="a0073a4b8ee18a325922e65f0489d937c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0073a4b8ee18a325922e65f0489d937c">&#9670;&#160;</a></span>iMemoizedFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a>* iMemoizedFunc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ukazatel na asociovanou funkci vracející typ <code>TMemoizedFuncOutput</code> a mající jeden parametr typu <code>TMemoizedFuncInput</code>. </p>
+
+</div>
+</div>
+<a id="a052ad16ff773540b3565171e4f102ff3" name="a052ad16ff773540b3565171e4f102ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a052ad16ff773540b3565171e4f102ff3">&#9670;&#160;</a></span>iArchive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="#struct_t_memoizer_item">TMemoizerItem</a>* iArchive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ukazatel na počáteční prvek pole (archiv) hodnot typu MemoizerItem (tj. pár: vstup a výstup funkce) </p>
+
+</div>
+</div>
+<a id="a6572bbed817855a11d0fd18272706cdf" name="a6572bbed817855a11d0fd18272706cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6572bbed817855a11d0fd18272706cdf">&#9670;&#160;</a></span>iCapacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iCapacity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Celkový počet alokovaných prvků v poli (archivu) hodnot typu MemoizerItem. </p>
+
+</div>
+</div>
+<a id="a653670a6d238caa045872f0682ec52b3" name="a653670a6d238caa045872f0682ec52b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653670a6d238caa045872f0682ec52b3">&#9670;&#160;</a></span>iPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktuální index prvku v poli (archivu) hodnot typu MemoizerItem určeného pro vložení nově zapamatovaného páru. </p>
+
+</div>
+</div>
+<a id="a27ffb91c868c8e4ecd0f87d21dada53f" name="a27ffb91c868c8e4ecd0f87d21dada53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ffb91c868c8e4ecd0f87d21dada53f">&#9670;&#160;</a></span>iSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktuálně archivovaný počet prvků v poli (archivu) hodnot typu MemoizerItem. </p>
+
+</div>
+</div>
+<a id="a43397a809378d641b4e4c04fe1b6291e" name="a43397a809378d641b4e4c04fe1b6291e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43397a809378d641b4e4c04fe1b6291e">&#9670;&#160;</a></span>iStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="#struct_t_memoizer_stats">TMemoizerStats</a> iStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Statistika počtu volání memoizeru. </p>
+
+</div>
+</div>
+<a id="af869627c3c2f24bfaf2f1c9e87fa78d9" name="af869627c3c2f24bfaf2f1c9e87fa78d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af869627c3c2f24bfaf2f1c9e87fa78d9">&#9670;&#160;</a></span>iTmpOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> iTmpOutput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optimalizace pro úsporu 1 proměnné na zásobníku pro každou úroveň rekurze. </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga7fd4a076d3b98ab7b0f67fcdb797b67c" name="ga7fd4a076d3b98ab7b0f67fcdb797b67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7fd4a076d3b98ab7b0f67fcdb797b67c">&#9670;&#160;</a></span>memoizer_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool memoizer_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *</td>          <td class="paramname"><span class="paramname"><em>aM</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aCapacity</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a> *</td>          <td class="paramname"><span class="paramname"><em>aMemoizedFunc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicializace memoizeru, asociace s memoizovanou funkcí, alokace vnitřního pole pro pár hodnot vstup a výstup memoizované funkce. </p>
+<p>Dynamicky alokuje paměť pro pole o zadaném počtu prvků, provede asociaci s memoizovanou funkcí, inicializuje všechny složky na poč. hodnoty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aM</td><td>Ukazatel na místo v paměti určené pro inicializaci memoizeru </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aCapacity</td><td>Požadovaný počet prvků vnitřního pole určeného pro zapamatování párů vstupní a návratová hodnota memoizované funkce </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aMemoizedFunc</td><td>Ukazatel na asociovanou funkci vracející typ <code>TMemoizedFuncOutput</code> a mající jeden parametr typu <code>TMemoizedFuncInput</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl memoizer úspěšně inicializován a alokováno vnitřní pole </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_memoizer_ga7fd4a076d3b98ab7b0f67fcdb797b67c_icgraph.svg" width="212" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga3cdbc39bcc445c7d6d8c6afd9376a632" name="ga3cdbc39bcc445c7d6d8c6afd9376a632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3cdbc39bcc445c7d6d8c6afd9376a632">&#9670;&#160;</a></span>memoizer_eval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> memoizer_eval </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *</td>          <td class="paramname"><span class="paramname"><em>aM</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a></td>          <td class="paramname"><span class="paramname"><em>aInput</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr. </p>
+<p>Prohledá archiv zapamatovaných párů vstup, výstup a vrací uloženou návratovou hodnotu asociované funkce pro zadanou hodnotu parametru. Pokud návratová hodnota funkce pro zadanou vstupní hodnotu nebyla nalezena (není archivována), určí výsledek pomocí volání asociované funkce a tuto hodnotu si archivuje. Pokud je archiv již plný, přepíše nejstarší archivovaný pár. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aM</td><td>Ukazatel na existující memoizer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInput</td><td>Hodnota požadovaného vstupního parametru asociované funkce </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Návratová hodnota asociované funkce pro zadaný vstupní parametr </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_memoizer_ga3cdbc39bcc445c7d6d8c6afd9376a632_icgraph.svg" width="398" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga0bbdcccd8a7105b3113829fd80f2cada" name="ga0bbdcccd8a7105b3113829fd80f2cada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bbdcccd8a7105b3113829fd80f2cada">&#9670;&#160;</a></span>memoizer_print_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool memoizer_print_stats </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *</td>          <td class="paramname"><span class="paramname"><em>aM</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>aOutputFile</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zobrazení hodnoty statistik počtu volání memoizeru. </p>
+<p>Vytiskne na konzolu (stdout) celkové počty volání memoizeru, počty nalezení dříve spočtené hodnoty funkce a počty nutných volání funkce. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aM</td><td>Ukazatel na memoizer jehož statistiky chceme zobrazit </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aOutputFile</td><td>Ukazatel na soubor otevřený v módu pro zápis </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl ukazatel na memoizer platný a statistiky byly zobrazeny na konzolu </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_memoizer_ga0bbdcccd8a7105b3113829fd80f2cada_icgraph.svg" width="256" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac3b680c64e6cdba34bd7bfab1bd68d66" name="gac3b680c64e6cdba34bd7bfab1bd68d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3b680c64e6cdba34bd7bfab1bd68d66">&#9670;&#160;</a></span>memoizer_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool memoizer_clear </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *</td>          <td class="paramname"><span class="paramname"><em>aM</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Smazání archivovaných hodnot v memoizeru, vynulování statistik o počty volání memoizeru. </p>
+<p>Smaže archivované páry pro vstup a návratovou hodnotu memoizované funkce, vynuluje statistiky o počty volání memoizeru. Ponechává asociaci s memoizovanou funkcí a také ponechá alokovanou paměť pole hodnot typu MemoizerItem tak, aby bylo možné memoizer znovu používat. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aM</td><td>Ukazatel na existující memoizer jehož archiv a statistiky chceme smazat </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl ukazatel na memoizer platný a zapamatované hodnoty a statistiky byly vymazány </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_memoizer_gac3b680c64e6cdba34bd7bfab1bd68d66_icgraph.svg" width="224" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gae130deba979f5244c43be229606bf163" name="gae130deba979f5244c43be229606bf163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae130deba979f5244c43be229606bf163">&#9670;&#160;</a></span>memoizer_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void memoizer_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_memoizer">TMemoizer</a> *</td>          <td class="paramname"><span class="paramname"><em>aM</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deinicializace memoizeru. </p>
+<p>Deinicializuje memoizer, dealokuje pole hodnot typu MemoizerItem, ruší asociaci s memoizovanou funkcí, nuluje statistiky. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aM</td><td>Ukazatel na existující memoizer </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_memoizer_gae130deba979f5244c43be229606bf163_icgraph.svg" width="239" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 22. bře 2024 15.11:26, pro projekt: BPC-ALD: ALG Recursions (Fibonacci), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

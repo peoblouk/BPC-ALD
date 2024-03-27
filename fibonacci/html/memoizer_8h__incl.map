@@ -1,0 +1,11 @@
+<map id="memoizer.h" name="memoizer.h">
+<area shape="rect" id="Node000001" title="Definice typu reprezentující memoizační funktor." alt="" coords="124,5,215,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,67,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,33,71,74,69,70,147,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="91,79,155,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,32,140,69,136,66,159,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,79,253,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,30,203,66,199,69,175,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="277,79,347,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="193,28,278,70,275,75,191,33"/>
+</map>

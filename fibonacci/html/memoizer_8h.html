@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Recursions (Fibonacci): Dokumentace souboru memoizer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Recursions (Fibonacci)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0d0726f1923a95bf995d2bf64c3b8142.html">fibonacci</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru memoizer.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice typu reprezentující memoizační funktor.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro memoizer.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="memoizer_8h__incl.svg" width="352" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Následující graf ukazuje, které soubory přímo nebo nepřímo vkládají tento soubor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="memoizer_8h__dep__incl.svg" width="182" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="memoizer_8h_source.html">Zobrazit zdrojový text tohoto souboru.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_memoizer_item" id="r_struct_t_memoizer_item"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a></td></tr>
+<tr class="memdesc:struct_t_memoizer_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu <a class="el" href="group___t_memoizer.html#struct_t_memoizer_item" title="Definice typu TMemoizerItem.">TMemoizerItem</a>.  <a href="group___t_memoizer.html#struct_t_memoizer_item">...</a><br /></td></tr>
+<tr class="separator:struct_t_memoizer_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_t_memoizer_stats" id="r_struct_t_memoizer_stats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#struct_t_memoizer_stats">TMemoizerStats</a></td></tr>
+<tr class="memdesc:struct_t_memoizer_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu MemoizerStats.  <a href="group___t_memoizer.html#struct_t_memoizer_stats">...</a><br /></td></tr>
+<tr class="separator:struct_t_memoizer_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_t_memoizer" id="r_struct_t_memoizer"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a></td></tr>
+<tr class="memdesc:struct_t_memoizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu <a class="el" href="group___t_memoizer.html#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a>.  <a href="group___t_memoizer.html#struct_t_memoizer">...</a><br /></td></tr>
+<tr class="separator:struct_t_memoizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:gad577912815cb8fd69e8a91fe4de09a63" id="r_gad577912815cb8fd69e8a91fe4de09a63"><td class="memItemLeft" align="right" valign="top">typedef unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a></td></tr>
+<tr class="memdesc:gad577912815cb8fd69e8a91fe4de09a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice vstupního typu pro memoizer (shodný typ jako má vstupní argument memoizované funkce)  <br /></td></tr>
+<tr class="separator:gad577912815cb8fd69e8a91fe4de09a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf729d76bb0587bd5e942cebaab0160e2" id="r_gaf729d76bb0587bd5e942cebaab0160e2"><td class="memItemLeft" align="right" valign="top">typedef unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a></td></tr>
+<tr class="memdesc:gaf729d76bb0587bd5e942cebaab0160e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice výstupního typu pro memoizer (shodný typ jako má návratová hodnota memoizované funkce)  <br /></td></tr>
+<tr class="separator:gaf729d76bb0587bd5e942cebaab0160e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe023c41396fda9a78a3ac980e80b956" id="r_gafe023c41396fda9a78a3ac980e80b956"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a>(<a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a>)</td></tr>
+<tr class="memdesc:gafe023c41396fda9a78a3ac980e80b956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu TMemoizedFunc reprezentující požadovaný prototyp pro memoizované funkce.  <br /></td></tr>
+<tr class="separator:gafe023c41396fda9a78a3ac980e80b956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga7fd4a076d3b98ab7b0f67fcdb797b67c" id="r_ga7fd4a076d3b98ab7b0f67fcdb797b67c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#ga7fd4a076d3b98ab7b0f67fcdb797b67c">memoizer_init</a> (struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM, size_t aCapacity, <a class="el" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a> *aMemoizedFunc)</td></tr>
+<tr class="memdesc:ga7fd4a076d3b98ab7b0f67fcdb797b67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializace memoizeru, asociace s memoizovanou funkcí, alokace vnitřního pole pro pár hodnot vstup a výstup memoizované funkce.  <br /></td></tr>
+<tr class="separator:ga7fd4a076d3b98ab7b0f67fcdb797b67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cdbc39bcc445c7d6d8c6afd9376a632" id="r_ga3cdbc39bcc445c7d6d8c6afd9376a632"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632">memoizer_eval</a> (struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM, <a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a> aInput)</td></tr>
+<tr class="memdesc:ga3cdbc39bcc445c7d6d8c6afd9376a632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr.  <br /></td></tr>
+<tr class="separator:ga3cdbc39bcc445c7d6d8c6afd9376a632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bbdcccd8a7105b3113829fd80f2cada" id="r_ga0bbdcccd8a7105b3113829fd80f2cada"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#ga0bbdcccd8a7105b3113829fd80f2cada">memoizer_print_stats</a> (const struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:ga0bbdcccd8a7105b3113829fd80f2cada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zobrazení hodnoty statistik počtu volání memoizeru.  <br /></td></tr>
+<tr class="separator:ga0bbdcccd8a7105b3113829fd80f2cada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3b680c64e6cdba34bd7bfab1bd68d66" id="r_gac3b680c64e6cdba34bd7bfab1bd68d66"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#gac3b680c64e6cdba34bd7bfab1bd68d66">memoizer_clear</a> (struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM)</td></tr>
+<tr class="memdesc:gac3b680c64e6cdba34bd7bfab1bd68d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smazání archivovaných hodnot v memoizeru, vynulování statistik o počty volání memoizeru.  <br /></td></tr>
+<tr class="separator:gac3b680c64e6cdba34bd7bfab1bd68d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae130deba979f5244c43be229606bf163" id="r_gae130deba979f5244c43be229606bf163"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_memoizer.html#gae130deba979f5244c43be229606bf163">memoizer_destroy</a> (struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM)</td></tr>
+<tr class="memdesc:gae130deba979f5244c43be229606bf163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace memoizeru.  <br /></td></tr>
+<tr class="separator:gae130deba979f5244c43be229606bf163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Definice typu reprezentující memoizační funktor. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="memoizer_8h.html" title="Definice typu reprezentující memoizační funktor.">memoizer.h</a> 2645 2024-03-18 13:39:39Z petyovsky </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 22. bře 2024 15.11:26, pro projekt: BPC-ALD: ALG Recursions (Fibonacci), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

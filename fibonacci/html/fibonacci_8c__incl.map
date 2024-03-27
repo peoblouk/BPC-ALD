@@ -1,0 +1,15 @@
+<map id="fibonacci.c" name="fibonacci.c">
+<area shape="rect" id="Node000001" title="Definice různých variant implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="127,5,211,31"/>
+<area shape="rect" id="Node000002" href="$fibonacci_8h.html" title="Deklarace různých variant implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="127,79,211,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,172,65,167,65,167,31"/>
+<area shape="rect" id="Node000003" href="$memoizer_8h.html" title="Definice typu reprezentující memoizační funktor." alt="" coords="124,152,215,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,104,172,138,167,138,167,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,67,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,180,71,221,69,216,147,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="91,225,155,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="164,179,140,215,136,212,159,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="179,225,253,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="179,176,203,212,199,215,175,179"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="277,225,347,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="193,175,278,217,275,221,191,180"/>
+</map>

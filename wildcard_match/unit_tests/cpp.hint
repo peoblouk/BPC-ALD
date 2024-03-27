@@ -1,0 +1,10 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+#define UT_NAMESPACE(aNamespace) namespace aNamespace {
+#define UT_ENDNAMESPACE(aNamespace) }
+#define UT_CLASS(aClassName) TEST_CLASS(aClassName) { public:
+#define UT_ENDCLASS(aClassName) };
+#define UT_METHOD(aMethodName) TEST_METHOD(aMethodName)
+#define UT_ASSERT_IS_TRUE(aTruePredicate) Assert::IsTrue(aTruePredicate)
+#define UT_ASSERT_IS_FALSE(aFalsePredicate) Assert::IsFalse(aFalsePredicate)

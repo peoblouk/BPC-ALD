@@ -1,0 +1,7 @@
+<map id="1. Fibonacci" name="1. Fibonacci">
+<area shape="rect" id="Node000001" title="Implementace funkcí pro výpočet Fibonacciho čísel." alt="" coords="5,109,99,134"/>
+<area shape="rect" id="Node000003" href="$group___fibonacci__iteration.html" title="Implementace funkce pro výpočet Fibonacciho čísel pomocí iterace." alt="" coords="151,5,349,45"/>
+<area shape="rect" id="Node000002" href="$group___fibonacci__recursion.html" title="Implementace funkce pro výpočet Fibonacciho čísel pomocí stromové rekurze." alt="" coords="151,69,349,109"/>
+<area shape="rect" id="Node000004" href="$group___fibonacci__recursion__memoize.html" title="Implementace funkce pro výpočet Fibonacciho čísel pomocí stromové rekurze s využitím memoizace." alt="" coords="147,133,353,173"/>
+<area shape="rect" id="Node000005" href="$group___fibonacci__recursion__tail__call.html" title="Implementace funkce pro výpočet Fibonacciho čísel pomocí koncové rekurze." alt="" coords="151,197,349,237"/>
+</map>

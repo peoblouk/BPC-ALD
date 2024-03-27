@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Recursions (Wildcard matching): Seznam testů</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Recursions (Wildcard matching)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Seznam testů</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="reflist">
+<dt>Třída <a class="el" href="class_advanced_wildcard_match_test.html">AdvancedWildcardMatchTest</a>  </dt>
+<dd><p class="startdd"><a class="anchor" id="_test000004"></a><b>testStarQuestionStarNotMatchEmpty:</b> <code>("*?*", "") -&gt; false</code>, (because <code>aStr</code> must have at least one character). </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarQuestionStarMatchChar:</b> <code>("*?*", "a") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testQuestionAndStarAtEndMatch:</b> <code>("ab?de*", "abcdefghij") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarCharQuestionNotMatch:</b> <code>("abc*c?d", "abcd") -&gt; false</code>, (because <code>aStr</code> must have 2 instances of 'c'). </p>
+<p class="interdd"></p>
+<p class="enddd"><b>testStarQuestionCharStarMatch:</b> <code>("*?c*d", "abcd") -&gt; true</code>  </p>
+</dd>
+<dt>Třída <a class="el" href="class_question_wildcard_match_test.html">QuestionWildcardMatchTest</a>  </dt>
+<dd><p class="startdd"><a class="anchor" id="_test000002"></a><b>testQuestionWildcardNotMatchEmpty:</b> <code>("?", "") -&gt; false</code> </p>
+<p class="interdd"></p>
+<p class="enddd"><b>testQuestionWildcardMatchAny:</b> <code>("?", "a") -&gt; true</code>  </p>
+</dd>
+<dt>Třída <a class="el" href="class_star_wildcard_match_test.html">StarWildcardMatchTest</a>  </dt>
+<dd><p class="startdd"><a class="anchor" id="_test000003"></a><b>testStarMatchEmpty:</b> <code>("*", "") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarMatchOneChar:</b> <code>("*", "a") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarMatchOneCharInMiddle:</b> <code>("a*cd", "abcd") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarMatchAllString:</b> <code>("*", "aaaa") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testNotMatchDifferString:</b> <code>("a*c", "abb") -&gt; false</code>, (because 'c' is not in <code>aStr</code>). </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testNotMatchLongerString:</b> <code>("*pqrs", "pqrst") -&gt; false</code>, (because 't' is not in <code>aWildCardStr</code>). </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testMatchLongerString:</b> <code>("abc*bcd", "abcdhghgbcd") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarMatchStringInMiddle:</b> <code>("d*d", "dcabad") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testTwoStarMatchEmpty:</b> <code>("**", "") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testTwoStarMatchChar:</b> <code>("**", "a") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testTwoStarMatchAny:</b> <code>("**", "aaaa") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testStarCharStarMatchChar:</b> <code>("*a*", "a") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="enddd"><b>testStarCharStarCharMatch:</b> <code>("*c*d", "abcd") -&gt; true</code>  </p>
+</dd>
+<dt>Třída <a class="el" href="class_string_match_test.html">StringMatchTest</a>  </dt>
+<dd><p class="startdd"><a class="anchor" id="_test000001"></a><b>testEmptyString:</b> <code>("", "") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testSameChars:</b> <code>("a", "a") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testDifferChars:</b> <code>("a", "b") -&gt; false</code>, (because 'a' is not 'b'). </p>
+<p class="interdd"></p>
+<p class="interdd"><b>testSameStrings:</b> <code>("ab", "ab") -&gt; true</code> </p>
+<p class="interdd"></p>
+<p class="enddd"><b>testDifferString:</b> <code>("ab", "ca") -&gt; false</code>, (because strings differ). </p>
+</dd>
+</dl>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 22. bře 2024 15.11:35, pro projekt: BPC-ALD: ALG Recursions (Wildcard matching), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

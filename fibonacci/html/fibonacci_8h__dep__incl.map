@@ -1,0 +1,7 @@
+<map id="fibonacci.h" name="fibonacci.h">
+<area shape="rect" id="Node000001" title="Deklarace různých variant implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="53,5,137,31"/>
+<area shape="rect" id="Node000002" href="$fibonacci_8c.html" title="Definice různých variant implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="5,79,89,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,44,57,80,53,77,78,41"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Hlavní program (testbench) testující různé implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="114,79,175,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,41,139,77,134,80,109,44"/>
+</map>

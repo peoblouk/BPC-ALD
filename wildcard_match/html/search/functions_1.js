@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['testdifferchars_0',['testDifferChars',['../class_string_match_test.html#a13df43b861e11512fed69827f1b5cf6a',1,'StringMatchTest']]],
+  ['testdifferstring_1',['testDifferString',['../class_string_match_test.html#ad9d0ae566141e667fd56f84d6b97ef91',1,'StringMatchTest']]],
+  ['testemptystrings_2',['testEmptyStrings',['../class_string_match_test.html#a90de716f6e2dbc4dbbe99b8020ae81ed',1,'StringMatchTest']]],
+  ['testmatchlongerstring_3',['testMatchLongerString',['../class_star_wildcard_match_test.html#a96739c0a96e844df415fc281e6aa0ee1',1,'StarWildcardMatchTest']]],
+  ['testnotmatchdifferstring_4',['testNotMatchDifferString',['../class_star_wildcard_match_test.html#a3901368dca871df82802b9db2656a26e',1,'StarWildcardMatchTest']]],
+  ['testnotmatchlongerstring_5',['testNotMatchLongerString',['../class_star_wildcard_match_test.html#ab20a9b97145c7c6881da57d368fa8488',1,'StarWildcardMatchTest']]],
+  ['testquestionandstaratendmatch_6',['testQuestionAndStarAtEndMatch',['../class_advanced_wildcard_match_test.html#a1f84b83aed937cc3a3398b41e6005033',1,'AdvancedWildcardMatchTest']]],
+  ['testquestionwildcardmatchany_7',['testQuestionWildcardMatchAny',['../class_question_wildcard_match_test.html#ad353cfcda80201ef27d8859b73da13ac',1,'QuestionWildcardMatchTest']]],
+  ['testquestionwildcardnotmatchempty_8',['testQuestionWildcardNotMatchEmpty',['../class_question_wildcard_match_test.html#a8e2d9e4fcbfe0daa73a89059ca02bd09',1,'QuestionWildcardMatchTest']]],
+  ['testsamechars_9',['testSameChars',['../class_string_match_test.html#a5a354ed6a7987fd272dcc0c002fd49b2',1,'StringMatchTest']]],
+  ['testsamestrings_10',['testSameStrings',['../class_string_match_test.html#aea960a1b1d06ec05b13cf4013f64f581',1,'StringMatchTest']]],
+  ['teststarcharquestionnotmatch_11',['testStarCharQuestionNotMatch',['../class_advanced_wildcard_match_test.html#a9987bb9bde26c3d8ec7568cc2fef6057',1,'AdvancedWildcardMatchTest']]],
+  ['teststarcharstarcharmatch_12',['testStarCharStarCharMatch',['../class_star_wildcard_match_test.html#a4d6c195dcb8c8309af338514a646d55c',1,'StarWildcardMatchTest']]],
+  ['teststarcharstarmatchchar_13',['testStarCharStarMatchChar',['../class_star_wildcard_match_test.html#a90d1e31631e4a0e81c42566aca392d63',1,'StarWildcardMatchTest']]],
+  ['teststarmatchallstring_14',['testStarMatchAllString',['../class_star_wildcard_match_test.html#a6b8e01cb29c30134929dc26b3357e627',1,'StarWildcardMatchTest']]],
+  ['teststarmatchempty_15',['testStarMatchEmpty',['../class_star_wildcard_match_test.html#af77593932f74c9ced8b18cc12940c665',1,'StarWildcardMatchTest']]],
+  ['teststarmatchonechar_16',['testStarMatchOneChar',['../class_star_wildcard_match_test.html#a8f4f7cdf271d671e4e3fda33c7a2c61c',1,'StarWildcardMatchTest']]],
+  ['teststarmatchonecharinmiddle_17',['testStarMatchOneCharInMiddle',['../class_star_wildcard_match_test.html#a882700254eca863f91e0fc51fe160c6e',1,'StarWildcardMatchTest']]],
+  ['teststarmatchstringinmiddle_18',['testStarMatchStringInMiddle',['../class_star_wildcard_match_test.html#ad7a130b787846ecc25bf0aa680ff5e4b',1,'StarWildcardMatchTest']]],
+  ['teststarquestioncharstarmatch_19',['testStarQuestionCharStarMatch',['../class_advanced_wildcard_match_test.html#a744add3a616a8eb39360f9a10ce20033',1,'AdvancedWildcardMatchTest']]],
+  ['teststarquestionstarmatchchar_20',['testStarQuestionStarMatchChar',['../class_advanced_wildcard_match_test.html#a66592688e3b026d69fbbd829cefd901f',1,'AdvancedWildcardMatchTest']]],
+  ['teststarquestionstarnotmatchempty_21',['testStarQuestionStarNotMatchEmpty',['../class_advanced_wildcard_match_test.html#aca46915cd7a86f4dc14438de7dc85173',1,'AdvancedWildcardMatchTest']]],
+  ['testtwostarmatchany_22',['testTwoStarMatchAny',['../class_star_wildcard_match_test.html#a2b44f3332756c23c80b2541148370776',1,'StarWildcardMatchTest']]],
+  ['testtwostarmatchchar_23',['testTwoStarMatchChar',['../class_star_wildcard_match_test.html#a9f5b82fcf9cb04a95a87db69f87d60ec',1,'StarWildcardMatchTest']]],
+  ['testtwostarmatchempty_24',['testTwoStarMatchEmpty',['../class_star_wildcard_match_test.html#a97faccbac8772fcd06724770d82b0768',1,'StarWildcardMatchTest']]]
+];

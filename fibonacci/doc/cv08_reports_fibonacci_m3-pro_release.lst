@@ -1,0 +1,171 @@
+
+------ Test of fibonacci1 - tree recursion ------
+Testset is:
+	fibonacci(0) = 0
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+
+------ Test of fibonacci1 - tree recursion ------
+Testset is:
+	fibonacci(1) = 1
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+
+------ Test of fibonacci1 - tree recursion ------
+Testset is:
+	fibonacci(3) = 2
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+
+------ Test of fibonacci1 - tree recursion ------
+Testset is:
+	fibonacci(5) = 5
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+
+------ Test of fibonacci1 - tree recursion ------
+Testset is:
+	fibonacci(42) = 267914296
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.688974 seconds.
+
+------ Test of fibonacci1 - tree recursion ------
+Testset is:
+	fibonacci(45) = 1134903170
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 2.971975 seconds.
+
+------ Test of fibonacci2 - iteration ------
+Testset is:
+	fibonacci(0) = 0
+	fibonacci(1) = 1
+	fibonacci(3) = 2
+	fibonacci(5) = 5
+	fibonacci(42) = 267914296
+	fibonacci(45) = 1134903170
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+
+------ Test of fibonacci3 - tree recursion with memoization ------
+Testset is:
+	fibonacci(0) = 0
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+	Memoizations: 0
+	Calculations: 1
+	Total: 1
+
+------ Test of fibonacci3 - tree recursion with memoization ------
+Testset is:
+	fibonacci(1) = 1
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+	Memoizations: 0
+	Calculations: 1
+	Total: 1
+
+------ Test of fibonacci3 - tree recursion with memoization ------
+Testset is:
+	fibonacci(3) = 2
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+	Memoizations: 1
+	Calculations: 4
+	Total: 5
+
+------ Test of fibonacci3 - tree recursion with memoization ------
+Testset is:
+	fibonacci(5) = 5
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.
+	Memoizations: 3
+	Calculations: 6
+	Total: 9
+
+------ Test of fibonacci3 - tree recursion with memoization ------
+Testset is:
+	fibonacci(42) = 267914296
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000001 seconds.
+	Memoizations: 40
+	Calculations: 43
+	Total: 83
+
+------ Test of fibonacci3 - tree recursion with memoization ------
+Testset is:
+	fibonacci(45) = 1134903170
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000001 seconds.
+	Memoizations: 43
+	Calculations: 46
+	Total: 89
+
+------ Test of fibonacci3 - tree recursion with memoization (all together) ------
+Testset is:
+	fibonacci(0) = 0
+	fibonacci(1) = 1
+	fibonacci(3) = 2
+	fibonacci(5) = 5
+	fibonacci(42) = 267914296
+	fibonacci(45) = 1134903170
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000001 seconds.
+	Memoizations: 48
+	Calculations: 46
+	Total: 94
+
+------ Test of fibonacci4 - tail call recursion ------
+Testset is:
+	fibonacci(0) = 0
+	fibonacci(1) = 1
+	fibonacci(3) = 2
+	fibonacci(5) = 5
+	fibonacci(42) = 267914296
+	fibonacci(45) = 1134903170
+
+Testing started...
+Testing finished...
+All results was valid. OK :-)
+Calculation time: 0.000000 seconds.

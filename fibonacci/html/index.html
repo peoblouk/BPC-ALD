@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Recursions (Fibonacci): Zadání cvičení 8</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Recursions (Fibonacci)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 8 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv08__zadani__rekurze"></a> Cvičení je věnováno implementaci <a href="https://cs.wikipedia.org/wiki/Rekurze#Matematika">rekurzivních funkcí</a>. Rekurze budou procvičeny na dvou úlohách:</p>
+<ol type="1">
+<li>Generátor Fibonacciho posloupnosti,</li>
+<li><em>Wildcard string matching</em> - Test shody dvou řetězců, z nichž jeden označovaný jako: <a href="https://cs.wikipedia.org/wiki/Glob">glob</a> nebo případně <a href="https://en.wikipedia.org/wiki/Regular_expression#Patterns">vzor</a> (<em>pattern</em>), obsahuje zástupné tzv. <a href="https://cs.wikipedia.org/wiki/%C5%BDol%C3%ADkov%C3%BD_znak">žolíkové</a> (<em>wildcard</em>) znaky.</li>
+</ol>
+<hr  />
+<h1>Zadání úlohy 8.1 - Generátor Fibonacciho posloupnosti</h1>
+<p>Napište funkce realizující výpočet <a href="https://cs.wikipedia.org/wiki/Fibonacciho_posloupnost">Fibonacciho posloupnosti</a> pomocí následujících metod:</p>
+<ol type="1">
+<li>funkce <code><a class="el" href="group___fibonacci__recursion.html#gaf07a76ad6b1e0083c161055bac707795" title="Implementace výpočtu Fibonacciho čísla pomocí stromové rekurze.">fibonacci1()</a></code> - implementace pomocí stromové rekurze - viz přednáška,</li>
+<li>funkce <code><a class="el" href="group___fibonacci__iteration.html#gaf0bff30a2b6ec37a67dac2b6cec2662d" title="Implementace výpočtu Fibonacciho čísla pomocí iterace (cyklu)">fibonacci2()</a></code> - implementace pomocí iterace, pomocí příkazu cyklu,</li>
+<li>funkce <code><a class="el" href="group___fibonacci__recursion__memoize.html#ga719efe552f8fecbc8e8b0f1e6c1cce50" title="Implementace výpočtu Fibonacciho čísla pomocí stromové rekurze s využitím memoizace.">fibonacci3()</a></code> - implementace pomocí stromové rekurze s memoizací (knihovna <code><a class="el" href="memoizer_8h.html" title="Definice typu reprezentující memoizační funktor.">memoizer.h</a></code>),</li>
+<li>funkce <code><a class="el" href="group___fibonacci__recursion__tail__call.html#ga2176ac33f9dd8338fb49db64d3dc0fae" title="Implementace výpočtu Fibonacciho čísla pomocí koncové rekurze.">fibonacci4()</a></code> - implementace pomocí rekurze s koncovým voláním.</li>
+</ol>
+<h2>Soubory projektu <code>fibonacci</code></h2>
+<p>Soubor <code><a class="el" href="fibonacci_8h.html" title="Deklarace různých variant implementace výpočtu hodnot Fibonacciho posloupnosti.">fibonacci.h</a></code> - obsahuje deklarace funkcí, které se mají realizovat. Navíc je zde, pro metodu se stromovou rekurzí a memoizací, deklarace proměnné memoizeru: <code><a class="el" href="group___fibonacci__recursion__memoize.html#ga5d6890a1fa293f03a00f6f00fd9d177d" title="Deklarace instance memoizeru.">mfibonacci3</a></code> a <a href="https://en.wikipedia.org/wiki/Wrapper_function">wrapper funkce</a>: <code><a class="el" href="group___fibonacci__recursion__memoize.html#ga7038381d3a82a541aa892899347446f4" title="Funkce výpočtu Fibonacciho čísla pomocí stromové rekurze s využitím memoizace volaná z main() jako tz...">fibonacci3_wrapper()</a></code>.</p>
+<p>Soubor <code><a class="el" href="fibonacci_8c.html" title="Definice různých variant implementace výpočtu hodnot Fibonacciho posloupnosti.">fibonacci.c</a></code> - zde se bude dopisovat kód jednotlivých implementací do připravených prázdných funkcí.</p>
+<p>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program (testbench) testující různé implementace výpočtu hodnot Fibonacciho posloupnosti.">main.c</a></code> - obsahuje funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>, která definuje vstupní a kontrolní výstupní hodnoty funkce pro výpočet Fibonacciho posloupnosti. Pro variantu s memoizací provede inicializační fázi pomocí funkce <code><a class="el" href="group___t_memoizer.html#ga7fd4a076d3b98ab7b0f67fcdb797b67c" title="Inicializace memoizeru, asociace s memoizovanou funkcí, alokace vnitřního pole pro pár hodnot vstup a...">memoizer_init()</a></code>, a na konci data memoizeru zruší voláním funkce <code><a class="el" href="group___t_memoizer.html#gae130deba979f5244c43be229606bf163" title="Deinicializace memoizeru.">memoizer_destroy()</a></code>. Opakovaně je zde volána funkce <code><a class="el" href="group___main_program.html#gacddcd824577bbc488d7c8c67a2f5a6fa" title="Testování funkcí fibonacciX()">fibonacci_testing()</a></code> pro jednotlivé varianty řešení výpočtu. Funkce: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> <a class="code hl_function" href="group___main_program.html#gacddcd824577bbc488d7c8c67a2f5a6fa">fibonacci_testing</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *aFibFuncNameStr, <span class="keywordtype">unsigned</span> (*aFibFunc)(<span class="keywordtype">unsigned</span>), <span class="keywordtype">size_t</span> aTestSetSize, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___main_program.html#struct_t_test_set_item">TTestSetItem</a> aTestSet[])</div>
+<div class="ttc" id="agroup___main_program_html_gacddcd824577bbc488d7c8c67a2f5a6fa"><div class="ttname"><a href="group___main_program.html#gacddcd824577bbc488d7c8c67a2f5a6fa">fibonacci_testing</a></div><div class="ttdeci">bool fibonacci_testing(const char *aFibFuncNameStr, unsigned(*aFibFunc)(unsigned), size_t aTestSetSize, const struct TTestSetItem aTestSet[])</div><div class="ttdoc">Testování funkcí fibonacciX()</div><div class="ttdef"><b>Definition</b> main.c:36</div></div>
+<div class="ttc" id="agroup___main_program_html_struct_t_test_set_item"><div class="ttname"><a href="group___main_program.html#struct_t_test_set_item">TTestSetItem</a></div><div class="ttdoc">Definice typu TTestSetItem.</div><div class="ttdef"><b>Definition</b> main.c:23</div></div>
+</div><!-- fragment --><p>zavolá dodanou funkci (jejíž adresa je předána pomocí parametru <code>aFibFunc</code>) pro všechny vstupní parametry (zadané v poli <code>aTestSet</code>), porovná získané výsledky s výsledky vzorovými a také změří čas výpočtu. Funkce vrací hodnotu <code>true</code> pokud všechny výsledky výpočtené testovanou funkcí jsou shodné se vzorovými.</p>
+<p>Popis argumentů funkce:</p>
+<ul>
+<li><code>aFibFuncNameStr</code> - vstupní řetězec, který se vytiskne na konzolu jako popis,</li>
+<li><code>aFibFunc</code> - adresu funkce, která se bude testovat,</li>
+<li><code>aTestSetSize</code> - počet vstupních/výstupních hodnot, se kterými se bude funkce volat a testovat správnost výsledku,</li>
+<li><code>aTestSet</code> - pole se vstupními hodnotami a správnými výsledky odpovídající vstupním hodnotám (slouží k ověření správné funkčnosti testované funkce).</li>
+</ul>
+<p>Soubor <code><a class="el" href="memoizer_8h.html" title="Definice typu reprezentující memoizační funktor.">memoizer.h</a></code> - obsahuje definice funkcí pro využití mechanizmů <a href="https://knihy.nic.cz/files/edice/pruvodce_labyrintem_algoritmu_v2.pdf">memoizace</a> (viz str. 301).</p>
+<h2>Úkoly</h2>
+<ol type="1">
+<li>Prostudujte si dodaný projekt a jeho soubory.</li>
+<li>Promyslete si jednotlivé implementace generátorů Fibonacciho posloupnosti.</li>
+<li>Realizujte jednotlivé implementace generátorů Fibonacciho posloupnosti.</li>
+<li>Na základě výstupů z vašeho programu zhodnoťte a relativně srovnejte časové a paměťové složitosti jednotlivých implementací.</li>
+<li>Srovnejte hodnoty z vašeho programu s hodnotami v souborech s příklady: <code>doc/cv08_reports_fibonacci_*_debug.lst</code> a <code>doc/cv08_reports_fibonacci_*_release.lst</code>. Výpočetní časy se budou samozřejmě lišit, ale <b>důsledně ověřte hodnoty statistik memoizeru</b> pro funkci: <code><a class="el" href="group___fibonacci__recursion__memoize.html#ga7038381d3a82a541aa892899347446f4" title="Funkce výpočtu Fibonacciho čísla pomocí stromové rekurze s využitím memoizace volaná z main() jako tz...">fibonacci3_wrapper()</a></code>. Pokuste se dosáhnout stejných výsledků, aniž byste museli modifikovat obsah souboru: <code><a class="el" href="main_8c.html" title="Hlavní program (testbench) testující různé implementace výpočtu hodnot Fibonacciho posloupnosti.">main.c</a></code>.</li>
+</ol>
+<h2>Rozbor úlohy</h2>
+<p>Rozbor obsahuje krátký návod společně s vysvětlením nejdůležitějších pojmů, které budete k vyřešení úlohy potřebovat.</p>
+<h3>Memoizace:</h3>
+<p>Memoizace (česky tabelace příp. memorování) - je optimalizační technika využívaná ve <a href="https://cs.wikipedia.org/wiki/Funkcion%C3%A1ln%C3%AD_programov%C3%A1n%C3%AD">funkcionálním programování</a>, která spočívá v tom, že se jednou (náročně) počítané výsledné hodnoty funkce společně s požadovaným vstupem zapamatují (např. do tabulky) pro příští použití.</p>
+<p>Je-li při dalším volání požadován výsledek pro již zapamatovaný vstupní argument funkce, potom se jako hodnota funkce vrací zapamatovaná hodnota výsledku, aniž by se požadovaná funkce volala. V ostatních případech se zavolá výpočet hodnoty funkce a výsledek se opět archivuje.</p>
+<p>Jak je zřejmé tuto optimalizační techniku je možné využít pouze při volání tzv. čistých funkcí <em><a href="https://en.wikipedia.org/wiki/Pure_function">pure functions</a></em>, tedy takových funkcí, které kromě výpočtu návratové hodnoty ze zadaných parametrů, nemají žádné postranní efekty, např. tisk na obrazovku, používání globálních proměnných apod. Funkce pro výpočet Fibonacciho čísla je právě příkladem takovéto čisté funkce a proto můžeme tuto optimalizační techniku využít a ověřit si její význam.</p>
+<p>Řešení je připraveno v souboru <code><a class="el" href="memoizer_8h.html" title="Definice typu reprezentující memoizační funktor.">memoizer.h</a></code>. V souboru je nadefinovaný datový typ pro vstupní (<code><a class="el" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63" title="Definice vstupního typu pro memoizer (shodný typ jako má vstupní argument memoizované funkce)">TMemoizedFuncInput</a></code>) a výstupní (<code><a class="el" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2" title="Definice výstupního typu pro memoizer (shodný typ jako má návratová hodnota memoizované funkce)">TMemoizedFuncOutput</a></code>) hodnoty. Pro námi realizovaný generátor Fibonacciho posloupnosti to bude typ <code>unsigned</code>. Struktura <code>struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer_item" title="Definice typu TMemoizerItem.">TMemoizerItem</a></code> slouží pro uložení páru hodnot: vstupní argument funkce a k němu příslušné výstupní hodnoty (tj. výsledek) funkce.</p>
+<p>Struktura <code>struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer_stats" title="Definice typu MemoizerStats.">TMemoizerStats</a></code> slouží pro vytvoření statistiky využití tohoto mechanizmu. Do statistiky jsou započítány dvě situace:</p>
+<ul>
+<li>Požadavek na výpočet už jednou vypočtené hodnoty, kterou lze v archivu memoizeru doposud nalézt.</li>
+<li>Požadavek na výpočet nové hodnoty (případně hodnoty, která již není v memoizeru uložena.)</li>
+</ul>
+<p>Memoizer je ve funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> nastaven tak, aby archivoval poslední dvě hodnoty, <b>toto nastavení neměňte</b>.</p>
+<p>Struktura <code>struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a></code> je hlavní strukturou memoizeru, která obsahuje informaci o všech archivovaných hodnotách, jejich počtu, ukazatel na memoizovanou funkci a hodnoty pro statistiky.</p>
+<p>Funkce:</p>
+<ul>
+<li><code><a class="el" href="group___t_memoizer.html#ga7fd4a076d3b98ab7b0f67fcdb797b67c" title="Inicializace memoizeru, asociace s memoizovanou funkcí, alokace vnitřního pole pro pár hodnot vstup a...">memoizer_init()</a></code> - Inicializuje vnitřní složky struktury memoizeru, alokuje paměť archivu pro uložení definovaného počtu párů (vstup a výstup funkce) tj. vstupních a výstupních hodnot. Vstupem je i adresa funkce pro výpočet výstupní hodnoty (tj. memoizovaná funkce).</li>
+<li><code><a class="el" href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632" title="Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr.">memoizer_eval()</a></code> - Pokud zjistí, že vstupní hodnota již byla memoizována, (tj. najde ji mezi vstupními hodnotami uloženými v poli struktur <code>struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer_item" title="Definice typu TMemoizerItem.">TMemoizerItem</a></code>), vrátí příslušnou výstupní hodnotu. Jinak vypočte výstupní hodnotu pro zadaný vstup, pomocí funkce, která je uložena ve struktuře <code>struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a></code>. Pár vstupní a výstupní hodnoty uloží do svého archivu již počítaných hodnot. Případně přepíše nejstarší archivované hodnoty.</li>
+<li><code><a class="el" href="group___t_memoizer.html#ga0bbdcccd8a7105b3113829fd80f2cada" title="Zobrazení hodnoty statistik počtu volání memoizeru.">memoizer_print_stats()</a></code> - vytiskne statistiky využití memoizeru.</li>
+<li><code><a class="el" href="group___t_memoizer.html#gac3b680c64e6cdba34bd7bfab1bd68d66" title="Smazání archivovaných hodnot v memoizeru, vynulování statistik o počty volání memoizeru.">memoizer_clear()</a></code> - vynuluje parametry struktury <code>struct <a class="el" href="group___t_memoizer.html#struct_t_memoizer" title="Definice typu TMemoizer.">TMemoizer</a></code> včetně statistiky - neodalokuje paměť, pouze nastaví archiv jako prázdný.</li>
+<li><code><a class="el" href="group___t_memoizer.html#gae130deba979f5244c43be229606bf163" title="Deinicializace memoizeru.">memoizer_destroy()</a></code> - vynuluje parametry včetně statistiky a dealokuje paměť pro archiv.</li>
+</ul>
+<h3>Jednotlivé implementace funkce <code>fibonacci</code>:</h3>
+<p>Funkce:</p>
+<ul>
+<li><code><a class="el" href="group___fibonacci__recursion.html#gaf07a76ad6b1e0083c161055bac707795" title="Implementace výpočtu Fibonacciho čísla pomocí stromové rekurze.">fibonacci1()</a></code> - Implementace pomocí stromové rekurze - základní vzorec se dvěma voláními téže funkce (viz přednáška 07).</li>
+<li><code><a class="el" href="group___fibonacci__iteration.html#gaf0bff30a2b6ec37a67dac2b6cec2662d" title="Implementace výpočtu Fibonacciho čísla pomocí iterace (cyklu)">fibonacci2()</a></code> - Implementace iterací, tj. pomocí příkazu cyklu, kdy si pamatujeme vypočtené hodnoty a použijeme ji ve dvou následujících krocích výpočtu (jednou jako hodnotu <code>n-1</code> a v dalším kroku jako hodnotu <code>n-2</code>).</li>
+<li><code><a class="el" href="group___fibonacci__recursion__memoize.html#ga719efe552f8fecbc8e8b0f1e6c1cce50" title="Implementace výpočtu Fibonacciho čísla pomocí stromové rekurze s využitím memoizace.">fibonacci3()</a></code> - Implementace pomocí stromové rekurze s memoizací (knihovna <code><a class="el" href="memoizer_8h.html" title="Definice typu reprezentující memoizační funktor.">memoizer.h</a></code>). Tato funkce slouží k získání i ke generování hodnot pro memoizaci. Algoritmus je podobný jako v úkolu realizace funkce <code><a class="el" href="group___fibonacci__recursion.html#gaf07a76ad6b1e0083c161055bac707795" title="Implementace výpočtu Fibonacciho čísla pomocí stromové rekurze.">fibonacci1()</a></code>, ale místo rekurentního volání se volá funkce <code><a class="el" href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632" title="Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr.">memoizer_eval()</a></code> jejímž parametrem je odkaz na strukturu se zapamatovanými prvky (<code><a class="el" href="group___fibonacci__recursion__memoize.html#ga5d6890a1fa293f03a00f6f00fd9d177d" title="Deklarace instance memoizeru.">mfibonacci3</a></code>) a požadovaná hodnota.</li>
+<li><code><a class="el" href="group___fibonacci__recursion__memoize.html#ga7038381d3a82a541aa892899347446f4" title="Funkce výpočtu Fibonacciho čísla pomocí stromové rekurze s využitím memoizace volaná z main() jako tz...">fibonacci3_wrapper()</a></code> - Je obalová funkce, která pouze zavolá funkci <code><a class="el" href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632" title="Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr.">memoizer_eval()</a></code> se stejným parametrem a příslušnou strukturou pro memoizované hodnoty. Je zde proto, abychom dodrželi shodné API pro všechny funkce generující Fibonacciho posloupnost.</li>
+<li><code><a class="el" href="group___fibonacci__recursion__tail__call.html#ga2176ac33f9dd8338fb49db64d3dc0fae" title="Implementace výpočtu Fibonacciho čísla pomocí koncové rekurze.">fibonacci4()</a></code> - Implementace pomocí rekurze s koncovým voláním. Implementace s rekurzí v koncovém volání vede k automatické eliminaci rekurze překladačem. V tomto případě ovšem musí být volání rekurze posledním voláním v příkazu <code>return</code>. Proto musíme použít konstrukci s pomocnou funkcí: <code><a class="el" href="fibonacci_8c.html#af2184aa6e303b330889d2f15fd124348" title="Vnitřní a lokální funkce realizující koncovou rekurzi.">fibonacci4_worker()</a></code> (viz přednáška 07).</li>
+</ul>
+<h3>Úkol navíc (pro šťouraly, kteří se chtějí naučit něco dalšího):</h3>
+<p>Pokud si chcete na 100% ověřit v assembleru, že se skutečně provedla optimalizace koncové rekurze, zkuste následující postup:</p>
+<ul>
+<li>při breakpointu (tj. při spuštěném programu) dejte v souboru <code><a class="el" href="fibonacci_8c.html" title="Definice různých variant implementace výpočtu hodnot Fibonacciho posloupnosti.">fibonacci.c</a></code> pravé tlačítko myši např. na funkci <code><a class="el" href="fibonacci_8c.html#af2184aa6e303b330889d2f15fd124348" title="Vnitřní a lokální funkce realizující koncovou rekurzi.">fibonacci4_worker()</a></code> a zvolte volbu: <b>Go to disassembly</b>.</li>
+<li>Zobrazí se vám kód C i strojový kód. Ve funkcích potom můžete zjistit, zda se v nich vyskytuje jejich opětovné volání pomocí příkazu <code>call nazev_funkce</code> nebo pouze instrukce podmíněných skoků: např. <code>je</code> - <em>jump equal</em> a <code>jne</code> - <em>jump not equal</em> - ekvivalentní C konstrukcím: <code>if(!n)</code>, případně: <code>if(n == 0)</code>.</li>
+<li>Aby se tato optimalizace projevila, musíme ji povolit nastavením projektu ( <em>Project properties / C &amp; C++ / Optimization / Optimization - Maximum Optimization</em> ) zároveň bude možná nutné (pokud bude hlášena chyba ... /RTC1... ) nastavit také: ( <em>Project properties / C &amp; C++ / Code Generation / Basic Runtime Checks - default</em> ).</li>
+<li>Po disassemblování vraťte volby do původního stavu.</li>
+<li>Jednodušší možností je však vše přeložit a pozorovat výpis programu v režimu: <b>Release</b>.</li>
+<li>Případně využijte online nástroj: <a href="http://www.godbolt.org">Compiler Explorer</a>.</li>
+</ul>
+<hr  />
+<h1>Zadání úlohy 8.2 - (<em>wildcard string matching</em>) - Test shody dvou řetězců, z nichž jeden obsahuje žolíkové znaky</h1>
+<p>Napište tělo funkce <code>wildcard_match()</code>, realizující rekurzivní řešení úlohy testu na shodu dvou řetězců, z nichž jeden obsahuje zástupné (tzv. <a href="https://cs.wikipedia.org/wiki/%C5%BDol%C3%ADkov%C3%BD_znak">žolíkové</a>) znaky: <code>*</code> a <code>?</code>. Tyto znaky mají při testování shody jednotlivých znaků řetězce speciální význam.</p>
+<h2>Projekt: <code>wildcard_match</code></h2>
+<p>Tento podprojekt slouží k vlastní realizaci funkce <code>wildcard_match()</code> a ukázce jejího použití ve funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>. Oba řetězce se načtou z klávesnice a porovnají. Následně je zobrazen výsledek.</p>
+<h2>Projekt: <code>UnitTest</code></h2>
+<p>Projekt obsahuje i připravený <a href="https://cs.wikipedia.org/wiki/Unit_testing">unit test</a>, který umožní rychle ověřovat správnost implementace funkce <code>wildcard_match()</code>. Projekt <code>UnitTest</code> má jediný soubor. Jeho základem je sice C++, ale testování je provedeno velice jednoduchými mechanizmy, takže ze struktury kódu by mělo být jasné, jak pracuje.</p>
+<p><b>Unit test je</b> (stručně pro VS a XCode): speciální projekt, ve kterém se volají programátorem nadefinované funkce a pomocí předpřipravených funkcí či maker (a jejich návaznosti na použité prostředí) se otestuje a zobrazí výsledek testu. V testu se volá funkce a následně se porovnává skutečná a očekávaná hodnota výsledku. Testovat budeme výsledek porovnání, tj. <code>true</code> nebo <code>false</code>. Budeme tedy kontrolovat, zda se výsledek rovná nebo nerovná očekávané hodnotě tj.: (<code>UT_ASSERT_IS_TRUE(výsledek)</code>, <code>UT_ASSERT_IS_FALSE(výsledek)</code>).</p>
+<p><b>Unit test funguje</b>: tak, že využívá zdrojové a přeložené soubory testovaného projektu a ověřuje správnost implementace jednotlivých (jednotek) v našem případě funkcí (testované soubory tedy nekopírujeme, ale jen mezi oběma projekty sdílíme). Pro testování je připraven kód tak, aby získal voláním výsledek určité jednotky (v nejjednodušším případě zavoláme testovanou funkci). Pomocí funkcí ze skupiny <code>UT_ASSERT_...</code> porovná shodu či neshodu výsledků s požadavkem. V případě, že se funkce neshoduje s předpokládaným výsledkem, běh tohoto testu se přeruší a výsledek se zobrazí v prostředí a pokračuje se na další test v pořadí. <br  />
+ Vlastní realizace je tedy taková, že se zavolá funkce <code>wildcard_match()</code> se dvěma řetězci, pro které předem známe, správný výsledek funkce. Jelikož známe správný výsledek, víme také, jak jej otestovat pomocí maker: <code>UT_ASSERT_IS_TRUE()</code>, nebo <code>UT_ASSERT_IS_FALSE()</code>.</p>
+<p>Výsledek funkce je tedy vždy ověřen a v případě neočekávaného výsledku je zobrazena chyba. <br  />
+ Tento postup nám umožňuje se zbavit nutnosti, při každé změně zdrojového textu funkce, zadávat opakovaně všechny testové kombinace vstupů ručně.</p>
+<p><b>Jak se unit testování používá</b>: Unit testy mají vlastní položku v menu. Okno testů vyvoláme pomocí volby menu <em>Test/Test Explorer</em>. Testy spustíme pomocí tlačítka <em>Run</em> nebo <em>Run All Tests</em> (jejichž ikony jsou zelené trojúhelníky). Před jejich použitím je vhodné celý projekt přeložit. V okně <em>Test Explorer</em> se objeví "adresářová struktura"/strom s výsledky jednotlivých testů (tuto strukturu budete patrně muset rozvinout). V rozvinuté struktuře má každý test svůj řádek a označení výsledku - červená znamená, že v něm došlo k chybě, zelená, že je v pořádku. Poklikáním na položku se dostaneme ke zdrojovému kódu testu a v okně <em>Test Explorer</em> uvidíme bližší informace o případném neočekávaném chování testované funkce.</p>
+<h2>Soubory projektu <code>wildcard_match</code></h2>
+<p>Kromě již popsaného souboru <code><a class="el" href="main_8c.html" title="Hlavní program (testbench) testující různé implementace výpočtu hodnot Fibonacciho posloupnosti.">main.c</a></code> je zde nejdůležitější soubor <code>wildcard_match.c</code> ve kterém je potřeba doplnit tělo funkce realizované rekurzivním algoritmem.</p>
+<h2>Úkoly</h2>
+<p>Pro zjištění správnosti řešení použijte projekt s unit testy (otevřete <em>Test Explorer</em> a spusťte testování). Testy je možné nastavit v prostředí dokonce tak, aby se spouštěly automaticky po každém sestavení programu. Snažte se za pomocí všech dodaných unit testů a případně níže uvedených řetězců odladit fungující algoritmus pro určení shody dvou řetězců, z nichž jeden obsahující žolíkové znaky.</p>
+<h2>Rozbor</h2>
+<p>Další možné testovací řetězce (kromě těch, které jsou v modulu <code>UnitTest</code>): </p><pre class="fragment">  "ab*cd", "abcd"       // Ano
+  "ab*cd", "abxycd"     // Ano
+  "ab*cd", "abxycccd"   // Ano
+  "ab*cd", "abccxyccd"  // Ano
+
+  "ab?cd", "abxcd"      // Ano
+  "ab?cd", "abxccd"     // Ne
+
+  "*abcd", "abcd"       // Ano
+  "*abcd", "xyabcd"     // Ano
+  "*abcd", "xyaabcd"    // Ano
+
+  "abcd*", "abcd"       // Ano
+  "abcd*", "abcdabb"    // Ano
+
+  "abcd?", "abcd"       // Ne
+  "abcd?", "abcdx"      // Ano
+  "abcd?", "abcdxy"     // Ne
+
+  "abc*c?d", "abcd"     // Ne
+
+  "*c*d", "abcd"        // Ano
+
+  "*?c*d", "abcd"       // Ano
+
+  "ba*a?","baaabab"     // Ano
+
+  "ba*ab","baaabab"     // Ano
+  "ba*ab","baaa*ab"     // Ano
+</pre> <hr  />
+<p> <code>$Id: <a class="el" href="cv08__zadani__rekurze_8md.html">cv08_zadani_rekurze.md</a> 2648 2024-03-18 14:00:53Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 22. bře 2024 15.11:27, pro projekt: BPC-ALD: ALG Recursions (Fibonacci), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

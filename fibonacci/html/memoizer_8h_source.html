@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Recursions (Fibonacci): Zdrojový soubor memoizer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Recursions (Fibonacci)<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0d0726f1923a95bf995d2bf64c3b8142.html">fibonacci</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">memoizer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="memoizer_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MEMOIZER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MEMOIZER_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">   24</a></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <a class="code hl_typedef" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a>;    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">   25</a></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <a class="code hl_typedef" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a>;   </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">   26</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> <a class="code hl_typedef" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a>(<a class="code hl_typedef" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a>);  </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group___t_memoizer.html">   32</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a8cf8b4b29d4621f8b3d3830c9ce56e17">   34</a></span>    <a class="code hl_typedef" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a> <a class="code hl_variable" href="group___t_memoizer.html#a8cf8b4b29d4621f8b3d3830c9ce56e17">iInput</a>;          </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a8347ff27dfc07d967eef5266686cb18d">   35</a></span>    <a class="code hl_typedef" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> <a class="code hl_variable" href="group___t_memoizer.html#a8347ff27dfc07d967eef5266686cb18d">iOutput</a>;        </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    };</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___t_memoizer.html">   41</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_stats">TMemoizerStats</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#ab9ddadd49c2d4617d29ba237df7097dd">   43</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_memoizer.html#ab9ddadd49c2d4617d29ba237df7097dd">iMemoizations</a>;               </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a3758d641db6b6adec41e98f268cfca1d">   44</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_memoizer.html#a3758d641db6b6adec41e98f268cfca1d">iCalculations</a>;               </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    };</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="group___t_memoizer.html">   50</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a0073a4b8ee18a325922e65f0489d937c">   52</a></span>    <a class="code hl_typedef" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a> *<a class="code hl_variable" href="group___t_memoizer.html#a0073a4b8ee18a325922e65f0489d937c">iMemoizedFunc</a>;       </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">   53</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a> *<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>;     </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a6572bbed817855a11d0fd18272706cdf">   54</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_memoizer.html#a6572bbed817855a11d0fd18272706cdf">iCapacity</a>;                   </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">   55</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">iPos</a>;                        </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">   56</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;                       </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">   57</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_stats">TMemoizerStats</a> <a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>;       </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#af869627c3c2f24bfaf2f1c9e87fa78d9">   58</a></span>    <a class="code hl_typedef" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> <a class="code hl_variable" href="group___t_memoizer.html#af869627c3c2f24bfaf2f1c9e87fa78d9">iTmpOutput</a>;     </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    };</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#ga7fd4a076d3b98ab7b0f67fcdb797b67c">   68</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_memoizer.html#ga7fd4a076d3b98ab7b0f67fcdb797b67c">memoizer_init</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM, <span class="keywordtype">size_t</span> aCapacity, <a class="code hl_typedef" href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a> *aMemoizedFunc)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span>(!aM || !aMemoizedFunc || !aCapacity)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a> *archive = malloc(aCapacity * <span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a>));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span>(!archive)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    *aM = (<span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a>) { .<a class="code hl_variable" href="group___t_memoizer.html#a0073a4b8ee18a325922e65f0489d937c">iMemoizedFunc</a> = aMemoizedFunc, .iArchive = archive, .iCapacity = aCapacity, };</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632">   87</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a> <a class="code hl_function" href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632">memoizer_eval</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM, <a class="code hl_typedef" href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a> aInput)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    assert(aM);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    assert(aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    assert(aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a0073a4b8ee18a325922e65f0489d937c">iMemoizedFunc</a>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>; ++i)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span>(aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>[i].<a class="code hl_variable" href="group___t_memoizer.html#a8cf8b4b29d4621f8b3d3830c9ce56e17">iInput</a> == aInput)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            ++aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>.<a class="code hl_variable" href="group___t_memoizer.html#ab9ddadd49c2d4617d29ba237df7097dd">iMemoizations</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">return</span> aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>[i].<a class="code hl_variable" href="group___t_memoizer.html#a8347ff27dfc07d967eef5266686cb18d">iOutput</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#af869627c3c2f24bfaf2f1c9e87fa78d9">iTmpOutput</a> = aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a0073a4b8ee18a325922e65f0489d937c">iMemoizedFunc</a>(aInput);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    ++aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>.<a class="code hl_variable" href="group___t_memoizer.html#a3758d641db6b6adec41e98f268cfca1d">iCalculations</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">iPos</a> %= aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a6572bbed817855a11d0fd18272706cdf">iCapacity</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>[aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">iPos</a>] = (<span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a>) { .<a class="code hl_variable" href="group___t_memoizer.html#a8cf8b4b29d4621f8b3d3830c9ce56e17">iInput</a> = aInput, .iOutput = aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#af869627c3c2f24bfaf2f1c9e87fa78d9">iTmpOutput</a> };</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">if</span>(aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a> &lt; aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a6572bbed817855a11d0fd18272706cdf">iCapacity</a>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        ++aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>[aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">iPos</a>++].<a class="code hl_variable" href="group___t_memoizer.html#a8347ff27dfc07d967eef5266686cb18d">iOutput</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#ga0bbdcccd8a7105b3113829fd80f2cada">  117</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_memoizer.html#ga0bbdcccd8a7105b3113829fd80f2cada">memoizer_print_stats</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM, FILE *aOutputFile)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">if</span>(!aM || !aOutputFile)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> fprintf(aOutputFile,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <span class="stringliteral">&quot;\tMemoizations: %zu\n&quot;</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="stringliteral">&quot;\tCalculations: %zu\n&quot;</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <span class="stringliteral">&quot;\tTotal: %zu\n&quot;</span>,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>.<a class="code hl_variable" href="group___t_memoizer.html#ab9ddadd49c2d4617d29ba237df7097dd">iMemoizations</a>, aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>.<a class="code hl_variable" href="group___t_memoizer.html#a3758d641db6b6adec41e98f268cfca1d">iCalculations</a>, aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>.<a class="code hl_variable" href="group___t_memoizer.html#ab9ddadd49c2d4617d29ba237df7097dd">iMemoizations</a> + aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a>.<a class="code hl_variable" href="group___t_memoizer.html#a3758d641db6b6adec41e98f268cfca1d">iCalculations</a>) &gt;= 0;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#gac3b680c64e6cdba34bd7bfab1bd68d66">  134</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_memoizer.html#gac3b680c64e6cdba34bd7bfab1bd68d66">memoizer_clear</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">if</span>(!aM)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">iPos</a> = aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a> = 0;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">iStats</a> = (<span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer_stats">TMemoizerStats</a>) { 0, };</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="group___t_memoizer.html#gae130deba979f5244c43be229606bf163">  148</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_memoizer.html#gae130deba979f5244c43be229606bf163">memoizer_destroy</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a> *aM)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">if</span>(!aM)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    free(aM-&gt;<a class="code hl_variable" href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">iArchive</a>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    *aM = (<span class="keyword">struct </span><a class="code hl_struct" href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a>) { 0, };</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#endif </span><span class="comment">/* MEMOIZER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup___t_memoized_func_html_gad577912815cb8fd69e8a91fe4de09a63"><div class="ttname"><a href="group___t_memoized_func.html#gad577912815cb8fd69e8a91fe4de09a63">TMemoizedFuncInput</a></div><div class="ttdeci">unsigned TMemoizedFuncInput</div><div class="ttdoc">Definice vstupního typu pro memoizer (shodný typ jako má vstupní argument memoizované funkce)</div><div class="ttdef"><b>Definition</b> memoizer.h:24</div></div>
+<div class="ttc" id="agroup___t_memoized_func_html_gaf729d76bb0587bd5e942cebaab0160e2"><div class="ttname"><a href="group___t_memoized_func.html#gaf729d76bb0587bd5e942cebaab0160e2">TMemoizedFuncOutput</a></div><div class="ttdeci">unsigned TMemoizedFuncOutput</div><div class="ttdoc">Definice výstupního typu pro memoizer (shodný typ jako má návratová hodnota memoizované funkce)</div><div class="ttdef"><b>Definition</b> memoizer.h:25</div></div>
+<div class="ttc" id="agroup___t_memoized_func_html_gafe023c41396fda9a78a3ac980e80b956"><div class="ttname"><a href="group___t_memoized_func.html#gafe023c41396fda9a78a3ac980e80b956">TMemoizedFunc</a></div><div class="ttdeci">TMemoizedFuncOutput TMemoizedFunc(TMemoizedFuncInput)</div><div class="ttdoc">Definice typu TMemoizedFunc reprezentující požadovaný prototyp pro memoizované funkce.</div><div class="ttdef"><b>Definition</b> memoizer.h:26</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a0073a4b8ee18a325922e65f0489d937c"><div class="ttname"><a href="group___t_memoizer.html#a0073a4b8ee18a325922e65f0489d937c">TMemoizer::iMemoizedFunc</a></div><div class="ttdeci">TMemoizedFunc * iMemoizedFunc</div><div class="ttdoc">Ukazatel na asociovanou funkci vracející typ TMemoizedFuncOutput a mající jeden parametr typu TMemoiz...</div><div class="ttdef"><b>Definition</b> memoizer.h:52</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a052ad16ff773540b3565171e4f102ff3"><div class="ttname"><a href="group___t_memoizer.html#a052ad16ff773540b3565171e4f102ff3">TMemoizer::iArchive</a></div><div class="ttdeci">struct TMemoizerItem * iArchive</div><div class="ttdoc">Ukazatel na počáteční prvek pole (archiv) hodnot typu MemoizerItem (tj. pár: vstup a výstup funkce)</div><div class="ttdef"><b>Definition</b> memoizer.h:53</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a27ffb91c868c8e4ecd0f87d21dada53f"><div class="ttname"><a href="group___t_memoizer.html#a27ffb91c868c8e4ecd0f87d21dada53f">TMemoizer::iSize</a></div><div class="ttdeci">size_t iSize</div><div class="ttdoc">Aktuálně archivovaný počet prvků v poli (archivu) hodnot typu MemoizerItem.</div><div class="ttdef"><b>Definition</b> memoizer.h:56</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a3758d641db6b6adec41e98f268cfca1d"><div class="ttname"><a href="group___t_memoizer.html#a3758d641db6b6adec41e98f268cfca1d">TMemoizerStats::iCalculations</a></div><div class="ttdeci">size_t iCalculations</div><div class="ttdoc">Celkový počet neúspěšných nálezů dříve spočtené hodnoty funkce, které vedou k novému volání funkce,...</div><div class="ttdef"><b>Definition</b> memoizer.h:44</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a43397a809378d641b4e4c04fe1b6291e"><div class="ttname"><a href="group___t_memoizer.html#a43397a809378d641b4e4c04fe1b6291e">TMemoizer::iStats</a></div><div class="ttdeci">struct TMemoizerStats iStats</div><div class="ttdoc">Statistika počtu volání memoizeru.</div><div class="ttdef"><b>Definition</b> memoizer.h:57</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a653670a6d238caa045872f0682ec52b3"><div class="ttname"><a href="group___t_memoizer.html#a653670a6d238caa045872f0682ec52b3">TMemoizer::iPos</a></div><div class="ttdeci">size_t iPos</div><div class="ttdoc">Aktuální index prvku v poli (archivu) hodnot typu MemoizerItem určeného pro vložení nově zapamatované...</div><div class="ttdef"><b>Definition</b> memoizer.h:55</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a6572bbed817855a11d0fd18272706cdf"><div class="ttname"><a href="group___t_memoizer.html#a6572bbed817855a11d0fd18272706cdf">TMemoizer::iCapacity</a></div><div class="ttdeci">size_t iCapacity</div><div class="ttdoc">Celkový počet alokovaných prvků v poli (archivu) hodnot typu MemoizerItem.</div><div class="ttdef"><b>Definition</b> memoizer.h:54</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a8347ff27dfc07d967eef5266686cb18d"><div class="ttname"><a href="group___t_memoizer.html#a8347ff27dfc07d967eef5266686cb18d">TMemoizerItem::iOutput</a></div><div class="ttdeci">TMemoizedFuncOutput iOutput</div><div class="ttdoc">Memoizovaná návratová hodnota funkce (pro danou vstupní hodnotu)</div><div class="ttdef"><b>Definition</b> memoizer.h:35</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_a8cf8b4b29d4621f8b3d3830c9ce56e17"><div class="ttname"><a href="group___t_memoizer.html#a8cf8b4b29d4621f8b3d3830c9ce56e17">TMemoizerItem::iInput</a></div><div class="ttdeci">TMemoizedFuncInput iInput</div><div class="ttdoc">Memoizovaná hodnota vstupního argumentu funkce (vstupní hodnota)</div><div class="ttdef"><b>Definition</b> memoizer.h:34</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_ab9ddadd49c2d4617d29ba237df7097dd"><div class="ttname"><a href="group___t_memoizer.html#ab9ddadd49c2d4617d29ba237df7097dd">TMemoizerStats::iMemoizations</a></div><div class="ttdeci">size_t iMemoizations</div><div class="ttdoc">Celkový počet úspěšných nálezů dříve spočtené hodnoty funkce pro zadaný parametr, (Memoizer Hit)</div><div class="ttdef"><b>Definition</b> memoizer.h:43</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_af869627c3c2f24bfaf2f1c9e87fa78d9"><div class="ttname"><a href="group___t_memoizer.html#af869627c3c2f24bfaf2f1c9e87fa78d9">TMemoizer::iTmpOutput</a></div><div class="ttdeci">TMemoizedFuncOutput iTmpOutput</div><div class="ttdoc">Optimalizace pro úsporu 1 proměnné na zásobníku pro každou úroveň rekurze.</div><div class="ttdef"><b>Definition</b> memoizer.h:58</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_ga0bbdcccd8a7105b3113829fd80f2cada"><div class="ttname"><a href="group___t_memoizer.html#ga0bbdcccd8a7105b3113829fd80f2cada">memoizer_print_stats</a></div><div class="ttdeci">static bool memoizer_print_stats(const struct TMemoizer *aM, FILE *aOutputFile)</div><div class="ttdoc">Zobrazení hodnoty statistik počtu volání memoizeru.</div><div class="ttdef"><b>Definition</b> memoizer.h:117</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_ga3cdbc39bcc445c7d6d8c6afd9376a632"><div class="ttname"><a href="group___t_memoizer.html#ga3cdbc39bcc445c7d6d8c6afd9376a632">memoizer_eval</a></div><div class="ttdeci">static TMemoizedFuncOutput memoizer_eval(struct TMemoizer *aM, TMemoizedFuncInput aInput)</div><div class="ttdoc">Volání memoizeru zajišťující získání výsledku asociované funkce pro zadaný parametr.</div><div class="ttdef"><b>Definition</b> memoizer.h:87</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_ga7fd4a076d3b98ab7b0f67fcdb797b67c"><div class="ttname"><a href="group___t_memoizer.html#ga7fd4a076d3b98ab7b0f67fcdb797b67c">memoizer_init</a></div><div class="ttdeci">static bool memoizer_init(struct TMemoizer *aM, size_t aCapacity, TMemoizedFunc *aMemoizedFunc)</div><div class="ttdoc">Inicializace memoizeru, asociace s memoizovanou funkcí, alokace vnitřního pole pro pár hodnot vstup a...</div><div class="ttdef"><b>Definition</b> memoizer.h:68</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_gac3b680c64e6cdba34bd7bfab1bd68d66"><div class="ttname"><a href="group___t_memoizer.html#gac3b680c64e6cdba34bd7bfab1bd68d66">memoizer_clear</a></div><div class="ttdeci">static bool memoizer_clear(struct TMemoizer *aM)</div><div class="ttdoc">Smazání archivovaných hodnot v memoizeru, vynulování statistik o počty volání memoizeru.</div><div class="ttdef"><b>Definition</b> memoizer.h:134</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_gae130deba979f5244c43be229606bf163"><div class="ttname"><a href="group___t_memoizer.html#gae130deba979f5244c43be229606bf163">memoizer_destroy</a></div><div class="ttdeci">static void memoizer_destroy(struct TMemoizer *aM)</div><div class="ttdoc">Deinicializace memoizeru.</div><div class="ttdef"><b>Definition</b> memoizer.h:148</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_struct_t_memoizer"><div class="ttname"><a href="group___t_memoizer.html#struct_t_memoizer">TMemoizer</a></div><div class="ttdoc">Definice typu TMemoizer.</div><div class="ttdef"><b>Definition</b> memoizer.h:51</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_struct_t_memoizer_item"><div class="ttname"><a href="group___t_memoizer.html#struct_t_memoizer_item">TMemoizerItem</a></div><div class="ttdoc">Definice typu TMemoizerItem.</div><div class="ttdef"><b>Definition</b> memoizer.h:33</div></div>
+<div class="ttc" id="agroup___t_memoizer_html_struct_t_memoizer_stats"><div class="ttname"><a href="group___t_memoizer.html#struct_t_memoizer_stats">TMemoizerStats</a></div><div class="ttdoc">Definice typu MemoizerStats.</div><div class="ttdef"><b>Definition</b> memoizer.h:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 22. bře 2024 15.11:26, pro projekt: BPC-ALD: ALG Recursions (Fibonacci), programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

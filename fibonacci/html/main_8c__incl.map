@@ -1,0 +1,23 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="Node000001" title="Hlavní program (testbench) testující různé implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="107,5,168,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,225,67,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,33,88,53,59,80,42,104,32,125,27,148,28,177,33,211,28,212,23,178,22,147,27,123,37,101,55,77,85,49,115,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="37,152,96,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,33,93,53,72,80,65,109,65,138,60,138,59,108,67,78,89,49,115,29"/>
+<area shape="rect" id="Node000004" href="$main__support_8h.html" title="Soubor pro multiplatformní podporu programu v různých OS." alt="" coords="82,79,193,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,31,140,65,135,65,135,31"/>
+<area shape="rect" id="Node000005" href="$fibonacci_8h.html" title="Deklarace různých variant implementace výpočtu hodnot Fibonacciho posloupnosti." alt="" coords="217,79,301,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="158,28,229,69,226,74,155,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="325,79,393,104"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="169,27,313,72,311,78,167,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="128,106,90,144,86,140,124,102"/>
+<area shape="rect" id="Node000006" href="$memoizer_8h.html" title="Definice typu reprezentující memoizační funktor." alt="" coords="192,152,283,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="258,105,247,140,242,138,253,104"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="206,180,80,224,79,219,204,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="112,225,176,251"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="224,179,172,219,168,215,221,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="200,225,275,251"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="240,178,240,212,235,212,235,178"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="299,225,368,251"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="254,175,308,215,305,219,251,180"/>
+</map>
