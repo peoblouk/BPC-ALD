@@ -8,28 +8,42 @@
 #include "fibonacci.h"
 
 //-----------------------------------------------------------------------
-// Implementace stromovou rekurzi
+// Implementace stromovou rekurzi // a(n) = a(n-1) + a(n-2)
 unsigned fibonacci1(unsigned n)
 	{
-	return 42;
+	if (n < 2)
+		return n;
+	return fibonacci1(n - 1) + fibonacci1(n - 2);
 	}
 
 //-----------------------------------------------------------------------
-// Implementace iteraci
+// Implementace iteraci 
 unsigned fibonacci2(unsigned n)
 	{
-	//unsigned fib_n_1 = 42;	// fibonacci(n-1)
-	//unsigned fib_n_2 = 42;	// fibonacci(n-2)
-	return 42;
+	unsigned fib_n_1 = 1; // a(n-1)
+	unsigned fib_n_2 = 0; // a(n-2)
+
+	while (n-- > 0)
+		{
+		unsigned tmp = fib_n_1 + fib_n_2;
+		fib_n_2 = fib_n_1; // předám hodnotu
+		fib_n_1 = tmp;
+		}
+	return fib_n_2;
 	}
 
 //-----------------------------------------------------------------------
-// Implementace stromovou rekurzi s memoizaci
+// Implementace stromovou rekurzi s memoizaci // memoizer je tabulka
 struct TMemoizer mfibonacci3 = { 0, }; // Instance memoizeru
 
 unsigned fibonacci3(unsigned n)
 	{
-	return 42;
+	if (n < 2)
+		return n;
+
+	return memoizer_eval(&mfibonacci3, n - 1) + memoizer_eval(&mfibonacci3, n - 2);
+
+// 	return fibonacci1(n - 1) + fibonacci1(n - 2);
 	}
 
 unsigned fibonacci3_wrapper(unsigned n)
@@ -43,7 +57,9 @@ unsigned fibonacci3_wrapper(unsigned n)
  */
 unsigned fibonacci4_worker(unsigned n, unsigned fib_n_1, unsigned fib_n_2)
 	{
-	return 42;
+	if (n < 2)
+		return fib_n_2;
+	return fibonacci4_worker(--n, fib_n_1 + fib_n_2, fib_n_1);
 	}
 
 unsigned fibonacci4(unsigned n)

@@ -9,6 +9,23 @@
 
 bool wildcard_match(const char aWildCardStr[], const char aStr[])
 	{
-	//printf("\twildcard_match(\"%s\",\"%s\")\n", aWildCardStr, aStr);
+	printf("\twildcard_match(\"%s\",\"%s\")\n", aWildCardStr, aStr);
+	
+	if (*aWildCardStr == '\0' && *aStr == '\0') // Narazil jsem na konec řetězce
+		return true;
+	
+	if (*aWildCardStr == *aStr) // hvězdička značí dereferenci
+		return wildcard_match(aWildCardStr + 1, aStr + 1); // Zavolám rekurzi
+
+	if (*aWildCardStr == '?') 
+		if (*aStr == '\0')
+			return false;
+		else
+			return wildcard_match(aWildCardStr + 1, aStr + 1); // Zavolám rekurzi
+
+	if (*aWildCardStr == '*')
+		if(*aWildCardStr == '\0')
+			return wildcard_match(aWildCardStr - 1, aStr - 1); // Zavolám rekurzi
+
 	return false;
 	}
