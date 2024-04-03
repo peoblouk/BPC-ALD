@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
 	//sort_testing("Shaker Sort", shaker_sort, &vector_orig);
 
 	sort_testing("Shell Sort", shell_sort, &vector_orig);
-	sort_testing("Quick Sort", quick_sort, &vector_orig);
+	// sort_testing("Quick Sort", quick_sort, &vector_orig);
 
 	vector_destroy(&vector_orig);
 	return 0;
