@@ -83,11 +83,11 @@ static void quick_sort_worker(struct TVector * /*restrict*/ aVector, size_t k, s
 	size_t j = l; // Průběžné indexy
 
 	do {
-		for (; vector_value(aVector, i) <= tmp; i++); // Procházím dozadu, pokud najdu číslo větší jak prostřední pivot, tak ukončím
-		for (; vector_value(aVector, j) >= tmp; j--); // Procházím zezadu
+		for (; vector_compare_position_value(aVector, i, tmp) < 0; i++); // Procházím dozadu, pokud najdu číslo větší jak prostřední pivot, tak ukončím
+		for (; vector_value(aVector, j, tmp) > 0; j--); // Procházím zezadu
 		if (i > j)
 			break;
-		vector_move_positions(aVector, i, aVector, k); // SWAP
+		vector_move_positions(aVector, i, aVector, j); // SWAP
 		i++;
 
 		if (j > k)
