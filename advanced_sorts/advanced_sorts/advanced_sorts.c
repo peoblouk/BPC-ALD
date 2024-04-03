@@ -76,19 +76,17 @@ void shell_sort(struct TVector *aVector)
 static void quick_sort_worker(struct TVector * /*restrict*/ aVector, size_t k, size_t l) // Rozdělím na dvě části s = (k + l) / 2
 	{
 	size_t s = (k + l) / 2; // Index pivotu (volím jako střed)
-
 	TVectorElement tmp = vector_value(aVector, s); // vyberu hodnotu a porovnávám jí v nesetrizene oblasti
-
 	size_t i = k; // Průběžné indexy
 	size_t j = l; // Průběžné indexy
 
 	do {
-		for (; vector_compare_position_value(aVector, i, tmp) < 0; i++); // Procházím dozadu, pokud najdu číslo větší jak prostřední pivot, tak ukončím
-		for (; vector_value(aVector, j, tmp) > 0; j--); // Procházím zezadu
+		for (; vector_compare_position_value(aVector, i, tmp) < 0; ++i); // Procházím dozadu, pokud najdu číslo větší jak prostřední pivot, tak ukončím
+		for (; vector_compare_position_value(aVector, j, tmp) > 0; --j); // Procházím zezadu
 		if (i > j)
 			break;
-		vector_move_positions(aVector, i, aVector, j); // SWAP
-		i++;
+		vector_swap_positions(aVector, i, aVector, j); // SWAP
+		++i;
 
 		if (j > k)
 			--j;
@@ -96,7 +94,6 @@ static void quick_sort_worker(struct TVector * /*restrict*/ aVector, size_t k, s
 	
 		if (j > k)
 			quick_sort_worker(aVector, k, j);
-
 		if (i < l)
 			quick_sort_worker(aVector, i, l);
 	}
