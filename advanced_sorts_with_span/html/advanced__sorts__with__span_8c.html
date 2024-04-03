@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts with Span: Dokumentace souboru advanced_sorts_with_span.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts with Span<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53d929c00b6558198668cd6e7a29e136.html">advanced_sorts_with_span</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a> &#124;
+<a href="#var-members">Proměnné</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru advanced_sorts_with_span.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace API účinnějších metod třídění využívající typ Span.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="advanced__sorts__with__span_8h_source.html">advanced_sorts_with_span.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_span_8h_source.html">TSpan.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro advanced_sorts_with_span.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts__with__span_8c__incl.svg" width="446" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:a9efda83f1182fe5f74ed8ce11b2ddfca" id="r_a9efda83f1182fe5f74ed8ce11b2ddfca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9efda83f1182fe5f74ed8ce11b2ddfca">print_element_if</a> (bool aCondition, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:a9efda83f1182fe5f74ed8ce11b2ddfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formátovaný tisk hodnoty elementu za předpokladu platné hodnoty.  <br /></td></tr>
+<tr class="separator:a9efda83f1182fe5f74ed8ce11b2ddfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1526ecf4371ecb71f2bc68954f16681f" id="r_a1526ecf4371ecb71f2bc68954f16681f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1526ecf4371ecb71f2bc68954f16681f">quick_sort_with_span_worker</a> (struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a> aSpan)</td></tr>
+<tr class="memdesc:a1526ecf4371ecb71f2bc68954f16681f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)  <br /></td></tr>
+<tr class="separator:a1526ecf4371ecb71f2bc68954f16681f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga451c79ea7ae3de87d73ed333460ea2d5" id="r_ga451c79ea7ae3de87d73ed333460ea2d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___advanced_sorts_with_span.html#ga451c79ea7ae3de87d73ed333460ea2d5">quick_sort_with_span</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga451c79ea7ae3de87d73ed333460ea2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rychlé třídění výměnou (Quick Sort with span) s volbou prostředního prvku jako pivota a využívající typu Span.  <br /></td></tr>
+<tr class="separator:ga451c79ea7ae3de87d73ed333460ea2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Proměnné</h2></td></tr>
+<tr class="memitem:ac3d0c60f5764510b0521f21ec6bc8d18" id="r_ac3d0c60f5764510b0521f21ec6bc8d18"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3d0c60f5764510b0521f21ec6bc8d18">gVector_begin_it</a> = { 0 }</td></tr>
+<tr class="memdesc:ac3d0c60f5764510b0521f21ec6bc8d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bohužel z důvodů tisku hodnot elementů, je zde třeba globalní proměnná :-(.  <br /></td></tr>
+<tr class="separator:ac3d0c60f5764510b0521f21ec6bc8d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace API účinnějších metod třídění využívající typ Span. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="advanced__sorts__with__span_8c.html" title="Implementace API účinnějších metod třídění využívající typ Span.">advanced_sorts_with_span.c</a> 2672 2024-03-25 15:06:33Z petyovsky </dd></dl>
+</div><h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="a9efda83f1182fe5f74ed8ce11b2ddfca" name="a9efda83f1182fe5f74ed8ce11b2ddfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efda83f1182fe5f74ed8ce11b2ddfca">&#9670;&#160;</a></span>print_element_if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void print_element_if </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>aCondition</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formátovaný tisk hodnoty elementu za předpokladu platné hodnoty. </p>
+<p>Vytiskne formátovaně hodnotu elementu pokud je parametr <code>aCondition</code> platný, jinak se vytisknou zástupné znaky. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aCondition</td><td>pokud je <code>true</code> bude hodnota vytisknuta, jinak se tisknou zástupné znaky </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na iterátor určující element k vytisknutí </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts__with__span_8c_a9efda83f1182fe5f74ed8ce11b2ddfca_cgraph.svg" width="508" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1526ecf4371ecb71f2bc68954f16681f" name="a1526ecf4371ecb71f2bc68954f16681f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1526ecf4371ecb71f2bc68954f16681f">&#9670;&#160;</a></span>quick_sort_with_span_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void quick_sort_with_span_worker </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a></td>          <td class="paramname"><span class="paramname"><em>aSpan</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort) </p>
+<p>Realizuje rekurzivní funkci pro třídicí metodu (Quick Sort) pro omezený rozsah elementů vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aSpan</td><td>Omezený rozsah elementů vektoru </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts__with__span_8c_a1526ecf4371ecb71f2bc68954f16681f_cgraph.svg" width="1058" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts__with__span_8c_a1526ecf4371ecb71f2bc68954f16681f_icgraph.svg" width="451" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace proměnných</h2>
+<a id="ac3d0c60f5764510b0521f21ec6bc8d18" name="ac3d0c60f5764510b0521f21ec6bc8d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d0c60f5764510b0521f21ec6bc8d18">&#9670;&#160;</a></span>gVector_begin_it</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> gVector_begin_it = { 0 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bohužel z důvodů tisku hodnot elementů, je zde třeba globalní proměnná :-(. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:43, pro projekt: BPC-ALD: ALG Advanced Sorts with Span, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+------ Insert Sort ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 9
+ Swaps: 0
+ Moves: 0
+ Value Gets: 9
+ Value Sets: 9
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Shell Sort ------
+h: 3
+0 1 2 3 4 5 6 7 8 9 
+0 . . 3 . . . . . . 
+0 . . 3 . . 6 . . . 
+0 . . 3 . . 6 . . 9 
+
+0 1 2 3 4 5 6 7 8 9 
+. 1 . . 4 . . . . . 
+. 1 . . 4 . . 7 . . 
+
+0 1 2 3 4 5 6 7 8 9 
+. . 2 . . 5 . . . . 
+. . 2 . . 5 . . 8 . 
+
+h: 1
+0 1 2 3 4 5 6 7 8 9 
+0 1 . . . . . . . . 
+0 1 2 . . . . . . . 
+0 1 2 3 . . . . . . 
+0 1 2 3 4 . . . . . 
+0 1 2 3 4 5 . . . . 
+0 1 2 3 4 5 6 . . . 
+0 1 2 3 4 5 6 7 . . 
+0 1 2 3 4 5 6 7 8 . 
+0 1 2 3 4 5 6 7 8 9 
+
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 16
+ Swaps: 0
+ Moves: 0
+ Value Gets: 16
+ Value Sets: 16
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Quick Sort ------
+0 1 2 3 4 5 6 7 8 9 
+0 1 2 3 . . . . . . 
+. . 2 3 . . . . . . 
+. . . . . 5 6 7 8 9 
+. . . . . 5 6 . . . 
+. . . . . . . . 8 9 
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 31
+ Swaps: 6
+ Moves: 0
+ Value Gets: 6
+ Value Sets: 0
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Quick Sort with span ------
+0 1 2 3 4 5 6 7 8 9 
+0 1 2 3 . . . . . . 
+. . 2 3 . . . . . . 
+. . . . . 5 6 7 8 9 
+. . . . . 5 6 . . . 
+. . . . . . . . 8 9 
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 31
+ Swaps: 6
+ Moves: 0
+ Value Gets: 6
+ Value Sets: 0
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 25
+ Value Sets: 0

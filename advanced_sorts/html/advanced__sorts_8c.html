@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts: Dokumentace souboru advanced_sorts.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b55ce9e204d38305704b4b46468c27fd.html">advanced_sorts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru advanced_sorts.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace API účinnějších metod třídění  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="advanced__sorts_8h_source.html">advanced_sorts.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro advanced_sorts.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts_8c__incl.svg" width="446" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:a4b9bbfb5712de6efbad32b8691e5cec6" id="r_a4b9bbfb5712de6efbad32b8691e5cec6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b9bbfb5712de6efbad32b8691e5cec6">print_element_if</a> (bool aCondition, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:a4b9bbfb5712de6efbad32b8691e5cec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formátovaný tisk hodnoty elementu za předpokladu platné hodnoty.  <br /></td></tr>
+<tr class="separator:a4b9bbfb5712de6efbad32b8691e5cec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee070b00692f425d83eaea28b37bab2b" id="r_gaee070b00692f425d83eaea28b37bab2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b">shell_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaee070b00692f425d83eaea28b37bab2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti.  <br /></td></tr>
+<tr class="separator:gaee070b00692f425d83eaea28b37bab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae77c9640aa821e5507079ec5d2eb1d" id="r_a0ae77c9640aa821e5507079ec5d2eb1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ae77c9640aa821e5507079ec5d2eb1d">quick_sort_worker</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t k, size_t l)</td></tr>
+<tr class="memdesc:a0ae77c9640aa821e5507079ec5d2eb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)  <br /></td></tr>
+<tr class="separator:a0ae77c9640aa821e5507079ec5d2eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa369b74c9050d30aa2416f9dba8cc8f5" id="r_gaa369b74c9050d30aa2416f9dba8cc8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5">quick_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaa369b74c9050d30aa2416f9dba8cc8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota.  <br /></td></tr>
+<tr class="separator:gaa369b74c9050d30aa2416f9dba8cc8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace API účinnějších metod třídění </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění">advanced_sorts.c</a> 2672 2024-03-25 15:06:33Z petyovsky </dd></dl>
+</div><h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="a4b9bbfb5712de6efbad32b8691e5cec6" name="a4b9bbfb5712de6efbad32b8691e5cec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9bbfb5712de6efbad32b8691e5cec6">&#9670;&#160;</a></span>print_element_if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void print_element_if </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>aCondition</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formátovaný tisk hodnoty elementu za předpokladu platné hodnoty. </p>
+<p>Vytiskne formátovaně hodnotu elementu pokud je parametr <code>aCondition</code> platný, jinak se vytisknou zástupné znaky. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aCondition</td><td>pokud je <code>true</code> bude hodnota vytisknuta, jinak se tisknou zástupné znaky </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu k vytisknutí </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts_8c_a4b9bbfb5712de6efbad32b8691e5cec6_cgraph.svg" width="340" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0ae77c9640aa821e5507079ec5d2eb1d" name="a0ae77c9640aa821e5507079ec5d2eb1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae77c9640aa821e5507079ec5d2eb1d">&#9670;&#160;</a></span>quick_sort_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void quick_sort_worker </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>k</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>l</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort) </p>
+<p>Realizuje rekurzivní funkci pro třídicí metodu (Quick Sort) pro elementy vektoru v rozsahu pozic <code>&lt;k,l&gt;</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td>Index levého elementu z rozsahu <code>&lt;k,l&gt;</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>Index pravého elementu z rozsahu <code>&lt;k,l&gt;</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts_8c_a0ae77c9640aa821e5507079ec5d2eb1d_cgraph.svg" width="580" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="advanced__sorts_8c_a0ae77c9640aa821e5507079ec5d2eb1d_icgraph.svg" width="367" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:25, pro projekt: BPC-ALD: ALG Advanced Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

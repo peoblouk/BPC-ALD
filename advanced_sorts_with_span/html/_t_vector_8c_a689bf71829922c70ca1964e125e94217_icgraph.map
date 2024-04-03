@@ -1,0 +1,18 @@
+<map id="vector_fast_set_value" name="vector_fast_set_value">
+<area shape="rect" id="Node000001" title=" " alt="" coords="487,55,632,80"/>
+<area shape="rect" id="Node000002" href="$group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca" title="Zapsání hodnoty elementu do vektoru pomocí iterátoru." alt="" coords="311,9,439,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,54,439,45,440,39,485,49"/>
+<area shape="rect" id="Node000004" href="$group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici." alt="" coords="316,93,433,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="485,86,434,96,433,91,484,80"/>
+<area shape="rect" id="Node000003" href="$group___t_span.html#gad7325743f683c214db12e5f7070569a7" title="Zapsání hodnoty elementu do Spanu pomocí iterátoru." alt="" coords="104,5,263,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,27,263,25,263,20,297,22"/>
+<area shape="rect" id="Node000005" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="142,55,225,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="302,94,225,78,226,73,303,89"/>
+<area shape="rect" id="Node000007" href="$group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="144,104,223,129"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="302,113,223,117,223,112,302,107"/>
+<area shape="rect" id="Node000008" href="$group___t_span.html#ga56e402bae9f24dffb084212da636a128" title="Zapsání hodnoty elementu do Spanu na požadovanou pozici." alt="" coords="128,153,239,179"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="322,126,263,145,227,156,226,151,262,139,321,121"/>
+<area shape="rect" id="Node000006" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,80,56,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="129,79,57,91,56,86,128,74"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="130,111,56,99,57,94,131,106"/>
+</map>

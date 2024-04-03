@@ -1,0 +1,13 @@
+<map id="shell_sort" name="shell_sort">
+<area shape="rect" id="Node000001" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="5,95,84,121"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="132,5,297,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,93,131,55,145,48,147,53,133,60,67,98"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru." alt="" coords="139,70,291,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,100,125,93,126,99,85,105"/>
+<area shape="rect" id="Node000005" href="$group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici." alt="" coords="156,119,273,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="85,111,142,119,142,124,84,116"/>
+<area shape="rect" id="Node000006" href="$group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici." alt="" coords="169,169,261,194"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="67,118,133,154,156,162,154,167,131,158,65,123"/>
+<area shape="rect" id="Node000003" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="345,13,527,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,23,332,23,332,28,297,28"/>
+</map>

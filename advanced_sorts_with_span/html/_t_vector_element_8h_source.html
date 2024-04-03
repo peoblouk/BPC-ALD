@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts with Span: Zdrojový soubor TVectorElement.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts with Span<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53d929c00b6558198668cd6e7a29e136.html">advanced_sorts_with_span</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TVectorElement.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_vector_element_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TVECTOR_ELEMENT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TVECTOR_ELEMENT_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;check.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">   20</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>;             </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group___t_vector_element.html#gad9705c6f7367d9a1bcef90e28ad8aa42">   21</a></span><span class="preprocessor">#define TVECTOR_ELEMENT_FRMSTR &quot;%d&quot;     </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d">   32</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d">vector_element_comparator</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aLeft, <span class="keyword">const</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aRight)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    assert(aLeft);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    assert(aRight);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span>(*aLeft == *aRight)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span>(*aLeft &lt; *aRight)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="group___t_vector_element.html#gaf9a34133c2292f807fe184c72fd3f8d8">   50</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector_element.html#gaf9a34133c2292f807fe184c72fd3f8d8">vector_element_load_file</a>(<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aElement, FILE *aInputFile)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    assert(aElement);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    assert(aInputFile);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> fscanf(aInputFile, <a class="code hl_define" href="group___t_vector_element.html#gad9705c6f7367d9a1bcef90e28ad8aa42">TVECTOR_ELEMENT_FRMSTR</a>, aElement) == 1;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="group___t_vector_element.html#gaaae5b52d7f1d155134792f040f00a385">   64</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_vector_element.html#gaaae5b52d7f1d155134792f040f00a385">vector_element_store_file</a>(<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aElement, FILE *aOutputFile)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    assert(aOutputFile);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> fprintf(aOutputFile, <a class="code hl_define" href="group___t_vector_element.html#gad9705c6f7367d9a1bcef90e28ad8aa42">TVECTOR_ELEMENT_FRMSTR</a> <span class="stringliteral">&quot; &quot;</span>, aElement) &gt;= 2;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="group___t_vector_element.html#gac2485005f9b85ee450e159a793583c9b">   74</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_function" href="group___t_vector_element.html#gac2485005f9b85ee450e159a793583c9b">vector_element_random_value</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>) { (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>)rand() };</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">/* TVECTOR_ELEMENT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup___t_vector_element_html_ga3c679c2b2440555118a3d54c6149994e"><div class="ttname"><a href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></div><div class="ttdeci">int TVectorElement</div><div class="ttdoc">Definice typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:20</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_ga82e527836fce12c93af896f65e9f701d"><div class="ttname"><a href="group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d">vector_element_comparator</a></div><div class="ttdeci">static int vector_element_comparator(const TVectorElement *aLeft, const TVectorElement *aRight)</div><div class="ttdoc">Porovnání dvou elementů</div><div class="ttdef"><b>Definition</b> TVectorElement.h:32</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_gaaae5b52d7f1d155134792f040f00a385"><div class="ttname"><a href="group___t_vector_element.html#gaaae5b52d7f1d155134792f040f00a385">vector_element_store_file</a></div><div class="ttdeci">static bool vector_element_store_file(TVectorElement aElement, FILE *aOutputFile)</div><div class="ttdoc">Uložení elementu do souboru.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:64</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_gac2485005f9b85ee450e159a793583c9b"><div class="ttname"><a href="group___t_vector_element.html#gac2485005f9b85ee450e159a793583c9b">vector_element_random_value</a></div><div class="ttdeci">static TVectorElement vector_element_random_value(void)</div><div class="ttdoc">Vrací nový element s náhodnou hodnotou.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:74</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_gad9705c6f7367d9a1bcef90e28ad8aa42"><div class="ttname"><a href="group___t_vector_element.html#gad9705c6f7367d9a1bcef90e28ad8aa42">TVECTOR_ELEMENT_FRMSTR</a></div><div class="ttdeci">#define TVECTOR_ELEMENT_FRMSTR</div><div class="ttdoc">Definice formátovacího řetězce pro souborové operace s typem VectorElement.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:21</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_gaf9a34133c2292f807fe184c72fd3f8d8"><div class="ttname"><a href="group___t_vector_element.html#gaf9a34133c2292f807fe184c72fd3f8d8">vector_element_load_file</a></div><div class="ttdeci">static bool vector_element_load_file(TVectorElement *aElement, FILE *aInputFile)</div><div class="ttdoc">Načtení elementu ze souboru.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:50</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:43, pro projekt: BPC-ALD: ALG Advanced Sorts with Span, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

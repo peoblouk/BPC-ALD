@@ -1,0 +1,16 @@
+<map id="TVector.h" name="TVector.h">
+<area shape="rect" id="Node000001" title="Definice typu Sortable Vector." alt="" coords="131,5,209,31"/>
+<area shape="rect" id="Node000002" href="$_t_vector_8c.html" title="Implementace Sortable Vector API." alt="" coords="5,79,84,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,40,66,81,64,76,137,35"/>
+<area shape="rect" id="Node000003" href="$advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění" alt="" coords="109,79,231,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,44,173,79,167,79,167,44"/>
+<area shape="rect" id="Node000006" href="$basic__sorts_8h.html" title="Deklarace API přímých metod třídění" alt="" coords="256,79,356,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="205,34,285,76,283,81,202,39"/>
+<area shape="rect" id="Node000004" href="$advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění" alt="" coords="66,152,189,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="158,117,137,153,132,151,154,114"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title="Hlavní program testující API účinnějších metod třídění" alt="" coords="213,152,274,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="194,112,233,150,230,154,190,116"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="289,116,255,154,251,150,285,113"/>
+<area shape="rect" id="Node000007" href="$basic__sorts_8c.html" title="Implementace API přímých metod třídění" alt="" coords="299,152,399,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="322,114,344,151,339,153,318,117"/>
+</map>

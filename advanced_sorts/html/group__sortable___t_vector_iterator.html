@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts: 4.1. Rozšíření pro Sortable VectorIterator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">4.1. Rozšíření pro Sortable VectorIterator<div class="ingroups"><a class="el" href="group___t_vector_iterator.html">4. Iterátor vektoru</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu VectorIterator (sortable), popis jeho rozšiřujících vlastností a funkcí  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 4.1. Rozšíření pro Sortable VectorIterator:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_iterator.svg" width="360" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gaa3e549d3e67e2168311acc8f4a494cc5" id="r_gaa3e549d3e67e2168311acc8f4a494cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aToIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aFromIter)</td></tr>
+<tr class="memdesc:gaa3e549d3e67e2168311acc8f4a494cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnoty elementu vektoru určené dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gaa3e549d3e67e2168311acc8f4a494cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd8aded92ce2c6402742a57316412d39" id="r_gadd8aded92ce2c6402742a57316412d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:gadd8aded92ce2c6402742a57316412d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot elementů vektorů určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gadd8aded92ce2c6402742a57316412d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa359594c5556fb685473666fad583ddf" id="r_gaa359594c5556fb685473666fad583ddf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:gaa359594c5556fb685473666fad583ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement.  <br /></td></tr>
+<tr class="separator:gaa359594c5556fb685473666fad583ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac16589d02c81c789a7fa6cd323a49013" id="r_gac16589d02c81c789a7fa6cd323a49013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:gac16589d02c81c789a7fa6cd323a49013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna hodnot elementů vektorů určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gac16589d02c81c789a7fa6cd323a49013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga015969daf209d461aaf0ba4391df4b5b" id="r_ga015969daf209d461aaf0ba4391df4b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue)</td></tr>
+<tr class="memdesc:ga015969daf209d461aaf0ba4391df4b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement.  <br /></td></tr>
+<tr class="separator:ga015969daf209d461aaf0ba4391df4b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu VectorIterator (sortable), popis jeho rozšiřujících vlastností a funkcí </p>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="gaa3e549d3e67e2168311acc8f4a494cc5" name="gaa3e549d3e67e2168311acc8f4a494cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3e549d3e67e2168311acc8f4a494cc5">&#9670;&#160;</a></span>vector_move_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_move_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aToIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aFromIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přesun hodnoty elementu vektoru určené dvěma iterátory. </p>
+<p>Přesun hodnoty elementu vektoru z/do pozice určené iterátory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aToIter</td><td>Iterátor na cílový element vektoru </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromIter</td><td>Iterátor na zdrojový element vektoru </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou iterátorů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_iterator_gaa3e549d3e67e2168311acc8f4a494cc5_cgraph.svg" width="388" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gadd8aded92ce2c6402742a57316412d39" name="gadd8aded92ce2c6402742a57316412d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd8aded92ce2c6402742a57316412d39">&#9670;&#160;</a></span>vector_compare_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vector_compare_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porovnání hodnot elementů vektorů určených dvěma iterátory. </p>
+<p>Trojcestně porovná hodnoty elementů určených dvěma iterátory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftIter</td><td>Iterátor určující levý element při porovnání (LHS) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightIter</td><td>Iterátor určující pravý element při porovnání (RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou iterátorů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_iterator_gadd8aded92ce2c6402742a57316412d39_cgraph.svg" width="603" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa359594c5556fb685473666fad583ddf" name="gaa359594c5556fb685473666fad583ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa359594c5556fb685473666fad583ddf">&#9670;&#160;</a></span>vector_compare_with_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vector_compare_with_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement. </p>
+<p>Trojcestně porovná hodnotu elementu vektoru na pozici iterátorem se zadanou hodnotou <code>aValue</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Iterátor určující levý element při porovnání (LHS) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota stojící při porovnání na pravé straně (RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost iterátoru <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_iterator_gaa359594c5556fb685473666fad583ddf_cgraph.svg" width="596" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac16589d02c81c789a7fa6cd323a49013" name="gac16589d02c81c789a7fa6cd323a49013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac16589d02c81c789a7fa6cd323a49013">&#9670;&#160;</a></span>vector_swap_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_swap_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Výměna hodnot elementů vektorů určených dvěma iterátory. </p>
+<p>Vzájemně zamění hodnoty elementů určených dvěma iterátory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftIter</td><td>Iterátor určující levý element vektoru </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightIter</td><td>Iterátor určující pravý element vektoru </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou iterátorů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_iterator_gac16589d02c81c789a7fa6cd323a49013_cgraph.svg" width="388" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga015969daf209d461aaf0ba4391df4b5b" name="ga015969daf209d461aaf0ba4391df4b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga015969daf209d461aaf0ba4391df4b5b">&#9670;&#160;</a></span>vector_swap_with_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vector_swap_with_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement. </p>
+<p>Vzájemně zamění hodnotu elementu vektoru určenou iterátorem se zadanou hodnotou v proměnné typu VectorElement. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Iterátor určující element vektoru pro záměnu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Ukazatel na hodnotu proměnné typu VectorElement pro záměnu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost iterátoru a ukazatele <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector_iterator_ga015969daf209d461aaf0ba4391df4b5b_cgraph.svg" width="375" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:25, pro projekt: BPC-ALD: ALG Advanced Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts with Span: Zdrojový soubor main_support.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts with Span<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53d929c00b6558198668cd6e7a29e136.html">advanced_sorts_with_span</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">main_support.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main__support_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MAIN_SUPPORT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MAIN_SUPPORT_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ITEMS_OF</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="main__support_8h.html#abd542f9343eb78fd5fd265b73cfe099a">   13</a></span><span class="preprocessor"> #define ITEMS_OF(aArray) (sizeof(aArray) / sizeof((aArray)[0]))    </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="main__support_8h.html#aa291195ad453d2b1e29004cc2e043c01">   22</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="main__support_8h.html#aa291195ad453d2b1e29004cc2e043c01">difftimespec</a>(<span class="keyword">struct</span> timespec aEnd, <span class="keyword">struct</span> timespec aBegin)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> difftime(aEnd.tv_sec, aBegin.tv_sec) + (((<span class="keywordtype">long</span> long) aEnd.tv_nsec - aBegin.tv_nsec) / 1000000000.0);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#ifdef __MACH__ </span><span class="comment">// Detect macOS</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">    #include &lt;Availability.h&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">    #if __MAC_OS_X_VERSION_MIN_REQUIRED &lt; 101500 </span><span class="comment">// macOS &lt; 10.15 (pre Catalina) does not have timespec_get, use clock_get_time</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">        #include &lt;mach/clock.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">        #include &lt;mach/mach.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">        #define TIME_UTC 1</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> timespec_get(<span class="keyword">struct</span> timespec *ts, <span class="keywordtype">int</span> unused)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            clock_serv_t cclock;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            mach_timespec_t mts;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &amp;cclock);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            clock_get_time(cclock, &amp;mts);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            mach_port_deallocate(mach_task_self(), cclock);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            ts-&gt;tv_sec = mts.tv_sec;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            ts-&gt;tv_nsec = mts.tv_nsec;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">return</span> unused;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    #endif </span><span class="comment">// __MAC_OS_X_VERSION_MIN_REQUIRED</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif </span><span class="comment">// __MACH__</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">/* MAIN_SUPPORT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="amain__support_8h_html_aa291195ad453d2b1e29004cc2e043c01"><div class="ttname"><a href="main__support_8h.html#aa291195ad453d2b1e29004cc2e043c01">difftimespec</a></div><div class="ttdeci">static double difftimespec(struct timespec aEnd, struct timespec aBegin)</div><div class="ttdoc">Výpočet doby trvání časového intervalu.</div><div class="ttdef"><b>Definition</b> main_support.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:43, pro projekt: BPC-ALD: ALG Advanced Sorts with Span, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

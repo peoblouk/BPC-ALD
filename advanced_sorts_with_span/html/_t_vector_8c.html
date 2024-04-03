@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts with Span: Dokumentace souboru TVector.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts with Span<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53d929c00b6558198668cd6e7a29e136.html">advanced_sorts_with_span</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru TVector.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace API typu Sortable Vector with shareable sortstats.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_t_vector_8h_source.html">TVector.h</a>&quot;</code><br />
+<code>#include &quot;check.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro TVector.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c__incl.svg" width="520" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gad8dab56657c4e8504ecdfef34ca91f19" id="r_gad8dab56657c4e8504ecdfef34ca91f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector__with__shareable__sortstats.html#gad8dab56657c4e8504ecdfef34ca91f19">vector_attach_sortstats</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aFromVector, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aToVector)</td></tr>
+<tr class="memdesc:gad8dab56657c4e8504ecdfef34ca91f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Napojení statistik o počtu operací s elementy jednoho vektoru na statistiky jiného vektoru.  <br /></td></tr>
+<tr class="separator:gad8dab56657c4e8504ecdfef34ca91f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1eb7199db0e7fd0d114fbf2903f05ca5" id="r_ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga1eb7199db0e7fd0d114fbf2903f05ca5">vector_init</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aSize)</td></tr>
+<tr class="memdesc:ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů na hodnotu 0.  <br /></td></tr>
+<tr class="separator:ga1eb7199db0e7fd0d114fbf2903f05ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga088d8ae405d0c100abe583c583d27ed3" id="r_ga088d8ae405d0c100abe583c583d27ed3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga088d8ae405d0c100abe583c583d27ed3">vector_init_random</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aSize)</td></tr>
+<tr class="memdesc:ga088d8ae405d0c100abe583c583d27ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů na náhodné hodnoty.  <br /></td></tr>
+<tr class="separator:ga088d8ae405d0c100abe583c583d27ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0009a6c19dd42237bbb6af9897f2e44" id="r_gac0009a6c19dd42237bbb6af9897f2e44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gac0009a6c19dd42237bbb6af9897f2e44">vector_init_file</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, FILE *aInputFile)</td></tr>
+<tr class="memdesc:gac0009a6c19dd42237bbb6af9897f2e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alokace vektoru a inicializace jeho elementů ze souboru.  <br /></td></tr>
+<tr class="separator:gac0009a6c19dd42237bbb6af9897f2e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b0b8780d60dad02b8569be119769548" id="r_ga6b0b8780d60dad02b8569be119769548"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga6b0b8780d60dad02b8569be119769548">vector_clone</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVectorClone)</td></tr>
+<tr class="memdesc:ga6b0b8780d60dad02b8569be119769548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření úplné kopie vektoru.  <br /></td></tr>
+<tr class="separator:ga6b0b8780d60dad02b8569be119769548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc5c4a8f6f5f38932380f5e475ce862f" id="r_gabc5c4a8f6f5f38932380f5e475ce862f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gabc5c4a8f6f5f38932380f5e475ce862f">vector_store_file</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:gabc5c4a8f6f5f38932380f5e475ce862f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uložení vektoru a jeho elementů do souboru.  <br /></td></tr>
+<tr class="separator:gabc5c4a8f6f5f38932380f5e475ce862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe5f1145e51f154b5470d640c5d682c" id="r_a0fe5f1145e51f154b5470d640c5d682c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fe5f1145e51f154b5470d640c5d682c">vector_fast_value</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos)</td></tr>
+<tr class="separator:a0fe5f1145e51f154b5470d640c5d682c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b08236d9825632cd96bcc89faed929c" id="r_ga2b08236d9825632cd96bcc89faed929c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos)</td></tr>
+<tr class="memdesc:ga2b08236d9825632cd96bcc89faed929c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z vektoru na požadované pozici.  <br /></td></tr>
+<tr class="separator:ga2b08236d9825632cd96bcc89faed929c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689bf71829922c70ca1964e125e94217" id="r_a689bf71829922c70ca1964e125e94217"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689bf71829922c70ca1964e125e94217">vector_fast_set_value</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="separator:a689bf71829922c70ca1964e125e94217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd5ba54950295545d27b1286234ead39" id="r_gabd5ba54950295545d27b1286234ead39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:gabd5ba54950295545d27b1286234ead39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty elementu do vektoru na požadovanou pozici.  <br /></td></tr>
+<tr class="separator:gabd5ba54950295545d27b1286234ead39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2502e6ec116dbac5e49f5b62b07dc898" id="r_ga2502e6ec116dbac5e49f5b62b07dc898"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga2502e6ec116dbac5e49f5b62b07dc898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení počtu elementů vektoru.  <br /></td></tr>
+<tr class="separator:ga2502e6ec116dbac5e49f5b62b07dc898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf502ae8257c371ab9c7fb95a242ccb2" id="r_gabf502ae8257c371ab9c7fb95a242ccb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#gabf502ae8257c371ab9c7fb95a242ccb2">vector_resize</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aNewSize)</td></tr>
+<tr class="memdesc:gabf502ae8257c371ab9c7fb95a242ccb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Změna velikosti existujícího vektoru.  <br /></td></tr>
+<tr class="separator:gabf502ae8257c371ab9c7fb95a242ccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3151269c65b7033ddecb4c3aee6566" id="r_a0e3151269c65b7033ddecb4c3aee6566"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e3151269c65b7033ddecb4c3aee6566">vector_fast_move_positions</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aToVector, size_t aToPos, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aFromVector, size_t aFromPos)</td></tr>
+<tr class="separator:a0e3151269c65b7033ddecb4c3aee6566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16623c06371077674f5d4d31e38e42a4" id="r_ga16623c06371077674f5d4d31e38e42a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aToVector, size_t aToPos, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aFromVector, size_t aFromPos)</td></tr>
+<tr class="memdesc:ga16623c06371077674f5d4d31e38e42a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnoty elementu vektoru.  <br /></td></tr>
+<tr class="separator:ga16623c06371077674f5d4d31e38e42a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188bab569c3ae8a25070f632a6f53e62" id="r_a188bab569c3ae8a25070f632a6f53e62"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a188bab569c3ae8a25070f632a6f53e62">vector_fast_compare_positions</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, size_t aLeftPos, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, size_t aRightPos)</td></tr>
+<tr class="separator:a188bab569c3ae8a25070f632a6f53e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedaf9c79afa345e5e71e5c66ab25fa26" id="r_gaedaf9c79afa345e5e71e5c66ab25fa26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, size_t aLeftPos, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, size_t aRightPos)</td></tr>
+<tr class="memdesc:gaedaf9c79afa345e5e71e5c66ab25fa26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot elementů vektorů  <br /></td></tr>
+<tr class="separator:gaedaf9c79afa345e5e71e5c66ab25fa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8254190a2b4fe570173cc77dba0ee7a4" id="r_a8254190a2b4fe570173cc77dba0ee7a4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8254190a2b4fe570173cc77dba0ee7a4">vector_fast_compare_position_value</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="separator:a8254190a2b4fe570173cc77dba0ee7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09e150aa4cdd8faabf43474ab1dbe454" id="r_ga09e150aa4cdd8faabf43474ab1dbe454"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:ga09e150aa4cdd8faabf43474ab1dbe454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.  <br /></td></tr>
+<tr class="separator:ga09e150aa4cdd8faabf43474ab1dbe454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70bbb23ab1ec16b867b3e33d40ae1c4" id="r_ac70bbb23ab1ec16b867b3e33d40ae1c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac70bbb23ab1ec16b867b3e33d40ae1c4">vector_fast_swap_positions</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, size_t aLeftPos, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, size_t aRightPos)</td></tr>
+<tr class="separator:ac70bbb23ab1ec16b867b3e33d40ae1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1982d8a0e5f66f933dc6a0413f2d23e" id="r_gac1982d8a0e5f66f933dc6a0413f2d23e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aLeftVector, size_t aLeftPos, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aRightVector, size_t aRightPos)</td></tr>
+<tr class="memdesc:gac1982d8a0e5f66f933dc6a0413f2d23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna hodnot elementů vektorů  <br /></td></tr>
+<tr class="separator:gac1982d8a0e5f66f933dc6a0413f2d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2bca540c6a2f8081d51df2f70b0ebe" id="r_a3a2bca540c6a2f8081d51df2f70b0ebe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a2bca540c6a2f8081d51df2f70b0ebe">vector_fast_swap_position_value</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue)</td></tr>
+<tr class="separator:a3a2bca540c6a2f8081d51df2f70b0ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdff161479b4c497204dc32fd2202e6f" id="r_gabdff161479b4c497204dc32fd2202e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue)</td></tr>
+<tr class="memdesc:gabdff161479b4c497204dc32fd2202e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement.  <br /></td></tr>
+<tr class="separator:gabdff161479b4c497204dc32fd2202e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b7a4850be6488c69c293bdd13f729a7" id="r_ga1b7a4850be6488c69c293bdd13f729a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#ga1b7a4850be6488c69c293bdd13f729a7">vector_is_ascendantly_sorted</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aOriginalVector, const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aSortedVector)</td></tr>
+<tr class="memdesc:ga1b7a4850be6488c69c293bdd13f729a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ověření korektního setřídění vektoru.  <br /></td></tr>
+<tr class="separator:ga1b7a4850be6488c69c293bdd13f729a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a7377bcfc71c2cc98592f1fa31deb0" id="r_ac9a7377bcfc71c2cc98592f1fa31deb0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a7377bcfc71c2cc98592f1fa31deb0">vector_fast_print_sortstats_item</a> (const struct <a class="el" href="group__sortable___t_vector.html#struct_t_vector_sort_stats_item">TVectorSortStatsItem</a> *aSortStatsItem)</td></tr>
+<tr class="separator:ac9a7377bcfc71c2cc98592f1fa31deb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0806530378fe49a3d61622ca8b9957e" id="r_gac0806530378fe49a3d61622ca8b9957e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector.html#gac0806530378fe49a3d61622ca8b9957e">vector_print_sortstats</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gac0806530378fe49a3d61622ca8b9957e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zobrazení hodnoty statistik počtu operací s elementy vektoru.  <br /></td></tr>
+<tr class="separator:gac0806530378fe49a3d61622ca8b9957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41fcff5418fe213f2caaa586f521bcd6" id="r_ga41fcff5418fe213f2caaa586f521bcd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6">vector_destroy</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga41fcff5418fe213f2caaa586f521bcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dealokace vektoru.  <br /></td></tr>
+<tr class="separator:ga41fcff5418fe213f2caaa586f521bcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40d7eff2ece0eb356d27cdcdef255560" id="r_ga40d7eff2ece0eb356d27cdcdef255560"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga40d7eff2ece0eb356d27cdcdef255560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na počáteční element.  <br /></td></tr>
+<tr class="separator:ga40d7eff2ece0eb356d27cdcdef255560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga133f7ac7efd8456d0964bf8fcd2995e6" id="r_ga133f7ac7efd8456d0964bf8fcd2995e6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga133f7ac7efd8456d0964bf8fcd2995e6">vector_iterator_pos</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector, size_t aPos)</td></tr>
+<tr class="memdesc:ga133f7ac7efd8456d0964bf8fcd2995e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na zadanou pozici.  <br /></td></tr>
+<tr class="separator:ga133f7ac7efd8456d0964bf8fcd2995e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c42552246c50cfa270c3eb0f58c239a" id="r_ga6c42552246c50cfa270c3eb0f58c239a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga6c42552246c50cfa270c3eb0f58c239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na poslední element.  <br /></td></tr>
+<tr class="separator:ga6c42552246c50cfa270c3eb0f58c239a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f8a97a63f887539e270f6845bf22b9a" id="r_ga3f8a97a63f887539e270f6845bf22b9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga3f8a97a63f887539e270f6845bf22b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:ga3f8a97a63f887539e270f6845bf22b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ce07cda016d67e3ca891125613ece56" id="r_ga7ce07cda016d67e3ca891125613ece56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a> (struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga7ce07cda016d67e3ca891125613ece56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:ga7ce07cda016d67e3ca891125613ece56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e1e1cc570f8a1c2bf1fb73c0d3c8826" id="r_ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a> (struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vzad.  <br /></td></tr>
+<tr class="separator:ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d8032eb9dbbdccf794611f2b0c9821c" id="r_ga4d8032eb9dbbdccf794611f2b0c9821c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga4d8032eb9dbbdccf794611f2b0c9821c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z vektoru pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga4d8032eb9dbbdccf794611f2b0c9821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66f6b96e416a7e593b1cf703f58be7ca" id="r_ga66f6b96e416a7e593b1cf703f58be7ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:ga66f6b96e416a7e593b1cf703f58be7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty elementu do vektoru pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga66f6b96e416a7e593b1cf703f58be7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3e549d3e67e2168311acc8f4a494cc5" id="r_gaa3e549d3e67e2168311acc8f4a494cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aToIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aFromIter)</td></tr>
+<tr class="memdesc:gaa3e549d3e67e2168311acc8f4a494cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnoty elementu vektoru určené dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gaa3e549d3e67e2168311acc8f4a494cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd8aded92ce2c6402742a57316412d39" id="r_gadd8aded92ce2c6402742a57316412d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:gadd8aded92ce2c6402742a57316412d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot elementů vektorů určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gadd8aded92ce2c6402742a57316412d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa359594c5556fb685473666fad583ddf" id="r_gaa359594c5556fb685473666fad583ddf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</td></tr>
+<tr class="memdesc:gaa359594c5556fb685473666fad583ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement.  <br /></td></tr>
+<tr class="separator:gaa359594c5556fb685473666fad583ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac16589d02c81c789a7fa6cd323a49013" id="r_gac16589d02c81c789a7fa6cd323a49013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:gac16589d02c81c789a7fa6cd323a49013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna hodnot elementů vektorů určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gac16589d02c81c789a7fa6cd323a49013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga015969daf209d461aaf0ba4391df4b5b" id="r_ga015969daf209d461aaf0ba4391df4b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter, <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue)</td></tr>
+<tr class="memdesc:ga015969daf209d461aaf0ba4391df4b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement.  <br /></td></tr>
+<tr class="separator:ga015969daf209d461aaf0ba4391df4b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c48fdc01e22389dff6202955542499a" id="r_ga6c48fdc01e22389dff6202955542499a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector__with__shareable__sortstats.html#ga6c48fdc01e22389dff6202955542499a">vector_iterators_are_same</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga6c48fdc01e22389dff6202955542499a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test shodnosti dvou iterátorů  <br /></td></tr>
+<tr class="separator:ga6c48fdc01e22389dff6202955542499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace API typu Sortable Vector with shareable sortstats. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="_t_vector_8c.html" title="Implementace API typu Sortable Vector with shareable sortstats.">TVector.c</a> 2669 2024-03-25 13:23:11Z petyovsky </dd></dl>
+</div><h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="a0fe5f1145e51f154b5470d640c5d682c" name="a0fe5f1145e51f154b5470d640c5d682c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe5f1145e51f154b5470d640c5d682c">&#9670;&#160;</a></span>vector_fast_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> vector_fast_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a0fe5f1145e51f154b5470d640c5d682c_icgraph.svg" width="987" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a689bf71829922c70ca1964e125e94217" name="a689bf71829922c70ca1964e125e94217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689bf71829922c70ca1964e125e94217">&#9670;&#160;</a></span>vector_fast_set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vector_fast_set_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a689bf71829922c70ca1964e125e94217_icgraph.svg" width="638" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0e3151269c65b7033ddecb4c3aee6566" name="a0e3151269c65b7033ddecb4c3aee6566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3151269c65b7033ddecb4c3aee6566">&#9670;&#160;</a></span>vector_fast_move_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vector_fast_move_positions </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aToVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aToPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aFromVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aFromPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a0e3151269c65b7033ddecb4c3aee6566_icgraph.svg" width="734" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a188bab569c3ae8a25070f632a6f53e62" name="a188bab569c3ae8a25070f632a6f53e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188bab569c3ae8a25070f632a6f53e62">&#9670;&#160;</a></span>vector_fast_compare_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int vector_fast_compare_positions </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aLeftPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aRightPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a188bab569c3ae8a25070f632a6f53e62_cgraph.svg" width="382" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a188bab569c3ae8a25070f632a6f53e62_icgraph.svg" width="611" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8254190a2b4fe570173cc77dba0ee7a4" name="a8254190a2b4fe570173cc77dba0ee7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8254190a2b4fe570173cc77dba0ee7a4">&#9670;&#160;</a></span>vector_fast_compare_position_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int vector_fast_compare_position_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a8254190a2b4fe570173cc77dba0ee7a4_cgraph.svg" width="382" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a8254190a2b4fe570173cc77dba0ee7a4_icgraph.svg" width="1086" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac70bbb23ab1ec16b867b3e33d40ae1c4" name="ac70bbb23ab1ec16b867b3e33d40ae1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70bbb23ab1ec16b867b3e33d40ae1c4">&#9670;&#160;</a></span>vector_fast_swap_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vector_fast_swap_positions </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aLeftPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aRightPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_ac70bbb23ab1ec16b867b3e33d40ae1c4_icgraph.svg" width="1123" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3a2bca540c6a2f8081d51df2f70b0ebe" name="a3a2bca540c6a2f8081d51df2f70b0ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2bca540c6a2f8081d51df2f70b0ebe">&#9670;&#160;</a></span>vector_fast_swap_position_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vector_fast_swap_position_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_a3a2bca540c6a2f8081d51df2f70b0ebe_icgraph.svg" width="615" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac9a7377bcfc71c2cc98592f1fa31deb0" name="ac9a7377bcfc71c2cc98592f1fa31deb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a7377bcfc71c2cc98592f1fa31deb0">&#9670;&#160;</a></span>vector_fast_print_sortstats_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vector_fast_print_sortstats_item </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group__sortable___t_vector.html#struct_t_vector_sort_stats_item">TVectorSortStatsItem</a> *</td>          <td class="paramname"><span class="paramname"><em>aSortStatsItem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_vector_8c_ac9a7377bcfc71c2cc98592f1fa31deb0_icgraph.svg" width="650" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:43, pro projekt: BPC-ALD: ALG Advanced Sorts with Span, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

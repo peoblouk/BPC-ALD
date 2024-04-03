@@ -1,0 +1,11 @@
+<map id="vector_fast_swap_position_value" name="vector_fast_swap_position_value">
+<area shape="rect" id="Node000001" title=" " alt="" coords="436,37,609,77"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f" title="Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement." alt="" coords="230,5,375,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="421,45,375,39,376,33,422,40"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b" title="Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement." alt="" coords="217,69,388,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="423,75,389,80,388,74,422,69"/>
+<area shape="rect" id="Node000003" href="$group___t_span.html#ga2df4c39d49410db156d79f5d12c84f7e" title="Výměna mezi hodnotou elementu Spanu a proměnnou typu VectorElement." alt="" coords="18,5,157,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,28,157,28,157,23,216,23"/>
+<area shape="rect" id="Node000005" href="$group___t_span.html#ga87439f0c5045aa7f177a37558b60d397" title="Výměna mezi hodnotou elementu Spanu určenou iterátorem a proměnnou typu SpanElement." alt="" coords="5,69,169,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="204,92,170,92,170,87,204,87"/>
+</map>

@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts: 3. Přímé metody třídění</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">3. Přímé metody třídění</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Deklarace API přímých metod třídění  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga25c7ac8991c266d71b75cf20c14b67cf" id="r_ga25c7ac8991c266d71b75cf20c14b67cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga25c7ac8991c266d71b75cf20c14b67cf">print_element</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga25c7ac8991c266d71b75cf20c14b67cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytisknutí elementu vektoru pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ga25c7ac8991c266d71b75cf20c14b67cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3903c3fd846908cd362e293ed40582e" id="r_gac3903c3fd846908cd362e293ed40582e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac3903c3fd846908cd362e293ed40582e">insert_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gac3903c3fd846908cd362e293ed40582e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění přímým vkládáním (Insert Sort)  <br /></td></tr>
+<tr class="separator:gac3903c3fd846908cd362e293ed40582e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3688a58781905ac2e518285b8bb711ec" id="r_ga3688a58781905ac2e518285b8bb711ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3688a58781905ac2e518285b8bb711ec">select_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga3688a58781905ac2e518285b8bb711ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění přímým výběrem (Select Sort)  <br /></td></tr>
+<tr class="separator:ga3688a58781905ac2e518285b8bb711ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1ef093f5205f293df8303ac228452fc" id="r_gaa1ef093f5205f293df8303ac228452fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa1ef093f5205f293df8303ac228452fc">bubble_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaa1ef093f5205f293df8303ac228452fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění přímou výměnou (Bubble Sort)  <br /></td></tr>
+<tr class="separator:gaa1ef093f5205f293df8303ac228452fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62a36eb31bf0a873f7c027e145843b1a" id="r_ga62a36eb31bf0a873f7c027e145843b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga62a36eb31bf0a873f7c027e145843b1a">bubble_sort_optimized</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga62a36eb31bf0a873f7c027e145843b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimized)  <br /></td></tr>
+<tr class="separator:ga62a36eb31bf0a873f7c027e145843b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba41a68f00241f38f7864b4e1dacd086" id="r_gaba41a68f00241f38f7864b4e1dacd086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaba41a68f00241f38f7864b4e1dacd086">bubble_sort_optimized2</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaba41a68f00241f38f7864b4e1dacd086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)  <br /></td></tr>
+<tr class="separator:gaba41a68f00241f38f7864b4e1dacd086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacee5d609500566a6ad1724486ab8bb2" id="r_gaacee5d609500566a6ad1724486ab8bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaacee5d609500566a6ad1724486ab8bb2">shaker_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaacee5d609500566a6ad1724486ab8bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)  <br /></td></tr>
+<tr class="separator:gaacee5d609500566a6ad1724486ab8bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Deklarace API přímých metod třídění </p>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga25c7ac8991c266d71b75cf20c14b67cf" name="ga25c7ac8991c266d71b75cf20c14b67cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25c7ac8991c266d71b75cf20c14b67cf">&#9670;&#160;</a></span>print_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_element </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vytisknutí elementu vektoru pomocí iterátoru. </p>
+<p>Tisk hodnoty elementu vektoru, na který ukazuje iterátor. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_ga25c7ac8991c266d71b75cf20c14b67cf_cgraph.svg" width="495" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_ga25c7ac8991c266d71b75cf20c14b67cf_icgraph.svg" width="348" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac3903c3fd846908cd362e293ed40582e" name="gac3903c3fd846908cd362e293ed40582e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3903c3fd846908cd362e293ed40582e">&#9670;&#160;</a></span>insert_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void insert_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění přímým vkládáním (Insert Sort) </p>
+<p>Setřídí vzestupně elementy v zadaném vektoru <code>aVector</code> pomocí metody třídění přímým vkládáním (Insert Sort). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_gac3903c3fd846908cd362e293ed40582e_cgraph.svg" width="536" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_gac3903c3fd846908cd362e293ed40582e_icgraph.svg" width="192" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga3688a58781905ac2e518285b8bb711ec" name="ga3688a58781905ac2e518285b8bb711ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3688a58781905ac2e518285b8bb711ec">&#9670;&#160;</a></span>select_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void select_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění přímým výběrem (Select Sort) </p>
+<p>Setřídí vzestupně elementy v zadaném vektoru <code>aVector</code> pomocí metody třídění přímým výběrem (Select Sort). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_ga3688a58781905ac2e518285b8bb711ec_cgraph.svg" width="547" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa1ef093f5205f293df8303ac228452fc" name="gaa1ef093f5205f293df8303ac228452fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1ef093f5205f293df8303ac228452fc">&#9670;&#160;</a></span>bubble_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bubble_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění přímou výměnou (Bubble Sort) </p>
+<p>Setřídí vzestupně elementy v zadaném vektoru <code>aVector</code> pomocí metody třídění přímou výměnou (Bubble Sort). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_gaa1ef093f5205f293df8303ac228452fc_cgraph.svg" width="550" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga62a36eb31bf0a873f7c027e145843b1a" name="ga62a36eb31bf0a873f7c027e145843b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62a36eb31bf0a873f7c027e145843b1a">&#9670;&#160;</a></span>bubble_sort_optimized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bubble_sort_optimized </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimized) </p>
+<p>Setřídí vzestupně elementy v zadaném vektoru <code>aVector</code> pomocí metody třídění přímou výměnou využívající optimalizaci s pomocným příznakem ukončení. Příznak umožňuje dřívější zastavení algoritmu, pokud jsou již data setříděna (Bubble Sort Optimized). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_ga62a36eb31bf0a873f7c027e145843b1a_cgraph.svg" width="612" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaba41a68f00241f38f7864b4e1dacd086" name="gaba41a68f00241f38f7864b4e1dacd086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba41a68f00241f38f7864b4e1dacd086">&#9670;&#160;</a></span>bubble_sort_optimized2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bubble_sort_optimized2 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2) </p>
+<p>Setřídí vzestupně elementy v zadaném vektoru <code>aVector</code> pomocí metody třídění přímou výměnou využívající optimalizaci s výpočtem indexu poslední změny (Bubble Sort Optimized2). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_gaba41a68f00241f38f7864b4e1dacd086_cgraph.svg" width="619" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaacee5d609500566a6ad1724486ab8bb2" name="gaacee5d609500566a6ad1724486ab8bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacee5d609500566a6ad1724486ab8bb2">&#9670;&#160;</a></span>shaker_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shaker_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění přímou výměnou se změnou postupu třídění (Shaker Sort) </p>
+<p>Setřídí vzestupně elementy v zadaném vektoru <code>aVector</code> pomocí metody třídění přímou výměnou se změnou postupu třídění (Shaker Sort). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___basic_sorts_gaacee5d609500566a6ad1724486ab8bb2_cgraph.svg" width="551" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:25, pro projekt: BPC-ALD: ALG Advanced Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

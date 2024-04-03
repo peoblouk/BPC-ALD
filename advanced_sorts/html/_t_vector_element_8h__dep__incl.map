@@ -1,0 +1,18 @@
+<map id="TVectorElement.h" name="TVectorElement.h">
+<area shape="rect" id="Node000001" title="Definice typu Basic VectorElement a implementace API." alt="" coords="107,5,233,31"/>
+<area shape="rect" id="Node000002" href="$_t_vector_8h.html" title="Definice typu Sortable Vector." alt="" coords="131,79,209,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,44,173,79,167,79,167,44"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html" title="Implementace Sortable Vector API." alt="" coords="5,152,84,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,113,66,154,64,149,137,108"/>
+<area shape="rect" id="Node000004" href="$advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění" alt="" coords="109,152,231,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="173,118,173,152,167,152,167,118"/>
+<area shape="rect" id="Node000007" href="$basic__sorts_8h.html" title="Deklarace API přímých metod třídění" alt="" coords="256,152,356,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="205,108,285,149,283,154,202,113"/>
+<area shape="rect" id="Node000005" href="$advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění" alt="" coords="66,225,189,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="158,191,137,227,132,224,154,188"/>
+<area shape="rect" id="Node000006" href="$main_8c.html" title="Hlavní program testující API účinnějších metod třídění" alt="" coords="213,225,274,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="194,185,233,223,230,227,190,189"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="289,189,255,227,251,223,285,186"/>
+<area shape="rect" id="Node000008" href="$basic__sorts_8c.html" title="Implementace API přímých metod třídění" alt="" coords="299,225,399,251"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="322,188,344,224,339,227,318,191"/>
+</map>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts: Zadání cvičení 9</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 9 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv09__zadani__advanced__sorts"></a> Cvičení je věnováno návrhu a implementaci dvou účinnějších třídicích algoritmů (teorii naleznete v přednášce 8):</p>
+<ol type="1">
+<li><b>Shell sort</b> (s Hibbardovou posloupností).</li>
+<li><b>Quick sort</b> (s volbou prostředního prvku jako tzv. <a href="https://cs.wikipedia.org/wiki/Pivot">pivota</a>).</li>
+</ol>
+<hr  />
+<h1>Zadání úlohy</h1>
+<p>Do dodaného projektu <code>advanced_sorts</code> si zkopírujte soubory s již vytvořenými algoritmy třídění z minulých cvičení <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code> a <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code> pro srovnání rychlosti třídění.</p>
+<p>Napište tyto funkce realizující třídicí algoritmy:</p>
+<ol type="1">
+<li>Funkce <code><a class="el" href="group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti.">shell_sort()</a></code> - implementace využívající <a href="https://en.wikipedia.org/wiki/Shellsort#Gap_sequences">Hibbardovu posloupnost</a> k určení délky kroku - viz přednáška 8,</li>
+<li>Funkce <code><a class="el" href="group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota.">quick_sort()</a></code> - implementace s volbou prostředního prvku jako pivota, s pomocnou funkcí <code><a class="el" href="advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)">quick_sort_worker()</a></code>.</li>
+</ol>
+<p>Algoritmy vyzkoušejte na všech testovacích posloupnostech uložených v souborech, které jsou součástí projektu.</p>
+<h2>Soubory projektu</h2>
+<p>Soubory <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code> a <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code> - zkopírujte si obsah z již Vámi realizované úlohy <code>basic_sorts</code> z minulých cvičení.</p>
+<p>Soubory <code>check.c</code> a <code>check.h</code> jsou soubory pro kontrolu manipulace s pamětí a soubory.</p>
+<p>Soubory <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>, <code><a class="el" href="_t_vector_8h.html" title="Definice typu Sortable Vector.">TVector.h</a></code> a <code><a class="el" href="_t_vector_8c.html" title="Implementace Sortable Vector API.">TVector.c</a></code> jsou funkčně totožné jen aktualizované verze z minulého projektu: <code>basic_sorts</code>.</p>
+<p>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program testující API účinnějších metod třídění">main.c</a></code> - vychází z minulých projektů věnovaných metodám třídění. Je doplněn o načítání nových testovacích dat ze souborů. Dále je doplněn o testování nových třídicích metod. Při testu se z přímých metod třídění volá už jen funkce <code><a class="el" href="group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)">insert_sort()</a></code>, ostatní přímé metody třídění jsou zakomentovány. Pro srovnání rychlosti nám postačí nejrychlejší z metod přímého třídění tj.: <code><a class="el" href="group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)">insert_sort()</a></code>.</p>
+<p>Soubor <code><a class="el" href="advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění">advanced_sorts.h</a></code> - hlavičkový soubor s deklaracemi pro nové třídicí funkce.</p>
+<p>Soubor <code><a class="el" href="advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění">advanced_sorts.c</a></code> - Obsahuje následující funkce, do kterých dopište kód pro jejich tělo. Ve funkcích třídicích algoritmů je předpřipraven (zakomentovaný) kód pro ladicí textový výpis na standardní výstup demonstrující postup algoritmu. Názvy proměnných v předpřipraveném kódu předpokládají použití názvů proměnných tak, jak byly uvedeny v přednáškách.</p>
+<ul>
+<li><code><a class="el" href="advanced__sorts_8c.html#a4b9bbfb5712de6efbad32b8691e5cec6" title="Formátovaný tisk hodnoty elementu za předpokladu platné hodnoty.">print_element_if()</a></code> - funkce pro tisk hodnoty na základě podmínky. Pokud má první parametr (typu <code>bool</code>) hodnotu: <code>true</code>, potom se vytiskne předaná hodnota. V opačném případě: <code>false</code>, se vytisknou na danou pozici namísto hodnoty pouze zástupné znaky (tj. tečka a mezera). Tento způsob je vhodný právě pro ladicí výpisy z metod vytvářející podposloupnosti nebo využívající princip: <a href="https://cs.wikipedia.org/wiki/Rozd%C4%9Bl_a_panuj_(algoritmus)">Rozděl a panuj</a>.</li>
+<li><code><a class="el" href="group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti.">shell_sort()</a></code> - První výpis tiskne vzdálenost (krok <code>h</code>) mezi zpracovávanými prvky v dané iteraci (tento výpis tedy bude na začátku těla cyklu, který určuje aktuální velikost kroku). Druhý tisk vytiskne aktuální stav tříděného pole (bude na začátku cyklu pro třídění prvků a bude tisknout při změně kroku nebo posunu počáteční pozice pro stejný krok). Třetí tisk zobrazí prvky, se kterými se v daném kroku manipulovalo a na místě ostatních zobrazí tečky (bude tedy na konci vnitřního cyklu po manipulaci s každou pozicí/prvkem). Vzorový výstup tisku je přiložen ve výsledkových tiskových souborech: <a href="examples.html"><code>doc/cv09_reports*.lst</code></a>.</li>
+<li><code><a class="el" href="advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)">quick_sort_worker()</a></code> - slouží jako funkce připravená pro rekurzivní volání. Tisk se provede při vstupu do funkce, kdy se vytisknou hodnoty v té části, se kterou se bude v daném kroku pracovat.</li>
+<li><code><a class="el" href="group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota.">quick_sort()</a></code> - <a href="https://en.wikipedia.org/wiki/Wrapper_function">wrapper funkce</a> pro předání volání do funkce <code><a class="el" href="advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)">quick_sort_worker()</a></code>.</li>
+</ul>
+<p>Testovací soubory <a href="pages.html"><code>reversed_data.txt</code></a>, <a href="pages.html"><code>select_sort_data.txt</code></a>, <a href="pages.html"><code>sorted_data.txt</code></a>, <a href="pages.html"><code>quick_sort_data1.txt</code></a> (a další tři) jsou připraveny pro testování algoritmů se zaměřením na specifické vstupní posloupnosti hodnot. Například posloupnost hodnot v souboru: <a href="pages.html"><code>quick_sort_data2.txt</code></a> by měl představovat nejhorší případ pro třídění metodou <em>Quick sort</em>. Metoda by měla tuto posloupnost zpracovat s maximální možnou (tj. kvadratickou) mírou časové složitosti. Porovnejte také u jednotlivých metod celkové počty operací nutné pro setřídění posloupnosti <a href="pages.html"><code>sorted_data.txt</code></a>, která představuje již setříděnou posloupnost.</p>
+<h2>Úkoly</h2>
+<ol type="1">
+<li>Prostudujte si dodaný projekt a jeho soubory.</li>
+<li>Promyslete si jednotlivé implementace obou třídicích algoritmů.</li>
+<li>Realizujte jednotlivé implementace obou třídicích algoritmů.</li>
+<li>Odstraňte komentáře pro ladicí tisk a odlaďte zobrazení údajů o průběhu třídění.</li>
+<li>Realizované algoritmy otestujte na přiložených souborech. Srovnejte výsledné průběžné hodnoty z vašeho programu s hodnotami v souborech s příklady výstupů v souborech: <a href="examples.html"><code>doc/cv09_reports*.lst</code></a>. <br  />
+ Zároveň si prohlédněte zobrazené hodnoty z vašich metod a ujasněte si průběh třídění pro jednotlivé vstupní soubory dat.</li>
+<li>Pokuste se dosáhnout stejných výstupů programu jako v <a href="examples.html">přiložených souborech</a>, aniž byste museli modifikovat obsah souboru: <code><a class="el" href="main_8c.html" title="Hlavní program testující API účinnějších metod třídění">main.c</a></code>. Výpočetní časy se budou samozřejmě na Vašem HW lišit.</li>
+</ol>
+<h2>Rozbor úlohy</h2>
+<p>Viz přednáška 8.</p>
+<hr  />
+<h1>Zadání bonusové úlohy</h1>
+<p>Do dodaného projektu <code>advanced_sorts_with_span</code> zkopírujte soubory s již vytvořenými algoritmy třídění z minulých úloh <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code>, <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code> a <code><a class="el" href="advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění">advanced_sorts.c</a></code> pro srovnání rychlosti třídění.</p>
+<p>Napište znovu funkce realizující třídicí algoritmus <em>Quick Sort</em> využívající nový datový typ <code>struct TSpan</code>, který umožňuje omezený pohled na elementy jiného vektoru a to včetně definice omezení intervalu pozic do původního vektoru. Je dobré si uvědomit, že typ Span představuje pouze nový pohled na elementy původního vektoru a je proto implementován tak, aby data původního vektoru znovu nealokoval, nekopíroval ani si nepřevzal jejich vlastnictví:</p>
+<ol type="1">
+<li>Prostudujte si rozhraní datového typu <code>struct TSpan</code> ve zdrojovém souboru <code>TSpan.h</code>.</li>
+<li>Prostudujte si tělo funkce <code>quick_sort_with_span()</code> a reimplementujte metodu <em>Quick sort</em> s využitím typu <code>struct TSpan</code> v pomocné funkci <code>quick_sort_with_span_worker()</code>.</li>
+<li>Pravděpodobně zjistíte, že tato reimplementace algoritmu <em>Quick Sort</em> představuje čitelnější zdrojový text.</li>
+<li>Prakticky ověřte, zda je tato nová implementace využívající datový typ <em>Span</em> časově efektivnější, než implementace původní.</li>
+<li>Diskutujte zjištěné poznatky.</li>
+</ol>
+<p>Algoritmus opět vyzkoušejte na všech testovacích posloupnostech uložených v souborech, které jsou součástí projektu. Poté zakomentujte ve funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code> volání metody <code><a class="el" href="group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)">insert_sort()</a></code> a změřte dobu třídění vektoru o velikosti 5 000 000 elementů, které obsahují náhodné hodnoty.</p>
+<hr  />
+<p><code>$Id: <a class="el" href="cv09__zadani__advanced__sorts_8md.html">cv09_zadani_advanced_sorts.md</a> 2675 2024-03-25 15:16:28Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:25, pro projekt: BPC-ALD: ALG Advanced Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

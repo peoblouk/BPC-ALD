@@ -1,0 +1,37 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="Node000001" title="Hlavní program testující API účinnějších metod třídění" alt="" coords="363,5,425,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="47,313,109,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="363,22,283,25,182,33,133,41,89,51,53,64,31,80,15,106,9,135,10,165,16,196,39,255,65,300,60,303,34,257,11,197,4,166,4,134,10,104,27,77,51,59,87,46,132,35,182,28,283,19,363,17"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="569,167,627,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="425,28,468,48,513,77,553,115,584,153,580,157,549,119,510,81,466,53,423,33"/>
+<area shape="rect" id="Node000004" href="$basic__sorts_8h.html" title="Deklarace API přímých metod třídění" alt="" coords="208,86,308,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,33,291,81,289,77,373,29"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="459,313,527,339"/>
+<area shape="poly" id="edge21_Node000001_Node000011" title=" " alt="" coords="418,29,446,49,470,77,483,106,492,136,501,198,502,255,499,300,493,299,497,255,496,199,486,138,478,108,465,80,442,52,414,33"/>
+<area shape="rect" id="Node000012" href="$advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění" alt="" coords="333,86,455,111"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="397,31,397,72,391,72,391,31"/>
+<area shape="rect" id="Node000013" href="$advanced__sorts__with__span_8h.html" title="Deklarace API účinnějších metod třídění využívající typ Span." alt="" coords="41,79,184,119"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="364,31,194,78,192,72,362,25"/>
+<area shape="rect" id="Node000014" href="$main__support_8h.html" title="Soubor pro multiplatformní podporu programu v různých OS." alt="" coords="581,86,692,111"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="426,27,589,79,587,84,424,32"/>
+<area shape="rect" id="Node000005" href="$_t_vector_8h.html" title="Definice typu Sortable Vector with shareable sortstats." alt="" coords="200,167,279,192"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="258,112,248,154,243,153,253,111"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="200,191,150,209,126,223,105,242,90,270,83,300,77,298,85,268,101,238,123,219,148,204,198,186"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="178,313,253,339"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="240,193,222,300,217,299,235,192"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="116,240,184,265"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="227,194,177,233,174,229,223,190"/>
+<area shape="rect" id="Node000008" href="$_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API." alt="" coords="260,240,387,265"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="255,190,301,229,297,233,251,194"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="280,188,338,208,399,238,442,269,475,301,471,305,438,273,397,242,336,213,278,194"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="285,268,122,315,121,310,283,263"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="307,268,246,308,243,303,305,263"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="277,313,341,339"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="324,266,316,300,311,299,318,265"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="365,313,434,339"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="337,263,379,302,375,306,334,267"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="352,263,453,305,451,310,349,268"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="372,114,276,163,273,158,370,109"/>
+<area shape="poly" id="edge18_Node000013_Node000005" title=" " alt="" coords="145,117,211,157,208,162,142,121"/>
+<area shape="poly" id="edge20_Node000014_Node000003" title=" " alt="" coords="633,113,612,155,607,153,629,110"/>
+</map>

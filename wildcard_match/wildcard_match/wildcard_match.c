@@ -24,8 +24,13 @@ bool wildcard_match(const char aWildCardStr[], const char aStr[])
 			return wildcard_match(aWildCardStr + 1, aStr + 1); // Zavolám rekurzi
 
 	if (*aWildCardStr == '*')
-		if(*aWildCardStr == '\0')
-			return wildcard_match(aWildCardStr - 1, aStr - 1); // Zavolám rekurzi
-
+		{
+		while (*aWildCardStr != '\0')
+			{
+			if (wildcard_match(aWildCardStr + 1, aStr) || wildcard_match(aWildCardStr, aStr + 1))
+				aStr++;
+			}
+		return true; // Zavolám rekurzi
+		}
 	return false;
 	}

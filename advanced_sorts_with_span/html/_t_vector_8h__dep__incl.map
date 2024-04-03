@@ -1,0 +1,24 @@
+<map id="TVector.h" name="TVector.h">
+<area shape="rect" id="Node000001" title="Definice typu Sortable Vector with shareable sortstats." alt="" coords="303,5,381,31"/>
+<area shape="rect" id="Node000002" href="$_t_span_8h.html" title="Definice typu Span zajišťující přístup k omezené části vektoru (vyžaduje Sortable Vector with shareab..." alt="" coords="19,86,89,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,33,201,53,101,81,82,88,80,83,100,76,200,48,289,27"/>
+<area shape="rect" id="Node000004" href="$_t_vector_8c.html" title="Implementace API typu Sortable Vector with shareable sortstats." alt="" coords="552,86,631,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="395,31,541,76,562,83,561,88,540,81,394,37"/>
+<area shape="rect" id="Node000005" href="$advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění" alt="" coords="281,86,403,111"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="345,44,345,86,339,86,339,44"/>
+<area shape="rect" id="Node000008" href="$advanced__sorts__with__span_8h.html" title="Deklarace API účinnějších metod třídění využívající typ Span." alt="" coords="113,79,256,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="308,39,224,81,222,76,306,34"/>
+<area shape="rect" id="Node000009" href="$basic__sorts_8h.html" title="Deklarace API přímých metod třídění" alt="" coords="428,86,528,111"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="375,35,459,83,457,88,373,40"/>
+<area shape="rect" id="Node000003" href="$advanced__sorts__with__span_8c.html" title="Implementace API účinnějších metod třídění využívající typ Span." alt="" coords="5,167,148,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,124,74,166,69,167,58,125"/>
+<area shape="rect" id="Node000006" href="$advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění" alt="" coords="281,174,403,199"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="345,125,345,173,339,173,339,125"/>
+<area shape="rect" id="Node000007" href="$main_8c.html" title="Hlavní program testující API účinnějších metod třídění" alt="" coords="195,174,257,199"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="317,122,243,176,240,172,314,117"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="152,129,102,169,99,164,148,125"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="202,130,223,172,218,175,197,132"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="428,118,270,169,252,176,250,171,268,164,426,113"/>
+<area shape="rect" id="Node000010" href="$basic__sorts_8c.html" title="Implementace API přímých metod třídění" alt="" coords="428,174,528,199"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="481,125,481,173,475,173,475,125"/>
+</map>

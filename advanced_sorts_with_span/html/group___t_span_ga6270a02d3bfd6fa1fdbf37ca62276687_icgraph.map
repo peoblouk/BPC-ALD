@@ -1,0 +1,10 @@
+<map id="span_create_right_subspan" name="span_create_right_subspan">
+<area shape="rect" id="Node000001" title="Vytvoření SubSpanu jako části od definované pozice až do konce původního Spanu." alt="" coords="493,37,675,62"/>
+<area shape="rect" id="Node000002" href="$advanced__sorts__with__span_8c.html#a1526ecf4371ecb71f2bc68954f16681f" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="299,29,445,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,52,445,52,445,47,480,47"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="405,17,393,11,372,8,353,10,342,15,338,21,340,28,335,30,333,20,339,11,352,5,372,3,395,6,407,13"/>
+<area shape="rect" id="Node000003" href="$group___advanced_sorts_with_span.html#ga451c79ea7ae3de87d73ed333460ea2d5" title="Rychlé třídění výměnou (Quick Sort with span) s volbou prostředního prvku jako pivota a využívající t..." alt="" coords="104,37,251,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,52,251,52,251,47,285,47"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,37,56,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,52,56,52,56,47,90,47"/>
+</map>

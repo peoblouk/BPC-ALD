@@ -1,0 +1,11 @@
+<map id="select_sort" name="select_sort">
+<area shape="rect" id="Node000001" title="Třídění přímým výběrem (Select Sort)" alt="" coords="5,55,92,80"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů" alt="" coords="140,5,312,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,53,166,32,167,37,93,58"/>
+<area shape="rect" id="Node000004" href="$group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898" title="Přečtení počtu elementů vektoru." alt="" coords="183,55,269,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,65,168,65,168,70,92,70"/>
+<area shape="rect" id="Node000005" href="$group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů" alt="" coords="150,104,302,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="93,77,167,98,166,103,92,82"/>
+<area shape="rect" id="Node000003" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="360,5,541,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,15,346,15,346,21,313,21"/>
+</map>

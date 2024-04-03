@@ -1,0 +1,9 @@
+<map id="span_compare_positions" name="span_compare_positions">
+<area shape="rect" id="Node000001" title="Porovnání hodnot elementů Spanů" alt="" coords="5,13,172,38"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů" alt="" coords="220,13,392,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,23,206,23,206,28,172,28"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a188bab569c3ae8a25070f632a6f53e62" title=" " alt="" coords="440,5,581,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="392,23,426,23,426,28,392,28"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="629,13,811,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="581,23,616,23,616,28,581,28"/>
+</map>

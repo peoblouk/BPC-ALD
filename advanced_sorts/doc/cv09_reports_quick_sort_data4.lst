@@ -1,0 +1,44 @@
+
+------ Insert Sort ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Comparisons: 5
+Swaps: 0
+Moves: 4
+Value Gets: 3
+Value Sets: 3
+
+------ Shell Sort ------
+h: 1
+5 3 6 1 
+3 5 . . 
+3 5 6 . 
+1 3 5 6 
+
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Comparisons: 5
+Swaps: 0
+Moves: 4
+Value Gets: 3
+Value Sets: 3
+
+------ Quick Sort ------
+5 3 6 1 
+. . 6 5 
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Comparisons: 7
+Swaps: 3
+Moves: 0
+Value Gets: 2
+Value Sets: 0

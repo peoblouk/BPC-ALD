@@ -1,0 +1,8 @@
+<map id="quick_sort_worker" name="quick_sort_worker">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="235,29,361,55"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="324,19,317,11,298,8,282,10,274,15,272,20,277,28,272,31,267,21,270,11,280,5,298,3,319,6,328,15"/>
+<area shape="rect" id="Node000002" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="104,29,187,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,45,187,45,187,39,221,39"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,29,56,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,45,56,45,56,39,90,39"/>
+</map>

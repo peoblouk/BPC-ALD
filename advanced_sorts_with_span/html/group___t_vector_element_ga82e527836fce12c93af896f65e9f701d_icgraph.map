@@ -1,0 +1,57 @@
+<map id="vector_element_comparator" name="vector_element_comparator">
+<area shape="rect" id="Node000001" title="Porovnání dvou elementů" alt="" coords="1151,484,1332,510"/>
+<area shape="rect" id="Node000002" href="$_t_vector_8c.html#a8254190a2b4fe570173cc77dba0ee7a4" title=" " alt="" coords="957,244,1098,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1217,475,1045,285,1049,282,1221,472"/>
+<area shape="rect" id="Node000014" href="$_t_vector_8c.html#a188bab569c3ae8a25070f632a6f53e62" title=" " alt="" coords="957,477,1098,517"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="1137,500,1099,500,1099,494,1137,494"/>
+<area shape="rect" id="Node000024" href="$group__sortable___t_vector.html#ga1b7a4850be6488c69c293bdd13f729a7" title="Ověření korektního setřídění vektoru." alt="" coords="952,594,1103,634"/>
+<area shape="poly" id="edge28_Node000001_Node000024" title=" " alt="" coords="1207,518,1066,596,1064,592,1204,514"/>
+<area shape="rect" id="Node000003" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="735,122,901,162"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="979,239,852,165,855,160,981,234"/>
+<area shape="rect" id="Node000012" href="$group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="747,244,889,284"/>
+<area shape="poly" id="edge16_Node000002_Node000012" title=" " alt="" coords="943,266,890,266,890,261,943,261"/>
+<area shape="rect" id="Node000004" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="136,16,219,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="786,114,740,76,713,58,683,45,620,27,554,16,487,10,423,8,306,14,219,25,218,19,305,9,423,3,488,4,555,10,621,22,685,40,715,53,744,71,790,110"/>
+<area shape="rect" id="Node000006" href="$advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="525,79,652,104"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="721,124,646,107,647,102,722,118"/>
+<area shape="rect" id="Node000008" href="$group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="333,128,411,154"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="721,145,412,144,412,138,721,139"/>
+<area shape="rect" id="Node000009" href="$group___t_span.html#gad64d53738a4da90ef126cd73d84b5f52" title="Porovnání mezi hodnotou elementu Span a hodnotou typu VectorElement." alt="" coords="509,180,668,220"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="725,168,669,182,667,177,723,163"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,130,56,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="141,51,106,75,72,104,46,131,42,127,69,100,102,71,139,47"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="627,69,617,61,589,58,566,60,553,64,551,70,557,77,553,80,546,71,550,61,564,54,589,52,619,56,631,65"/>
+<area shape="rect" id="Node000007" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="331,79,413,104"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="511,94,414,94,414,89,511,89"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="318,98,218,109,105,126,57,138,56,132,103,121,218,104,317,93"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="319,144,56,145,56,139,319,138"/>
+<area shape="rect" id="Node000010" href="$advanced__sorts__with__span_8c.html#a1526ecf4371ecb71f2bc68954f16681f" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="299,202,445,242"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="496,212,446,217,445,212,495,207"/>
+<area shape="poly" id="edge15_Node000010_Node000010" title=" " alt="" coords="405,190,393,183,372,181,353,183,342,188,338,193,340,201,335,202,333,193,339,183,352,178,372,176,395,178,407,186"/>
+<area shape="rect" id="Node000011" href="$group___advanced_sorts_with_span.html#ga451c79ea7ae3de87d73ed333460ea2d5" title="Rychlé třídění výměnou (Quick Sort with span) s volbou prostředního prvku jako pivota a využívající t..." alt="" coords="104,195,251,220"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="285,218,251,216,251,210,285,213"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="134,192,55,156,57,151,137,187"/>
+<area shape="rect" id="Node000013" href="$group___t_span.html#ga0b2e633085569b47c063161298794b98" title="Porovnání mezi hodnotou elementu Spanu určenou iterátorem a hodnotou typu VectorElement." alt="" coords="497,244,681,284"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="733,266,681,266,681,261,733,261"/>
+<area shape="rect" id="Node000015" href="$group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů" alt="" coords="732,456,904,482"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="943,488,904,483,905,478,943,483"/>
+<area shape="rect" id="Node000022" href="$group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39" title="Porovnání hodnot elementů vektorů určených dvěma iterátory." alt="" coords="747,548,889,588"/>
+<area shape="poly" id="edge26_Node000014_Node000022" title=" " alt="" coords="955,524,879,550,877,545,954,519"/>
+<area shape="rect" id="Node000016" href="$group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)" alt="" coords="544,308,633,334"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="796,448,748,396,717,370,683,347,658,337,633,330,634,325,660,332,685,343,720,365,752,393,800,444"/>
+<area shape="rect" id="Node000017" href="$group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz..." alt="" coords="513,358,665,383"/>
+<area shape="poly" id="edge21_Node000015_Node000017" title=" " alt="" coords="785,451,738,423,683,397,649,386,651,380,685,392,740,418,788,446"/>
+<area shape="rect" id="Node000018" href="$group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)" alt="" coords="509,407,668,432"/>
+<area shape="poly" id="edge22_Node000015_Node000018" title=" " alt="" coords="744,456,648,435,649,430,745,451"/>
+<area shape="rect" id="Node000019" href="$group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)" alt="" coords="545,456,632,482"/>
+<area shape="poly" id="edge23_Node000015_Node000019" title=" " alt="" coords="718,472,632,472,632,466,718,466"/>
+<area shape="rect" id="Node000020" href="$group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)" alt="" coords="543,506,634,531"/>
+<area shape="poly" id="edge24_Node000015_Node000020" title=" " alt="" coords="746,487,635,511,634,506,745,482"/>
+<area shape="rect" id="Node000021" href="$group___t_span.html#gaffd3a758138012dac875ceda42a975db" title="Porovnání hodnot elementů Spanů" alt="" coords="505,555,672,580"/>
+<area shape="poly" id="edge25_Node000015_Node000021" title=" " alt="" coords="788,491,740,519,685,546,651,557,649,552,683,541,738,515,785,487"/>
+<area shape="rect" id="Node000023" href="$group___t_span.html#ga1b60dd9d2211c7cb07b066f19237b0ac" title="Porovnání hodnot elementů Spanů určených dvěma iterátory." alt="" coords="493,604,684,630"/>
+<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="734,588,649,607,648,602,732,583"/>
+<area shape="rect" id="Node000025" href="$group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody." alt="" coords="132,456,223,482"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="939,637,846,653,733,664,612,663,552,657,493,645,446,630,399,611,313,565,241,519,194,484,197,480,244,515,315,561,401,606,447,625,494,640,552,651,613,658,733,659,845,648,938,632"/>
+<area shape="poly" id="edge30_Node000025_Node000005" title=" " alt="" coords="163,445,35,156,40,154,167,443"/>
+</map>

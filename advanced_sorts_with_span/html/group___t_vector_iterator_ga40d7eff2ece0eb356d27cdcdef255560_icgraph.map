@@ -1,0 +1,12 @@
+<map id="vector_iterator_begin" name="vector_iterator_begin">
+<area shape="rect" id="Node000001" title="Vytvoření nového iterátoru ukazujícího na počáteční element." alt="" coords="299,55,440,80"/>
+<area shape="rect" id="Node000002" href="$group___advanced_sorts_with_span.html#ga451c79ea7ae3de87d73ed333460ea2d5" title="Rychlé třídění výměnou (Quick Sort with span) s volbou prostředního prvku jako pivota a využívající t..." alt="" coords="104,5,251,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,54,227,33,229,28,307,49"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody." alt="" coords="132,55,223,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,70,223,70,223,65,285,65"/>
+<area shape="rect" id="Node000005" href="$group___t_span.html#ga3877c7871ce8eb1c42a322fa9fd86a41" title="Vytvoření nového iterátoru ukazujícího na počáteční element." alt="" coords="110,104,245,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="307,86,229,106,227,101,306,81"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,36,57,42,56,36,90,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="118,60,56,50,57,45,119,55"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="shell_sort" name="shell_sort">
+<area shape="rect" id="Node000001" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="5,95,84,121"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="132,5,297,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,93,131,56,148,48,150,53,133,61,68,98"/>
+<area shape="rect" id="Node000005" href="$group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru." alt="" coords="139,70,291,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="84,100,125,93,126,99,85,105"/>
+<area shape="rect" id="Node000007" href="$group___t_vector.html#gabd5ba54950295545d27b1286234ead39" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici." alt="" coords="156,119,273,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="85,111,142,119,142,124,84,116"/>
+<area shape="rect" id="Node000009" href="$group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici." alt="" coords="169,169,261,194"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="66,118,133,155,156,163,154,168,131,160,64,123"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a8254190a2b4fe570173cc77dba0ee7a4" title=" " alt="" coords="365,5,506,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,23,351,23,351,28,298,28"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="573,13,755,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="506,23,560,23,560,28,506,28"/>
+<area shape="rect" id="Node000006" href="$_t_vector_8c.html#a0e3151269c65b7033ddecb4c3aee6566" title=" " alt="" coords="345,70,525,95"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="291,80,332,80,332,85,291,85"/>
+<area shape="rect" id="Node000008" href="$_t_vector_8c.html#a689bf71829922c70ca1964e125e94217" title=" " alt="" coords="363,119,508,145"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="274,129,349,129,349,135,274,135"/>
+<area shape="rect" id="Node000010" href="$_t_vector_8c.html#a0fe5f1145e51f154b5470d640c5d682c" title=" " alt="" coords="375,169,495,194"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="261,179,362,179,362,184,261,184"/>
+</map>

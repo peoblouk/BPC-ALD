@@ -1,0 +1,28 @@
+<map id="vector_swap_positions" name="vector_swap_positions">
+<area shape="rect" id="Node000001" title="Výměna hodnot elementů vektorů" alt="" coords="700,177,852,203"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)" alt="" coords="528,5,617,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="759,167,715,105,685,72,651,44,617,29,619,24,653,40,689,69,719,102,763,164"/>
+<area shape="rect" id="Node000003" href="$group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz..." alt="" coords="497,55,649,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="750,169,706,131,651,94,624,83,627,78,653,89,709,127,754,165"/>
+<area shape="rect" id="Node000004" href="$group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)" alt="" coords="493,104,652,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="731,174,651,143,617,132,618,127,653,138,733,169"/>
+<area shape="rect" id="Node000005" href="$advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="509,177,636,203"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="687,193,636,193,636,187,687,187"/>
+<area shape="rect" id="Node000008" href="$group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)" alt="" coords="529,227,616,252"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="710,209,617,232,615,226,709,203"/>
+<area shape="rect" id="Node000009" href="$group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)" alt="" coords="527,276,618,301"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="746,213,703,240,653,266,619,279,617,274,651,261,700,235,743,208"/>
+<area shape="rect" id="Node000010" href="$group___t_span.html#gae81c37610069e0d3c8d3182ca4964c1a" title="Výměna hodnot elementů Spanů" alt="" coords="499,325,646,351"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="759,215,715,265,685,292,653,315,626,328,624,323,651,310,682,288,711,261,755,212"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="608,168,598,159,573,156,551,158,540,163,538,168,544,176,540,179,533,169,536,159,550,153,573,151,601,154,612,164"/>
+<area shape="rect" id="Node000006" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="136,207,219,232"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="496,198,219,219,219,214,496,193"/>
+<area shape="rect" id="Node000007" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,237,56,263"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="123,233,57,247,56,242,122,228"/>
+<area shape="rect" id="Node000011" href="$advanced__sorts__with__span_8c.html#a1526ecf4371ecb71f2bc68954f16681f" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="299,285,445,325"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="486,326,445,319,446,314,486,321"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="405,273,393,266,372,263,353,265,342,270,338,276,340,284,335,285,333,275,339,266,352,260,372,258,395,261,407,268"/>
+<area shape="rect" id="Node000012" href="$group___advanced_sorts_with_span.html#ga451c79ea7ae3de87d73ed333460ea2d5" title="Rychlé třídění výměnou (Quick Sort with span) s volbou prostředního prvku jako pivota a využívající t..." alt="" coords="104,268,251,293"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="285,297,251,292,251,287,286,291"/>
+<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="102,268,56,258,57,253,103,262"/>
+</map>

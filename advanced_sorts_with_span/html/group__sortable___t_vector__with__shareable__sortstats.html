@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Advanced Sorts with Span: 2.2. Doplnění pro Sortable Vector o vlastnost sdílení statistik třídění</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Advanced Sorts with Span<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Topics</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2.2. Doplnění pro Sortable Vector o vlastnost sdílení statistik třídění<div class="ingroups"><a class="el" href="group___t_vector.html">2. Vector</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice typu Vector (sortable_with_shareable_sortstats), popis jeho nově doplněných vlastností a funkcí  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 2.2. Doplnění pro Sortable Vector o vlastnost sdílení statistik třídění:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector__with__shareable__sortstats.svg" width="531" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Topics</h2></td></tr>
+<tr class="memitem:group___t_span" id="r_group___t_span"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_span.html">2.2.1. Datový typ Span pro přístup k omezené části vektoru</a></td></tr>
+<tr class="memdesc:group___t_span"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Span, který umožňuje přístup k omezené části vektoru (vyžaduje Sortable Vector s vlastností sdílení statistik třídění) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gad8dab56657c4e8504ecdfef34ca91f19" id="r_gad8dab56657c4e8504ecdfef34ca91f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad8dab56657c4e8504ecdfef34ca91f19">vector_attach_sortstats</a> (const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aFromVector, struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aToVector)</td></tr>
+<tr class="memdesc:gad8dab56657c4e8504ecdfef34ca91f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Napojení statistik o počtu operací s elementy jednoho vektoru na statistiky jiného vektoru.  <br /></td></tr>
+<tr class="separator:gad8dab56657c4e8504ecdfef34ca91f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c48fdc01e22389dff6202955542499a" id="r_ga6c48fdc01e22389dff6202955542499a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6c48fdc01e22389dff6202955542499a">vector_iterators_are_same</a> (const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aLeftIter, const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga6c48fdc01e22389dff6202955542499a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test shodnosti dvou iterátorů  <br /></td></tr>
+<tr class="separator:ga6c48fdc01e22389dff6202955542499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice typu Vector (sortable_with_shareable_sortstats), popis jeho nově doplněných vlastností a funkcí </p>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="gad8dab56657c4e8504ecdfef34ca91f19" name="gad8dab56657c4e8504ecdfef34ca91f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8dab56657c4e8504ecdfef34ca91f19">&#9670;&#160;</a></span>vector_attach_sortstats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_attach_sortstats </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aFromVector</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aToVector</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Napojení statistik o počtu operací s elementy jednoho vektoru na statistiky jiného vektoru. </p>
+<p>Provede trvalé napojení statistik o počtu operací s elementy jednoho vektoru na statistiky jiného vektoru. Počty operací budou od tohoto okamžiku trvale sdíleny mezi oběma vektory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromVector</td><td>Ukazatel na existující zdrojový vektor jehož statistiky chceme využívat </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aToVector</td><td>Ukazatel na cílového vektor jenž má mít přistup ke statistikám vektoru <code>aFromVector</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byly statistiky vektoru aToVector úspěšně napojeny na vektor aFromVector </dd></dl>
+
+</div>
+</div>
+<a id="ga6c48fdc01e22389dff6202955542499a" name="ga6c48fdc01e22389dff6202955542499a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c48fdc01e22389dff6202955542499a">&#9670;&#160;</a></span>vector_iterators_are_same()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vector_iterators_are_same </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test shodnosti dvou iterátorů </p>
+<p>Vzájemně porovná hodnotu dvou iterátorů.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Plánované úpravy</a></b></dt><dd>Dokončit pro semestr 2024 (rozdělit na dvě API: <a class="el" href="#ga6c48fdc01e22389dff6202955542499a" title="Test shodnosti dvou iterátorů">vector_iterators_are_same()</a> a vector_iterators_are_equal(), promyslet rozdíly v jejich chování) </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftIter</td><td>Levý iterátor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightIter</td><td>Pravý iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud iterátory odkazují na element na stejné pozici a ve stejném vektoru případně jsou oba neplatné </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector__with__shareable__sortstats_ga6c48fdc01e22389dff6202955542499a_cgraph.svg" width="354" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__sortable___t_vector__with__shareable__sortstats_ga6c48fdc01e22389dff6202955542499a_icgraph.svg" width="402" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 2. dub 2024 12.30:43, pro projekt: BPC-ALD: ALG Advanced Sorts with Span, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

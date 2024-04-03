@@ -1,0 +1,34 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="Node000001" title="Hlavní program testující API účinnějších metod třídění" alt="" coords="353,5,415,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,299,67,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="353,22,308,25,251,34,192,52,164,65,138,81,100,112,77,143,61,179,45,226,39,256,37,285,32,285,34,256,40,225,56,177,73,140,96,108,134,77,161,60,190,47,250,29,307,20,353,17"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="509,152,568,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="400,29,454,77,519,140,516,144,450,81,396,33"/>
+<area shape="rect" id="Node000004" href="$basic__sorts_8h.html" title="Deklarace API přímých metod třídění" alt="" coords="149,79,249,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="355,33,242,76,241,71,353,28"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="399,299,467,324"/>
+<area shape="poly" id="edge19_Node000001_Node000011" title=" " alt="" coords="392,30,411,78,422,135,429,193,435,284,430,285,424,193,417,136,405,79,387,32"/>
+<area shape="rect" id="Node000012" href="$advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění" alt="" coords="273,79,396,104"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="378,33,353,69,348,66,374,29"/>
+<area shape="rect" id="Node000013" href="$main__support_8h.html" title="Soubor pro multiplatformní podporu programu v různých OS." alt="" coords="522,79,633,104"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="416,28,534,71,532,76,414,33"/>
+<area shape="rect" id="Node000005" href="$_t_vector_8h.html" title="Definice typu Sortable Vector." alt="" coords="159,152,238,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="201,104,201,138,196,138,196,104"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="160,176,109,194,85,208,63,227,48,255,41,285,35,284,43,253,59,224,81,204,107,189,158,171"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="119,299,193,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="198,179,166,286,161,285,193,177"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="74,225,142,251"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="186,179,135,219,132,214,182,175"/>
+<area shape="rect" id="Node000008" href="$_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API." alt="" coords="218,225,345,251"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="214,175,259,214,256,218,210,179"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="239,173,297,192,357,223,393,254,420,286,415,289,389,258,355,228,295,197,238,178"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="243,253,80,300,79,295,241,248"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="263,253,190,294,187,289,260,248"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="217,299,281,324"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="278,252,262,287,258,285,274,250"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="305,299,375,324"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="293,249,324,287,320,290,289,253"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="307,248,397,290,395,295,305,253"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="314,106,234,148,232,143,312,102"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="573,106,554,141,549,139,569,103"/>
+</map>

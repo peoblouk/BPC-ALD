@@ -1,0 +1,12 @@
+<map id="vector_move_positions" name="vector_move_positions">
+<area shape="rect" id="Node000001" title="Přesun hodnoty elementu vektoru." alt="" coords="329,55,481,80"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="151,5,234,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="336,54,234,30,235,25,337,49"/>
+<area shape="rect" id="Node000004" href="$group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="153,55,232,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="315,70,232,70,232,65,315,65"/>
+<area shape="rect" id="Node000005" href="$group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5" title="Přesun hodnoty elementu vektoru určené dvěma iterátory." alt="" coords="104,104,281,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="337,86,249,107,248,101,336,81"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,29,57,42,56,37,137,24"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="140,62,56,50,57,44,140,57"/>
+</map>

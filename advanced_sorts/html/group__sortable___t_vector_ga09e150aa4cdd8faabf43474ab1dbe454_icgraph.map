@@ -1,0 +1,18 @@
+<map id="vector_compare_position_value" name="vector_compare_position_value">
+<area shape="rect" id="Node000001" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="425,85,591,125"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="104,5,187,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="468,79,426,53,377,33,326,22,275,17,187,17,187,12,276,11,327,16,378,27,428,48,471,75"/>
+<area shape="rect" id="Node000004" href="$advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="243,67,369,92"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="411,95,369,90,370,85,412,90"/>
+<area shape="rect" id="Node000006" href="$group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="106,116,185,141"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="412,114,185,129,185,123,411,108"/>
+<area shape="rect" id="Node000007" href="$group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="235,167,377,207"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="447,132,357,170,355,165,445,127"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,67,56,92"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,40,56,69,54,64,107,35"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="334,56,326,48,306,45,289,47,281,52,279,58,284,65,279,68,273,58,276,49,288,42,306,40,328,43,337,52"/>
+<area shape="rect" id="Node000005" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="104,67,187,92"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,82,187,82,187,77,229,77"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="90,82,56,82,56,77,90,77"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="101,113,55,92,57,88,104,108"/>
+</map>

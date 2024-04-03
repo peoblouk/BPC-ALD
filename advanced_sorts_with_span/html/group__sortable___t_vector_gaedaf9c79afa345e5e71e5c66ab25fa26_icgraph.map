@@ -1,0 +1,15 @@
+<map id="vector_compare_positions" name="vector_compare_positions">
+<area shape="rect" id="Node000001" title="Porovnání hodnot elementů vektorů" alt="" coords="220,129,392,155"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)" alt="" coords="44,5,133,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,122,231,83,171,44,133,30,135,25,173,40,234,78,283,118"/>
+<area shape="rect" id="Node000003" href="$group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz..." alt="" coords="13,55,165,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,127,171,94,135,83,137,77,173,89,262,122"/>
+<area shape="rect" id="Node000004" href="$group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)" alt="" coords="9,104,168,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,133,168,129,169,123,207,128"/>
+<area shape="rect" id="Node000005" href="$group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)" alt="" coords="45,153,132,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,156,133,164,132,159,206,150"/>
+<area shape="rect" id="Node000006" href="$group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)" alt="" coords="43,203,134,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="259,162,173,193,133,205,132,200,171,187,258,157"/>
+<area shape="rect" id="Node000007" href="$group___t_span.html#gaffd3a758138012dac875ceda42a975db" title="Porovnání hodnot elementů Spanů" alt="" coords="5,252,172,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="282,166,234,204,173,242,141,254,139,250,171,237,231,200,279,162"/>
+</map>

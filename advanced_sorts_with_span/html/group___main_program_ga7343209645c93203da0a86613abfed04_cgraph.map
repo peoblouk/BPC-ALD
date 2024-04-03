@@ -1,0 +1,38 @@
+<map id="sort_testing" name="sort_testing">
+<area shape="rect" id="Node000001" title="Testování třídicí metody." alt="" coords="5,213,96,239"/>
+<area shape="rect" id="Node000002" href="$main__support_8h.html#aa291195ad453d2b1e29004cc2e043c01" title="Výpočet doby trvání časového intervalu." alt="" coords="174,5,265,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,212,62,178,79,132,105,83,122,60,142,40,160,29,163,33,146,44,126,64,110,86,84,134,67,180,57,214"/>
+<area shape="rect" id="Node000003" href="$group___basic_sorts.html#ga25c7ac8991c266d71b75cf20c14b67cf" title="Vytisknutí elementu vektoru pomocí iterátoru." alt="" coords="169,55,269,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,212,88,158,113,126,142,97,164,84,167,88,146,101,117,129,93,161,61,214"/>
+<area shape="rect" id="Node000007" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="597,198,717,238"/>
+<area shape="poly" id="edge18_Node000001_Node000007" title=" " alt="" coords="65,211,99,185,143,162,254,126,301,115,346,109,390,109,438,114,490,125,550,142,592,162,626,187,623,191,589,166,548,147,489,130,437,119,390,114,346,114,302,120,255,131,145,167,102,190,68,215"/>
+<area shape="rect" id="Node000008" href="$group___t_vector.html#ga6b0b8780d60dad02b8569be119769548" title="Vytvoření úplné kopie vektoru." alt="" coords="399,156,493,181"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="82,211,143,191,207,180,272,173,385,167,385,172,272,178,208,186,145,197,83,216"/>
+<area shape="rect" id="Node000009" href="$group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6" title="Dealokace vektoru." alt="" coords="393,255,499,280"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="82,236,145,255,206,264,269,268,379,268,379,274,269,273,206,269,143,261,80,241"/>
+<area shape="rect" id="Node000010" href="$group___iterator_algorithms.html#gac5ae89ba507530f7c51c45447efbe4ac" title="Zavolání zvolené funkce na prvních N elementů vektoru od pozice určené iterátorem." alt="" coords="174,321,265,347"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="67,237,101,268,145,300,172,314,170,318,143,304,98,272,64,241"/>
+<area shape="rect" id="Node000012" href="$group__sortable___t_vector.html#ga1b7a4850be6488c69c293bdd13f729a7" title="Ověření korektního setřídění vektoru." alt="" coords="144,206,295,246"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="96,223,130,223,130,229,96,229"/>
+<area shape="rect" id="Node000014" href="$group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560" title="Vytvoření nového iterátoru ukazujícího na počáteční element." alt="" coords="149,371,290,396"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="60,237,91,295,115,328,146,357,153,362,150,367,142,361,111,332,86,298,55,240"/>
+<area shape="rect" id="Node000015" href="$group__sortable___t_vector.html#gac0806530378fe49a3d61622ca8b9957e" title="Zobrazení hodnoty statistik počtu operací s elementy vektoru." alt="" coords="146,420,293,445"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="57,238,67,272,84,317,110,365,127,387,146,407,152,411,149,416,142,411,123,391,106,368,79,319,62,273,52,239"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#gaaae5b52d7f1d155134792f040f00a385" title="Uložení elementu do souboru." alt="" coords="362,55,530,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,65,348,65,348,70,270,70"/>
+<area shape="rect" id="Node000005" href="$group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c" title="Přečtení hodnoty elementu z vektoru pomocí iterátoru." alt="" coords="377,5,515,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="269,54,373,31,374,36,270,59"/>
+<area shape="rect" id="Node000006" href="$_t_vector_8c.html#a0fe5f1145e51f154b5470d640c5d682c" title=" " alt="" coords="597,5,717,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="516,15,584,15,584,21,516,21"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="517,24,551,40,585,72,612,110,633,149,647,183,642,185,628,151,608,113,581,76,548,44,514,28"/>
+<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="265,344,324,356,396,364,474,361,512,353,548,340,576,322,601,299,637,249,641,252,605,302,580,326,551,344,514,358,475,366,396,369,323,362,264,349"/>
+<area shape="rect" id="Node000011" href="$group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56" title="Posunutí iterátoru vpřed." alt="" coords="369,304,523,329"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="265,328,355,321,356,326,265,333"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="516,301,548,290,587,269,621,244,624,249,590,273,550,295,518,307"/>
+<area shape="poly" id="edge14_Node000012_Node000008" title=" " alt="" coords="294,204,342,191,385,181,386,186,343,197,295,209"/>
+<area shape="poly" id="edge15_Node000012_Node000009" title=" " alt="" coords="296,237,379,253,379,258,295,242"/>
+<area shape="rect" id="Node000013" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="355,205,537,231"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="295,221,342,219,342,224,295,226"/>
+<area shape="rect" id="Node000016" href="$_t_vector_8c.html#ac9a7377bcfc71c2cc98592f1fa31deb0" title=" " alt="" coords="343,420,549,445"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="293,430,329,430,329,435,293,435"/>
+</map>
