@@ -98,20 +98,20 @@ int main(int argc, char *argv[])
 	if(!initialized)
 		return 2;
 
-	sort_testing("Insert Sort", insert_sort, &vector_orig);
+	// sort_testing("Insert Sort", insert_sort, &vector_orig);
 	//sort_testing("Select Sort", select_sort, &vector_orig);
 	//sort_testing("Bubble Sort", bubble_sort, &vector_orig);
 	//sort_testing("Bubble Sort Optimized", bubble_sort_optimized, &vector_orig);
 	//sort_testing("Shaker Sort", shaker_sort, &vector_orig);
 
-	sort_testing("Shell Sort", shell_sort, &vector_orig);
-	sort_testing("Quick Sort", quick_sort, &vector_orig);
+	// sort_testing("Shell Sort", shell_sort, &vector_orig);
+	// sort_testing("Quick Sort", quick_sort, &vector_orig);
 
-	sort_testing("Heap Sort (iterators, top_down)", heap_sort_with_iterators, &vector_orig);
+	// sort_testing("Heap Sort (iterators, top_down)", heap_sort_with_iterators, &vector_orig);
 	sort_testing("Heap Sort (no iterators, top_down)", heap_sort, &vector_orig);
 
 	sort_testing("Merge Sort", merge_sort, &vector_orig);
-	sort_testing("Merge Sort (with span)", merge_sort_with_span, &vector_orig);
+	// sort_testing("Merge Sort (with span)", merge_sort_with_span, &vector_orig);
 
 	vector_destroy(&vector_orig);
 	return 0;

@@ -15,19 +15,37 @@
  *  \param[in] aEnd Index druhého rozsahu ve vektoru \p aFromVector
  *  \param[out] aToVector Ukazatel na sloučený (zatříděný) vektor elementů
  */
-static void mergify(struct TVector *aFromVector, size_t aBegin, size_t aMiddle, size_t aEnd, struct TVector *aToVector)
+static void mergify(struct TVector* aFromVector, size_t aBegin, size_t aMiddle, size_t aEnd, struct TVector* aToVector)
 	{
-//	puts("Mergify:");
-//	for(size_t i = aBegin; i < aMiddle; ++i)
-//		vector_element_store_file(aFromVector->iValues[i], stdout);
-//	fprintf(stdout, "| ");
-//	for(size_t i = aMiddle; i < aEnd; ++i)
-//		vector_element_store_file(aFromVector->iValues[i], stdout);
-//	putchar('\n');
+	//	puts("Mergify:");
+	//	for(size_t i = aBegin; i < aMiddle; ++i)
+	//		vector_element_store_file(aFromVector->iValues[i], stdout);
+	//	fprintf(stdout, "| ");
+	//	for(size_t i = aMiddle; i < aEnd; ++i)
+	//		vector_element_store_file(aFromVector->iValues[i], stdout);
+	//	putchar('\n');
 
 	size_t i = aBegin;
 	size_t i1 = aBegin;
 	size_t i2 = aMiddle;
+
+	for (; (i1 < aMiddle) && (i2 < aEnd); ++i) // Pokud jsou prvky v obou
+		{
+		if (vector_compare_positions(aFromVector, i1, aFromVector, i2) <= 0)
+			vector_move_positions(aToVector, i, aFromVector, i1++);
+		else
+			vector_move_positions(aToVector, i, aFromVector, i2++);
+		}
+
+	// Prvky jsou v levé straně
+	for (; i1 < aMiddle; ++i) 
+		vector_move_positions(aToVector, i, aFromVector, i1++);
+	
+	// Prvky jsou na pravé straně
+	for (; i2 < aEnd; ++i)
+		vector_move_positions(aToVector, i, aFromVector, i2++);
+
+
 
 //	for(size_t i = aBegin; i < aEnd; ++i)
 //		vector_element_store_file(aToVector->iValues[i], stdout);
@@ -43,38 +61,16 @@ static void mergify(struct TVector *aFromVector, size_t aBegin, size_t aMiddle, 
  */
 static void merge_sort_worker(struct TVector *aFromVector, size_t aBegin, size_t aEnd, struct TVector *aToVector)
 	{
-	if((aBegin >= aEnd) || (aEnd - aBegin < 2))
+	if((aBegin >= aEnd) || (aEnd - aBegin < 2)) // Podmínka ukončení rekurze
 		return;
-
-//	puts("aFrom:");
-//	for(size_t i = aBegin; i < aEnd; ++i)
-//		vector_element_store_file(aFromVector->iValues[i], stdout);
-//	putchar('\n');
 
 	const size_t middle = aBegin + (aEnd - aBegin) / 2;
 
-//	{
-//	puts("Split:");
-//	for(size_t i = aBegin; i < middle; ++i)
-//		vector_element_store_file(aFromVector->iValues[i], stdout);
-//	fprintf(stdout, "| ");
-//	for(size_t i = middle; i < aEnd; ++i)
-//		vector_element_store_file(aToVector->iValues[i], stdout);
-//	putchar('\n');
-//	}
 
 	merge_sort_worker(aToVector, aBegin, middle, aFromVector);
-//	merge_sort_worker();
+	merge_sort_worker(aToVector, middle, aEnd, aFromVector);
 
-//	mergify();
-
-//	puts("aToVector:");
-//	for(size_t i = 0; i < aToVector->iSize; ++i)
-//		if((i >= aBegin) && (i < aEnd))
-//			vector_element_store_file(aToVector->iValues[i], stdout);
-//		else
-//			fprintf(stdout, ". ");
-//	putchar('\n');
+	mergify(aFromVector, aBegin, middle, aEnd, aToVector); // Zatřizujeme z aFromVector do aToVector, tím
 	}
 
 void merge_sort(struct TVector *aVector)

@@ -16,6 +16,22 @@
  */
 static inline void sift_down(THeapElement aValue, struct THeap *aHeap, size_t aParentPos)
 	{
+	const size_t heapsize = heap_size(aHeap);
+
+	for (size_t pos = aParentPos; (pos = heap_pos_to_left(pos)) < heapsize; aParentPos = pos)
+		{
+		const size_t right_pos = heap_pos_to_right(aParentPos);
+		// Pokud existuje i pravy potomek, zjisti se, v kterem z potomku je vetsi hodnota
+		if ((right_pos < heapsize) && heap_compare_positions(aHeap, pos, aHeap, right_pos) < 0) // Neexistuje další následník pravý
+			pos = right_pos;
+
+		if (heap_compare_position_value(aHeap, pos, aValue) > 0) // Hodnota ve vetsim z potomku je vetsi nez vkladana hodnota
+			heap_move_positions(aHeap, aParentPos, aHeap, pos);
+		else
+			// Vkladana hodnota je vetsi nez hodnota v potomcich, je splnena podminka haldy
+			break; // Koncime
+		}
+	heap_set_value(aHeap, aParentPos, aValue);
 	}
 
 /** \brief Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy
@@ -24,10 +40,16 @@ static inline void sift_down(THeapElement aValue, struct THeap *aHeap, size_t aP
  */
 static void heapify(struct THeap *aHeap)
 	{
-//	putchar('\t');
-//	for(size_t i = 0; i < heap_size(aHeap); ++i)
-//		vector_element_store_file(aHeap->iVector.iValues[i], stdout);
-//	putchar('\n');
+	size_t pos = heap_size(aHeap);
+	if (pos < 2)
+		return;
+
+	pos = heap_pos_to_parent(pos - 1);
+
+	do {
+		sift_down(heap_value(aHeap, pos), aHeap, pos);
+		} while (pos--); // Dokud
+
 	}
 
 void heap_sort(struct TVector *aVector)
