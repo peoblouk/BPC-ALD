@@ -1,0 +1,17 @@
+<map id="vector_move_with_iterators" name="vector_move_with_iterators">
+<area shape="rect" id="Node000001" title="Přesun hodnoty elementu vektoru určené dvěma iterátory." alt="" coords="768,31,945,56"/>
+<area shape="rect" id="Node000002" href="$group___t_heap.html#gaa7548708d4ee2e6afd1366cccc135f6a" title="Přesun hodnoty uzlu haldy určené dvěma iterátory." alt="" coords="549,5,720,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="754,34,720,30,720,25,754,29"/>
+<area shape="rect" id="Node000007" href="$group___t_span.html#ga972048723036512595f461c3ba0a9d21" title="Přesun hodnoty elementu Spanu určené dvěma iterátory." alt="" coords="549,55,720,80"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="754,57,720,61,720,55,754,52"/>
+<area shape="rect" id="Node000003" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,31,267,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="536,19,429,20,315,27,267,33,266,28,314,22,429,15,536,13"/>
+<area shape="rect" id="Node000005" href="$heap__sort__with__iterators_8c.html#a7bf828c9c4eb35c2121c3f7d1177d19b" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="425,31,501,56"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="536,35,502,40,501,35,535,30"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,46,56,46,56,41,91,41"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="411,46,267,46,267,41,411,41"/>
+<area shape="rect" id="Node000006" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="315,81,377,107"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="422,64,377,84,375,79,420,59"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="301,83,225,59,227,53,302,78"/>
+</map>

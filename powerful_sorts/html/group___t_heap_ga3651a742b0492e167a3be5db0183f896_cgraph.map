@@ -1,0 +1,9 @@
+<map id="heap_compare_position_value" name="heap_compare_position_value">
+<area shape="rect" id="Node000001" title="Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement." alt="" coords="5,5,164,45"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="212,5,377,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,23,198,23,198,28,164,28"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a8254190a2b4fe570173cc77dba0ee7a4" title=" " alt="" coords="425,5,567,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,23,412,23,412,28,377,28"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="615,13,796,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,23,601,23,601,28,567,28"/>
+</map>

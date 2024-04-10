@@ -1,0 +1,44 @@
+<map id="vector_fast_compare_position_value" name="vector_fast_compare_position_value">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1065,213,1207,253"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="852,140,1017,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1067,211,989,183,991,178,1068,206"/>
+<area shape="rect" id="Node000013" href="$group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="863,287,1006,327"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="1068,261,991,289,989,284,1067,256"/>
+<area shape="rect" id="Node000003" href="$group___t_heap.html#ga3651a742b0492e167a3be5db0183f896" title="Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement." alt="" coords="633,5,791,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="898,133,853,99,803,66,765,48,767,43,805,62,857,95,901,129"/>
+<area shape="rect" id="Node000008" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="315,91,397,117"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="838,147,804,141,688,124,572,112,397,106,397,101,572,107,689,119,804,136,839,141"/>
+<area shape="rect" id="Node000009" href="$advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="445,145,572,170"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="838,162,572,160,572,155,838,157"/>
+<area shape="rect" id="Node000011" href="$group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="469,194,548,219"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="838,173,549,205,548,200,838,168"/>
+<area shape="rect" id="Node000012" href="$group___t_span.html#gad64d53738a4da90ef126cd73d84b5f52" title="Porovnání mezi hodnotou elementu Span a hodnotou typu VectorElement." alt="" coords="633,223,791,263"/>
+<area shape="poly" id="edge16_Node000002_Node000012" title=" " alt="" coords="868,187,768,225,766,220,866,182"/>
+<area shape="rect" id="Node000004" href="$heap__sort_8c.html#a1572325ec24b4714bb9bbd64229d85d0" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="471,13,547,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="619,28,547,28,547,23,619,23"/>
+<area shape="rect" id="Node000005" href="$group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru." alt="" coords="146,42,225,67"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="457,27,389,27,315,32,226,48,225,43,314,27,389,22,457,21"/>
+<area shape="rect" id="Node000007" href="$heap__sort_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="325,42,387,67"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="458,38,388,51,387,46,457,32"/>
+<area shape="rect" id="Node000006" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,143,56,169"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="135,74,105,89,71,117,44,145,41,141,67,113,103,84,132,69"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="311,57,225,57,225,52,311,52"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="301,109,209,118,105,135,57,149,56,144,103,129,208,112,300,104"/>
+<area shape="poly" id="edge13_Node000009_Node000009" title=" " alt="" coords="535,134,527,126,509,123,493,125,485,130,483,136,488,143,483,146,478,136,480,127,491,120,509,118,530,121,539,130"/>
+<area shape="rect" id="Node000010" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="144,143,227,169"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="431,160,227,159,227,154,431,154"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="130,159,56,159,56,153,130,153"/>
+<area shape="poly" id="edge15_Node000011_Node000006" title=" " alt="" coords="455,211,297,207,200,199,103,184,55,169,57,164,105,179,201,194,297,202,456,205"/>
+<area shape="rect" id="Node000014" href="$group___t_heap.html#gad15335cb6b5e00a87655aa3f25fadc38" title="Porovnání mezi hodnotou v uzlu haldy určenou iterátorem a hodnotou typu HeapElement." alt="" coords="620,287,804,327"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="850,309,804,309,804,304,850,304"/>
+<area shape="rect" id="Node000018" href="$group___t_span.html#ga0b2e633085569b47c063161298794b98" title="Porovnání mezi hodnotou elementu Spanu určenou iterátorem a hodnotou typu VectorElement." alt="" coords="620,351,804,391"/>
+<area shape="poly" id="edge24_Node000013_Node000018" title=" " alt="" coords="852,333,783,353,781,348,850,328"/>
+<area shape="rect" id="Node000015" href="$heap__sort__with__iterators_8c.html#a7bf828c9c4eb35c2121c3f7d1177d19b" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="471,294,547,319"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="606,309,547,309,547,304,606,304"/>
+<area shape="rect" id="Node000016" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,245,267,270"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="457,298,397,287,267,269,267,263,398,281,458,293"/>
+<area shape="rect" id="Node000017" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="325,295,387,321"/>
+<area shape="poly" id="edge22_Node000015_Node000017" title=" " alt="" coords="457,310,388,310,388,305,457,304"/>
+<area shape="poly" id="edge21_Node000016_Node000006" title=" " alt="" coords="130,242,103,228,67,199,41,171,44,167,71,195,105,223,132,237"/>
+<area shape="poly" id="edge23_Node000017_Node000016" title=" " alt="" coords="311,298,228,273,230,268,312,292"/>
+</map>

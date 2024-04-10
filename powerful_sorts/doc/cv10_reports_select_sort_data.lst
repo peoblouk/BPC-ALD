@@ -1,0 +1,140 @@
+
+------ Insert Sort ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 29
+ Swaps: 0
+ Moves: 25
+ Value Gets: 9
+ Value Sets: 9
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Shell Sort ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 23
+ Swaps: 0
+ Moves: 13
+ Value Gets: 16
+ Value Sets: 16
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Quick Sort ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 53
+ Swaps: 10
+ Moves: 0
+ Value Gets: 8
+ Value Sets: 0
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Heap Sort (iterators, top_down) ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+Operations using iterators:
+ Comparisons: 36
+ Swaps: 0
+ Moves: 25
+ Value Gets: 14
+ Value Sets: 14
+
+------ Heap Sort (no iterators, top_down) ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 36
+ Swaps: 0
+ Moves: 25
+ Value Gets: 14
+ Value Sets: 14
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Merge Sort ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 21
+ Swaps: 0
+ Moves: 34
+ Value Gets: 0
+ Value Sets: 0
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0
+
+------ Merge Sort (with span) ------
+
+Vector is sorted. OK :-)
+
+Sorting time: 0.000000 seconds.
+
+Operations using positions:
+ Comparisons: 21
+ Swaps: 0
+ Moves: 34
+ Value Gets: 0
+ Value Sets: 0
+
+Operations using iterators:
+ Comparisons: 0
+ Swaps: 0
+ Moves: 0
+ Value Gets: 0
+ Value Sets: 0

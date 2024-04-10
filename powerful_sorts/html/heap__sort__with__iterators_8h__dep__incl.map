@@ -1,0 +1,9 @@
+<map id="heap_sort_with_iterators.h" name="heap_sort_with_iterators.h">
+<area shape="rect" id="Node000001" title="Deklarace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzlům ..." alt="" coords="89,5,264,31"/>
+<area shape="rect" id="Node000002" href="$heap__sort__with__iterators_8c.html" title="Implementace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzl..." alt="" coords="5,79,180,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,42,108,80,105,76,151,38"/>
+<area shape="rect" id="Node000003" href="$powerful__sorts_8h.html" title="Deklarace API výkonnějších metod třídění" alt="" coords="204,79,320,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,37,250,76,246,80,199,41"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title="Hlavní program testující API výkonnějších metod třídění" alt="" coords="231,152,293,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,118,265,152,259,152,259,118"/>
+</map>

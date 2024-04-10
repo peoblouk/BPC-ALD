@@ -1,0 +1,19 @@
+<map id="vector_iterator_value" name="vector_iterator_value">
+<area shape="rect" id="Node000001" title="Přečtení hodnoty elementu z vektoru pomocí iterátoru." alt="" coords="644,71,783,96"/>
+<area shape="rect" id="Node000002" href="$group___t_heap.html#gac645f0bf424be39230e2472e55ad4f6e" title="Přečtení hodnoty uzlu haldy pomocí iterátoru." alt="" coords="463,20,596,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,70,576,48,577,43,654,64"/>
+<area shape="rect" id="Node000006" href="$group___basic_sorts.html#ga25c7ac8991c266d71b75cf20c14b67cf" title="Vytisknutí elementu vektoru pomocí iterátoru." alt="" coords="315,71,415,96"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="630,86,415,86,415,81,630,81"/>
+<area shape="rect" id="Node000008" href="$group___t_span.html#ga8796ef08880befbf07bda987120a58cb" title="Přečtení hodnoty elementu z Spanu pomocí iterátoru." alt="" coords="463,121,596,147"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="654,102,577,124,576,119,653,97"/>
+<area shape="rect" id="Node000003" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,21,267,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,20,414,11,365,8,315,11,239,24,238,19,314,6,365,3,415,6,466,14"/>
+<area shape="rect" id="Node000005" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="333,21,396,47"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="449,36,396,36,396,31,449,31"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,47,56,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,52,57,58,56,53,94,46"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="319,37,267,37,267,31,319,31"/>
+<area shape="rect" id="Node000007" href="$group___main_program.html#ga7343209645c93203da0a86613abfed04" title="Testování třídicí metody." alt="" coords="140,71,231,96"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="301,86,231,86,231,81,301,81"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="126,77,56,66,57,61,127,72"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="heap_iterator_is_valid" name="heap_iterator_is_valid">
+<area shape="rect" id="Node000001" title="Zjištění platnosti iterátoru." alt="" coords="827,55,973,80"/>
+<area shape="rect" id="Node000002" href="$group___t_heap.html#ga974f2e71745d48caecb94896f5e9b1c5" title="Posunutí iterátoru na levého následníka." alt="" coords="636,5,775,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="835,54,756,33,757,28,837,49"/>
+<area shape="rect" id="Node000007" href="$group___t_heap.html#ga30a2c6e90b0e73d8a4f682c4a89accc6" title="Posunutí iterátoru na rodičovský uzel." alt="" coords="425,105,584,131"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="832,86,779,95,678,108,585,116,584,110,677,102,778,90,831,80"/>
+<area shape="rect" id="Node000008" href="$group___t_heap.html#ga1b612baefabca4177116615280539790" title="Posunutí iterátoru na pravého následníka." alt="" coords="632,55,779,80"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="813,70,779,70,779,65,813,65"/>
+<area shape="rect" id="Node000003" href="$heap__sort__with__iterators_8c.html#a7bf828c9c4eb35c2121c3f7d1177d19b" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="467,55,543,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="640,37,544,61,542,56,639,31"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,80,267,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="453,74,267,89,267,84,453,69"/>
+<area shape="rect" id="Node000006" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="315,105,377,131"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="454,86,379,111,377,106,453,81"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,80,56,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,95,56,95,56,90,91,90"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="301,114,266,108,266,103,302,108"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="412,121,378,121,378,115,412,115"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="618,70,543,70,543,65,618,65"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="span_create_left_subspan" name="span_create_left_subspan">
+<area shape="rect" id="Node000001" title="Vytvoření SubSpanu jako části od počátku a definované délce původního Spanu." alt="" coords="484,29,657,55"/>
+<area shape="rect" id="Node000002" href="$merge__sort__with__span_8c.html#acfb719292b2ea89b714190280e0021b0" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="304,29,436,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,45,436,45,436,39,470,39"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="404,19,394,11,370,8,350,10,339,15,337,20,343,28,339,31,332,21,336,11,349,5,370,3,396,6,407,15"/>
+<area shape="rect" id="Node000003" href="$group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span." alt="" coords="104,29,256,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,45,257,45,257,39,290,39"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,29,56,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,45,56,45,56,39,90,39"/>
+</map>

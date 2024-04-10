@@ -1,0 +1,9 @@
+<map id="THeap.h" name="THeap.h">
+<area shape="rect" id="Node000001" title="Definice typu Heap pro přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector with ..." alt="" coords="111,5,181,31"/>
+<area shape="rect" id="Node000002" href="$_t_heap_8c.html" title="Implementace API typu Heap pro přístup k elementům vektoru jako k uzlům haldy (Sortable Vector with s..." alt="" coords="5,79,76,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,41,59,81,56,76,116,36"/>
+<area shape="rect" id="Node000003" href="$heap__sort_8c.html" title="Implementace API výkonnější metody třídění (Heap sort), využívající poziční API pro přístup k uzlům h..." alt="" coords="101,79,191,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,44,149,79,143,79,143,44"/>
+<area shape="rect" id="Node000004" href="$heap__sort__with__iterators_8c.html" title="Implementace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzl..." alt="" coords="216,79,391,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,34,279,76,277,81,183,39"/>
+</map>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: Zadání cvičení 10</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 10 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv10__zadani__powerful__sorts"></a> Cvičení je věnováno návrhu a implementaci dalších dvou výkonnějších třídicích algoritmů:</p>
+<ol type="1">
+<li><b>Třídění s využitím haldy - Heap sort</b> - (<em>varianta top-down</em>) - viz přednáška 9.</li>
+<li><b>Třídění slučováním - Merge sort</b> - (<em>varianta top-down s pomocí rekurzivního rozkladu</em>) - viz přednáška 9.</li>
+</ol>
+<p>Obě metody mají několik variant řešení. I když je princip stejný, nejedná se o drobné modifikace, ale spíše o rozdílný přístup k řešení a použití pomocných programových technik.</p>
+<hr  />
+<h1>Zadání úlohy</h1>
+<p>Do dodaného projektu si zkopírujte soubory s již vytvořenými algoritmy třídění z minulých cvičení <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code>, <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code>, <code><a class="el" href="advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění">advanced_sorts.c</a></code> a <code><a class="el" href="advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění">advanced_sorts.h</a></code> pro srovnání rychlosti třídění.</p>
+<p>Navrhněte, naimplementujte a na přiložených souborech odzkoušejte algoritmy <b>Heap sort</b> a <b>Merge sort</b>. Zvolte si jedno z možných řešení pro každý z algoritmů.</p>
+<p>Pro obě metody jsou dostupné dvě možnosti implementace (dokončete alespoň jednu z možných implementací pro každou z metod):</p>
+<ol type="1">
+<li><b>Heap sort</b>: <br  />
+ a) přístup k prvku pomocí API <code><a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code> využívající k přístupu do uzlu haldy indexaci - realizováno funkcí <code><a class="el" href="group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru.">heap_sort()</a></code>. <br  />
+ b) přístup k prvku pomocí API <code><a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code> využívající k přístupu do uzlu haldy iterátor - realizováno funkcí <code><a class="el" href="group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru.">heap_sort_with_iterators()</a></code>.</li>
+<li><b>Merge sort</b>: <br  />
+ a) přístup k prvku pomocí indexu pozice ve vektoru - realizováno funkcí <code><a class="el" href="group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad.">merge_sort()</a></code>. <br  />
+ b) přístup k prvku pomocí API <code><a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> zajišťující omezený pohled na původně celý vektor - realizováno funkcí <code><a class="el" href="group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span.">merge_sort_with_span()</a></code>.</li>
+</ol>
+<p>Algoritmy vyzkoušejte (pokud možno) na všech testovacích posloupnostech uložených v souborech, které jsou součástí projektu.</p>
+<h2>Soubory projektu</h2>
+<p>Soubory <code><a class="el" href="basic__sorts_8c.html" title="Implementace API přímých metod třídění">basic_sorts.c</a></code> a <code><a class="el" href="basic__sorts_8h.html" title="Deklarace API přímých metod třídění">basic_sorts.h</a></code> - zkopírujte si obsah z již Vámi realizované úlohy <code>basic_sorts</code> z minulých cvičení.</p>
+<p>Soubory <code><a class="el" href="advanced__sorts_8c.html" title="Implementace API účinnějších metod třídění">advanced_sorts.c</a></code> a <code><a class="el" href="advanced__sorts_8h.html" title="Deklarace API účinnějších metod třídění">advanced_sorts.h</a></code> - zkopírujte si obsah z již Vámi realizované úlohy <code>advanced_sorts</code> z minulých cvičení.</p>
+<p>Soubory <code>check.c</code> a <code>check.h</code> jsou soubory pro kontrolu manipulace s pamětí a soubory.</p>
+<p>Soubory <code><a class="el" href="_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API.">TVectorElement.h</a></code>, <code><a class="el" href="_t_vector_8h.html" title="Definice typu Sortable Vector with shareable sortstats.">TVector.h</a></code> a <code><a class="el" href="_t_vector_8c.html" title="Implementace API typu Sortable Vector with shareable sortstats.">TVector.c</a></code> jsou funkčně totožné jen aktualizované verze z minulých projektů. Všimněte si např. ve <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> změnu struktury pro statistiku na ukazatel - z důvodu sdílení dat více funkcemi/proměnnými.</p>
+<p>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program testující API výkonnějších metod třídění">main.c</a></code> - vychází z minulé verze. Je doplněn o načítání nových testovacích dat ze souborů. Dále je doplněn o testování nových třídicích metod. Srovnání se provádí s algoritmy funkcí <code><a class="el" href="group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)">insert_sort()</a></code>, <code><a class="el" href="group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti.">shell_sort()</a></code> a <code><a class="el" href="group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota.">quick_sort()</a></code>.</p>
+<p>Soubor <code><a class="el" href="powerful__sorts_8h.html" title="Deklarace API výkonnějších metod třídění">powerful_sorts.h</a></code> - slouží jako společný hlavičkový soubor pro nové funkce.</p>
+<p>Soubory pro realizaci <b>Heap sortu</b>:</p>
+<ol type="1">
+<li>Pro první variantu soubor <code><a class="el" href="heap__sort_8h.html" title="Deklarace API výkonnější metody třídění (Heap sort), využívající poziční API pro přístup k uzlům hald...">heap_sort.h</a></code> jako hlavičkový soubor pro funkci <code><a class="el" href="group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru.">heap_sort()</a></code>. K němu příslušný zdrojový soubor <code><a class="el" href="heap__sort_8c.html" title="Implementace API výkonnější metody třídění (Heap sort), využívající poziční API pro přístup k uzlům h...">heap_sort.c</a></code> pro vlastní realizaci funkce a pro funkce pomocné.</li>
+<li>Pro druhou variantu soubor <code><a class="el" href="heap__sort__with__iterators_8h.html" title="Deklarace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzlům ...">heap_sort_with_iterators.h</a></code> jako hlavičkový soubor pro funkci <code><a class="el" href="group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru.">heap_sort_with_iterators()</a></code>. K němu příslušný zdrojový soubor <code><a class="el" href="heap__sort__with__iterators_8c.html" title="Implementace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzl...">heap_sort_with_iterators.c</a></code> pro vlastní realizaci funkce a pro funkce pomocné.</li>
+</ol>
+<p>Funkce pro obě varianty mají jako vstupní parametr <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> s daty pro třídění. Rozdíl je v tom, že pro další činnost používá první varianta <code>struct <a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code>, zatímco druhá varianta využívá <code>struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator" title="Definice typu HeapIterator.">THeapIterator</a></code>. Obě varianty používají pro přesuny/úpravu datových členů pomocné funkce: <code><a class="el" href="heap__sort_8c.html#a1572325ec24b4714bb9bbd64229d85d0" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ...">sift_down()</a></code> a <code><a class="el" href="heap__sort_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy.">heapify()</a></code> (s parametry <code>struct <a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code> resp. <code>struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator" title="Definice typu HeapIterator.">THeapIterator</a></code>).</p>
+<p>Struktury <code>struct <a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code> a <code>struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator" title="Definice typu HeapIterator.">THeapIterator</a></code> a funkce pro manipulaci s nimi jsou v souborech <code><a class="el" href="_t_heap_8c.html" title="Implementace API typu Heap pro přístup k elementům vektoru jako k uzlům haldy (Sortable Vector with s...">THeap.c</a></code> a <code><a class="el" href="_t_heap_8h.html" title="Definice typu Heap pro přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector with ...">THeap.h</a></code>.</p>
+<p><code>struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator" title="Definice typu HeapIterator.">THeapIterator</a></code> je iterátor navázaný na strukturu <code>struct <a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code>. Struktura <code>struct <a class="el" href="group___t_heap.html#struct_t_heap" title="Definice typu Heap.">THeap</a></code> realizuje haldu, ale pro data využívá strukturu <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>. Pro tuto strukturu jsou připraveny funkce, které pracují s touto strukturou jako s haldou (implementují funkce používané pro práci s daty, tak, že respektují postupy a pravidla, která platí pro haldu). Znamená to, že skutečná/vnitřní realizace je vektor, ale halda je strom. Tato skutečnost je například vidět ve funkcích: <code><a class="el" href="group___t_heap.html#ga397a260a81bbd6910ca1464638722510" title="Vypočte pozici rodičovského uzlu.">heap_pos_to_parent()</a></code>, <code><a class="el" href="group___t_heap.html#gaeb9b613cb82e8946a4c37bb1145780f4" title="Vypočte pozici uzlu levého následníka.">heap_pos_to_left()</a></code> a <code><a class="el" href="group___t_heap.html#ga1272b4f692f5ec34abaeecde82899bfb" title="Vypočte pozici uzlu pravého následníka.">heap_pos_to_right()</a></code>, kdy získáme index na rodičovský uzel případně na levého resp. pravého následníka aktuálního uzlu (prvky jsou odkazovány přes indexy ve vektoru).</p>
+<p>Soubory pro realizaci <b>Merge sortu</b>:</p>
+<ol type="1">
+<li>Pro první variantu, která používá pro manipulaci s daty struktury <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>, je přichystán soubor <code><a class="el" href="merge__sort_8h.html" title="Deklarace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi.">merge_sort.h</a></code> jako hlavičkový soubor pro funkce <code><a class="el" href="group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad.">merge_sort()</a></code>. K němu příslušný zdrojový soubor <code><a class="el" href="merge__sort_8c.html" title="Implementace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi.">merge_sort.c</a></code> pro vlastní realizaci funkce a pro funkce pomocné:</li>
+</ol>
+<ul>
+<li><code><a class="el" href="group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad.">merge_sort()</a></code> - wrapper funkce pro předání volání do funkce <code><a class="el" href="merge__sort_8c.html#a41bfb4129631a73ffc60c10381af80c2" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)">merge_sort_worker()</a></code>.</li>
+<li><code><a class="el" href="merge__sort_8c.html#a41bfb4129631a73ffc60c10381af80c2" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)">merge_sort_worker()</a></code> - funkce realizuje vlastní algoritmus obsahující rekurzivní volání.</li>
+<li><code><a class="el" href="merge__sort_8c.html#a662181aab782eefc61f71886c9aa21ab" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů z vektoru aFromVector do v...">mergify()</a></code> - pomocná funkce pro zatřiďování (sloučování) dvou již setříděných podposloupností.</li>
+</ul>
+<ol type="1">
+<li>Pro druhou variantu (with_span), která používá pro manipulaci s daty strukturu <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code>, je přichystán hlavičkový soubor <code><a class="el" href="merge__sort__with__span_8h.html" title="Deklarace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ Spa...">merge_sort_with_span.h</a></code> s deklarací rozhraní pro funkci <code><a class="el" href="group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span.">merge_sort_with_span()</a></code>. K němu příslušný zdrojový soubor <code><a class="el" href="merge__sort__with__span_8c.html" title="Implementace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ ...">merge_sort_with_span.c</a></code> pro vlastní realizaci funkce a pro funkce pomocné:</li>
+</ol>
+<ul>
+<li><code><a class="el" href="group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span.">merge_sort_with_span()</a></code> - wrapper funkce pro předání volání do funkce <code><a class="el" href="merge__sort_8c.html#a41bfb4129631a73ffc60c10381af80c2" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)">merge_sort_worker()</a></code>.</li>
+<li><code><a class="el" href="merge__sort_8c.html#a41bfb4129631a73ffc60c10381af80c2" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)">merge_sort_worker()</a></code> - funkce realizuje vlastní algoritmus obsahující rekurzivní volání.</li>
+<li><code><a class="el" href="merge__sort_8c.html#a662181aab782eefc61f71886c9aa21ab" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů z vektoru aFromVector do v...">mergify()</a></code> - pomocná funkce pro zatřiďování (sloučování) dvou již setříděných podposloupností (spanů).</li>
+</ul>
+<p>Soubor <code><a class="el" href="_t_span_8h.html" title="Definice typu Span zajišťující přístup k omezené části vektoru (vyžaduje Sortable Vector with shareab...">TSpan.h</a></code> obsahuje pomocnou strukturu <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> a funkce pro práci s ní. Vnitřní reprezentace dat je opět vytvořena pomocí <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>. Struktura <code><a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> a funkce pro práci s ní tvoří interface/mezivrstvu mezi uživatelem a daty vektoru. Struktura <code><a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> je navržena tak, aby umožňovala pohled na data vekoru jiným způsobem, aniž je bylo nutné alokovat v paměti jejich novou kopii.</p>
+<p>V souboru <code><a class="el" href="_t_span_8h.html" title="Definice typu Span zajišťující přístup k omezené části vektoru (vyžaduje Sortable Vector with shareab...">TSpan.h</a></code> jsou tyto hlavní funkce (pro zkrácení zde nebudeme uvádět všechny funkce, obzvlášť ne ty, jejichž činnost je zřejmá z názvu, popřípadě funkce volající stejně pojmenované funkce pro vnitřní proměnnou <a class="el" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee"><code>iVector</code> </a>:</p>
+<ul>
+<li><code><a class="el" href="group___t_span.html#gac78c14bd69fa6a23ef2db50c75a51488" title="Vytvoření Spanu pro celý vektor.">span_create()</a></code> slouží k inicializaci struktury <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> pomocí <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code>.</li>
+<li><code><a class="el" href="group___t_span.html#ga836d5a79cb441e1e728a1ce06c3ea2e8" title="Vytvoření Spanu pro část vektoru od počátku a definované délce.">span_create_left()</a></code> a varianty <code><a class="el" href="group___t_span.html#ga1db431e82dd3ba8a1269b24927826ede" title="Vytvoření Spanu pro část vektoru od definované pozice až do konce vektoru.">span_create_right()</a></code>, <code><a class="el" href="group___t_span.html#ga2987785b53ca21f4dc18b2d7e95c4e62" title="Vytvoření Spanu pro část vektoru definovanou pomocí pozičního intervalu &lt;od - do&gt;">span_create_range()</a></code> slouží k rozdělení dat na jednotlivé části, kdy vrátí strukturu obsahující (odkaz) na požadovanou část dat. Tyto funkce jsou určeny pro vstupní parametr typu <code>struct <a class="el" href="group___t_vector.html#struct_t_vector" title="Definice typu Vector.">TVector</a></code> a vrací typ <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code>. <br  />
+ Pro vstupní parametr typu <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> jsou určeny funkce <code><a class="el" href="group___t_span.html#ga95663322132016bbaf40e6281480e122" title="Vytvoření SubSpanu jako části od počátku a definované délce původního Spanu.">span_create_left_subspan()</a></code> a varianty <code><a class="el" href="group___t_span.html#ga6270a02d3bfd6fa1fdbf37ca62276687" title="Vytvoření SubSpanu jako části od definované pozice až do konce původního Spanu.">span_create_right_subspan()</a></code> případně <code><a class="el" href="group___t_span.html#gadbce6de83169bb3f6f72f3ccdee53d0b" title="Vytvoření SubSpanu pro část původního Spanu definovanou pomocí pozičního intervalu &lt;od - do&gt;">span_create_range_subspan()</a></code>, vracející opět typ <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code>.</li>
+<li>pro datový typ <code>struct <a class="el" href="group___t_span.html#struct_t_span" title="Definice typu Span.">TSpan</a></code> je realizován i iterátor prostřednictvím struktury <code>struct <a class="el" href="group___t_span.html#struct_t_span_iterator" title="Definice typu SpanIterator.">TSpanIterator</a></code> a funkcí, které ji využívají (pro realizaci zadání, ale není potřeba).</li>
+</ul>
+<p>Testovací soubory jsou připraveny pro testování algoritmů se zaměřením na specifické vstupní posloupnosti hodnot. Například posloupnost hodnot v souboru: <code><a class="el" href="quick__sort__data2_8txt.html">quick_sort_data2.txt</a></code> by měla představovat nejhorší případ pro třídění metodou <em>Quick sort</em>. Metoda <em>Quick sort</em> by měla posloupnost zpracovat za maximální časovou složitost, porovnejte časovou složitost třídění této posloupnosti pomocí metod: <b>Heap sort</b> a <b>Merge sort</b>.</p>
+<h2>Úkoly</h2>
+<ol type="1">
+<li>Prostudujte si dodaný projekt a jeho soubory.</li>
+<li>Promyslete si jednotlivé implementace třídění.</li>
+<li>Realizujte jednotlivé (vámi vybrané varianty) implementace třídění <b>Heap sort</b> a <b>Merge sort</b>.</li>
+<li>Odstraňte komentáře pro ladicí tisk a odlaďte zobrazení údajů o průběhu třídění.</li>
+<li>Realizované algoritmy otestujte na přiložených souborech. Srovnejte výsledné průběžné hodnoty z vašeho programu s hodnotami v souborech s výsledky, které mají název začínající <a href="examples.html"><code>cv10_reports_*.lst</code></a>. Zároveň si prohlédněte zobrazené hodnoty z vašich metod a ujasněte si průběh třídění pro jednotlivé vstupní soubory dat. <br  />
+ Pokuste se dosáhnout stejných výsledků jako v přiložených souborech, aniž byste museli modifikovat obsah souboru: <code><a class="el" href="main_8c.html" title="Hlavní program testující API výkonnějších metod třídění">main.c</a></code>. Výpočetní časy se budou samozřejmě na Vašem HW lišit.</li>
+</ol>
+<h2>Rozbor úlohy</h2>
+<p>Viz přednáška č.9.</p>
+<hr  />
+<p> <code>$Id: <a class="el" href="cv10__zadani__powerful__sorts_8md.html">cv10_zadani_powerful_sorts.md</a> 2686 2024-04-05 14:16:02Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

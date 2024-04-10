@@ -1,0 +1,32 @@
+<map id="vector_fast_swap_positions" name="vector_fast_swap_positions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="679,325,859,351"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů" alt="" coords="466,227,618,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="725,322,571,255,573,250,727,317"/>
+<area shape="rect" id="Node000013" href="$group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013" title="Výměna hodnot elementů vektorů určených dvěma iterátory." alt="" coords="453,424,631,449"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="727,359,573,426,571,421,725,354"/>
+<area shape="rect" id="Node000003" href="$group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)" alt="" coords="275,5,365,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="528,215,509,177,482,131,447,84,404,44,385,34,364,27,366,22,387,29,407,40,451,80,487,128,514,174,533,213"/>
+<area shape="rect" id="Node000004" href="$group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz..." alt="" coords="244,55,396,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="523,217,474,155,441,122,404,94,380,82,383,78,407,89,445,118,478,151,527,214"/>
+<area shape="rect" id="Node000005" href="$group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)" alt="" coords="241,104,399,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="515,220,466,181,404,143,376,132,378,127,407,138,469,176,518,215"/>
+<area shape="rect" id="Node000006" href="$group___t_heap.html#gaa617d4886d443671851e3256c7ac5860" title="Vzájemná výměna hodnot mezi uzly haldy." alt="" coords="247,153,393,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="494,224,405,193,367,181,369,176,406,187,496,219"/>
+<area shape="rect" id="Node000007" href="$advanced__sorts_8c.html#a0ae77c9640aa821e5507079ec5d2eb1d" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="257,227,383,252"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="452,242,383,242,383,237,452,237"/>
+<area shape="rect" id="Node000010" href="$group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)" alt="" coords="277,276,363,301"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="472,258,364,282,363,277,470,252"/>
+<area shape="rect" id="Node000011" href="$group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)" alt="" coords="275,325,365,351"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="510,262,462,290,406,316,366,330,365,325,404,312,460,285,508,257"/>
+<area shape="rect" id="Node000012" href="$group___t_span.html#gae81c37610069e0d3c8d3182ca4964c1a" title="Výměna hodnot elementů Spanů" alt="" coords="247,375,393,400"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="523,265,474,315,442,342,407,366,380,377,378,372,404,361,438,338,470,312,519,261"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="350,216,342,208,320,205,302,207,292,212,290,218,296,225,291,228,285,218,288,209,300,202,320,200,344,204,354,212"/>
+<area shape="rect" id="Node000008" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="104,227,187,252"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="243,242,187,242,187,237,243,237"/>
+<area shape="rect" id="Node000009" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,227,56,252"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="90,242,56,242,56,237,90,237"/>
+<area shape="rect" id="Node000014" href="$group___t_heap.html#ga03d48bdfc99322c0e16fd502820ce43d" title="Výměna hodnot uzlů haldy určených dvěma iterátory." alt="" coords="235,424,405,449"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="439,439,405,439,405,434,439,434"/>
+<area shape="rect" id="Node000015" href="$group___t_span.html#ga2bc9c4a1a22d533a1a01ddb8cb57cfca" title="Výměna hodnot elementů Spanů určených dvěma iterátory." alt="" coords="235,473,405,499"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="471,455,379,476,377,471,470,450"/>
+</map>

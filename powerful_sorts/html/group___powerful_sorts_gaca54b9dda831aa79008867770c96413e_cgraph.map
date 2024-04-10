@@ -1,0 +1,26 @@
+<map id="merge_sort" name="merge_sort">
+<area shape="rect" id="Node000001" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad." alt="" coords="5,139,92,165"/>
+<area shape="rect" id="Node000002" href="$merge__sort_8c.html#a41bfb4129631a73ffc60c10381af80c2" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="153,41,285,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,137,94,106,139,75,152,68,155,73,141,80,97,110,64,141"/>
+<area shape="rect" id="Node000009" href="$group__sortable___t_vector__with__shareable__sortstats.html#gad8dab56657c4e8504ecdfef34ca91f19" title="Napojení statistik o počtu operací s elementy jednoho vektoru na statistiky jiného vektoru." alt="" coords="140,90,297,115"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="91,137,160,117,162,122,93,142"/>
+<area shape="rect" id="Node000010" href="$group___t_vector.html#ga6b0b8780d60dad02b8569be119769548" title="Vytvoření úplné kopie vektoru." alt="" coords="171,139,266,165"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="92,149,157,149,157,155,92,155"/>
+<area shape="rect" id="Node000011" href="$group___t_vector.html#ga41fcff5418fe213f2caaa586f521bcd6" title="Dealokace vektoru." alt="" coords="165,189,272,214"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="93,162,162,182,160,187,91,167"/>
+<area shape="rect" id="Node000012" href="$group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898" title="Přečtení počtu elementů vektoru." alt="" coords="175,238,262,263"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="65,163,98,193,141,223,163,233,161,238,139,228,95,197,61,167"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="192,42,187,32,190,23,201,16,219,14,240,17,250,26,246,30,238,22,219,19,202,21,194,26,192,32,197,39"/>
+<area shape="rect" id="Node000003" href="$merge__sort_8c.html#a662181aab782eefc61f71886c9aa21ab" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů z vektoru aFromVector do v..." alt="" coords="345,41,409,66"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="285,51,332,51,332,56,285,56"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů" alt="" coords="457,15,629,41"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="409,46,446,40,447,45,410,51"/>
+<area shape="rect" id="Node000007" href="$group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru." alt="" coords="467,66,619,91"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="410,55,454,62,453,68,409,61"/>
+<area shape="rect" id="Node000005" href="$_t_vector_8c.html#a188bab569c3ae8a25070f632a6f53e62" title=" " alt="" coords="697,5,838,45"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="630,24,683,24,683,29,630,30"/>
+<area shape="rect" id="Node000006" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="905,13,1087,38"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="838,23,892,23,892,28,838,28"/>
+<area shape="rect" id="Node000008" href="$_t_vector_8c.html#a0e3151269c65b7033ddecb4c3aee6566" title=" " alt="" coords="677,70,857,95"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="620,77,664,78,663,83,620,83"/>
+</map>

@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: Dokumentace souboru merge_sort_with_span.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5768d1d217cb0149ee97d44469138954.html">powerful_sorts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru merge_sort_with_span.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ Span.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="merge__sort__with__span_8h_source.html">merge_sort_with_span.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_span_8h_source.html">TSpan.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro merge_sort_with_span.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="merge__sort__with__span_8c__incl.svg" width="446" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:a8c83f4f60393434eff082ca19f5f14ad" id="r_a8c83f4f60393434eff082ca19f5f14ad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c83f4f60393434eff082ca19f5f14ad">mergify</a> (struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a> aFrom1, struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a> aFrom2, struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a> aTo)</td></tr>
+<tr class="memdesc:a8c83f4f60393434eff082ca19f5f14ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů (Spanů)  <br /></td></tr>
+<tr class="separator:a8c83f4f60393434eff082ca19f5f14ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb719292b2ea89b714190280e0021b0" id="r_acfb719292b2ea89b714190280e0021b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb719292b2ea89b714190280e0021b0">merge_sort_worker</a> (struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a> aFrom, struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a> aTo)</td></tr>
+<tr class="memdesc:acfb719292b2ea89b714190280e0021b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)  <br /></td></tr>
+<tr class="separator:acfb719292b2ea89b714190280e0021b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga879a216389959b8a25490288ba4e63dc" id="r_ga879a216389959b8a25490288ba4e63dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc">merge_sort_with_span</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga879a216389959b8a25490288ba4e63dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span.  <br /></td></tr>
+<tr class="separator:ga879a216389959b8a25490288ba4e63dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ Span. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="merge__sort__with__span_8c.html" title="Implementace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ ...">merge_sort_with_span.c</a> 2688 2024-04-05 14:36:46Z petyovsky </dd></dl>
+</div><h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="a8c83f4f60393434eff082ca19f5f14ad" name="a8c83f4f60393434eff082ca19f5f14ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c83f4f60393434eff082ca19f5f14ad">&#9670;&#160;</a></span>mergify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mergify </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a></td>          <td class="paramname"><span class="paramname"><em>aFrom1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a></td>          <td class="paramname"><span class="paramname"><em>aFrom2</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a></td>          <td class="paramname"><span class="paramname"><em>aTo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů (Spanů) </p>
+<p>Realizuje sloučení dvou již setříděných rozsahů <code>aFrom1</code> <code>aFrom2</code> do výsledného rozsahu <code>aTo</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrom1</td><td>První rozsah obsahující již setříděné vstupních elementy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrom2</td><td>Druhý rozsah obsahující již setříděné vstupních elementy </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aTo</td><td>Výstupní rozsah pro elementy z obou sloučených / zatříděných rozsahů <code>aFrom1</code> a <code>aFrom2</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="merge__sort__with__span_8c_a8c83f4f60393434eff082ca19f5f14ad_cgraph.svg" width="967" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="merge__sort__with__span_8c_a8c83f4f60393434eff082ca19f5f14ad_icgraph.svg" width="554" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acfb719292b2ea89b714190280e0021b0" name="acfb719292b2ea89b714190280e0021b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb719292b2ea89b714190280e0021b0">&#9670;&#160;</a></span>merge_sort_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void merge_sort_worker </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a></td>          <td class="paramname"><span class="paramname"><em>aFrom</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_span.html#struct_t_span">TSpan</a></td>          <td class="paramname"><span class="paramname"><em>aTo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort) </p>
+<p>Realizuje rekurzivní funkci pro třídicí metodu (Merge Sort), setřídí elementy rozsahu <code>aFrom</code> a ukládá je do rozsahu <code>aTo</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFrom</td><td>Vstupní rozsah říděných vstupních elementů </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aTo</td><td>Výstupní rozsah elementů pro setříděné elementy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="merge__sort__with__span_8c_acfb719292b2ea89b714190280e0021b0_cgraph.svg" width="1264" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="merge__sort__with__span_8c_acfb719292b2ea89b714190280e0021b0_icgraph.svg" width="442" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: Zdrojový soubor THeap.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5768d1d217cb0149ee97d44469138954.html">powerful_sorts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">THeap.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_heap_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef THEAP_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define THEAP_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_t_vector_8h.html">TVector.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">   18</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a>;        </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group___t_heap.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">   25</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> <a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>;                 </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___t_heap.html#a3043a388235e09f3b1cd59a0c0e838d0">   26</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="group___t_heap.html#a3043a388235e09f3b1cd59a0c0e838d0">iOriginalSize</a>;                   </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    };</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group___t_heap.html">   33</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">   35</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> <a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>;     </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    };</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f">   43</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> <a class="code hl_function" href="group___t_heap.html#ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f">heap_create</a>(struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> aVector)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a>) { .<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a> = aVector, .iOriginalSize = aVector.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a> };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group___t_heap.html#gafaf85f5864f8cc9b2f6203a99e41ccc8">   54</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_heap.html#gafaf85f5864f8cc9b2f6203a99e41ccc8">heap_size</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    assert(aHeap);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga949d1c5fea06774f24e6d63f13cadb56">   66</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_heap.html#ga949d1c5fea06774f24e6d63f13cadb56">heap_decrement_size</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    assert(aHeap);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    assert(aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a> &gt; 1);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> --aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaf3ee86c1b3c2017a5eda56bd6fd5f2ac">   79</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_heap.html#gaf3ee86c1b3c2017a5eda56bd6fd5f2ac">heap_restore_size</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    assert(aHeap);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a> = aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#a3043a388235e09f3b1cd59a0c0e838d0">iOriginalSize</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaf0369d757c7569adb9ddb0d5f3530c07">   92</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_function" href="group___t_heap.html#gaf0369d757c7569adb9ddb0d5f3530c07">heap_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, <span class="keywordtype">size_t</span> aPos)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a>(&amp;aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="group___t_heap.html#gac522fe67b5a330d6289f4566a2f1aff4">  104</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#gac522fe67b5a330d6289f4566a2f1aff4">heap_set_value</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_function" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a>(&amp;aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos, aValue);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga5189745928eb05b31e28d37a79d9017f">  117</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#ga5189745928eb05b31e28d37a79d9017f">heap_move_positions</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aToHeap, <span class="keywordtype">size_t</span> aToPos, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aFromHeap, <span class="keywordtype">size_t</span> aFromPos)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_function" href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a>(&amp;aToHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aToPos, &amp;aFromHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aFromPos);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="group___t_heap.html#gad5c7d7699f71a4c30740204aba84f100">  133</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_heap.html#gad5c7d7699f71a4c30740204aba84f100">heap_compare_positions</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aLeftHeap, <span class="keywordtype">size_t</span> aLeftPos, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aRightHeap, <span class="keywordtype">size_t</span> aRightPos)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a>(&amp;aLeftHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aLeftPos, &amp;aRightHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aRightPos);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga3651a742b0492e167a3be5db0183f896">  148</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_heap.html#ga3651a742b0492e167a3be5db0183f896">heap_compare_position_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a>(&amp;aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos, aValue);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
+</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaa617d4886d443671851e3256c7ac5860">  161</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#gaa617d4886d443671851e3256c7ac5860">heap_swap_positions</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aLeftHeap, <span class="keywordtype">size_t</span> aLeftPos, <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aRightHeap, <span class="keywordtype">size_t</span> aRightPos)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_function" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a>(&amp;aLeftHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aLeftPos, &amp;aRightHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aRightPos);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="foldopen" id="foldopen00173" data-start="{" data-end="}">
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga9e3ecb67eb7fd210b5154c661000ba16">  173</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#ga9e3ecb67eb7fd210b5154c661000ba16">heap_swap_position_value</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *aValue)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <a class="code hl_function" href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a>(&amp;aHeap-&gt;<a class="code hl_variable" href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos, aValue);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
+</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="foldopen" id="foldopen00183" data-start="{" data-end="}">
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaeb9b613cb82e8946a4c37bb1145780f4">  183</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_heap.html#gaeb9b613cb82e8946a4c37bb1145780f4">heap_pos_to_left</a>(<span class="keywordtype">size_t</span> aPos)</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">return</span> aPos + aPos + 1;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga1272b4f692f5ec34abaeecde82899bfb">  193</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_heap.html#ga1272b4f692f5ec34abaeecde82899bfb">heap_pos_to_right</a>(<span class="keywordtype">size_t</span> aPos)</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">return</span> aPos + aPos + 2;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="foldopen" id="foldopen00204" data-start="{" data-end="}">
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga397a260a81bbd6910ca1464638722510">  204</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_heap.html#ga397a260a81bbd6910ca1464638722510">heap_pos_to_parent</a>(<span class="keywordtype">size_t</span> aPos)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    assert(aPos);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">return</span> (aPos - 1) / 2;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
+</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="foldopen" id="foldopen00215" data-start="{" data-end="}">
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga53d2e1b9cb5058280bbea769d0f1ec0d">  215</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> <a class="code hl_function" href="group___t_heap.html#ga53d2e1b9cb5058280bbea769d0f1ec0d">heap_iterator_begin</a>(const struct <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a>) { <a class="code hl_function" href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a>(&amp;aHeap-&gt;iVector) };</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
+</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="foldopen" id="foldopen00225" data-start="{" data-end="}">
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaad26057e7e2deea467b61eb79d73a1da">  225</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> <a class="code hl_function" href="group___t_heap.html#gaad26057e7e2deea467b61eb79d73a1da">heap_iterator_last</a>(const struct <a class="code hl_struct" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a>) { <a class="code hl_function" href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a>(&amp;aHeap-&gt;iVector) };</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
+</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="group___t_heap.html#gae40d23edaede152d035bcf8828ef37d9">  235</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#gae40d23edaede152d035bcf8828ef37d9">heap_iterator_is_valid</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
+</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga4397746eb5a963292cbbc0b291cde6a9">  245</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#ga4397746eb5a963292cbbc0b291cde6a9">heap_iterator_to_next</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    {</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    }</div>
+</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="foldopen" id="foldopen00255" data-start="{" data-end="}">
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga459d729f98a06d26d4cab4dee469ce9a">  255</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#ga459d729f98a06d26d4cab4dee469ce9a">heap_iterator_to_prev</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    }</div>
+</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#ga974f2e71745d48caecb94896f5e9b1c5">heap_iterator_to_left</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#ga1b612baefabca4177116615280539790">heap_iterator_to_right</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#ga30a2c6e90b0e73d8a4f682c4a89accc6">heap_iterator_to_parent</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="foldopen" id="foldopen00286" data-start="{" data-end="}">
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="group___t_heap.html#gac645f0bf424be39230e2472e55ad4f6e">  286</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> <a class="code hl_function" href="group___t_heap.html#gac645f0bf424be39230e2472e55ad4f6e">heap_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    {</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a>) <a class="code hl_function" href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    }</div>
+</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="foldopen" id="foldopen00297" data-start="{" data-end="}">
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="group___t_heap.html#gad1c0b47027aa5f072c7275f86b8b2c2a">  297</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_heap.html#gad1c0b47027aa5f072c7275f86b8b2c2a">heap_iterator_set_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    {</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>) aValue);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
+</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="foldopen" id="foldopen00308" data-start="{" data-end="}">
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="group___t_heap.html#gaa7548708d4ee2e6afd1366cccc135f6a">  308</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#gaa7548708d4ee2e6afd1366cccc135f6a">heap_move_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aToIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aFromIter)</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a>(&amp;aToIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aFromIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    }</div>
+</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="foldopen" id="foldopen00322" data-start="{" data-end="}">
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga33f604f94a11da32fdf681dd21186b87">  322</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_heap.html#ga33f604f94a11da32fdf681dd21186b87">heap_compare_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    {</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a>(&amp;aLeftIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aRightIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
+</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="foldopen" id="foldopen00336" data-start="{" data-end="}">
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="group___t_heap.html#gad15335cb6b5e00a87655aa3f25fadc38">  336</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_heap.html#gad15335cb6b5e00a87655aa3f25fadc38">heap_compare_with_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    {</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>) aValue);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    }</div>
+</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="foldopen" id="foldopen00347" data-start="{" data-end="}">
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="group___t_heap.html#ga03d48bdfc99322c0e16fd502820ce43d">  347</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#ga03d48bdfc99322c0e16fd502820ce43d">heap_swap_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a>(&amp;aLeftIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aRightIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    }</div>
+</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="foldopen" id="foldopen00358" data-start="{" data-end="}">
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="group___t_heap.html#gada6619039c74de7852ababa894ff4029">  358</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_heap.html#gada6619039c74de7852ababa894ff4029">heap_swap_with_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="code hl_typedef" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *aValue)</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    {</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <a class="code hl_function" href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *) aValue);</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    }</div>
+</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="foldopen" id="foldopen00371" data-start="{" data-end="}">
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="group__sortable___t_vector__with__shareable__sortstats.html#ga1e5a9731214337073162d3bb238639e1">  371</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__sortable___t_vector__with__shareable__sortstats.html#ga1e5a9731214337073162d3bb238639e1">heap_iterators_are_same</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    {</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector__with__shareable__sortstats.html#ga6c48fdc01e22389dff6202955542499a">vector_iterators_are_same</a>(&amp;aLeftIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aRightIter-&gt;<a class="code hl_variable" href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    }</div>
+</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="preprocessor">#endif </span><span class="comment">/* THEAP_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_t_vector_8h_html"><div class="ttname"><a href="_t_vector_8h.html">TVector.h</a></div><div class="ttdoc">Definice typu Sortable Vector with shareable sortstats.</div></div>
+<div class="ttc" id="agroup___t_heap_html_a3043a388235e09f3b1cd59a0c0e838d0"><div class="ttname"><a href="group___t_heap.html#a3043a388235e09f3b1cd59a0c0e838d0">THeap::iOriginalSize</a></div><div class="ttdeci">size_t iOriginalSize</div><div class="ttdoc">Původní délka vektoru (při založení haldy)</div><div class="ttdef"><b>Definition</b> THeap.h:26</div></div>
+<div class="ttc" id="agroup___t_heap_html_ab9c90befa4efdbf39f89ad5053bc89ee"><div class="ttname"><a href="group___t_heap.html#ab9c90befa4efdbf39f89ad5053bc89ee">THeap::iVector</a></div><div class="ttdeci">struct TVector iVector</div><div class="ttdoc">Reprezentuje existující vektor (jako haldu se zkrácenou délkou)</div><div class="ttdef"><b>Definition</b> THeap.h:25</div></div>
+<div class="ttc" id="agroup___t_heap_html_aeb3b6f28a6e71ff825a6fdf6d6cbae15"><div class="ttname"><a href="group___t_heap.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">THeapIterator::iVectorIter</a></div><div class="ttdeci">struct TVectorIterator iVectorIter</div><div class="ttdoc">Reprezentuje iterátor na uzly haldy (tj. vektor se zkrácenou délkou)</div><div class="ttdef"><b>Definition</b> THeap.h:35</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga03d48bdfc99322c0e16fd502820ce43d"><div class="ttname"><a href="group___t_heap.html#ga03d48bdfc99322c0e16fd502820ce43d">heap_swap_with_iterators</a></div><div class="ttdeci">static void heap_swap_with_iterators(const struct THeapIterator *aLeftIter, const struct THeapIterator *aRightIter)</div><div class="ttdoc">Výměna hodnot uzlů haldy určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> THeap.h:347</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga1272b4f692f5ec34abaeecde82899bfb"><div class="ttname"><a href="group___t_heap.html#ga1272b4f692f5ec34abaeecde82899bfb">heap_pos_to_right</a></div><div class="ttdeci">static size_t heap_pos_to_right(size_t aPos)</div><div class="ttdoc">Vypočte pozici uzlu pravého následníka.</div><div class="ttdef"><b>Definition</b> THeap.h:193</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga1b612baefabca4177116615280539790"><div class="ttname"><a href="group___t_heap.html#ga1b612baefabca4177116615280539790">heap_iterator_to_right</a></div><div class="ttdeci">bool heap_iterator_to_right(struct THeapIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru na pravého následníka.</div><div class="ttdef"><b>Definition</b> THeap.c:27</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga30a2c6e90b0e73d8a4f682c4a89accc6"><div class="ttname"><a href="group___t_heap.html#ga30a2c6e90b0e73d8a4f682c4a89accc6">heap_iterator_to_parent</a></div><div class="ttdeci">bool heap_iterator_to_parent(struct THeapIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru na rodičovský uzel.</div><div class="ttdef"><b>Definition</b> THeap.c:42</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga33f604f94a11da32fdf681dd21186b87"><div class="ttname"><a href="group___t_heap.html#ga33f604f94a11da32fdf681dd21186b87">heap_compare_with_iterators</a></div><div class="ttdeci">static int heap_compare_with_iterators(const struct THeapIterator *aLeftIter, const struct THeapIterator *aRightIter)</div><div class="ttdoc">Porovnání hodnot uzlů haldy určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> THeap.h:322</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga3651a742b0492e167a3be5db0183f896"><div class="ttname"><a href="group___t_heap.html#ga3651a742b0492e167a3be5db0183f896">heap_compare_position_value</a></div><div class="ttdeci">static int heap_compare_position_value(const struct THeap *aHeap, size_t aPos, THeapElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement.</div><div class="ttdef"><b>Definition</b> THeap.h:148</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga397a260a81bbd6910ca1464638722510"><div class="ttname"><a href="group___t_heap.html#ga397a260a81bbd6910ca1464638722510">heap_pos_to_parent</a></div><div class="ttdeci">static size_t heap_pos_to_parent(size_t aPos)</div><div class="ttdoc">Vypočte pozici rodičovského uzlu.</div><div class="ttdef"><b>Definition</b> THeap.h:204</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga4397746eb5a963292cbbc0b291cde6a9"><div class="ttname"><a href="group___t_heap.html#ga4397746eb5a963292cbbc0b291cde6a9">heap_iterator_to_next</a></div><div class="ttdeci">static bool heap_iterator_to_next(struct THeapIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> THeap.h:245</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga459d729f98a06d26d4cab4dee469ce9a"><div class="ttname"><a href="group___t_heap.html#ga459d729f98a06d26d4cab4dee469ce9a">heap_iterator_to_prev</a></div><div class="ttdeci">static bool heap_iterator_to_prev(struct THeapIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vzad.</div><div class="ttdef"><b>Definition</b> THeap.h:255</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga5189745928eb05b31e28d37a79d9017f"><div class="ttname"><a href="group___t_heap.html#ga5189745928eb05b31e28d37a79d9017f">heap_move_positions</a></div><div class="ttdeci">static void heap_move_positions(struct THeap *aToHeap, size_t aToPos, const struct THeap *aFromHeap, size_t aFromPos)</div><div class="ttdoc">Přesun hodnot mezi uzly haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:117</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga53d2e1b9cb5058280bbea769d0f1ec0d"><div class="ttname"><a href="group___t_heap.html#ga53d2e1b9cb5058280bbea769d0f1ec0d">heap_iterator_begin</a></div><div class="ttdeci">static struct THeapIterator heap_iterator_begin(const struct THeap *aHeap)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na kořenový uzel haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:215</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><div class="ttname"><a href="group___t_heap.html#ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f">heap_create</a></div><div class="ttdeci">static struct THeap heap_create(struct TVector aVector)</div><div class="ttdoc">Vytvoření Heap pro celý vektor.</div><div class="ttdef"><b>Definition</b> THeap.h:43</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga949d1c5fea06774f24e6d63f13cadb56"><div class="ttname"><a href="group___t_heap.html#ga949d1c5fea06774f24e6d63f13cadb56">heap_decrement_size</a></div><div class="ttdeci">static size_t heap_decrement_size(struct THeap *aHeap)</div><div class="ttdoc">Dekrementace počtu uzlů haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:66</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga974f2e71745d48caecb94896f5e9b1c5"><div class="ttname"><a href="group___t_heap.html#ga974f2e71745d48caecb94896f5e9b1c5">heap_iterator_to_left</a></div><div class="ttdeci">bool heap_iterator_to_left(struct THeapIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru na levého následníka.</div><div class="ttdef"><b>Definition</b> THeap.c:12</div></div>
+<div class="ttc" id="agroup___t_heap_html_ga9e3ecb67eb7fd210b5154c661000ba16"><div class="ttname"><a href="group___t_heap.html#ga9e3ecb67eb7fd210b5154c661000ba16">heap_swap_position_value</a></div><div class="ttdeci">static void heap_swap_position_value(struct THeap *aHeap, size_t aPos, THeapElement *aValue)</div><div class="ttdoc">Vzájemná výměna hodnot mezi uzlem haldy a proměnnou typu HeapElement.</div><div class="ttdef"><b>Definition</b> THeap.h:173</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaa617d4886d443671851e3256c7ac5860"><div class="ttname"><a href="group___t_heap.html#gaa617d4886d443671851e3256c7ac5860">heap_swap_positions</a></div><div class="ttdeci">static void heap_swap_positions(struct THeap *aLeftHeap, size_t aLeftPos, struct THeap *aRightHeap, size_t aRightPos)</div><div class="ttdoc">Vzájemná výměna hodnot mezi uzly haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:161</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaa7548708d4ee2e6afd1366cccc135f6a"><div class="ttname"><a href="group___t_heap.html#gaa7548708d4ee2e6afd1366cccc135f6a">heap_move_with_iterators</a></div><div class="ttdeci">static void heap_move_with_iterators(const struct THeapIterator *aToIter, const struct THeapIterator *aFromIter)</div><div class="ttdoc">Přesun hodnoty uzlu haldy určené dvěma iterátory.</div><div class="ttdef"><b>Definition</b> THeap.h:308</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaad26057e7e2deea467b61eb79d73a1da"><div class="ttname"><a href="group___t_heap.html#gaad26057e7e2deea467b61eb79d73a1da">heap_iterator_last</a></div><div class="ttdeci">static struct THeapIterator heap_iterator_last(const struct THeap *aHeap)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na nejpravější listový uzel haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:225</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaadfb312d94e0279d1dff692008be6744"><div class="ttname"><a href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></div><div class="ttdeci">TVectorElement THeapElement</div><div class="ttdoc">Definice typu HeapElement jako alias na typ VectorElement.</div><div class="ttdef"><b>Definition</b> THeap.h:18</div></div>
+<div class="ttc" id="agroup___t_heap_html_gac522fe67b5a330d6289f4566a2f1aff4"><div class="ttname"><a href="group___t_heap.html#gac522fe67b5a330d6289f4566a2f1aff4">heap_set_value</a></div><div class="ttdeci">static void heap_set_value(struct THeap *aHeap, size_t aPos, THeapElement aValue)</div><div class="ttdoc">Zapsání hodnoty do uzlu haldy na požadovanou pozici.</div><div class="ttdef"><b>Definition</b> THeap.h:104</div></div>
+<div class="ttc" id="agroup___t_heap_html_gac645f0bf424be39230e2472e55ad4f6e"><div class="ttname"><a href="group___t_heap.html#gac645f0bf424be39230e2472e55ad4f6e">heap_iterator_value</a></div><div class="ttdeci">static THeapElement heap_iterator_value(const struct THeapIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty uzlu haldy pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> THeap.h:286</div></div>
+<div class="ttc" id="agroup___t_heap_html_gad15335cb6b5e00a87655aa3f25fadc38"><div class="ttname"><a href="group___t_heap.html#gad15335cb6b5e00a87655aa3f25fadc38">heap_compare_with_iterator_value</a></div><div class="ttdeci">static int heap_compare_with_iterator_value(const struct THeapIterator *aIter, THeapElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou v uzlu haldy určenou iterátorem a hodnotou typu HeapElement.</div><div class="ttdef"><b>Definition</b> THeap.h:336</div></div>
+<div class="ttc" id="agroup___t_heap_html_gad1c0b47027aa5f072c7275f86b8b2c2a"><div class="ttname"><a href="group___t_heap.html#gad1c0b47027aa5f072c7275f86b8b2c2a">heap_iterator_set_value</a></div><div class="ttdeci">static bool heap_iterator_set_value(const struct THeapIterator *aIter, THeapElement aValue)</div><div class="ttdoc">Zapsání hodnoty uzlu haldy pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> THeap.h:297</div></div>
+<div class="ttc" id="agroup___t_heap_html_gad5c7d7699f71a4c30740204aba84f100"><div class="ttname"><a href="group___t_heap.html#gad5c7d7699f71a4c30740204aba84f100">heap_compare_positions</a></div><div class="ttdeci">static int heap_compare_positions(const struct THeap *aLeftHeap, size_t aLeftPos, const struct THeap *aRightHeap, size_t aRightPos)</div><div class="ttdoc">Porovnání hodnot uzlů haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:133</div></div>
+<div class="ttc" id="agroup___t_heap_html_gada6619039c74de7852ababa894ff4029"><div class="ttname"><a href="group___t_heap.html#gada6619039c74de7852ababa894ff4029">heap_swap_with_iterator_value</a></div><div class="ttdeci">static void heap_swap_with_iterator_value(const struct THeapIterator *aIter, THeapElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou v uzlu haldy určenou iterátorem a proměnnou typu HeapElement.</div><div class="ttdef"><b>Definition</b> THeap.h:358</div></div>
+<div class="ttc" id="agroup___t_heap_html_gae40d23edaede152d035bcf8828ef37d9"><div class="ttname"><a href="group___t_heap.html#gae40d23edaede152d035bcf8828ef37d9">heap_iterator_is_valid</a></div><div class="ttdeci">static bool heap_iterator_is_valid(const struct THeapIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> THeap.h:235</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaeb9b613cb82e8946a4c37bb1145780f4"><div class="ttname"><a href="group___t_heap.html#gaeb9b613cb82e8946a4c37bb1145780f4">heap_pos_to_left</a></div><div class="ttdeci">static size_t heap_pos_to_left(size_t aPos)</div><div class="ttdoc">Vypočte pozici uzlu levého následníka.</div><div class="ttdef"><b>Definition</b> THeap.h:183</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaf0369d757c7569adb9ddb0d5f3530c07"><div class="ttname"><a href="group___t_heap.html#gaf0369d757c7569adb9ddb0d5f3530c07">heap_value</a></div><div class="ttdeci">static TVectorElement heap_value(const struct THeap *aHeap, size_t aPos)</div><div class="ttdoc">Přečtení hodnoty z uzlu haldy dle požadované pozice.</div><div class="ttdef"><b>Definition</b> THeap.h:92</div></div>
+<div class="ttc" id="agroup___t_heap_html_gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><div class="ttname"><a href="group___t_heap.html#gaf3ee86c1b3c2017a5eda56bd6fd5f2ac">heap_restore_size</a></div><div class="ttdeci">static size_t heap_restore_size(struct THeap *aHeap)</div><div class="ttdoc">Obnovení původního počtu uzlů haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:79</div></div>
+<div class="ttc" id="agroup___t_heap_html_gafaf85f5864f8cc9b2f6203a99e41ccc8"><div class="ttname"><a href="group___t_heap.html#gafaf85f5864f8cc9b2f6203a99e41ccc8">heap_size</a></div><div class="ttdeci">static size_t heap_size(const struct THeap *aHeap)</div><div class="ttdoc">Přečtení počtu uzlů haldy.</div><div class="ttdef"><b>Definition</b> THeap.h:54</div></div>
+<div class="ttc" id="agroup___t_heap_html_struct_t_heap"><div class="ttname"><a href="group___t_heap.html#struct_t_heap">THeap</a></div><div class="ttdoc">Definice typu Heap.</div><div class="ttdef"><b>Definition</b> THeap.h:24</div></div>
+<div class="ttc" id="agroup___t_heap_html_struct_t_heap_iterator"><div class="ttname"><a href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a></div><div class="ttdoc">Definice typu HeapIterator.</div><div class="ttdef"><b>Definition</b> THeap.h:34</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_ga3c679c2b2440555118a3d54c6149994e"><div class="ttname"><a href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></div><div class="ttdeci">int TVectorElement</div><div class="ttdoc">Definice typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:20</div></div>
+<div class="ttc" id="agroup___t_vector_html_a27ffb91c868c8e4ecd0f87d21dada53f"><div class="ttname"><a href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">TVector::iSize</a></div><div class="ttdeci">size_t iSize</div><div class="ttdoc">Počet elementů vektoru.</div><div class="ttdef"><b>Definition</b> TVector.h:56</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga2b08236d9825632cd96bcc89faed929c"><div class="ttname"><a href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a></div><div class="ttdeci">TVectorElement vector_value(const struct TVector *aVector, size_t aPos)</div><div class="ttdoc">Přečtení hodnoty elementu z vektoru na požadované pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:228</div></div>
+<div class="ttc" id="agroup___t_vector_html_gabd5ba54950295545d27b1286234ead39"><div class="ttname"><a href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a></div><div class="ttdeci">void vector_set_value(struct TVector *aVector, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do vektoru na požadovanou pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:243</div></div>
+<div class="ttc" id="agroup___t_vector_html_struct_t_vector"><div class="ttname"><a href="group___t_vector.html#struct_t_vector">TVector</a></div><div class="ttdoc">Definice typu Vector.</div><div class="ttdef"><b>Definition</b> TVector.h:54</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga3f8a97a63f887539e270f6845bf22b9a"><div class="ttname"><a href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a></div><div class="ttdeci">bool vector_iterator_is_valid(const struct TVectorIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:464</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga40d7eff2ece0eb356d27cdcdef255560"><div class="ttname"><a href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_begin(const struct TVector *aVector)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na počáteční element.</div><div class="ttdef"><b>Definition</b> TVector.c:440</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga4d8032eb9dbbdccf794611f2b0c9821c"><div class="ttname"><a href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a></div><div class="ttdeci">TVectorElement vector_iterator_value(const struct TVectorIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty elementu z vektoru pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:503</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga66f6b96e416a7e593b1cf703f58be7ca"><div class="ttname"><a href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a></div><div class="ttdeci">bool vector_iterator_set_value(const struct TVectorIterator *aIter, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do vektoru pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:514</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga6c42552246c50cfa270c3eb0f58c239a"><div class="ttname"><a href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_last(const struct TVector *aVector)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na poslední element.</div><div class="ttdef"><b>Definition</b> TVector.c:456</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga7ce07cda016d67e3ca891125613ece56"><div class="ttname"><a href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a></div><div class="ttdeci">bool vector_iterator_to_next(struct TVectorIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TVector.c:473</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><div class="ttname"><a href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a></div><div class="ttdeci">bool vector_iterator_to_prev(struct TVectorIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vzad.</div><div class="ttdef"><b>Definition</b> TVector.c:488</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_struct_t_vector_iterator"><div class="ttname"><a href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a></div><div class="ttdoc">Definice typu VectorIterator.</div><div class="ttdef"><b>Definition</b> TVector.h:239</div></div>
+<div class="ttc" id="agroup__sortable___t_vector__with__shareable__sortstats_html_ga1e5a9731214337073162d3bb238639e1"><div class="ttname"><a href="group__sortable___t_vector__with__shareable__sortstats.html#ga1e5a9731214337073162d3bb238639e1">heap_iterators_are_same</a></div><div class="ttdeci">static bool heap_iterators_are_same(const struct THeapIterator *aLeftIter, const struct THeapIterator *aRightIter)</div><div class="ttdoc">Test shodnosti dvou iterátorů</div><div class="ttdef"><b>Definition</b> THeap.h:371</div></div>
+<div class="ttc" id="agroup__sortable___t_vector__with__shareable__sortstats_html_ga6c48fdc01e22389dff6202955542499a"><div class="ttname"><a href="group__sortable___t_vector__with__shareable__sortstats.html#ga6c48fdc01e22389dff6202955542499a">vector_iterators_are_same</a></div><div class="ttdeci">bool vector_iterators_are_same(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Test shodnosti dvou iterátorů</div><div class="ttdef"><b>Definition</b> TVector.c:591</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga09e150aa4cdd8faabf43474ab1dbe454"><div class="ttname"><a href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a></div><div class="ttdeci">int vector_compare_position_value(const struct TVector *aVector, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:309</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga16623c06371077674f5d4d31e38e42a4"><div class="ttname"><a href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a></div><div class="ttdeci">void vector_move_positions(struct TVector *aToVector, size_t aToPos, const struct TVector *aFromVector, size_t aFromPos)</div><div class="ttdoc">Přesun hodnoty elementu vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:271</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gabdff161479b4c497204dc32fd2202e6f"><div class="ttname"><a href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a></div><div class="ttdeci">void vector_swap_position_value(struct TVector *aVector, size_t aPos, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:346</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gac1982d8a0e5f66f933dc6a0413f2d23e"><div class="ttname"><a href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a></div><div class="ttdeci">void vector_swap_positions(struct TVector *aLeftVector, size_t aLeftPos, struct TVector *aRightVector, size_t aRightPos)</div><div class="ttdoc">Výměna hodnot elementů vektorů</div><div class="ttdef"><b>Definition</b> TVector.c:325</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gaedaf9c79afa345e5e71e5c66ab25fa26"><div class="ttname"><a href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a></div><div class="ttdeci">int vector_compare_positions(const struct TVector *aLeftVector, size_t aLeftPos, const struct TVector *aRightVector, size_t aRightPos)</div><div class="ttdoc">Porovnání hodnot elementů vektorů</div><div class="ttdef"><b>Definition</b> TVector.c:290</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_ga015969daf209d461aaf0ba4391df4b5b"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a></div><div class="ttdeci">void vector_swap_with_iterator_value(const struct TVectorIterator *aIter, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:580</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gaa359594c5556fb685473666fad583ddf"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a></div><div class="ttdeci">int vector_compare_with_iterator_value(const struct TVectorIterator *aIter, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:556</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gaa3e549d3e67e2168311acc8f4a494cc5"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a></div><div class="ttdeci">void vector_move_with_iterators(const struct TVectorIterator *aToIter, const struct TVectorIterator *aFromIter)</div><div class="ttdoc">Přesun hodnoty elementu vektoru určené dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:526</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gac16589d02c81c789a7fa6cd323a49013"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a></div><div class="ttdeci">void vector_swap_with_iterators(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Výměna hodnot elementů vektorů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:566</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gadd8aded92ce2c6402742a57316412d39"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a></div><div class="ttdeci">int vector_compare_with_iterators(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Porovnání hodnot elementů vektorů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:541</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<map id="quick_sort_worker" name="quick_sort_worker">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Quick Sort)" alt="" coords="5,70,132,95"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,71,30,62,34,52,47,46,69,43,95,47,106,56,103,60,93,52,69,49,48,51,38,55,35,61,41,68"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454" title="Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement." alt="" coords="180,5,345,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="112,67,181,47,182,52,113,72"/>
+<area shape="rect" id="Node000005" href="$group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e" title="Výměna hodnot elementů vektorů" alt="" coords="187,70,339,95"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="132,80,173,80,173,85,132,85"/>
+<area shape="rect" id="Node000007" href="$group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici." alt="" coords="217,119,309,145"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="120,93,204,114,202,120,119,98"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a8254190a2b4fe570173cc77dba0ee7a4" title=" " alt="" coords="413,5,554,45"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="346,23,399,23,399,28,346,28"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="621,13,803,38"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="554,23,608,23,608,28,554,28"/>
+<area shape="rect" id="Node000006" href="$_t_vector_8c.html#ac70bbb23ab1ec16b867b3e33d40ae1c4" title=" " alt="" coords="393,70,573,95"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="339,80,380,80,380,85,339,85"/>
+<area shape="rect" id="Node000008" href="$_t_vector_8c.html#a0fe5f1145e51f154b5470d640c5d682c" title=" " alt="" coords="423,119,543,145"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="309,129,410,129,410,135,309,135"/>
+</map>

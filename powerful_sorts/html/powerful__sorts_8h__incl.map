@@ -1,0 +1,33 @@
+<map id="powerful_sorts.h" name="powerful_sorts.h">
+<area shape="rect" id="Node000001" title="Deklarace API výkonnějších metod třídění" alt="" coords="230,5,346,31"/>
+<area shape="rect" id="Node000002" href="$heap__sort_8h.html" title="Deklarace API výkonnější metody třídění (Heap sort), využívající poziční API pro přístup k uzlům hald..." alt="" coords="5,79,96,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,33,103,77,101,72,249,28"/>
+<area shape="rect" id="Node000011" href="$heap__sort__with__iterators_8h.html" title="Deklarace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzlům ..." alt="" coords="121,79,295,104"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="277,33,233,72,229,68,273,29"/>
+<area shape="rect" id="Node000012" href="$merge__sort_8h.html" title="Deklarace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi." alt="" coords="320,79,419,104"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="303,29,348,68,344,72,299,33"/>
+<area shape="rect" id="Node000013" href="$merge__sort__with__span_8h.html" title="Deklarace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ Spa..." alt="" coords="443,79,605,104"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="327,28,473,72,472,77,325,33"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8h.html" title="Definice typu Sortable Vector with shareable sortstats." alt="" coords="249,152,327,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,101,237,145,236,151,88,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="67,299,128,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,180,198,227,122,291,118,287,194,223,267,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="152,299,227,324"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="268,180,240,200,214,227,201,256,194,286,189,285,196,255,210,224,236,195,265,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="427,225,495,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="317,175,421,218,419,222,315,180"/>
+<area shape="rect" id="Node000007" href="$_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API." alt="" coords="225,225,351,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="291,178,291,212,285,212,285,178"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="433,299,501,324"/>
+<area shape="poly" id="edge12_Node000003_Node000010" title=" " alt="" coords="305,176,364,223,444,288,440,292,361,227,301,180"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="258,253,142,296,140,291,256,248"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="274,253,218,293,215,288,271,249"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="344,299,408,324"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="304,249,353,288,349,292,300,253"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="251,299,320,324"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="290,251,289,285,284,285,285,251"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="318,248,426,291,424,296,316,253"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="223,102,267,141,263,145,219,106"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="358,106,313,145,310,141,355,102"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="487,107,340,151,339,145,485,101"/>
+</map>

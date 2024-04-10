@@ -1,0 +1,8 @@
+<map id="vector_for_each" name="vector_for_each">
+<area shape="rect" id="Node000001" title="Zavolání zvolené funkce na každý element vektoru od pozice určené iterátorem až do konce vektoru." alt="" coords="5,13,117,38"/>
+<area shape="rect" id="Node000002" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="367,5,487,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,23,353,23,353,28,117,28"/>
+<area shape="rect" id="Node000003" href="$group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56" title="Posunutí iterátoru vpřed." alt="" coords="165,38,319,63"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,31,152,35,151,41,117,36"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="319,38,353,33,353,38,319,43"/>
+</map>

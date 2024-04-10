@@ -1,0 +1,16 @@
+<map id="merge_sort_worker" name="merge_sort_worker">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="5,41,137,66"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="47,42,42,32,44,23,55,16,71,14,91,18,100,26,96,30,89,22,71,19,56,21,49,26,47,32,51,39"/>
+<area shape="rect" id="Node000002" href="$merge__sort_8c.html#a662181aab782eefc61f71886c9aa21ab" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů z vektoru aFromVector do v..." alt="" coords="185,41,249,66"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="138,51,172,51,172,56,138,56"/>
+<area shape="rect" id="Node000003" href="$group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů" alt="" coords="297,15,469,41"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="249,46,286,40,287,45,250,51"/>
+<area shape="rect" id="Node000006" href="$group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru." alt="" coords="307,66,459,91"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="250,55,294,62,293,68,249,61"/>
+<area shape="rect" id="Node000004" href="$_t_vector_8c.html#a188bab569c3ae8a25070f632a6f53e62" title=" " alt="" coords="537,5,678,45"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="470,24,523,24,523,29,470,30"/>
+<area shape="rect" id="Node000005" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="745,13,927,38"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="678,23,732,23,732,28,678,28"/>
+<area shape="rect" id="Node000007" href="$_t_vector_8c.html#a0e3151269c65b7033ddecb4c3aee6566" title=" " alt="" coords="517,70,697,95"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="460,77,504,78,503,83,460,83"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="heap_size" name="heap_size">
+<area shape="rect" id="Node000001" title="Přečtení počtu uzlů haldy." alt="" coords="565,81,647,107"/>
+<area shape="rect" id="Node000002" href="$group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru." alt="" coords="104,81,183,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="551,94,406,89,231,90,183,93,183,88,231,85,406,84,551,88"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="231,5,393,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="571,77,516,53,454,37,393,27,394,22,455,32,518,47,573,72"/>
+<area shape="rect" id="Node000005" href="$heap__sort_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="281,157,343,183"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="577,117,550,133,518,147,471,160,424,167,344,173,343,167,423,162,470,154,516,142,547,129,575,112"/>
+<area shape="rect" id="Node000006" href="$heap__sort_8c.html#a1572325ec24b4714bb9bbd64229d85d0" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="441,107,517,132"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="552,107,518,114,517,109,551,102"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,51,56,76"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,82,56,73,57,68,91,77"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="220,36,57,62,56,57,219,30"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="267,156,230,140,167,109,169,104,232,136,269,151"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="427,118,183,100,183,94,428,113"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="429,137,344,163,343,158,427,132"/>
+</map>

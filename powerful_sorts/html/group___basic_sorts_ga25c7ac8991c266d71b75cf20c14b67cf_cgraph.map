@@ -1,0 +1,11 @@
+<map id="print_element" name="print_element">
+<area shape="rect" id="Node000001" title="Vytisknutí elementu vektoru pomocí iterátoru." alt="" coords="5,31,105,56"/>
+<area shape="rect" id="Node000002" href="$group___t_vector_element.html#gaaae5b52d7f1d155134792f040f00a385" title="Uložení elementu do souboru." alt="" coords="153,5,321,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,34,140,29,140,34,106,39"/>
+<area shape="rect" id="Node000003" href="$group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c" title="Přečtení hodnoty elementu z vektoru pomocí iterátoru." alt="" coords="168,55,307,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,47,155,54,154,59,105,53"/>
+<area shape="rect" id="Node000004" href="$_t_vector_8c.html#a0fe5f1145e51f154b5470d640c5d682c" title=" " alt="" coords="369,25,489,51"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,54,356,47,356,52,307,59"/>
+<area shape="rect" id="Node000005" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="369,75,489,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="307,75,356,82,356,87,307,80"/>
+</map>

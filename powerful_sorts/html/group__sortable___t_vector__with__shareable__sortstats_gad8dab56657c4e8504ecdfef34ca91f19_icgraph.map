@@ -1,0 +1,10 @@
+<map id="vector_attach_sortstats" name="vector_attach_sortstats">
+<area shape="rect" id="Node000001" title="Napojení statistik o počtu operací s elementy jednoho vektoru na statistiky jiného vektoru." alt="" coords="304,31,461,56"/>
+<area shape="rect" id="Node000002" href="$group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad." alt="" coords="137,5,223,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,34,223,26,224,21,290,29"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span." alt="" coords="104,55,256,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,57,256,61,256,56,290,52"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,30,57,42,56,37,123,25"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="90,56,56,50,57,45,91,50"/>
+</map>

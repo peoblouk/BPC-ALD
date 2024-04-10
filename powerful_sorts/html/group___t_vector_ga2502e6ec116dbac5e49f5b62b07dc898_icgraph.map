@@ -1,0 +1,31 @@
+<map id="vector_size" name="vector_size">
+<area shape="rect" id="Node000001" title="Přečtení počtu elementů vektoru." alt="" coords="315,252,401,277"/>
+<area shape="rect" id="Node000002" href="$group___basic_sorts.html#gaa1ef093f5205f293df8303ac228452fc" title="Třídění přímou výměnou (Bubble Sort)" alt="" coords="141,5,230,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,239,343,196,327,144,302,90,285,65,265,44,248,33,229,26,231,21,251,28,268,40,289,62,306,87,332,142,348,195,356,238"/>
+<area shape="rect" id="Node000003" href="$group___basic_sorts.html#ga62a36eb31bf0a873f7c027e145843b1a" title="Třídění přímou výměnou včetně optimalizace s pomocným příznakem ukončení třídění (Bubble Sort Optimiz..." alt="" coords="109,55,261,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="347,239,337,206,320,166,296,127,265,93,247,82,250,78,268,89,300,124,324,164,341,204,353,237"/>
+<area shape="rect" id="Node000004" href="$group___basic_sorts.html#gaba41a68f00241f38f7864b4e1dacd086" title="Třídění přímou výměnou včetně optimalizace s výpočtem indexu poslední změny (Bubble Sort Optimized2)" alt="" coords="106,104,265,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,241,312,191,290,165,265,143,244,132,247,127,268,138,294,161,316,188,347,238"/>
+<area shape="rect" id="Node000005" href="$group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru." alt="" coords="146,153,225,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="333,244,302,217,265,192,224,177,226,172,268,188,306,213,337,240"/>
+<area shape="rect" id="Node000007" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,203,267,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="301,251,230,231,231,226,302,246"/>
+<area shape="rect" id="Node000008" href="$group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad." alt="" coords="142,252,229,277"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="301,267,229,267,229,262,301,262"/>
+<area shape="rect" id="Node000009" href="$group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span." alt="" coords="109,301,261,327"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="302,283,231,304,230,299,301,278"/>
+<area shape="rect" id="Node000010" href="$group___advanced_sorts.html#gaa369b74c9050d30aa2416f9dba8cc8f5" title="Rychlé třídění výměnou (Quick Sort) s volbou prostředního prvku jako pivota." alt="" coords="144,351,227,376"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="336,289,305,316,268,340,228,356,226,351,265,336,302,311,332,285"/>
+<area shape="rect" id="Node000011" href="$group___basic_sorts.html#ga3688a58781905ac2e518285b8bb711ec" title="Třídění přímým výběrem (Select Sort)" alt="" coords="142,400,229,425"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="347,291,316,341,294,367,268,390,230,407,228,402,265,385,290,363,311,338,342,288"/>
+<area shape="rect" id="Node000012" href="$group___basic_sorts.html#gaacee5d609500566a6ad1724486ab8bb2" title="Třídění přímou výměnou se změnou postupu třídění (Shaker Sort)" alt="" coords="140,449,231,475"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="352,292,341,325,324,364,300,404,268,439,251,450,232,457,230,452,248,445,265,435,296,401,319,362,336,323,347,290"/>
+<area shape="rect" id="Node000013" href="$group___t_span.html#ga5b310d0b45f3dc6cc58b4ade80379cf5" title="Test platnosti Spanu." alt="" coords="136,499,235,524"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="356,292,347,335,331,387,306,441,289,466,268,488,253,499,236,506,234,501,250,494,265,484,285,463,301,438,326,385,342,333,351,291"/>
+<area shape="rect" id="Node000006" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,252,56,277"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="134,180,105,192,69,223,43,253,39,250,65,219,103,188,132,175"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="128,235,105,242,57,258,56,253,103,237,126,229"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="128,267,56,267,56,262,128,262"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="130,300,103,291,56,276,57,270,105,286,131,295"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="129,353,103,340,66,310,39,279,43,276,69,306,105,336,132,348"/>
+</map>

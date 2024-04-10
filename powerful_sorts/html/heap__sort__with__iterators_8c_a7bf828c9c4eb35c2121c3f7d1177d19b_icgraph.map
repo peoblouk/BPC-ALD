@@ -1,0 +1,10 @@
+<map id="sift_down" name="sift_down">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="425,5,501,31"/>
+<area shape="rect" id="Node000002" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="411,21,267,21,267,15,411,15"/>
+<area shape="rect" id="Node000004" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="315,31,377,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="412,32,378,39,377,34,411,26"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,21,56,21,56,15,91,15"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="301,39,266,33,266,28,302,34"/>
+</map>

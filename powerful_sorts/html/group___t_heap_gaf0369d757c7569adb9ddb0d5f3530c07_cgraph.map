@@ -1,0 +1,7 @@
+<map id="heap_value" name="heap_value">
+<area shape="rect" id="Node000001" title="Přečtení hodnoty z uzlu haldy dle požadované pozice." alt="" coords="5,5,92,31"/>
+<area shape="rect" id="Node000002" href="$group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c" title="Přečtení hodnoty elementu z vektoru na požadované pozici." alt="" coords="140,5,232,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,15,126,15,126,21,92,21"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a0fe5f1145e51f154b5470d640c5d682c" title=" " alt="" coords="280,5,400,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,15,266,15,266,21,232,21"/>
+</map>

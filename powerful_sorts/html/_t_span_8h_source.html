@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: Zdrojový soubor TSpan.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5768d1d217cb0149ee97d44469138954.html">powerful_sorts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TSpan.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_span_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TSPAN_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TSPAN_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_t_vector_8h.html">TVector.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">   17</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_typedef" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a>;        </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group___t_span.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">   25</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> <a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>;                 </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group___t_span.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">   33</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> <a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>;     </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    };</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___t_span.html#gac78c14bd69fa6a23ef2db50c75a51488">   41</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#gac78c14bd69fa6a23ef2db50c75a51488">span_create</a>(struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> aVector)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a>) { .<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a> = aVector };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="group___t_span.html#ga836d5a79cb441e1e728a1ce06c3ea2e8">   52</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#ga836d5a79cb441e1e728a1ce06c3ea2e8">span_create_left</a>(struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> aVector, size_t aSize)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span>(aVector.iSize &lt; aSize)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        aVector.iValues = NULL;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        aVector.iSize = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        aVector.iSize = aSize;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a>) { .<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a> = aVector };</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___t_span.html#ga1db431e82dd3ba8a1269b24927826ede">   71</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#ga1db431e82dd3ba8a1269b24927826ede">span_create_right</a>(struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> aVector, size_t aFromPos)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span>(aVector.iSize &lt;= aFromPos)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        aVector.iValues = NULL;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        aVector.iSize = 0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        aVector.iValues += aFromPos;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        aVector.iSize -= aFromPos;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a>) { .<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a> = aVector };</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="group___t_span.html#ga2987785b53ca21f4dc18b2d7e95c4e62">   94</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#ga2987785b53ca21f4dc18b2d7e95c4e62">span_create_range</a>(struct <a class="code hl_struct" href="group___t_vector.html#struct_t_vector">TVector</a> aVector, size_t aFromPos, size_t aToPos)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span>((aVector.iSize &lt;= aFromPos) || (aVector.iSize &lt;= aToPos) || (aFromPos &gt; aToPos))</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        aVector.iValues = NULL;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        aVector.iSize = 0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        aVector.iValues += aFromPos;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        aVector.iSize = aToPos + 1;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a>) { .<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a> = aVector };</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="group___t_span.html#ga95663322132016bbaf40e6281480e122">  116</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#ga95663322132016bbaf40e6281480e122">span_create_left_subspan</a>(struct <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> aSpan, size_t aSize)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">if</span>(aSpan.iVector.iSize &lt; aSize)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        aSpan.<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a> = NULL;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        aSpan.iVector.iSize = 0;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        aSpan.iVector.iSize = aSize;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">return</span> aSpan;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="group___t_span.html#ga6270a02d3bfd6fa1fdbf37ca62276687">  135</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#ga6270a02d3bfd6fa1fdbf37ca62276687">span_create_right_subspan</a>(struct <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> aSpan, size_t aFromPos)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">if</span>(aSpan.iVector.iSize &lt;= aFromPos)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        aSpan.<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a> = NULL;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        aSpan.iVector.iSize = 0;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        aSpan.iVector.iValues += aFromPos;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        aSpan.iVector.iSize -= aFromPos;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> aSpan;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="group___t_span.html#gadbce6de83169bb3f6f72f3ccdee53d0b">  158</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> <a class="code hl_function" href="group___t_span.html#gadbce6de83169bb3f6f72f3ccdee53d0b">span_create_range_subspan</a>(struct <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> aSpan, size_t aFromPos, size_t aToPos)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordflow">if</span>((aSpan.iVector.iSize &lt;= aFromPos) || (aSpan.iVector.iSize &lt;= aToPos) || aFromPos &gt; aToPos)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        aSpan.<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a> = NULL;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        aSpan.iVector.iSize = 0;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        aSpan.iVector.iValues += aFromPos;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        aSpan.iVector.iSize = aToPos + 1;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">return</span> aSpan;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="foldopen" id="foldopen00179" data-start="{" data-end="}">
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="group___t_span.html#ga5b310d0b45f3dc6cc58b4ade80379cf5">  179</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#ga5b310d0b45f3dc6cc58b4ade80379cf5">span_is_valid</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a>(&amp;aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>) &gt; 0;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="group___t_span.html#ga873f8813d9a78c9b43e8a6b2b2a4c9d1">  189</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_span.html#ga873f8813d9a78c9b43e8a6b2b2a4c9d1">span_size</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan)</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">return</span> aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
+</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="foldopen" id="foldopen00201" data-start="{" data-end="}">
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="group___t_span.html#ga4c772b349af71b9066651285a90ee21e">  201</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="code hl_function" href="group___t_span.html#ga4c772b349af71b9066651285a90ee21e">span_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan, <span class="keywordtype">size_t</span> aPos)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a>(&amp;aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="group___t_span.html#ga56e402bae9f24dffb084212da636a128">  213</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#ga56e402bae9f24dffb084212da636a128">span_set_value</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <a class="code hl_function" href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a>(&amp;aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos, aValue);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="group___t_span.html#ga8efc8ea3e4f239b6c154cdae03258740">  226</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#ga8efc8ea3e4f239b6c154cdae03258740">span_move_positions</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aToSpan, <span class="keywordtype">size_t</span> aToPos, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aFromSpan, <span class="keywordtype">size_t</span> aFromPos)</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <a class="code hl_function" href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a>(&amp;aToSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aToPos, &amp;aFromSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aFromPos);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
+</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="foldopen" id="foldopen00242" data-start="{" data-end="}">
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="group___t_span.html#gaffd3a758138012dac875ceda42a975db">  242</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_span.html#gaffd3a758138012dac875ceda42a975db">span_compare_positions</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aLeftSpan, <span class="keywordtype">size_t</span> aLeftPos, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aRightSpan, <span class="keywordtype">size_t</span> aRightPos)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a>(&amp;aLeftSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aLeftPos, &amp;aRightSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aRightPos);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    }</div>
+</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="foldopen" id="foldopen00257" data-start="{" data-end="}">
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="group___t_span.html#gad64d53738a4da90ef126cd73d84b5f52">  257</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_span.html#gad64d53738a4da90ef126cd73d84b5f52">span_compare_position_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> aValue)</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a>(&amp;aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos, aValue);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
+</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="foldopen" id="foldopen00270" data-start="{" data-end="}">
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="group___t_span.html#gae81c37610069e0d3c8d3182ca4964c1a">  270</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#gae81c37610069e0d3c8d3182ca4964c1a">span_swap_positions</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aLeftSpan, <span class="keywordtype">size_t</span> aLeftPos, <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aRightSpan, <span class="keywordtype">size_t</span> aRightPos)</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    {</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <a class="code hl_function" href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a>(&amp;aLeftSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aLeftPos, &amp;aRightSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aRightPos);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
+</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="foldopen" id="foldopen00282" data-start="{" data-end="}">
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="group___t_span.html#ga2df4c39d49410db156d79f5d12c84f7e">  282</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#ga2df4c39d49410db156d79f5d12c84f7e">span_swap_position_value</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan, <span class="keywordtype">size_t</span> aPos, <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *aValue)</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <a class="code hl_function" href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a>(&amp;aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>, aPos, aValue);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
+</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="foldopen" id="foldopen00292" data-start="{" data-end="}">
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="group___t_span.html#ga3877c7871ce8eb1c42a322fa9fd86a41">  292</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> <a class="code hl_function" href="group___t_span.html#ga3877c7871ce8eb1c42a322fa9fd86a41">span_iterator_begin</a>(const struct <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan)</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a>) { <a class="code hl_function" href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a>(&amp;aSpan-&gt;iVector) };</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    }</div>
+</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="foldopen" id="foldopen00303" data-start="{" data-end="}">
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="group___t_span.html#gacd47795cbf6334f7734c46eeaead0b09">  303</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> <a class="code hl_function" href="group___t_span.html#gacd47795cbf6334f7734c46eeaead0b09">span_iterator_pos</a>(const struct <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan, <span class="keywordtype">size_t</span> aPos)</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a>) { <a class="code hl_function" href="group___t_vector_iterator.html#ga133f7ac7efd8456d0964bf8fcd2995e6">vector_iterator_pos</a>(&amp;aSpan-&gt;iVector, aPos) };</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    }</div>
+</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="group___t_span.html#ga3222b38985d1fad571989c9be2d66243">  313</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> <a class="code hl_function" href="group___t_span.html#ga3222b38985d1fad571989c9be2d66243">span_iterator_last</a>(const struct <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan)</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a>) { <a class="code hl_function" href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a>(&amp;aSpan-&gt;iVector) };</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    }</div>
+</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="foldopen" id="foldopen00323" data-start="{" data-end="}">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="group___t_span.html#ga67166afe9d2ba03b5db6208b2dcd2787">  323</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#ga67166afe9d2ba03b5db6208b2dcd2787">span_iterator_is_valid</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter)</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    }</div>
+</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="group___t_span.html#gaee1f79d544008f32cf2030c0d2156c04">  333</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#gaee1f79d544008f32cf2030c0d2156c04">span_iterator_to_next</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter)</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    }</div>
+</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="group___t_span.html#gaba2bf18029ccee38147943a1176f1673">  343</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#gaba2bf18029ccee38147943a1176f1673">span_iterator_to_prev</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter)</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    }</div>
+</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="foldopen" id="foldopen00353" data-start="{" data-end="}">
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="group___t_span.html#ga8796ef08880befbf07bda987120a58cb">  353</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a> <a class="code hl_function" href="group___t_span.html#ga8796ef08880befbf07bda987120a58cb">span_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter)</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    {</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a>)<a class="code hl_function" href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    }</div>
+</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="foldopen" id="foldopen00364" data-start="{" data-end="}">
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="group___t_span.html#gad7325743f683c214db12e5f7070569a7">  364</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#gad7325743f683c214db12e5f7070569a7">span_iterator_set_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter, <a class="code hl_typedef" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a> aValue)</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    {</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>) aValue);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
+</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="foldopen" id="foldopen00375" data-start="{" data-end="}">
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="group___t_span.html#ga972048723036512595f461c3ba0a9d21">  375</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#ga972048723036512595f461c3ba0a9d21">span_move_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aToIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aFromIter)</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a>(&amp;aToIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aFromIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
+</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="foldopen" id="foldopen00389" data-start="{" data-end="}">
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno"><a class="line" href="group___t_span.html#ga1b60dd9d2211c7cb07b066f19237b0ac">  389</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_span.html#ga1b60dd9d2211c7cb07b066f19237b0ac">span_compare_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aRightIter)</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    {</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a>(&amp;aLeftIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aRightIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    }</div>
+</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
+<div class="foldopen" id="foldopen00403" data-start="{" data-end="}">
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="group___t_span.html#ga0b2e633085569b47c063161298794b98">  403</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___t_span.html#ga0b2e633085569b47c063161298794b98">span_compare_with_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter, <a class="code hl_typedef" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a> aValue)</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    {</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>) aValue);</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    }</div>
+</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="foldopen" id="foldopen00414" data-start="{" data-end="}">
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="group___t_span.html#ga2bc9c4a1a22d533a1a01ddb8cb57cfca">  414</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#ga2bc9c4a1a22d533a1a01ddb8cb57cfca">span_swap_with_iterators</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aRightIter)</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    {</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    <a class="code hl_function" href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a>(&amp;aLeftIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aRightIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    }</div>
+</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
+<div class="foldopen" id="foldopen00425" data-start="{" data-end="}">
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="group___t_span.html#ga87439f0c5045aa7f177a37558b60d397">  425</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___t_span.html#ga87439f0c5045aa7f177a37558b60d397">span_swap_with_iterator_value</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aIter, <a class="code hl_typedef" href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a> *aValue)</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    {</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <a class="code hl_function" href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a>(&amp;aIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, (<a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *) aValue);</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    }</div>
+</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
+<div class="foldopen" id="foldopen00436" data-start="{" data-end="}">
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="group___t_span.html#gabda724224638fb2f6016b6f8eba08263">  436</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#gabda724224638fb2f6016b6f8eba08263">span_iterators_are_same</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aLeftIter, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a> *aRightIter)</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    {</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__sortable___t_vector__with__shareable__sortstats.html#ga6c48fdc01e22389dff6202955542499a">vector_iterators_are_same</a>(&amp;aLeftIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>, &amp;aRightIter-&gt;<a class="code hl_variable" href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a>);</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    }</div>
+</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
+<div class="foldopen" id="foldopen00447" data-start="{" data-end="}">
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="group___t_span.html#ga1279c84c9a296941dd53ab2eec020efb">  447</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_span.html#ga1279c84c9a296941dd53ab2eec020efb">vector_iterator_is_inside_span</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_span.html#struct_t_span">TSpan</a> *aSpan, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> *aIter)</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    {</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <span class="keywordflow">if</span>(aIter &amp;&amp; aIter-&gt;<a class="code hl_variable" href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">iVector</a>)</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        {</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        assert(aIter-&gt;<a class="code hl_variable" href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">iVector</a>-&gt;<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a>);</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> *elem_ptr = aIter-&gt;<a class="code hl_variable" href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">iVector</a>-&gt;<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a> + aIter-&gt;<a class="code hl_variable" href="group___t_vector_iterator.html#a653670a6d238caa045872f0682ec52b3">iPos</a>;</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        <span class="keywordflow">return</span> (elem_ptr &gt;= aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a>) &amp;&amp; (elem_ptr &lt; aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">iValues</a> + aSpan-&gt;<a class="code hl_variable" href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a>.<a class="code hl_variable" href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>);</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        }</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    }</div>
+</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span><span class="preprocessor">#endif </span><span class="comment">/* TSPAN_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_t_vector_8h_html"><div class="ttname"><a href="_t_vector_8h.html">TVector.h</a></div><div class="ttdoc">Definice typu Sortable Vector with shareable sortstats.</div></div>
+<div class="ttc" id="agroup___t_span_html_ab9c90befa4efdbf39f89ad5053bc89ee"><div class="ttname"><a href="group___t_span.html#ab9c90befa4efdbf39f89ad5053bc89ee">TSpan::iVector</a></div><div class="ttdeci">struct TVector iVector</div><div class="ttdoc">Reprezentuje určenou část (rozsah) existujícího vektoru.</div><div class="ttdef"><b>Definition</b> TSpan.h:25</div></div>
+<div class="ttc" id="agroup___t_span_html_aeb3b6f28a6e71ff825a6fdf6d6cbae15"><div class="ttname"><a href="group___t_span.html#aeb3b6f28a6e71ff825a6fdf6d6cbae15">TSpanIterator::iVectorIter</a></div><div class="ttdeci">struct TVectorIterator iVectorIter</div><div class="ttdoc">Reprezentuje iterátor na určenou část (rozsah) existujícího vektoru.</div><div class="ttdef"><b>Definition</b> TSpan.h:33</div></div>
+<div class="ttc" id="agroup___t_span_html_ga0b2e633085569b47c063161298794b98"><div class="ttname"><a href="group___t_span.html#ga0b2e633085569b47c063161298794b98">span_compare_with_iterator_value</a></div><div class="ttdeci">static int span_compare_with_iterator_value(const struct TSpanIterator *aIter, TSpanElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu Spanu určenou iterátorem a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TSpan.h:403</div></div>
+<div class="ttc" id="agroup___t_span_html_ga1279c84c9a296941dd53ab2eec020efb"><div class="ttname"><a href="group___t_span.html#ga1279c84c9a296941dd53ab2eec020efb">vector_iterator_is_inside_span</a></div><div class="ttdeci">static bool vector_iterator_is_inside_span(const struct TSpan *aSpan, const struct TVectorIterator *aIter)</div><div class="ttdoc">Test, zda iterátor vektoru odkazuje do rozsahu určeného Spanem.</div><div class="ttdef"><b>Definition</b> TSpan.h:447</div></div>
+<div class="ttc" id="agroup___t_span_html_ga1b60dd9d2211c7cb07b066f19237b0ac"><div class="ttname"><a href="group___t_span.html#ga1b60dd9d2211c7cb07b066f19237b0ac">span_compare_with_iterators</a></div><div class="ttdeci">static int span_compare_with_iterators(const struct TSpanIterator *aLeftIter, const struct TSpanIterator *aRightIter)</div><div class="ttdoc">Porovnání hodnot elementů Spanů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TSpan.h:389</div></div>
+<div class="ttc" id="agroup___t_span_html_ga1db431e82dd3ba8a1269b24927826ede"><div class="ttname"><a href="group___t_span.html#ga1db431e82dd3ba8a1269b24927826ede">span_create_right</a></div><div class="ttdeci">static struct TSpan span_create_right(struct TVector aVector, size_t aFromPos)</div><div class="ttdoc">Vytvoření Spanu pro část vektoru od definované pozice až do konce vektoru.</div><div class="ttdef"><b>Definition</b> TSpan.h:71</div></div>
+<div class="ttc" id="agroup___t_span_html_ga2987785b53ca21f4dc18b2d7e95c4e62"><div class="ttname"><a href="group___t_span.html#ga2987785b53ca21f4dc18b2d7e95c4e62">span_create_range</a></div><div class="ttdeci">static struct TSpan span_create_range(struct TVector aVector, size_t aFromPos, size_t aToPos)</div><div class="ttdoc">Vytvoření Spanu pro část vektoru definovanou pomocí pozičního intervalu &lt;od - do&gt;</div><div class="ttdef"><b>Definition</b> TSpan.h:94</div></div>
+<div class="ttc" id="agroup___t_span_html_ga2bc9c4a1a22d533a1a01ddb8cb57cfca"><div class="ttname"><a href="group___t_span.html#ga2bc9c4a1a22d533a1a01ddb8cb57cfca">span_swap_with_iterators</a></div><div class="ttdeci">static void span_swap_with_iterators(const struct TSpanIterator *aLeftIter, const struct TSpanIterator *aRightIter)</div><div class="ttdoc">Výměna hodnot elementů Spanů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TSpan.h:414</div></div>
+<div class="ttc" id="agroup___t_span_html_ga2df4c39d49410db156d79f5d12c84f7e"><div class="ttname"><a href="group___t_span.html#ga2df4c39d49410db156d79f5d12c84f7e">span_swap_position_value</a></div><div class="ttdeci">static void span_swap_position_value(struct TSpan *aSpan, size_t aPos, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu Spanu a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TSpan.h:282</div></div>
+<div class="ttc" id="agroup___t_span_html_ga3222b38985d1fad571989c9be2d66243"><div class="ttname"><a href="group___t_span.html#ga3222b38985d1fad571989c9be2d66243">span_iterator_last</a></div><div class="ttdeci">static struct TSpanIterator span_iterator_last(const struct TSpan *aSpan)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na poslední element.</div><div class="ttdef"><b>Definition</b> TSpan.h:313</div></div>
+<div class="ttc" id="agroup___t_span_html_ga3877c7871ce8eb1c42a322fa9fd86a41"><div class="ttname"><a href="group___t_span.html#ga3877c7871ce8eb1c42a322fa9fd86a41">span_iterator_begin</a></div><div class="ttdeci">static struct TSpanIterator span_iterator_begin(const struct TSpan *aSpan)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na počáteční element.</div><div class="ttdef"><b>Definition</b> TSpan.h:292</div></div>
+<div class="ttc" id="agroup___t_span_html_ga4419771cd8f5a7ba95d8178b6d7e1455"><div class="ttname"><a href="group___t_span.html#ga4419771cd8f5a7ba95d8178b6d7e1455">TSpanElement</a></div><div class="ttdeci">TVectorElement TSpanElement</div><div class="ttdoc">Definice typu SpanElement jako alias na typ VectorElement.</div><div class="ttdef"><b>Definition</b> TSpan.h:17</div></div>
+<div class="ttc" id="agroup___t_span_html_ga4c772b349af71b9066651285a90ee21e"><div class="ttname"><a href="group___t_span.html#ga4c772b349af71b9066651285a90ee21e">span_value</a></div><div class="ttdeci">static TVectorElement span_value(const struct TSpan *aSpan, size_t aPos)</div><div class="ttdoc">Přečtení hodnoty elementu Spanu na požadované pozici.</div><div class="ttdef"><b>Definition</b> TSpan.h:201</div></div>
+<div class="ttc" id="agroup___t_span_html_ga56e402bae9f24dffb084212da636a128"><div class="ttname"><a href="group___t_span.html#ga56e402bae9f24dffb084212da636a128">span_set_value</a></div><div class="ttdeci">static void span_set_value(struct TSpan *aSpan, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do Spanu na požadovanou pozici.</div><div class="ttdef"><b>Definition</b> TSpan.h:213</div></div>
+<div class="ttc" id="agroup___t_span_html_ga5b310d0b45f3dc6cc58b4ade80379cf5"><div class="ttname"><a href="group___t_span.html#ga5b310d0b45f3dc6cc58b4ade80379cf5">span_is_valid</a></div><div class="ttdeci">static bool span_is_valid(const struct TSpan *aSpan)</div><div class="ttdoc">Test platnosti Spanu.</div><div class="ttdef"><b>Definition</b> TSpan.h:179</div></div>
+<div class="ttc" id="agroup___t_span_html_ga6270a02d3bfd6fa1fdbf37ca62276687"><div class="ttname"><a href="group___t_span.html#ga6270a02d3bfd6fa1fdbf37ca62276687">span_create_right_subspan</a></div><div class="ttdeci">static struct TSpan span_create_right_subspan(struct TSpan aSpan, size_t aFromPos)</div><div class="ttdoc">Vytvoření SubSpanu jako části od definované pozice až do konce původního Spanu.</div><div class="ttdef"><b>Definition</b> TSpan.h:135</div></div>
+<div class="ttc" id="agroup___t_span_html_ga67166afe9d2ba03b5db6208b2dcd2787"><div class="ttname"><a href="group___t_span.html#ga67166afe9d2ba03b5db6208b2dcd2787">span_iterator_is_valid</a></div><div class="ttdeci">static bool span_iterator_is_valid(const struct TSpanIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> TSpan.h:323</div></div>
+<div class="ttc" id="agroup___t_span_html_ga836d5a79cb441e1e728a1ce06c3ea2e8"><div class="ttname"><a href="group___t_span.html#ga836d5a79cb441e1e728a1ce06c3ea2e8">span_create_left</a></div><div class="ttdeci">static struct TSpan span_create_left(struct TVector aVector, size_t aSize)</div><div class="ttdoc">Vytvoření Spanu pro část vektoru od počátku a definované délce.</div><div class="ttdef"><b>Definition</b> TSpan.h:52</div></div>
+<div class="ttc" id="agroup___t_span_html_ga873f8813d9a78c9b43e8a6b2b2a4c9d1"><div class="ttname"><a href="group___t_span.html#ga873f8813d9a78c9b43e8a6b2b2a4c9d1">span_size</a></div><div class="ttdeci">static size_t span_size(const struct TSpan *aSpan)</div><div class="ttdoc">Přečtení počtu elementů Spanu.</div><div class="ttdef"><b>Definition</b> TSpan.h:189</div></div>
+<div class="ttc" id="agroup___t_span_html_ga87439f0c5045aa7f177a37558b60d397"><div class="ttname"><a href="group___t_span.html#ga87439f0c5045aa7f177a37558b60d397">span_swap_with_iterator_value</a></div><div class="ttdeci">static void span_swap_with_iterator_value(const struct TSpanIterator *aIter, TSpanElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu Spanu určenou iterátorem a proměnnou typu SpanElement.</div><div class="ttdef"><b>Definition</b> TSpan.h:425</div></div>
+<div class="ttc" id="agroup___t_span_html_ga8796ef08880befbf07bda987120a58cb"><div class="ttname"><a href="group___t_span.html#ga8796ef08880befbf07bda987120a58cb">span_iterator_value</a></div><div class="ttdeci">static TSpanElement span_iterator_value(const struct TSpanIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty elementu z Spanu pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TSpan.h:353</div></div>
+<div class="ttc" id="agroup___t_span_html_ga8efc8ea3e4f239b6c154cdae03258740"><div class="ttname"><a href="group___t_span.html#ga8efc8ea3e4f239b6c154cdae03258740">span_move_positions</a></div><div class="ttdeci">static void span_move_positions(struct TSpan *aToSpan, size_t aToPos, const struct TSpan *aFromSpan, size_t aFromPos)</div><div class="ttdoc">Přesun hodnoty elementu Spanu.</div><div class="ttdef"><b>Definition</b> TSpan.h:226</div></div>
+<div class="ttc" id="agroup___t_span_html_ga95663322132016bbaf40e6281480e122"><div class="ttname"><a href="group___t_span.html#ga95663322132016bbaf40e6281480e122">span_create_left_subspan</a></div><div class="ttdeci">static struct TSpan span_create_left_subspan(struct TSpan aSpan, size_t aSize)</div><div class="ttdoc">Vytvoření SubSpanu jako části od počátku a definované délce původního Spanu.</div><div class="ttdef"><b>Definition</b> TSpan.h:116</div></div>
+<div class="ttc" id="agroup___t_span_html_ga972048723036512595f461c3ba0a9d21"><div class="ttname"><a href="group___t_span.html#ga972048723036512595f461c3ba0a9d21">span_move_with_iterators</a></div><div class="ttdeci">static void span_move_with_iterators(const struct TSpanIterator *aToIter, const struct TSpanIterator *aFromIter)</div><div class="ttdoc">Přesun hodnoty elementu Spanu určené dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TSpan.h:375</div></div>
+<div class="ttc" id="agroup___t_span_html_gaba2bf18029ccee38147943a1176f1673"><div class="ttname"><a href="group___t_span.html#gaba2bf18029ccee38147943a1176f1673">span_iterator_to_prev</a></div><div class="ttdeci">static bool span_iterator_to_prev(struct TSpanIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vzad.</div><div class="ttdef"><b>Definition</b> TSpan.h:343</div></div>
+<div class="ttc" id="agroup___t_span_html_gabda724224638fb2f6016b6f8eba08263"><div class="ttname"><a href="group___t_span.html#gabda724224638fb2f6016b6f8eba08263">span_iterators_are_same</a></div><div class="ttdeci">static bool span_iterators_are_same(const struct TSpanIterator *aLeftIter, const struct TSpanIterator *aRightIter)</div><div class="ttdoc">Test shodnosti dvou iterátorů</div><div class="ttdef"><b>Definition</b> TSpan.h:436</div></div>
+<div class="ttc" id="agroup___t_span_html_gac78c14bd69fa6a23ef2db50c75a51488"><div class="ttname"><a href="group___t_span.html#gac78c14bd69fa6a23ef2db50c75a51488">span_create</a></div><div class="ttdeci">static struct TSpan span_create(struct TVector aVector)</div><div class="ttdoc">Vytvoření Spanu pro celý vektor.</div><div class="ttdef"><b>Definition</b> TSpan.h:41</div></div>
+<div class="ttc" id="agroup___t_span_html_gacd47795cbf6334f7734c46eeaead0b09"><div class="ttname"><a href="group___t_span.html#gacd47795cbf6334f7734c46eeaead0b09">span_iterator_pos</a></div><div class="ttdeci">static struct TSpanIterator span_iterator_pos(const struct TSpan *aSpan, size_t aPos)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na zadanou pozici.</div><div class="ttdef"><b>Definition</b> TSpan.h:303</div></div>
+<div class="ttc" id="agroup___t_span_html_gad64d53738a4da90ef126cd73d84b5f52"><div class="ttname"><a href="group___t_span.html#gad64d53738a4da90ef126cd73d84b5f52">span_compare_position_value</a></div><div class="ttdeci">static int span_compare_position_value(const struct TSpan *aSpan, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu Span a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TSpan.h:257</div></div>
+<div class="ttc" id="agroup___t_span_html_gad7325743f683c214db12e5f7070569a7"><div class="ttname"><a href="group___t_span.html#gad7325743f683c214db12e5f7070569a7">span_iterator_set_value</a></div><div class="ttdeci">static bool span_iterator_set_value(const struct TSpanIterator *aIter, TSpanElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do Spanu pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TSpan.h:364</div></div>
+<div class="ttc" id="agroup___t_span_html_gadbce6de83169bb3f6f72f3ccdee53d0b"><div class="ttname"><a href="group___t_span.html#gadbce6de83169bb3f6f72f3ccdee53d0b">span_create_range_subspan</a></div><div class="ttdeci">static struct TSpan span_create_range_subspan(struct TSpan aSpan, size_t aFromPos, size_t aToPos)</div><div class="ttdoc">Vytvoření SubSpanu pro část původního Spanu definovanou pomocí pozičního intervalu &lt;od - do&gt;</div><div class="ttdef"><b>Definition</b> TSpan.h:158</div></div>
+<div class="ttc" id="agroup___t_span_html_gae81c37610069e0d3c8d3182ca4964c1a"><div class="ttname"><a href="group___t_span.html#gae81c37610069e0d3c8d3182ca4964c1a">span_swap_positions</a></div><div class="ttdeci">static void span_swap_positions(struct TSpan *aLeftSpan, size_t aLeftPos, struct TSpan *aRightSpan, size_t aRightPos)</div><div class="ttdoc">Výměna hodnot elementů Spanů</div><div class="ttdef"><b>Definition</b> TSpan.h:270</div></div>
+<div class="ttc" id="agroup___t_span_html_gaee1f79d544008f32cf2030c0d2156c04"><div class="ttname"><a href="group___t_span.html#gaee1f79d544008f32cf2030c0d2156c04">span_iterator_to_next</a></div><div class="ttdeci">static bool span_iterator_to_next(struct TSpanIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TSpan.h:333</div></div>
+<div class="ttc" id="agroup___t_span_html_gaffd3a758138012dac875ceda42a975db"><div class="ttname"><a href="group___t_span.html#gaffd3a758138012dac875ceda42a975db">span_compare_positions</a></div><div class="ttdeci">static int span_compare_positions(const struct TSpan *aLeftSpan, size_t aLeftPos, const struct TSpan *aRightSpan, size_t aRightPos)</div><div class="ttdoc">Porovnání hodnot elementů Spanů</div><div class="ttdef"><b>Definition</b> TSpan.h:242</div></div>
+<div class="ttc" id="agroup___t_span_html_struct_t_span"><div class="ttname"><a href="group___t_span.html#struct_t_span">TSpan</a></div><div class="ttdoc">Definice typu Span.</div><div class="ttdef"><b>Definition</b> TSpan.h:24</div></div>
+<div class="ttc" id="agroup___t_span_html_struct_t_span_iterator"><div class="ttname"><a href="group___t_span.html#struct_t_span_iterator">TSpanIterator</a></div><div class="ttdoc">Definice typu SpanIterator.</div><div class="ttdef"><b>Definition</b> TSpan.h:32</div></div>
+<div class="ttc" id="agroup___t_vector_element_html_ga3c679c2b2440555118a3d54c6149994e"><div class="ttname"><a href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a></div><div class="ttdeci">int TVectorElement</div><div class="ttdoc">Definice typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVectorElement.h:20</div></div>
+<div class="ttc" id="agroup___t_vector_html_a27ffb91c868c8e4ecd0f87d21dada53f"><div class="ttname"><a href="group___t_vector.html#a27ffb91c868c8e4ecd0f87d21dada53f">TVector::iSize</a></div><div class="ttdeci">size_t iSize</div><div class="ttdoc">Počet elementů vektoru.</div><div class="ttdef"><b>Definition</b> TVector.h:56</div></div>
+<div class="ttc" id="agroup___t_vector_html_ab60b567f8c925c613e57f82cc8613169"><div class="ttname"><a href="group___t_vector.html#ab60b567f8c925c613e57f82cc8613169">TVector::iValues</a></div><div class="ttdeci">TVectorElement * iValues</div><div class="ttdoc">Ukazatel na počáteční prvek pole hodnot typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.h:55</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga2502e6ec116dbac5e49f5b62b07dc898"><div class="ttname"><a href="group___t_vector.html#ga2502e6ec116dbac5e49f5b62b07dc898">vector_size</a></div><div class="ttdeci">size_t vector_size(const struct TVector *aVector)</div><div class="ttdoc">Přečtení počtu elementů vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:253</div></div>
+<div class="ttc" id="agroup___t_vector_html_ga2b08236d9825632cd96bcc89faed929c"><div class="ttname"><a href="group___t_vector.html#ga2b08236d9825632cd96bcc89faed929c">vector_value</a></div><div class="ttdeci">TVectorElement vector_value(const struct TVector *aVector, size_t aPos)</div><div class="ttdoc">Přečtení hodnoty elementu z vektoru na požadované pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:228</div></div>
+<div class="ttc" id="agroup___t_vector_html_gabd5ba54950295545d27b1286234ead39"><div class="ttname"><a href="group___t_vector.html#gabd5ba54950295545d27b1286234ead39">vector_set_value</a></div><div class="ttdeci">void vector_set_value(struct TVector *aVector, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do vektoru na požadovanou pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:243</div></div>
+<div class="ttc" id="agroup___t_vector_html_struct_t_vector"><div class="ttname"><a href="group___t_vector.html#struct_t_vector">TVector</a></div><div class="ttdoc">Definice typu Vector.</div><div class="ttdef"><b>Definition</b> TVector.h:54</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_a653670a6d238caa045872f0682ec52b3"><div class="ttname"><a href="group___t_vector_iterator.html#a653670a6d238caa045872f0682ec52b3">TVectorIterator::iPos</a></div><div class="ttdeci">size_t iPos</div><div class="ttdoc">Aktuální pozice pro indexaci elementu v navázaném vektoru.</div><div class="ttdef"><b>Definition</b> TVector.h:241</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_a94eb00bd36f00991011b2269f0d71a9f"><div class="ttname"><a href="group___t_vector_iterator.html#a94eb00bd36f00991011b2269f0d71a9f">TVectorIterator::iVector</a></div><div class="ttdeci">struct TVector * iVector</div><div class="ttdoc">Ukazatel na navázaný vektor (mutable iterátor - umožňuje měnit elementy VectorElement)</div><div class="ttdef"><b>Definition</b> TVector.h:240</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga133f7ac7efd8456d0964bf8fcd2995e6"><div class="ttname"><a href="group___t_vector_iterator.html#ga133f7ac7efd8456d0964bf8fcd2995e6">vector_iterator_pos</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_pos(const struct TVector *aVector, size_t aPos)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na zadanou pozici.</div><div class="ttdef"><b>Definition</b> TVector.c:448</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga3f8a97a63f887539e270f6845bf22b9a"><div class="ttname"><a href="group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a">vector_iterator_is_valid</a></div><div class="ttdeci">bool vector_iterator_is_valid(const struct TVectorIterator *aIter)</div><div class="ttdoc">Zjištění platnosti iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:464</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga40d7eff2ece0eb356d27cdcdef255560"><div class="ttname"><a href="group___t_vector_iterator.html#ga40d7eff2ece0eb356d27cdcdef255560">vector_iterator_begin</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_begin(const struct TVector *aVector)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na počáteční element.</div><div class="ttdef"><b>Definition</b> TVector.c:440</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga4d8032eb9dbbdccf794611f2b0c9821c"><div class="ttname"><a href="group___t_vector_iterator.html#ga4d8032eb9dbbdccf794611f2b0c9821c">vector_iterator_value</a></div><div class="ttdeci">TVectorElement vector_iterator_value(const struct TVectorIterator *aIter)</div><div class="ttdoc">Přečtení hodnoty elementu z vektoru pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:503</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga66f6b96e416a7e593b1cf703f58be7ca"><div class="ttname"><a href="group___t_vector_iterator.html#ga66f6b96e416a7e593b1cf703f58be7ca">vector_iterator_set_value</a></div><div class="ttdeci">bool vector_iterator_set_value(const struct TVectorIterator *aIter, TVectorElement aValue)</div><div class="ttdoc">Zapsání hodnoty elementu do vektoru pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> TVector.c:514</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga6c42552246c50cfa270c3eb0f58c239a"><div class="ttname"><a href="group___t_vector_iterator.html#ga6c42552246c50cfa270c3eb0f58c239a">vector_iterator_last</a></div><div class="ttdeci">struct TVectorIterator vector_iterator_last(const struct TVector *aVector)</div><div class="ttdoc">Vytvoření nového iterátoru ukazujícího na poslední element.</div><div class="ttdef"><b>Definition</b> TVector.c:456</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga7ce07cda016d67e3ca891125613ece56"><div class="ttname"><a href="group___t_vector_iterator.html#ga7ce07cda016d67e3ca891125613ece56">vector_iterator_to_next</a></div><div class="ttdeci">bool vector_iterator_to_next(struct TVectorIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vpřed.</div><div class="ttdef"><b>Definition</b> TVector.c:473</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_ga8e1e1cc570f8a1c2bf1fb73c0d3c8826"><div class="ttname"><a href="group___t_vector_iterator.html#ga8e1e1cc570f8a1c2bf1fb73c0d3c8826">vector_iterator_to_prev</a></div><div class="ttdeci">bool vector_iterator_to_prev(struct TVectorIterator *aIter)</div><div class="ttdoc">Posunutí iterátoru vzad.</div><div class="ttdef"><b>Definition</b> TVector.c:488</div></div>
+<div class="ttc" id="agroup___t_vector_iterator_html_struct_t_vector_iterator"><div class="ttname"><a href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a></div><div class="ttdoc">Definice typu VectorIterator.</div><div class="ttdef"><b>Definition</b> TVector.h:239</div></div>
+<div class="ttc" id="agroup__sortable___t_vector__with__shareable__sortstats_html_ga6c48fdc01e22389dff6202955542499a"><div class="ttname"><a href="group__sortable___t_vector__with__shareable__sortstats.html#ga6c48fdc01e22389dff6202955542499a">vector_iterators_are_same</a></div><div class="ttdeci">bool vector_iterators_are_same(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Test shodnosti dvou iterátorů</div><div class="ttdef"><b>Definition</b> TVector.c:591</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga09e150aa4cdd8faabf43474ab1dbe454"><div class="ttname"><a href="group__sortable___t_vector.html#ga09e150aa4cdd8faabf43474ab1dbe454">vector_compare_position_value</a></div><div class="ttdeci">int vector_compare_position_value(const struct TVector *aVector, size_t aPos, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu vektoru a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:309</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_ga16623c06371077674f5d4d31e38e42a4"><div class="ttname"><a href="group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4">vector_move_positions</a></div><div class="ttdeci">void vector_move_positions(struct TVector *aToVector, size_t aToPos, const struct TVector *aFromVector, size_t aFromPos)</div><div class="ttdoc">Přesun hodnoty elementu vektoru.</div><div class="ttdef"><b>Definition</b> TVector.c:271</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gabdff161479b4c497204dc32fd2202e6f"><div class="ttname"><a href="group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f">vector_swap_position_value</a></div><div class="ttdeci">void vector_swap_position_value(struct TVector *aVector, size_t aPos, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:346</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gac1982d8a0e5f66f933dc6a0413f2d23e"><div class="ttname"><a href="group__sortable___t_vector.html#gac1982d8a0e5f66f933dc6a0413f2d23e">vector_swap_positions</a></div><div class="ttdeci">void vector_swap_positions(struct TVector *aLeftVector, size_t aLeftPos, struct TVector *aRightVector, size_t aRightPos)</div><div class="ttdoc">Výměna hodnot elementů vektorů</div><div class="ttdef"><b>Definition</b> TVector.c:325</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_html_gaedaf9c79afa345e5e71e5c66ab25fa26"><div class="ttname"><a href="group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26">vector_compare_positions</a></div><div class="ttdeci">int vector_compare_positions(const struct TVector *aLeftVector, size_t aLeftPos, const struct TVector *aRightVector, size_t aRightPos)</div><div class="ttdoc">Porovnání hodnot elementů vektorů</div><div class="ttdef"><b>Definition</b> TVector.c:290</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_ga015969daf209d461aaf0ba4391df4b5b"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b">vector_swap_with_iterator_value</a></div><div class="ttdeci">void vector_swap_with_iterator_value(const struct TVectorIterator *aIter, TVectorElement *aValue)</div><div class="ttdoc">Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:580</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gaa359594c5556fb685473666fad583ddf"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gaa359594c5556fb685473666fad583ddf">vector_compare_with_iterator_value</a></div><div class="ttdeci">int vector_compare_with_iterator_value(const struct TVectorIterator *aIter, TVectorElement aValue)</div><div class="ttdoc">Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement.</div><div class="ttdef"><b>Definition</b> TVector.c:556</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gaa3e549d3e67e2168311acc8f4a494cc5"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5">vector_move_with_iterators</a></div><div class="ttdeci">void vector_move_with_iterators(const struct TVectorIterator *aToIter, const struct TVectorIterator *aFromIter)</div><div class="ttdoc">Přesun hodnoty elementu vektoru určené dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:526</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gac16589d02c81c789a7fa6cd323a49013"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013">vector_swap_with_iterators</a></div><div class="ttdeci">void vector_swap_with_iterators(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Výměna hodnot elementů vektorů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:566</div></div>
+<div class="ttc" id="agroup__sortable___t_vector_iterator_html_gadd8aded92ce2c6402742a57316412d39"><div class="ttname"><a href="group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39">vector_compare_with_iterators</a></div><div class="ttdeci">int vector_compare_with_iterators(const struct TVectorIterator *aLeftIter, const struct TVectorIterator *aRightIter)</div><div class="ttdoc">Porovnání hodnot elementů vektorů určených dvěma iterátory.</div><div class="ttdef"><b>Definition</b> TVector.c:541</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

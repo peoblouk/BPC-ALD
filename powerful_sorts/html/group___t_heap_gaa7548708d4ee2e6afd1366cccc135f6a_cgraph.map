@@ -1,0 +1,9 @@
+<map id="heap_move_with_iterators" name="heap_move_with_iterators">
+<area shape="rect" id="Node000001" title="Přesun hodnoty uzlu haldy určené dvěma iterátory." alt="" coords="5,35,176,60"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector_iterator.html#gaa3e549d3e67e2168311acc8f4a494cc5" title="Přesun hodnoty elementu vektoru určené dvěma iterátory." alt="" coords="224,35,401,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,45,210,45,210,50,176,50"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a0e3151269c65b7033ddecb4c3aee6566" title=" " alt="" coords="449,5,629,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,33,436,29,436,34,402,38"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="479,55,599,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,56,466,64,465,69,402,61"/>
+</map>

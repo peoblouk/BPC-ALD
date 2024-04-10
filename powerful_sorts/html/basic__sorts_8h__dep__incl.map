@@ -1,0 +1,7 @@
+<map id="basic_sorts.h" name="basic_sorts.h">
+<area shape="rect" id="Node000001" title="Deklarace API přímých metod třídění" alt="" coords="57,5,157,31"/>
+<area shape="rect" id="Node000002" href="$basic__sorts_8c.html" title="Implementace API přímých metod třídění" alt="" coords="5,79,105,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,43,66,80,62,77,89,40"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Hlavní program testující API výkonnějších metod třídění" alt="" coords="130,79,191,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,40,154,77,150,80,122,43"/>
+</map>

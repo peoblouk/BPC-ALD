@@ -1,0 +1,10 @@
+<map id="mergify" name="mergify">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů z vektoru aFromVector do v..." alt="" coords="419,29,483,55"/>
+<area shape="rect" id="Node000002" href="$merge__sort_8c.html#a41bfb4129631a73ffc60c10381af80c2" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="239,29,371,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="405,45,371,45,371,39,405,39"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="329,18,322,11,305,8,290,10,282,15,280,20,285,28,280,30,275,21,278,11,288,5,305,3,325,6,333,15"/>
+<area shape="rect" id="Node000003" href="$group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad." alt="" coords="104,29,191,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,45,191,45,191,39,225,39"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,29,56,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,45,56,45,56,39,90,39"/>
+</map>

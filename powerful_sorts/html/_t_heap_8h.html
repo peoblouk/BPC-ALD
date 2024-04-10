@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: Dokumentace souboru THeap.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5768d1d217cb0149ee97d44469138954.html">powerful_sorts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru THeap.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice typu Heap pro přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector with shareable sortstats)  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_t_vector_8h_source.html">TVector.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro THeap.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_heap_8h__incl.svg" width="471" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Následující graf ukazuje, které soubory přímo nebo nepřímo vkládají tento soubor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_heap_8h__dep__incl.svg" width="396" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="_t_heap_8h_source.html">Zobrazit zdrojový text tohoto souboru.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_heap" id="r_struct_t_heap"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#struct_t_heap">THeap</a></td></tr>
+<tr class="memdesc:struct_t_heap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Heap.  <a href="group___t_heap.html#struct_t_heap">...</a><br /></td></tr>
+<tr class="separator:struct_t_heap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_t_heap_iterator" id="r_struct_t_heap_iterator"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a></td></tr>
+<tr class="memdesc:struct_t_heap_iterator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu HeapIterator.  <a href="group___t_heap.html#struct_t_heap_iterator">...</a><br /></td></tr>
+<tr class="separator:struct_t_heap_iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:gaadfb312d94e0279d1dff692008be6744" id="r_gaadfb312d94e0279d1dff692008be6744"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td></tr>
+<tr class="memdesc:gaadfb312d94e0279d1dff692008be6744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu HeapElement jako alias na typ VectorElement.  <br /></td></tr>
+<tr class="separator:gaadfb312d94e0279d1dff692008be6744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f" id="r_ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f">heap_create</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> aVector)</td></tr>
+<tr class="memdesc:ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření Heap pro celý vektor.  <br /></td></tr>
+<tr class="separator:ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaf85f5864f8cc9b2f6203a99e41ccc8" id="r_gafaf85f5864f8cc9b2f6203a99e41ccc8"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gafaf85f5864f8cc9b2f6203a99e41ccc8">heap_size</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:gafaf85f5864f8cc9b2f6203a99e41ccc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení počtu uzlů haldy.  <br /></td></tr>
+<tr class="separator:gafaf85f5864f8cc9b2f6203a99e41ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga949d1c5fea06774f24e6d63f13cadb56" id="r_ga949d1c5fea06774f24e6d63f13cadb56"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga949d1c5fea06774f24e6d63f13cadb56">heap_decrement_size</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:ga949d1c5fea06774f24e6d63f13cadb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dekrementace počtu uzlů haldy.  <br /></td></tr>
+<tr class="separator:ga949d1c5fea06774f24e6d63f13cadb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3ee86c1b3c2017a5eda56bd6fd5f2ac" id="r_gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaf3ee86c1b3c2017a5eda56bd6fd5f2ac">heap_restore_size</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obnovení původního počtu uzlů haldy.  <br /></td></tr>
+<tr class="separator:gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0369d757c7569adb9ddb0d5f3530c07" id="r_gaf0369d757c7569adb9ddb0d5f3530c07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaf0369d757c7569adb9ddb0d5f3530c07">heap_value</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, size_t aPos)</td></tr>
+<tr class="memdesc:gaf0369d757c7569adb9ddb0d5f3530c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty z uzlu haldy dle požadované pozice.  <br /></td></tr>
+<tr class="separator:gaf0369d757c7569adb9ddb0d5f3530c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac522fe67b5a330d6289f4566a2f1aff4" id="r_gac522fe67b5a330d6289f4566a2f1aff4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gac522fe67b5a330d6289f4566a2f1aff4">heap_set_value</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, size_t aPos, <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:gac522fe67b5a330d6289f4566a2f1aff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty do uzlu haldy na požadovanou pozici.  <br /></td></tr>
+<tr class="separator:gac522fe67b5a330d6289f4566a2f1aff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5189745928eb05b31e28d37a79d9017f" id="r_ga5189745928eb05b31e28d37a79d9017f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga5189745928eb05b31e28d37a79d9017f">heap_move_positions</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aToHeap, size_t aToPos, const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aFromHeap, size_t aFromPos)</td></tr>
+<tr class="memdesc:ga5189745928eb05b31e28d37a79d9017f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnot mezi uzly haldy.  <br /></td></tr>
+<tr class="separator:ga5189745928eb05b31e28d37a79d9017f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5c7d7699f71a4c30740204aba84f100" id="r_gad5c7d7699f71a4c30740204aba84f100"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gad5c7d7699f71a4c30740204aba84f100">heap_compare_positions</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aLeftHeap, size_t aLeftPos, const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aRightHeap, size_t aRightPos)</td></tr>
+<tr class="memdesc:gad5c7d7699f71a4c30740204aba84f100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot uzlů haldy.  <br /></td></tr>
+<tr class="separator:gad5c7d7699f71a4c30740204aba84f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3651a742b0492e167a3be5db0183f896" id="r_ga3651a742b0492e167a3be5db0183f896"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga3651a742b0492e167a3be5db0183f896">heap_compare_position_value</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, size_t aPos, <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:ga3651a742b0492e167a3be5db0183f896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement.  <br /></td></tr>
+<tr class="separator:ga3651a742b0492e167a3be5db0183f896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa617d4886d443671851e3256c7ac5860" id="r_gaa617d4886d443671851e3256c7ac5860"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaa617d4886d443671851e3256c7ac5860">heap_swap_positions</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aLeftHeap, size_t aLeftPos, struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aRightHeap, size_t aRightPos)</td></tr>
+<tr class="memdesc:gaa617d4886d443671851e3256c7ac5860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vzájemná výměna hodnot mezi uzly haldy.  <br /></td></tr>
+<tr class="separator:gaa617d4886d443671851e3256c7ac5860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e3ecb67eb7fd210b5154c661000ba16" id="r_ga9e3ecb67eb7fd210b5154c661000ba16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga9e3ecb67eb7fd210b5154c661000ba16">heap_swap_position_value</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap, size_t aPos, <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *aValue)</td></tr>
+<tr class="memdesc:ga9e3ecb67eb7fd210b5154c661000ba16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vzájemná výměna hodnot mezi uzlem haldy a proměnnou typu HeapElement.  <br /></td></tr>
+<tr class="separator:ga9e3ecb67eb7fd210b5154c661000ba16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb9b613cb82e8946a4c37bb1145780f4" id="r_gaeb9b613cb82e8946a4c37bb1145780f4"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaeb9b613cb82e8946a4c37bb1145780f4">heap_pos_to_left</a> (size_t aPos)</td></tr>
+<tr class="memdesc:gaeb9b613cb82e8946a4c37bb1145780f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vypočte pozici uzlu levého následníka.  <br /></td></tr>
+<tr class="separator:gaeb9b613cb82e8946a4c37bb1145780f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1272b4f692f5ec34abaeecde82899bfb" id="r_ga1272b4f692f5ec34abaeecde82899bfb"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga1272b4f692f5ec34abaeecde82899bfb">heap_pos_to_right</a> (size_t aPos)</td></tr>
+<tr class="memdesc:ga1272b4f692f5ec34abaeecde82899bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vypočte pozici uzlu pravého následníka.  <br /></td></tr>
+<tr class="separator:ga1272b4f692f5ec34abaeecde82899bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga397a260a81bbd6910ca1464638722510" id="r_ga397a260a81bbd6910ca1464638722510"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga397a260a81bbd6910ca1464638722510">heap_pos_to_parent</a> (size_t aPos)</td></tr>
+<tr class="memdesc:ga397a260a81bbd6910ca1464638722510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vypočte pozici rodičovského uzlu.  <br /></td></tr>
+<tr class="separator:ga397a260a81bbd6910ca1464638722510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53d2e1b9cb5058280bbea769d0f1ec0d" id="r_ga53d2e1b9cb5058280bbea769d0f1ec0d"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga53d2e1b9cb5058280bbea769d0f1ec0d">heap_iterator_begin</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:ga53d2e1b9cb5058280bbea769d0f1ec0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na kořenový uzel haldy.  <br /></td></tr>
+<tr class="separator:ga53d2e1b9cb5058280bbea769d0f1ec0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad26057e7e2deea467b61eb79d73a1da" id="r_gaad26057e7e2deea467b61eb79d73a1da"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaad26057e7e2deea467b61eb79d73a1da">heap_iterator_last</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:gaad26057e7e2deea467b61eb79d73a1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na nejpravější listový uzel haldy.  <br /></td></tr>
+<tr class="separator:gaad26057e7e2deea467b61eb79d73a1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae40d23edaede152d035bcf8828ef37d9" id="r_gae40d23edaede152d035bcf8828ef37d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gae40d23edaede152d035bcf8828ef37d9">heap_iterator_is_valid</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gae40d23edaede152d035bcf8828ef37d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:gae40d23edaede152d035bcf8828ef37d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4397746eb5a963292cbbc0b291cde6a9" id="r_ga4397746eb5a963292cbbc0b291cde6a9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga4397746eb5a963292cbbc0b291cde6a9">heap_iterator_to_next</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga4397746eb5a963292cbbc0b291cde6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:ga4397746eb5a963292cbbc0b291cde6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga459d729f98a06d26d4cab4dee469ce9a" id="r_ga459d729f98a06d26d4cab4dee469ce9a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga459d729f98a06d26d4cab4dee469ce9a">heap_iterator_to_prev</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga459d729f98a06d26d4cab4dee469ce9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vzad.  <br /></td></tr>
+<tr class="separator:ga459d729f98a06d26d4cab4dee469ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga974f2e71745d48caecb94896f5e9b1c5" id="r_ga974f2e71745d48caecb94896f5e9b1c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga974f2e71745d48caecb94896f5e9b1c5">heap_iterator_to_left</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga974f2e71745d48caecb94896f5e9b1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru na levého následníka.  <br /></td></tr>
+<tr class="separator:ga974f2e71745d48caecb94896f5e9b1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b612baefabca4177116615280539790" id="r_ga1b612baefabca4177116615280539790"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga1b612baefabca4177116615280539790">heap_iterator_to_right</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga1b612baefabca4177116615280539790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru na pravého následníka.  <br /></td></tr>
+<tr class="separator:ga1b612baefabca4177116615280539790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30a2c6e90b0e73d8a4f682c4a89accc6" id="r_ga30a2c6e90b0e73d8a4f682c4a89accc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga30a2c6e90b0e73d8a4f682c4a89accc6">heap_iterator_to_parent</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga30a2c6e90b0e73d8a4f682c4a89accc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru na rodičovský uzel.  <br /></td></tr>
+<tr class="separator:ga30a2c6e90b0e73d8a4f682c4a89accc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac645f0bf424be39230e2472e55ad4f6e" id="r_gac645f0bf424be39230e2472e55ad4f6e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gac645f0bf424be39230e2472e55ad4f6e">heap_iterator_value</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gac645f0bf424be39230e2472e55ad4f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty uzlu haldy pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:gac645f0bf424be39230e2472e55ad4f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1c0b47027aa5f072c7275f86b8b2c2a" id="r_gad1c0b47027aa5f072c7275f86b8b2c2a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gad1c0b47027aa5f072c7275f86b8b2c2a">heap_iterator_set_value</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:gad1c0b47027aa5f072c7275f86b8b2c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty uzlu haldy pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:gad1c0b47027aa5f072c7275f86b8b2c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7548708d4ee2e6afd1366cccc135f6a" id="r_gaa7548708d4ee2e6afd1366cccc135f6a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gaa7548708d4ee2e6afd1366cccc135f6a">heap_move_with_iterators</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aToIter, const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aFromIter)</td></tr>
+<tr class="memdesc:gaa7548708d4ee2e6afd1366cccc135f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnoty uzlu haldy určené dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gaa7548708d4ee2e6afd1366cccc135f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33f604f94a11da32fdf681dd21186b87" id="r_ga33f604f94a11da32fdf681dd21186b87"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga33f604f94a11da32fdf681dd21186b87">heap_compare_with_iterators</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga33f604f94a11da32fdf681dd21186b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot uzlů haldy určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:ga33f604f94a11da32fdf681dd21186b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad15335cb6b5e00a87655aa3f25fadc38" id="r_gad15335cb6b5e00a87655aa3f25fadc38"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gad15335cb6b5e00a87655aa3f25fadc38">heap_compare_with_iterator_value</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:gad15335cb6b5e00a87655aa3f25fadc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou v uzlu haldy určenou iterátorem a hodnotou typu HeapElement.  <br /></td></tr>
+<tr class="separator:gad15335cb6b5e00a87655aa3f25fadc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03d48bdfc99322c0e16fd502820ce43d" id="r_ga03d48bdfc99322c0e16fd502820ce43d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#ga03d48bdfc99322c0e16fd502820ce43d">heap_swap_with_iterators</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga03d48bdfc99322c0e16fd502820ce43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna hodnot uzlů haldy určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:ga03d48bdfc99322c0e16fd502820ce43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada6619039c74de7852ababa894ff4029" id="r_gada6619039c74de7852ababa894ff4029"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_heap.html#gada6619039c74de7852ababa894ff4029">heap_swap_with_iterator_value</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *aValue)</td></tr>
+<tr class="memdesc:gada6619039c74de7852ababa894ff4029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna mezi hodnotou v uzlu haldy určenou iterátorem a proměnnou typu HeapElement.  <br /></td></tr>
+<tr class="separator:gada6619039c74de7852ababa894ff4029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e5a9731214337073162d3bb238639e1" id="r_ga1e5a9731214337073162d3bb238639e1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sortable___t_vector__with__shareable__sortstats.html#ga1e5a9731214337073162d3bb238639e1">heap_iterators_are_same</a> (const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, const struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga1e5a9731214337073162d3bb238639e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test shodnosti dvou iterátorů  <br /></td></tr>
+<tr class="separator:ga1e5a9731214337073162d3bb238639e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Definice typu Heap pro přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector with shareable sortstats) </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="_t_heap_8h.html" title="Definice typu Heap pro přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector with ...">THeap.h</a> 2671 2024-03-25 14:37:10Z petyovsky </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<map id="THeapIterator" name="THeapIterator">
+<area shape="rect" id="Node000001" title="Definice typu HeapIterator." alt="" coords="47,695,159,771"/>
+<area shape="rect" id="Node000002" href="$group___t_vector_iterator.html#struct_t_vector_iterator" title="Definice typu VectorIterator." alt="" coords="43,556,163,632"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,632,106,678,101,678,101,632"/>
+<area shape="rect" id="Node000003" href="$group___t_vector.html#struct_t_vector" title="Definice typu Vector." alt="" coords="5,377,201,493"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,493,106,540,101,540,101,493"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector.html#struct_t_vector_sort_stats" title="Definice typu VectorSortStats." alt="" coords="35,239,171,315"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,315,106,361,101,361,101,315"/>
+<area shape="rect" id="Node000005" href="$group__sortable___t_vector.html#struct_t_vector_sort_stats_item" title="Definice typu VectorSortStatItem." alt="" coords="21,5,186,161"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="106,162,106,222,101,222,101,162"/>
+</map>

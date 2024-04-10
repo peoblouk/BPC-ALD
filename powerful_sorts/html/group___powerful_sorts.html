@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: 7. Výkonnější metody třídění</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">7. Výkonnější metody třídění</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Deklarace API výkonnějších metod třídění  
+<a href="#details">...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gaf564949cc194e5feea63d6c2aaa3125a" id="r_gaf564949cc194e5feea63d6c2aaa3125a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf564949cc194e5feea63d6c2aaa3125a">heap_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaf564949cc194e5feea63d6c2aaa3125a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru.  <br /></td></tr>
+<tr class="separator:gaf564949cc194e5feea63d6c2aaa3125a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84762e575f9465881e13d17072186ddd" id="r_ga84762e575f9465881e13d17072186ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga84762e575f9465881e13d17072186ddd">heap_sort_with_iterators</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga84762e575f9465881e13d17072186ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru.  <br /></td></tr>
+<tr class="separator:ga84762e575f9465881e13d17072186ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca54b9dda831aa79008867770c96413e" id="r_gaca54b9dda831aa79008867770c96413e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaca54b9dda831aa79008867770c96413e">merge_sort</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:gaca54b9dda831aa79008867770c96413e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad.  <br /></td></tr>
+<tr class="separator:gaca54b9dda831aa79008867770c96413e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga879a216389959b8a25490288ba4e63dc" id="r_ga879a216389959b8a25490288ba4e63dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga879a216389959b8a25490288ba4e63dc">merge_sort_with_span</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga879a216389959b8a25490288ba4e63dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span.  <br /></td></tr>
+<tr class="separator:ga879a216389959b8a25490288ba4e63dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Deklarace API výkonnějších metod třídění </p>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="gaf564949cc194e5feea63d6c2aaa3125a" name="gaf564949cc194e5feea63d6c2aaa3125a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf564949cc194e5feea63d6c2aaa3125a">&#9670;&#160;</a></span>heap_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void heap_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru. </p>
+<p>Setřídí vzestupně elementy ve vektoru <code>aVector</code> metodou třídění pomocí haldy. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_gaf564949cc194e5feea63d6c2aaa3125a_cgraph.svg" width="1366" height="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_gaf564949cc194e5feea63d6c2aaa3125a_icgraph.svg" width="188" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga84762e575f9465881e13d17072186ddd" name="ga84762e575f9465881e13d17072186ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84762e575f9465881e13d17072186ddd">&#9670;&#160;</a></span>heap_sort_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void heap_sort_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru. </p>
+<p>Setřídí vzestupně elementy ve vektoru <code>aVector</code> metodou třídění pomocí haldy. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_ga84762e575f9465881e13d17072186ddd_cgraph.svg" width="1499" height="728"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_ga84762e575f9465881e13d17072186ddd_icgraph.svg" width="272" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaca54b9dda831aa79008867770c96413e" name="gaca54b9dda831aa79008867770c96413e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca54b9dda831aa79008867770c96413e">&#9670;&#160;</a></span>merge_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void merge_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad. </p>
+<p>Setřídí vzestupně elementy ve vektoru <code>aVector</code> rekurzivní variantou metody slučováním. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_gaca54b9dda831aa79008867770c96413e_cgraph.svg" width="1092" height="270"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_gaca54b9dda831aa79008867770c96413e_icgraph.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga879a216389959b8a25490288ba4e63dc" name="ga879a216389959b8a25490288ba4e63dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga879a216389959b8a25490288ba4e63dc">&#9670;&#160;</a></span>merge_sort_with_span()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void merge_sort_with_span </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *</td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span. </p>
+<p>Setřídí vzestupně elementy ve vektoru <code>aVector</code> rekurzivní variantou metody slučováním. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aVector</td><td>Ukazatel na tříděný vektor hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_ga879a216389959b8a25490288ba4e63dc_cgraph.svg" width="1490" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___powerful_sorts_ga879a216389959b8a25490288ba4e63dc_icgraph.svg" width="262" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

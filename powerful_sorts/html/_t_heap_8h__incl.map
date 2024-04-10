@@ -1,0 +1,23 @@
+<map id="THeap.h" name="THeap.h">
+<area shape="rect" id="Node000001" title="Definice typu Heap pro přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector with ..." alt="" coords="77,5,147,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,225,75,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,32,72,83,55,117,43,153,39,183,39,211,34,211,33,182,37,151,50,115,68,80,101,29"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8h.html" title="Definice typu Sortable Vector with shareable sortstats." alt="" coords="170,79,249,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,29,184,68,181,72,126,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="305,225,367,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="250,97,297,115,319,131,337,151,344,165,346,182,345,212,339,212,341,182,338,167,332,153,316,135,294,120,248,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="391,225,465,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="250,100,304,119,360,150,392,180,416,212,412,215,388,184,357,154,302,124,248,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="53,152,121,177"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="191,106,120,147,117,143,188,102"/>
+<area shape="rect" id="Node000007" href="$_t_vector_element_8h.html" title="Definice typu Basic VectorElement a implementace API." alt="" coords="197,152,323,177"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="220,103,246,139,242,142,216,106"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="125,225,193,251"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="206,105,187,153,168,213,163,211,181,151,201,103"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="225,180,88,224,87,219,224,175"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="274,175,315,214,312,218,270,179"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="288,175,389,217,387,222,286,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="217,225,281,251"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="261,178,256,212,250,211,256,177"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="245,180,188,219,185,215,242,175"/>
+</map>

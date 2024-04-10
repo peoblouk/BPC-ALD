@@ -1,0 +1,12 @@
+<map id="span_compare_positions" name="span_compare_positions">
+<area shape="rect" id="Node000001" title="Porovnání hodnot elementů Spanů" alt="" coords="596,29,763,55"/>
+<area shape="rect" id="Node000002" href="$merge__sort__with__span_8c.html#a8c83f4f60393434eff082ca19f5f14ad" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů (Spanů)" alt="" coords="484,29,548,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="582,45,548,45,548,39,582,39"/>
+<area shape="rect" id="Node000003" href="$merge__sort__with__span_8c.html#acfb719292b2ea89b714190280e0021b0" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="304,29,436,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="470,45,436,45,436,39,470,39"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="395,18,387,11,370,8,355,10,347,15,346,20,350,28,345,30,340,21,343,11,353,5,370,3,390,6,399,15"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#ga879a216389959b8a25490288ba4e63dc" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad a datový typ span." alt="" coords="104,29,256,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,45,257,45,257,39,290,39"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,29,56,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="90,45,56,45,56,39,90,39"/>
+</map>

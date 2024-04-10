@@ -1,0 +1,1675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: 2.2.2. Datový typ Heap pro přístup k elementům vektoru jako k uzlům haldy</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2.2.2. Datový typ Heap pro přístup k elementům vektoru jako k uzlům haldy<div class="ingroups"><a class="el" href="group___t_vector.html">2. Vector</a> &raquo; <a class="el" href="group__sortable___t_vector__with__shareable__sortstats.html">2.2. Doplnění pro Sortable Vector o vlastnost sdílení statistik třídění</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice typu Heap, který umožňuje přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector s vlastností sdílení statistik třídění)  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 2.2.2. Datový typ Heap pro přístup k elementům vektoru jako k uzlům haldy:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap.svg" width="388" height="80"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_heap" id="r_struct_t_heap"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_heap">THeap</a></td></tr>
+<tr class="memdesc:struct_t_heap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Heap.  <a href="#struct_t_heap">...</a><br /></td></tr>
+<tr class="separator:struct_t_heap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct_t_heap_iterator" id="r_struct_t_heap_iterator"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_heap_iterator">THeapIterator</a></td></tr>
+<tr class="memdesc:struct_t_heap_iterator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu HeapIterator.  <a href="#struct_t_heap_iterator">...</a><br /></td></tr>
+<tr class="separator:struct_t_heap_iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:gaadfb312d94e0279d1dff692008be6744" id="r_gaadfb312d94e0279d1dff692008be6744"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td></tr>
+<tr class="memdesc:gaadfb312d94e0279d1dff692008be6744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu HeapElement jako alias na typ VectorElement.  <br /></td></tr>
+<tr class="separator:gaadfb312d94e0279d1dff692008be6744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f" id="r_ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="#struct_t_heap">THeap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f">heap_create</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> aVector)</td></tr>
+<tr class="memdesc:ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření Heap pro celý vektor.  <br /></td></tr>
+<tr class="separator:ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaf85f5864f8cc9b2f6203a99e41ccc8" id="r_gafaf85f5864f8cc9b2f6203a99e41ccc8"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafaf85f5864f8cc9b2f6203a99e41ccc8">heap_size</a> (const struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:gafaf85f5864f8cc9b2f6203a99e41ccc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení počtu uzlů haldy.  <br /></td></tr>
+<tr class="separator:gafaf85f5864f8cc9b2f6203a99e41ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga949d1c5fea06774f24e6d63f13cadb56" id="r_ga949d1c5fea06774f24e6d63f13cadb56"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga949d1c5fea06774f24e6d63f13cadb56">heap_decrement_size</a> (struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:ga949d1c5fea06774f24e6d63f13cadb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dekrementace počtu uzlů haldy.  <br /></td></tr>
+<tr class="separator:ga949d1c5fea06774f24e6d63f13cadb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3ee86c1b3c2017a5eda56bd6fd5f2ac" id="r_gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf3ee86c1b3c2017a5eda56bd6fd5f2ac">heap_restore_size</a> (struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obnovení původního počtu uzlů haldy.  <br /></td></tr>
+<tr class="separator:gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0369d757c7569adb9ddb0d5f3530c07" id="r_gaf0369d757c7569adb9ddb0d5f3530c07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf0369d757c7569adb9ddb0d5f3530c07">heap_value</a> (const struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap, size_t aPos)</td></tr>
+<tr class="memdesc:gaf0369d757c7569adb9ddb0d5f3530c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty z uzlu haldy dle požadované pozice.  <br /></td></tr>
+<tr class="separator:gaf0369d757c7569adb9ddb0d5f3530c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac522fe67b5a330d6289f4566a2f1aff4" id="r_gac522fe67b5a330d6289f4566a2f1aff4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac522fe67b5a330d6289f4566a2f1aff4">heap_set_value</a> (struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap, size_t aPos, <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:gac522fe67b5a330d6289f4566a2f1aff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty do uzlu haldy na požadovanou pozici.  <br /></td></tr>
+<tr class="separator:gac522fe67b5a330d6289f4566a2f1aff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5189745928eb05b31e28d37a79d9017f" id="r_ga5189745928eb05b31e28d37a79d9017f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5189745928eb05b31e28d37a79d9017f">heap_move_positions</a> (struct <a class="el" href="#struct_t_heap">THeap</a> *aToHeap, size_t aToPos, const struct <a class="el" href="#struct_t_heap">THeap</a> *aFromHeap, size_t aFromPos)</td></tr>
+<tr class="memdesc:ga5189745928eb05b31e28d37a79d9017f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnot mezi uzly haldy.  <br /></td></tr>
+<tr class="separator:ga5189745928eb05b31e28d37a79d9017f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5c7d7699f71a4c30740204aba84f100" id="r_gad5c7d7699f71a4c30740204aba84f100"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad5c7d7699f71a4c30740204aba84f100">heap_compare_positions</a> (const struct <a class="el" href="#struct_t_heap">THeap</a> *aLeftHeap, size_t aLeftPos, const struct <a class="el" href="#struct_t_heap">THeap</a> *aRightHeap, size_t aRightPos)</td></tr>
+<tr class="memdesc:gad5c7d7699f71a4c30740204aba84f100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot uzlů haldy.  <br /></td></tr>
+<tr class="separator:gad5c7d7699f71a4c30740204aba84f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3651a742b0492e167a3be5db0183f896" id="r_ga3651a742b0492e167a3be5db0183f896"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3651a742b0492e167a3be5db0183f896">heap_compare_position_value</a> (const struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap, size_t aPos, <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:ga3651a742b0492e167a3be5db0183f896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement.  <br /></td></tr>
+<tr class="separator:ga3651a742b0492e167a3be5db0183f896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa617d4886d443671851e3256c7ac5860" id="r_gaa617d4886d443671851e3256c7ac5860"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa617d4886d443671851e3256c7ac5860">heap_swap_positions</a> (struct <a class="el" href="#struct_t_heap">THeap</a> *aLeftHeap, size_t aLeftPos, struct <a class="el" href="#struct_t_heap">THeap</a> *aRightHeap, size_t aRightPos)</td></tr>
+<tr class="memdesc:gaa617d4886d443671851e3256c7ac5860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vzájemná výměna hodnot mezi uzly haldy.  <br /></td></tr>
+<tr class="separator:gaa617d4886d443671851e3256c7ac5860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e3ecb67eb7fd210b5154c661000ba16" id="r_ga9e3ecb67eb7fd210b5154c661000ba16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9e3ecb67eb7fd210b5154c661000ba16">heap_swap_position_value</a> (struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap, size_t aPos, <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *aValue)</td></tr>
+<tr class="memdesc:ga9e3ecb67eb7fd210b5154c661000ba16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vzájemná výměna hodnot mezi uzlem haldy a proměnnou typu HeapElement.  <br /></td></tr>
+<tr class="separator:ga9e3ecb67eb7fd210b5154c661000ba16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb9b613cb82e8946a4c37bb1145780f4" id="r_gaeb9b613cb82e8946a4c37bb1145780f4"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeb9b613cb82e8946a4c37bb1145780f4">heap_pos_to_left</a> (size_t aPos)</td></tr>
+<tr class="memdesc:gaeb9b613cb82e8946a4c37bb1145780f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vypočte pozici uzlu levého následníka.  <br /></td></tr>
+<tr class="separator:gaeb9b613cb82e8946a4c37bb1145780f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1272b4f692f5ec34abaeecde82899bfb" id="r_ga1272b4f692f5ec34abaeecde82899bfb"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1272b4f692f5ec34abaeecde82899bfb">heap_pos_to_right</a> (size_t aPos)</td></tr>
+<tr class="memdesc:ga1272b4f692f5ec34abaeecde82899bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vypočte pozici uzlu pravého následníka.  <br /></td></tr>
+<tr class="separator:ga1272b4f692f5ec34abaeecde82899bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga397a260a81bbd6910ca1464638722510" id="r_ga397a260a81bbd6910ca1464638722510"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga397a260a81bbd6910ca1464638722510">heap_pos_to_parent</a> (size_t aPos)</td></tr>
+<tr class="memdesc:ga397a260a81bbd6910ca1464638722510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vypočte pozici rodičovského uzlu.  <br /></td></tr>
+<tr class="separator:ga397a260a81bbd6910ca1464638722510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53d2e1b9cb5058280bbea769d0f1ec0d" id="r_ga53d2e1b9cb5058280bbea769d0f1ec0d"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga53d2e1b9cb5058280bbea769d0f1ec0d">heap_iterator_begin</a> (const struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:ga53d2e1b9cb5058280bbea769d0f1ec0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na kořenový uzel haldy.  <br /></td></tr>
+<tr class="separator:ga53d2e1b9cb5058280bbea769d0f1ec0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad26057e7e2deea467b61eb79d73a1da" id="r_gaad26057e7e2deea467b61eb79d73a1da"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaad26057e7e2deea467b61eb79d73a1da">heap_iterator_last</a> (const struct <a class="el" href="#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:gaad26057e7e2deea467b61eb79d73a1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytvoření nového iterátoru ukazujícího na nejpravější listový uzel haldy.  <br /></td></tr>
+<tr class="separator:gaad26057e7e2deea467b61eb79d73a1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae40d23edaede152d035bcf8828ef37d9" id="r_gae40d23edaede152d035bcf8828ef37d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae40d23edaede152d035bcf8828ef37d9">heap_iterator_is_valid</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gae40d23edaede152d035bcf8828ef37d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti iterátoru.  <br /></td></tr>
+<tr class="separator:gae40d23edaede152d035bcf8828ef37d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4397746eb5a963292cbbc0b291cde6a9" id="r_ga4397746eb5a963292cbbc0b291cde6a9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4397746eb5a963292cbbc0b291cde6a9">heap_iterator_to_next</a> (struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga4397746eb5a963292cbbc0b291cde6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vpřed.  <br /></td></tr>
+<tr class="separator:ga4397746eb5a963292cbbc0b291cde6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga459d729f98a06d26d4cab4dee469ce9a" id="r_ga459d729f98a06d26d4cab4dee469ce9a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga459d729f98a06d26d4cab4dee469ce9a">heap_iterator_to_prev</a> (struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga459d729f98a06d26d4cab4dee469ce9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru vzad.  <br /></td></tr>
+<tr class="separator:ga459d729f98a06d26d4cab4dee469ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga974f2e71745d48caecb94896f5e9b1c5" id="r_ga974f2e71745d48caecb94896f5e9b1c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga974f2e71745d48caecb94896f5e9b1c5">heap_iterator_to_left</a> (struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga974f2e71745d48caecb94896f5e9b1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru na levého následníka.  <br /></td></tr>
+<tr class="separator:ga974f2e71745d48caecb94896f5e9b1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b612baefabca4177116615280539790" id="r_ga1b612baefabca4177116615280539790"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1b612baefabca4177116615280539790">heap_iterator_to_right</a> (struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga1b612baefabca4177116615280539790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru na pravého následníka.  <br /></td></tr>
+<tr class="separator:ga1b612baefabca4177116615280539790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30a2c6e90b0e73d8a4f682c4a89accc6" id="r_ga30a2c6e90b0e73d8a4f682c4a89accc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga30a2c6e90b0e73d8a4f682c4a89accc6">heap_iterator_to_parent</a> (struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ga30a2c6e90b0e73d8a4f682c4a89accc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posunutí iterátoru na rodičovský uzel.  <br /></td></tr>
+<tr class="separator:ga30a2c6e90b0e73d8a4f682c4a89accc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac645f0bf424be39230e2472e55ad4f6e" id="r_gac645f0bf424be39230e2472e55ad4f6e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac645f0bf424be39230e2472e55ad4f6e">heap_iterator_value</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter)</td></tr>
+<tr class="memdesc:gac645f0bf424be39230e2472e55ad4f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty uzlu haldy pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:gac645f0bf424be39230e2472e55ad4f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1c0b47027aa5f072c7275f86b8b2c2a" id="r_gad1c0b47027aa5f072c7275f86b8b2c2a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad1c0b47027aa5f072c7275f86b8b2c2a">heap_iterator_set_value</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:gad1c0b47027aa5f072c7275f86b8b2c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapsání hodnoty uzlu haldy pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:gad1c0b47027aa5f072c7275f86b8b2c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7548708d4ee2e6afd1366cccc135f6a" id="r_gaa7548708d4ee2e6afd1366cccc135f6a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa7548708d4ee2e6afd1366cccc135f6a">heap_move_with_iterators</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aToIter, const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aFromIter)</td></tr>
+<tr class="memdesc:gaa7548708d4ee2e6afd1366cccc135f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přesun hodnoty uzlu haldy určené dvěma iterátory.  <br /></td></tr>
+<tr class="separator:gaa7548708d4ee2e6afd1366cccc135f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33f604f94a11da32fdf681dd21186b87" id="r_ga33f604f94a11da32fdf681dd21186b87"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga33f604f94a11da32fdf681dd21186b87">heap_compare_with_iterators</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga33f604f94a11da32fdf681dd21186b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání hodnot uzlů haldy určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:ga33f604f94a11da32fdf681dd21186b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad15335cb6b5e00a87655aa3f25fadc38" id="r_gad15335cb6b5e00a87655aa3f25fadc38"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad15335cb6b5e00a87655aa3f25fadc38">heap_compare_with_iterator_value</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue)</td></tr>
+<tr class="memdesc:gad15335cb6b5e00a87655aa3f25fadc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání mezi hodnotou v uzlu haldy určenou iterátorem a hodnotou typu HeapElement.  <br /></td></tr>
+<tr class="separator:gad15335cb6b5e00a87655aa3f25fadc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03d48bdfc99322c0e16fd502820ce43d" id="r_ga03d48bdfc99322c0e16fd502820ce43d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga03d48bdfc99322c0e16fd502820ce43d">heap_swap_with_iterators</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aLeftIter, const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aRightIter)</td></tr>
+<tr class="memdesc:ga03d48bdfc99322c0e16fd502820ce43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna hodnot uzlů haldy určených dvěma iterátory.  <br /></td></tr>
+<tr class="separator:ga03d48bdfc99322c0e16fd502820ce43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada6619039c74de7852ababa894ff4029" id="r_gada6619039c74de7852ababa894ff4029"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gada6619039c74de7852ababa894ff4029">heap_swap_with_iterator_value</a> (const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *aIter, <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *aValue)</td></tr>
+<tr class="memdesc:gada6619039c74de7852ababa894ff4029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výměna mezi hodnotou v uzlu haldy určenou iterátorem a proměnnou typu HeapElement.  <br /></td></tr>
+<tr class="separator:gada6619039c74de7852ababa894ff4029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice typu Heap, který umožňuje přístup k elementům vektoru jako k uzlům haldy (vyžaduje Sortable Vector s vlastností sdílení statistik třídění) </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_heap" id="struct_t_heap"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_heap">&#9670;&#160;</a></span>THeap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct THeap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu Heap. </p>
+<p>Typ Heap zajišťuje přístup k elementům vektoru, jako by šlo o uzly haldy a umožňuje pracovat s hodnotami v uzlech pomocí definovaného API. </p>
+</div><div class="dynheader">
+Diagram pro THeap:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_heap__coll__graph.svg" width="207" height="638"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:ab9c90befa4efdbf39f89ad5053bc89ee" id="r_ab9c90befa4efdbf39f89ad5053bc89ee"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c90befa4efdbf39f89ad5053bc89ee">iVector</a></td></tr>
+<tr class="memdesc:ab9c90befa4efdbf39f89ad5053bc89ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reprezentuje existující vektor (jako haldu se zkrácenou délkou)  <br /></td></tr>
+<tr class="separator:ab9c90befa4efdbf39f89ad5053bc89ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3043a388235e09f3b1cd59a0c0e838d0" id="r_a3043a388235e09f3b1cd59a0c0e838d0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3043a388235e09f3b1cd59a0c0e838d0">iOriginalSize</a></td></tr>
+<tr class="memdesc:a3043a388235e09f3b1cd59a0c0e838d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Původní délka vektoru (při založení haldy)  <br /></td></tr>
+<tr class="separator:a3043a388235e09f3b1cd59a0c0e838d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="ab9c90befa4efdbf39f89ad5053bc89ee" name="ab9c90befa4efdbf39f89ad5053bc89ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c90befa4efdbf39f89ad5053bc89ee">&#9670;&#160;</a></span>iVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> iVector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reprezentuje existující vektor (jako haldu se zkrácenou délkou) </p>
+
+</div>
+</div>
+<a id="a3043a388235e09f3b1cd59a0c0e838d0" name="a3043a388235e09f3b1cd59a0c0e838d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3043a388235e09f3b1cd59a0c0e838d0">&#9670;&#160;</a></span>iOriginalSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iOriginalSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Původní délka vektoru (při založení haldy) </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<a name="struct_t_heap_iterator" id="struct_t_heap_iterator"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_heap_iterator">&#9670;&#160;</a></span>THeapIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct THeapIterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu HeapIterator. </p>
+<p>HeapIterator se při vzniku naváže na zvolenou haldu a následně umožňuje přistupovat k jejím uzlům pomocí definovaného API. </p><dl class="section invariant"><dt>Invariant</dt><dd>Obecně platný a testovatelný předpoklad: <code>(iVector-&gt;iValues == NULL &amp;&amp; iVector-&gt;iSize == 0 &amp;&amp; iOriginalSize == 0)</code> nebo <code>(iVector-&gt;iValues != NULL &amp;&amp; iVector-&gt;iSize != 0 &amp;&amp; iOriginalSize &gt;= iVector-&gt;iSize)</code>. </dd></dl>
+</div><div class="dynheader">
+Diagram pro THeapIterator:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_heap_iterator__coll__graph.svg" width="207" height="776"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:aeb3b6f28a6e71ff825a6fdf6d6cbae15" id="r_aeb3b6f28a6e71ff825a6fdf6d6cbae15"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb3b6f28a6e71ff825a6fdf6d6cbae15">iVectorIter</a></td></tr>
+<tr class="memdesc:aeb3b6f28a6e71ff825a6fdf6d6cbae15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reprezentuje iterátor na uzly haldy (tj. vektor se zkrácenou délkou)  <br /></td></tr>
+<tr class="separator:aeb3b6f28a6e71ff825a6fdf6d6cbae15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="aeb3b6f28a6e71ff825a6fdf6d6cbae15" name="aeb3b6f28a6e71ff825a6fdf6d6cbae15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3b6f28a6e71ff825a6fdf6d6cbae15">&#9670;&#160;</a></span>iVectorIter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group___t_vector_iterator.html#struct_t_vector_iterator">TVectorIterator</a> iVectorIter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reprezentuje iterátor na uzly haldy (tj. vektor se zkrácenou délkou) </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace definic typů</h2>
+<a id="gaadfb312d94e0279d1dff692008be6744" name="gaadfb312d94e0279d1dff692008be6744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadfb312d94e0279d1dff692008be6744">&#9670;&#160;</a></span>THeapElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definice typu HeapElement jako alias na typ VectorElement. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f" name="ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f">&#9670;&#160;</a></span>heap_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="#struct_t_heap">THeap</a> heap_create </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a></td>          <td class="paramname"><span class="paramname"><em>aVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vytvoření Heap pro celý vektor. </p>
+<p>Vytvoří novou hodnotu typu Heap s rozsahem pro přístup k elementům celého vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aVector</td><td>Existující vektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Nový Heap umožňující přístup ke všem elementům vektoru <code>aVector</code> </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga5c6b9b9c85c8d3d56ae9d8b7c9efcb0f_icgraph.svg" width="414" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gafaf85f5864f8cc9b2f6203a99e41ccc8" name="gafaf85f5864f8cc9b2f6203a99e41ccc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafaf85f5864f8cc9b2f6203a99e41ccc8">&#9670;&#160;</a></span>heap_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t heap_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Přečtení počtu uzlů haldy. </p>
+<p>Vrací velikost (počet uzlů) haldy. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Počet uzlů haldy nebo hodnota 0 v případě prázdné haldy </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele <code>aHeap</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gafaf85f5864f8cc9b2f6203a99e41ccc8_icgraph.svg" width="652" height="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga949d1c5fea06774f24e6d63f13cadb56" name="ga949d1c5fea06774f24e6d63f13cadb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga949d1c5fea06774f24e6d63f13cadb56">&#9670;&#160;</a></span>heap_decrement_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t heap_decrement_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dekrementace počtu uzlů haldy. </p>
+<p>Sníží o 1 počet uzlů haldy a vrací tuto novou velikost. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Počet uzlů haldy snížený o 1 </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele <code>aHeap</code> a skutečnost, že halda po dekrementaci obsahuje stále alespoň jeden uzel. Oba tyto testy jsou provedeny <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga949d1c5fea06774f24e6d63f13cadb56_icgraph.svg" width="470" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaf3ee86c1b3c2017a5eda56bd6fd5f2ac" name="gaf3ee86c1b3c2017a5eda56bd6fd5f2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3ee86c1b3c2017a5eda56bd6fd5f2ac">&#9670;&#160;</a></span>heap_restore_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t heap_restore_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obnovení původního počtu uzlů haldy. </p>
+<p>Obnoví původní počet uzlů haldy získaný při vytvoření haldy z počtu elementů vektoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Původní počet uzlů haldy získaný z vektoru při vytvoření haldy </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele <code>aHeap</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+
+</div>
+</div>
+<a id="gaf0369d757c7569adb9ddb0d5f3530c07" name="gaf0369d757c7569adb9ddb0d5f3530c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0369d757c7569adb9ddb0d5f3530c07">&#9670;&#160;</a></span>heap_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group___t_vector_element.html#ga3c679c2b2440555118a3d54c6149994e">TVectorElement</a> heap_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Přečtení hodnoty z uzlu haldy dle požadované pozice. </p>
+<p>Vrací hodnotu z požadovaného uzlu (indexu) haldy. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Požadovaná pozice (index) uzlu haldy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Hodnota uložená v uzlu haldy <code>aHeap</code> na pozici uzlu <code>aPos</code> </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a rozsah parametru <code>aPos</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaf0369d757c7569adb9ddb0d5f3530c07_cgraph.svg" width="406" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaf0369d757c7569adb9ddb0d5f3530c07_icgraph.svg" width="434" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac522fe67b5a330d6289f4566a2f1aff4" name="gac522fe67b5a330d6289f4566a2f1aff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac522fe67b5a330d6289f4566a2f1aff4">&#9670;&#160;</a></span>heap_set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_set_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zapsání hodnoty do uzlu haldy na požadovanou pozici. </p>
+<p>Zápis nové hodnoty do uzlu haldy na požadovanou pozici (index). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Požadovaná pozice (index) uzlu haldy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Nová hodnota uzlu haldy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a rozsah parametru <code>aPos</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gac522fe67b5a330d6289f4566a2f1aff4_cgraph.svg" width="480" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gac522fe67b5a330d6289f4566a2f1aff4_icgraph.svg" width="582" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga5189745928eb05b31e28d37a79d9017f" name="ga5189745928eb05b31e28d37a79d9017f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5189745928eb05b31e28d37a79d9017f">&#9670;&#160;</a></span>heap_move_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_move_positions </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aToHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aToPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aFromHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aFromPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Přesun hodnot mezi uzly haldy. </p>
+<p>Přesun hodnoty z/do libovolného uzlu haldy dle pozice nebo případně i mezi různými haldami. Parametry <code>aToHeap</code> a <code>aFromHeap</code> mohou být stejné. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aToHeap</td><td>Ukazatel na cílovou haldu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aToPos</td><td>Pozice (index) cílového uzlu v haldě <code>aToHeap</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromHeap</td><td>Ukazatel na zdrojovou haldu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromPos</td><td>Pozice (index) zdrojového uzlu v haldě <code>aFromHeap</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatelů a rozsah indexů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga5189745928eb05b31e28d37a79d9017f_cgraph.svg" width="586" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga5189745928eb05b31e28d37a79d9017f_icgraph.svg" width="618" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gad5c7d7699f71a4c30740204aba84f100" name="gad5c7d7699f71a4c30740204aba84f100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5c7d7699f71a4c30740204aba84f100">&#9670;&#160;</a></span>heap_compare_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int heap_compare_positions </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aLeftPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aRightPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Porovnání hodnot uzlů haldy. </p>
+<p>Trojcestně porovná hodnoty mezi zvolenými uzly jedné haldy nebo případně i mezi různými haldami. Parametry <code>aLeftHeap</code> a <code>aRightHeap</code> mohou být stejné. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftHeap</td><td>Ukazatel na levou haldu při porovnání </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftPos</td><td>Pozice (index) (LHS) uzlu v haldě <code>aLeftHeap</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightHeap</td><td>Ukazatel na pravou haldu při porovnání </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightPos</td><td>Pozice (index) (RHS) uzlu v haldě <code>aRightHeap</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatelů a rozsah indexů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gad5c7d7699f71a4c30740204aba84f100_cgraph.svg" width="816" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gad5c7d7699f71a4c30740204aba84f100_icgraph.svg" width="638" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga3651a742b0492e167a3be5db0183f896" name="ga3651a742b0492e167a3be5db0183f896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3651a742b0492e167a3be5db0183f896">&#9670;&#160;</a></span>heap_compare_position_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int heap_compare_position_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement. </p>
+<p>Trojcestně porovná hodnotu ve zvoleném uzlu haldy se zadanou hodnotou <code>aValue</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu pro porovnání </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) (LHS) uzlu v haldě <code>aHeap</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota stojící při porovnání na pravé straně (RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a rozsah indexu vektoru <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga3651a742b0492e167a3be5db0183f896_cgraph.svg" width="802" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga3651a742b0492e167a3be5db0183f896_icgraph.svg" width="630" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa617d4886d443671851e3256c7ac5860" name="gaa617d4886d443671851e3256c7ac5860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa617d4886d443671851e3256c7ac5860">&#9670;&#160;</a></span>heap_swap_positions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_swap_positions </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aLeftPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aRightPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vzájemná výměna hodnot mezi uzly haldy. </p>
+<p>Vzájemně zamění hodnoty mezi zvolenými uzly haldy dle pozice nebo případně i mezi různými haldami. Parametry <code>aLeftHeap</code> a <code>aRightHeap</code> mohou být stejné. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aLeftHeap</td><td>Ukazatel na levou haldu pro záměnu hodnoty uzlu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftPos</td><td>Pozice (index) (LHS) uzlu v haldě <code>aLeftHeap</code> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aRightHeap</td><td>Ukazatel na pravou haldu pro záměnu hodnoty uzlu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightPos</td><td>Pozice (index) (RHS) uzlu v haldě <code>aRightHeap</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatelů a rozsah indexů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaa617d4886d443671851e3256c7ac5860_cgraph.svg" width="586" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga9e3ecb67eb7fd210b5154c661000ba16" name="ga9e3ecb67eb7fd210b5154c661000ba16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e3ecb67eb7fd210b5154c661000ba16">&#9670;&#160;</a></span>heap_swap_position_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_swap_position_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vzájemná výměna hodnot mezi uzlem haldy a proměnnou typu HeapElement. </p>
+<p>Vzájemně zamění hodnotu v uzlu haldy na zvolené pozici se zadanou hodnotou v proměnné typu HeapElement. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aHeap</td><td>Ukazatel na haldu s uzlem určeným pro záměnu hodnoty </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) uzlu haldy <code>aHeap</code> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aValue</td><td>Ukazatel na hodnotu proměnné typu HeapElement pro záměnu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou ukazatelů a rozsah indexu vektoru <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga9e3ecb67eb7fd210b5154c661000ba16_cgraph.svg" width="564" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaeb9b613cb82e8946a4c37bb1145780f4" name="gaeb9b613cb82e8946a4c37bb1145780f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb9b613cb82e8946a4c37bb1145780f4">&#9670;&#160;</a></span>heap_pos_to_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t heap_pos_to_left </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vypočte pozici uzlu levého následníka. </p>
+<p>Vypočte pozici uzlu představující levého následníka uzlu na pozici předané jako parametr </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) rodičovského uzlu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Pozice uzlu představující levého následníka uzlu na pozici <code>aPos</code> </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaeb9b613cb82e8946a4c37bb1145780f4_icgraph.svg" width="878" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga1272b4f692f5ec34abaeecde82899bfb" name="ga1272b4f692f5ec34abaeecde82899bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1272b4f692f5ec34abaeecde82899bfb">&#9670;&#160;</a></span>heap_pos_to_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t heap_pos_to_right </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vypočte pozici uzlu pravého následníka. </p>
+<p>Vypočte pozici uzlu představující pravého následníka uzlu na pozici předané jako parametr </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) rodičovského uzlu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Pozice uzlu představující pravého následníka uzlu na pozici <code>aPos</code> </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga1272b4f692f5ec34abaeecde82899bfb_icgraph.svg" width="894" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga397a260a81bbd6910ca1464638722510" name="ga397a260a81bbd6910ca1464638722510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga397a260a81bbd6910ca1464638722510">&#9670;&#160;</a></span>heap_pos_to_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t heap_pos_to_parent </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vypočte pozici rodičovského uzlu. </p>
+<p>Vypočte pozici uzlu představujícího rodičovský uzel k pozici uzlu předané jako parametr </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) levého nebo pravého uzlu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Pozice uzlu představující rodičovský uzel k pozici uzlu <code>aPos</code> </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje nenulový index <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga397a260a81bbd6910ca1464638722510_icgraph.svg" width="776" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga53d2e1b9cb5058280bbea769d0f1ec0d" name="ga53d2e1b9cb5058280bbea769d0f1ec0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53d2e1b9cb5058280bbea769d0f1ec0d">&#9670;&#160;</a></span>heap_iterator_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> heap_iterator_begin </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vytvoření nového iterátoru ukazujícího na kořenový uzel haldy. </p>
+<p>Vytvoří a vrací nový iterátor, který je navázán (asociován) na zadanou haldu a ukazuje na její kořenový uzel. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Nový iterátor asociovaný na <code>aHeap</code> ukazující na kořenový uzel haldy </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga53d2e1b9cb5058280bbea769d0f1ec0d_cgraph.svg" width="335" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga53d2e1b9cb5058280bbea769d0f1ec0d_icgraph.svg" width="455" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaad26057e7e2deea467b61eb79d73a1da" name="gaad26057e7e2deea467b61eb79d73a1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad26057e7e2deea467b61eb79d73a1da">&#9670;&#160;</a></span>heap_iterator_last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> heap_iterator_last </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vytvoření nového iterátoru ukazujícího na nejpravější listový uzel haldy. </p>
+<p>Vytvoří a vrací nový iterátor, který je navázán (asociován) na zadanou hladu a ukazuje na její nejpravější listový (tj. poslední) uzel. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHeap</td><td>Ukazatel na existující haldu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Nový iterátor asociovaný na <code>aHeap</code> ukazující na její nejpravější listový uzel </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaad26057e7e2deea467b61eb79d73a1da_cgraph.svg" width="315" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaad26057e7e2deea467b61eb79d73a1da_icgraph.svg" width="556" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gae40d23edaede152d035bcf8828ef37d9" name="gae40d23edaede152d035bcf8828ef37d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae40d23edaede152d035bcf8828ef37d9">&#9670;&#160;</a></span>heap_iterator_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool heap_iterator_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zjištění platnosti iterátoru. </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu definující platnost iterátoru. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gae40d23edaede152d035bcf8828ef37d9_cgraph.svg" width="326" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gae40d23edaede152d035bcf8828ef37d9_icgraph.svg" width="979" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga4397746eb5a963292cbbc0b291cde6a9" name="ga4397746eb5a963292cbbc0b291cde6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4397746eb5a963292cbbc0b291cde6a9">&#9670;&#160;</a></span>heap_iterator_to_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool heap_iterator_to_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru vpřed. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, zajistí jeho posun vpřed (tj. na uzel napravo ve stejné vrstvě, případně na nejlevější uzel v následující vrstvě) v asociované haldě. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga4397746eb5a963292cbbc0b291cde6a9_cgraph.svg" width="527" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga459d729f98a06d26d4cab4dee469ce9a" name="ga459d729f98a06d26d4cab4dee469ce9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga459d729f98a06d26d4cab4dee469ce9a">&#9670;&#160;</a></span>heap_iterator_to_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool heap_iterator_to_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru vzad. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, zajistí jeho posun vzad (tj. na uzel nalevo ve stejné vrstvě, případně na nejpravější uzel v předchozí vrstvě) v asociované haldě. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga459d729f98a06d26d4cab4dee469ce9a_cgraph.svg" width="523" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga459d729f98a06d26d4cab4dee469ce9a_icgraph.svg" width="576" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga974f2e71745d48caecb94896f5e9b1c5" name="ga974f2e71745d48caecb94896f5e9b1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga974f2e71745d48caecb94896f5e9b1c5">&#9670;&#160;</a></span>heap_iterator_to_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool heap_iterator_to_left </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru na levého následníka. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, posune ho na levého následníka (tj. na uzel v další vrstvě představující levého následníka uzlu, na který směřoval iterátor <code>aIter</code> před zavoláním této funkce). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga974f2e71745d48caecb94896f5e9b1c5_cgraph.svg" width="512" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga974f2e71745d48caecb94896f5e9b1c5_icgraph.svg" width="694" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga1b612baefabca4177116615280539790" name="ga1b612baefabca4177116615280539790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b612baefabca4177116615280539790">&#9670;&#160;</a></span>heap_iterator_to_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool heap_iterator_to_right </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru na pravého následníka. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, posune ho na pravého následníka (tj. na uzel v další vrstvě představující pravého následníka uzlu, na který směřoval iterátor <code>aIter</code> před zavoláním této funkce). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga1b612baefabca4177116615280539790_cgraph.svg" width="520" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga1b612baefabca4177116615280539790_icgraph.svg" width="702" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga30a2c6e90b0e73d8a4f682c4a89accc6" name="ga30a2c6e90b0e73d8a4f682c4a89accc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30a2c6e90b0e73d8a4f682c4a89accc6">&#9670;&#160;</a></span>heap_iterator_to_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool heap_iterator_to_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posunutí iterátoru na rodičovský uzel. </p>
+<p>Funkce ověří platnost iterátoru, a pokud je platný, posune ho na uzel rodiče (tj. na uzel v předchozí vrstvě představující předchůdce uzlu, na který směřoval iterátor <code>aIter</code> před zavoláním této funkce). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a ukazuje i po posunutí na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga30a2c6e90b0e73d8a4f682c4a89accc6_cgraph.svg" width="532" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga30a2c6e90b0e73d8a4f682c4a89accc6_icgraph.svg" width="590" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gac645f0bf424be39230e2472e55ad4f6e" name="gac645f0bf424be39230e2472e55ad4f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac645f0bf424be39230e2472e55ad4f6e">&#9670;&#160;</a></span>heap_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> heap_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Přečtení hodnoty uzlu haldy pomocí iterátoru. </p>
+<p>Vrací hodnotu uzlu haldy z pozice (indexu) určeného iterátorem. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Hodnota uzlu haldy z pozice, na kterou ukazuje iterátor <code>aIter</code>, nebo nulový element (pokud je iterátor neplatný). </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gac645f0bf424be39230e2472e55ad4f6e_cgraph.svg" width="499" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gac645f0bf424be39230e2472e55ad4f6e_icgraph.svg" width="564" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gad1c0b47027aa5f072c7275f86b8b2c2a" name="gad1c0b47027aa5f072c7275f86b8b2c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1c0b47027aa5f072c7275f86b8b2c2a">&#9670;&#160;</a></span>heap_iterator_set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool heap_iterator_set_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zapsání hodnoty uzlu haldy pomocí iterátoru. </p>
+<p>Zápis nové hodnoty do uzlu haldy na pozici určenou iterátorem. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Nová hodnota uzlu haldy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je iterátor platný a zápis mohl proběhnout na platné místo v asociované haldě </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gad1c0b47027aa5f072c7275f86b8b2c2a_cgraph.svg" width="539" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gad1c0b47027aa5f072c7275f86b8b2c2a_icgraph.svg" width="714" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa7548708d4ee2e6afd1366cccc135f6a" name="gaa7548708d4ee2e6afd1366cccc135f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7548708d4ee2e6afd1366cccc135f6a">&#9670;&#160;</a></span>heap_move_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_move_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aToIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aFromIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Přesun hodnoty uzlu haldy určené dvěma iterátory. </p>
+<p>Přesun hodnoty uzlů haldy z/do pozice určené iterátory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aToIter</td><td>Iterátor na cílový uzel v haldě </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFromIter</td><td>Iterátor na zdrojový uzel v haldě </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou iterátorů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaa7548708d4ee2e6afd1366cccc135f6a_cgraph.svg" width="635" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gaa7548708d4ee2e6afd1366cccc135f6a_icgraph.svg" width="726" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga33f604f94a11da32fdf681dd21186b87" name="ga33f604f94a11da32fdf681dd21186b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga33f604f94a11da32fdf681dd21186b87">&#9670;&#160;</a></span>heap_compare_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int heap_compare_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Porovnání hodnot uzlů haldy určených dvěma iterátory. </p>
+<p>Trojcestně porovná hodnoty v uzlech hald určených dvěma iterátory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftIter</td><td>Iterátor určující uzel haldy stojící při porovnání (LHS) vlevo </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightIter</td><td>Iterátor určující uzel haldy stojící při porovnání (RHS) vpravo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou iterátorů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga33f604f94a11da32fdf681dd21186b87_cgraph.svg" width="811" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga33f604f94a11da32fdf681dd21186b87_icgraph.svg" width="746" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gad15335cb6b5e00a87655aa3f25fadc38" name="gad15335cb6b5e00a87655aa3f25fadc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad15335cb6b5e00a87655aa3f25fadc38">&#9670;&#160;</a></span>heap_compare_with_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int heap_compare_with_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Porovnání mezi hodnotou v uzlu haldy určenou iterátorem a hodnotou typu HeapElement. </p>
+<p>Trojcestně porovná hodnotu v uzlu haldy na pozici iterátorem se zadanou hodnotou <code>aValue</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Iterátor určující uzel haldy stojící při porovnání (LHS) vlevo </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota stojící při porovnání na pravé straně (RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>Pokud (LHS &lt; RHS) </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud (LHS = RHS) </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud (LHS &gt; RHS) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost iterátoru <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gad15335cb6b5e00a87655aa3f25fadc38_cgraph.svg" width="804" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gad15335cb6b5e00a87655aa3f25fadc38_icgraph.svg" width="739" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga03d48bdfc99322c0e16fd502820ce43d" name="ga03d48bdfc99322c0e16fd502820ce43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03d48bdfc99322c0e16fd502820ce43d">&#9670;&#160;</a></span>heap_swap_with_iterators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_swap_with_iterators </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aLeftIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aRightIter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Výměna hodnot uzlů haldy určených dvěma iterátory. </p>
+<p>Vzájemně zamění hodnoty uzlů haldy určených dvěma iterátory. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLeftIter</td><td>Iterátor určující první uzel v haldě </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRightIter</td><td>Iterátor určující druhý uzel v haldě </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou iterátorů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_ga03d48bdfc99322c0e16fd502820ce43d_cgraph.svg" width="635" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gada6619039c74de7852ababa894ff4029" name="gada6619039c74de7852ababa894ff4029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada6619039c74de7852ababa894ff4029">&#9670;&#160;</a></span>heap_swap_with_iterator_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heap_swap_with_iterator_value </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_heap_iterator">THeapIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> *</td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Výměna mezi hodnotou v uzlu haldy určenou iterátorem a proměnnou typu HeapElement. </p>
+<p>Vzájemně zamění hodnotu v uzlu haldy určenou iterátorem se zadanou hodnotou v proměnné typu HeapElement. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Iterátor určující uzel haldy pro záměnu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Ukazatel na hodnotu proměnné typu HeapElement určenou pro záměnu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost iterátoru a ukazatele <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_heap_gada6619039c74de7852ababa894ff4029_cgraph.svg" width="615" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<map id="heap_compare_with_iterators" name="heap_compare_with_iterators">
+<area shape="rect" id="Node000001" title="Porovnání hodnot uzlů haldy určených dvěma iterátory." alt="" coords="5,45,196,70"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector_iterator.html#gadd8aded92ce2c6402742a57316412d39" title="Porovnání hodnot elementů vektorů určených dvěma iterátory." alt="" coords="244,37,387,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,55,230,55,230,60,196,60"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#a188bab569c3ae8a25070f632a6f53e62" title=" " alt="" coords="435,5,576,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,43,421,37,422,42,387,48"/>
+<area shape="rect" id="Node000005" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="445,69,565,109"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,67,432,74,431,80,387,72"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="624,13,805,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="576,23,610,23,610,28,576,28"/>
+</map>

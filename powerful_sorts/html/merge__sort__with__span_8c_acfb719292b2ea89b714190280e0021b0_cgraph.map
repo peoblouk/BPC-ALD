@@ -1,0 +1,27 @@
+<map id="merge_sort_worker" name="merge_sort_worker">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="5,139,137,165"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="38,141,31,131,35,121,48,115,71,113,100,116,111,126,107,130,97,121,71,118,50,120,38,125,36,130,42,138"/>
+<area shape="rect" id="Node000002" href="$merge__sort__with__span_8c.html#a8c83f4f60393434eff082ca19f5f14ad" title="Vnitřní a lokální funkce realizující sloučení dvou již setříděných rozsahů (Spanů)" alt="" coords="244,63,308,89"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="104,137,184,106,230,89,232,94,186,110,106,142"/>
+<area shape="rect" id="Node000010" href="$group___t_span.html#ga873f8813d9a78c9b43e8a6b2b2a4c9d1" title="Přečtení počtu elementů Spanu." alt="" coords="457,114,539,139"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="137,145,443,127,444,133,138,151"/>
+<area shape="rect" id="Node000011" href="$group___t_span.html#ga95663322132016bbaf40e6281480e122" title="Vytvoření SubSpanu jako části od počátku a definované délce původního Spanu." alt="" coords="189,165,363,190"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="138,158,176,162,175,168,137,163"/>
+<area shape="rect" id="Node000012" href="$group___t_span.html#ga6270a02d3bfd6fa1fdbf37ca62276687" title="Vytvoření SubSpanu jako části od definované pozice až do konce původního Spanu." alt="" coords="185,214,367,239"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="99,162,186,200,209,208,208,213,184,205,97,167"/>
+<area shape="rect" id="Node000003" href="$group___t_span.html#gaffd3a758138012dac875ceda42a975db" title="Porovnání hodnot elementů Spanů" alt="" coords="415,15,581,41"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="308,67,425,41,426,46,309,72"/>
+<area shape="rect" id="Node000007" href="$group___t_span.html#ga8efc8ea3e4f239b6c154cdae03258740" title="Přesun hodnoty elementu Spanu." alt="" coords="425,65,571,90"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="308,74,411,74,411,79,308,79"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="309,81,444,112,443,117,308,86"/>
+<area shape="rect" id="Node000004" href="$group__sortable___t_vector.html#gaedaf9c79afa345e5e71e5c66ab25fa26" title="Porovnání hodnot elementů vektorů" alt="" coords="629,15,801,41"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="582,25,615,25,615,31,582,31"/>
+<area shape="rect" id="Node000005" href="$_t_vector_8c.html#a188bab569c3ae8a25070f632a6f53e62" title=" " alt="" coords="869,5,1010,45"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="802,24,855,24,855,29,802,30"/>
+<area shape="rect" id="Node000006" href="$group___t_vector_element.html#ga82e527836fce12c93af896f65e9f701d" title="Porovnání dvou elementů" alt="" coords="1077,13,1259,38"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="1010,23,1064,23,1064,28,1010,28"/>
+<area shape="rect" id="Node000008" href="$group__sortable___t_vector.html#ga16623c06371077674f5d4d31e38e42a4" title="Přesun hodnoty elementu vektoru." alt="" coords="639,69,791,94"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="571,76,626,77,626,82,571,81"/>
+<area shape="rect" id="Node000009" href="$_t_vector_8c.html#a0e3151269c65b7033ddecb4c3aee6566" title=" " alt="" coords="849,70,1029,95"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="792,79,836,79,835,85,792,84"/>
+</map>

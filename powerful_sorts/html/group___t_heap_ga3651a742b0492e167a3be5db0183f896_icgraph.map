@@ -1,0 +1,12 @@
+<map id="heap_compare_position_value" name="heap_compare_position_value">
+<area shape="rect" id="Node000001" title="Porovnání mezi hodnotou v uzlu haldy a hodnotou typu HeapElement." alt="" coords="465,5,624,45"/>
+<area shape="rect" id="Node000002" href="$heap__sort_8c.html#a1572325ec24b4714bb9bbd64229d85d0" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="341,13,417,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="451,28,417,28,417,23,451,23"/>
+<area shape="rect" id="Node000003" href="$group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru." alt="" coords="104,13,183,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,28,183,28,183,23,328,23"/>
+<area shape="rect" id="Node000005" href="$heap__sort_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="231,38,293,63"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="328,39,294,47,293,41,327,34"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,28,57,28,57,23,90,23"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="216,44,182,36,183,31,218,39"/>
+</map>

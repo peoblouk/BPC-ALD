@@ -1,0 +1,22 @@
+<map id="vector_set_value" name="vector_set_value">
+<area shape="rect" id="Node000001" title="Zapsání hodnoty elementu do vektoru na požadovanou pozici." alt="" coords="647,98,764,123"/>
+<area shape="rect" id="Node000002" href="$group___t_heap.html#gac522fe67b5a330d6289f4566a2f1aff4" title="Zapsání hodnoty do uzlu haldy na požadovanou pozici." alt="" coords="488,22,599,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="664,94,570,50,573,45,666,89"/>
+<area shape="rect" id="Node000007" href="$group___basic_sorts.html#gac3903c3fd846908cd362e293ed40582e" title="Třídění přímým vkládáním (Insert Sort)" alt="" coords="357,72,440,98"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="633,107,440,91,441,86,633,102"/>
+<area shape="rect" id="Node000008" href="$group___advanced_sorts.html#gaee070b00692f425d83eaea28b37bab2b" title="Shellovo třídění vkládáním s ubývajícím krokem (Shell Sort) dle Hibbardovy posloupnosti." alt="" coords="231,123,309,148"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="633,117,310,136,310,131,633,112"/>
+<area shape="rect" id="Node000009" href="$group___t_span.html#ga56e402bae9f24dffb084212da636a128" title="Zapsání hodnoty elementu do Spanu na požadovanou pozici." alt="" coords="488,174,599,199"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="666,131,573,176,570,171,664,127"/>
+<area shape="rect" id="Node000003" href="$heap__sort_8c.html#a1572325ec24b4714bb9bbd64229d85d0" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="361,22,437,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,37,437,37,437,32,474,32"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#gaf564949cc194e5feea63d6c2aaa3125a" title="Třídění pomocí haldy (Heap Sort) využívající poziční API pro přístup k elementům vektoru." alt="" coords="104,22,183,47"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="348,20,309,12,270,8,231,12,180,24,179,19,230,6,270,3,310,6,350,15"/>
+<area shape="rect" id="Node000006" href="$heap__sort_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="239,22,301,47"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="347,37,302,37,302,32,347,32"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,72,56,98"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="103,55,57,76,55,72,101,50"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="225,37,183,37,183,32,225,32"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="343,88,56,88,56,82,343,82"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="217,129,103,106,56,94,57,89,105,101,218,124"/>
+</map>

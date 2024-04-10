@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "powerful_sorts", "powerful_sorts\powerful_sorts.vcxproj", "{FA7B061B-A894-4605-A31A-F9A836D190B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{61AC78E5-8870-4071-AD4A-99FEF67C888B}"
+	ProjectSection(SolutionItems) = preProject
+		doc\cv10_reports_quick_sort_data1.lst = doc\cv10_reports_quick_sort_data1.lst
+		doc\cv10_reports_quick_sort_data2.lst = doc\cv10_reports_quick_sort_data2.lst
+		doc\cv10_reports_quick_sort_data3.lst = doc\cv10_reports_quick_sort_data3.lst
+		doc\cv10_reports_quick_sort_data4.lst = doc\cv10_reports_quick_sort_data4.lst
+		doc\cv10_reports_reversed_data.lst = doc\cv10_reports_reversed_data.lst
+		doc\cv10_reports_select_sort_data.lst = doc\cv10_reports_select_sort_data.lst
+		doc\cv10_reports_sorted_data.lst = doc\cv10_reports_sorted_data.lst
+		doc\cv10_zadani_powerful_sorts.md = doc\cv10_zadani_powerful_sorts.md
+		Doxyfile = Doxyfile
+		doc\extra_stylesheet.css = doc\extra_stylesheet.css
+		doc\project_logo.png = doc\project_logo.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Debug|x64.ActiveCfg = Debug|x64
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Debug|x64.Build.0 = Debug|x64
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Debug|x86.Build.0 = Debug|Win32
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Release|x64.ActiveCfg = Release|x64
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Release|x64.Build.0 = Release|x64
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Release|x86.ActiveCfg = Release|Win32
+		{FA7B061B-A894-4605-A31A-F9A836D190B7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14F6A450-DAE9-414F-920F-8774E9E5B728}
+	EndGlobalSection
+EndGlobal

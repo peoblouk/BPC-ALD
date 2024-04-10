@@ -1,0 +1,16 @@
+<map id="vector_compare_with_iterator_value" name="vector_compare_with_iterator_value">
+<area shape="rect" id="Node000001" title="Porovnání mezi hodnotou elementu vektoru určenou iterátorem a hodnotou typu VectorElement." alt="" coords="781,37,924,77"/>
+<area shape="rect" id="Node000002" href="$group___t_heap.html#gad15335cb6b5e00a87655aa3f25fadc38" title="Porovnání mezi hodnotou v uzlu haldy určenou iterátorem a hodnotou typu HeapElement." alt="" coords="549,5,733,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="767,47,733,42,734,37,768,42"/>
+<area shape="rect" id="Node000007" href="$group___t_span.html#ga0b2e633085569b47c063161298794b98" title="Porovnání mezi hodnotou elementu Spanu určenou iterátorem a hodnotou typu VectorElement." alt="" coords="549,69,733,109"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="768,73,734,78,733,73,767,68"/>
+<area shape="rect" id="Node000003" href="$heap__sort__with__iterators_8c.html#a7bf828c9c4eb35c2121c3f7d1177d19b" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ..." alt="" coords="425,13,501,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="536,28,502,28,502,23,536,23"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,13,267,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="411,28,267,28,267,23,411,23"/>
+<area shape="rect" id="Node000006" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="315,38,377,63"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="412,39,378,47,377,41,411,34"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,28,56,28,56,23,91,23"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="301,46,266,41,266,35,302,41"/>
+</map>

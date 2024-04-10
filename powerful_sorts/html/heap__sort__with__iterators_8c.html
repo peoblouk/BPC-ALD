@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ALG Powerful Sorts: Dokumentace souboru heap_sort_with_iterators.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ALG Powerful Sorts<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5768d1d217cb0149ee97d44469138954.html">powerful_sorts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru heap_sort_with_iterators.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzlům haldy.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="heap__sort__with__iterators_8h_source.html">heap_sort_with_iterators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_heap_8h_source.html">THeap.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro heap_sort_with_iterators.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="heap__sort__with__iterators_8c__incl.svg" width="466" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:a7bf828c9c4eb35c2121c3f7d1177d19b" id="r_a7bf828c9c4eb35c2121c3f7d1177d19b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bf828c9c4eb35c2121c3f7d1177d19b">sift_down</a> (<a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a> aValue, struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a> aParent)</td></tr>
+<tr class="memdesc:a7bf828c9c4eb35c2121c3f7d1177d19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek haldy.  <br /></td></tr>
+<tr class="separator:a7bf828c9c4eb35c2121c3f7d1177d19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceaf0618c69440f1e439e224eb6945dc" id="r_aceaf0618c69440f1e439e224eb6945dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceaf0618c69440f1e439e224eb6945dc">heapify</a> (struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *aHeap)</td></tr>
+<tr class="memdesc:aceaf0618c69440f1e439e224eb6945dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy.  <br /></td></tr>
+<tr class="separator:aceaf0618c69440f1e439e224eb6945dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84762e575f9465881e13d17072186ddd" id="r_ga84762e575f9465881e13d17072186ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd">heap_sort_with_iterators</a> (struct <a class="el" href="group___t_vector.html#struct_t_vector">TVector</a> *aVector)</td></tr>
+<tr class="memdesc:ga84762e575f9465881e13d17072186ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru.  <br /></td></tr>
+<tr class="separator:ga84762e575f9465881e13d17072186ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzlům haldy. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="heap__sort__with__iterators_8c.html" title="Implementace API výkonnější metody třídění (Heap sort), využívající iterátorové API pro přístup k uzl...">heap_sort_with_iterators.c</a> 2689 2024-04-05 14:49:39Z petyovsky </dd></dl>
+</div><h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="a7bf828c9c4eb35c2121c3f7d1177d19b" name="a7bf828c9c4eb35c2121c3f7d1177d19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf828c9c4eb35c2121c3f7d1177d19b">&#9670;&#160;</a></span>sift_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void sift_down </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___t_heap.html#gaadfb312d94e0279d1dff692008be6744">THeapElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group___t_heap.html#struct_t_heap_iterator">THeapIterator</a></td>          <td class="paramname"><span class="paramname"><em>aParent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek haldy. </p>
+<p>Lokální funkce zajišťuje vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek haldy (prosívání hodnoty směrem k listům). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota vkládáná do haldy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aParent</td><td>Iterátor na uzel haldy určený pro vložení hodnoty <code>aValue</code> (hodnota v tomto uzlu bude přepsána) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="heap__sort__with__iterators_8c_a7bf828c9c4eb35c2121c3f7d1177d19b_cgraph.svg" width="1008" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="heap__sort__with__iterators_8c_a7bf828c9c4eb35c2121c3f7d1177d19b_icgraph.svg" width="507" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aceaf0618c69440f1e439e224eb6945dc" name="aceaf0618c69440f1e439e224eb6945dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceaf0618c69440f1e439e224eb6945dc">&#9670;&#160;</a></span>heapify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void heapify </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group___t_heap.html#struct_t_heap">THeap</a> *</td>          <td class="paramname"><span class="paramname"><em>aHeap</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy. </p>
+<p>Lokální funkce zajišťuje uspořádání elementů vektoru do haldy, pomocí volání funkce <a class="el" href="#a7bf828c9c4eb35c2121c3f7d1177d19b" title="Vnitřní a lokální funkce zajišťující vložení hodnoty do zvoleného uzlu haldy, při zachování podmínek ...">sift_down()</a>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aHeap</td><td>Ukazatel na vytvářenou haldu </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="heap__sort__with__iterators_8c_aceaf0618c69440f1e439e224eb6945dc_cgraph.svg" width="1202" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="heap__sort__with__iterators_8c_aceaf0618c69440f1e439e224eb6945dc_icgraph.svg" width="383" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: pá 5. dub 2024 17.02:01, pro projekt: BPC-ALD: ALG Powerful Sorts, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

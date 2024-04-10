@@ -1,0 +1,8 @@
+<map id="merge_sort_worker" name="merge_sort_worker">
+<area shape="rect" id="Node000001" title="Vnitřní a lokální funkce realizující rekurzivní funkci pro metodu (Merge Sort)" alt="" coords="239,29,371,55"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="332,19,324,11,305,8,288,10,280,15,278,20,283,28,278,31,273,21,276,11,287,5,305,3,326,6,336,15"/>
+<area shape="rect" id="Node000002" href="$group___powerful_sorts.html#gaca54b9dda831aa79008867770c96413e" title="Třídění pomocí metody slučováním (Merge sort) využívající rekurzivní rozklad." alt="" coords="104,29,191,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,45,191,45,191,39,225,39"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,29,56,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,45,56,45,56,39,90,39"/>
+</map>

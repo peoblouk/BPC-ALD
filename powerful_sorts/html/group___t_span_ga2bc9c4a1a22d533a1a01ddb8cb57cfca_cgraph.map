@@ -1,0 +1,9 @@
+<map id="span_swap_with_iterators" name="span_swap_with_iterators">
+<area shape="rect" id="Node000001" title="Výměna hodnot elementů Spanů určených dvěma iterátory." alt="" coords="5,35,176,60"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector_iterator.html#gac16589d02c81c789a7fa6cd323a49013" title="Výměna hodnot elementů vektorů určených dvěma iterátory." alt="" coords="224,35,401,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,45,210,45,210,50,176,50"/>
+<area shape="rect" id="Node000003" href="$_t_vector_8c.html#ac70bbb23ab1ec16b867b3e33d40ae1c4" title=" " alt="" coords="449,5,629,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,33,436,29,436,34,402,38"/>
+<area shape="rect" id="Node000004" href="$group___t_vector_iterator.html#ga3f8a97a63f887539e270f6845bf22b9a" title="Zjištění platnosti iterátoru." alt="" coords="479,55,599,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,56,466,64,465,69,402,61"/>
+</map>

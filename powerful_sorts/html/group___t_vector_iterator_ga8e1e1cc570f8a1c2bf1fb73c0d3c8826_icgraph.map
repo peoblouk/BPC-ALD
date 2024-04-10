@@ -1,0 +1,13 @@
+<map id="vector_iterator_to_prev" name="vector_iterator_to_prev">
+<area shape="rect" id="Node000001" title="Posunutí iterátoru vzad." alt="" coords="619,31,769,56"/>
+<area shape="rect" id="Node000002" href="$group___t_heap.html#ga459d729f98a06d26d4cab4dee469ce9a" title="Posunutí iterátoru vzad." alt="" coords="425,5,571,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="605,35,571,30,571,25,606,29"/>
+<area shape="rect" id="Node000006" href="$group___t_span.html#gaba2bf18029ccee38147943a1176f1673" title="Posunutí iterátoru vzad." alt="" coords="425,55,571,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="606,57,571,61,571,56,605,52"/>
+<area shape="rect" id="Node000003" href="$heap__sort__with__iterators_8c.html#aceaf0618c69440f1e439e224eb6945dc" title="Vnitřní a lokální funkce realizující uspořádání elementů vektoru do haldy." alt="" coords="315,5,377,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,21,378,21,378,15,412,15"/>
+<area shape="rect" id="Node000004" href="$group___powerful_sorts.html#ga84762e575f9465881e13d17072186ddd" title="Třídění pomocí haldy (Heap Sort) využívající iterátorové API pro přístup k elementům vektoru." alt="" coords="104,5,267,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,21,267,21,267,15,301,15"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,21,56,21,56,15,91,15"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="vector_fast_swap_position_value" name="vector_fast_swap_position_value">
+<area shape="rect" id="Node000001" title=" " alt="" coords="436,101,609,141"/>
+<area shape="rect" id="Node000002" href="$group__sortable___t_vector.html#gabdff161479b4c497204dc32fd2202e6f" title="Výměna mezi hodnotou elementu vektoru a proměnnou typu VectorElement." alt="" coords="230,69,375,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="421,109,375,103,376,97,422,104"/>
+<area shape="rect" id="Node000005" href="$group__sortable___t_vector_iterator.html#ga015969daf209d461aaf0ba4391df4b5b" title="Výměna mezi hodnotou elementu vektoru určenou iterátorem a proměnnou typu VectorElement." alt="" coords="217,133,388,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="423,139,389,144,388,138,422,133"/>
+<area shape="rect" id="Node000003" href="$group___t_heap.html#ga9e3ecb67eb7fd210b5154c661000ba16" title="Vzájemná výměna hodnot mezi uzlem haldy a proměnnou typu HeapElement." alt="" coords="18,5,157,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,68,154,48,156,43,222,63"/>
+<area shape="rect" id="Node000004" href="$group___t_span.html#ga2df4c39d49410db156d79f5d12c84f7e" title="Výměna mezi hodnotou elementu Spanu a proměnnou typu VectorElement." alt="" coords="18,69,157,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="216,92,157,92,157,87,216,87"/>
+<area shape="rect" id="Node000006" href="$group___t_heap.html#gada6619039c74de7852ababa894ff4029" title="Výměna mezi hodnotou v uzlu haldy určenou iterátorem a proměnnou typu HeapElement." alt="" coords="5,133,169,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="204,156,170,156,170,151,204,151"/>
+<area shape="rect" id="Node000007" href="$group___t_span.html#ga87439f0c5045aa7f177a37558b60d397" title="Výměna mezi hodnotou elementu Spanu určenou iterátorem a proměnnou typu SpanElement." alt="" coords="5,197,169,237"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="222,180,156,200,154,195,221,175"/>
+</map>
