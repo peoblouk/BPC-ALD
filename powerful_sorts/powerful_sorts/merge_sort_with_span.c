@@ -1,8 +1,8 @@
 /** \file merge_sort_with_span.c
  *  \brief Implementace API výkonnější metody třídění slučováním (Merge sort), využívající rekurzi a datový typ Span
  *  \author Petyovský
- *  \version 2024
- *  $Id: merge_sort_with_span.c 2691 2024-04-05 14:58:43Z petyovsky $
+ *  \version 2023
+ *  $Id: merge_sort_with_span.c 2323 2023-04-11 12:58:49Z petyovsky $
  */
 
 #include "merge_sort_with_span.h"
@@ -16,15 +16,31 @@
  */
 static void mergify(struct TSpan aFrom1, struct TSpan aFrom2, struct TSpan aTo)
 	{
-//	puts("Mergify:");
-//	for(size_t i = 0; i < span_size(&aFrom1); ++i)
-//		vector_element_store_file(aFrom1.iVector.iValues[i], stdout);
-//	fprintf(stdout, "| ");
-//	for(size_t i = 0; i < span_size(&aFrom2); ++i)
-//		vector_element_store_file(aFrom2.iVector.iValues[i], stdout);
-//	putchar('\n');
+	//	puts("Mergify:");
+	//	for(size_t i = 0; i < span_size(&aFrom1); ++i)
+	//		vector_element_store_file(aFrom1.iVector.iValues[i], stdout);
+	//	fprintf(stdout, "| ");
+	//	for(size_t i = 0; i < span_size(&aFrom2); ++i)
+	//		vector_element_store_file(aFrom2.iVector.iValues[i], stdout);
+	//	putchar('\n');
 
-	size_t i = 0, i1 = 0, i2 = 0;
+	size_t f1 = 0, f2 = 0, t = 0;
+	const size_t from1_size = span_size(&aFrom1);
+	const size_t from2_size = span_size(&aFrom2);
+
+	while(f1 < from1_size && f2 < from2_size)
+		{
+		if(span_compare_positions(&aFrom1, f1, &aFrom2, f2) <= 0)
+			span_move_positions(&aTo, t++, &aFrom1, f1++);
+		else
+			span_move_positions(&aTo, t++, &aFrom2, f2++);
+		}
+
+	while(f1 < from1_size)
+		span_move_positions(&aTo, t++, &aFrom1, f1++);
+
+	while(f2 < from2_size)
+		span_move_positions(&aTo, t++, &aFrom2, f2++);
 
 //	for(size_t i = 0; i < span_size(&aTo); ++i)
 //		vector_element_store_file(aTo.iVector.iValues[i], stdout);
@@ -60,10 +76,10 @@ static void merge_sort_worker(struct TSpan aFrom, struct TSpan aTo)
 //	putchar('\n');
 //	}
 
-//	merge_sort_worker(span_create_left_subspan(aTo, middle), span_create_left_subspan(aFrom, middle));
-//	merge_sort_worker();
+	merge_sort_worker(span_create_left_subspan(aTo, middle), span_create_left_subspan(aFrom, middle));
+	merge_sort_worker(span_create_right_subspan(aTo, middle), span_create_right_subspan(aFrom, middle));
 
-//	mergify();
+	mergify(span_create_left_subspan(aFrom, middle), span_create_right_subspan(aFrom, middle), aTo);
 	}
 
 void merge_sort_with_span(struct TVector *aVector)
