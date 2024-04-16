@@ -8,29 +8,38 @@
 #include <stdio.h>
 
 bool wildcard_match(const char aWildCardStr[], const char aStr[])
-	{
+{
 	printf("\twildcard_match(\"%s\",\"%s\")\n", aWildCardStr, aStr);
-	
+
 	if (*aWildCardStr == '\0' && *aStr == '\0') // Narazil jsem na konec řetězce
 		return true;
-	
-	if (*aWildCardStr == *aStr) // hvězdička značí dereferenci
+
+	if (*aWildCardStr == *aStr)							   // hvězdička značí dereferenci
 		return wildcard_match(aWildCardStr + 1, aStr + 1); // Zavolám rekurzi
 
-	if (*aWildCardStr == '?') 
+	if (*aWildCardStr == '?')
 		if (*aStr == '\0')
 			return false;
 		else
 			return wildcard_match(aWildCardStr + 1, aStr + 1); // Zavolám rekurzi
 
 	if (*aWildCardStr == '*')
+	{
+		bool state = true;
+		if (*aStr == '\0')
 		{
-		while (*aWildCardStr != '\0')
-			{
-			if (wildcard_match(aWildCardStr + 1, aStr) || wildcard_match(aWildCardStr, aStr + 1))
-				aStr++;
-			}
-		return true; // Zavolám rekurzi
+			state = false;
 		}
-	return false;
+		else if (*aStr != '\0')
+		{
+			state = wildcard_match(aWildCardStr, aStr + 1);
+		}
+		if (state == false)
+		{
+			state = wildcard_match(aWildCardStr + 1, aStr);
+		}
+		return state;
 	}
+
+	return false;
+}
