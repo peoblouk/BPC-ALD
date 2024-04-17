@@ -187,7 +187,38 @@ bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue)
 	return true;
 	}
 ```
+## TSet (množina)
 
+UNSORTED
+```
+struct TSet
+	{
+	size_t iSize;					///< Počet elementů množiny (skutečný počet prvků v množině)
+	struct TSetUnsortedFlexArray *iFlexArray;	///< PIMPL ukazatel na hodnoty typu SetUnsortedFlexArray (Pointer to private IMPLementation)
+	};
+
+struct TSetUnsortedFlexArray
+	{
+	size_t iCapacity;				///< Skutečně naalokovaná kapacita prvků vnitřního dynamického pole  
+	TSetElement iElement[];				///< Flexibilní (otevřené) pole hodnot typu SetElement (nedostupné mimo funkce ze souboru TSetUnsortedFlexArray.c)
+	};
+```
+- set_init - inicializace prázdné množiny
+- set_size - vrací hodnotu
+- set_insert - vkládá hodnotu, která ještě není v množině, jakmile je tak vrátí false
+- set_erase - odebírá zadaný prvek z množiny, pokud existuje, jinak vrací false
+- set_is_element_of - vrací true jestli aValue je v množině
+- set_find - hledání prvku (vrací iterátor, který bude ukazovat na pozici, kde leží daný prvek)
+- set_destroy - odstraní (dealokuje dynamicky alokované pole a iSize = 0 a ukazatel na iFlexArray
+
+- set_flex_array_search - zjištuje zda flexibilí pole obsahuje element o zadané hodnotě (vrací cmp = 0, pokud byl prvek nalezen a zároveň nastavuje hodnotu pos na index hledaného prvku
+- <b>POZOR !!! Pokud jsem změnil typ TSetElement z int na char musím najít makro #define TVECTOR_ELEMENT_FRMSTR   "%d" </b>
+
+
+SORTED
+```
+
+```
 # Algoritmy
 
 Důležité pojmy:
