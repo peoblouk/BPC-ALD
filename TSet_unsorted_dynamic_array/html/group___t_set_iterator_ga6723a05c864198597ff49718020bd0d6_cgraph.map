@@ -1,0 +1,10 @@
+<map id="set_iterator_to_next" name="set_iterator_to_next">
+<area shape="rect" id="Node000001" title="Posunutí iterátoru vpřed." alt="" coords="5,24,143,49"/>
+<area shape="rect" id="Node000002" href="$group___t_set_unsorted_flex_array.html#gad3346f67be35632c3b0fbd9ea616a0c1" title="Zjištění platnosti pozice ve flexibilním poli." alt="" coords="401,24,581,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,21,190,8,272,3,354,8,422,18,421,24,353,14,272,8,191,14,123,26"/>
+<area shape="rect" id="Node000003" href="$group___t_set_unsorted_flex_array.html#ga8bc0de187146b066ae844c2278b6e198" title="Výpočet následující platné pozice ve flexibilním poli." alt="" coords="191,24,353,49"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,34,177,34,177,39,143,39"/>
+<area shape="rect" id="Node000004" href="$group___t_set_iterator.html#ga089f24c81ac3da7d1ac7ca24cc078dd8" title="Zjištění platnosti iterátoru." alt="" coords="204,73,340,98"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,46,208,67,207,72,125,52"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="329,70,420,49,421,55,330,75"/>
+</map>

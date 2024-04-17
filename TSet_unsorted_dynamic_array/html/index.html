@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Unsorted dynamic array: Zadání cvičení 11</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Unsorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zadání cvičení 11 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_cv11__zadani___t_set__dynamic__array"></a> Cvičení je věnováno návrhu a implementaci ADT množina (v anglickém jazyce <em>Set</em>) (viz přednáška č.5) ukládající prvky do setříděného pole a využívající lineární a binární vyhledávání (viz přednáška č.10). Zadání obsahuje dva projekty:</p>
+<ol type="1">
+<li><b>Hotovou implementaci ADT Množina využívající flexibilní dynamicky alokované pole s nesetříděnými prvky</b> - <code>TSet_unsorted_dynamic_array</code>. <br  />
+ Varianta implementace archivující postupně vkládané elementy v <em>nesetříděném</em> <a href="https://en.wikipedia.org/wiki/Flexible_array_member">flexibilním</a> dynamicky alokovaném poli. <br  />
+ K vyhledání elementu s danou hodnotou v poli využívá <b>algoritmus lineárního vyhledání bez jakýchkoliv optimalizací</b>, (viz přednáška č.10).</li>
+<li><b>Nedokončenou implementaci ADT Množina využívající flexibilní dynamicky alokované pole se setříděnými prvky</b> - <code>TSet_sorted_dynamic_array</code>. <br  />
+ Varianta implementace archivující postupně vkládané elementy v <em>setříděném</em> <a href="https://en.wikipedia.org/wiki/Flexible_array_member">flexibilním</a> dynamicky alokovaném poli. <br  />
+ K vyhledání elementu s danou hodnotou v poli využívá buď: <b>algoritmus lineárního vyhledávání s optimalizací dřívějšího ukončení vyhledávání</b> nebo <b>algoritmus binárního vyhledání</b>, (viz přednáška č.10).</li>
+</ol>
+<p>Obě implementace využívají amortizaci časové složitosti operace vkládání prvku tím, že vždy alokují pole o dvojnásobné délce, díky čemuž následné operace přidání prvku probíhají s konstantní amortizovanou časovou složitostí. <br  />
+ Amortizace časové složitosti při operaci odebrání prvku je realizována tak, že teprve při odebrání 75% prvků se provede zmenšení alokované kapacity pole na polovinu (tj. při 25% zaplnění se pole zkrátí na polovinu, aby i po zkrácení bylo pole zaplněno pouze z 50%), (viz přednáška č.2).</p>
+<hr  />
+<h1>Zadání úlohy</h1>
+<p>V dodaném projektu <code>TSet_sorted_dynamic_array</code> dokončete implementaci operací pro vkládání: <code><a class="el" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024" title="Vložení elementu do flexibilního pole.">set_flex_array_insert()</a></code> a odebrání: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole.">set_flex_array_erase()</a></code> prvků množiny tak, aby využívaly principu práce s flexibilním dynamicky alokovaným pole umožňujícím amortizaci časové složitosti těchto operací.</p>
+<p>Dokončete implementaci servisní funkce <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code> tak, aby realizovala proces vyhledání prvků v setříděném poli pomocí algoritmu:</p>
+<ol type="1">
+<li>lineárního vyhledávání s optimalizací dřívějšího ukončení (při definici makra: <code>FLEX_ARRAY_SEARCH_VARIANT == LINEAR_SEARCH_OPTIMIZED</code>),</li>
+<li>binárního vyhledávání (při definici makra: <code>FLEX_ARRAY_SEARCH_VARIANT == BINARY_SEARCH</code>).</li>
+</ol>
+<p>Operace vkládání a odebírání prvků realizujte tak, aby ke své funkci využívaly k vyhledání prvků pouze servisní funkci: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code>.</p>
+<p>Algoritmy vyzkoušejte na testovací posloupnosti ve funkci <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>, která je součástí projektu.</p>
+<p>Srovnejte výsledné počty porovnání prvků množiny z vašeho programu s hodnotami v souborech s výsledky, které mají název začínající: <a href="examples.html"><code>cv11_reports_*.lst</code></a>.</p>
+<h2>Soubory projektu</h2>
+<p>Oba projekty se liší pouze v obsahu souborů <code><a class="el" href="_t_set_unsorted_flex_array_8c.html" title="Implementace API pro typ SetUnsortedFlexArray (Flexibilní, tzv. otevřené, pole pro realizaci množiny ...">TSetUnsortedFlexArray.c</a></code> a <code>TSetSortedFlexArray.c</code>. V projektu <code>TSet_unsorted_dynamic_array</code> jsou realizovány všechna těla funkcí a to včetně: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code>, <code><a class="el" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024" title="Vložení elementu do flexibilního pole.">set_flex_array_insert()</a></code> a <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole.">set_flex_array_erase()</a></code>.</p>
+<p>Naopak v projektu <code>TSet_sorted_dynamic_array</code> jsou těla funkcí: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code>, <code><a class="el" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024" title="Vložení elementu do flexibilního pole.">set_flex_array_insert()</a></code> a <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole.">set_flex_array_erase()</a></code> připravená pro doplnění zdrojových kódu příslušných algoritmů. V tomto projektu je také na začátku souboru <code><a class="el" href="_t_set_unsorted_flex_array_8c.html" title="Implementace API pro typ SetUnsortedFlexArray (Flexibilní, tzv. otevřené, pole pro realizaci množiny ...">TSetUnsortedFlexArray.c</a></code> možné pomocí <code>#define</code> přepínání jednotlivých variant vyhledávání (lineární s optimalizací, binární).</p>
+<p>Soubor <code><a class="el" href="_t_set_element_8h.html" title="Definice typu Basic SetElement a implementace API.">TSetElement.h</a></code> obsahuje funkce pro porovnání prvků množiny a mechanismus určení počtu těchto porovnání. Pro evidenci počtu porovnání hodnot elementů množiny slouží globální proměnná <code><a class="el" href="group___t_set_element.html#ga6189780a863947b14a76d225bd81c99c" title="Deklarace globální proměnné realizující počítadlo operací porovnání dvou hodnot typu SetElement.">gSetElementComparisons</a></code>, aktualizovaná vždy při volání funkce <code><a class="el" href="group___t_set_element.html#gad8cfc9a36f36c44c10b660c5b370f67e" title="Porovnání dvou elementů">set_element_comparator()</a></code>.</p>
+<p>Soubory <code>check.c</code> a <code>check.h</code> představují zdrojové soubory pro kontrolu správné manipulace s dynamicky alokovanou pamětí a se soubory.</p>
+<p>Soubor <code><a class="el" href="main_8c.html" title="Hlavní program pro testování ADT TSet.">main.c</a></code> obsahuje připravenou základní testovací sekvenci ve formě programu uvnitř funkce <code><a class="el" href="group___main_program.html#ga66149067fad48c8944eb15c52e63a990">testset2_hardcoded()</a></code>. Testovací sekvence začíná voláním funkce <code><a class="el" href="group___t_set.html#ga674fb4a9d4cac982bca65b8b264b04b5" title="Inicializace prázdné množiny.">set_init()</a></code> a končí voláním funkce <code><a class="el" href="group___t_set.html#ga8094d1ab68434b8413cd905895ff37ae" title="Deinicializace množiny.">set_destroy()</a></code>. Dále jsou zde volány funkce pro vkládání, výběr, tisk a zjišťování přítomnosti prvku v množině. Tisk je prováděn pomocí iterátorů <code>struct <a class="el" href="group___t_set_iterator.html#struct_t_set_iterator" title="Definice typu SetIterator.">TSetIterator</a></code>. Takto implementovaná funkce představuje sice jednoduchý způsob, jak ověřit správnost implementace jednotlivých operací abstraktního datového typu, ale její vytvoření je časově náročné, proto budeme pro testování používat univerzálnější způsob.</p>
+<p>Soubory <code><a class="el" href="_t_set_8c.html" title="Implementace API pro typ Set (realizace množiny pomocí nesetříděného flexibilního dynamicky alokované...">TSet.c</a></code> a <code><a class="el" href="_t_set_8h.html" title="Definice typu Set - (realizace množiny pomocí nesetříděného flexibilního dynamicky alokovaného pole)">TSet.h</a></code> platí pro oba projekty:</p>
+<ul>
+<li>Soubor <code><a class="el" href="_t_set_8h.html" title="Definice typu Set - (realizace množiny pomocí nesetříděného flexibilního dynamicky alokovaného pole)">TSet.h</a></code> je hlavičkový soubor, který obsahuje definici struktury množiny <code>struct <a class="el" href="group___t_set.html#struct_t_set" title="Definice typu Set.">TSet</a></code> a struktury iterátoru pro množinu <code>struct <a class="el" href="group___t_set_iterator.html#struct_t_set_iterator" title="Definice typu SetIterator.">TSetIterator</a></code>. Rozhraní funkcí je podobné jako v minulých projektech a názvy funkcí dostatečně popisují jejich činnost.</li>
+<li>Vlastní množinu reprezentuje struktura <code>struct <a class="el" href="group___t_set.html#struct_t_set" title="Definice typu Set.">TSet</a></code> pomocí flexibilního dynamického pole (proměnná <em>iValues</em>). Proměnná <em>iCapacity</em> udává množství alokované/využitelné paměti a proměnná <em>iSize</em> udává aktuální počet prvků uložených v tomto poli.</li>
+<li><p class="startli">Soubor <code><a class="el" href="_t_set_8c.html" title="Implementace API pro typ Set (realizace množiny pomocí nesetříděného flexibilního dynamicky alokované...">TSet.c</a></code> obsahuje všechny základní funkce požadované pro modifikovatelnou (<em>mutable</em>) množinu:</p><ul>
+<li><code><a class="el" href="group___t_set.html#ga674fb4a9d4cac982bca65b8b264b04b5" title="Inicializace prázdné množiny.">set_init()</a></code> - inicializace struktury množiny,</li>
+<li><code><a class="el" href="group___t_set.html#ga213cfb714cece49d955fc452b2aeb186" title="Přečtení počtu elementů množiny.">set_size()</a></code> - zjištění počtu elementů množiny (neboli velikost resp. kardinalita množiny),</li>
+<li><code><a class="el" href="group___t_set.html#ga2f7fd9486a5c300158d70dc79c6c6c8f" title="Zjištění, zda je množina prázdná">set_is_empty()</a></code> - zjištění zda je množina prázdná,</li>
+<li><code><a class="el" href="group___t_set.html#ga768d36614713a921e88985484ac63cc1" title="Zjištění, zda množina obsahuje zadanou hodnotu elementu.">set_is_element_of()</a></code> - zjištění přítomnosti dané hodnoty v množině,</li>
+<li><code><a class="el" href="group___t_set.html#ga1dab52afdffe1147063314f7cdc5a7c8" title="Získání nového iterátoru ukazujícího na první element se zadanou hodnotou v množině nalezen,...">set_find()</a></code> - vytvoření iterátoru ukazujícího na prvek množiny o dané hodnotě,</li>
+<li><code><a class="el" href="group___t_set.html#ga0d1464cea78691ff9ad3dd1e32b55c60" title="Vložení elementu do množiny.">set_insert()</a></code> - realizující vložení elementu o dané hodnotě do množiny,</li>
+<li><code><a class="el" href="group___t_set.html#ga2a711b02282ff309c0d6a4fdcfbac738" title="Odstranění elementu z množiny.">set_erase()</a></code> - realizující odebrání elementu o dané hodnotě z množiny,</li>
+<li><code><a class="el" href="group___t_set.html#ga8094d1ab68434b8413cd905895ff37ae" title="Deinicializace množiny.">set_destroy()</a></code> - ukončení života proměnné typu množina.</li>
+</ul>
+<p class="startli">A také základní operace pro práci s iterátory této množiny:</p><ul>
+<li><code><a class="el" href="group___t_set_iterator.html#gab11bafbe7585e4bb0bd9ff2353d77765" title="Vytvoření nového iterátoru ukazujícího na první element množiny.">set_iterator_begin()</a></code> - vytvoření iterátoru směřujícího na první element množiny,</li>
+<li><code><a class="el" href="group___t_set_iterator.html#ga089f24c81ac3da7d1ac7ca24cc078dd8" title="Zjištění platnosti iterátoru.">set_iterator_is_valid()</a></code> - predikátová funkce vracející <code>true</code> , pokud iterátor směřuje na platný element množiny,</li>
+<li><code><a class="el" href="group___t_set_iterator.html#ga6723a05c864198597ff49718020bd0d6" title="Posunutí iterátoru vpřed.">set_iterator_to_next()</a></code> - posun iterátoru na další element množiny,</li>
+<li><code><a class="el" href="group___t_set_iterator.html#ga3928a980e2759ba130ce333e77f15fab" title="Přečtení hodnoty elementu z množiny pomocí iterátoru.">set_iterator_value()</a></code> - získání hodnoty elementu množiny, na který směřuje iterátor.</li>
+</ul>
+</li>
+</ul>
+<p>V projektu <code>TSet_unsorted_dynamic_array</code> obsahují soubory <code><a class="el" href="_t_set_unsorted_flex_array_8h.html" title="Deklarace typu SetUnsortedFlexArray a jeho API pro realizaci množiny pomocí nesetříděného flexibilníh...">TSetUnsortedFlexArray.h</a></code> a <code><a class="el" href="_t_set_unsorted_flex_array_8c.html" title="Implementace API pro typ SetUnsortedFlexArray (Flexibilní, tzv. otevřené, pole pro realizaci množiny ...">TSetUnsortedFlexArray.c</a></code> dokončenou a fungující implementaci ADT Množina využívající pole s nesetříděnými prvky. V těchto souborech je definován datový typ <code><a class="el" href="struct_t_set_unsorted_flex_array.html" title="Úplná definice privátního typu SetUnsortedFlexArray.">TSetUnsortedFlexArray</a></code> a jsou zde implementovány servisní funkce pro práci s tímto typem:</p>
+<ul>
+<li>Soubor <code><a class="el" href="_t_set_unsorted_flex_array_8c.html" title="Implementace API pro typ SetUnsortedFlexArray (Flexibilní, tzv. otevřené, pole pro realizaci množiny ...">TSetUnsortedFlexArray.c</a></code> obsahuje tyto základní funkce pro práci s polem představujícím modifikovatelnou (<em>mutable</em>) množinu:<ul>
+<li><code><a class="el" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024" title="Vložení elementu do flexibilního pole.">set_flex_array_insert()</a></code> - realizuje operaci vložení prvku do pole. Funkce nejprve zjistí, zda prvek již v poli není přítomen. Pokud přítomen není, funkce dále ověří, zda je v poli ještě volné místo pro uložení nového prvku. Pokud volné místo není, provede alokaci paměti pro dvakrát větší pole a přesune do něj stávající prvky. Následně vloží na konec nově alokovaného pole i hodnotu vkládaného prvku. Uvědomte si skutečnost, že tato funkce musí správně pracovat i při operaci prvotního vložení prvku do prázdné množiny.</li>
+<li><code><a class="el" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole.">set_flex_array_erase()</a></code> - realizuje operaci odebrání prvku z pole. Funkce nejprve zjistí, zda je prvek v poli přítomen. V případě vyprázdnění pole, nebo při poklesu zaplnění na 25% se provede zmenšení délky pole na polovinu tak, že se alokuje pole s menším rozměrem a do něj se nakopírují stávající hodnoty. Během kopírování se také provede odstranění odstraňovaného prvku tak, že se všechny následující prvky při kopírování do nově alokovaného pole posunou o jednu pozici. Po odstranění posledního prvku bude dealokována paměť pro dynamické pole a struktura bude vynulována.</li>
+<li><code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code> - realizuje operaci nalezení pozice daného prvku v nesetříděném poli. Funkce postupně prochází všechny prvky pole a hledá výskyt prvku s požadovanou hodnotou. Nalezne-li tuto hodnotu, poskytne její pozici pomocí argumentu <code>aPosPtr</code> a vrátí jako návratovou hodnotu <code>0</code>. Nenalezne-li v poli prvek, vrátí <code>-1</code> nebo <code>+1</code> (dle výsledku posledního porovnání) a pomocí argumentu <code>aPosPtr</code> poskytne index v poli, kde bylo vyhledávání ukončeno. Pokud je množina prázdná vrací funkce hodnotu <code>-2</code> a pomocí argumentu <code>aPosPtr</code> poskytne hodnotu <code>0</code>.</li>
+</ul>
+</li>
+<li>Výsledky počtu porovnání této varianty implementace jsou dostupné v souboru: <a href="examples.html"><code>cv11_reports_TSet_unsorted_dynamic_array_set*.lst</code></a>.</li>
+</ul>
+<p>Projekt <code>TSet_sorted_dynamic_array</code> obsahuje soubor <code>TSetSortedFlexArray.h</code> s deklaraci typu <code>TSetSortedFlexArray</code> a deklarací hlaviček servisních funkcemi pro práci s tímto typem. Zdrojový soubor <code>TSetSortedFlexArray.c</code> obsahuje <b>nedokončenou</b> implementaci ADT Množina využívající pole se setříděnými prvky.</p>
+<ul>
+<li>Soubor <code>TSetSortedFlexArray.c</code> obsahuje tyto nedokončené funkce (pro modifikovatelnou / <em>mutable</em> množinu). <b>Pro porovnání prvků nezapomeňte používat předdefinovanou funkci <code><a class="el" href="group___t_set_element.html#gad8cfc9a36f36c44c10b660c5b370f67e" title="Porovnání dvou elementů">set_element_comparator()</a></code> ze souboru <code><a class="el" href="_t_set_element_8h.html" title="Definice typu Basic SetElement a implementace API.">TSetElement.h</a></code></b>. Všechny funkce realizujte tak, aby měly shodné vlastnosti jako stejné funkce v projektu: <code>TSet_unsorted_dynamic_array</code>:<ul>
+<li><code><a class="el" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024" title="Vložení elementu do flexibilního pole.">set_flex_array_insert()</a></code> - realizuje amortizované vložení prvku na správnou pozici v poli. V případě neúspěchu vrací návratovou hodnotu <code>false</code>. Pro nalezení pozice a zařazení využijte funkci: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code>.</li>
+<li><code><a class="el" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole.">set_flex_array_erase()</a></code> - realizuje amortizované odebrání prvku ze správného místa v poli. V případě neúspěchu vrací návratovou hodnotu <code>false</code>. Pro nalezení pozice odebíraného prvku využijte opětovně funkci: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code></li>
+<li><code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code> - realizuje nalezení pozice daného prvku v setříděném poli pro obě varianty vyhledávání: lineární s optimalizací <code>FLEX_ARRAY_SEARCH_VARIANT == LINEAR_SEARCH_OPTIMIZED</code> i binární <code>FLEX_ARRAY_SEARCH_VARIANT == BINARY_SEARCH</code>. Nalezne-li prvek s požadovanou hodnotou, předá jeho pozici v proměnné <code>*aPosPtr</code> a vrátí hodnotu <code>0</code>. Nenalezne-li v poli prvek s danou hodnotou, vrátí <code>-1</code> nebo <code>+1</code> (dle výsledku posledního porovnání) a pomocí argumentu <code>aPosPtr</code> poskytne index v poli, kde bylo vyhledávání ukončeno. Pokud je množina prázdná, vrací funkce hodnotu <code>-2</code> a pomocí argumentu <code>aPosPtr</code> poskytne hodnotu <code>0</code>.</li>
+</ul>
+</li>
+<li>Vzorové výsledky testování s požadovanými počty operací porovnání prvků jsou pro vaši kontrolu dostupné:<ul>
+<li>pro lineární vyhledávání s optimalizací v souboru: <a href="examples.html"><code>cv11_reports_TSet_sorted_dynamic_array_set*_linear_search_optimized.lst</code></a>,</li>
+<li>pro binární vyhledávání v souboru: <a href="examples.html"><code>cv11_reports_TSet_sorted_dynamic_array_set*_binary_search.lst</code></a>.</li>
+</ul>
+</li>
+</ul>
+<h2>Úkoly</h2>
+<ol type="1">
+<li>Prostudujte si oba dodané projekty a jejich zdrojové i ostatní soubory.</li>
+<li>Projekt <code>TSet_unsorted_dynamic_array</code> je plně funkční, využijte ho tedy k nastudování principu práce s dynamicky alokovaným flexibilním polem využívající amortizaci časové složitosti při vkládání a odebírání prvků množiny.</li>
+<li>Všimněte si, že nyní již množina na rozdíl od vektoru neumožnuje vnější přímou modifikaci vložených elementů, tzv. <a href="https://en.wikipedia.org/wiki/Opaque_pointer">PIMPL</a>. Není možný ani přímý přístup k prvkům vnitřního pole pomocí funkce, ani změna hodnoty elementu pomocí iterátoru. Zamyslete se nad nutnými důvody takového zapouzdření elementů množiny.</li>
+<li>Projekt obsahuje automaticky konfigurovatelné testy v souborech <a href="files.html"><code>testplan_set*.h</code></a>, prostudujte si výhody jeho využívání namísto ručně napsaného zdrojového textu ve funkci<code><a class="el" href="group___main_program.html#ga66149067fad48c8944eb15c52e63a990">testset2_hardcoded()</a></code>. Uvědomte si, proč je automatický tester realizovaný ve zdrojových souborech <code><a class="el" href="testbench_8c.html" title="Implementace testbench API pro testování operací zvoleného ADT.">testbench.c</a></code> a <code><a class="el" href="testbench_8h.html" title="Definice testbench API pro testování operací zvoleného ADT.">testbench.h</a></code> výhodnější a naučte se vytvářet vlastní testplán.</li>
+<li>Promyslete si jednotlivé implementace operací pro: vkládání, odebrání a vyhledávání elementů množiny pro projekt: <code>TSet_sorted_dynamic_array</code>.</li>
+<li>Ve funkci <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code> v projektu <code>TSet_sorted_dynamic_array</code> realizujte jednotlivé varianty vyhledávání prvku pomocí <b>lineárního</b> i <b>binárního vyhledávání</b>.</li>
+<li>Implementujte operace pro vkládání: <code><a class="el" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024" title="Vložení elementu do flexibilního pole.">set_flex_array_insert()</a></code>, odebrání: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole.">set_flex_array_erase()</a></code> prvků v projektu: <code>TSet_sorted_dynamic_array</code> tak, aby využívaly principu práce s flexibilním dynamicky alokovaným polem a využívající amortizaci časové složitosti při vkládání a odebírání prvků. Vnitřní proces vyhledání prvků realizujte výhradně pomocí servisní funkce: <code><a class="el" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě">set_flex_array_search()</a></code>.</li>
+<li>Realizované algoritmy otestujte na připravených souborech <a href="files.html"><code>testplan_set*.h</code></a> pomocí funkce <code><a class="el" href="group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a></code>. Srovnejte výsledné hodnoty z vašeho programu s hodnotami v souborech s výsledky: <a href="examples.html"><code>cv11_reports_*.lst</code></a>. Zároveň si prohlédněte zobrazené hodnoty z vašich metod a ujasněte si průběh procesu vyhledávání pro lineární a binární vyhledávání. <br  />
+ Pokuste se dosáhnout stejných výsledků pro počet porovnání i velikosti alokované paměti jako je uvedeno v přiložených souborech, aniž byste museli modifikovat obsah souboru: <code><a class="el" href="main_8c.html" title="Hlavní program pro testování ADT TSet.">main.c</a></code>.</li>
+</ol>
+<h2>Rozbor úlohy</h2>
+<p>Viz přednášky č.2 (Amortizace časové složitosti), č.5 (ADT Množina) a č.10 (Lineární a binární vyhledávání).</p>
+<hr  />
+<p> <code>$Id: <a class="el" href="cv11__zadani___t_set__dynamic__array_8md.html">cv11_zadani_TSet_dynamic_array.md</a> 2698 2024-04-12 14:20:47Z petyovsky $</code> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:26, pro projekt: BPC-ALD: ADT+ALG TSet Unsorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

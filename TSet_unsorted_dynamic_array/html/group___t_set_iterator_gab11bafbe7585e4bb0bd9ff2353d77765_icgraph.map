@@ -1,0 +1,12 @@
+<map id="set_iterator_begin" name="set_iterator_begin">
+<area shape="rect" id="Node000001" title="Vytvoření nového iterátoru ukazujícího na první element množiny." alt="" coords="405,31,531,56"/>
+<area shape="rect" id="Node000002" href="$testbench_8c.html#a068734a4e1d6209769e0c6b1675ca02b" title="Provedení jednoho test z testovacího plánu na předaném ADT." alt="" coords="288,5,357,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="391,33,357,27,358,21,392,27"/>
+<area shape="rect" id="Node000005" href="$group___main_program.html#ga66149067fad48c8944eb15c52e63a990" title=" " alt="" coords="104,56,240,81"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="392,52,241,66,240,60,392,47"/>
+<area shape="rect" id="Node000003" href="$testbench_8c.html#a2fa1559684d267665b1c2433208511d3" title="Provedení všech testů zadaného testovacího plánu na předaném ADT." alt="" coords="120,7,224,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,21,224,22,224,16,274,16"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,32,56,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,34,57,43,56,38,106,28"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="90,57,56,52,57,46,91,52"/>
+</map>

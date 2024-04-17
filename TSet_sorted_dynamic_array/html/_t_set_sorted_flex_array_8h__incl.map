@@ -1,0 +1,18 @@
+<map id="TSetSortedFlexArray.h" name="TSetSortedFlexArray.h">
+<area shape="rect" id="Node000001" title="Deklarace typu SetSortedFlexArray a jeho API pro realizaci množiny pomocí setříděného flexibilního dy..." alt="" coords="35,5,189,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,33,84,54,68,80,56,110,49,139,44,138,51,108,63,77,80,51,98,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="78,79,146,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,31,115,65,109,65,109,31"/>
+<area shape="rect" id="Node000004" href="$_t_set_element_8h.html" title="Definice typu Basic SetElement a implementace API." alt="" coords="170,79,278,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,28,195,69,192,73,129,33"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="196,107,86,149,84,144,194,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="105,152,167,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,106,163,145,159,141,208,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="191,152,255,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="226,104,226,139,220,138,221,104"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="279,152,348,177"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="240,102,290,141,286,145,237,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="373,152,441,177"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="254,102,365,144,363,149,252,107"/>
+</map>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Unsorted dynamic array: Zdrojový soubor TSetUnsortedFlexArray.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Unsorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_88baf08ec55b769c399d6f3ab9cdfef7.html">TSet_unsorted_dynamic_array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TSetUnsortedFlexArray.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_set_unsorted_flex_array_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TSET_UNSORTED_FLEX_ARRAY_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TSET_UNSORTED_FLEX_ARRAY_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_t_set_element_8h.html">TSetElement.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//typedef size_t TSetUnsortedFlexArrayPos;  ///&lt; Definice typu pro pozici v SetUnsortedFlexArray</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb">set_flex_array_search</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> *aFlexArray, <a class="code hl_typedef" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, <span class="keywordtype">size_t</span> *aPosPtr, <span class="keywordtype">size_t</span> aSize);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024">set_flex_array_insert</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> **aFlexArrayPtr, <a class="code hl_typedef" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, <span class="keywordtype">size_t</span> aSize);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef">set_flex_array_erase</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> **aFlexArrayPtr, <a class="code hl_typedef" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, <span class="keywordtype">size_t</span> aSize);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#gad077ee65d964556f86e5dfa4a680bd10">set_flex_array_destroy</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> *aFlexArray);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#ga24753753dacb74f17de6ba082505440c">set_flex_array_begin_pos</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> *aFlexArray);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#gad3346f67be35632c3b0fbd9ea616a0c1">set_flex_array_is_valid_pos</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> *aFlexArray, <span class="keywordtype">size_t</span> aPos, <span class="keywordtype">size_t</span> aSize);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">size_t</span> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#ga8bc0de187146b066ae844c2278b6e198">set_flex_array_next_pos</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> *aFlexArray, <span class="keywordtype">size_t</span> aPos);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><a class="code hl_typedef" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> <a class="code hl_function" href="group___t_set_unsorted_flex_array.html#ga9e462daa460e7e102258837658e80ceb">set_flex_array_value_at_pos</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a> *aFlexArray, <span class="keywordtype">size_t</span> aPos);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">/* TSET_UNSORTED_FLEX_ARRAY_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_t_set_element_8h_html"><div class="ttname"><a href="_t_set_element_8h.html">TSetElement.h</a></div><div class="ttdoc">Definice typu Basic SetElement a implementace API.</div></div>
+<div class="ttc" id="agroup___t_set_element_html_ga434f133e40212ffe694f4afae9ffd8e8"><div class="ttname"><a href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></div><div class="ttdeci">int TSetElement</div><div class="ttdoc">Definice typu SetElement.</div><div class="ttdef"><b>Definition</b> TSetElement.h:23</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_ga24753753dacb74f17de6ba082505440c"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#ga24753753dacb74f17de6ba082505440c">set_flex_array_begin_pos</a></div><div class="ttdeci">size_t set_flex_array_begin_pos(const struct TSetUnsortedFlexArray *aFlexArray)</div><div class="ttdoc">Výpočet první platné pozice ve flexibilním poli.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:129</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_ga5d5631db0bf286d944f4e538a072c2eb"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb">set_flex_array_search</a></div><div class="ttdeci">int set_flex_array_search(const struct TSetUnsortedFlexArray *aFlexArray, TSetElement aValue, size_t *aPosPtr, size_t aSize)</div><div class="ttdoc">Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:22</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_ga85a89d1ea648e9219f9c904727c8f7ef"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef">set_flex_array_erase</a></div><div class="ttdeci">bool set_flex_array_erase(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetElement aValue, size_t aSize)</div><div class="ttdoc">Odstranění elementu z flexibilního pole.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:74</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_ga8bc0de187146b066ae844c2278b6e198"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#ga8bc0de187146b066ae844c2278b6e198">set_flex_array_next_pos</a></div><div class="ttdeci">size_t set_flex_array_next_pos(const struct TSetUnsortedFlexArray *aFlexArray, size_t aPos)</div><div class="ttdoc">Výpočet následující platné pozice ve flexibilním poli.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:142</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_ga9e462daa460e7e102258837658e80ceb"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#ga9e462daa460e7e102258837658e80ceb">set_flex_array_value_at_pos</a></div><div class="ttdeci">TSetElement set_flex_array_value_at_pos(const struct TSetUnsortedFlexArray *aFlexArray, size_t aPos)</div><div class="ttdoc">Přečtení hodnoty elementu z flexibilního pole.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:147</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_gad077ee65d964556f86e5dfa4a680bd10"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#gad077ee65d964556f86e5dfa4a680bd10">set_flex_array_destroy</a></div><div class="ttdeci">void set_flex_array_destroy(struct TSetUnsortedFlexArray *aFlexArray)</div><div class="ttdoc">Deinicializace flexibilního pole.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:124</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_gad3346f67be35632c3b0fbd9ea616a0c1"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#gad3346f67be35632c3b0fbd9ea616a0c1">set_flex_array_is_valid_pos</a></div><div class="ttdeci">bool set_flex_array_is_valid_pos(const struct TSetUnsortedFlexArray *aFlexArray, size_t aPos, size_t aSize)</div><div class="ttdoc">Zjištění platnosti pozice ve flexibilním poli.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:134</div></div>
+<div class="ttc" id="agroup___t_set_unsorted_flex_array_html_gadd504f9127a4e850da202073bddd6024"><div class="ttname"><a href="group___t_set_unsorted_flex_array.html#gadd504f9127a4e850da202073bddd6024">set_flex_array_insert</a></div><div class="ttdeci">bool set_flex_array_insert(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetElement aValue, size_t aSize)</div><div class="ttdoc">Vložení elementu do flexibilního pole.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:40</div></div>
+<div class="ttc" id="astruct_t_set_unsorted_flex_array_html"><div class="ttname"><a href="struct_t_set_unsorted_flex_array.html">TSetUnsortedFlexArray</a></div><div class="ttdoc">Úplná definice privátního typu SetUnsortedFlexArray.</div><div class="ttdef"><b>Definition</b> TSetUnsortedFlexArray.c:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:26, pro projekt: BPC-ALD: ADT+ALG TSet Unsorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

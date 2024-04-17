@@ -1,0 +1,9 @@
+<map id="TTestPlan" name="TTestPlan">
+<area shape="rect" id="Node000001" title="Typ TestPlan slouží k uchování položek definující jeden test testovacího plánu." alt="" coords="203,164,381,320"/>
+<area shape="rect" id="Node000002" href="$struct_t_test_operation.html" title="Typ TestOperation slouží k uchování názvu a adresy funkce reprezentující testovanou operaci." alt="" coords="5,5,176,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,100,199,151,195,155,140,104"/>
+<area shape="rect" id="Node000003" href="$struct_t_test_inputs.html" title="Typ TestInputs slouží k uchování pole se vstupními hodnotami pro jednotlivé testovací operace." alt="" coords="200,5,384,101"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,102,295,147,289,147,289,102"/>
+<area shape="rect" id="Node000004" href="$struct_t_test_output.html" title="Typ TestOutput slouží k uchování pole s očekávanými výstupními hodnotami z jednotlivých testovacích o..." alt="" coords="409,5,597,101"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="451,104,393,155,390,151,448,100"/>
+</map>

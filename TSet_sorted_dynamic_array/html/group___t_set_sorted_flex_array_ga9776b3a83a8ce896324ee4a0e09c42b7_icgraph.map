@@ -1,0 +1,10 @@
+<map id="set_flex_array_destroy" name="set_flex_array_destroy">
+<area shape="rect" id="Node000001" title="Deinicializace flexibilního pole." alt="" coords="427,5,580,31"/>
+<area shape="rect" id="Node000002" href="$group___t_set.html#ga8094d1ab68434b8413cd905895ff37ae" title="Deinicializace množiny." alt="" coords="288,5,379,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,21,379,21,379,15,413,15"/>
+<area shape="rect" id="Node000003" href="$group___main_program.html#ga0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,21,56,21,56,15,274,15"/>
+<area shape="rect" id="Node000004" href="$group___main_program.html#ga66149067fad48c8944eb15c52e63a990" title=" " alt="" coords="104,31,240,56"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="275,30,241,35,240,30,274,25"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="90,31,56,25,57,20,91,26"/>
+</map>

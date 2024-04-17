@@ -1,0 +1,13 @@
+<map id="TSetElement.h" name="TSetElement.h">
+<area shape="rect" id="Node000001" title="Definice typu Basic SetElement a implementace API." alt="" coords="162,5,270,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,67,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,33,79,76,77,71,186,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="91,79,155,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,33,150,72,147,68,199,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,79,253,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,31,219,65,213,65,213,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="277,79,347,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,29,287,68,284,72,230,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="371,79,439,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="247,28,362,71,361,76,245,33"/>
+</map>

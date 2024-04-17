@@ -1,0 +1,48 @@
+{
+TEST_MESSAGE("Test, zda je mnozina prazdna")
+TEST_OPERATION(set_is_empty)
+TEST_INPUTS(0)
+TEST_OUTPUT(1)
+},
+
+{
+TEST_MESSAGE("Vlozeni elementu: 222")
+TEST_OPERATION(set_insert)
+TEST_INPUTS(222)
+TEST_OUTPUT(  1)
+TEST_PRINT_MEMORY_STATS
+TEST_REPORT_AFTER
+},
+
+{
+TEST_MESSAGE("Test, zda jiz mnozina neni prazdna")
+TEST_OPERATION(set_is_empty)
+TEST_INPUTS(0)
+TEST_OUTPUT(0)
+},
+
+{
+TEST_MESSAGE("Vlozeni elementu: 42, 43, 40, 41, 333")
+TEST_OPERATION(set_insert)
+TEST_INPUTS(42, 43, 40, 41, 333)
+TEST_OUTPUT( 1,  1,  1,  1,   1)
+TEST_REPORT_AFTER
+TEST_PRINT_MEMORY_STATS
+},
+
+{
+TEST_MESSAGE("Odebrani elementu: 222, 40")
+TEST_OPERATION(set_erase)
+TEST_INPUTS(222, 40)
+TEST_OUTPUT(  1,  1)
+TEST_REPORT_BEFORE
+TEST_REPORT_AFTER
+TEST_PRINT_MEMORY_STATS
+},
+
+{
+TEST_MESSAGE("Test pritomnosti elementu: 42")
+TEST_OPERATION(set_is_element_of)
+TEST_INPUTS(42)
+TEST_OUTPUT( 1)
+},

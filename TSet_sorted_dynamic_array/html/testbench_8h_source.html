@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Sorted dynamic array: Zdrojový soubor testbench.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Sorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5bb799c31cec034837638a18019d3743.html">TSet_sorted_dynamic_array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">testbench.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="testbench_8h.html">Zobrazit dokumentaci tohoto souboru.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TESTBENCH_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TESTBENCH_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_t_set_8h.html">TSet.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="testbench_8h.html#accf4534b1bf059addc5e6ae7418c692c">   13</a></span><span class="preprocessor">#define TEST_MAXITEMS 30                        </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="testbench_8h.html#aba3705351f8497e1cda7e4d029fe3401">   15</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_set.html#struct_t_set">TSet</a>         <a class="code hl_struct" href="group___t_set.html#struct_t_set">TTestedADT</a>;         </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="testbench_8h.html#a18dee9afa3e7b6360eed13cc674c2527">   16</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="group___t_set_iterator.html#struct_t_set_iterator">TSetIterator</a> <a class="code hl_struct" href="group___t_set_iterator.html#struct_t_set_iterator">TTestedADTIterator</a>; </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="testbench_8h.html#a4bd9c8ad123fed2e96d21b840b188c8d">   18</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a>         <a class="code hl_typedef" href="testbench_8h.html#a4bd9c8ad123fed2e96d21b840b188c8d">TTestFuncInput</a>;     </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="testbench_8h.html#a73dc565e34cc647b349cca996e41e01f">   19</a></span><span class="keyword">typedef</span> <span class="keywordtype">bool</span>                <a class="code hl_typedef" href="testbench_8h.html#a73dc565e34cc647b349cca996e41e01f">TTestFuncOutput</a>;    </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="testbench_8h.html#a901f1e8de180ec8451fc27e5563bb9f3">   20</a></span><span class="preprocessor">#define TTEST_FUNC_OUTPUT_FRMSTR &quot;%u&quot;           </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="testbench_8h.html#ae557ed6fb1e8f5160ac6eb7105fd5d6a">   23</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="testbench_8h.html#a73dc565e34cc647b349cca996e41e01f">TTestFuncOutput</a> <a class="code hl_typedef" href="testbench_8h.html#ae557ed6fb1e8f5160ac6eb7105fd5d6a">TTestFunc</a>(<a class="code hl_struct" href="group___t_set.html#struct_t_set">TTestedADT</a>*, <a class="code hl_typedef" href="testbench_8h.html#a4bd9c8ad123fed2e96d21b840b188c8d">TTestFuncInput</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_t_test_operation.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_operation.html">TTestOperation</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_t_test_operation.html#abb132f90716b1a77602b8d0a22d969e8">   28</a></span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="struct_t_test_operation.html#abb132f90716b1a77602b8d0a22d969e8">iFuncStr</a>;                   </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_t_test_operation.html#a9c6e51a1b7ba181516a19ad975047b07">   29</a></span>        <a class="code hl_typedef" href="testbench_8h.html#ae557ed6fb1e8f5160ac6eb7105fd5d6a">TTestFunc</a> *<a class="code hl_variable" href="struct_t_test_operation.html#a9c6e51a1b7ba181516a19ad975047b07">iFunc</a>;                       </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        };</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_t_test_inputs.html">   33</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_inputs.html">TTestInputs</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_t_test_inputs.html#a27ffb91c868c8e4ecd0f87d21dada53f">   35</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct_t_test_inputs.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;                           </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_t_test_inputs.html#adb3eaaa67a6cebfeeddcba543b7ee5a4">   36</a></span>        <a class="code hl_typedef" href="testbench_8h.html#a4bd9c8ad123fed2e96d21b840b188c8d">TTestFuncInput</a> <a class="code hl_variable" href="struct_t_test_inputs.html#adb3eaaa67a6cebfeeddcba543b7ee5a4">iValues</a>[<a class="code hl_define" href="testbench_8h.html#accf4534b1bf059addc5e6ae7418c692c">TEST_MAXITEMS</a>];  </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        };</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_t_test_output.html">   40</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_output.html">TTestOutput</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_t_test_output.html#a27ffb91c868c8e4ecd0f87d21dada53f">   42</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct_t_test_output.html#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a>;                           </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_t_test_output.html#a84e8835c7fdf731148d8f03f23972705">   43</a></span>        <a class="code hl_typedef" href="testbench_8h.html#a73dc565e34cc647b349cca996e41e01f">TTestFuncOutput</a> <a class="code hl_variable" href="struct_t_test_output.html#a84e8835c7fdf731148d8f03f23972705">iValue</a>[<a class="code hl_define" href="testbench_8h.html#accf4534b1bf059addc5e6ae7418c692c">TEST_MAXITEMS</a>];  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        };</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html">   47</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_plan.html">TTestPlan</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#a942358e130fb62d855cad627416beb31">   49</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_operation.html">TTestOperation</a> <a class="code hl_variable" href="struct_t_test_plan.html#a942358e130fb62d855cad627416beb31">iOperation</a>;           </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#a554f15f9f307310f5ea8374e5469d712">   50</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_inputs.html">TTestInputs</a> <a class="code hl_variable" href="struct_t_test_plan.html#a554f15f9f307310f5ea8374e5469d712">iInputs</a>;                 </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#a93172477ccd7b0a672bf6f9d0a17d2b4">   51</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_t_test_output.html">TTestOutput</a> <a class="code hl_variable" href="struct_t_test_plan.html#a93172477ccd7b0a672bf6f9d0a17d2b4">iOutput</a>;                 </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#a4983de1ebeb956d52cc163dbd9bd9865">   52</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="struct_t_test_plan.html#a4983de1ebeb956d52cc163dbd9bd9865">iMessage</a>;                       </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#abb360e2c09784aded68d68accb424b41">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_t_test_plan.html#abb360e2c09784aded68d68accb424b41">iListOperations</a>;                       </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#adadee0508d9302493d7a2bb530a75b11">   54</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_t_test_plan.html#adadee0508d9302493d7a2bb530a75b11">iReportBefore</a>;                         </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#aa5421f4d747a8e77d7c6889033bf2563">   55</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_t_test_plan.html#aa5421f4d747a8e77d7c6889033bf2563">iReportAfter</a>;                          </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_t_test_plan.html#a0d53c881ecb479b83c980caa7f277a40">   56</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_t_test_plan.html#a0d53c881ecb479b83c980caa7f277a40">iMemoryStats</a>;                          </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    };</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifndef ITEMS_OF</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="testbench_8h.html#abd542f9343eb78fd5fd265b73cfe099a">   60</a></span><span class="preprocessor"> #define ITEMS_OF(aArray) (sizeof(aArray) / sizeof((aArray)[0]))    </span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="testbench_8h.html#a4ffb2e083905a25b72969bf2cc4e3410">   63</a></span><span class="preprocessor">#define TEST_BRACED_INIT_LIST(...) {__VA_ARGS__}                    </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="testbench_8h.html#a253a1ba10f0f43a8056de05301b0d58a">   67</a></span><span class="preprocessor">#define TEST_OPERATION(aFunc)   .iOperation = { .iFuncStr = #aFunc, .iFunc = (TTestFunc*)(aFunc) },</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="testbench_8h.html#aaf4e3ae116a1710fd77f504741121743">   72</a></span><span class="preprocessor">#define TEST_INPUTS(...)        .iInputs = { .iSize = ITEMS_OF((const TTestFuncInput[]) TEST_BRACED_INIT_LIST(__VA_ARGS__)), .iValues = TEST_BRACED_INIT_LIST(__VA_ARGS__) },</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="testbench_8h.html#ab5a72ddfe5394a1ddaf6401471114dce">   77</a></span><span class="preprocessor">#define TEST_OUTPUT(...)        .iOutput = { .iSize = ITEMS_OF((const TTestFuncOutput[]) TEST_BRACED_INIT_LIST(__VA_ARGS__)), .iValue = TEST_BRACED_INIT_LIST(__VA_ARGS__) },</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="testbench_8h.html#a378efd72e9a3518d5dfc998c50c16576">   81</a></span><span class="preprocessor">#define TEST_MESSAGE(aStr)      .iMessage = (aStr),</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="testbench_8h.html#a4f7d47577a84263aef98f9fd337b926f">   84</a></span><span class="preprocessor">#define TEST_LIST_OPERATIONS    .iListOperations = true,</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="testbench_8h.html#a29d09e804e31c9448dfcacbc89a5d7c0">   87</a></span><span class="preprocessor">#define TEST_REPORT_BEFORE      .iReportBefore = true,</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="testbench_8h.html#ac942ec8c2784e63a3a142f0b19625456">   90</a></span><span class="preprocessor">#define TEST_REPORT_AFTER       .iReportAfter = true,</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="testbench_8h.html#a11cf6e9b6570ed5dccf1db63d327554e">   93</a></span><span class="preprocessor">#define TEST_PRINT_MEMORY_STATS .iMemoryStats = true,</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keywordtype">void</span> <a class="code hl_function" href="testbench_8h.html#ae7a610c069c6000940838c6a1e11bb42">print_value_by_iterator</a>(<span class="keyword">const</span> <a class="code hl_struct" href="group___t_set_iterator.html#struct_t_set_iterator">TTestedADTIterator</a> *aIter);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">bool</span> <a class="code hl_function" href="testbench_8h.html#a2fa1559684d267665b1c2433208511d3">testbench_run</a>(<a class="code hl_struct" href="group___t_set.html#struct_t_set">TTestedADT</a> *aADT, <span class="keywordtype">size_t</span> aTestPlanSize, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_t_test_plan.html">TTestPlan</a> aTestPlan[<span class="comment">/*aTestPlanSize*/</span>]);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif </span><span class="comment">/* TESTBENCH_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_t_set_8h_html"><div class="ttname"><a href="_t_set_8h.html">TSet.h</a></div><div class="ttdoc">Definice typu Set - (realizace množiny pomocí setříděného flexibilního dynamicky alokovaného pole)</div></div>
+<div class="ttc" id="agroup___t_set_element_html_ga434f133e40212ffe694f4afae9ffd8e8"><div class="ttname"><a href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></div><div class="ttdeci">int TSetElement</div><div class="ttdoc">Definice typu SetElement.</div><div class="ttdef"><b>Definition</b> TSetElement.h:23</div></div>
+<div class="ttc" id="agroup___t_set_html_struct_t_set"><div class="ttname"><a href="group___t_set.html#struct_t_set">TSet</a></div><div class="ttdoc">Definice typu Set.</div><div class="ttdef"><b>Definition</b> TSet.h:24</div></div>
+<div class="ttc" id="agroup___t_set_iterator_html_struct_t_set_iterator"><div class="ttname"><a href="group___t_set_iterator.html#struct_t_set_iterator">TSetIterator</a></div><div class="ttdoc">Definice typu SetIterator.</div><div class="ttdef"><b>Definition</b> TSet.h:100</div></div>
+<div class="ttc" id="astruct_t_test_inputs_html"><div class="ttname"><a href="struct_t_test_inputs.html">TTestInputs</a></div><div class="ttdoc">Typ TestInputs slouží k uchování pole se vstupními hodnotami pro jednotlivé testovací operace.</div><div class="ttdef"><b>Definition</b> testbench.h:34</div></div>
+<div class="ttc" id="astruct_t_test_inputs_html_a27ffb91c868c8e4ecd0f87d21dada53f"><div class="ttname"><a href="struct_t_test_inputs.html#a27ffb91c868c8e4ecd0f87d21dada53f">TTestInputs::iSize</a></div><div class="ttdeci">size_t iSize</div><div class="ttdoc">Počet hodnot v poli vstupních hodnot.</div><div class="ttdef"><b>Definition</b> testbench.h:35</div></div>
+<div class="ttc" id="astruct_t_test_inputs_html_adb3eaaa67a6cebfeeddcba543b7ee5a4"><div class="ttname"><a href="struct_t_test_inputs.html#adb3eaaa67a6cebfeeddcba543b7ee5a4">TTestInputs::iValues</a></div><div class="ttdeci">TTestFuncInput iValues[TEST_MAXITEMS]</div><div class="ttdoc">Pole vstupních hodnot pro jednotlivé testovací operace.</div><div class="ttdef"><b>Definition</b> testbench.h:36</div></div>
+<div class="ttc" id="astruct_t_test_operation_html"><div class="ttname"><a href="struct_t_test_operation.html">TTestOperation</a></div><div class="ttdoc">Typ TestOperation slouží k uchování názvu a adresy funkce reprezentující testovanou operaci.</div><div class="ttdef"><b>Definition</b> testbench.h:27</div></div>
+<div class="ttc" id="astruct_t_test_operation_html_a9c6e51a1b7ba181516a19ad975047b07"><div class="ttname"><a href="struct_t_test_operation.html#a9c6e51a1b7ba181516a19ad975047b07">TTestOperation::iFunc</a></div><div class="ttdeci">TTestFunc * iFunc</div><div class="ttdoc">Ukazatel na asociovanou funkci reprezentující testovanou operaci.</div><div class="ttdef"><b>Definition</b> testbench.h:29</div></div>
+<div class="ttc" id="astruct_t_test_operation_html_abb132f90716b1a77602b8d0a22d969e8"><div class="ttname"><a href="struct_t_test_operation.html#abb132f90716b1a77602b8d0a22d969e8">TTestOperation::iFuncStr</a></div><div class="ttdeci">const char * iFuncStr</div><div class="ttdoc">Ukazatel na řetězec představující název testované operace.</div><div class="ttdef"><b>Definition</b> testbench.h:28</div></div>
+<div class="ttc" id="astruct_t_test_output_html"><div class="ttname"><a href="struct_t_test_output.html">TTestOutput</a></div><div class="ttdoc">Typ TestOutput slouží k uchování pole s očekávanými výstupními hodnotami z jednotlivých testovacích o...</div><div class="ttdef"><b>Definition</b> testbench.h:41</div></div>
+<div class="ttc" id="astruct_t_test_output_html_a27ffb91c868c8e4ecd0f87d21dada53f"><div class="ttname"><a href="struct_t_test_output.html#a27ffb91c868c8e4ecd0f87d21dada53f">TTestOutput::iSize</a></div><div class="ttdeci">size_t iSize</div><div class="ttdoc">Počet hodnot v poli výstupních hodnot.</div><div class="ttdef"><b>Definition</b> testbench.h:42</div></div>
+<div class="ttc" id="astruct_t_test_output_html_a84e8835c7fdf731148d8f03f23972705"><div class="ttname"><a href="struct_t_test_output.html#a84e8835c7fdf731148d8f03f23972705">TTestOutput::iValue</a></div><div class="ttdeci">TTestFuncOutput iValue[TEST_MAXITEMS]</div><div class="ttdoc">Pole s očekávanými výstupními hodnotami z jednotlivých testovacích operací</div><div class="ttdef"><b>Definition</b> testbench.h:43</div></div>
+<div class="ttc" id="astruct_t_test_plan_html"><div class="ttname"><a href="struct_t_test_plan.html">TTestPlan</a></div><div class="ttdoc">Typ TestPlan slouží k uchování položek definující jeden test testovacího plánu.</div><div class="ttdef"><b>Definition</b> testbench.h:48</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_a0d53c881ecb479b83c980caa7f277a40"><div class="ttname"><a href="struct_t_test_plan.html#a0d53c881ecb479b83c980caa7f277a40">TTestPlan::iMemoryStats</a></div><div class="ttdeci">bool iMemoryStats</div><div class="ttdoc">Příznak pro vypis statistik alokované paměti.</div><div class="ttdef"><b>Definition</b> testbench.h:56</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_a4983de1ebeb956d52cc163dbd9bd9865"><div class="ttname"><a href="struct_t_test_plan.html#a4983de1ebeb956d52cc163dbd9bd9865">TTestPlan::iMessage</a></div><div class="ttdeci">const char * iMessage</div><div class="ttdoc">Ukazatel na řetězec zprávy zobrazující se před začátkem testu případně může být i NULL</div><div class="ttdef"><b>Definition</b> testbench.h:52</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_a554f15f9f307310f5ea8374e5469d712"><div class="ttname"><a href="struct_t_test_plan.html#a554f15f9f307310f5ea8374e5469d712">TTestPlan::iInputs</a></div><div class="ttdeci">struct TTestInputs iInputs</div><div class="ttdoc">Položky se vstupními hodnotami pro jednotlivé testovací operace.</div><div class="ttdef"><b>Definition</b> testbench.h:50</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_a93172477ccd7b0a672bf6f9d0a17d2b4"><div class="ttname"><a href="struct_t_test_plan.html#a93172477ccd7b0a672bf6f9d0a17d2b4">TTestPlan::iOutput</a></div><div class="ttdeci">struct TTestOutput iOutput</div><div class="ttdoc">Položky s očekávanými výstupními hodnotami z jednotlivých testovacích operací</div><div class="ttdef"><b>Definition</b> testbench.h:51</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_a942358e130fb62d855cad627416beb31"><div class="ttname"><a href="struct_t_test_plan.html#a942358e130fb62d855cad627416beb31">TTestPlan::iOperation</a></div><div class="ttdeci">struct TTestOperation iOperation</div><div class="ttdoc">Testovaná operace.</div><div class="ttdef"><b>Definition</b> testbench.h:49</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_aa5421f4d747a8e77d7c6889033bf2563"><div class="ttname"><a href="struct_t_test_plan.html#aa5421f4d747a8e77d7c6889033bf2563">TTestPlan::iReportAfter</a></div><div class="ttdeci">bool iReportAfter</div><div class="ttdoc">Příznak pro vypis obsahu testovaného ADT po provedení testu.</div><div class="ttdef"><b>Definition</b> testbench.h:55</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_abb360e2c09784aded68d68accb424b41"><div class="ttname"><a href="struct_t_test_plan.html#abb360e2c09784aded68d68accb424b41">TTestPlan::iListOperations</a></div><div class="ttdeci">bool iListOperations</div><div class="ttdoc">Příznak pro zobrazení kontrolního výpisu plánovaných operací před začátkem testu.</div><div class="ttdef"><b>Definition</b> testbench.h:53</div></div>
+<div class="ttc" id="astruct_t_test_plan_html_adadee0508d9302493d7a2bb530a75b11"><div class="ttname"><a href="struct_t_test_plan.html#adadee0508d9302493d7a2bb530a75b11">TTestPlan::iReportBefore</a></div><div class="ttdeci">bool iReportBefore</div><div class="ttdoc">Příznak pro vypis obsahu testovaného ADT před začátkem testu.</div><div class="ttdef"><b>Definition</b> testbench.h:54</div></div>
+<div class="ttc" id="atestbench_8h_html_a2fa1559684d267665b1c2433208511d3"><div class="ttname"><a href="testbench_8h.html#a2fa1559684d267665b1c2433208511d3">testbench_run</a></div><div class="ttdeci">bool testbench_run(TTestedADT *aADT, size_t aTestPlanSize, const struct TTestPlan aTestPlan[])</div><div class="ttdoc">Provedení všech testů zadaného testovacího plánu na předaném ADT.</div><div class="ttdef"><b>Definition</b> testbench.c:134</div></div>
+<div class="ttc" id="atestbench_8h_html_a4bd9c8ad123fed2e96d21b840b188c8d"><div class="ttname"><a href="testbench_8h.html#a4bd9c8ad123fed2e96d21b840b188c8d">TTestFuncInput</a></div><div class="ttdeci">TSetElement TTestFuncInput</div><div class="ttdoc">Definice typu pro vstupní hodnoty operací testovaného ADT.</div><div class="ttdef"><b>Definition</b> testbench.h:18</div></div>
+<div class="ttc" id="atestbench_8h_html_a73dc565e34cc647b349cca996e41e01f"><div class="ttname"><a href="testbench_8h.html#a73dc565e34cc647b349cca996e41e01f">TTestFuncOutput</a></div><div class="ttdeci">bool TTestFuncOutput</div><div class="ttdoc">Definice typu pro výstupní hodnoty z operací testovaného ADT.</div><div class="ttdef"><b>Definition</b> testbench.h:19</div></div>
+<div class="ttc" id="atestbench_8h_html_accf4534b1bf059addc5e6ae7418c692c"><div class="ttname"><a href="testbench_8h.html#accf4534b1bf059addc5e6ae7418c692c">TEST_MAXITEMS</a></div><div class="ttdeci">#define TEST_MAXITEMS</div><div class="ttdoc">Definuje maximální počet vstupních hodnot pro zadanou operací v jednom testu.</div><div class="ttdef"><b>Definition</b> testbench.h:13</div></div>
+<div class="ttc" id="atestbench_8h_html_ae557ed6fb1e8f5160ac6eb7105fd5d6a"><div class="ttname"><a href="testbench_8h.html#ae557ed6fb1e8f5160ac6eb7105fd5d6a">TTestFunc</a></div><div class="ttdeci">TTestFuncOutput TTestFunc(TTestedADT *, TTestFuncInput)</div><div class="ttdoc">Definice typu TTestFunc reprezentující požadovaný prototyp pro testovanou funkci.</div><div class="ttdef"><b>Definition</b> testbench.h:23</div></div>
+<div class="ttc" id="atestbench_8h_html_ae7a610c069c6000940838c6a1e11bb42"><div class="ttname"><a href="testbench_8h.html#ae7a610c069c6000940838c6a1e11bb42">print_value_by_iterator</a></div><div class="ttdeci">void print_value_by_iterator(const TTestedADTIterator *aIter)</div><div class="ttdoc">Vytisknutí hodnoty v ADT pomocí iterátoru.</div><div class="ttdef"><b>Definition</b> testbench.c:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:47, pro projekt: BPC-ALD: ADT+ALG TSet Sorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

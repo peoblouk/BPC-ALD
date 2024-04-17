@@ -1,0 +1,132 @@
+Testbench registered new testplan...
+Testbench checking testplan with 6 test(s)...
+Testbench accepted entire testplan...
+
+Testbench processing Test#0 of 6...
+----- Test, zda je mnozina prazdna -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  TSetElement comparisons: 0, (dif: +0)
+
+
+Testbench processing Test#1 of 6...
+----- Vlozeni elementu: 222 -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  Dynamic memory statistics:
+	Allocations:   1, (dif: +1)
+	Reallocations: 0, (dif: +0)
+	Deallocations: 0, (dif: +0)
+
+	Now allocated:       16 b, (dif: +16 b)
+	Totally allocated:   16 b, (dif: +16 b)
+	Totally deallocated: 0 b, (dif: +0 b)
+
+  TSetElement comparisons: 0, (dif: +0)
+
+  Report of state after test:
+	222 
+
+
+Testbench processing Test#2 of 6...
+----- Test, zda jiz mnozina neni prazdna -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  TSetElement comparisons: 0, (dif: +0)
+
+
+Testbench processing Test#3 of 6...
+----- Vlozeni elementu: 42, 43, 40, 41, 333 -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  Dynamic memory statistics:
+	Allocations:   3, (dif: +2)
+	Reallocations: 0, (dif: +0)
+	Deallocations: 2, (dif: +2)
+
+	Now allocated:       40 b, (dif: +24 b)
+	Totally allocated:   80 b, (dif: +64 b)
+	Totally deallocated: 40 b, (dif: +40 b)
+
+  TSetElement comparisons: 11, (dif: +11)
+
+  Report of state after test:
+	40 41 42 43 222 333 
+
+
+Testbench processing Test#4 of 6...
+----- Odebrani elementu: 222, 40 -----
+
+  Report of state before test:
+	40 41 42 43 222 333 
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  Dynamic memory statistics:
+	Allocations:   3, (dif: +0)
+	Reallocations: 0, (dif: +0)
+	Deallocations: 2, (dif: +0)
+
+	Now allocated:       40 b, (dif: +0 b)
+	Totally allocated:   80 b, (dif: +0 b)
+	Totally deallocated: 40 b, (dif: +0 b)
+
+  TSetElement comparisons: 17, (dif: +6)
+
+  Report of state after test:
+	41 42 43 333 
+
+
+Testbench processing Test#5 of 6...
+----- Test pritomnosti elementu: 42 -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  TSetElement comparisons: 19, (dif: +2)
+
+Testbench successfully finished entire testplan...
+
+set1 is empty: true
+set1 is empty: false
+222 
+40 41 42 43 222 333 
+41 42 43 333 
+set1 find 42: true
+
+TSetElement comparisons: 19
+
+
+CHECKER: KONTROLNI VYPIS 
+===============================================================================
+VYPIS ALOKOVANE PAMETI
+Celkovy pocet alokaci pameti v programu: 	6
+Celkovy pocet uspesnych uvolneni pameti v programu: 	6
+Spickove mnozstvi alokovane pameti pri behu programu:  64  bytu.
+Alokovano celkem  160  bytu, uvolneno  160  bytu.
+
+Vsechna dynamicka pamet programu byla bez chyby uvolnena. :-)
+
+
+Zadne soubory nebyly v programu zpracovavany.

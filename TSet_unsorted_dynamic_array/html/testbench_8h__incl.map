@@ -1,0 +1,26 @@
+<map id="testbench.h" name="testbench.h">
+<area shape="rect" id="Node000001" title="Definice testbench API pro testování operací zvoleného ADT." alt="" coords="5,5,96,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="13,299,88,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,31,53,285,48,285,48,31"/>
+<area shape="rect" id="Node000003" href="$_t_set_8h.html" title="Definice typu Set &#45; (realizace množiny pomocí nesetříděného flexibilního dynamicky alokovaného pole)" alt="" coords="71,79,131,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="61,29,87,66,83,69,57,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="101,105,59,286,54,284,96,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,225,157,251"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="106,104,122,211,116,212,100,105"/>
+<area shape="rect" id="Node000005" href="$_t_set_unsorted_flex_array_8h.html" title="Deklarace typu SetUnsortedFlexArray a jeho API pro realizaci množiny pomocí nesetříděného flexibilníh..." alt="" coords="139,152,307,177"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="122,102,193,143,190,147,119,106"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="379,299,447,324"/>
+<area shape="poly" id="edge14_Node000003_Node000010" title=" " alt="" coords="132,91,172,96,221,106,273,123,320,150,352,181,377,217,395,254,408,285,403,287,391,256,372,220,348,184,317,154,271,128,220,111,171,101,131,97"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="220,179,201,214,170,253,135,278,98,296,96,291,132,273,166,249,196,211,215,177"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="208,180,152,219,149,215,205,175"/>
+<area shape="rect" id="Node000006" href="$_t_set_element_8h.html" title="Definice typu Basic SetElement a implementace API." alt="" coords="233,225,341,251"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="235,176,269,213,265,217,231,179"/>
+<area shape="poly" id="edge11_Node000006_Node000002" title=" " alt="" coords="250,253,102,297,100,292,248,248"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="112,299,173,324"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="265,253,180,295,177,290,262,248"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="197,299,261,324"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="279,253,249,290,245,286,275,249"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="285,299,355,324"/>
+<area shape="poly" id="edge12_Node000006_Node000009" title=" " alt="" coords="295,250,311,285,306,287,290,252"/>
+<area shape="poly" id="edge13_Node000006_Node000010" title=" " alt="" coords="308,248,382,289,379,294,306,253"/>
+</map>

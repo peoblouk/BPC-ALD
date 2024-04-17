@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Unsorted dynamic array: Dokumentace souboru TSetElement.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Unsorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_88baf08ec55b769c399d6f3ab9cdfef7.html">TSet_unsorted_dynamic_array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definice maker</a> &#124;
+<a href="#typedef-members">Definice typů</a> &#124;
+<a href="#func-members">Funkce</a> &#124;
+<a href="#var-members">Proměnné</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru TSetElement.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice typu Basic SetElement a implementace API.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;check.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro TSetElement.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_set_element_8h__incl.svg" width="446" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Následující graf ukazuje, které soubory přímo nebo nepřímo vkládají tento soubor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_set_element_8h__dep__incl.svg" width="382" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="_t_set_element_8h_source.html">Zobrazit zdrojový text tohoto souboru.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definice maker</h2></td></tr>
+<tr class="memitem:gaeb70ffbb31848c3aa616111a877c844b" id="r_gaeb70ffbb31848c3aa616111a877c844b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#gaeb70ffbb31848c3aa616111a877c844b">TSET_ELEMENT_FRMSTR</a>&#160;&#160;&#160;&quot;%d&quot;</td></tr>
+<tr class="memdesc:gaeb70ffbb31848c3aa616111a877c844b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice formátovacího řetězce pro souborové operace s typem SetElement.  <br /></td></tr>
+<tr class="separator:gaeb70ffbb31848c3aa616111a877c844b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definice typů</h2></td></tr>
+<tr class="memitem:ga434f133e40212ffe694f4afae9ffd8e8" id="r_ga434f133e40212ffe694f4afae9ffd8e8"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td></tr>
+<tr class="memdesc:ga434f133e40212ffe694f4afae9ffd8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu SetElement.  <br /></td></tr>
+<tr class="separator:ga434f133e40212ffe694f4afae9ffd8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:gad8cfc9a36f36c44c10b660c5b370f67e" id="r_gad8cfc9a36f36c44c10b660c5b370f67e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#gad8cfc9a36f36c44c10b660c5b370f67e">set_element_comparator</a> (const <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> *aLeft, const <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> *aRight)</td></tr>
+<tr class="memdesc:gad8cfc9a36f36c44c10b660c5b370f67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porovnání dvou elementů  <br /></td></tr>
+<tr class="separator:gad8cfc9a36f36c44c10b660c5b370f67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88c6fb8e0ee5fd4fc3afce3c0e0e60fb" id="r_ga88c6fb8e0ee5fd4fc3afce3c0e0e60fb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#ga88c6fb8e0ee5fd4fc3afce3c0e0e60fb">set_element_load_file</a> (<a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> *aElement, FILE *aInputFile)</td></tr>
+<tr class="memdesc:ga88c6fb8e0ee5fd4fc3afce3c0e0e60fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Načtení elementu ze souboru.  <br /></td></tr>
+<tr class="separator:ga88c6fb8e0ee5fd4fc3afce3c0e0e60fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3473fca967dede884b1c910838f2d8df" id="r_ga3473fca967dede884b1c910838f2d8df"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#ga3473fca967dede884b1c910838f2d8df">set_element_store_file</a> (<a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aElement, FILE *aOutputFile)</td></tr>
+<tr class="memdesc:ga3473fca967dede884b1c910838f2d8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uložení elementu do souboru.  <br /></td></tr>
+<tr class="separator:ga3473fca967dede884b1c910838f2d8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga587d625e10996c7d790e7667c94b5dce" id="r_ga587d625e10996c7d790e7667c94b5dce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#ga587d625e10996c7d790e7667c94b5dce">set_element_random_value</a> (void)</td></tr>
+<tr class="memdesc:ga587d625e10996c7d790e7667c94b5dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vrací nový element s náhodnou hodnotou.  <br /></td></tr>
+<tr class="separator:ga587d625e10996c7d790e7667c94b5dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Proměnné</h2></td></tr>
+<tr class="memitem:ga6189780a863947b14a76d225bd81c99c" id="r_ga6189780a863947b14a76d225bd81c99c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_element.html#ga6189780a863947b14a76d225bd81c99c">gSetElementComparisons</a></td></tr>
+<tr class="memdesc:ga6189780a863947b14a76d225bd81c99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deklarace globální proměnné realizující počítadlo operací porovnání dvou hodnot typu SetElement.  <br /></td></tr>
+<tr class="separator:ga6189780a863947b14a76d225bd81c99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Definice typu Basic SetElement a implementace API. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="_t_set_element_8h.html" title="Definice typu Basic SetElement a implementace API.">TSetElement.h</a> 2699 2024-04-12 14:56:53Z petyovsky </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:26, pro projekt: BPC-ALD: ADT+ALG TSet Unsorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

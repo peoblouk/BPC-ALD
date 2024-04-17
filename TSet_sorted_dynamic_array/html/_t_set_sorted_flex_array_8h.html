@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Sorted dynamic array: Dokumentace souboru TSetSortedFlexArray.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Sorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5bb799c31cec034837638a18019d3743.html">TSet_sorted_dynamic_array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru TSetSortedFlexArray.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Deklarace typu SetSortedFlexArray a jeho API pro realizaci množiny pomocí setříděného flexibilního dynamicky alokovaného pole.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_t_set_element_8h_source.html">TSetElement.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro TSetSortedFlexArray.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_set_sorted_flex_array_8h__incl.svg" width="447" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Následující graf ukazuje, které soubory přímo nebo nepřímo vkládají tento soubor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_t_set_sorted_flex_array_8h__dep__incl.svg" width="319" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="_t_set_sorted_flex_array_8h_source.html">Zobrazit zdrojový text tohoto souboru.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga4462d6617422f696dd090a9cc3916282" id="r_ga4462d6617422f696dd090a9cc3916282"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#ga4462d6617422f696dd090a9cc3916282">set_flex_array_search</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, size_t *aPosPtr, size_t aSize)</td></tr>
+<tr class="memdesc:ga4462d6617422f696dd090a9cc3916282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě  <br /></td></tr>
+<tr class="separator:ga4462d6617422f696dd090a9cc3916282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf760b563964085504a0ae13ea660555f" id="r_gaf760b563964085504a0ae13ea660555f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#gaf760b563964085504a0ae13ea660555f">set_flex_array_insert</a> (struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> **aFlexArrayPtr, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, size_t aSize)</td></tr>
+<tr class="memdesc:gaf760b563964085504a0ae13ea660555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vložení elementu do flexibilního pole.  <br /></td></tr>
+<tr class="separator:gaf760b563964085504a0ae13ea660555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dc8c6ebd89da19ecfe8e32f60da22a7" id="r_ga0dc8c6ebd89da19ecfe8e32f60da22a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#ga0dc8c6ebd89da19ecfe8e32f60da22a7">set_flex_array_erase</a> (struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> **aFlexArrayPtr, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, size_t aSize)</td></tr>
+<tr class="memdesc:ga0dc8c6ebd89da19ecfe8e32f60da22a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odstranění elementu z flexibilního pole.  <br /></td></tr>
+<tr class="separator:ga0dc8c6ebd89da19ecfe8e32f60da22a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9776b3a83a8ce896324ee4a0e09c42b7" id="r_ga9776b3a83a8ce896324ee4a0e09c42b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#ga9776b3a83a8ce896324ee4a0e09c42b7">set_flex_array_destroy</a> (struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray)</td></tr>
+<tr class="memdesc:ga9776b3a83a8ce896324ee4a0e09c42b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace flexibilního pole.  <br /></td></tr>
+<tr class="separator:ga9776b3a83a8ce896324ee4a0e09c42b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga726e09b6191b6da4bc6d062c48209821" id="r_ga726e09b6191b6da4bc6d062c48209821"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#ga726e09b6191b6da4bc6d062c48209821">set_flex_array_begin_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray)</td></tr>
+<tr class="memdesc:ga726e09b6191b6da4bc6d062c48209821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výpočet první platné pozice ve flexibilním poli.  <br /></td></tr>
+<tr class="separator:ga726e09b6191b6da4bc6d062c48209821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc6cb5e01b187a635190372a370bca56" id="r_gacc6cb5e01b187a635190372a370bca56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#gacc6cb5e01b187a635190372a370bca56">set_flex_array_is_valid_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, size_t aPos, size_t aSize)</td></tr>
+<tr class="memdesc:gacc6cb5e01b187a635190372a370bca56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti pozice ve flexibilním poli.  <br /></td></tr>
+<tr class="separator:gacc6cb5e01b187a635190372a370bca56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa441922af31d7ed0f08ddc506dc3ab23" id="r_gaa441922af31d7ed0f08ddc506dc3ab23"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#gaa441922af31d7ed0f08ddc506dc3ab23">set_flex_array_next_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, size_t aPos)</td></tr>
+<tr class="memdesc:gaa441922af31d7ed0f08ddc506dc3ab23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výpočet následující platné pozice ve flexibilním poli.  <br /></td></tr>
+<tr class="separator:gaa441922af31d7ed0f08ddc506dc3ab23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadebcebb81b900d52284e74a28cb6396" id="r_gaadebcebb81b900d52284e74a28cb6396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html#gaadebcebb81b900d52284e74a28cb6396">set_flex_array_value_at_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, size_t aPos)</td></tr>
+<tr class="memdesc:gaadebcebb81b900d52284e74a28cb6396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z flexibilního pole.  <br /></td></tr>
+<tr class="separator:gaadebcebb81b900d52284e74a28cb6396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Deklarace typu SetSortedFlexArray a jeho API pro realizaci množiny pomocí setříděného flexibilního dynamicky alokovaného pole. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="_t_set_sorted_flex_array_8h.html" title="Deklarace typu SetSortedFlexArray a jeho API pro realizaci množiny pomocí setříděného flexibilního dy...">TSetSortedFlexArray.h</a> 2709 2024-04-12 16:51:23Z petyovsky </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:48, pro projekt: BPC-ALD: ADT+ALG TSet Sorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

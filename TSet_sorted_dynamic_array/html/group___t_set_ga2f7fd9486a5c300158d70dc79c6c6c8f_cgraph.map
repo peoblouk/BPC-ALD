@@ -1,0 +1,5 @@
+<map id="set_is_empty" name="set_is_empty">
+<area shape="rect" id="Node000001" title="Zjištění, zda je množina prázdná" alt="" coords="5,5,105,31"/>
+<area shape="rect" id="Node000002" href="$group___t_set.html#ga213cfb714cece49d955fc452b2aeb186" title="Přečtení počtu elementů množiny." alt="" coords="153,5,224,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,15,140,15,140,21,106,21"/>
+</map>

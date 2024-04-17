@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Sorted dynamic array: Vysvětlivky ke grafu</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Sorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Vysvětlivky ke grafu</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Zde naleznete vysvětlení, jak mají být interpretovány grafy, které byly vygenerovány programem doxygen.</p>
+<p>Uvažujte následující příklad: </p><div class="fragment"><div class="line"><span class="comment">/*! Neviditelná třída, která se v grafu nezobrazuje, protože došlo k ořezání grafu. */</span></div>
+<div class="line"><span class="keyword">class </span>Invisible { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Třída, u které došlo k ořezání grafu. Vztah dědičnosti je skryt. */</span></div>
+<div class="line"><span class="keyword">class </span>Truncated : <span class="keyword">public</span> Invisible { };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* Třída, která není dokumentována komentáři programu doxygen. */</span></div>
+<div class="line"><span class="keyword">class </span>Undocumented { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Bázová třída děděná veřejně (public inheritance). */</span></div>
+<div class="line"><span class="keyword">class </span>PublicBase : <span class="keyword">public</span> Truncated { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Šablona třídy. */</span></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span>Templ { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Bázová třída, použitá pro chráněné dědění (protected inheritance). */</span></div>
+<div class="line"><span class="keyword">class </span>ProtectedBase { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Bázová třída, využitá pro privátní dědění (private inheritance). */</span></div>
+<div class="line"><span class="keyword">class </span>PrivateBase { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Třída, která je využívána třídou Inherited. */</span></div>
+<div class="line"><span class="keyword">class </span>Used { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Odvozená třída, která dědí z více tříd. */</span></div>
+<div class="line"><span class="keyword">class </span>Inherited : <span class="keyword">public</span> PublicBase,</div>
+<div class="line">                  <span class="keyword">protected</span> ProtectedBase,</div>
+<div class="line">                  <span class="keyword">private</span> PrivateBase,</div>
+<div class="line">                  <span class="keyword">public</span> Undocumented,</div>
+<div class="line">                  <span class="keyword">public</span> Templ&lt;int&gt;</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">private</span>:</div>
+<div class="line">    Used *m_usedClass;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p> K výše uvedenému bude vygenerován následující graf:</p>
+<center><iframe scrolling="no" frameborder="0" src="graph_legend.svg" width="676" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></center><p>Bloky (tj. uzly) v uvedeném grafu mají následující význam: </p>
+<ul>
+<li>
+Šedě vyplněný obdélník reprezentuje strukturu nebo třídu, pro kterou byl graf vygenerován. </li>
+<li>
+Obdélník s černým obrysem označuje dokumentovanou strukturu nebo třídu. </li>
+<li>
+Obdélník s šedým obrysem označuje nedokumentovanou strukturu nebo třídu. </li>
+<li>
+Obdélník s červeným obrysem označuje dokumentovanou strukturu nebo třídu, pro kterou nejsou zobrazeny všechny vztahy dědičnosti nebo obsažení. Graf je ořezán v případě, kdy jej není možné umístit do vymezeného prostoru. </li>
+</ul>
+<p>Šipky (tj. hrany grafu) mají následující význam: </p>
+<ul>
+<li>
+Modrá šipka se používá pro označení vztahu veřejné dědičnosti (public) mezi dvěma třídami. </li>
+<li>
+Tmavě zelená šipka označuje vztah chráněné dědičnosti (protected). </li>
+<li>
+Tmavě červená šipka označuje vztah privátní dědičnosti (private). </li>
+<li>
+Purpurová šipka kreslená čárkovaně se používá v případě, kdy je třída obsažena v jiné třídě, nebo kdy je používána jinou třídou. Šipka je označena identifikátorem jedné nebo více proměnných, přes které je třída nebo struktura zpřístupněna. </li>
+<li>
+Žlutá šipka kreslená čárkovaně vyjadřuje vztah mezi instancí šablony a šablonou třídy, na základě které byla instance šablony vytvořena. V popisu šipky jsou uvedeny příslušné parametry šablony. </li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:48, pro projekt: BPC-ALD: ADT+ALG TSet Sorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

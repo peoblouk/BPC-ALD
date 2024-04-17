@@ -1,0 +1,11 @@
+<map id="set_erase" name="set_erase">
+<area shape="rect" id="Node000001" title="Odstranění elementu z množiny." alt="" coords="5,31,84,56"/>
+<area shape="rect" id="Node000002" href="$group___t_set_unsorted_flex_array.html#ga85a89d1ea648e9219f9c904727c8f7ef" title="Odstranění elementu z flexibilního pole." alt="" coords="132,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,35,118,29,119,34,85,40"/>
+<area shape="rect" id="Node000005" href="$group___t_set.html#ga213cfb714cece49d955fc452b2aeb186" title="Přečtení počtu elementů množiny." alt="" coords="168,55,239,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="85,47,155,57,154,63,84,52"/>
+<area shape="rect" id="Node000003" href="$group___t_set_unsorted_flex_array.html#ga5d5631db0bf286d944f4e538a072c2eb" title="Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě" alt="" coords="323,5,472,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,15,309,15,309,21,275,21"/>
+<area shape="rect" id="Node000004" href="$group___t_set_element.html#gad8cfc9a36f36c44c10b660c5b370f67e" title="Porovnání dvou elementů" alt="" coords="520,5,685,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="472,15,506,15,506,21,472,21"/>
+</map>

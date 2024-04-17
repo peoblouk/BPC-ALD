@@ -1,0 +1,7 @@
+<map id="TSetIterator" name="TSetIterator">
+<area shape="rect" id="Node000001" title="Definice typu SetIterator." alt="" coords="38,303,150,379"/>
+<area shape="rect" id="Node000002" href="$group___t_set.html#struct_t_set" title="Definice typu Set." alt="" coords="36,164,152,240"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,240,97,286,91,286,91,240"/>
+<area shape="rect" id="Node000003" href="$struct_t_set_unsorted_flex_array.html" title="Úplná definice privátního typu SetUnsortedFlexArray." alt="" coords="5,5,183,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,102,97,148,91,148,91,102"/>
+</map>
