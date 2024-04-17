@@ -190,6 +190,7 @@ bool queue_push_front(struct TQueue* aQueue, TQueueElement aValue)
 ## TSet (množina)
 
 UNSORTED
+- unsorted znamená, že přidávám na konec pole tedy na pozici aSize - 1
 ```
 struct TSet
 	{
