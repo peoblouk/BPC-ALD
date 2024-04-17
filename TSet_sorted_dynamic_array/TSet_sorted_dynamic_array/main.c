@@ -17,7 +17,7 @@
 const struct TTestPlan testplan[] =
 	{
 	//#include "testplan_set1.h"
-	#include "testplan_set2.h"
+	#include "testplan_set2.h" // Includuji soubor s vlastním test plánem
 	//#include "testplan_set3.h"
 	};
 

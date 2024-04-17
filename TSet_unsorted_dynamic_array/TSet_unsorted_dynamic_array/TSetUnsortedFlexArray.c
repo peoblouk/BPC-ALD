@@ -15,7 +15,7 @@
  */
 struct TSetUnsortedFlexArray
 	{
-	size_t iCapacity;			///< Skutečně naalokovaná kapacita prvků vnitřního dynamického pole
+	size_t iCapacity;			///< Skutečně naalokovaná kapacita prvků vnitřního dynamického pole  
 	TSetElement iElement[];		///< Flexibilní (otevřené) pole hodnot typu SetElement (nedostupné mimo funkce ze souboru TSetUnsortedFlexArray.c)
 	};
 
@@ -24,17 +24,17 @@ int set_flex_array_search(const struct TSetUnsortedFlexArray *aFlexArray, TSetEl
 	assert(aPosPtr);
 
 	size_t pos = 0;
-	int cmp = -2;
+	int cmp = -2;	
 
-	if(aSize)
+	if(aSize) // jestliže ten kompárátor nehodí 0 tak dorazíme na konec pole a 
 		{
 		assert(aFlexArray);
-		for(size_t i = 0; (cmp != 0) && (i < aSize); pos = i++)
-			cmp = set_element_comparator(&aValue, &aFlexArray->iElement[i]);
+		for(size_t i = 0; (cmp != 0) && (i < aSize); pos = i++) // Nejprve se dá hodnota pos, pak se až ikrementuje (TEDY JEDNÁ O INDEX PŘÍMO HLEDÁNÉHO PRVKU)
+			cmp = set_element_comparator(&aValue, &aFlexArray->iElement[i]); 
 		}
 
-	*aPosPtr = pos;
-	return cmp;
+	*aPosPtr = pos; // Nastavíme hodnotu pos na hodnotu 
+	return cmp; // Pokud cmp = 0 tak byl prvek nalezen , jesltiže se jedná o jinou hodnotu, tak prvek nebyl nalezen
 	}
 
 bool set_flex_array_insert(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetElement aValue, size_t aSize)
@@ -43,14 +43,14 @@ bool set_flex_array_insert(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetEle
 	struct TSetUnsortedFlexArray *act_array = *aFlexArrayPtr;
 
 	size_t pos = 0;
-	if(set_flex_array_search(act_array, aValue, &pos, aSize) == 0)
+	if(set_flex_array_search(act_array, aValue, &pos, aSize) == 0) // Prvek už je v poli
 		return false;
 
-	if( (!aSize) || (aSize >= act_array->iCapacity) )
+	if( (!aSize) || (aSize >= act_array->iCapacity) ) // Zjistím zda mám alokované pole? (!aSize) , nemám plnou kapacitu? (aSize >= act_array->iCapacity)
 		{
 		const size_t new_capacity = (aSize) ? (2 * act_array->iCapacity) : (2);
 		struct TSetUnsortedFlexArray *new_array =
-			malloc(offsetof(struct TSetUnsortedFlexArray, iElement) + new_capacity * sizeof(TSetElement));
+			malloc(offsetof(struct TSetUnsortedFlexArray, iElement) + new_capacity * sizeof(TSetElement)); // setofset je offset složky iElement <->
 		//	malloc(sizeof(struct TSetUnsortedFlexArray) + new_capacity * sizeof(TSetElement));
 		//	https://gustedt.wordpress.com/2011/03/14/flexible-array-member/
 		//	https://en.cppreference.com/w/c/types/offsetof
@@ -58,16 +58,16 @@ bool set_flex_array_insert(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetEle
 		if(!new_array)
 			return false;
 
-		new_array->iCapacity = new_capacity;
-		for(size_t i = 0; i < aSize; ++i)
+		new_array->iCapacity = new_capacity; 
+		for(size_t i = 0; i < aSize; ++i) // Kopírujeme prvky do nově alokovaného pole
 			new_array->iElement[i] = act_array->iElement[i];
 
 		*aFlexArrayPtr = new_array;
-		free(act_array);
+		free(act_array); // Uvolníme tu starou strukturu
 		act_array = new_array;
 		}
 
-	act_array->iElement[aSize] = aValue;
+	act_array->iElement[aSize] = aValue; // Zápis nového prvku do nového pole
 	return true;
 	}
 
@@ -90,7 +90,7 @@ bool set_flex_array_erase(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetElem
 		return true;
 		}
 
-	if(act_array->iCapacity / aSize > 4)
+	if(act_array->iCapacity / aSize > 4) // Velikost je menší jak  1 / 4 pole, tak dealokuji
 		{
 		size_t new_capacity = act_array->iCapacity / 2;
 		struct TSetUnsortedFlexArray *new_array =
@@ -102,7 +102,7 @@ bool set_flex_array_erase(struct TSetUnsortedFlexArray **aFlexArrayPtr, TSetElem
 		if(!new_array)
 			return false;
 
-		new_array->iCapacity = new_capacity;
+		new_array->iCapacity = new_capacity; // Kopírování první části, až po pozici, kde se nachází ten odstraňovaný prvek
 		for(size_t i = 0; i < pos; ++i)
 			new_array->iElement[i] = act_array->iElement[i];
 

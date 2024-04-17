@@ -22,7 +22,7 @@
  */
 struct TSet
 	{
-	size_t iSize;								///< Počet elementů množiny
+	size_t iSize;								///< Počet elementů množiny (skutečný počet prvků v množině)
 	struct TSetUnsortedFlexArray *iFlexArray;	///< PIMPL ukazatel na hodnoty typu SetUnsortedFlexArray (Pointer to private IMPLementation)
 	};
 
