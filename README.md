@@ -217,6 +217,7 @@ struct TSetUnsortedFlexArray
 
 
 SORTED
+- optimalizace nastavá, že je pokud najdu prvek se třízené oblasti větší jak hledaný, tak nemusím dál projíždět pole
 ```
 
 ```
