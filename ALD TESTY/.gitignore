@@ -1,12 +1,14 @@
 # ignore ALL .log files
 *.log
 .vs
-.html
+*.html
 .svg
 .png
 .js
 .map
-.css
+*.css
+.lst
+.md
 
 #*.vcxproj.user
 #*.vcxproj.filters
@@ -14,3 +16,5 @@
 # *.sln
 # ignore ALL files in ANY directory named temp
 temp/
+doc/
+html/
