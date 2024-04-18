@@ -1,0 +1,16 @@
+<map id="TSetSortedFlexArray.h" name="TSetSortedFlexArray.h">
+<area shape="rect" id="Node000001" title="Deklarace typu SetSortedFlexArray a jeho API pro realizaci množiny pomocí setříděného flexibilního dy..." alt="" coords="91,5,246,31"/>
+<area shape="rect" id="Node000002" href="$_t_set_8h.html" title="Definice typu Set &#45; (realizace množiny pomocí setříděného flexibilního dynamicky alokovaného pole)" alt="" coords="73,79,133,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,43,116,80,112,77,147,39"/>
+<area shape="rect" id="Node000007" href="$_t_set_sorted_flex_array_8c.html" title="Implementace API pro typ SetSortedFlexArray (Flexibilní, tzv. otevřené, pole pro realizaci množiny po..." alt="" coords="158,79,313,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="191,39,226,77,223,80,187,43"/>
+<area shape="rect" id="Node000003" href="$_t_set_8c.html" title="Implementace API pro typ Set (realizace množiny pomocí setříděného flexibilního dynamicky alokovaného..." alt="" coords="5,152,65,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,116,48,154,44,150,81,112"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title="Hlavní program pro testování ADT TSet." alt="" coords="73,225,134,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="106,118,106,225,101,225,101,118"/>
+<area shape="rect" id="Node000005" href="$testbench_8h.html" title="Definice testbench API pro testování operací zvoleného ADT." alt="" coords="141,152,231,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="129,111,174,150,171,154,125,115"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="164,188,119,227,115,223,161,184"/>
+<area shape="rect" id="Node000006" href="$testbench_8c.html" title="Implementace testbench API pro testování operací zvoleného ADT." alt="" coords="158,225,249,251"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="195,190,203,225,198,226,189,191"/>
+</map>

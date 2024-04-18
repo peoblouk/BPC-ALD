@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Sorted dynamic array: 2.1. SetSortedFlexArray</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Sorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2.1. SetSortedFlexArray<div class="ingroups"><a class="el" href="group___t_set.html">2. Set</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Deklarace typu SetSortedFlexArray a jeho funkcí (pro realizaci množiny pomocí setříděného flexibilního dynamicky alokovaného pole)  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 2.1. SetSortedFlexArray:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array.svg" width="279" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga4462d6617422f696dd090a9cc3916282" id="r_ga4462d6617422f696dd090a9cc3916282"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4462d6617422f696dd090a9cc3916282">set_flex_array_search</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, size_t *aPosPtr, size_t aSize)</td></tr>
+<tr class="memdesc:ga4462d6617422f696dd090a9cc3916282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě  <br /></td></tr>
+<tr class="separator:ga4462d6617422f696dd090a9cc3916282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf760b563964085504a0ae13ea660555f" id="r_gaf760b563964085504a0ae13ea660555f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf760b563964085504a0ae13ea660555f">set_flex_array_insert</a> (struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> **aFlexArrayPtr, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, size_t aSize)</td></tr>
+<tr class="memdesc:gaf760b563964085504a0ae13ea660555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vložení elementu do flexibilního pole.  <br /></td></tr>
+<tr class="separator:gaf760b563964085504a0ae13ea660555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dc8c6ebd89da19ecfe8e32f60da22a7" id="r_ga0dc8c6ebd89da19ecfe8e32f60da22a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0dc8c6ebd89da19ecfe8e32f60da22a7">set_flex_array_erase</a> (struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> **aFlexArrayPtr, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue, size_t aSize)</td></tr>
+<tr class="memdesc:ga0dc8c6ebd89da19ecfe8e32f60da22a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odstranění elementu z flexibilního pole.  <br /></td></tr>
+<tr class="separator:ga0dc8c6ebd89da19ecfe8e32f60da22a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9776b3a83a8ce896324ee4a0e09c42b7" id="r_ga9776b3a83a8ce896324ee4a0e09c42b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9776b3a83a8ce896324ee4a0e09c42b7">set_flex_array_destroy</a> (struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray)</td></tr>
+<tr class="memdesc:ga9776b3a83a8ce896324ee4a0e09c42b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace flexibilního pole.  <br /></td></tr>
+<tr class="separator:ga9776b3a83a8ce896324ee4a0e09c42b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga726e09b6191b6da4bc6d062c48209821" id="r_ga726e09b6191b6da4bc6d062c48209821"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga726e09b6191b6da4bc6d062c48209821">set_flex_array_begin_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray)</td></tr>
+<tr class="memdesc:ga726e09b6191b6da4bc6d062c48209821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výpočet první platné pozice ve flexibilním poli.  <br /></td></tr>
+<tr class="separator:ga726e09b6191b6da4bc6d062c48209821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc6cb5e01b187a635190372a370bca56" id="r_gacc6cb5e01b187a635190372a370bca56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc6cb5e01b187a635190372a370bca56">set_flex_array_is_valid_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, size_t aPos, size_t aSize)</td></tr>
+<tr class="memdesc:gacc6cb5e01b187a635190372a370bca56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění platnosti pozice ve flexibilním poli.  <br /></td></tr>
+<tr class="separator:gacc6cb5e01b187a635190372a370bca56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa441922af31d7ed0f08ddc506dc3ab23" id="r_gaa441922af31d7ed0f08ddc506dc3ab23"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa441922af31d7ed0f08ddc506dc3ab23">set_flex_array_next_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, size_t aPos)</td></tr>
+<tr class="memdesc:gaa441922af31d7ed0f08ddc506dc3ab23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Výpočet následující platné pozice ve flexibilním poli.  <br /></td></tr>
+<tr class="separator:gaa441922af31d7ed0f08ddc506dc3ab23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadebcebb81b900d52284e74a28cb6396" id="r_gaadebcebb81b900d52284e74a28cb6396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaadebcebb81b900d52284e74a28cb6396">set_flex_array_value_at_pos</a> (const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *aFlexArray, size_t aPos)</td></tr>
+<tr class="memdesc:gaadebcebb81b900d52284e74a28cb6396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení hodnoty elementu z flexibilního pole.  <br /></td></tr>
+<tr class="separator:gaadebcebb81b900d52284e74a28cb6396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Deklarace typu SetSortedFlexArray a jeho funkcí (pro realizaci množiny pomocí setříděného flexibilního dynamicky alokovaného pole) </p>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga4462d6617422f696dd090a9cc3916282" name="ga4462d6617422f696dd090a9cc3916282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4462d6617422f696dd090a9cc3916282">&#9670;&#160;</a></span>set_flex_array_search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int set_flex_array_search </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *</td>          <td class="paramname"><span class="paramname"><em>aFlexArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>aPosPtr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkce zjišťující, zda flexibilní pole obsahuje element o zadané hodnotě </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu reprezentující test, zda flexibilní pole obsahuje zadanou hodnotu elementu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFlexArray</td><td>Ukazatel na existující flexibilní pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu hledaná v poli </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aPosPtr</td><td>Ukazatel na proměnnou určenou pro uložení pozice na hledaný element v poli (hodnota pozice je do paměti zapsána vždy tj. bez ohledu na výsledek hledání) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSize</td><td>Aktuální počet elementů ve flexibilním poli </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Vracené hodnoty</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-2</td><td>Pokud má pole nulovou délku, (<code>*aPosPtr</code> = 0) </td></tr>
+    <tr><td class="paramname">-1</td><td>Pokud element nebyl v poli nalezen a hledaná hodnota elementu je menší, než hodnota na pozici <code>*aPosPtr</code> </td></tr>
+    <tr><td class="paramname">0</td><td>Pokud element byl v poli nalezen a hledaná hodnota elementu je na pozici <code>*aPosPtr</code> </td></tr>
+    <tr><td class="paramname">+1</td><td>Pokud element nebyl v poli nalezen a hledaná hodnota elementu je větší, než hodnota na pozici <code>*aPosPtr</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Poznámka</dt><dd>Pokud element s danou hodnotou nebyl nalezen, obsahuje <code>*aPosPtr</code> poslední platnou pozici, kde bylo hledání ukončeno. </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost obou ukazatelů <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_ga4462d6617422f696dd090a9cc3916282_cgraph.svg" width="374" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_ga4462d6617422f696dd090a9cc3916282_icgraph.svg" width="808" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaf760b563964085504a0ae13ea660555f" name="gaf760b563964085504a0ae13ea660555f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf760b563964085504a0ae13ea660555f">&#9670;&#160;</a></span>set_flex_array_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_flex_array_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> **</td>          <td class="paramname"><span class="paramname"><em>aFlexArrayPtr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vložení elementu do flexibilního pole. </p>
+<p>Vkládá unikátní hodnotu elementu na konec flexibilního pole. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aFlexArrayPtr</td><td>Ukazatel na místo v paměti, kde je ukazatel na flexibilní pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu vkládaná do flexibilního pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSize</td><td>Aktuální počet elementů ve flexibilním poli </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud hodnota elementu nebyla v původním poli nalezena a pokud byla tato hodnota do pole následně úspěšně vložena </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_gaf760b563964085504a0ae13ea660555f_cgraph.svg" width="564" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_gaf760b563964085504a0ae13ea660555f_icgraph.svg" width="563" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga0dc8c6ebd89da19ecfe8e32f60da22a7" name="ga0dc8c6ebd89da19ecfe8e32f60da22a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0dc8c6ebd89da19ecfe8e32f60da22a7">&#9670;&#160;</a></span>set_flex_array_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_flex_array_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> **</td>          <td class="paramname"><span class="paramname"><em>aFlexArrayPtr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odstranění elementu z flexibilního pole. </p>
+<p>Odstraní hodnotu elementu z flexibilního pole. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aFlexArrayPtr</td><td>Ukazatel na místo v paměti, kde je ukazatel na flexibilní pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu odebíraného z flexibilního pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSize</td><td>Aktuální počet elementů ve flexibilním poli </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud hodnota elementu byla v původním poli nalezena a pokud byla tato hodnota z pole následně úspěšně odstraněna </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a parametru <code>aSize</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_ga0dc8c6ebd89da19ecfe8e32f60da22a7_cgraph.svg" width="564" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_ga0dc8c6ebd89da19ecfe8e32f60da22a7_icgraph.svg" width="563" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga9776b3a83a8ce896324ee4a0e09c42b7" name="ga9776b3a83a8ce896324ee4a0e09c42b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9776b3a83a8ce896324ee4a0e09c42b7">&#9670;&#160;</a></span>set_flex_array_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_flex_array_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *</td>          <td class="paramname"><span class="paramname"><em>aFlexArray</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinicializace flexibilního pole. </p>
+<p>Deinicializace a odalokace paměti flexibilního pole. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aFlexArray</td><td>Ukazatel na flexibilní pole </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_ga9776b3a83a8ce896324ee4a0e09c42b7_icgraph.svg" width="586" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga726e09b6191b6da4bc6d062c48209821" name="ga726e09b6191b6da4bc6d062c48209821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga726e09b6191b6da4bc6d062c48209821">&#9670;&#160;</a></span>set_flex_array_begin_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t set_flex_array_begin_pos </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *</td>          <td class="paramname"><span class="paramname"><em>aFlexArray</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Výpočet první platné pozice ve flexibilním poli. </p>
+<p>Funkce vrací první pozici prvního platného elementu ve flexibilním poli. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFlexArray</td><td>Ukazatel na existující flexibilní pole </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Pozice (index) prvního platného elementu ve flexibilním poli </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_ga726e09b6191b6da4bc6d062c48209821_icgraph.svg" width="754" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gacc6cb5e01b187a635190372a370bca56" name="gacc6cb5e01b187a635190372a370bca56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc6cb5e01b187a635190372a370bca56">&#9670;&#160;</a></span>set_flex_array_is_valid_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_flex_array_is_valid_pos </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *</td>          <td class="paramname"><span class="paramname"><em>aFlexArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zjištění platnosti pozice ve flexibilním poli. </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu definující platnost zadaného indexu do flexibilního pole. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFlexArray</td><td>Ukazatel na existující flexibilní pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) elementu ve flexibilním poli </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSize</td><td>Aktuální počet elementů ve flexibilním poli </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je pozice platným indexem do flexibilního pole </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_gacc6cb5e01b187a635190372a370bca56_icgraph.svg" width="1194" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaa441922af31d7ed0f08ddc506dc3ab23" name="gaa441922af31d7ed0f08ddc506dc3ab23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa441922af31d7ed0f08ddc506dc3ab23">&#9670;&#160;</a></span>set_flex_array_next_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t set_flex_array_next_pos </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *</td>          <td class="paramname"><span class="paramname"><em>aFlexArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Výpočet následující platné pozice ve flexibilním poli. </p>
+<p>Výpočet pozice následujícího platného elementu ve flexibilním poli. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFlexArray</td><td>Ukazatel na existující flexibilní pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) aktuálního elementu ve flexibilním poli </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Pozice (index) následujícího platného elementu ve flexibilním poli </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_gaa441922af31d7ed0f08ddc506dc3ab23_icgraph.svg" width="947" height="236"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaadebcebb81b900d52284e74a28cb6396" name="gaadebcebb81b900d52284e74a28cb6396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadebcebb81b900d52284e74a28cb6396">&#9670;&#160;</a></span>set_flex_array_value_at_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> set_flex_array_value_at_pos </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *</td>          <td class="paramname"><span class="paramname"><em>aFlexArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přečtení hodnoty elementu z flexibilního pole. </p>
+<p>Přečte hodnotu elementu ze zadané pozice ve flexibilním poli. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aFlexArray</td><td>Ukazatel na flexibilní pole </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPos</td><td>Pozice (index) elementu ve flexibilním poli </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Hodnota elementu flexibilního pole na dané pozici. </dd></dl>
+<dl class="section attention"><dt>Upozornění</dt><dd>Funkce ověřuje platnost ukazatele a parametru <code>aSize</code> <b>pouze</b> při překladu v režimu <code>Debug</code>, kdy pomocí <code>assert</code> hlásí běhovou chybu! </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_sorted_flex_array_gaadebcebb81b900d52284e74a28cb6396_icgraph.svg" width="954" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:48, pro projekt: BPC-ALD: ADT+ALG TSet Sorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

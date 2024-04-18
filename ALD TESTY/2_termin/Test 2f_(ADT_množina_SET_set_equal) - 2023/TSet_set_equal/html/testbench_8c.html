@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Sorted dynamic array: Dokumentace souboru testbench.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Sorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5bb799c31cec034837638a18019d3743.html">TSet_sorted_dynamic_array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentace souboru testbench.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementace testbench API pro testování operací zvoleného ADT.  
+<a href="#details">...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="testbench_8h_source.html">testbench.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf závislostí na vkládaných souborech pro testbench.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c__incl.svg" width="466" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ae7a610c069c6000940838c6a1e11bb42" id="r_ae7a610c069c6000940838c6a1e11bb42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7a610c069c6000940838c6a1e11bb42">print_value_by_iterator</a> (const <a class="el" href="testbench_8h.html#a18dee9afa3e7b6360eed13cc674c2527">TTestedADTIterator</a> *aIter)</td></tr>
+<tr class="memdesc:ae7a610c069c6000940838c6a1e11bb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vytisknutí hodnoty v ADT pomocí iterátoru.  <br /></td></tr>
+<tr class="separator:ae7a610c069c6000940838c6a1e11bb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa291195ad453d2b1e29004cc2e043c01" id="r_aa291195ad453d2b1e29004cc2e043c01"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa291195ad453d2b1e29004cc2e043c01">difftimespec</a> (struct timespec aEnd, struct timespec aBegin)</td></tr>
+<tr class="separator:aa291195ad453d2b1e29004cc2e043c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068734a4e1d6209769e0c6b1675ca02b" id="r_a068734a4e1d6209769e0c6b1675ca02b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a068734a4e1d6209769e0c6b1675ca02b">test_run</a> (<a class="el" href="testbench_8h.html#aba3705351f8497e1cda7e4d029fe3401">TTestedADT</a> *aADT, const struct <a class="el" href="struct_t_test_plan.html">TTestPlan</a> *aTestPlan)</td></tr>
+<tr class="memdesc:a068734a4e1d6209769e0c6b1675ca02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provedení jednoho test z testovacího plánu na předaném ADT.  <br /></td></tr>
+<tr class="separator:a068734a4e1d6209769e0c6b1675ca02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa1559684d267665b1c2433208511d3" id="r_a2fa1559684d267665b1c2433208511d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa1559684d267665b1c2433208511d3">testbench_run</a> (<a class="el" href="testbench_8h.html#aba3705351f8497e1cda7e4d029fe3401">TTestedADT</a> *aADT, size_t aTestPlanSize, const struct <a class="el" href="struct_t_test_plan.html">TTestPlan</a> aTestPlan[])</td></tr>
+<tr class="memdesc:a2fa1559684d267665b1c2433208511d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provedení všech testů zadaného testovacího plánu na předaném ADT.  <br /></td></tr>
+<tr class="separator:a2fa1559684d267665b1c2433208511d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Implementace testbench API pro testování operací zvoleného ADT. </p>
+<dl class="section author"><dt>Autor</dt><dd>Petyovský </dd></dl>
+<dl class="section version"><dt>Verze</dt><dd>2024 </dd></dl>
+<dl class="section rcs"><dt>Id</dt><dd><a class="el" href="testbench_8c.html" title="Implementace testbench API pro testování operací zvoleného ADT.">testbench.c</a> 2700 2024-04-12 15:10:01Z petyovsky </dd></dl>
+</div><h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ae7a610c069c6000940838c6a1e11bb42" name="ae7a610c069c6000940838c6a1e11bb42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a610c069c6000940838c6a1e11bb42">&#9670;&#160;</a></span>print_value_by_iterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_value_by_iterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="testbench_8h.html#a18dee9afa3e7b6360eed13cc674c2527">TTestedADTIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>aIter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vytisknutí hodnoty v ADT pomocí iterátoru. </p>
+<p>Tisk hodnoty ADT, na kterou ukazuje předaný iterátor. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIter</td><td>Ukazatel na existující iterátor </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_ae7a610c069c6000940838c6a1e11bb42_cgraph.svg" width="776" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_ae7a610c069c6000940838c6a1e11bb42_icgraph.svg" width="562" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa291195ad453d2b1e29004cc2e043c01" name="aa291195ad453d2b1e29004cc2e043c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa291195ad453d2b1e29004cc2e043c01">&#9670;&#160;</a></span>difftimespec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double difftimespec </td>
+          <td>(</td>
+          <td class="paramtype">struct timespec</td>          <td class="paramname"><span class="paramname"><em>aEnd</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct timespec</td>          <td class="paramname"><span class="paramname"><em>aBegin</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_aa291195ad453d2b1e29004cc2e043c01_icgraph.svg" width="470" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a068734a4e1d6209769e0c6b1675ca02b" name="a068734a4e1d6209769e0c6b1675ca02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068734a4e1d6209769e0c6b1675ca02b">&#9670;&#160;</a></span>test_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool test_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testbench_8h.html#aba3705351f8497e1cda7e4d029fe3401">TTestedADT</a> *</td>          <td class="paramname"><span class="paramname"><em>aADT</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_test_plan.html">TTestPlan</a> *</td>          <td class="paramname"><span class="paramname"><em>aTestPlan</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provedení jednoho test z testovacího plánu na předaném ADT. </p>
+<p>Funkce provede jeden test z testovacího plánu, změří a vytiskne celkový výpočetní čas a velikost paměti, kterou funkce potřebovala k dokončení výpočtu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aADT</td><td>Ukazatel na ADT na němž proběhne daný test </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aTestPlan</td><td>Ukazatel na test s určenou: operací, polem vstupních hodnot a správných návratových hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud test pro daný test pro pole zadaných vstupních hodnot dopadl úspěšně </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_a068734a4e1d6209769e0c6b1675ca02b_cgraph.svg" width="935" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_a068734a4e1d6209769e0c6b1675ca02b_icgraph.svg" width="331" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2fa1559684d267665b1c2433208511d3" name="a2fa1559684d267665b1c2433208511d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa1559684d267665b1c2433208511d3">&#9670;&#160;</a></span>testbench_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool testbench_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testbench_8h.html#aba3705351f8497e1cda7e4d029fe3401">TTestedADT</a> *</td>          <td class="paramname"><span class="paramname"><em>aADT</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>aTestPlanSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="struct_t_test_plan.html">TTestPlan</a></td>          <td class="paramname"><span class="paramname"><em>aTestPlan</em>[]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provedení všech testů zadaného testovacího plánu na předaném ADT. </p>
+<p>Funkce provede všechny testy zadaného testovacího plánu, změří a vytiskne celkový výpočetní čas a velikost paměti, kterou funkce potřebovala k dokončení výpočtu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aADT</td><td>Ukazatel na ADT na němž proběhne daný test </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aTestPlanSize</td><td>Počet testů v testovacím plánu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aTestPlan</td><td>Ukazatel na pole testů s určenou: operací, polem vstupních hodnot a správných návratových hodnot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud test pro daný test pro pole zadaných vstupních hodnot dopadl úspěšně </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_a2fa1559684d267665b1c2433208511d3_cgraph.svg" width="1087" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="testbench_8c_a2fa1559684d267665b1c2433208511d3_icgraph.svg" width="214" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:48, pro projekt: BPC-ALD: ADT+ALG TSet Sorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

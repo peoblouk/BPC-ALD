@@ -1,0 +1,78 @@
+Testbench registered new testplan...
+Testbench checking testplan with 3 test(s)...
+Testbench accepted entire testplan...
+
+Testbench processing Test#0 of 3...
+----- Vlozeni elementu: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  Dynamic memory statistics:
+	Allocations:   4, (dif: +4)
+	Reallocations: 0, (dif: +0)
+	Deallocations: 3, (dif: +3)
+
+	Now allocated:       72 b, (dif: +72 b)
+	Totally allocated:   152 b, (dif: +152 b)
+	Totally deallocated: 80 b, (dif: +80 b)
+
+  TSetElement comparisons: 55, (dif: +55)
+
+
+Testbench processing Test#1 of 3...
+----- Test pritomnosti elementu: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  TSetElement comparisons: 120, (dif: +65)
+
+
+Testbench processing Test#2 of 3...
+----- Odebrani elementu: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 -----
+
+  Test started...
+  Test finished...
+  All test results was valid. OK :-)
+  Calculation time: 0.000000 seconds.
+
+  Dynamic memory statistics:
+	Allocations:   5, (dif: +1)
+	Reallocations: 0, (dif: +0)
+	Deallocations: 5, (dif: +2)
+
+	Now allocated:       0 b, (dif: -72 b)
+	Totally allocated:   192 b, (dif: +40 b)
+	Totally deallocated: 192 b, (dif: +112 b)
+
+  TSetElement comparisons: 130, (dif: +10)
+
+Testbench successfully finished entire testplan...
+
+set1 is empty: true
+set1 is empty: false
+222 
+40 41 42 43 222 333 
+41 42 43 333 
+set1 find 42: true
+
+TSetElement comparisons: 19
+
+
+CHECKER: KONTROLNI VYPIS 
+===============================================================================
+VYPIS ALOKOVANE PAMETI
+Celkovy pocet alokaci pameti v programu: 	8
+Celkovy pocet uspesnych uvolneni pameti v programu: 	8
+Spickove mnozstvi alokovane pameti pri behu programu:  112  bytu.
+Alokovano celkem  272  bytu, uvolneno  272  bytu.
+
+Vsechna dynamicka pamet programu byla bez chyby uvolnena. :-)
+
+
+Zadne soubory nebyly v programu zpracovavany.

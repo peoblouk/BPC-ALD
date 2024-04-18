@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BPC-ALD: ADT+ALG TSet Sorted dynamic array: 2. Set</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="project_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">BPC-ALD: ADT+ALG TSet Sorted dynamic array<span id="projectnumber">&#160;(2024)</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Vygenerováno programem Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Načítám...</div>
+<div class="SRStatus" id="Searching">Vyhledávám...</div>
+<div class="SRStatus" id="NoMatches">Nebylo nic nalezeno</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Topics</a> &#124;
+<a href="#nested-classes">Datové struktury</a> &#124;
+<a href="#func-members">Funkce</a>  </div>
+  <div class="headertitle"><div class="title">2. Set</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definice datového typu Set a jeho funkcí (realizace množiny pomocí setříděného dynamicky alokovaného pole)  
+<a href="#details">...</a></p>
+<div class="dynheader">
+Diagram pro 2. Set:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set.svg" width="279" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Topics</h2></td></tr>
+<tr class="memitem:group___t_set_sorted_flex_array" id="r_group___t_set_sorted_flex_array"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_set_sorted_flex_array.html">2.1. SetSortedFlexArray</a></td></tr>
+<tr class="memdesc:group___t_set_sorted_flex_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deklarace typu SetSortedFlexArray a jeho funkcí (pro realizaci množiny pomocí setříděného flexibilního dynamicky alokovaného pole) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Datové struktury</h2></td></tr>
+<tr class="memitem:struct_t_set" id="r_struct_t_set"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#struct_t_set">TSet</a></td></tr>
+<tr class="memdesc:struct_t_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definice typu Set.  <a href="#struct_t_set">...</a><br /></td></tr>
+<tr class="separator:struct_t_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkce</h2></td></tr>
+<tr class="memitem:ga674fb4a9d4cac982bca65b8b264b04b5" id="r_ga674fb4a9d4cac982bca65b8b264b04b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga674fb4a9d4cac982bca65b8b264b04b5">set_init</a> (struct <a class="el" href="#struct_t_set">TSet</a> *aSet)</td></tr>
+<tr class="memdesc:ga674fb4a9d4cac982bca65b8b264b04b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializace prázdné množiny.  <br /></td></tr>
+<tr class="separator:ga674fb4a9d4cac982bca65b8b264b04b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga213cfb714cece49d955fc452b2aeb186" id="r_ga213cfb714cece49d955fc452b2aeb186"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga213cfb714cece49d955fc452b2aeb186">set_size</a> (const struct <a class="el" href="#struct_t_set">TSet</a> *aSet)</td></tr>
+<tr class="memdesc:ga213cfb714cece49d955fc452b2aeb186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Přečtení počtu elementů množiny.  <br /></td></tr>
+<tr class="separator:ga213cfb714cece49d955fc452b2aeb186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f7fd9486a5c300158d70dc79c6c6c8f" id="r_ga2f7fd9486a5c300158d70dc79c6c6c8f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2f7fd9486a5c300158d70dc79c6c6c8f">set_is_empty</a> (const struct <a class="el" href="#struct_t_set">TSet</a> *aSet)</td></tr>
+<tr class="memdesc:ga2f7fd9486a5c300158d70dc79c6c6c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění, zda je množina prázdná  <br /></td></tr>
+<tr class="separator:ga2f7fd9486a5c300158d70dc79c6c6c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d1464cea78691ff9ad3dd1e32b55c60" id="r_ga0d1464cea78691ff9ad3dd1e32b55c60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0d1464cea78691ff9ad3dd1e32b55c60">set_insert</a> (struct <a class="el" href="#struct_t_set">TSet</a> *aSet, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue)</td></tr>
+<tr class="memdesc:ga0d1464cea78691ff9ad3dd1e32b55c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vložení elementu do množiny.  <br /></td></tr>
+<tr class="separator:ga0d1464cea78691ff9ad3dd1e32b55c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a711b02282ff309c0d6a4fdcfbac738" id="r_ga2a711b02282ff309c0d6a4fdcfbac738"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2a711b02282ff309c0d6a4fdcfbac738">set_erase</a> (struct <a class="el" href="#struct_t_set">TSet</a> *aSet, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue)</td></tr>
+<tr class="memdesc:ga2a711b02282ff309c0d6a4fdcfbac738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odstranění elementu z množiny.  <br /></td></tr>
+<tr class="separator:ga2a711b02282ff309c0d6a4fdcfbac738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga768d36614713a921e88985484ac63cc1" id="r_ga768d36614713a921e88985484ac63cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga768d36614713a921e88985484ac63cc1">set_is_element_of</a> (const struct <a class="el" href="#struct_t_set">TSet</a> *aSet, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue)</td></tr>
+<tr class="memdesc:ga768d36614713a921e88985484ac63cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zjištění, zda množina obsahuje zadanou hodnotu elementu.  <br /></td></tr>
+<tr class="separator:ga768d36614713a921e88985484ac63cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1dab52afdffe1147063314f7cdc5a7c8" id="r_ga1dab52afdffe1147063314f7cdc5a7c8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group___t_set_iterator.html#struct_t_set_iterator">TSetIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1dab52afdffe1147063314f7cdc5a7c8">set_find</a> (const struct <a class="el" href="#struct_t_set">TSet</a> *aSet, <a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a> aValue)</td></tr>
+<tr class="memdesc:ga1dab52afdffe1147063314f7cdc5a7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Získání nového iterátoru ukazujícího na první element se zadanou hodnotou v množině nalezen, pokud byl nalezen.  <br /></td></tr>
+<tr class="separator:ga1dab52afdffe1147063314f7cdc5a7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8094d1ab68434b8413cd905895ff37ae" id="r_ga8094d1ab68434b8413cd905895ff37ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8094d1ab68434b8413cd905895ff37ae">set_destroy</a> (struct <a class="el" href="#struct_t_set">TSet</a> *aSet)</td></tr>
+<tr class="memdesc:ga8094d1ab68434b8413cd905895ff37ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinicializace množiny.  <br /></td></tr>
+<tr class="separator:ga8094d1ab68434b8413cd905895ff37ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<p>Definice datového typu Set a jeho funkcí (realizace množiny pomocí setříděného dynamicky alokovaného pole) </p>
+<hr/><h2 class="groupheader">Dokumentace datových struktur</h2>
+<a name="struct_t_set" id="struct_t_set"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_t_set">&#9670;&#160;</a></span>TSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct TSet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Definice typu Set. </p>
+<p>Typ Set obsahuje setříděné pole prvků typu SetElement a umožňuje s nimi pracovat pomocí definovaného API. </p>
+</div><div class="dynheader">
+Diagram pro TSet:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_t_set__coll__graph.svg" width="188" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Datové položky</h3></td></tr>
+<tr class="memitem:a27ffb91c868c8e4ecd0f87d21dada53f" id="r_a27ffb91c868c8e4ecd0f87d21dada53f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27ffb91c868c8e4ecd0f87d21dada53f">iSize</a></td></tr>
+<tr class="memdesc:a27ffb91c868c8e4ecd0f87d21dada53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Počet elementů množiny.  <br /></td></tr>
+<tr class="separator:a27ffb91c868c8e4ecd0f87d21dada53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7ebbb3090c9c8a68b7689f6ef40c98" id="r_a5e7ebbb3090c9c8a68b7689f6ef40c98"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e7ebbb3090c9c8a68b7689f6ef40c98">iFlexArray</a></td></tr>
+<tr class="memdesc:a5e7ebbb3090c9c8a68b7689f6ef40c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIMPL ukazatel na hodnoty typu SetSortedFlexArray (Pointer to private IMPLementation)  <br /></td></tr>
+<tr class="separator:a5e7ebbb3090c9c8a68b7689f6ef40c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Dokumentace položek</h4>
+<a id="a27ffb91c868c8e4ecd0f87d21dada53f" name="a27ffb91c868c8e4ecd0f87d21dada53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ffb91c868c8e4ecd0f87d21dada53f">&#9670;&#160;</a></span>iSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t iSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Počet elementů množiny. </p>
+
+</div>
+</div>
+<a id="a5e7ebbb3090c9c8a68b7689f6ef40c98" name="a5e7ebbb3090c9c8a68b7689f6ef40c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7ebbb3090c9c8a68b7689f6ef40c98">&#9670;&#160;</a></span>iFlexArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_t_set_sorted_flex_array.html">TSetSortedFlexArray</a>* iFlexArray</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PIMPL ukazatel na hodnoty typu SetSortedFlexArray (Pointer to private IMPLementation) </p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentace funkcí</h2>
+<a id="ga674fb4a9d4cac982bca65b8b264b04b5" name="ga674fb4a9d4cac982bca65b8b264b04b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga674fb4a9d4cac982bca65b8b264b04b5">&#9670;&#160;</a></span>set_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializace prázdné množiny. </p>
+<p>Inicializuje složky struktury tak, aby byla výsledkem prázdná množina. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aSet</td><td>Ukazatel na místo v paměti určené pro inicializaci množiny </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga674fb4a9d4cac982bca65b8b264b04b5_icgraph.svg" width="358" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga213cfb714cece49d955fc452b2aeb186" name="ga213cfb714cece49d955fc452b2aeb186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga213cfb714cece49d955fc452b2aeb186">&#9670;&#160;</a></span>set_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t set_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Přečtení počtu elementů množiny. </p>
+<p>Vrací velikost (počet elementů) množiny. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSet</td><td>Ukazatel na existující množinu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Počet elementů množiny nebo hodnota 0 v případě chyby </dd></dl>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga213cfb714cece49d955fc452b2aeb186_icgraph.svg" width="539" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga2f7fd9486a5c300158d70dc79c6c6c8f" name="ga2f7fd9486a5c300158d70dc79c6c6c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f7fd9486a5c300158d70dc79c6c6c8f">&#9670;&#160;</a></span>set_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool set_is_empty </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zjištění, zda je množina prázdná </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu reprezentující test, zda je množina prázdná. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSet</td><td>Ukazatel na existující množinu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud je množina prázdná </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga2f7fd9486a5c300158d70dc79c6c6c8f_cgraph.svg" width="230" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga2f7fd9486a5c300158d70dc79c6c6c8f_icgraph.svg" width="394" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga0d1464cea78691ff9ad3dd1e32b55c60" name="ga0d1464cea78691ff9ad3dd1e32b55c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d1464cea78691ff9ad3dd1e32b55c60">&#9670;&#160;</a></span>set_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vložení elementu do množiny. </p>
+<p>Vkládá hodnotu elementu do množiny. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aSet</td><td>Ukazatel na existující množinu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu vkládaná do množiny </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud nebyla hodnota v původní množině nalezena a byla následně do množiny úspěšně vložena </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga0d1464cea78691ff9ad3dd1e32b55c60_cgraph.svg" width="691" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga0d1464cea78691ff9ad3dd1e32b55c60_icgraph.svg" width="372" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga2a711b02282ff309c0d6a4fdcfbac738" name="ga2a711b02282ff309c0d6a4fdcfbac738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a711b02282ff309c0d6a4fdcfbac738">&#9670;&#160;</a></span>set_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odstranění elementu z množiny. </p>
+<p>Odstraní hodnotu elementu z množiny. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aSet</td><td>Ukazatel na existující množinu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu odebíraného z množiny </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byla hodnota v množině nalezena a následně úspěšně odstraněna </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga2a711b02282ff309c0d6a4fdcfbac738_cgraph.svg" width="691" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga2a711b02282ff309c0d6a4fdcfbac738_icgraph.svg" width="372" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga768d36614713a921e88985484ac63cc1" name="ga768d36614713a921e88985484ac63cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga768d36614713a921e88985484ac63cc1">&#9670;&#160;</a></span>set_is_element_of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_is_element_of </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zjištění, zda množina obsahuje zadanou hodnotu elementu. </p>
+<p>Funkce (predikát) vracející <code>bool</code> hodnotu reprezentující test, zda množina obsahuje zadanou hodnotu elementu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSet</td><td>Ukazatel na existující množinu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu hledaná v množině </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd><code>true</code> pokud byl element se zadanou hodnotou v množině nalezen </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga768d36614713a921e88985484ac63cc1_cgraph.svg" width="548" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga768d36614713a921e88985484ac63cc1_icgraph.svg" width="420" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga1dab52afdffe1147063314f7cdc5a7c8" name="ga1dab52afdffe1147063314f7cdc5a7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1dab52afdffe1147063314f7cdc5a7c8">&#9670;&#160;</a></span>set_find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group___t_set_iterator.html#struct_t_set_iterator">TSetIterator</a> set_find </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___t_set_element.html#ga434f133e40212ffe694f4afae9ffd8e8">TSetElement</a></td>          <td class="paramname"><span class="paramname"><em>aValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Získání nového iterátoru ukazujícího na první element se zadanou hodnotou v množině nalezen, pokud byl nalezen. </p>
+<p>Funkce vracející nový iterátor směřující na první nalezený element se zadanou hodnotou, pokud nebyl element v množině nalezen vrací neplatný iterátor. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aSet</td><td>Ukazatel na existující množinu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aValue</td><td>Hodnota elementu hledaná v množině </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Nový iterátor asociovaný s množinou <code>aSet</code> směřující na první nalezený element se zadanou hodnotou, nebo neplatný iterátor </dd></dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga1dab52afdffe1147063314f7cdc5a7c8_cgraph.svg" width="488" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga8094d1ab68434b8413cd905895ff37ae" name="ga8094d1ab68434b8413cd905895ff37ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8094d1ab68434b8413cd905895ff37ae">&#9670;&#160;</a></span>set_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="#struct_t_set">TSet</a> *</td>          <td class="paramname"><span class="paramname"><em>aSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinicializace množiny. </p>
+<p>Deinicializuje množinu, nastaví počet elementů množiny na hodnotu 0. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">aSet</td><td>Ukazatel na existující frontu </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Tato funkce volá...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga8094d1ab68434b8413cd905895ff37ae_cgraph.svg" width="303" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Tuto funkci volají...</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___t_set_ga8094d1ab68434b8413cd905895ff37ae_icgraph.svg" width="384" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Vygenerováno dne: út 16. dub 2024 12.19:48, pro projekt: BPC-ALD: ADT+ALG TSet Sorted dynamic array, programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<map id="TSet.c" name="TSet.c">
+<area shape="rect" id="Node000001" title="Implementace API pro typ Set (realizace množiny pomocí setříděného flexibilního dynamicky alokovaného..." alt="" coords="279,5,339,31"/>
+<area shape="rect" id="Node000002" href="$_t_set_8h.html" title="Definice typu Set &#45; (realizace množiny pomocí setříděného flexibilního dynamicky alokovaného pole)" alt="" coords="183,79,243,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,33,242,72,239,68,292,29"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="371,299,439,324"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="317,30,350,110,389,225,403,285,398,286,384,226,345,112,312,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,299,80,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,107,148,126,108,154,76,186,54,226,47,256,45,285,39,285,42,256,50,224,71,183,105,150,145,122,184,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="65,225,133,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="188,106,156,126,126,154,112,183,104,212,99,211,107,181,122,150,152,121,186,102"/>
+<area shape="rect" id="Node000005" href="$_t_set_sorted_flex_array_8h.html" title="Deklarace typu SetSortedFlexArray a jeho API pro realizaci množiny pomocí setříděného flexibilního dy..." alt="" coords="136,152,291,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="216,104,216,138,211,138,211,104"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="237,102,270,122,305,150,334,184,360,221,396,285,392,288,355,224,330,187,301,154,267,127,234,106"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="208,179,182,214,146,253,114,276,81,295,79,290,111,271,142,249,178,210,204,176"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="196,180,130,220,128,216,194,175"/>
+<area shape="rect" id="Node000006" href="$_t_set_element_8h.html" title="Definice typu Basic SetElement a implementace API." alt="" coords="209,225,317,251"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="224,176,249,213,245,216,219,179"/>
+<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="228,253,92,297,90,292,227,248"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="104,299,165,324"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="243,253,169,294,167,289,241,248"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="189,299,253,324"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="258,252,237,288,233,285,254,250"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="277,299,347,324"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="273,249,298,286,294,289,269,253"/>
+<area shape="poly" id="edge12_Node000006_Node000010" title=" " alt="" coords="287,248,371,290,369,295,284,253"/>
+</map>
