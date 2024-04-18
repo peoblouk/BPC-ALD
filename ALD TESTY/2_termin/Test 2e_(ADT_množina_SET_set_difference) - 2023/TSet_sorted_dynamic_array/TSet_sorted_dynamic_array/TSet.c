@@ -66,6 +66,24 @@ struct TSetIterator set_find(const struct TSet *aSet, TSetElement aValue)
 	return (struct TSetIterator) { .iSet = NULL, .iPos = 0 };	// fail
 	}
 
+bool set_difference(struct TSet* aNewSet, const struct TSet* aLeftSet, const struct TSet* aRightSet)
+	{
+	if (aNewSet == NULL || aLeftSet == NULL || aRightSet == NULL)
+		return true;
+
+	if ((aNewSet != NULL || aLeftSet == NULL || aRightSet == NULL) && (aNewSet == NULL || aLeftSet != NULL || aRightSet == NULL) && (aNewSet == NULL || aLeftSet == NULL || aRightSet != NULL))
+		return false;
+
+	if (aNewSet != NULL)
+		return false;
+
+	struct TSet* new_set = malloc(sizeof(TSetElement) * aLeftSet->iSize); // Alokace nového místa
+
+
+
+	return true;
+	}
+
 void set_destroy(struct TSet *aSet)
 	{
 	if(!aSet)

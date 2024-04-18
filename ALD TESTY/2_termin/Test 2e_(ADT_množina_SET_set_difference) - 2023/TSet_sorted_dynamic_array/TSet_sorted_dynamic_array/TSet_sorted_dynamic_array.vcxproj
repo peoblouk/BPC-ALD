@@ -149,9 +149,8 @@
   <ItemGroup>
     <ClInclude Include="check.h" />
     <ClInclude Include="testbench.h" />
-    <ClInclude Include="testplan_set1.h" />
-    <ClInclude Include="testplan_set2.h" />
-    <ClInclude Include="testplan_set3.h" />
+    <ClInclude Include="testplan_difference.h" />
+    <ClInclude Include="testplan_difference2.h" />
     <ClInclude Include="TSet.h" />
     <ClInclude Include="TSetElement.h" />
     <ClInclude Include="TSetSortedFlexArray.h" />

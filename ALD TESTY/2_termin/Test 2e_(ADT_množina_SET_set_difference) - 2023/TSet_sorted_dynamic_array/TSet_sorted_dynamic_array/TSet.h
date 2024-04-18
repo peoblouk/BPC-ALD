@@ -81,6 +81,9 @@ bool set_is_element_of(const struct TSet *aSet, TSetElement aValue);
  */
 struct TSetIterator set_find(const struct TSet *aSet, TSetElement aValue);
 
+
+bool set_difference(struct TSet* aNewSet, const struct TSet* aLeftSet, const struct TSet* aRightSet);
+
 /** \brief Deinicializace množiny
  *  \details Deinicializuje množinu, nastaví počet elementů množiny na hodnotu 0.
  *  \param[in,out] aSet Ukazatel na existující frontu

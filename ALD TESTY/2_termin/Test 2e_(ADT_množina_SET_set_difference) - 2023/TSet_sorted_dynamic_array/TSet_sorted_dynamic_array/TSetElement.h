@@ -20,8 +20,8 @@
 
 extern size_t gSetElementComparisons;	///< Deklarace globální proměnné realizující počítadlo operací porovnání dvou hodnot typu SetElement
 
-typedef int TSetElement;				///< Definice typu SetElement
-#define TSET_ELEMENT_FRMSTR "%d"		///< Definice formátovacího řetězce pro souborové operace s typem SetElement
+typedef long long TSetElement;				///< Definice typu SetElement
+#define TSET_ELEMENT_FRMSTR "%lld"		///< Definice formátovacího řetězce pro souborové operace s typem SetElement
 
 /** \brief Porovnání dvou elementů
  *  \details Provede trojcestné porovnání hodnot dvou elementů, předaných pomocí ukazatelů.

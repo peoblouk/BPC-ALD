@@ -44,10 +44,10 @@
     <ClInclude Include="TSetElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="testplan_set1.h">
+    <ClInclude Include="testplan_difference.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="testplan_set2.h">
+    <ClInclude Include="testplan_difference2.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="testbench.h">
@@ -55,9 +55,6 @@
     </ClInclude>
     <ClInclude Include="TSetSortedFlexArray.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="testplan_set3.h">
-      <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
