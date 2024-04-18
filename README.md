@@ -215,6 +215,8 @@ struct TSetUnsortedFlexArray
 - set_flex_array_search - zjištuje zda flexibilí pole obsahuje element o zadané hodnotě (vrací cmp = 0, pokud byl prvek nalezen a zároveň nastavuje hodnotu pos na index hledaného prvku
 - <b>POZOR !!! Pokud jsem změnil typ TSetElement z int na char musím najít makro #define TVECTOR_ELEMENT_FRMSTR   "%d" </b>
 
+<img alt="TVector_funkce" src="img/tset_unsorted_funkce.png" >
+
 
 SORTED
 - optimalizace nastavá, že je pokud najdu prvek se třízené oblasti větší jak hledaný, tak nemusím dál projíždět pole
