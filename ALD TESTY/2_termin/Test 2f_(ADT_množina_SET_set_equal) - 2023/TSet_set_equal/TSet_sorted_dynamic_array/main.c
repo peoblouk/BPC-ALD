@@ -16,16 +16,10 @@
 
 const struct TTestPlan testplan[] =
 	{
-	//#include "testplan_set1.h"
-	//#include "testplan_set2.h" // Includuji soubor s vlastním test plánem
-	//#include "testplan_set3.h"
 	#include "testplan_equal.h" // Test equal
+	#include "testplan_equal2.h" // Test equal
+	#include "testplan_equal3.h" // Test equal
 	};
-
-void print_element(const struct TSetIterator* aIter)
-	{
-	printf("<%c> ", set_iterator_value(aIter));
-	}
 
 int main(int argc, char *argv[])
 	{
@@ -37,20 +31,48 @@ int main(int argc, char *argv[])
 	set_init(&set2);
 	set_init(&set3);
 
-
-	if (!testbench_run(&set1, ITEMS_OF(testplan), testplan))
+	if (!testbench_run(&set1, 1, testplan))
 		{
-		puts("testplan failed!!!");
+		puts("testplan 1 failed!!!");
 		set_destroy(&set1);
-		set_destroy(&set2);
-		set_destroy(&set3);
 		return 1;
 		}
 
-	set_for_each(set_iterator_begin(&set1), print_element);
-	set_for_each(set_iterator_begin(&set2), print_element);
-	set_for_each(set_iterator_begin(&set3), print_element);
+	if (!testbench_run(&set2, 1, testplan + 1))
+		{
+		puts("testplan 2 failed!!!");
+		set_destroy(&set2);
+		return 2;
+		}
 
+	if (!testbench_run(&set3, 1, testplan + 2))
+		{
+		puts("testplan 3 failed!!!");
+		set_destroy(&set3);
+		return 3;
+		}
+	putchar('\n');
+	
+	printf("SET1: ");
+	set_for_each(set_iterator_begin(&set1), print_value_by_iterator);
+	putchar('\n');
+	
+	printf("SET2: ");
+	set_for_each(set_iterator_begin(&set2), print_value_by_iterator);
+	putchar('\n');
+
+	printf("SET3: ");
+	set_for_each(set_iterator_begin(&set3), print_value_by_iterator);
+	putchar('\n');
+
+	putchar('\n');
+	printf("Mnoziny c. 1 a 2 %s stejne.", (set_is_equal(&set1, &set2)) ? ("jsou") : ("nejsou"));
+	putchar('\n');
+	printf("Mnoziny c. 1 a 3 %s stejne.", (set_is_equal(&set1, &set3)) ? ("jsou") : ("nejsou"));
+	putchar('\n');
+	printf("Mnoziny c. 1 a 1 %s stejne.", (set_is_equal(&set1, &set1)) ? ("jsou") : ("nejsou"));
+	putchar('\n');
+	printf("Mnoziny c. 2 a 1 %s stejne.", (set_is_equal(&set2, &set1)) ? ("jsou") : ("nejsou"));
 
 	set_destroy(&set1);
 	set_destroy(&set2);

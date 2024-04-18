@@ -94,7 +94,6 @@ bool set_is_equal(const struct TSet* aLeftSet, const struct TSet* aRightSet)
 
 	for (size_t i = 0; i < aLeftSet->iSize; i++) // Projedu všechny prvky pole
 		{
-		printf("\ntetststs\n");
 		if (!set_is_element_of(aRightSet, set_flex_array_value_at_pos(aLeftSet->iFlexArray, i))) // 
 			return false;
 			// printf("\n set_A = %c , set_B = %c \n", set_flex_array_value_at_pos(aLeftSet->iFlexArray, i), set_flex_array_value_at_pos(aRightSet->iFlexArray, i));

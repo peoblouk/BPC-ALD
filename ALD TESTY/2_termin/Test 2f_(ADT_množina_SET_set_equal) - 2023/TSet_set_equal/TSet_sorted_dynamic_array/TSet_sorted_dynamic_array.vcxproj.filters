@@ -18,9 +18,6 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TSet.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="check.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -31,6 +28,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TSetSortedFlexArray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TSet.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,22 +44,19 @@
     <ClInclude Include="TSetElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="testplan_set1.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
-    <ClInclude Include="testplan_set2.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
     <ClInclude Include="testbench.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TSetSortedFlexArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="testplan_set3.h">
+    <ClInclude Include="testplan_equal.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="testplan_equal.h">
+    <ClInclude Include="testplan_equal2.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testplan_equal3.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
