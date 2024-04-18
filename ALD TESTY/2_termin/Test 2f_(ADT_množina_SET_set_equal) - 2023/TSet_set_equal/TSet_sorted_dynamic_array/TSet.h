@@ -26,10 +26,6 @@ struct TSet
 	struct TSetSortedFlexArray *iFlexArray;		///< PIMPL ukazatel na hodnoty typu SetSortedFlexArray (Pointer to private IMPLementation)
 	};
 
-struct TString
-	{
-	char iStr[21];
-	};
 /** \brief Inicializace prázdné množiny
  *  \details Inicializuje složky struktury tak, aby byla výsledkem prázdná množina.
  *  \param[in,out] aSet Ukazatel na místo v paměti určené pro inicializaci množiny

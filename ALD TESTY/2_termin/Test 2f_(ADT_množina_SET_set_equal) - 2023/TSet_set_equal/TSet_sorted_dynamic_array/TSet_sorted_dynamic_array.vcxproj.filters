@@ -59,5 +59,8 @@
     <ClInclude Include="testplan_set3.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="testplan_equal.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

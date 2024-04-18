@@ -21,9 +21,14 @@
 
 extern size_t gSetElementComparisons;	///< Deklarace globální proměnné realizující počítadlo operací porovnání dvou hodnot typu SetElement
 
+struct TString
+	{
+	char iStr[21];								///< String
+	};
+
 typedef struct TString TSetElement;				///< Definice typu SetElement
-#define TSET_ELEMENT_FRMSTR "%c"				///< Definice formátovacího řetězce pro souborové operace s typem SetElement
- 
+#define TSET_ELEMENT_FRMSTR "%s"				///< Definice formátovacího řetězce pro souborové operace s typem SetElement
+
 /** \brief Porovnání dvou elementů
  *  \details Provede trojcestné porovnání hodnot dvou elementů, předaných pomocí ukazatelů.
  *  \param[in] aLeft Ukazatel na levou porovnávanou hodnotu (tzv. LHS - Left Hand Side)
@@ -37,8 +42,8 @@ static inline int set_element_comparator(const TSetElement *aLeft, const TSetEle
 	{
 	assert(aLeft);
 	assert(aRight);
-	
-	return strcmp(aLeft->iStr, aRight->iStr);
+	++gSetElementComparisons;
+	return strcmp(aLeft->iStr , aRight->iStr);
 	}
 
 /** \brief Načtení elementu ze souboru
@@ -74,7 +79,7 @@ static inline bool set_element_store_file(TSetElement aElement, FILE *aOutputFil
  */
 static inline TSetElement set_element_random_value(void)
 	{
-	return (TSetElement) { .iStr = "xxx" };
+	return (TSetElement) {.iStr = "RANDOM" };
 	}
 
 /** \} TSetElement */

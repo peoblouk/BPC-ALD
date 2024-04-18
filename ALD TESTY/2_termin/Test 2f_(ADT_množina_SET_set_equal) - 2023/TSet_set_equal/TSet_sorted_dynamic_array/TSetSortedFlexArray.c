@@ -19,6 +19,7 @@
 /** \brief Úplná definice privátního typu SetSortedFlexArray
  *  \details Privátní typ SetSortedFlexArray (nedostupný mimo funkce z tohoto zdrojového souboru) reprezentuje typ pro tzv. flexibilní (otevřené) pole hodnot typu SetElement.
  */
+
 struct TSetSortedFlexArray
 	{
 	size_t iCapacity;			///< Skutečně naalokovaná kapacita prvků vnitřního dynamického pole
