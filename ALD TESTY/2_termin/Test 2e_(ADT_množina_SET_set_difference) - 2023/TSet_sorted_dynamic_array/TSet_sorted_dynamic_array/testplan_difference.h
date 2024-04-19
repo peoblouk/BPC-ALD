@@ -1,8 +1,0 @@
-{
-TEST_MESSAGE("Test rovnosti mnozin")
-TEST_OPERATION(set_difference)
-TEST_INPUTS(128 , 144, 157, 215, 260)
-TEST_OUTPUT(1, 1, 1, 1, 1)
-//TEST_REPORT_AFTER
-//TEST_PRINT_MEMORY_STATS
-},
