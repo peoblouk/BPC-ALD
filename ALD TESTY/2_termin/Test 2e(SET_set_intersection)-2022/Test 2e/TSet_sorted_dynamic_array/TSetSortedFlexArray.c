@@ -96,8 +96,7 @@ bool set_flex_array_insert(struct TSetSortedFlexArray** aFlexArrayPtr, TSetEleme
 	if ((!aSize) || (aSize >= act_array->iCapacity))
 		{
 		const size_t new_capacity = (aSize) ? (2 * act_array->iCapacity) : (2);
-		struct TSetSortedFlexArray* new_array =
-			malloc(offsetof(struct TSetSortedFlexArray, iElement) + new_capacity * sizeof(TSetElement));
+		struct TSetSortedFlexArray* new_array =	malloc(offsetof(struct TSetSortedFlexArray, iElement) + new_capacity * sizeof(TSetElement));
 		//	malloc(sizeof(struct TSetSortedFlexArray) + new_capacity * sizeof(TSetElement));
 		//	https://gustedt.wordpress.com/2011/03/14/flexible-array-member/
 		//	https://en.cppreference.com/w/c/types/offsetof

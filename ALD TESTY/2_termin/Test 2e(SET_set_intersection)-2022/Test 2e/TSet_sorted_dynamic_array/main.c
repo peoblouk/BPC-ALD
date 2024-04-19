@@ -16,62 +16,49 @@
 
 const struct TTestPlan testplan[] =
 	{
-	//#include "testplan_set1.h"
-	#include "testplan_set2.h" // Includuji soubor s vlastním test plánem
-	//#include "testplan_set3.h"
+	#include "testplan_intersection.h" // Test equal
+	#include "testplan_intersection2.h" // Test equal
 	};
-
-void testset2_hardcoded(void)
-	{
-	struct TSet set2 = { 0 };
-	set_init(&set2);
-	gSetElementComparisons = 0;
-
-	printf("set1 is empty: %s\n", set_is_empty(&set2) ? "true" : "false");
-	set_insert(&set2, 222);
-	printf("set1 is empty: %s\n", set_is_empty(&set2) ? "true" : "false");
-
-	for(struct TSetIterator it = set_iterator_begin(&set2); set_iterator_is_valid(&it); set_iterator_to_next(&it))
-		printf("%d ", set_iterator_value(&it));
-	putchar('\n');
-
-	set_insert(&set2, 42);
-	set_insert(&set2, 43);
-	set_insert(&set2, 40);
-	set_insert(&set2, 41);
-	set_insert(&set2, 333);
-
-	set_for_each(set_iterator_begin(&set2), print_value_by_iterator);
-	putchar('\n');
-
-	set_erase(&set2, 222);
-	set_erase(&set2, 40);
-
-	set_for_each(set_iterator_begin(&set2), print_value_by_iterator);
-	putchar('\n');
-
-	bool is_element_of = set_is_element_of(&set2, 42);
-	printf("set1 find 42: %s\n", (is_element_of) ? "true" : "false");
-
-	set_destroy(&set2);
-
-	printf("\nTSetElement comparisons: %zu\n", gSetElementComparisons);
-	}
 
 int main(int argc, char *argv[])
 	{
 	struct TSet set1 = { 0 };
-	set_init(&set1);
+	struct TSet set2 = { 0 };
+	struct TSet set3 = { 0 };
 
-	if(!testbench_run(&set1, ITEMS_OF(testplan), testplan))
+
+	set_init(&set1);
+	set_init(&set2);
+	set_init(&set3);
+
+
+	if (!testbench_run(&set1, 1, testplan))
 		{
-		puts("testplan failed!!!");
+		puts("testplan 1 failed!!!");
 		set_destroy(&set1);
 		return 1;
 		}
-	set_destroy(&set1);
 
-	testset2_hardcoded();
+
+	putchar('\n');
+
+	printf("SET1: ");
+	set_for_each(set_iterator_begin(&set1), print_value_by_iterator);
+	putchar('\n');
+
+	printf("SET2: ");
+	set_for_each(set_iterator_begin(&set2), print_value_by_iterator);
+	putchar('\n');
+
+	printf("průnik: ");
+	set_for_each(set_iterator_begin(&set3), print_value_by_iterator);
+	putchar('\n');
+
+	set_destroy(&set1);
+	set_destroy(&set2);
+	set_destroy(&set3);
+
+
 	return 0;
 	}
 

@@ -1,0 +1,8 @@
+{
+TEST_MESSAGE("Test rovnosti mnozin")
+TEST_OPERATION(set_intersection)
+TEST_INPUTS(1, 2, 3, 4, 5)
+TEST_OUTPUT(1, 1, 1, 1, 1)
+//TEST_REPORT_AFTER
+//TEST_PRINT_MEMORY_STATS
+},

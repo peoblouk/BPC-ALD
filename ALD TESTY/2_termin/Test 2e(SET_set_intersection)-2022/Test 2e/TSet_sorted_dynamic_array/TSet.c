@@ -80,21 +80,25 @@ bool set_intersection(struct TSet* aNewSet, const struct TSet* aLeftSet, const s
 	{
 	if ((aNewSet && !aLeftSet && !aRightSet) || (!aNewSet && aLeftSet && !aRightSet) || (!aNewSet && !aLeftSet && aRightSet))
 		return false;
-	if (!aNewSet && !aLeftSet && !aRightSet)
+
+	if (!aNewSet && !aLeftSet && !aRightSet) // Pokud jsou všechny NULL
 		return true;
 
-	if (aNewSet->iFlexArray)
+	if (aNewSet->iFlexArray != NULL)
 		return false;
 
 	size_t ssize = aLeftSet->iSize;
 
-	if (aLeftSet->iSize > aRightSet->iSize)
+	if (aLeftSet->iSize > aRightSet->iSize) // Alokace paměti podle jedné z menších množin
 		ssize = aRightSet->iSize;
-
 
 	aNewSet->iFlexArray = malloc(ssize * sizeof(TSetElement));
 
-	if (!aNewSet)
+	// struct TSetSortedFlexArray* act_array = *aFlexArrayPtr;
+	// const size_t new_capacity = (aSize) ? (2 * act_array->iCapacity) : (2);
+	// malloc(sizeof(struct TSetSortedFlexArray) + new_capacity * sizeof(TSetElement));
+
+	if (!aNewSet) // Chyba alokace
 		return false;
 
 	struct TSetIterator itA = set_iterator_begin(aLeftSet);
@@ -105,6 +109,7 @@ bool set_intersection(struct TSet* aNewSet, const struct TSet* aLeftSet, const s
 		{
 		TSetElement a = set_iterator_value(&itA);
 		TSetElement b = set_iterator_value(&itB);
+
 		if (set_element_comparator(&a, &b) > 0)
 			{
 			set_iterator_to_next(&itB);
@@ -122,10 +127,13 @@ bool set_intersection(struct TSet* aNewSet, const struct TSet* aLeftSet, const s
 			set_iterator_to_next(&itB);
 			}
 		}
-	if (aNewSet->iSize == 0)
+	if (aNewSet->iSize == 0) // Nic není v průniku
 		{
 		free(aNewSet);
 		}
+
+	// aLeftSet->iFlexArray = new_array;
+	
 	return true;
 	}
 
