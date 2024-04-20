@@ -37,9 +37,9 @@ static inline int set_element_comparator(const TSetElement *aLeft, const TSetEle
 	assert(aLeft);
 	assert(aRight);
 	++gSetElementComparisons;
-	if(*aLeft == *aRight)
+	if (*aLeft == *aRight)
 		return 0;
-	if(*aLeft < *aRight)
+	if (*aLeft < *aRight)
 		return -1;
 	return 1;
 	}

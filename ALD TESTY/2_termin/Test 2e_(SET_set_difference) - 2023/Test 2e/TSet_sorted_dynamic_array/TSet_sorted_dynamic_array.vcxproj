@@ -151,6 +151,7 @@
     <ClInclude Include="testbench.h" />
     <ClInclude Include="testplan_difference.h" />
     <ClInclude Include="testplan_difference2.h" />
+    <ClInclude Include="testplan_difference3.h" />
     <ClInclude Include="TSet.h" />
     <ClInclude Include="TSetElement.h" />
     <ClInclude Include="TSetSortedFlexArray.h" />

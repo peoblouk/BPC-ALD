@@ -56,5 +56,8 @@
     <ClInclude Include="TSetSortedFlexArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="testplan_difference3.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

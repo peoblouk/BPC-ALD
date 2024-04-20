@@ -68,18 +68,37 @@ struct TSetIterator set_find(const struct TSet *aSet, TSetElement aValue)
 
 bool set_difference(struct TSet* aNewSet, const struct TSet* aLeftSet, const struct TSet* aRightSet)
 	{
-	if (aNewSet == NULL || aLeftSet == NULL || aRightSet == NULL)
+	if (!aNewSet && !aLeftSet && !aRightSet)
 		return true;
-
-	if ((aNewSet != NULL || aLeftSet == NULL || aRightSet == NULL) && (aNewSet == NULL || aLeftSet != NULL || aRightSet == NULL) && (aNewSet == NULL || aLeftSet == NULL || aRightSet != NULL))
+	else if (!aNewSet || !aLeftSet || !aRightSet || aNewSet->iSize)
 		return false;
 
-	if (aNewSet != NULL)
-		return false;
+	size_t n = 0, l = 0, r = 0;
 
-	struct TSet* new_set = malloc(sizeof(TSetElement) * aLeftSet->iSize); // Alokace nového místa
+	while (l < aLeftSet->iSize && r < aRightSet->iSize)
+		{
+		TSetElement l_value = set_flex_array_value_at_pos(aLeftSet->iFlexArray, l);
+		TSetElement r_value = set_flex_array_value_at_pos(aRightSet->iFlexArray, r);
+		int cmp = set_element_comparator(&l_value, &r_value);
 
+		if (cmp < 0)
+			{
+			if (!set_insert(aNewSet, l_value))
+				return false;
+			++l;
+			}
+		else if (cmp > 0)
+			++r;
+		else
+			{
+			++l;
+			++r;
+			}
+		}
 
+	while (l < aLeftSet->iSize)
+		if (!set_insert(aNewSet, set_flex_array_value_at_pos(aLeftSet->iFlexArray, l++)))
+			return false;
 
 	return true;
 	}
