@@ -8,8 +8,8 @@
 #define LINEAR_SEARCH_OPTIMIZED	1	///< Volba pro vyhledávání s optimalizací dřívějšího ukončení
 #define BINARY_SEARCH			2	///< Volba pro binární vyhledávání
 
-#define FLEX_ARRAY_SEARCH_VARIANT	LINEAR_SEARCH_OPTIMIZED	///< Varianta využívající lineární vyhledávání s optimalizací ve funkci: `set_flex_array_search()`
-// #define FLEX_ARRAY_SEARCH_VARIANT	BINARY_SEARCH			///< Varianta využívající binární vyhledávání ve funkci: `set_flex_array_search()`
+// #define FLEX_ARRAY_SEARCH_VARIANT	LINEAR_SEARCH_OPTIMIZED	///< Varianta využívající lineární vyhledávání s optimalizací ve funkci: `set_flex_array_search()`
+#define FLEX_ARRAY_SEARCH_VARIANT	BINARY_SEARCH			///< Varianta využívající binární vyhledávání ve funkci: `set_flex_array_search()`
 
 #include <stdlib.h>
 #include <assert.h>
